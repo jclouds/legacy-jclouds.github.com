@@ -8,6 +8,7 @@ The following is the list of providers that are supported by the jclouds API.
 
 
 ## Compute API : Supported Providers 
+ * abiquo (generic)
  * aws-cloudwatch
  * aws-ec2
  * bluelock-vclouddirector

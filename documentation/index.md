@@ -37,6 +37,7 @@ We support many cloud providers including _Amazon_, _GoGrid_, _Azure_, _vCloud_,
 * [Using jclouds with Apache Karaf](/documentation/userguide/karaf)
 * [Using EC2](/documentation/userguide/using-ec2)
 * [Using Maven](/documentation/userguide/using-maven)
+* [Using Abiquo](/documentation/userguide/using-abiquo)
 
 ### Samples & Examples
 * [jclouds with Google App Engine](/documentation/examples/google-app-engine)
