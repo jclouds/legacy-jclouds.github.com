@@ -5,6 +5,7 @@ title: Quick Start Index
 
 # Quick Start Guides
 
+* [Abiquo](/documentation/quickstart/abiquo)
 * [Amazon Web Services](/documentation/quickstart/aws)
 * [SQS - Simple Queue Service](/documentation/quickstart/sqs)
 * [Elastic Block Store](/documentation/quickstart/ebs)
