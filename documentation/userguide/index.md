@@ -16,3 +16,4 @@ title: User Guides Index
 * [Using jclouds with Apache Karaf](/documentation/userguide/karaf)
 * [Using EC2](/documentation/userguide/using-ec2)
 * [Using Maven](/documentation/userguide/using-maven)
+* [Using Abiquo](/documentation/userguide/using-abiquo)

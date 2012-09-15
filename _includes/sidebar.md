@@ -3,6 +3,7 @@
 * [Examples](https://github.com/jclouds/jclouds-examples)
 
 ### Quick Start Guides
+* [Abiquo](/documentation/quickstart/abiquo)
 * [Amazon Web Services](/documentation/quickstart/aws)
 * [Elastic Block Store Models](/documentation/quickstart/ebs)
 * [Azure Storage Service](/documentation/quickstart/azure-storage)
