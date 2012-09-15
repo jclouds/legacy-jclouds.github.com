@@ -6,6 +6,7 @@ title: Quick Start Index
 # Quick Start Guides
 
 * [Amazon Web Services](/documentation/quickstart/aws)
+* [SQS - Simple Queue Service](/documentation/quickstart/sqs)
 * [Elastic Block Store](/documentation/quickstart/ebs)
 * [Azure Storage Service](/documentation/quickstart/azure-storage)
 * [BlueLock vCloud](/documentation/quickstart/bluelock)
