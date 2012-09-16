@@ -1,0 +1,1077 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:aws-sqs:bundle:1.5.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Amazon Simple Queue Service provider 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ aws-sqs ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ aws-sqs ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ aws-sqs ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ aws-sqs ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ aws-sqs ---
+[INFO] Compiling 4 source files to /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ aws-sqs ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.aws.sqs.AWSSQSProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@55d15445
+Starting test testAllContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
+Starting test testOfApiContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
+Starting test testTransformableToContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 1ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 4ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testAllContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 18ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.aws.sqs.AWSSQSProviderTest)
+[pool-2-thread-4] Test testWithId(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 4ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.64 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ aws-sqs ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/target/aws-sqs-1.5.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ aws-sqs ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@79f6f296
+Starting test testCanRecreateQueueGracefully(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+10:22:35.818 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.list
+10:22:35.824 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.list
+10:22:35.825 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.list
+10:22:35.828 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:35.829 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:35.829 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:35.829 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 78
+10:22:35.830 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:35.830 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:35.831 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:35.831 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:35.831 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 75
+10:22:35.831 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:35.831 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:35.831 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 73
+10:22:35.834 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:35.834 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:35.834 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:35.834 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ListQueues&QueueNamePrefix=adriancole-sqs-message&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A35.830Z&Version=2011-10-01"
+10:22:35.834 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:35.834 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:35.835 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:35.835 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ListQueues&QueueNamePrefix=adriancole-sqs-queue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A35.830Z&Version=2011-10-01"
+10:22:35.835 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:35.835 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:35.835 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:35.835 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ListQueues&QueueNamePrefix=adriancole-sqs-permission&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A35.827Z&Version=2011-10-01"
+10:22:36.017 [i/o thread 0] DEBUG jclouds.signature - << "EOaWQxTeHDrnOsXAlij4u71XVVmyxXZ7qvpRD7DIFZc="
+10:22:36.017 [i/o thread 0] DEBUG jclouds.signature - << "Ik2OqKBW++dqXOXyjBfo0KQW42/6kxcuWCeO6qa4otE="
+10:22:36.017 [i/o thread 0] DEBUG jclouds.signature - << "ioMUV/0nhJecmceOybEkf9VD9t4HQ9wiO+5w6jCc0v8="
+10:22:36.019 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.019 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.019 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:36.019 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:36.019 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:36.019 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:36.019 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 251
+10:22:36.019 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 260
+10:22:36.020 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -815068325: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.020 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 627089403: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.020 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ListQueues&QueueNamePrefix=adriancole-sqs-permission&Signature=ioMUV%2F0nhJecmceOybEkf9VD9t4HQ9wiO%2B5w6jCc0v8%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A35.827Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:36.020 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ListQueues&QueueNamePrefix=adriancole-sqs-queue&Signature=EOaWQxTeHDrnOsXAlij4u71XVVmyxXZ7qvpRD7DIFZc%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A35.830Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:36.020 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.020 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:36.020 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:36.020 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.021 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 260
+10:22:36.021 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:36.021 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:36.021 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 251
+10:22:36.022 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.022 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:36.024 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:36.024 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 259
+10:22:36.025 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -811753518: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.025 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ListQueues&QueueNamePrefix=adriancole-sqs-message&Signature=Ik2OqKBW%2B%2BdqXOXyjBfo0KQW42%2F6kxcuWCeO6qa4otE%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A35.830Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:36.025 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.025 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:36.025 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:36.025 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 259
+10:22:36.871 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 627089403: HTTP/1.1 200 OK
+10:22:36.871 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:36.871 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: dc4b7bab-4ff1-524a-b2f7-337b42ed17bd
+10:22:36.871 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:36.872 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 228
+10:22:36.879 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -811753518: HTTP/1.1 200 OK
+10:22:36.880 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:36.880 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 54bc819a-141a-5046-8c91-c94a1906bed7
+10:22:36.881 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:36.881 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 228
+10:22:36.884 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -815068325: HTTP/1.1 200 OK
+10:22:36.885 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:36.885 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 7d2a6a58-d16d-53e0-9c15-2288dc71d3b0
+10:22:36.885 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:36.885 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 228
+10:22:36.927 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult/><ResponseMetadata><RequestId>dc4b7bab-4ff1-524a-b2f7-337b42ed17bd</RequestId></ResponseMetadata></ListQueuesResponse>"
+10:22:36.927 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult/><ResponseMetadata><RequestId>7d2a6a58-d16d-53e0-9c15-2288dc71d3b0</RequestId></ResponseMetadata></ListQueuesResponse>"
+10:22:36.927 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult/><ResponseMetadata><RequestId>54bc819a-141a-5046-8c91-c94a1906bed7</RequestId></ResponseMetadata></ListQueuesResponse>"
+10:22:36.952 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.create
+10:22:36.952 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.create
+10:22:36.953 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.create
+10:22:36.953 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.954 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:36.954 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.954 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:36.954 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:36.954 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:36.954 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 70
+10:22:36.954 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:36.955 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:36.955 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:36.955 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=CreateQueue&QueueName=adriancole-sqs-message&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A36.953Z&Version=2011-10-01"
+10:22:36.955 [i/o thread 0] DEBUG jclouds.signature - << "4o/+fnoefWJmptPQfnXo/v7iFx6RTd0zkF3+rnbC8cs="
+10:22:36.956 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.956 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:36.956 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:36.957 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 256
+10:22:36.957 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1883988755: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.957 [i/o thread 0] DEBUG jclouds.wire - >> "Action=CreateQueue&QueueName=adriancole-sqs-message&Signature=4o%2F%2BfnoefWJmptPQfnXo%2Fv7iFx6RTd0zkF3%2BrnbC8cs%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A36.953Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:36.957 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.957 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:36.957 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:36.957 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 256
+10:22:36.959 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.959 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:36.959 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:36.959 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 68
+10:22:36.960 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:36.960 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:36.960 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:36.960 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=CreateQueue&QueueName=adriancole-sqs-queue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A36.958Z&Version=2011-10-01"
+10:22:36.960 [i/o thread 0] DEBUG jclouds.signature - << "weeRAYz0AwRE7pqsEe/llwd0EzNg3oHweMMlIKICjVQ="
+10:22:36.961 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.961 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:36.961 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:36.962 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 248
+10:22:36.963 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 73
+10:22:36.965 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:36.965 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:36.965 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:36.965 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=CreateQueue&QueueName=adriancole-sqs-permission&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A36.953Z&Version=2011-10-01"
+10:22:36.965 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1044597760: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.965 [i/o thread 0] DEBUG jclouds.wire - >> "Action=CreateQueue&QueueName=adriancole-sqs-queue&Signature=weeRAYz0AwRE7pqsEe%2Fllwd0EzNg3oHweMMlIKICjVQ%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A36.958Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:36.966 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.966 [i/o thread 0] DEBUG jclouds.signature - << "E0E7OebTMfTElfNehkZ36k949sOsRr+ff22ZGzTNqeI="
+10:22:36.966 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:36.966 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:36.966 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 248
+10:22:36.967 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.967 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:36.967 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:36.967 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 253
+10:22:36.967 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -25559178: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.968 [i/o thread 0] DEBUG jclouds.wire - >> "Action=CreateQueue&QueueName=adriancole-sqs-permission&Signature=E0E7OebTMfTElfNehkZ36k949sOsRr%2Bff22ZGzTNqeI%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A36.953Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:36.968 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:36.968 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:36.968 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:36.968 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 253
+10:22:37.566 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -25559178: HTTP/1.1 200 OK
+10:22:37.566 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:37.567 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 3f3c36bc-e615-5ec0-a7e3-7e6ceb081f31
+10:22:37.567 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:37.567 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 345
+10:22:37.567 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><CreateQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><CreateQueueResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission</QueueUrl></CreateQueueResult><ResponseMetadata><RequestId>3f3c36bc-e615-5ec0-a7e3-7e6ceb081f31</RequestId></ResponseMetadata></CreateQueueResponse>"
+10:22:37.574 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.list
+10:22:37.575 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.575 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:37.575 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:37.575 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 36
+10:22:37.576 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:37.576 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:37.576 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:37.576 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A37.574Z&Version=2011-10-01"
+10:22:37.577 [i/o thread 0] DEBUG jclouds.signature - << "HdM9KbAL22PoYHIajv4VNWzgDYopd/aDkzOIejFEx0Q="
+10:22:37.578 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.579 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:37.579 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:37.579 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 216
+10:22:37.579 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1683946249: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.579 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=HdM9KbAL22PoYHIajv4VNWzgDYopd%2FaDkzOIejFEx0Q%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A37.574Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:37.580 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.580 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:37.580 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:37.580 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 216
+10:22:37.591 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1044597760: HTTP/1.1 200 OK
+10:22:37.591 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:37.591 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 26bcd8b0-3a13-5425-8499-9060370e2a74
+10:22:37.591 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:37.591 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 340
+10:22:37.592 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><CreateQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><CreateQueueResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue</QueueUrl></CreateQueueResult><ResponseMetadata><RequestId>26bcd8b0-3a13-5425-8499-9060370e2a74</RequestId></ResponseMetadata></CreateQueueResponse>"
+10:22:37.595 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.list
+10:22:37.595 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.596 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:37.596 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:37.596 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 36
+10:22:37.596 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:37.596 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:37.596 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:37.596 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A37.595Z&Version=2011-10-01"
+10:22:37.597 [i/o thread 0] DEBUG jclouds.signature - << "EtXKUUAziW8N6HqDHF9mDvawV/E2eLJhCYBF+HVND0M="
+10:22:37.598 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.598 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:37.598 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:37.598 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 218
+10:22:37.600 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 329133833: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.600 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=EtXKUUAziW8N6HqDHF9mDvawV%2FE2eLJhCYBF%2BHVND0M%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A37.595Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:37.600 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.600 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:37.600 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:37.600 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 218
+10:22:37.616 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1883988755: HTTP/1.1 200 OK
+10:22:37.616 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:37.616 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 475fd240-93db-53d5-a3f9-9a909ec6aa99
+10:22:37.616 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:37.617 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 342
+10:22:37.617 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><CreateQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><CreateQueueResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message</QueueUrl></CreateQueueResult><ResponseMetadata><RequestId>475fd240-93db-53d5-a3f9-9a909ec6aa99</RequestId></ResponseMetadata></CreateQueueResponse>"
+10:22:37.621 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.list
+10:22:37.622 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.622 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:37.622 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:37.622 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 36
+10:22:37.623 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:37.623 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:37.623 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:37.623 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A37.622Z&Version=2011-10-01"
+10:22:37.624 [i/o thread 0] DEBUG jclouds.signature - << "vSt5CuTRManKM7pIbNnPpLVUBBoNYa0MXC6f9LKdH60="
+10:22:37.625 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.625 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:37.625 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:37.625 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 214
+10:22:37.626 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1029638379: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.626 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=vSt5CuTRManKM7pIbNnPpLVUBBoNYa0MXC6f9LKdH60%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A37.622Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:37.626 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:37.626 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:37.626 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:37.626 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 214
+10:22:38.021 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 329133833: HTTP/1.1 200 OK
+10:22:38.022 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:38.022 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 91e98ddd-5b8c-508a-b7ce-c50d5691177c
+10:22:38.022 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:38.022 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 688
+10:22:38.023 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>91e98ddd-5b8c-508a-b7ce-c50d5691177c</RequestId></ResponseMetadata></ListQueuesResponse>"
+10:22:38.023 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1683946249: HTTP/1.1 200 OK
+10:22:38.024 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:38.025 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: e37f8b40-2cce-551d-8950-c39021d35909
+10:22:38.025 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:38.025 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1029638379: HTTP/1.1 200 OK
+10:22:38.025 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:38.025 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 688
+10:22:38.026 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>e37f8b40-2cce-551d-8950-c39021d35909</RequestId></ResponseMetadata></ListQueuesResponse>"
+10:22:38.031 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: d89f5531-aa43-575f-86ef-1de1a75eaf93
+10:22:38.031 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:38.031 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 688
+10:22:38.032 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>d89f5531-aa43-575f-86ef-1de1a75eaf93</RequestId></ResponseMetadata></ListQueuesResponse>"
+Starting test testSendMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
+10:22:38.047 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.list
+Starting test testAddAnonymousPermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest)
+10:22:38.048 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.049 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.049 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.049 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 73
+10:22:38.049 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:38.049 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:38.049 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:38.049 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ListQueues&QueueNamePrefix=adriancole-sqs-queue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.048Z&Version=2011-10-01"
+10:22:38.050 [i/o thread 0] DEBUG jclouds.signature - << "ITfFYfn2+COP2wC8Ow3wtC/d0BLW47ugDPOY2VxhtRM="
+10:22:38.051 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.051 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:38.051 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:38.051 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 255
+10:22:38.051 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -2088159633: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.051 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ListQueues&QueueNamePrefix=adriancole-sqs-queue&Signature=ITfFYfn2%2BCOP2wC8Ow3wtC%2Fd0BLW47ugDPOY2VxhtRM%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.048Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:38.051 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.052 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.052 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.052 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 255
+10:22:38.113 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.getAttributes
+10:22:38.113 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:38.113 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.114 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.114 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 64
+10:22:38.114 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:38.114 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:38.114 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-permission/[\n]"
+10:22:38.114 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=GetQueueAttributes&AttributeName.1=All&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.113Z&Version=2011-10-01"
+10:22:38.115 [i/o thread 0] DEBUG jclouds.signature - << "NAmIqoKAUn9gP/E/gXWbIu86UgL1soCSkuBcHGNJfDI="
+10:22:38.116 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:38.116 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:38.116 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:38.116 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 246
+10:22:38.116 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1424302430: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:38.116 [i/o thread 0] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=All&Signature=NAmIqoKAUn9gP%2FE%2FgXWbIu86UgL1soCSkuBcHGNJfDI%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.113Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:38.117 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:38.117 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.117 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.117 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 246
+10:22:38.156 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking MessageAsyncApi.send
+10:22:38.158 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:38.158 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.158 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.158 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 61
+10:22:38.158 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:38.158 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:38.158 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-message/[\n]"
+10:22:38.158 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=SendMessage&MessageBody=hardyharhar&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.157Z&Version=2011-10-01"
+10:22:38.159 [i/o thread 0] DEBUG jclouds.signature - << "UpmjbE8291tclJF4D/fOUfx5cNSWga1a9wBDp/CakG4="
+10:22:38.160 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:38.160 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:38.160 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:38.160 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 243
+10:22:38.160 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -2099146566: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:38.160 [i/o thread 0] DEBUG jclouds.wire - >> "Action=SendMessage&MessageBody=hardyharhar&Signature=UpmjbE8291tclJF4D%2FfOUfx5cNSWga1a9wBDp%2FCakG4%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.157Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:38.161 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:38.161 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.161 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.161 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 243
+10:22:38.434 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -2088159633: HTTP/1.1 200 OK
+10:22:38.434 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:38.434 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: ab93a4e4-6cb5-51d7-ad19-ec3461abaf46
+10:22:38.434 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:38.434 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 228
+10:22:38.434 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult/><ResponseMetadata><RequestId>ab93a4e4-6cb5-51d7-ad19-ec3461abaf46</RequestId></ResponseMetadata></ListQueuesResponse>"
+10:22:38.436 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.create
+10:22:38.437 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.437 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.438 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.438 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 68
+10:22:38.438 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:38.438 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:38.438 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:38.438 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=CreateQueue&QueueName=adriancole-sqs-queue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.437Z&Version=2011-10-01"
+10:22:38.439 [i/o thread 0] DEBUG jclouds.signature - << "i4hwxPxYtwWkrMw3uxZqVPtsvBuBmxwxvfiQOu6mj4g="
+10:22:38.440 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.440 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:38.440 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:38.440 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 246
+10:22:38.440 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1675108641: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.440 [i/o thread 0] DEBUG jclouds.wire - >> "Action=CreateQueue&QueueName=adriancole-sqs-queue&Signature=i4hwxPxYtwWkrMw3uxZqVPtsvBuBmxwxvfiQOu6mj4g%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.437Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:38.440 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.440 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.440 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.441 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 246
+10:22:38.525 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1424302430: HTTP/1.1 200 OK
+10:22:38.526 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:38.526 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 7388fead-3377-5c02-a9c8-b67d3e69b070
+10:22:38.526 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:38.526 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 1097
+10:22:38.527 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>QueueArn</Name><Value>arn:aws:sqs:us-east-1:993194456877:adriancole-sqs-permission</Value></Attribute><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesDelayed</Name><Value>0</Value></Attribute><Attribute><Name>CreatedTimestamp</Name><Value>1347816157</Value></Attribute><Attribute><Name>LastModifiedTimestamp</Name><Value>1347816157</Value></Attribute><Attribute><Name>VisibilityTimeout</Name><Value>30</Value></Attribute><Attribute><Name>MaximumMessageSize</Name><Value>65536</Value></Attribute><Attribute><Name>MessageRetentionPeriod</Name><Value>345600</Value></Attribute><Attribute><Name>DelaySeconds</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>7388fead-3377-5c02-a9c8-b67d3e69b070</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+10:22:38.582 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.getAttribute
+10:22:38.583 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:38.583 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.583 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.583 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 67
+10:22:38.584 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:38.584 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:38.584 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-permission/[\n]"
+10:22:38.584 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=GetQueueAttributes&AttributeName.1=Policy&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.583Z&Version=2011-10-01"
+10:22:38.584 [i/o thread 0] DEBUG jclouds.signature - << "ZaxKqyNibWMibdrhsAbtYCn0IeqX0fyZogDfJF8wMOM="
+10:22:38.585 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:38.585 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:38.585 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:38.585 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 245
+10:22:38.585 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1016221895: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:38.585 [i/o thread 0] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=Policy&Signature=ZaxKqyNibWMibdrhsAbtYCn0IeqX0fyZogDfJF8wMOM%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.583Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:38.585 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:38.585 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.585 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.586 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 245
+10:22:38.594 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -2099146566: HTTP/1.1 200 OK
+10:22:38.594 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:38.594 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: c6e97c71-67b0-56a5-9c0a-34a16aae1cb0
+10:22:38.594 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:38.594 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 378
+10:22:38.595 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><SendMessageResult><MessageId>0546dd81-249a-4564-887e-a6619c6bc56e</MessageId><MD5OfMessageBody>e32aedf2b2b25355d04b1507055532e6</MD5OfMessageBody></SendMessageResult><ResponseMetadata><RequestId>c6e97c71-67b0-56a5-9c0a-34a16aae1cb0</RequestId></ResponseMetadata></SendMessageResponse>"
+[TestNG] Test testSendMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 562ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testReceiveMessageWithoutHidingMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
+10:22:38.607 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking MessageAsyncApi.receive
+10:22:38.608 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:38.608 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.608 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.608 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 80
+10:22:38.609 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:38.609 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:38.609 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-message/[\n]"
+10:22:38.609 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ReceiveMessage&AttributeName.1=All&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.608Z&Version=2011-10-01&VisibilityTimeout=0"
+10:22:38.609 [i/o thread 0] DEBUG jclouds.signature - << "MNBR55o0f1Ihls2j1KfePEpJmGAGbHJnfOAhg22A3vg="
+10:22:38.610 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:38.610 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:38.610 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:38.610 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 258
+10:22:38.610 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1979511217: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:38.610 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ReceiveMessage&AttributeName.1=All&Signature=MNBR55o0f1Ihls2j1KfePEpJmGAGbHJnfOAhg22A3vg%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.608Z&Version=2011-10-01&VisibilityTimeout=0&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:38.611 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:38.611 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.611 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.611 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 258
+10:22:38.926 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1675108641: HTTP/1.1 200 OK
+10:22:38.927 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:38.927 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 6b3757e0-cb1c-5b13-9bdd-1f30c602d3a7
+10:22:38.927 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:38.927 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 340
+10:22:38.927 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><CreateQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><CreateQueueResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue</QueueUrl></CreateQueueResult><ResponseMetadata><RequestId>6b3757e0-cb1c-5b13-9bdd-1f30c602d3a7</RequestId></ResponseMetadata></CreateQueueResponse>"
+10:22:38.930 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.list
+10:22:38.931 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.931 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.931 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.931 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 36
+10:22:38.931 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:38.931 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:38.931 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:38.931 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.930Z&Version=2011-10-01"
+10:22:38.932 [i/o thread 0] DEBUG jclouds.signature - << "Hl7YoAhmxe6NDo+jdBeDmib6EbG0SaPLoRZNnOdMn+4="
+10:22:38.932 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.932 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:38.932 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:38.932 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 218
+10:22:38.932 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1533186667: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.933 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=Hl7YoAhmxe6NDo%2BjdBeDmib6EbG0SaPLoRZNnOdMn%2B4%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A38.930Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:38.933 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:38.933 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:38.933 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:38.933 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 218
+10:22:39.011 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1979511217: HTTP/1.1 200 OK
+10:22:39.011 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:39.011 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 2d05ae7f-4f64-56f3-aa17-e6af427a1ce6
+10:22:39.011 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:39.011 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 1069
+10:22:39.011 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ReceiveMessageResult><Message><Body>hardyharhar</Body><MD5OfBody>e32aedf2b2b25355d04b1507055532e6</MD5OfBody><ReceiptHandle>Prl0vft3nRjKyqA7HVoWT0TNFbN/FPjpGo+mrAkbjWfxA918z7/JHf4nV10hC81iE2auYjewPxaX1uIqIQEr6qt51nQ8Dd7d6gmr5IhF7xjr8FCReIF8qZEWDpNuWfy2mN9mjFZGSacHGc1tpR9yV623UkF7BIkjWPXJpzyFdhtCB9GhOB8gkhOLzZp+brz8ol+x0CilgLdEcGBmTDsyaFyRybvMG+K44KxrY+Pcvk4m/nktVYMnDFw972M4YIe/jEVjAuRSNp75M0d6RH7KC1mu+2MFoSEG1z9OdHsr1+4=</ReceiptHandle><Attribute><Name>SenderId</Name><Value>993194456877</Value></Attribute><Attribute><Name>ApproximateFirstReceiveTimestamp</Name><Value>1347816158959</Value></Attribute><Attribute><Name>ApproximateReceiveCount</Name><Value>1</Value></Attribute><Attribute><Name>SentTimestamp</Name><Value>1347816158533</Value></Attribute><MessageId>0546dd81-249a-4564-887e-a6619c6bc56e</MessageId></Message></ReceiveMessageResult><ResponseMetadata><RequestId>2d05ae7f-4f64-56f3-aa17-e6af427a1ce6</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+[TestNG] Test testReceiveMessageWithoutHidingMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 416ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testChangeMessageVisibility(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
+10:22:39.028 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1016221895: HTTP/1.1 200 OK
+10:22:39.030 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking MessageAsyncApi.receive
+10:22:39.031 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.031 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.031 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.031 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 81
+10:22:39.032 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:39.032 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:39.032 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-message/[\n]"
+10:22:39.032 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ReceiveMessage&AttributeName.1=None&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.031Z&Version=2011-10-01&VisibilityTimeout=5"
+10:22:39.032 [i/o thread 0] DEBUG jclouds.signature - << "Fc31tBh/KCcUf4wdHOAh8oT5VKSykBE2NTriY7S4wLQ="
+10:22:39.032 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.033 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:39.033 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:39.033 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 261
+10:22:39.033 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 656580357: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.033 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ReceiveMessage&AttributeName.1=None&Signature=Fc31tBh%2FKCcUf4wdHOAh8oT5VKSykBE2NTriY7S4wLQ%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.031Z&Version=2011-10-01&VisibilityTimeout=5&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:39.034 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.034 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.035 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.035 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 261
+10:22:39.036 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:39.036 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 127e8547-a7b5-5818-a8b4-cd97aaab662b
+10:22:39.036 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:39.037 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 252
+10:22:39.037 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult/><ResponseMetadata><RequestId>127e8547-a7b5-5818-a8b4-cd97aaab662b</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+10:22:39.063 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking PermissionAsyncApi.addPermissionToAccount
+10:22:39.064 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.064 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.064 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.064 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 111
+10:22:39.065 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:39.065 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:39.065 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-permission/[\n]"
+10:22:39.065 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&AWSAccountId.1=993194456877&Action=AddPermission&ActionName.1=GetQueueAttributes&Label=fubar&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.064Z&Version=2011-10-01"
+10:22:39.066 [i/o thread 0] DEBUG jclouds.signature - << "C8tDjlEFPWS/daofv4h1aEDa0rNTqy4L4WlFz1cTs7g="
+10:22:39.066 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.066 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:39.066 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:39.066 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 291
+10:22:39.067 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1389368231: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.070 [i/o thread 0] DEBUG jclouds.wire - >> "Action=AddPermission&ActionName.1=GetQueueAttributes&AWSAccountId.1=993194456877&Label=fubar&Signature=C8tDjlEFPWS%2Fdaofv4h1aEDa0rNTqy4L4WlFz1cTs7g%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.064Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:39.071 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.071 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.071 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.071 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 291
+10:22:39.329 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1533186667: HTTP/1.1 200 OK
+10:22:39.329 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:39.329 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: a2dcbe92-e046-5815-9cfe-f642ed598023
+10:22:39.329 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:39.329 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 688
+10:22:39.329 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>a2dcbe92-e046-5815-9cfe-f642ed598023</RequestId></ResponseMetadata></ListQueuesResponse>"
+[TestNG] Test testCanRecreateQueueGracefully(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 3633ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testListQueues(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+10:22:39.335 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.list
+10:22:39.336 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:39.336 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.336 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.336 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 36
+10:22:39.336 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:39.336 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:39.336 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:39.336 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.336Z&Version=2011-10-01"
+10:22:39.337 [i/o thread 0] DEBUG jclouds.signature - << "6HOQUhNWrqMrnZVIve/usPfir38PEac2w7NUlg46QpA="
+10:22:39.337 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:39.337 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:39.337 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:39.337 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 216
+10:22:39.337 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 370324573: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:39.338 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=6HOQUhNWrqMrnZVIve%2FusPfir38PEac2w7NUlg46QpA%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.336Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:39.338 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:39.338 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.338 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.338 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 216
+10:22:39.444 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 656580357: HTTP/1.1 200 OK
+10:22:39.444 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:39.444 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 5338fe75-2e65-5825-b3bd-b6a5237ab855
+10:22:39.445 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:39.445 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 750
+10:22:39.445 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ReceiveMessageResult><Message><Body>hardyharhar</Body><MD5OfBody>e32aedf2b2b25355d04b1507055532e6</MD5OfBody><ReceiptHandle>Prl0vft3nRjKyqA7HVoWT0TNFbN/FPjpGo+mrAkbjWfxA918z7/JHf4nV10hC81iE2auYjewPxaX1uIqIQEr6qt51nQ8Dd7d6gmr5IhF7xjr8FCReIF8qZEWDpNuWfy2mN9mjFZGSacHGc1tpR9yV623UkF7BIkjWPXJpzyFdhtCB9GhOB8gkhOLzZp+brz8ol+x0CilgLdEcGBmTDsyaFyRybvMG+K44KxrY+Pcvk4m/nktVYMnDFw972M4YIe/jEVjAuRSNp75M0d6RH7KC6O8eXvZ6EzW1z9OdHsr1+4=</ReceiptHandle><MessageId>0546dd81-249a-4564-887e-a6619c6bc56e</MessageId></Message></ReceiveMessageResult><ResponseMetadata><RequestId>5338fe75-2e65-5825-b3bd-b6a5237ab855</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+10:22:39.449 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking MessageAsyncApi.receive
+10:22:39.450 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.451 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.451 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.451 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 40
+10:22:39.451 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:39.451 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:39.451 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-message/[\n]"
+10:22:39.451 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ReceiveMessage&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.450Z&Version=2011-10-01"
+10:22:39.451 [i/o thread 0] DEBUG jclouds.signature - << "ucgE61sp7EaV594LaeQknq7t7tt2vdSxR8D+VgyGYMs="
+10:22:39.452 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.452 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:39.452 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:39.452 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 220
+10:22:39.453 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1880804482: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.453 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ReceiveMessage&Signature=ucgE61sp7EaV594LaeQknq7t7tt2vdSxR8D%2BVgyGYMs%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.450Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:39.453 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.453 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.453 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.453 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 220
+10:22:39.568 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1389368231: HTTP/1.1 200 OK
+10:22:39.569 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:39.569 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 8396d865-5eab-5384-bd2a-90b553b49f76
+10:22:39.569 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:39.569 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 215
+10:22:39.569 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><AddPermissionResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>8396d865-5eab-5384-bd2a-90b553b49f76</RequestId></ResponseMetadata></AddPermissionResponse>"
+10:22:39.573 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.getAttribute
+10:22:39.573 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.574 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.574 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.574 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 67
+10:22:39.574 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:39.574 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:39.574 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-permission/[\n]"
+10:22:39.574 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=GetQueueAttributes&AttributeName.1=Policy&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.573Z&Version=2011-10-01"
+10:22:39.574 [i/o thread 0] DEBUG jclouds.signature - << "OgP/D321VPwPnKEelcuI71utGTFNpWgloz7UD8BSniQ="
+10:22:39.575 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.575 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:39.575 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:39.575 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 247
+10:22:39.575 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1423914079: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.575 [i/o thread 0] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=Policy&Signature=OgP%2FD321VPwPnKEelcuI71utGTFNpWgloz7UD8BSniQ%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.573Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:39.576 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.576 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.576 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.576 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 247
+10:22:39.729 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 370324573: HTTP/1.1 200 OK
+10:22:39.729 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:39.730 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 701df7a9-6d45-541b-8bbc-bf79605ae75c
+10:22:39.730 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:39.730 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 688
+10:22:39.730 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>701df7a9-6d45-541b-8bbc-bf79605ae75c</RequestId></ResponseMetadata></ListQueuesResponse>"
+10:22:39.734 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.list
+10:22:39.735 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:39.735 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.735 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.735 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 36
+10:22:39.735 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:39.736 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:39.736 [i/o thread 0] DEBUG jclouds.signature - >> "/[\n]"
+10:22:39.736 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.735Z&Version=2011-10-01"
+10:22:39.736 [i/o thread 0] DEBUG jclouds.signature - << "7/G8IrpP82H4ewHnEqwSJ26pOql7xSpW1R4IzzTrqEc="
+10:22:39.736 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:39.736 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:39.737 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:39.737 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 216
+10:22:39.737 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 2139925492: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:39.737 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=7%2FG8IrpP82H4ewHnEqwSJ26pOql7xSpW1R4IzzTrqEc%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.735Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:39.737 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+10:22:39.737 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.737 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.737 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 216
+10:22:39.911 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1880804482: HTTP/1.1 200 OK
+10:22:39.912 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:39.912 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 401d0d55-953c-5318-8264-45859823176e
+10:22:39.912 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:39.912 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 240
+10:22:39.912 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ReceiveMessageResult/><ResponseMetadata><RequestId>401d0d55-953c-5318-8264-45859823176e</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+10:22:39.917 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking MessageAsyncApi.changeVisibility
+10:22:39.918 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.918 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.918 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.918 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 406
+10:22:39.919 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:39.919 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:39.919 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-message/[\n]"
+10:22:39.919 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ChangeMessageVisibility&ReceiptHandle=Prl0vft3nRjKyqA7HVoWT0TNFbN%2FFPjpGo%2BmrAkbjWfxA918z7%2FJHf4nV10hC81iE2auYjewPxaX1uIqIQEr6qt51nQ8Dd7d6gmr5IhF7xjr8FCReIF8qZEWDpNuWfy2mN9mjFZGSacHGc1tpR9yV623UkF7BIkjWPXJpzyFdhtCB9GhOB8gkhOLzZp%2Bbrz8ol%2Bx0CilgLdEcGBmTDsyaFyRybvMG%2BK44KxrY%2BPcvk4m%2FnktVYMnDFw972M4YIe%2FjEVjAuRSNp75M0d6RH7KC6O8eXvZ6EzW1z9OdHsr1%2B4%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.918Z&Version=2011-10-01&VisibilityTimeout=0"
+10:22:39.919 [i/o thread 0] DEBUG jclouds.signature - << "1LFPTL5Oh9Dtk03Ny18RJWqa2aZfa0rKiEMf/t2F0Cw="
+10:22:39.920 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.920 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:39.920 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:39.920 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 586
+10:22:39.921 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1017067399: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.921 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ChangeMessageVisibility&ReceiptHandle=Prl0vft3nRjKyqA7HVoWT0TNFbN%2FFPjpGo%2BmrAkbjWfxA918z7%2FJHf4nV10hC81iE2auYjewPxaX1uIqIQEr6qt51nQ8Dd7d6gmr5IhF7xjr8FCReIF8qZEWDpNuWfy2mN9mjFZGSacHGc1tpR9yV623UkF7BIkjWPXJpzyFdhtCB9GhOB8gkhOLzZp%2Bbrz8ol%2Bx0CilgLdEcGBmTDsyaFyRybvMG%2BK44KxrY%2BPcvk4m%2FnktVYMnDFw972M4YIe%2FjEVjAuRSNp75M0d6RH7KC6O8eXvZ6EzW1z9OdHsr1%2B4%3D&Signature=1LFPTL5Oh9Dtk03Ny18RJWqa2aZfa0rKiEMf%2Ft2F0Cw%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.918Z&Version=2011-10-01&VisibilityTimeout=0&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:39.921 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:39.921 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.921 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.921 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 586
+10:22:39.973 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1423914079: HTTP/1.1 200 OK
+10:22:39.973 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:39.973 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: deab05d6-9908-5016-a889-4d0694179004
+10:22:39.974 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:39.974 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 794
+10:22:39.974 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>Policy</Name><Value>{&quot;Version&quot;:&quot;2008-10-17&quot;,&quot;Id&quot;:&quot;arn:aws:sqs:us-east-1:993194456877:adriancole-sqs-permission/SQSDefaultPolicy&quot;,&quot;Statement&quot;:[{&quot;Sid&quot;:&quot;fubar&quot;,&quot;Effect&quot;:&quot;Allow&quot;,&quot;Principal&quot;:{&quot;AWS&quot;:&quot;993194456877&quot;},&quot;Action&quot;:&quot;SQS:GetQueueAttributes&quot;,&quot;Resource&quot;:&quot;arn:aws:sqs:us-east-1:993194456877:adriancole-sqs-permission&quot;}]}</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>deab05d6-9908-5016-a889-4d0694179004</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+10:22:39.979 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.setAttribute
+10:22:39.980 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.981 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.981 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.981 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 507
+10:22:39.981 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:39.981 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:39.982 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-permission/[\n]"
+10:22:39.982 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=SetQueueAttributes&Attribute.Name=Policy&Attribute.Value=%7B%22Version%22%3A%222008-10-17%22%2C%22Id%22%3A%22arn%3Aaws%3Asqs%3Aus-east-1%3A993194456877%3Aadriancole-sqs-permission%2FSQSDefaultPolicy%22%2C%22Statement%22%3A%5B%7B%22Sid%22%3A%22fubar%22%2C%22Effect%22%3A%22Allow%22%2C%22Principal%22%3A%7B%22AWS%22%3A%22%2A%22%7D%2C%22Action%22%3A%22SQS%3AGetQueueAttributes%22%2C%22Resource%22%3A%22arn%3Aaws%3Asqs%3Aus-east-1%3A993194456877%3Aadriancole-sqs-permission%22%7D%5D%7D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.980Z&Version=2011-10-01"
+10:22:39.982 [i/o thread 0] DEBUG jclouds.signature - << "h9bdK0vSo3nOsUKb8/00TOM4MKhmNWN2TmVaPFmkuKg="
+10:22:39.983 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.983 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:39.983 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:39.983 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 687
+10:22:39.983 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -437020775: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.983 [i/o thread 0] DEBUG jclouds.wire - >> "Action=SetQueueAttributes&Attribute.Name=Policy&Attribute.Value=%7B%22Version%22%3A%222008-10-17%22%2C%22Id%22%3A%22arn%3Aaws%3Asqs%3Aus-east-1%3A993194456877%3Aadriancole-sqs-permission%2FSQSDefaultPolicy%22%2C%22Statement%22%3A%5B%7B%22Sid%22%3A%22fubar%22%2C%22Effect%22%3A%22Allow%22%2C%22Principal%22%3A%7B%22AWS%22%3A%22%2A%22%7D%2C%22Action%22%3A%22SQS%3AGetQueueAttributes%22%2C%22Resource%22%3A%22arn%3Aaws%3Asqs%3Aus-east-1%3A993194456877%3Aadriancole-sqs-permission%22%7D%5D%7D&Signature=h9bdK0vSo3nOsUKb8%2F00TOM4MKhmNWN2TmVaPFmkuKg%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A39.980Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:39.984 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:39.984 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:39.984 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:39.984 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 687
+10:22:40.146 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 2139925492: HTTP/1.1 200 OK
+10:22:40.147 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:40.147 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 7e913f44-8b70-5cad-84b1-7794865018bd
+10:22:40.147 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:40.147 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 688
+10:22:40.147 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>7e913f44-8b70-5cad-84b1-7794865018bd</RequestId></ResponseMetadata></ListQueuesResponse>"
+[TestNG] Test testListQueues(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 817ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testGetQueueAttributes(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+10:22:40.164 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.getAttributes
+10:22:40.165 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:40.165 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:40.165 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:40.165 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 64
+10:22:40.165 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:40.165 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:40.165 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-queue/[\n]"
+10:22:40.165 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=GetQueueAttributes&AttributeName.1=All&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A40.164Z&Version=2011-10-01"
+10:22:40.165 [i/o thread 0] DEBUG jclouds.signature - << "rThd0nJiNzvkU8TjPjQG+KdtrWZ5l1ADVJr592QEyY8="
+10:22:40.166 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:40.166 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:40.166 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:40.166 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 244
+10:22:40.169 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 219709201: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:40.169 [i/o thread 0] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=All&Signature=rThd0nJiNzvkU8TjPjQG%2BKdtrWZ5l1ADVJr592QEyY8%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A40.164Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:40.169 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:40.169 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:40.169 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:40.169 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 244
+10:22:40.322 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1017067399: HTTP/1.1 200 OK
+10:22:40.322 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:40.323 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 98a863ea-bcce-5bf1-82a0-2b3ab1ee6d44
+10:22:40.323 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:40.323 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 235
+10:22:40.323 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ChangeMessageVisibilityResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>98a863ea-bcce-5bf1-82a0-2b3ab1ee6d44</RequestId></ResponseMetadata></ChangeMessageVisibilityResponse>"
+10:22:40.326 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking MessageAsyncApi.receive
+10:22:40.326 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:40.327 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:40.327 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:40.327 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 80
+10:22:40.327 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:40.327 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:40.327 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-message/[\n]"
+10:22:40.327 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ReceiveMessage&AttributeName.1=All&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A40.326Z&Version=2011-10-01&VisibilityTimeout=0"
+10:22:40.328 [i/o thread 0] DEBUG jclouds.signature - << "2FKLOjgDmXHLuz9aEmdLyZ2vm31Pq0XhoHVCefM+z0w="
+10:22:40.328 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:40.329 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:40.329 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:40.329 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 260
+10:22:40.329 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 784754862: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:40.329 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ReceiveMessage&AttributeName.1=All&Signature=2FKLOjgDmXHLuz9aEmdLyZ2vm31Pq0XhoHVCefM%2Bz0w%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A40.326Z&Version=2011-10-01&VisibilityTimeout=0&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:40.329 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:40.329 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:40.329 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:40.330 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 260
+10:22:40.477 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -437020775: HTTP/1.1 200 OK
+10:22:40.477 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:40.477 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 504044c4-8870-579d-af06-0c148550df8b
+10:22:40.477 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:40.477 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 225
+10:22:40.478 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><SetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>504044c4-8870-579d-af06-0c148550df8b</RequestId></ResponseMetadata></SetQueueAttributesResponse>"
+10:22:40.582 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 219709201: HTTP/1.1 200 OK
+10:22:40.583 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:40.583 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: ba2fb328-4d0d-5224-b543-fbf8402d8674
+10:22:40.583 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:40.583 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 1092
+10:22:40.583 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>QueueArn</Name><Value>arn:aws:sqs:us-east-1:993194456877:adriancole-sqs-queue</Value></Attribute><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesDelayed</Name><Value>0</Value></Attribute><Attribute><Name>CreatedTimestamp</Name><Value>1347816157</Value></Attribute><Attribute><Name>LastModifiedTimestamp</Name><Value>1347816157</Value></Attribute><Attribute><Name>VisibilityTimeout</Name><Value>30</Value></Attribute><Attribute><Name>MaximumMessageSize</Name><Value>65536</Value></Attribute><Attribute><Name>MessageRetentionPeriod</Name><Value>345600</Value></Attribute><Attribute><Name>DelaySeconds</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>ba2fb328-4d0d-5224-b543-fbf8402d8674</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+10:22:40.600 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.getAttributes
+10:22:40.601 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:40.601 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:40.601 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:40.601 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 427
+10:22:40.601 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:40.601 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:40.602 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-queue/[\n]"
+10:22:40.602 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=GetQueueAttributes&AttributeName.1=QueueArn&AttributeName.10=DelaySeconds&AttributeName.2=ApproximateNumberOfMessages&AttributeName.3=ApproximateNumberOfMessagesNotVisible&AttributeName.4=ApproximateNumberOfMessagesDelayed&AttributeName.5=CreatedTimestamp&AttributeName.6=LastModifiedTimestamp&AttributeName.7=VisibilityTimeout&AttributeName.8=MaximumMessageSize&AttributeName.9=MessageRetentionPeriod&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A40.601Z&Version=2011-10-01"
+10:22:40.602 [i/o thread 0] DEBUG jclouds.signature - << "sVeh2Hr5fJGEUAZkvxECuHOioZ8xt99Y0C3oZlvOg4s="
+10:22:40.602 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:40.602 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:40.602 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:40.603 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 605
+10:22:40.603 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1569084904: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:40.603 [i/o thread 0] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=QueueArn&AttributeName.10=DelaySeconds&AttributeName.2=ApproximateNumberOfMessages&AttributeName.3=ApproximateNumberOfMessagesNotVisible&AttributeName.4=ApproximateNumberOfMessagesDelayed&AttributeName.5=CreatedTimestamp&AttributeName.6=LastModifiedTimestamp&AttributeName.7=VisibilityTimeout&AttributeName.8=MaximumMessageSize&AttributeName.9=MessageRetentionPeriod&Signature=sVeh2Hr5fJGEUAZkvxECuHOioZ8xt99Y0C3oZlvOg4s%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A40.601Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:40.603 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:40.603 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:40.603 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:40.603 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 605
+10:22:40.763 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 784754862: HTTP/1.1 200 OK
+10:22:40.763 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:40.763 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 6ab81c8b-ef0d-51fe-b536-545be22dfbcb
+10:22:40.763 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:40.763 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 1069
+10:22:40.763 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ReceiveMessageResult><Message><Body>hardyharhar</Body><MD5OfBody>e32aedf2b2b25355d04b1507055532e6</MD5OfBody><ReceiptHandle>Prl0vft3nRjKyqA7HVoWT0TNFbN/FPjpGo+mrAkbjWfxA918z7/JHf4nV10hC81iE2auYjewPxaX1uIqIQEr6qt51nQ8Dd7d6gmr5IhF7xjr8FCReIF8qZEWDpNuWfy2mN9mjFZGSacHGc1tpR9yV623UkF7BIkjWPXJpzyFdhtCB9GhOB8gkhOLzZp+brz8ol+x0CilgLdEcGBmTDsyaFyRybvMG+K44KxrY+Pcvk4m/nktVYMnDFw972M4YIe/jEVjAuRSNp75M0d6RH7KCzEXorsoOeds1z9OdHsr1+4=</ReceiptHandle><Attribute><Name>SenderId</Name><Value>993194456877</Value></Attribute><Attribute><Name>ApproximateFirstReceiveTimestamp</Name><Value>1347816158959</Value></Attribute><Attribute><Name>ApproximateReceiveCount</Name><Value>3</Value></Attribute><Attribute><Name>SentTimestamp</Name><Value>1347816158533</Value></Attribute><MessageId>0546dd81-249a-4564-887e-a6619c6bc56e</MessageId></Message></ReceiveMessageResult><ResponseMetadata><RequestId>6ab81c8b-ef0d-51fe-b536-545be22dfbcb</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+[TestNG] Test testChangeMessageVisibility(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 1740ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testDeleteMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
+10:22:40.864 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking MessageAsyncApi.delete
+10:22:40.865 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:40.865 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:40.866 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:40.866 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 376
+10:22:40.866 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:40.866 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:40.866 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-message/[\n]"
+10:22:40.866 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=DeleteMessage&ReceiptHandle=Prl0vft3nRjKyqA7HVoWT0TNFbN%2FFPjpGo%2BmrAkbjWfxA918z7%2FJHf4nV10hC81iE2auYjewPxaX1uIqIQEr6qt51nQ8Dd7d6gmr5IhF7xjr8FCReIF8qZEWDpNuWfy2mN9mjFZGSacHGc1tpR9yV623UkF7BIkjWPXJpzyFdhtCB9GhOB8gkhOLzZp%2Bbrz8ol%2Bx0CilgLdEcGBmTDsyaFyRybvMG%2BK44KxrY%2BPcvk4m%2FnktVYMnDFw972M4YIe%2FjEVjAuRSNp75M0d6RH7KC6O8eXvZ6EzW1z9OdHsr1%2B4%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A40.865Z&Version=2011-10-01"
+10:22:40.867 [i/o thread 0] DEBUG jclouds.signature - << "FuLlTIKMi4J9NB/ozOVfPuk8NCaCoxqQcdReN7p3bIE="
+10:22:40.867 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:40.867 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:40.867 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:40.867 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 556
+10:22:40.867 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 451304548: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:40.867 [i/o thread 0] DEBUG jclouds.wire - >> "Action=DeleteMessage&ReceiptHandle=Prl0vft3nRjKyqA7HVoWT0TNFbN%2FFPjpGo%2BmrAkbjWfxA918z7%2FJHf4nV10hC81iE2auYjewPxaX1uIqIQEr6qt51nQ8Dd7d6gmr5IhF7xjr8FCReIF8qZEWDpNuWfy2mN9mjFZGSacHGc1tpR9yV623UkF7BIkjWPXJpzyFdhtCB9GhOB8gkhOLzZp%2Bbrz8ol%2Bx0CilgLdEcGBmTDsyaFyRybvMG%2BK44KxrY%2BPcvk4m%2FnktVYMnDFw972M4YIe%2FjEVjAuRSNp75M0d6RH7KC6O8eXvZ6EzW1z9OdHsr1%2B4%3D&Signature=FuLlTIKMi4J9NB%2FozOVfPuk8NCaCoxqQcdReN7p3bIE%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A40.865Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:40.868 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:40.868 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:40.868 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:40.868 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 556
+10:22:41.103 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1569084904: HTTP/1.1 200 OK
+10:22:41.104 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:41.104 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: e0f64f93-6161-54e9-8a20-07436c4052dc
+10:22:41.104 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:41.104 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 1092
+10:22:41.104 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>QueueArn</Name><Value>arn:aws:sqs:us-east-1:993194456877:adriancole-sqs-queue</Value></Attribute><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesDelayed</Name><Value>0</Value></Attribute><Attribute><Name>CreatedTimestamp</Name><Value>1347816157</Value></Attribute><Attribute><Name>LastModifiedTimestamp</Name><Value>1347816157</Value></Attribute><Attribute><Name>VisibilityTimeout</Name><Value>30</Value></Attribute><Attribute><Name>MaximumMessageSize</Name><Value>65536</Value></Attribute><Attribute><Name>MessageRetentionPeriod</Name><Value>345600</Value></Attribute><Attribute><Name>DelaySeconds</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>e0f64f93-6161-54e9-8a20-07436c4052dc</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+[TestNG] Test testGetQueueAttributes(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 966ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testSetQueueAttribute(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+10:22:41.120 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.setAttribute
+10:22:41.121 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:41.121 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.121 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.121 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 99
+10:22:41.122 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:41.122 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:41.122 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-queue/[\n]"
+10:22:41.122 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=SetQueueAttributes&Attribute.Name=MaximumMessageSize&Attribute.Value=1024&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.121Z&Version=2011-10-01"
+10:22:41.122 [i/o thread 0] DEBUG jclouds.signature - << "6cNOem5I0sQFmWxLW7NJ2I08vxHx4BGk+DStTjPlq+w="
+10:22:41.123 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:41.123 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:41.123 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:41.123 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 281
+10:22:41.123 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -282696947: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:41.124 [i/o thread 0] DEBUG jclouds.wire - >> "Action=SetQueueAttributes&Attribute.Name=MaximumMessageSize&Attribute.Value=1024&Signature=6cNOem5I0sQFmWxLW7NJ2I08vxHx4BGk%2BDStTjPlq%2Bw%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.121Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:41.124 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:41.124 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.124 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.124 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 281
+10:22:41.336 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 451304548: HTTP/1.1 200 OK
+10:22:41.336 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:41.336 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: cab0f6a1-e311-527f-a0a7-be71ee305430
+10:22:41.336 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:41.336 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 215
+10:22:41.336 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><DeleteMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>cab0f6a1-e311-527f-a0a7-be71ee305430</RequestId></ResponseMetadata></DeleteMessageResponse>"
+10:22:41.342 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking MessageAsyncApi.receive
+10:22:41.343 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:41.343 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.343 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.343 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 40
+10:22:41.343 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:41.343 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:41.343 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-message/[\n]"
+10:22:41.343 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=ReceiveMessage&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.343Z&Version=2011-10-01"
+10:22:41.344 [i/o thread 0] DEBUG jclouds.signature - << "1tKzGH+u34+LC9Spg14ISKcTny1sReW60vw8y1r9JqU="
+10:22:41.344 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:41.344 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:41.344 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:41.344 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 222
+10:22:41.344 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -2005224973: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:41.348 [i/o thread 0] DEBUG jclouds.wire - >> "Action=ReceiveMessage&Signature=1tKzGH%2Bu34%2BLC9Spg14ISKcTny1sReW60vw8y1r9JqU%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.343Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:41.348 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:41.348 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.348 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.348 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 222
+[TestNG] Test testAddAnonymousPermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest) succeeded: 3304ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testRemovePermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest)
+10:22:41.356 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking PermissionAsyncApi.remove
+10:22:41.357 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:41.357 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.357 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.357 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 54
+10:22:41.357 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:41.357 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:41.357 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-permission/[\n]"
+10:22:41.357 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=RemovePermission&Label=fubar&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.357Z&Version=2011-10-01"
+10:22:41.358 [i/o thread 0] DEBUG jclouds.signature - << "hAXw8eg9PXXOM5SCaW2zXUmi7XBTHMPKhl3Q96s2mls="
+10:22:41.358 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:41.358 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:41.358 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:41.358 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 232
+10:22:41.358 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 839758405: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:41.358 [i/o thread 0] DEBUG jclouds.wire - >> "Action=RemovePermission&Label=fubar&Signature=hAXw8eg9PXXOM5SCaW2zXUmi7XBTHMPKhl3Q96s2mls%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.357Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:41.358 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:41.359 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.359 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.359 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 232
+10:22:41.637 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -282696947: HTTP/1.1 200 OK
+10:22:41.637 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:41.637 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 85e31475-cbc0-5d2a-a55e-5ca5c6e1e564
+10:22:41.637 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:41.637 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 225
+10:22:41.638 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><SetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>85e31475-cbc0-5d2a-a55e-5ca5c6e1e564</RequestId></ResponseMetadata></SetQueueAttributesResponse>"
+10:22:41.642 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.getAttributes
+10:22:41.643 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:41.643 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.643 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.643 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 64
+10:22:41.643 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:41.643 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:41.643 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-queue/[\n]"
+10:22:41.643 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=GetQueueAttributes&AttributeName.1=All&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.642Z&Version=2011-10-01"
+10:22:41.644 [i/o thread 0] DEBUG jclouds.signature - << "wTZ8OQjyCuaYGXYdrZ+HGvhIwxarOIleaLoYO43JPdw="
+10:22:41.644 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:41.644 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:41.644 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:41.644 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 244
+10:22:41.644 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1043763560: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:41.645 [i/o thread 0] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=All&Signature=wTZ8OQjyCuaYGXYdrZ%2BHGvhIwxarOIleaLoYO43JPdw%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.642Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:41.645 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:41.645 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.645 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.645 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 244
+10:22:41.807 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -2005224973: HTTP/1.1 200 OK
+10:22:41.808 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:41.808 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 95142471-c8c2-5ded-b71d-6ca1c5e3fc14
+10:22:41.808 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:41.808 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 240
+10:22:41.808 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ReceiveMessageResult/><ResponseMetadata><RequestId>95142471-c8c2-5ded-b71d-6ca1c5e3fc14</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+[TestNG] Test testDeleteMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 1042ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+10:22:41.814 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.delete
+10:22:41.814 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:41.814 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.814 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.815 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 37
+10:22:41.815 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:41.815 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:41.815 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-message/[\n]"
+10:22:41.815 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=DeleteQueue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.814Z&Version=2011-10-01"
+10:22:41.815 [i/o thread 0] DEBUG jclouds.signature - << "l2P9tn2of1Wo5uNZeGJWx8dTDKlKOcUzus/2PHCZQ6Y="
+10:22:41.816 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:41.816 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:41.816 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:41.816 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 217
+10:22:41.816 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 354670320: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:41.816 [i/o thread 0] DEBUG jclouds.wire - >> "Action=DeleteQueue&Signature=l2P9tn2of1Wo5uNZeGJWx8dTDKlKOcUzus%2F2PHCZQ6Y%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.814Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:41.816 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-message/ HTTP/1.1
+10:22:41.817 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.817 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.817 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 217
+10:22:41.861 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 839758405: HTTP/1.1 200 OK
+10:22:41.862 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:41.862 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 2c36a393-6f38-5499-a8cc-eb4362198616
+10:22:41.862 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:41.862 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 221
+10:22:41.862 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><RemovePermissionResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>2c36a393-6f38-5499-a8cc-eb4362198616</RequestId></ResponseMetadata></RemovePermissionResponse>"
+10:22:41.866 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.getAttribute
+10:22:41.867 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:41.867 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.867 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.867 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 67
+10:22:41.868 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:41.868 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:41.868 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-permission/[\n]"
+10:22:41.868 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=GetQueueAttributes&AttributeName.1=Policy&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.867Z&Version=2011-10-01"
+10:22:41.868 [i/o thread 0] DEBUG jclouds.signature - << "TFemlevT/TPZkrM/MoscFrQeWaAKvBWDPLA8XjGbccU="
+10:22:41.868 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:41.869 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:41.869 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:41.869 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 249
+10:22:41.869 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1720579593: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:41.869 [i/o thread 0] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=Policy&Signature=TFemlevT%2FTPZkrM%2FMoscFrQeWaAKvBWDPLA8XjGbccU%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A41.867Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:41.869 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:41.869 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:41.869 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:41.869 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 249
+10:22:42.051 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1043763560: HTTP/1.1 200 OK
+10:22:42.051 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:42.051 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: bc15e1c6-ecad-5d93-ac94-a916e18c25a5
+10:22:42.052 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:42.052 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 1091
+10:22:42.052 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>QueueArn</Name><Value>arn:aws:sqs:us-east-1:993194456877:adriancole-sqs-queue</Value></Attribute><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesDelayed</Name><Value>0</Value></Attribute><Attribute><Name>CreatedTimestamp</Name><Value>1347816157</Value></Attribute><Attribute><Name>LastModifiedTimestamp</Name><Value>1347816161</Value></Attribute><Attribute><Name>VisibilityTimeout</Name><Value>30</Value></Attribute><Attribute><Name>MaximumMessageSize</Name><Value>1024</Value></Attribute><Attribute><Name>MessageRetentionPeriod</Name><Value>345600</Value></Attribute><Attribute><Name>DelaySeconds</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>bc15e1c6-ecad-5d93-ac94-a916e18c25a5</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+[TestNG] Test testSetQueueAttribute(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 937ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+10:22:42.058 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.delete
+10:22:42.059 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:42.059 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:42.059 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:42.060 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 37
+10:22:42.060 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:42.060 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:42.060 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-queue/[\n]"
+10:22:42.060 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=DeleteQueue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A42.059Z&Version=2011-10-01"
+10:22:42.060 [i/o thread 0] DEBUG jclouds.signature - << "WIFBln01EIeFfOn/BjuTZJyAJE2Y/2LiOMoGKZ0fWY4="
+10:22:42.061 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:42.061 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:42.061 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:42.061 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 219
+10:22:42.062 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1941169253: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:42.062 [i/o thread 0] DEBUG jclouds.wire - >> "Action=DeleteQueue&Signature=WIFBln01EIeFfOn%2FBjuTZJyAJE2Y%2F2LiOMoGKZ0fWY4%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A42.059Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:42.062 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-queue/ HTTP/1.1
+10:22:42.062 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:42.062 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:42.062 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 219
+10:22:42.262 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1720579593: HTTP/1.1 200 OK
+10:22:42.262 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:42.262 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: c9a62508-ec75-5af7-ad9e-6dd8e15706c5
+10:22:42.262 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:42.262 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 509
+10:22:42.262 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>Policy</Name><Value>{&quot;Version&quot;:&quot;2008-10-17&quot;,&quot;Id&quot;:&quot;arn:aws:sqs:us-east-1:993194456877:adriancole-sqs-permission/SQSDefaultPolicy&quot;,&quot;Statement&quot;:[]}</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>c9a62508-ec75-5af7-ad9e-6dd8e15706c5</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+[TestNG] Test testRemovePermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest) succeeded: 910ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+10:22:42.267 [TestNG] DEBUG o.j.r.internal.AsyncRestClientProxy - Invoking QueueAsyncApi.delete
+10:22:42.267 [i/o thread 0] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:42.267 [i/o thread 0] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+10:22:42.267 [i/o thread 0] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+10:22:42.268 [i/o thread 0] DEBUG jclouds.signature - >> Content-Length: 37
+10:22:42.268 [i/o thread 0] DEBUG jclouds.signature - >> "POST[\n]"
+10:22:42.268 [i/o thread 0] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+10:22:42.268 [i/o thread 0] DEBUG jclouds.signature - >> "/993194456877/adriancole-sqs-permission/[\n]"
+10:22:42.268 [i/o thread 0] DEBUG jclouds.signature - >> "AWSAccessKeyId=067PW7Z9P0FNH7JDPE82&Action=DeleteQueue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A42.267Z&Version=2011-10-01"
+10:22:42.268 [i/o thread 0] DEBUG jclouds.signature - << "8xKgeIHCosVYAYaU/UnyjHf+S96EatdkY1V3vJRC1Zw="
+10:22:42.269 [i/o thread 0] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:42.269 [i/o thread 0] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+10:22:42.269 [i/o thread 0] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+10:22:42.269 [i/o thread 0] DEBUG jclouds.signature - << Content-Length: 219
+10:22:42.269 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1239675023: POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:42.269 [i/o thread 0] DEBUG jclouds.wire - >> "Action=DeleteQueue&Signature=8xKgeIHCosVYAYaU%2FUnyjHf%2BS96EatdkY1V3vJRC1Zw%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2012-09-16T17%3A22%3A42.267Z&Version=2011-10-01&AWSAccessKeyId=067PW7Z9P0FNH7JDPE82"
+10:22:42.269 [i/o thread 0] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs-permission/ HTTP/1.1
+10:22:42.269 [i/o thread 0] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+10:22:42.269 [i/o thread 0] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+10:22:42.270 [i/o thread 0] DEBUG jclouds.headers - >> Content-Length: 219
+10:22:42.294 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 354670320: HTTP/1.1 200 OK
+10:22:42.295 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:42.295 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 05ebac01-0ad3-5852-9be7-e4d107f1c0c6
+10:22:42.295 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:42.295 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 211
+10:22:42.295 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><DeleteQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>05ebac01-0ad3-5852-9be7-e4d107f1c0c6</RequestId></ResponseMetadata></DeleteQueueResponse>"
+10:22:42.583 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1941169253: HTTP/1.1 200 OK
+10:22:42.584 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:42.584 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: ce994cd8-8c3f-5c18-82ab-0408811d504a
+10:22:42.584 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:42.584 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 211
+10:22:42.584 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><DeleteQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>ce994cd8-8c3f-5c18-82ab-0408811d504a</RequestId></ResponseMetadata></DeleteQueueResponse>"
+10:22:42.757 [i/o thread 0] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1239675023: HTTP/1.1 200 OK
+10:22:42.757 [i/o thread 0] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+10:22:42.758 [i/o thread 0] DEBUG jclouds.headers - << x-amzn-RequestId: 91fbe0dc-7a79-590f-8420-a80c775be19b
+10:22:42.758 [i/o thread 0] DEBUG jclouds.headers - << Content-Type: text/xml
+10:22:42.758 [i/o thread 0] DEBUG jclouds.headers - << Content-Length: 211
+10:22:42.758 [i/o thread 0] DEBUG jclouds.wire - << "<?xml version="1.0"?><DeleteQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>91fbe0dc-7a79-590f-8420-a80c775be19b</RequestId></ResponseMetadata></DeleteQueueResponse>"
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.186 sec
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ aws-sqs ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ aws-sqs ---
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/target/aws-sqs-1.5.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-sqs/1.5.0-SNAPSHOT/aws-sqs-1.5.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-sqs/1.5.0-SNAPSHOT/aws-sqs-1.5.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/providers/aws-sqs/target/aws-sqs-1.5.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-sqs/1.5.0-SNAPSHOT/aws-sqs-1.5.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ aws-sqs ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 25.400s
+[INFO] Finished at: Sun Sep 16 10:22:45 PDT 2012
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
