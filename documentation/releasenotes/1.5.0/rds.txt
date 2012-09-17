@@ -1,0 +1,311 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:rds:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud rds api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ rds ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/rds/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ rds ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ rds ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ rds ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ rds ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ rds ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/rds/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ rds ---
+[INFO] Compiling 36 source files to /Users/adriancole/workspace/git/jclouds/labs/rds/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ rds ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/rds/src/test/clojure
+[INFO] Copying 16 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ rds ---
+[INFO] Compiling 20 source files to /Users/adriancole/workspace/git/jclouds/labs/rds/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ rds ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/rds/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@2678a212
+Starting test testCreateWithMinumumParamsWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest)
+Starting test testCreateWithOptionalParamsWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest)
+Starting test testDeleteAndSaveSnapshotWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest)
+Starting test testDeleteWhenInvalidStateDeleting(org.jclouds.rds.features.InstanceApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest)
+[pool-2-thread-2] Test testCreateWithOptionalParamsWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 1528ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testDeleteWhenResponseIs404(org.jclouds.rds.features.InstanceApiExpectTest)
+[pool-2-thread-4] Test testDeleteWhenInvalidStateDeleting(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 1519ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testGetWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest)
+[pool-2-thread-3] Test testDeleteAndSaveSnapshotWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 1532ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testGetWhenResponseIs404(org.jclouds.rds.features.InstanceApiExpectTest)
+[pool-2-thread-5] Test testDeleteWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 1532ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testList2PagesWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest)
+[pool-2-thread-1] Test testCreateWithMinumumParamsWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 1589ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest)
+[pool-2-thread-3] Test testGetWhenResponseIs404(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 473ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs404(org.jclouds.rds.features.InstanceApiExpectTest)
+[pool-2-thread-2] Test testDeleteWhenResponseIs404(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 512ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testListWithOptionsWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest)
+[pool-2-thread-4] Test testGetWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 510ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testList2PagesWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 651ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testListWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 621ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testListWhenResponseIs404(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 386ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testListWithOptionsWhenResponseIs2xx(org.jclouds.rds.features.InstanceApiExpectTest) succeeded: 377ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testAuthorizeIngressToEC2SecurityGroupOfOwnerWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+Starting test testAuthorizeIngressToIPRangeWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+Starting test testCreateInVPCWithNameAndDescriptionWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+Starting test testAuthorizeIngressToVPCSecurityGroupWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+Starting test testCreateWithNameAndDescriptionWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-3] Test testAuthorizeIngressToVPCSecurityGroupWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 376ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-2] Test testAuthorizeIngressToIPRangeWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 468ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testDeleteWhenResponseIs404(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-1] Test testAuthorizeIngressToEC2SecurityGroupOfOwnerWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 481ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testGetWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-4] Test testCreateInVPCWithNameAndDescriptionWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 436ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testGetWhenResponseIs404(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-5] Test testCreateWithNameAndDescriptionWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 421ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testList2PagesWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-3] Test testDeleteWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 401ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-1] Test testGetWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 414ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs404(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-4] Test testGetWhenResponseIs404(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 491ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testListWithOptionsWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-2] Test testDeleteWhenResponseIs404(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 510ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testRevokeIngressFromEC2SecurityGroupOfOwnerWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-5] Test testList2PagesWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 529ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testRevokeIngressFromIPRangeWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-1] Test testListWhenResponseIs404(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 473ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testRevokeIngressFromVPCSecurityGroupWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest)
+[pool-3-thread-3] Test testListWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 556ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+[pool-3-thread-4] Test testListWithOptionsWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 491ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+[pool-3-thread-2] Test testRevokeIngressFromEC2SecurityGroupOfOwnerWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 484ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+[pool-3-thread-5] Test testRevokeIngressFromIPRangeWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 500ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+[pool-3-thread-1] Test testRevokeIngressFromVPCSecurityGroupWhenResponseIs2xx(org.jclouds.rds.features.SecurityGroupApiExpectTest) succeeded: 293ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.rds.features.SubnetGroupApiExpectTest)
+Starting test testGetWhenResponseIs2xx(org.jclouds.rds.features.SubnetGroupApiExpectTest)
+Starting test testGetWhenResponseIs404(org.jclouds.rds.features.SubnetGroupApiExpectTest)
+Starting test testDeleteWhenResponseIs404(org.jclouds.rds.features.SubnetGroupApiExpectTest)
+Starting test testList2PagesWhenResponseIs2xx(org.jclouds.rds.features.SubnetGroupApiExpectTest)
+[pool-4-thread-2] Test testDeleteWhenResponseIs404(org.jclouds.rds.features.SubnetGroupApiExpectTest) succeeded: 290ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.rds.features.SubnetGroupApiExpectTest)
+[pool-4-thread-1] Test testDeleteWhenResponseIs2xx(org.jclouds.rds.features.SubnetGroupApiExpectTest) succeeded: 400ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+[pool-4-thread-3] Test testGetWhenResponseIs2xx(org.jclouds.rds.features.SubnetGroupApiExpectTest) succeeded: 389ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs404(org.jclouds.rds.features.SubnetGroupApiExpectTest)
+Starting test testListWithOptionsWhenResponseIs2xx(org.jclouds.rds.features.SubnetGroupApiExpectTest)
+[pool-4-thread-4] Test testGetWhenResponseIs404(org.jclouds.rds.features.SubnetGroupApiExpectTest) succeeded: 462ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+[pool-4-thread-5] Test testList2PagesWhenResponseIs2xx(org.jclouds.rds.features.SubnetGroupApiExpectTest) succeeded: 380ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testListWhenResponseIs2xx(org.jclouds.rds.features.SubnetGroupApiExpectTest) succeeded: 402ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+[pool-4-thread-1] Test testListWhenResponseIs404(org.jclouds.rds.features.SubnetGroupApiExpectTest) succeeded: 322ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+[pool-4-thread-3] Test testListWithOptionsWhenResponseIs2xx(org.jclouds.rds.features.SubnetGroupApiExpectTest) succeeded: 330ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testMarker(org.jclouds.rds.options.ListInstancesOptionsTest)
+[pool-5-thread-1] Test testMarker(org.jclouds.rds.options.ListInstancesOptionsTest) succeeded: 6ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testMarkerStatic(org.jclouds.rds.options.ListInstancesOptionsTest)
+[pool-5-thread-2] Test testMarkerStatic(org.jclouds.rds.options.ListInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testNameStatic(org.jclouds.rds.options.ListInstancesOptionsTest)
+[pool-5-thread-4] Test testNameStatic(org.jclouds.rds.options.ListInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testName(org.jclouds.rds.options.ListInstancesOptionsTest)
+[pool-5-thread-3] Test testName(org.jclouds.rds.options.ListInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testMarker(org.jclouds.rds.options.ListSecurityGroupsOptionsTest)
+[pool-6-thread-1] Test testMarker(org.jclouds.rds.options.ListSecurityGroupsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testMarkerStatic(org.jclouds.rds.options.ListSecurityGroupsOptionsTest)
+[pool-6-thread-2] Test testMarkerStatic(org.jclouds.rds.options.ListSecurityGroupsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test testMarker(org.jclouds.rds.options.ListSubnetGroupsOptionsTest)
+[pool-7-thread-1] Test testMarker(org.jclouds.rds.options.ListSubnetGroupsOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testMarkerStatic(org.jclouds.rds.options.ListSubnetGroupsOptionsTest)
+[pool-7-thread-2] Test testMarkerStatic(org.jclouds.rds.options.ListSubnetGroupsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test test(org.jclouds.rds.parse.DescribeDBInstancesResponseTest)
+[pool-8-thread-1] Test test(org.jclouds.rds.parse.DescribeDBInstancesResponseTest) succeeded: 5ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test test(org.jclouds.rds.parse.DescribeDBSecurityGroupsResponseTest)
+[pool-9-thread-1] Test test(org.jclouds.rds.parse.DescribeDBSecurityGroupsResponseTest) succeeded: 6ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test test(org.jclouds.rds.parse.DescribeDBSubnetGroupsResponseTest)
+[pool-10-thread-1] Test test(org.jclouds.rds.parse.DescribeDBSubnetGroupsResponseTest) succeeded: 5ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test test(org.jclouds.rds.parse.GetInstanceResponseTest)
+[pool-11-thread-1] Test test(org.jclouds.rds.parse.GetInstanceResponseTest) succeeded: 6ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test test(org.jclouds.rds.parse.GetSecurityGroupResponseTest)
+[pool-12-thread-1] Test test(org.jclouds.rds.parse.GetSecurityGroupResponseTest) succeeded: 7ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test test(org.jclouds.rds.parse.GetSubnetGroupResponseTest)
+[pool-13-thread-1] Test test(org.jclouds.rds.parse.GetSubnetGroupResponseTest) succeeded: 5ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.rds.RDSApiMetadataTest)
+[pool-14-thread-1] Test testAllContains(org.jclouds.rds.RDSApiMetadataTest) succeeded: 24ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.rds.RDSApiMetadataTest)
+[pool-14-thread-2] Test testTransformableToContains(org.jclouds.rds.RDSApiMetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testContextAssignableFromRestContext(org.jclouds.rds.RDSApiMetadataTest)
+Starting test testWithId(org.jclouds.rds.RDSApiMetadataTest)
+[pool-14-thread-4] Test testContextAssignableFromRestContext(org.jclouds.rds.RDSApiMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+[pool-14-thread-3] Test testWithId(org.jclouds.rds.RDSApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.966 sec
+
+Results :
+
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ rds ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ rds ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/rds/target/rds-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ rds ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/rds/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@4cbfea1d
+Starting test testDescribeSubnetGroups(org.jclouds.rds.features.SubnetGroupApiLiveTest)
+Starting test testCreateSecurityGroup(org.jclouds.rds.features.SecurityGroupApiLiveTest)
+Sep 17, 2012 9:12:46 AM org.jclouds.rds.features.SecurityGroupApiLiveTest testCreateSecurityGroup
+INFO: created securityGroup: SecurityGroup{name=adriancole-jclouds-securitygroup, description=jclouds, ec2SecurityGroups=[], ipRanges=[], ownerId=993194456877}
+[TestNG] Test testCreateSecurityGroup(org.jclouds.rds.features.SecurityGroupApiLiveTest) succeeded: 1438ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testDescribeSecurityGroups(org.jclouds.rds.features.SecurityGroupApiLiveTest)
+Sep 17, 2012 9:12:46 AM org.jclouds.rds.features.InstanceApiLiveTest createSecurityGroupAndAuthorizeIngressToAll
+INFO: created securityGroup: SecurityGroup{name=adriancole-jclouds-instance, description=jclouds, ec2SecurityGroups=[], ipRanges=[], ownerId=993194456877}
+[TestNG] Test testDescribeSubnetGroups(org.jclouds.rds.features.SubnetGroupApiLiveTest) succeeded: 2355ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[TestNG] Test testDescribeSecurityGroups(org.jclouds.rds.features.SecurityGroupApiLiveTest) succeeded: 1288ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testAuthorizeIPRange(org.jclouds.rds.features.SecurityGroupApiLiveTest)
+Sep 17, 2012 9:12:55 AM org.jclouds.rds.features.SecurityGroupApiLiveTest testAuthorizeIPRange
+INFO: ip range authorized: SecurityGroup{name=adriancole-jclouds-securitygroup, description=jclouds, ec2SecurityGroups=[], ipRanges=[IPRange{cidrIp=0.0.0.0/0, status=authorized}], ownerId=993194456877}
+[TestNG] Test testAuthorizeIPRange(org.jclouds.rds.features.SecurityGroupApiLiveTest) succeeded: 8370ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testRevokeIPRange(org.jclouds.rds.features.SecurityGroupApiLiveTest)
+Sep 17, 2012 9:12:56 AM org.jclouds.rds.features.InstanceApiLiveTest createSecurityGroupAndAuthorizeIngressToAll
+INFO: ip range authorized: SecurityGroup{name=adriancole-jclouds-instance, description=jclouds, ec2SecurityGroups=[], ipRanges=[IPRange{cidrIp=0.0.0.0/0, status=authorized}], ownerId=993194456877}
+Starting test testCreateInstance(org.jclouds.rds.features.InstanceApiLiveTest)
+Sep 17, 2012 9:12:57 AM org.jclouds.rds.features.InstanceApiLiveTest testCreateInstance
+INFO: created instance: Instance{id=adriancole-jclouds-instance, name=jclouds, instanceClass=db.t1.micro, status=creating, multiAZ=false, engine=mysql, engineVersion=5.5.25a, licenseModel=general-public-license, masterUsername=master, allocatedStorageGB=5, securityGroupNameToStatus={adriancole-jclouds-instance=active}}
+Sep 17, 2012 9:13:18 AM org.jclouds.rds.features.SecurityGroupApiLiveTest testRevokeIPRange
+INFO: ip range revoked: SecurityGroup{name=adriancole-jclouds-securitygroup, description=jclouds, ec2SecurityGroups=[], ipRanges=[], ownerId=993194456877}
+[TestNG] Test testRevokeIPRange(org.jclouds.rds.features.SecurityGroupApiLiveTest) succeeded: 22220ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testDeleteSecurityGroup(org.jclouds.rds.features.SecurityGroupApiLiveTest)
+Sep 17, 2012 9:13:18 AM org.jclouds.rds.features.SecurityGroupApiLiveTest testDeleteSecurityGroup
+INFO: securityGroup deleted: SecurityGroup{name=adriancole-jclouds-securitygroup, description=jclouds, ec2SecurityGroups=[], ipRanges=[], ownerId=993194456877}
+[TestNG] Test testDeleteSecurityGroup(org.jclouds.rds.features.SecurityGroupApiLiveTest) succeeded: 425ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Sep 17, 2012 9:17:30 AM org.jclouds.rds.features.InstanceApiLiveTest testCreateInstance
+INFO: instance available: Instance{id=adriancole-jclouds-instance, name=jclouds, instanceClass=db.t1.micro, endpoint=adriancole-jclouds-instance.cucwyds3jbun.us-east-1.rds.amazonaws.com:3306, status=available, availabilityZone=us-east-1e, multiAZ=false, engine=mysql, engineVersion=5.5.25a, licenseModel=general-public-license, masterUsername=master, allocatedStorageGB=5, createdTime=Mon Sep 17 09:17:30 PDT 2012, securityGroupNameToStatus={adriancole-jclouds-instance=active}}
+[TestNG] Test testCreateInstance(org.jclouds.rds.features.InstanceApiLiveTest) succeeded: 274266ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testDescribeInstances(org.jclouds.rds.features.InstanceApiLiveTest)
+[TestNG] Test testDescribeInstances(org.jclouds.rds.features.InstanceApiLiveTest) succeeded: 1298ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testPortResponds(org.jclouds.rds.features.InstanceApiLiveTest)
+Sep 17, 2012 9:17:32 AM org.jclouds.rds.features.InstanceApiLiveTest testPortResponds
+INFO: instance reachable on: adriancole-jclouds-instance.cucwyds3jbun.us-east-1.rds.amazonaws.com:3306
+[TestNG] Test testPortResponds(org.jclouds.rds.features.InstanceApiLiveTest) succeeded: 514ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testDeleteInstance(org.jclouds.rds.features.InstanceApiLiveTest)
+Sep 17, 2012 9:21:55 AM org.jclouds.rds.features.InstanceApiLiveTest testDeleteInstance
+INFO: instance deleted: Instance{id=adriancole-jclouds-instance, name=jclouds, instanceClass=db.t1.micro, endpoint=adriancole-jclouds-instance.cucwyds3jbun.us-east-1.rds.amazonaws.com:3306, status=deleting, availabilityZone=us-east-1e, multiAZ=false, engine=mysql, engineVersion=5.5.25a, licenseModel=general-public-license, masterUsername=master, allocatedStorageGB=5, createdTime=Mon Sep 17 09:17:30 PDT 2012, securityGroupNameToStatus={adriancole-jclouds-instance=active}}
+[TestNG] Test testDeleteInstance(org.jclouds.rds.features.InstanceApiLiveTest) succeeded: 262573ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 553.303 sec
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ rds ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ rds ---
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/rds/target/rds-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/rds/1.6.0-SNAPSHOT/rds-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/rds/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/labs/rds/1.6.0-SNAPSHOT/rds-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/rds/target/rds-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/rds/1.6.0-SNAPSHOT/rds-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ rds ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9:34.639s
+[INFO] Finished at: Mon Sep 17 09:21:58 PDT 2012
+[INFO] Final Memory: 16M/265M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,531 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:joyentcloud:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud joyentcloud api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ joyentcloud ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/joyentcloud/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ joyentcloud ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ joyentcloud ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ joyentcloud ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ joyentcloud ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ joyentcloud ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/joyentcloud/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ joyentcloud ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/jclouds/labs/joyentcloud/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ joyentcloud ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/joyentcloud/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/joyentcloud/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ joyentcloud ---
+[INFO] Compiling 9 source files to /Users/adriancole/workspace/git/jclouds/labs/joyentcloud/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ joyentcloud ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/joyentcloud/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.joyent.joyentcloud.JoyentCloudProviderMetadataTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@4139eeda
+Starting test testAllContains(org.jclouds.joyent.joyentcloud.JoyentCloudProviderMetadataTest)
+[pool-2-thread-1] Test testAllContains(org.jclouds.joyent.joyentcloud.JoyentCloudProviderMetadataTest) succeeded: 12ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testOfApiContains(org.jclouds.joyent.joyentcloud.JoyentCloudProviderMetadataTest)
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.joyent.joyentcloud.JoyentCloudProviderMetadataTest) succeeded: 4ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.joyent.joyentcloud.JoyentCloudProviderMetadataTest)
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.joyent.joyentcloud.JoyentCloudProviderMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.joyent.joyentcloud.JoyentCloudProviderMetadataTest)
+[pool-2-thread-4] Test testWithId(org.jclouds.joyent.joyentcloud.JoyentCloudProviderMetadataTest) succeeded: 4ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.978 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ joyentcloud ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ joyentcloud ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/joyentcloud/target/joyentcloud-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ joyentcloud ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/joyentcloud/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@6b4da8f4
+Starting test testGetDatacenters(org.jclouds.joyent.joyentcloud.features.JoyentCloudDatacenterApiLiveTest)
+Starting test testListAndGetPackages(org.jclouds.joyent.joyentcloud.features.JoyentCloudPackageApiLiveTest)
+Starting test testCreateKey(org.jclouds.joyent.joyentcloud.features.JoyentCloudKeyApiLiveTest)
+Starting test testListAndGetDatasets(org.jclouds.joyent.joyentcloud.features.JoyentCloudDatasetApiLiveTest)
+[TestNG] Test testGetDatacenters(org.jclouds.joyent.joyentcloud.features.JoyentCloudDatacenterApiLiveTest) succeeded: 2203ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[TestNG] Test testCreateKey(org.jclouds.joyent.joyentcloud.features.JoyentCloudKeyApiLiveTest) succeeded: 2453ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testListAndGetKeys(org.jclouds.joyent.joyentcloud.features.JoyentCloudKeyApiLiveTest)
+Starting test setServiceDefaults(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testCompareSizes(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+Starting test testCreateMachine(org.jclouds.joyent.joyentcloud.features.JoyentCloudMachineApiLiveTest)
+[TestNG] Test testListAndGetKeys(org.jclouds.joyent.joyentcloud.features.JoyentCloudKeyApiLiveTest) succeeded: 8131ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testDuplicateKey(org.jclouds.joyent.joyentcloud.features.JoyentCloudKeyApiLiveTest)
+[TestNG] Test testDuplicateKey(org.jclouds.joyent.joyentcloud.features.JoyentCloudKeyApiLiveTest) succeeded: 231ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testDestroyKey(org.jclouds.joyent.joyentcloud.features.JoyentCloudKeyApiLiveTest)
+[TestNG] Test testDestroyKey(org.jclouds.joyent.joyentcloud.features.JoyentCloudKeyApiLiveTest) succeeded: 197ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Sep 17, 2012 9:08:00 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: smallest {id=us-east-1/Extra Small 512 MB, providerId=Extra Small 512 MB, name=Extra Small 512 MB, location={scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{type=LOCAL, size=15360.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+Sep 17, 2012 9:08:00 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: fastest {id=us-east-1/Extra Small 512 MB, providerId=Extra Small 512 MB, name=Extra Small 512 MB, location={scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{type=LOCAL, size=15360.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+Sep 17, 2012 9:08:00 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: biggest {id=us-east-1/XXXL 64GB, providerId=XXXL 64GB, name=XXXL 64GB, location={scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}, processors=[{cores=1.0, speed=1.0}], ram=65536, volumes=[{type=LOCAL, size=1572864.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+[TestNG] Test testCompareSizes(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 7805ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+Starting test testGetDatacenters(org.jclouds.joyent.joyentcloud.JoyentCloudLiveTest)
+[TestNG] Test testGetDatacenters(org.jclouds.joyent.joyentcloud.JoyentCloudLiveTest) succeeded: 233ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testCompareSizes(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 1912ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+Sep 17, 2012 9:08:02 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}
+Sep 17, 2012 9:08:02 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-west-1, description=us-west-1, parent=joyentcloud, iso3166Codes=[US-CA]}
+Sep 17, 2012 9:08:02 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-sw-1, description=us-sw-1, parent=joyentcloud, iso3166Codes=[US-NV]}
+Sep 17, 2012 9:08:02 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=eu-ams-1, description=eu-ams-1, parent=joyentcloud, iso3166Codes=[NL-NH]}
+[TestNG] Test testGetAssignableLocations(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testImageById(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testImageById(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 465ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testImagesCache(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testListImages(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testListSizes(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testOptionToNotBlock(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+smallest {id=us-east-1/Extra Small 512 MB, providerId=Extra Small 512 MB, name=Extra Small 512 MB, location={scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{type=LOCAL, size=15360.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+fastest {id=us-east-1/Extra Small 512 MB, providerId=Extra Small 512 MB, name=Extra Small 512 MB, location={scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{type=LOCAL, size=15360.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+biggest {id=us-east-1/XXXL 64GB, providerId=XXXL 64GB, name=XXXL 64GB, location={scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}, processors=[{cores=1.0, speed=1.0}], ram=65536, volumes=[{type=LOCAL, size=1572864.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+[TestNG] Test testCompareSizes(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 3580ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testDefaultTemplateBuilder(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testDefaultTemplateBuilder(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 7ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testFromTemplate(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testFromTemplate(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 12ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+location {scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}
+location {scope=ZONE, id=us-west-1, description=us-west-1, parent=joyentcloud, iso3166Codes=[US-CA]}
+location {scope=ZONE, id=us-sw-1, description=us-sw-1, parent=joyentcloud, iso3166Codes=[US-NV]}
+location {scope=ZONE, id=eu-ams-1, description=eu-ams-1, parent=joyentcloud, iso3166Codes=[NL-NH]}
+[TestNG] Test testGetAssignableLocations(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 9ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 6ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 19ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 8ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 6ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 32ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanUseImageId(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanUseImageId(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 4020ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) failed.
+Test suite progress: tests succeeded: 31, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 32, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 33, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 34, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 35, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 36, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 37, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 38, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 39, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 40, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 41, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 42, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 10ms
+Test suite progress: tests succeeded: 43, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 44, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 45, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 46, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 47, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 48, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 49, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 50, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 51, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 52, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 53, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 54, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 55, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 56, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 57, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 58, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 59, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 60, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 61, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 62, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 63, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 64, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 65, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 66, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 8ms
+Test suite progress: tests succeeded: 67, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 68, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 69, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 70, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 71, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 72, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 73, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 74, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 75, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 76, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 77, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 6ms
+Test suite progress: tests succeeded: 78, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 79, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 80, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 81, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 82, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 83, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 84, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 15ms
+Test suite progress: tests succeeded: 85, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 86, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 87, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 88, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 89, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 90, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 91, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 92, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 93, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 94, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 95, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 96, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 97, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 98, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 99, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 100, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 101, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 102, failed: 1, skipped: 0.
+Starting test testTemplateBuilderWithImageIdSpecified(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testListAndGetPackages(org.jclouds.joyent.joyentcloud.features.JoyentCloudPackageApiLiveTest) succeeded: 23312ms
+Test suite progress: tests succeeded: 103, failed: 1, skipped: 0.
+[TestNG] Test testTemplateBuilderWithImageIdSpecified(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 6863ms
+Test suite progress: tests succeeded: 104, failed: 1, skipped: 0.
+Starting test testTemplateBuilderWithLoginUserSpecified(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testCreateMachine(org.jclouds.joyent.joyentcloud.features.JoyentCloudMachineApiLiveTest) succeeded: 24389ms
+Test suite progress: tests succeeded: 105, failed: 1, skipped: 0.
+Starting test testListAndGetMachines(org.jclouds.joyent.joyentcloud.features.JoyentCloudMachineApiLiveTest)
+[TestNG] Test testListAndGetMachines(org.jclouds.joyent.joyentcloud.features.JoyentCloudMachineApiLiveTest) succeeded: 3576ms
+Test suite progress: tests succeeded: 106, failed: 1, skipped: 0.
+Starting test testDuplicateMachineThrowsIllegalStateException(org.jclouds.joyent.joyentcloud.features.JoyentCloudMachineApiLiveTest)
+[TestNG] Test testTemplateBuilderWithLoginUserSpecified(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) succeeded: 6847ms
+Test suite progress: tests succeeded: 107, failed: 1, skipped: 0.
+Starting test testTemplateBuilder(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilder(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest) failed.
+Test suite progress: tests succeeded: 107, failed: 2, skipped: 0.
+[TestNG] Test testDuplicateMachineThrowsIllegalStateException(org.jclouds.joyent.joyentcloud.features.JoyentCloudMachineApiLiveTest) succeeded: 3418ms
+Test suite progress: tests succeeded: 108, failed: 2, skipped: 0.
+Starting test testSsh(org.jclouds.joyent.joyentcloud.features.JoyentCloudMachineApiLiveTest)
+[TestNG] Test testListAndGetDatasets(org.jclouds.joyent.joyentcloud.features.JoyentCloudDatasetApiLiveTest) succeeded: 51282ms
+Test suite progress: tests succeeded: 109, failed: 2, skipped: 0.
+{output=hello
+, error=, exitStatus=0}
+[TestNG] Test testSsh(org.jclouds.joyent.joyentcloud.features.JoyentCloudMachineApiLiveTest) succeeded: 16205ms
+Test suite progress: tests succeeded: 110, failed: 2, skipped: 0.
+Starting test testDeleteMachine(org.jclouds.joyent.joyentcloud.features.JoyentCloudMachineApiLiveTest)
+[TestNG] Test testDeleteMachine(org.jclouds.joyent.joyentcloud.features.JoyentCloudMachineApiLiveTest) succeeded: 429ms
+Test suite progress: tests succeeded: 111, failed: 2, skipped: 0.
+[TestNG] Test testOptionToNotBlock(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 46466ms
+Test suite progress: tests succeeded: 112, failed: 2, skipped: 0.
+Starting test testCreateAndRunAService(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+Sep 17, 2012 9:15:24 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest createAndRunAServiceInGroup
+INFO: << available node(us-east-1/d204b3a3-6ecd-4495-95d0-57edafc799f1) os({family=ubuntu, name=ubuntu-12.04, version=12.04, description=sdc:jpc:ubuntu-12.04:2.0.2, is64Bit=true}) in 393s
+Sep 17, 2012 9:17:19 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest createAndRunAServiceInGroup
+INFO: << configured node(us-east-1/d204b3a3-6ecd-4495-95d0-57edafc799f1) with java full version "1.6.0_24-b24" and jetty jetty-8.1.5.v20120716 in 104s
+Sep 17, 2012 9:17:25 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest trackAvailabilityOfProcessOnNode
+INFO: << start jetty on node(us-east-1/d204b3a3-6ecd-4495-95d0-57edafc799f1)[165.225.132.224:8080] [backgroundProcessMilliseconds=3235, socketOpenMilliseconds=3091]
+Sep 17, 2012 9:17:36 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest trackAvailabilityOfProcessOnNode
+INFO: << start jetty on node(us-east-1/d204b3a3-6ecd-4495-95d0-57edafc799f1)[165.225.132.224:8080] [backgroundProcessMilliseconds=3384, socketOpenMilliseconds=3093]
+[TestNG] Test testCreateAndRunAService(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 546295ms
+Test suite progress: tests succeeded: 113, failed: 2, skipped: 0.
+Starting test testCorrectAuthException(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 197ms
+Test suite progress: tests succeeded: 114, failed: 2, skipped: 0.
+Starting test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 114, failed: 3, skipped: 0.
+Starting test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+Sep 17, 2012 9:19:11 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest$1 call
+INFO: Started node us-east-1/1d925f80-f3bc-4e77-a60d-4dce216b9464
+Sep 17, 2012 9:19:13 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest$1 call
+INFO: Started node us-east-1/8fd35b9d-87d1-4b09-b68f-b84325cbfa3b
+[TestNG] Test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 61910ms
+Test suite progress: tests succeeded: 115, failed: 3, skipped: 0.
+Starting test testTemplateMatch(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testTemplateMatch(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 116, failed: 3, skipped: 0.
+Starting test testCreateTwoNodesWithRunScript(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testCreateTwoNodesWithRunScript(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 94084ms
+Test suite progress: tests succeeded: 117, failed: 3, skipped: 0.
+Starting test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+Sep 17, 2012 9:21:26 AM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired
+INFO: creating another node based on existing nodes' location: {scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}
+[TestNG] Test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 80029ms
+Test suite progress: tests succeeded: 118, failed: 3, skipped: 0.
+Starting test testCredentialsCache(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testCredentialsCache(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 93ms
+Test suite progress: tests succeeded: 119, failed: 3, skipped: 0.
+Starting test testGet(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testGet(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 9860ms
+Test suite progress: tests succeeded: 120, failed: 3, skipped: 0.
+Starting test testReboot(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testReboot(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) succeeded: 12026ms
+Test suite progress: tests succeeded: 121, failed: 3, skipped: 0.
+Starting test testSuspendResume(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest)
+[TestNG] Test testSuspendResume(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 121, failed: 4, skipped: 0.
+[TestNG] Test testGetNodesWithDetails(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 121, failed: 4, skipped: 1.
+[TestNG] Test testListNodes(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 121, failed: 4, skipped: 2.
+[TestNG] Test testDestroyNodes(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 121, failed: 4, skipped: 3.
+Tests run: 128, Failures: 4, Errors: 0, Skipped: 3, Time elapsed: 951.618 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testTemplateBuilderCannotFind(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest): (..)
+  testTemplateBuilder(org.jclouds.joyent.joyentcloud.JoyentCloudTemplateBuilderLiveTest): expected:<10.04> but was:<12.04>
+  testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest): {id=us-east-1/eb7477c2-da1d-493d-b3bd-03e9c7ad4664, providerId=eb7477c2-da1d-493d-b3bd-03e9c7ad4664, name=joyentcloud-r-3f7, location={scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}, group=joyentcloud-r, imageId=us-east-1/sdc:jpc:ubuntu-12.04:2.0.2, os={family=ubuntu, name=ubuntu-12.04, version=12.04, description=sdc:jpc:ubuntu-12.04:2.0.2, is64Bit=true}, status=RUNNING, loginPort=22, hostname=eb7477c2-da1d-493d-b3bd-03e9c7ad4664, privateAddresses=[10.112.3.250], publicAddresses=[165.225.132.224], hardware={id=us-east-1/Extra Small 512 MB, providerId=Extra Small 512 MB, name=Extra Small 512 MB, location={scope=ZONE, id=us-east-1, description=us-east-1, parent=joyentcloud, iso3166Codes=[US-VA]}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{type=LOCAL, size=15360.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}, loginUser=root}: {output=localhost(..)
+  testSuspendResume(org.jclouds.joyent.joyentcloud.JoyentCloudComputeServiceLiveTest): {"code":"InvalidState","message":"An incompatible transition has already been queued for this resource"}
+
+Tests run: 128, Failures: 4, Errors: 0, Skipped: 3
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16:01.334s
+[INFO] Finished at: Mon Sep 17 09:23:36 PDT 2012
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project joyentcloud: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/labs/joyentcloud/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
