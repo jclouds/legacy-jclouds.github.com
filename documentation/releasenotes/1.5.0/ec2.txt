@@ -1,0 +1,1742 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:ec2:bundle:1.5.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud ec2 api 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ ec2 ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/apis/ec2/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ ec2 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ ec2 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ ec2 ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ ec2 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ ec2 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ ec2 ---
+[INFO] Compiling 168 source files to /Users/adriancole/workspace/git/jclouds/apis/ec2/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ ec2 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/apis/ec2/src/test/clojure
+[INFO] Copying 56 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ ec2 ---
+[INFO] Compiling 101 source files to /Users/adriancole/workspace/git/jclouds/apis/ec2/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ ec2 ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/apis/ec2/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@4157aa53
+Starting test testMustBeBlockDeviceMapping(org.jclouds.ec2.binders.BindBlockDeviceMappingToIndexedFormParamsTest)
+Starting test testMustBeArray(org.jclouds.ec2.binders.BindBundleIdsToIndexedFormParamsTest)
+Starting test test(org.jclouds.ec2.binders.BindBundleIdsToIndexedFormParamsTest)
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindBlockDeviceMappingToIndexedFormParamsTest)
+Starting test testMapping(org.jclouds.ec2.binders.BindBlockDeviceMappingToIndexedFormParamsTest)
+[pool-2-thread-3] Test testNullIsBad(org.jclouds.ec2.binders.BindBlockDeviceMappingToIndexedFormParamsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testMustBeBlockDeviceMapping(org.jclouds.ec2.binders.BindBlockDeviceMappingToIndexedFormParamsTest) succeeded: 27ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindBundleIdsToIndexedFormParamsTest)
+[pool-2-thread-2] Test testNullIsBad(org.jclouds.ec2.binders.BindBundleIdsToIndexedFormParamsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ec2.binders.BindGroupNamesToIndexedFormParamsTest)
+Starting test testMustBeArray(org.jclouds.ec2.binders.BindGroupNamesToIndexedFormParamsTest)
+[pool-2-thread-3] Test testMustBeArray(org.jclouds.ec2.binders.BindGroupNamesToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindGroupNamesToIndexedFormParamsTest)
+[pool-2-thread-3] Test testNullIsBad(org.jclouds.ec2.binders.BindGroupNamesToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ec2.binders.BindInstanceIdsToIndexedFormParamsTest)
+[pool-2-thread-5] Test testMustBeArray(org.jclouds.ec2.binders.BindBundleIdsToIndexedFormParamsTest) succeeded: 28ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testMustBeArray(org.jclouds.ec2.binders.BindInstanceIdsToIndexedFormParamsTest)
+[pool-2-thread-5] Test testMustBeArray(org.jclouds.ec2.binders.BindInstanceIdsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindInstanceIdsToIndexedFormParamsTest)
+[pool-2-thread-5] Test testNullIsBad(org.jclouds.ec2.binders.BindInstanceIdsToIndexedFormParamsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ec2.binders.BindKeyNamesToIndexedFormParamsTest)
+[pool-2-thread-2] Test test(org.jclouds.ec2.binders.BindGroupNamesToIndexedFormParamsTest) succeeded: 8ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testMustBeArray(org.jclouds.ec2.binders.BindKeyNamesToIndexedFormParamsTest)
+[pool-2-thread-2] Test testMustBeArray(org.jclouds.ec2.binders.BindKeyNamesToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindKeyNamesToIndexedFormParamsTest)
+[pool-2-thread-5] Test test(org.jclouds.ec2.binders.BindKeyNamesToIndexedFormParamsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testNullIsBad(org.jclouds.ec2.binders.BindKeyNamesToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ec2.binders.BindProductCodesToIndexedFormParamsTest)
+Starting test testMustBeIterable(org.jclouds.ec2.binders.BindProductCodesToIndexedFormParamsTest)
+[pool-2-thread-2] Test testMustBeIterable(org.jclouds.ec2.binders.BindProductCodesToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindProductCodesToIndexedFormParamsTest)
+[pool-2-thread-2] Test testNullIsBad(org.jclouds.ec2.binders.BindProductCodesToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ec2.binders.BindPublicIpsToIndexedFormParamsTest)
+[pool-2-thread-1] Test testMapping(org.jclouds.ec2.binders.BindBlockDeviceMappingToIndexedFormParamsTest) succeeded: 15ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testMustBeArray(org.jclouds.ec2.binders.BindPublicIpsToIndexedFormParamsTest)
+[pool-2-thread-1] Test testMustBeArray(org.jclouds.ec2.binders.BindPublicIpsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindPublicIpsToIndexedFormParamsTest)
+[pool-2-thread-4] Test test(org.jclouds.ec2.binders.BindBundleIdsToIndexedFormParamsTest) succeeded: 17ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testNullIsBad(org.jclouds.ec2.binders.BindPublicIpsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ec2.binders.BindUserGroupsToIndexedFormParamsTest)
+Starting test testMustBeIterable(org.jclouds.ec2.binders.BindUserGroupsToIndexedFormParamsTest)
+[pool-2-thread-1] Test testMustBeIterable(org.jclouds.ec2.binders.BindUserGroupsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+[pool-2-thread-4] Test test(org.jclouds.ec2.binders.BindUserGroupsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindUserGroupsToIndexedFormParamsTest)
+Starting test testOnlyAllIsValid(org.jclouds.ec2.binders.BindUserGroupsToIndexedFormParamsTest)
+[pool-2-thread-1] Test testNullIsBad(org.jclouds.ec2.binders.BindUserGroupsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testOnlyAllIsValid(org.jclouds.ec2.binders.BindUserGroupsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testMustBeUserIdGroupPair(org.jclouds.ec2.binders.BindUserIdGroupPairToSourceSecurityGroupFormParamsTest)
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindUserIdGroupPairToSourceSecurityGroupFormParamsTest)
+[pool-2-thread-1] Test testMustBeUserIdGroupPair(org.jclouds.ec2.binders.BindUserIdGroupPairToSourceSecurityGroupFormParamsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testNullIsBad(org.jclouds.ec2.binders.BindUserIdGroupPairToSourceSecurityGroupFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ec2.binders.BindUserIdsToIndexedFormParamsTest)
+Starting test testUserIdGroupPair(org.jclouds.ec2.binders.BindUserIdGroupPairToSourceSecurityGroupFormParamsTest)
+[pool-2-thread-4] Test test(org.jclouds.ec2.binders.BindUserIdsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testUserIdGroupPair(org.jclouds.ec2.binders.BindUserIdGroupPairToSourceSecurityGroupFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testMustBeIterable(org.jclouds.ec2.binders.BindUserIdsToIndexedFormParamsTest)
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindUserIdsToIndexedFormParamsTest)
+[pool-2-thread-4] Test testMustBeIterable(org.jclouds.ec2.binders.BindUserIdsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ec2.binders.BindVolumeIdsToIndexedFormParamsTest)
+[pool-2-thread-4] Test test(org.jclouds.ec2.binders.BindVolumeIdsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testMustBeArray(org.jclouds.ec2.binders.BindVolumeIdsToIndexedFormParamsTest)
+[pool-2-thread-4] Test testMustBeArray(org.jclouds.ec2.binders.BindVolumeIdsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindVolumeIdsToIndexedFormParamsTest)
+[pool-2-thread-4] Test testNullIsBad(org.jclouds.ec2.binders.BindVolumeIdsToIndexedFormParamsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testAssignability(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest)
+[pool-2-thread-4] Test testAssignability(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testBucketOwnedBy(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest)
+[pool-2-thread-1] Test testNullIsBad(org.jclouds.ec2.binders.BindUserIdsToIndexedFormParamsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testBucketOwnedByNPE(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest)
+[pool-2-thread-3] Test test(org.jclouds.ec2.binders.BindInstanceIdsToIndexedFormParamsTest) succeeded: 15ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testBucketOwnedByStatic(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest)
+[pool-2-thread-2] Test test(org.jclouds.ec2.binders.BindPublicIpsToIndexedFormParamsTest) succeeded: 12ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testNullBucketOwnedBy(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest)
+[pool-2-thread-5] Test test(org.jclouds.ec2.binders.BindProductCodesToIndexedFormParamsTest) succeeded: 15ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testNullBucketOwnedByNotInjected(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest)
+[pool-2-thread-5] Test testNullBucketOwnedByNotInjected(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testDefault(org.jclouds.ec2.functions.ConvertUnencodedBytesToBase64EncodedStringTest)
+[pool-2-thread-5] Test testDefault(org.jclouds.ec2.functions.ConvertUnencodedBytesToBase64EncodedStringTest) succeeded: 2ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testAssignability(org.jclouds.ec2.options.CreateImageOptionsTest)
+[pool-2-thread-5] Test testAssignability(org.jclouds.ec2.options.CreateImageOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testNoReboot(org.jclouds.ec2.options.CreateImageOptionsTest)
+[pool-2-thread-3] Test testBucketOwnedByStatic(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest) succeeded: 21ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testNoRebootStatic(org.jclouds.ec2.options.CreateImageOptionsTest)
+[pool-2-thread-1] Test testBucketOwnedByNPE(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest) succeeded: 25ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testNoRebootStatic(org.jclouds.ec2.options.CreateImageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testNullWithDescription(org.jclouds.ec2.options.CreateImageOptionsTest)
+Starting test testWithDescription(org.jclouds.ec2.options.CreateImageOptionsTest)
+[pool-2-thread-3] Test testWithDescription(org.jclouds.ec2.options.CreateImageOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test testWithDescriptionNPE(org.jclouds.ec2.options.CreateImageOptionsTest)
+[pool-2-thread-3] Test testWithDescriptionNPE(org.jclouds.ec2.options.CreateImageOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testBucketOwnedBy(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest) succeeded: 27ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test testWithDescriptionStatic(org.jclouds.ec2.options.CreateImageOptionsTest)
+[pool-2-thread-3] Test testWithDescriptionStatic(org.jclouds.ec2.options.CreateImageOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test testAssignability(org.jclouds.ec2.options.CreateSnapshotOptionsTest)
+Starting test testNullWithDescription(org.jclouds.ec2.options.CreateSnapshotOptionsTest)
+[pool-2-thread-2] Test testNullBucketOwnedBy(org.jclouds.ec2.options.BundleInstanceS3StorageOptionsTest) succeeded: 23ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testAssignability(org.jclouds.ec2.options.CreateSnapshotOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testNullWithDescription(org.jclouds.ec2.options.CreateSnapshotOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testWithDescriptionNPE(org.jclouds.ec2.options.CreateSnapshotOptionsTest)
+Starting test testWithDescriptionStatic(org.jclouds.ec2.options.CreateSnapshotOptionsTest)
+Starting test testWithDescription(org.jclouds.ec2.options.CreateSnapshotOptionsTest)
+[pool-2-thread-4] Test testWithDescriptionNPE(org.jclouds.ec2.options.CreateSnapshotOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testDescribeAvailabilityZonesInRegion_BestEffort(org.jclouds.ec2.suppliers.DescribeAvailabilityZonesInRegionTest)
+[pool-2-thread-3] Test testWithDescriptionStatic(org.jclouds.ec2.options.CreateSnapshotOptionsTest) succeeded: 6ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testDescribeAvailabilityZonesInRegion_NoZones(org.jclouds.ec2.suppliers.DescribeAvailabilityZonesInRegionTest)
+[pool-2-thread-5] Test testNoReboot(org.jclouds.ec2.options.CreateImageOptionsTest) succeeded: 13ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testDescribeAvailabilityZonesInRegion_RethrowIfNoneFound(org.jclouds.ec2.suppliers.DescribeAvailabilityZonesInRegionTest)
+[pool-2-thread-2] Test testWithDescription(org.jclouds.ec2.options.CreateSnapshotOptionsTest) succeeded: 6ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testAssignability(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-1] Test testNullWithDescription(org.jclouds.ec2.options.CreateImageOptionsTest) succeeded: 10ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testAssignability(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testExecutableBy(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testExecutableBy(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testExecutableByNPE(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+Starting test testExecutableByStatic(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testExecutableByNPE(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testImageIds(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testImageIds(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testImageIdsStatic(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testImageIdsStatic(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testMultipleImageIds(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testMultipleImageIds(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testMultipleOwners(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testMultipleOwners(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testNullExecutableBy(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testNullExecutableBy(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testNullImageIds(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testNullImageIds(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testNullOwners(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testNullOwners(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testOwners(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testOwners(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testOwnersStatic(org.jclouds.ec2.options.DescribeImagesOptionsTest)
+[pool-2-thread-2] Test testOwnersStatic(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+Starting test testAssignability(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+[pool-2-thread-2] Test testAssignability(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+Starting test testMultipleOwners(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+[pool-2-thread-2] Test testMultipleOwners(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+Starting test testMultipleSnapshotIds(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+[pool-2-thread-2] Test testMultipleSnapshotIds(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+Starting test testNullOwners(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+[pool-2-thread-2] Test testNullOwners(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testExecutableByStatic(org.jclouds.ec2.options.DescribeImagesOptionsTest) succeeded: 8ms
+Starting test testNullRestorableBy(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testNullRestorableBy(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+Starting test testNullSnapshotIds(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+[pool-2-thread-2] Test testNullSnapshotIds(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+Starting test testOwners(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+Starting test testOwnersStatic(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+[pool-2-thread-1] Test testOwners(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
+Starting test testRestorableBy(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+[pool-2-thread-2] Test testOwnersStatic(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testRestorableBy(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 1ms
+Starting test testRestorableByStatic(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testRestorableByStatic(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+Starting test testSnapshotIds(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+[pool-2-thread-2] Test testSnapshotIds(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+Starting test testSnapshotIdsStatic(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest)
+[pool-2-thread-2] Test testSnapshotIdsStatic(org.jclouds.ec2.options.DescribeSnapshotsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+Starting test testAssignability(org.jclouds.ec2.options.DetachVolumeOptionsTest)
+[pool-2-thread-2] Test testAssignability(org.jclouds.ec2.options.DetachVolumeOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+Starting test testFromDevice(org.jclouds.ec2.options.DetachVolumeOptionsTest)
+Starting test testFromDeviceNPE(org.jclouds.ec2.options.DetachVolumeOptionsTest)
+[pool-2-thread-1] Test testFromDevice(org.jclouds.ec2.options.DetachVolumeOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testFromDeviceNPE(org.jclouds.ec2.options.DetachVolumeOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+Starting test testFromDeviceStatic(org.jclouds.ec2.options.DetachVolumeOptionsTest)
+[pool-2-thread-2] Test testFromDeviceStatic(org.jclouds.ec2.options.DetachVolumeOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
+Starting test testFromInstanceNPE(org.jclouds.ec2.options.DetachVolumeOptionsTest)
+[pool-2-thread-2] Test testFromInstanceNPE(org.jclouds.ec2.options.DetachVolumeOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
+Starting test testFromInstanceStatic(org.jclouds.ec2.options.DetachVolumeOptionsTest)
+[pool-2-thread-2] Test testFromInstanceStatic(org.jclouds.ec2.options.DetachVolumeOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
+Starting test testNullFromDevice(org.jclouds.ec2.options.DetachVolumeOptionsTest)
+[pool-2-thread-2] Test testNullFromDevice(org.jclouds.ec2.options.DetachVolumeOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
+Starting test testNullFromInstance(org.jclouds.ec2.options.DetachVolumeOptionsTest)
+[pool-2-thread-2] Test testNullFromInstance(org.jclouds.ec2.options.DetachVolumeOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+Starting test testCacheLoaderDoesNotReloadAfterAuthorizationException(org.jclouds.ec2.compute.config.EC2ComputeServiceContextModuleTest)
+Starting test testFromInstance(org.jclouds.ec2.options.DetachVolumeOptionsTest)
+[pool-2-thread-1] Test testFromInstance(org.jclouds.ec2.options.DetachVolumeOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 0.
+Starting test testHardwareWithImageIdPredicateOnlyAcceptsImageWhenLocationNull(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testHardwareWithImageIdPredicateOnlyAcceptsImageWhenLocationNull(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 0.
+Starting test testParseOnDemand(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+Could not describe availability zones in Region: inaccessibleRegion[pool-2-thread-3] Test testDescribeAvailabilityZonesInRegion_NoZones(org.jclouds.ec2.suppliers.DescribeAvailabilityZonesInRegionTest) succeeded: 37ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 0.
+Starting test testDefaultGroupsVarArgsEmpty(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-3] Test testDefaultGroupsVarArgsEmpty(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 90, failed: 0, skipped: 0.
+Starting test testDefaultOpen22(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+
+org.jclouds.http.HttpResponseException: Error: Unable to tunnel through proxy: ...
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46)
+	at org.easymock.internal.ObjectMethodsFilter.invoke(ObjectMethodsFilter.java:85)
+	at $Proxy66.describeAvailabilityZonesInRegion(Unknown Source)
+	at org.jclouds.ec2.suppliers.DescribeAvailabilityZonesInRegion.get(DescribeAvailabilityZonesInRegion.java:66)
+	at org.jclouds.ec2.suppliers.DescribeAvailabilityZonesInRegionTest.testDescribeAvailabilityZonesInRegion_RethrowIfNoneFound(DescribeAvailabilityZonesInRegionTest.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[pool-2-thread-5] Test testDescribeAvailabilityZonesInRegion_RethrowIfNoneFound(org.jclouds.ec2.suppliers.DescribeAvailabilityZonesInRegionTest) succeeded: 39ms
+Test suite progress: tests succeeded: 91, failed: 0, skipped: 0.
+Starting test testFalsenoKeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testFalsenoKeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 92, failed: 0, skipped: 0.
+Starting test testNoKeyPairAndKeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testNoKeyPairAndKeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 0.
+Starting test testNullauthorizePublicKey(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testNullauthorizePublicKey(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 94, failed: 0, skipped: 0.
+Starting test testNullblockOnPort(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testNullblockOnPort(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 95, failed: 0, skipped: 0.
+Starting test testNullinstallPrivateKey(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testNullinstallPrivateKey(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 96, failed: 0, skipped: 0.
+Starting test testNullkeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testNullkeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 97, failed: 0, skipped: 0.
+Starting test testauthorizePublicKey(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testauthorizePublicKey(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 98, failed: 0, skipped: 0.
+Starting test testauthorizePublicKeyBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testauthorizePublicKeyBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 99, failed: 0, skipped: 0.
+Starting test testauthorizePublicKeyNPE(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-3] Test testDefaultOpen22(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 10ms
+Test suite progress: tests succeeded: 100, failed: 0, skipped: 0.
+Starting test testauthorizePublicKeyStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-3] Test testauthorizePublicKeyStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 101, failed: 0, skipped: 0.
+Starting test testblockOnPort(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-3] Test testblockOnPort(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 102, failed: 0, skipped: 0.
+Starting test testblockOnPortBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-3] Test testblockOnPortBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 103, failed: 0, skipped: 0.
+Starting test testblockOnPortStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-3] Test testblockOnPortStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 104, failed: 0, skipped: 0.
+Starting test testinboundPorts(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testauthorizePublicKeyNPE(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 6ms
+Test suite progress: tests succeeded: 105, failed: 0, skipped: 0.
+Starting test testinboundPortsBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testinboundPortsBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 106, failed: 0, skipped: 0.
+Starting test testinboundPortsStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testinboundPortsStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 107, failed: 0, skipped: 0.
+Starting test testinstallPrivateKey(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testinstallPrivateKey(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 108, failed: 0, skipped: 0.
+Starting test testinstallPrivateKeyBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testinstallPrivateKeyBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 109, failed: 0, skipped: 0.
+Starting test testinstallPrivateKeyNPE(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testinstallPrivateKeyNPE(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 110, failed: 0, skipped: 0.
+Starting test testinstallPrivateKeyStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testinstallPrivateKeyStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 111, failed: 0, skipped: 0.
+Starting test testkeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-3] Test testinboundPorts(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 4ms
+Test suite progress: tests succeeded: 112, failed: 0, skipped: 0.
+Starting test testkeyPairAndNoKeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testkeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 113, failed: 0, skipped: 0.
+Starting test testkeyPairBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testkeyPairBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 114, failed: 0, skipped: 0.
+Starting test testkeyPairNPE(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testkeyPairNPE(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 115, failed: 0, skipped: 0.
+Starting test testkeyPairStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testkeyPairStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 116, failed: 0, skipped: 0.
+Starting test testnoKeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testnoKeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 117, failed: 0, skipped: 0.
+Starting test testnoKeyPairStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testnoKeyPairStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 118, failed: 0, skipped: 0.
+Starting test testsecurityGroupsIterable(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testsecurityGroupsIterable(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 119, failed: 0, skipped: 0.
+Starting test testsecurityGroupsIterableBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testsecurityGroupsIterableBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 120, failed: 0, skipped: 0.
+Starting test testsecurityGroupsIterableEmptyNotOk(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testsecurityGroupsIterableEmptyNotOk(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 121, failed: 0, skipped: 0.
+Starting test testsecurityGroupsIterableStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-3] Test testkeyPairAndNoKeyPair(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 8ms
+Test suite progress: tests succeeded: 122, failed: 0, skipped: 0.
+Starting test testsecurityGroupsVarArgs(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-3] Test testsecurityGroupsVarArgs(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 123, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testsecurityGroupsIterableStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 124, failed: 0, skipped: 0.
+Starting test testsecurityGroupsVarArgsBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-3] Test testsecurityGroupsVarArgsBadFormat(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 125, failed: 0, skipped: 0.
+Starting test testsecurityGroupsVarArgsEmptyNotOk(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+Starting test testsecurityGroupsVarArgsStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest)
+[pool-2-thread-5] Test testsecurityGroupsVarArgsEmptyNotOk(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 126, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testsecurityGroupsVarArgsStatic(org.jclouds.ec2.compute.options.EC2TemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 127, failed: 0, skipped: 0.
+Starting test testDisallowedMarkersIllegalArgument(org.jclouds.ec2.functions.EncodedRSAPublicKeyToBase64Test)
+[pool-2-thread-3] Test testDisallowedMarkersIllegalArgument(org.jclouds.ec2.functions.EncodedRSAPublicKeyToBase64Test) succeeded: 0ms
+Test suite progress: tests succeeded: 128, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ec2.binders.IfNotNullBindAvailabilityZoneToFormParamTest)
+[pool-2-thread-3] Test test(org.jclouds.ec2.binders.IfNotNullBindAvailabilityZoneToFormParamTest) succeeded: 1ms
+Test suite progress: tests succeeded: 129, failed: 0, skipped: 0.
+Starting test testMustBeString(org.jclouds.ec2.binders.IfNotNullBindAvailabilityZoneToFormParamTest)
+[pool-2-thread-3] Test testMustBeString(org.jclouds.ec2.binders.IfNotNullBindAvailabilityZoneToFormParamTest) succeeded: 0ms
+Test suite progress: tests succeeded: 130, failed: 0, skipped: 0.
+Starting test testWhenNullReturnsSame(org.jclouds.ec2.binders.IfNotNullBindAvailabilityZoneToFormParamTest)
+[pool-2-thread-3] Test testWhenNullReturnsSame(org.jclouds.ec2.binders.IfNotNullBindAvailabilityZoneToFormParamTest) succeeded: 0ms
+Test suite progress: tests succeeded: 131, failed: 0, skipped: 0.
+Starting test testApply(org.jclouds.ec2.compute.loaders.RegionAndIdToImageTest)
+Starting test testAllowedMarkers(org.jclouds.ec2.functions.EncodedRSAPublicKeyToBase64Test)
+[pool-2-thread-5] Test testAllowedMarkers(org.jclouds.ec2.functions.EncodedRSAPublicKeyToBase64Test) succeeded: 0ms
+Test suite progress: tests succeeded: 132, failed: 0, skipped: 0.
+Starting test testApplyNoSuchElementExceptionMakesExecutionException(org.jclouds.ec2.compute.loaders.RegionAndIdToImageTest)
+Could not describe availability zones in Region: inaccessibleRegion
+org.jclouds.http.HttpResponseException: Error: Unable to tunnel through proxy: ...
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:46)
+	at org.easymock.internal.ObjectMethodsFilter.invoke(ObjectMethodsFilter.java:85)
+	at $Proxy66.describeAvailabilityZonesInRegion(Unknown Source)
+	at org.jclouds.ec2.suppliers.DescribeAvailabilityZonesInRegion.get(DescribeAvailabilityZonesInRegion.java:66)
+	at org.jclouds.ec2.suppliers.DescribeAvailabilityZonesInRegionTest.testDescribeAvailabilityZonesInRegion_BestEffort(DescribeAvailabilityZonesInRegionTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[pool-2-thread-4] Test testDescribeAvailabilityZonesInRegion_BestEffort(org.jclouds.ec2.suppliers.DescribeAvailabilityZonesInRegionTest) succeeded: 195ms
+Test suite progress: tests succeeded: 133, failed: 0, skipped: 0.
+Starting test testApplyNotFoundMakesExecutionException(org.jclouds.ec2.compute.loaders.RegionAndIdToImageTest)
+[pool-2-thread-2] Test testCacheLoaderDoesNotReloadAfterAuthorizationException(org.jclouds.ec2.compute.config.EC2ComputeServiceContextModuleTest) succeeded: 188ms
+Test suite progress: tests succeeded: 134, failed: 0, skipped: 0.
+Starting test testAddBlockDeviceFromSnapshot(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testApplyNoSuchElementExceptionMakesExecutionException(org.jclouds.ec2.compute.loaders.RegionAndIdToImageTest) succeeded: 139ms
+Test suite progress: tests succeeded: 135, failed: 0, skipped: 0.
+Starting test testAddBlockDeviceFromSnapshotNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddBlockDeviceFromSnapshotNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 136, failed: 0, skipped: 0.
+Starting test testAddBlockDeviceFromSnapshotNullVirtualName(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddBlockDeviceFromSnapshotNullVirtualName(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 137, failed: 0, skipped: 0.
+Starting test testAddBlockDeviceFromSnapshotStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddBlockDeviceFromSnapshotStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 138, failed: 0, skipped: 0.
+Starting test testAddEphemeralBlockDeviceFromSnapshot(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddEphemeralBlockDeviceFromSnapshot(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 139, failed: 0, skipped: 0.
+Starting test testAddEphemeralBlockDeviceFromSnapshotNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddEphemeralBlockDeviceFromSnapshotNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 140, failed: 0, skipped: 0.
+Starting test testAddEphemeralBlockDeviceFromSnapshotNullVirtualName(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddEphemeralBlockDeviceFromSnapshotNullVirtualName(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 141, failed: 0, skipped: 0.
+Starting test testAddEphemeralBlockDeviceFromSnapshotStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddEphemeralBlockDeviceFromSnapshotStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 142, failed: 0, skipped: 0.
+Starting test testAddNewBlockDevice(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-3] Test testApply(org.jclouds.ec2.compute.loaders.RegionAndIdToImageTest) succeeded: 147ms
+Test suite progress: tests succeeded: 143, failed: 0, skipped: 0.
+Starting test testAddNewBlockDeviceNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-2] Test testAddBlockDeviceFromSnapshot(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 10ms
+Test suite progress: tests succeeded: 144, failed: 0, skipped: 0.
+Starting test testAddNewBlockDeviceNullVirtualName(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddNewBlockDevice(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 5ms
+Test suite progress: tests succeeded: 145, failed: 0, skipped: 0.
+Starting test testAddNewBlockDeviceStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddNewBlockDeviceStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 146, failed: 0, skipped: 0.
+Starting test testAddNewBlockDeviceTooBig(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddNewBlockDeviceTooBig(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 147, failed: 0, skipped: 0.
+Starting test testAddNewBlockDeviceTooSmall(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddNewBlockDeviceTooSmall(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 148, failed: 0, skipped: 0.
+Starting test testAddNewEphemeralBlockDevice(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddNewEphemeralBlockDevice(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 149, failed: 0, skipped: 0.
+Starting test testAddNewEphemeralBlockDeviceNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddNewEphemeralBlockDeviceNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 150, failed: 0, skipped: 0.
+Starting test testAddNewEphemeralBlockDeviceNullVirtualName(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddNewEphemeralBlockDeviceNullVirtualName(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 151, failed: 0, skipped: 0.
+Starting test testAddNewEphemeralBlockDeviceStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddNewEphemeralBlockDeviceStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 152, failed: 0, skipped: 0.
+Starting test testAddNewEphemeralBlockDeviceTooBig(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddNewEphemeralBlockDeviceTooBig(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 153, failed: 0, skipped: 0.
+Starting test testAddNewEphemeralBlockDeviceTooSmall(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAddNewEphemeralBlockDeviceTooSmall(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 154, failed: 0, skipped: 0.
+Starting test testAssignability(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testAssignability(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 155, failed: 0, skipped: 0.
+Starting test testNullAddBlockDeviceFromSnapshot(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testNullAddBlockDeviceFromSnapshot(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 156, failed: 0, skipped: 0.
+Starting test testNullAddEphemeralBlockDeviceFromSnapshot(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testNullAddEphemeralBlockDeviceFromSnapshot(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 157, failed: 0, skipped: 0.
+Starting test testNullAddNewBlockDevice(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testNullAddNewBlockDevice(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 158, failed: 0, skipped: 0.
+Starting test testNullAddNewEphemeralBlockDevice(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testNullAddNewEphemeralBlockDevice(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 159, failed: 0, skipped: 0.
+Starting test testNullWithArchitecture(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testNullWithArchitecture(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 160, failed: 0, skipped: 0.
+Starting test testNullWithDescription(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testNullWithDescription(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 161, failed: 0, skipped: 0.
+Starting test testNullWithKernelId(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testNullWithKernelId(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 162, failed: 0, skipped: 0.
+Starting test testNullWithRamdisk(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testNullWithRamdisk(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 163, failed: 0, skipped: 0.
+Starting test testWithArchitecture(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithArchitecture(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 7ms
+Test suite progress: tests succeeded: 164, failed: 0, skipped: 0.
+Starting test testWithArchitectureNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithArchitectureNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 165, failed: 0, skipped: 0.
+Starting test testWithArchitectureStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithArchitectureStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 166, failed: 0, skipped: 0.
+Starting test testWithDescription(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithDescription(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 167, failed: 0, skipped: 0.
+Starting test testWithDescriptionNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithDescriptionNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 168, failed: 0, skipped: 0.
+Starting test testWithDescriptionStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithDescriptionStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 169, failed: 0, skipped: 0.
+Starting test testWithKernelId(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithKernelId(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 170, failed: 0, skipped: 0.
+Starting test testWithKernelIdNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithKernelIdNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 171, failed: 0, skipped: 0.
+Starting test testWithKernelIdStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithKernelIdStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 172, failed: 0, skipped: 0.
+Starting test testWithRamdisk(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithRamdisk(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 173, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testAddNewBlockDeviceNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 27ms
+Test suite progress: tests succeeded: 174, failed: 0, skipped: 0.
+Starting test testWithRamdiskStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-3] Test testWithRamdiskStatic(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 175, failed: 0, skipped: 0.
+Starting test testAssignability(org.jclouds.ec2.options.RegisterImageOptionsTest)
+Starting test testWithRamdiskNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest)
+[pool-2-thread-5] Test testWithRamdiskNPE(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 176, failed: 0, skipped: 0.
+Starting test testNullWithArchitecture(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-2] Test testAddNewBlockDeviceNullVirtualName(org.jclouds.ec2.options.RegisterImageBackedByEbsOptionsTest) succeeded: 35ms
+Test suite progress: tests succeeded: 177, failed: 0, skipped: 0.
+Starting test testNullWithDescription(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-5] Test testNullWithArchitecture(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 6ms
+Test suite progress: tests succeeded: 178, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testApplyNotFoundMakesExecutionException(org.jclouds.ec2.compute.loaders.RegionAndIdToImageTest) succeeded: 55ms
+Starting test testNullWithKernelId(org.jclouds.ec2.options.RegisterImageOptionsTest)
+Test suite progress: tests succeeded: 179, failed: 0, skipped: 0.
+Starting test testNullWithRamdisk(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-5] Test testNullWithKernelId(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 180, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testAssignability(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 11ms
+Test suite progress: tests succeeded: 181, failed: 0, skipped: 0.
+Starting test testWithArchitecture(org.jclouds.ec2.options.RegisterImageOptionsTest)
+Starting test testWithArchitectureNPE(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-5] Test testWithArchitecture(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 182, failed: 0, skipped: 0.
+Starting test testWithArchitectureStatic(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-2] Test testNullWithDescription(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 183, failed: 0, skipped: 0.
+Starting test testWithDescription(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-4] Test testNullWithRamdisk(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 184, failed: 0, skipped: 0.
+Starting test testWithDescriptionNPE(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-2] Test testWithDescription(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 6ms
+Test suite progress: tests succeeded: 185, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testWithArchitectureStatic(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 8ms
+Test suite progress: tests succeeded: 186, failed: 0, skipped: 0.
+Starting test testWithDescriptionStatic(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-3] Test testWithArchitectureNPE(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 8ms
+Test suite progress: tests succeeded: 187, failed: 0, skipped: 0.
+Starting test testWithKernelId(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-3] Test testWithKernelId(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 188, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testParseOnDemand(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 243ms
+Test suite progress: tests succeeded: 189, failed: 0, skipped: 0.
+Starting test testWithKernelIdNPE(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-3] Test testWithKernelIdNPE(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 190, failed: 0, skipped: 0.
+Starting test testParseOnDemandNotFound(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+Starting test testWithRamdisk(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-5] Test testWithDescriptionStatic(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 191, failed: 0, skipped: 0.
+Starting test testWithRamdiskNPE(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-5] Test testWithRamdiskNPE(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 192, failed: 0, skipped: 0.
+Starting test testWithRamdiskStatic(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-5] Test testWithRamdiskStatic(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 193, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testParseOnDemandNotFound(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 2ms
+Test suite progress: tests succeeded: 194, failed: 0, skipped: 0.
+Starting test testWithKernelIdStatic(org.jclouds.ec2.options.RegisterImageOptionsTest)
+[pool-2-thread-2] Test testWithRamdisk(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 195, failed: 0, skipped: 0.
+Starting test testParseOnDemandWithoutRegionEncodedIntoId(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-4] Test testWithDescriptionNPE(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 12ms
+Test suite progress: tests succeeded: 196, failed: 0, skipped: 0.
+Starting test testNullWithAdditionalInfo(org.jclouds.ec2.options.RunInstancesOptionsTest)
+Starting test testAssignability(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testWithKernelIdStatic(org.jclouds.ec2.options.RegisterImageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 197, failed: 0, skipped: 0.
+Starting test testNullWithInstanceType(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testNullWithInstanceType(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 198, failed: 0, skipped: 0.
+Starting test testNullWithKernelId(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testNullWithKernelId(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 199, failed: 0, skipped: 0.
+Starting test testNullWithKeyName(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testNullWithKeyName(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 200, failed: 0, skipped: 0.
+Starting test testNullWithRamdisk(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testNullWithRamdisk(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 201, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testParseOnDemandWithoutRegionEncodedIntoId(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 2ms
+Test suite progress: tests succeeded: 202, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testAssignability(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 2ms
+Starting test testArchWins(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+Starting test testNullWithBlockDeviceMapping(org.jclouds.ec2.options.RunInstancesOptionsTest)
+Test suite progress: tests succeeded: 203, failed: 0, skipped: 0.
+Starting test testNullWithUserData(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-5] Test testNullWithUserData(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 204, failed: 0, skipped: 0.
+Starting test testNullWithSecurityGroup(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testNullWithSecurityGroup(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 205, failed: 0, skipped: 0.
+Starting test testWithBlockDeviceMapping(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testWithBlockDeviceMapping(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 206, failed: 0, skipped: 0.
+Starting test testWithBlockDeviceMappingNPE(org.jclouds.ec2.options.RunInstancesOptionsTest)
+Starting test testNullWithVirtualName(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-5] Test testNullWithVirtualName(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 207, failed: 0, skipped: 0.
+Starting test testWithBlockDeviceMappingStatic(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-2] Test testNullWithAdditionalInfo(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 8ms
+Test suite progress: tests succeeded: 208, failed: 0, skipped: 0.
+Starting test testWithInstanceType(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-2] Test testWithInstanceType(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 209, failed: 0, skipped: 0.
+Starting test testWithInstanceTypeNPE(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-2] Test testWithInstanceTypeNPE(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 210, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testNullWithBlockDeviceMapping(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 7ms
+Test suite progress: tests succeeded: 211, failed: 0, skipped: 0.
+Starting test testWithKernelId(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-4] Test testWithKernelId(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 212, failed: 0, skipped: 0.
+Starting test testWithKernelIdNPE(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-4] Test testWithKernelIdNPE(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 213, failed: 0, skipped: 0.
+Starting test testWithKernelIdStatic(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-4] Test testWithKernelIdStatic(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 214, failed: 0, skipped: 0.
+Starting test testWithKeyName(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-4] Test testWithKeyName(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 215, failed: 0, skipped: 0.
+Starting test testWithKeyNameNPE(org.jclouds.ec2.options.RunInstancesOptionsTest)
+Starting test testWithInstanceTypeStatic(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testWithBlockDeviceMappingNPE(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 4ms
+Test suite progress: tests succeeded: 216, failed: 0, skipped: 0.
+Starting test testWithKeyNameStatic(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testWithKeyNameStatic(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 217, failed: 0, skipped: 0.
+Starting test testWithRamdisk(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testWithRamdisk(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 218, failed: 0, skipped: 0.
+Starting test testWithRamdiskNPE(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testWithRamdiskNPE(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 219, failed: 0, skipped: 0.
+Starting test testWithRamdiskStatic(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testWithRamdiskStatic(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 220, failed: 0, skipped: 0.
+Starting test testWithSecurityGroup(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testWithSecurityGroup(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 221, failed: 0, skipped: 0.
+Starting test testWithSecurityGroupNPE(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testWithSecurityGroupNPE(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 222, failed: 0, skipped: 0.
+Starting test testWithSecurityGroupStatic(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-3] Test testWithSecurityGroupStatic(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 223, failed: 0, skipped: 0.
+Starting test testWithUserData(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-5] Test testWithBlockDeviceMappingStatic(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 8ms
+Test suite progress: tests succeeded: 224, failed: 0, skipped: 0.
+Starting test testWithUserDataEmpty(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-5] Test testWithUserDataEmpty(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 225, failed: 0, skipped: 0.
+Starting test testWithUserDataNPE(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-5] Test testWithUserDataNPE(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 226, failed: 0, skipped: 0.
+Starting test testWithUserDataStatic(org.jclouds.ec2.options.RunInstancesOptionsTest)
+[pool-2-thread-2] Test testWithInstanceTypeStatic(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 5ms
+Test suite progress: tests succeeded: 227, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testWithUserData(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 228, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testWithUserDataStatic(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 229, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testWithKeyNameNPE(org.jclouds.ec2.options.RunInstancesOptionsTest) succeeded: 7ms
+Test suite progress: tests succeeded: 230, failed: 0, skipped: 0.
+Starting test testApply(org.jclouds.ec2.compute.functions.WindowsLoginCredentialsFromEncryptedDataTest)
+[pool-2-thread-1] Test testArchWins(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 98ms
+Test suite progress: tests succeeded: 231, failed: 0, skipped: 0.
+Starting test testDefaultLocationWithNoOptionsNoSuchElement(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+Starting test testVolumeWithEmptyListOfAttachments(org.jclouds.ec2.predicates.VolumeDetachedTest)
+[pool-2-thread-1] Test testDefaultLocationWithNoOptionsNoSuchElement(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 2ms
+Test suite progress: tests succeeded: 232, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testVolumeWithEmptyListOfAttachments(org.jclouds.ec2.predicates.VolumeDetachedTest) succeeded: 2ms
+Test suite progress: tests succeeded: 233, failed: 0, skipped: 0.
+Starting test testDefaultLocationWithOptions(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+Starting test testWithDifferentStatus(org.jclouds.ec2.predicates.VolumeDetachedTest)
+[pool-2-thread-2] Test testWithDifferentStatus(org.jclouds.ec2.predicates.VolumeDetachedTest) succeeded: 0ms
+Test suite progress: tests succeeded: 234, failed: 0, skipped: 0.
+Starting test testWithDifferentStatus(org.jclouds.ec2.predicates.VolumeDetachedTest)
+[pool-2-thread-1] Test testDefaultLocationWithOptions(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 3ms
+Test suite progress: tests succeeded: 235, failed: 0, skipped: 0.
+Starting test testDefaultLocationWithUnmatchedPredicateExceptionMessageAndLocationNotCalled(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-2] Test testWithDifferentStatus(org.jclouds.ec2.predicates.VolumeDetachedTest) succeeded: 1ms
+Test suite progress: tests succeeded: 236, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testDefaultLocationWithUnmatchedPredicateExceptionMessageAndLocationNotCalled(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 237, failed: 0, skipped: 0.
+Starting test testFromSpecWithLoginUser(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+Starting test testWithDifferentStatus(org.jclouds.ec2.predicates.VolumeDetachedTest)
+[pool-2-thread-2] Test testWithDifferentStatus(org.jclouds.ec2.predicates.VolumeDetachedTest) succeeded: 0ms
+Test suite progress: tests succeeded: 238, failed: 0, skipped: 0.
+Starting test testWithDifferentStatus(org.jclouds.ec2.predicates.VolumeDetachedTest)
+[pool-2-thread-2] Test testWithDifferentStatus(org.jclouds.ec2.predicates.VolumeDetachedTest) succeeded: 1ms
+Test suite progress: tests succeeded: 239, failed: 0, skipped: 0.
+Starting test testWithDifferentStatus(org.jclouds.ec2.predicates.VolumeDetachedTest)
+[pool-2-thread-2] Test testWithDifferentStatus(org.jclouds.ec2.predicates.VolumeDetachedTest) succeeded: 0ms
+Test suite progress: tests succeeded: 240, failed: 0, skipped: 0.
+Starting test testWithStatusDetached(org.jclouds.ec2.predicates.VolumeDetachedTest)
+[pool-2-thread-2] Test testWithStatusDetached(org.jclouds.ec2.predicates.VolumeDetachedTest) succeeded: 0ms
+Test suite progress: tests succeeded: 241, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testFromSpecWithLoginUser(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 5ms
+Test suite progress: tests succeeded: 242, failed: 0, skipped: 0.
+Starting test testHardwareIdNullsHypervisor(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testHardwareIdNullsHypervisor(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 243, failed: 0, skipped: 0.
+Starting test testHardwareProfilesMustBePresentWhenQuerying(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testHardwareProfilesMustBePresentWhenQuerying(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 244, failed: 0, skipped: 0.
+Starting test testHardwareWithImageIdPredicateOnlyAcceptsImage(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testHardwareWithImageIdPredicateOnlyAcceptsImage(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 245, failed: 0, skipped: 0.
+Starting test testHardwareWithImageIdPredicateOnlyDoesntImage(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testHardwareWithImageIdPredicateOnlyDoesntImage(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 246, failed: 0, skipped: 0.
+Starting test testImageIdNullsEverythingElse(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testImageIdNullsEverythingElse(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 247, failed: 0, skipped: 0.
+Starting test testImageLocationNonDefault(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testImageLocationNonDefault(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 248, failed: 0, skipped: 0.
+Starting test testImagesMustBePresentWhenQuerying(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testImagesMustBePresentWhenQuerying(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 249, failed: 0, skipped: 0.
+Starting test testLocationPredicateWhenComputeMetadataIsNotLocationBound(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testLocationPredicateWhenComputeMetadataIsNotLocationBound(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 250, failed: 0, skipped: 0.
+Starting test testMatchesHardwareWithIdPredicate(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testMatchesHardwareWithIdPredicate(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 3ms
+Test suite progress: tests succeeded: 251, failed: 0, skipped: 0.
+Starting test testNothingUsesDefaultTemplateBuilder(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testNothingUsesDefaultTemplateBuilder(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 252, failed: 0, skipped: 0.
+Starting test testOptionsUsesDefaultTemplateBuilder(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testOptionsUsesDefaultTemplateBuilder(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 253, failed: 0, skipped: 0.
+Starting test testResolveImages(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testResolveImages(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 254, failed: 0, skipped: 0.
+Starting test testSuppliedImageLocationWiderThanDefault(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testSuppliedImageLocationWiderThanDefault(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 255, failed: 0, skipped: 0.
+Starting test testSuppliedLocationAndOptions(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testSuppliedLocationAndOptions(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 256, failed: 0, skipped: 0.
+Starting test testSuppliedLocationWithNoOptions(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest)
+[pool-2-thread-1] Test testSuppliedLocationWithNoOptions(org.jclouds.ec2.compute.internal.EC2TemplateBuilderImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 257, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testApply(org.jclouds.ec2.compute.functions.WindowsLoginCredentialsFromEncryptedDataTest) succeeded: 548ms
+Test suite progress: tests succeeded: 258, failed: 0, skipped: 0.
+Starting test testMapping(org.jclouds.ec2.binders.BindS3UploadPolicyAndSignatureTest)
+Starting test testNullIsBad(org.jclouds.ec2.binders.BindS3UploadPolicyAndSignatureTest)
+[pool-3-thread-2] Test testNullIsBad(org.jclouds.ec2.binders.BindS3UploadPolicyAndSignatureTest) succeeded: 0ms
+Test suite progress: tests succeeded: 259, failed: 0, skipped: 0.
+[pool-3-thread-1] Test testMapping(org.jclouds.ec2.binders.BindS3UploadPolicyAndSignatureTest) succeeded: 1ms
+Test suite progress: tests succeeded: 260, failed: 0, skipped: 0.
+Starting test testCreateNodeWithGeneratedKeyPairAndOverriddenLoginUser(org.jclouds.ec2.compute.EC2ComputeServiceExpectTest)
+us-east-1/ami-aecd60c7
+[pool-4-thread-1] Test testCreateNodeWithGeneratedKeyPairAndOverriddenLoginUser(org.jclouds.ec2.compute.EC2ComputeServiceExpectTest) succeeded: 446ms
+Test suite progress: tests succeeded: 261, failed: 0, skipped: 0.
+Starting test testNegativeTemplateChoiceForInstanceByImageId(org.jclouds.ec2.compute.EC2TemplateBuilderTest)
+Starting test testTemplateChoiceForInstanceByAttributes(org.jclouds.ec2.compute.EC2TemplateBuilderTest)
+Starting test testTemplateChoiceForInstanceByCChardwareId(org.jclouds.ec2.compute.EC2TemplateBuilderTest)
+Starting test testNegativeTemplateChoiceForInstanceByAttributes(org.jclouds.ec2.compute.EC2TemplateBuilderTest)
+Starting test testTemplateChoiceForInstanceByImageId(org.jclouds.ec2.compute.EC2TemplateBuilderTest)
+[pool-5-thread-3] Test testTemplateChoiceForInstanceByAttributes(org.jclouds.ec2.compute.EC2TemplateBuilderTest) succeeded: 6ms
+Test suite progress: tests succeeded: 262, failed: 0, skipped: 0.
+Starting test testTemplateChoiceForInstanceByImageIdDoesNotGetAllImages(org.jclouds.ec2.compute.EC2TemplateBuilderTest)
+[pool-5-thread-3] Test testTemplateChoiceForInstanceByImageIdDoesNotGetAllImages(org.jclouds.ec2.compute.EC2TemplateBuilderTest) succeeded: 1ms
+Test suite progress: tests succeeded: 263, failed: 0, skipped: 0.
+[pool-5-thread-5] Test testTemplateChoiceForInstanceByImageId(org.jclouds.ec2.compute.EC2TemplateBuilderTest) succeeded: 10ms
+Test suite progress: tests succeeded: 264, failed: 0, skipped: 0.
+Starting test testTemplateChoiceForInstanceByhardwareId(org.jclouds.ec2.compute.EC2TemplateBuilderTest)
+[pool-5-thread-1] Test testNegativeTemplateChoiceForInstanceByAttributes(org.jclouds.ec2.compute.EC2TemplateBuilderTest) succeeded: 13ms
+Test suite progress: tests succeeded: 265, failed: 0, skipped: 0.
+[pool-5-thread-4] Test testTemplateChoiceForInstanceByCChardwareId(org.jclouds.ec2.compute.EC2TemplateBuilderTest) succeeded: 13ms
+Test suite progress: tests succeeded: 266, failed: 0, skipped: 0.
+[pool-5-thread-3] Test testTemplateChoiceForInstanceByhardwareId(org.jclouds.ec2.compute.EC2TemplateBuilderTest) succeeded: 1ms
+Test suite progress: tests succeeded: 267, failed: 0, skipped: 0.
+[pool-5-thread-2] Test testNegativeTemplateChoiceForInstanceByImageId(org.jclouds.ec2.compute.EC2TemplateBuilderTest) succeeded: 14ms
+Test suite progress: tests succeeded: 268, failed: 0, skipped: 0.
+Starting test testReturnsNodeWithElasticIpWhenFoundInCacheAndNodeHadAPublicIp(org.jclouds.ec2.compute.functions.AddElasticIpsToNodemetadataTest)
+[pool-6-thread-1] Test testReturnsNodeWithElasticIpWhenFoundInCacheAndNodeHadAPublicIp(org.jclouds.ec2.compute.functions.AddElasticIpsToNodemetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 269, failed: 0, skipped: 0.
+Starting test testReturnsNodeWithIpWhenFoundInCacheAndNodeHadNoPublicIp(org.jclouds.ec2.compute.functions.AddElasticIpsToNodemetadataTest)
+[pool-6-thread-1] Test testReturnsNodeWithIpWhenFoundInCacheAndNodeHadNoPublicIp(org.jclouds.ec2.compute.functions.AddElasticIpsToNodemetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 270, failed: 0, skipped: 0.
+Starting test testReturnsSameNodeWhenNotFoundInCache(org.jclouds.ec2.compute.functions.AddElasticIpsToNodemetadataTest)
+[pool-6-thread-1] Test testReturnsSameNodeWhenNotFoundInCache(org.jclouds.ec2.compute.functions.AddElasticIpsToNodemetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 271, failed: 0, skipped: 0.
+Starting test testApply(org.jclouds.ec2.compute.functions.CreateUniqueKeyPairTest)
+Starting test testApplyWithIllegalStateException(org.jclouds.ec2.compute.functions.CreateUniqueKeyPairTest)
+[pool-7-thread-2] Test testApplyWithIllegalStateException(org.jclouds.ec2.compute.functions.CreateUniqueKeyPairTest) succeeded: 7ms
+Test suite progress: tests succeeded: 272, failed: 0, skipped: 0.
+[pool-7-thread-1] Test testApply(org.jclouds.ec2.compute.functions.CreateUniqueKeyPairTest) succeeded: 33ms
+Test suite progress: tests succeeded: 273, failed: 0, skipped: 0.
+Starting test testParseAmznImage(org.jclouds.ec2.compute.functions.EC2ImageParserTest)
+[pool-8-thread-1] Test testParseAmznImage(org.jclouds.ec2.compute.functions.EC2ImageParserTest) succeeded: 41ms
+Test suite progress: tests succeeded: 274, failed: 0, skipped: 0.
+Starting test testAllStatesCovered(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+[pool-9-thread-1] Test testAllStatesCovered(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 275, failed: 0, skipped: 0.
+Starting test testApplyWhereTagDoesntMatchAndImageAndLocationFoundAndHardwareNotFound(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+Starting test testApplyWhereTagDoesntMatchAndImageHardwareAndLocationFound(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+Starting test testApplyWhereTagDoesntMatchAndImageHardwareAndLocationNotFound(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+Starting test testApplyWhereTagDoesntMatchAndLocationFoundAndImageAndHardwareNotFound(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+[pool-9-thread-1] Test testApplyWhereTagDoesntMatchAndLocationFoundAndImageAndHardwareNotFound(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 14ms
+Test suite progress: tests succeeded: 276, failed: 0, skipped: 0.
+Starting test testGroupNameIsSetWhenCustomKeyNameIsSetAndSecurityGroupIsGenerated(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+Starting test testApplyWhereTagDoesntMatchAndImageHardwareAndLocationNotFoundButCredentialsFound(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+[pool-9-thread-4] Test testApplyWhereTagDoesntMatchAndImageHardwareAndLocationNotFound(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 45ms
+Test suite progress: tests succeeded: 277, failed: 0, skipped: 0.
+[pool-9-thread-5] Test testApplyWhereTagDoesntMatchAndImageHardwareAndLocationNotFoundButCredentialsFound(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 13ms
+Test suite progress: tests succeeded: 278, failed: 0, skipped: 0.
+Starting test testHandleMissingAMIs(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+Starting test testGroupNameIsSetWhenCustomSecurityGroupIsSetAndKeyNameIsGenerated(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+[pool-9-thread-1] Test testGroupNameIsSetWhenCustomKeyNameIsSetAndSecurityGroupIsGenerated(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 25ms
+Test suite progress: tests succeeded: 279, failed: 0, skipped: 0.
+Starting test testIPAddressIsSetToDnsNameWhenIPAddressIsNull(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+[pool-9-thread-2] Test testApplyWhereTagDoesntMatchAndImageAndLocationFoundAndHardwareNotFound(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 62ms
+Test suite progress: tests succeeded: 280, failed: 0, skipped: 0.
+Starting test testPrivateIpAddressIncorrectlyInPublicAddressFieldGoesToPrivateAddressCollection(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+[pool-9-thread-1] Test testIPAddressIsSetToDnsNameWhenIPAddressIsNull(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 5ms
+Test suite progress: tests succeeded: 281, failed: 0, skipped: 0.
+[pool-9-thread-2] Test testPrivateIpAddressIncorrectlyInPublicAddressFieldGoesToPrivateAddressCollection(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 282, failed: 0, skipped: 0.
+Starting test testPublicIpAddressIncorrectlyInPrivateAddressFieldGoesToPublicAddressCollection(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest)
+[pool-9-thread-4] Test testGroupNameIsSetWhenCustomSecurityGroupIsSetAndKeyNameIsGenerated(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 12ms
+Test suite progress: tests succeeded: 283, failed: 0, skipped: 0.
+[pool-9-thread-1] Test testPublicIpAddressIncorrectlyInPrivateAddressFieldGoesToPublicAddressCollection(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 6ms
+Test suite progress: tests succeeded: 284, failed: 0, skipped: 0.
+[pool-9-thread-5] Test testHandleMissingAMIs(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 32ms
+Test suite progress: tests succeeded: 285, failed: 0, skipped: 0.
+[pool-9-thread-3] Test testApplyWhereTagDoesntMatchAndImageHardwareAndLocationFound(org.jclouds.ec2.compute.functions.RunningInstanceToNodeMetadataTest) succeeded: 87ms
+Test suite progress: tests succeeded: 286, failed: 0, skipped: 0.
+Starting test testIllegalStateExceptionCreatingGroupJustReturns(org.jclouds.ec2.compute.loaders.CreateSecurityGroupIfNeededTest)
+[pool-10-thread-1] Test testIllegalStateExceptionCreatingGroupJustReturns(org.jclouds.ec2.compute.loaders.CreateSecurityGroupIfNeededTest) succeeded: 1ms
+Test suite progress: tests succeeded: 287, failed: 0, skipped: 0.
+Starting test testWhenEventualConsistencyExpiresIllegalStateException(org.jclouds.ec2.compute.loaders.CreateSecurityGroupIfNeededTest)
+[pool-10-thread-1] Test testWhenEventualConsistencyExpiresIllegalStateException(org.jclouds.ec2.compute.loaders.CreateSecurityGroupIfNeededTest) succeeded: 0ms
+Test suite progress: tests succeeded: 288, failed: 0, skipped: 0.
+Starting test testWhenPort22AndToItselfAuthorizesIngressTwice(org.jclouds.ec2.compute.loaders.CreateSecurityGroupIfNeededTest)
+[pool-10-thread-1] Test testWhenPort22AndToItselfAuthorizesIngressTwice(org.jclouds.ec2.compute.loaders.CreateSecurityGroupIfNeededTest) succeeded: 6ms
+Test suite progress: tests succeeded: 289, failed: 0, skipped: 0.
+Starting test testReturnsNullWhenNotAssigned(org.jclouds.ec2.compute.loaders.LoadPublicIpForInstanceOrNullTest)
+[pool-11-thread-1] Test testReturnsNullWhenNotAssigned(org.jclouds.ec2.compute.loaders.LoadPublicIpForInstanceOrNullTest) succeeded: 3ms
+Test suite progress: tests succeeded: 290, failed: 0, skipped: 0.
+Starting test testReturnsNullWhenNotFound(org.jclouds.ec2.compute.loaders.LoadPublicIpForInstanceOrNullTest)
+[pool-11-thread-1] Test testReturnsNullWhenNotFound(org.jclouds.ec2.compute.loaders.LoadPublicIpForInstanceOrNullTest) succeeded: 0ms
+Test suite progress: tests succeeded: 291, failed: 0, skipped: 0.
+Starting test testReturnsPublicIpOnMatch(org.jclouds.ec2.compute.loaders.LoadPublicIpForInstanceOrNullTest)
+[pool-11-thread-1] Test testReturnsPublicIpOnMatch(org.jclouds.ec2.compute.loaders.LoadPublicIpForInstanceOrNullTest) succeeded: 0ms
+Test suite progress: tests succeeded: 292, failed: 0, skipped: 0.
+Starting test testFailsOnOtherStatuses(org.jclouds.ec2.compute.predicates.GetImageWhenStatusAvailablePredicateWithResultExpectTest)
+Starting test testReturnsFalseOnQueuedAndSavingAndTrueOnActive(org.jclouds.ec2.compute.predicates.GetImageWhenStatusAvailablePredicateWithResultExpectTest)
+[pool-12-thread-1] Test testFailsOnOtherStatuses(org.jclouds.ec2.compute.predicates.GetImageWhenStatusAvailablePredicateWithResultExpectTest) succeeded: 317ms
+Test suite progress: tests succeeded: 293, failed: 0, skipped: 0.
+[pool-12-thread-2] Test testReturnsFalseOnQueuedAndSavingAndTrueOnActive(org.jclouds.ec2.compute.predicates.GetImageWhenStatusAvailablePredicateWithResultExpectTest) succeeded: 337ms
+Test suite progress: tests succeeded: 294, failed: 0, skipped: 0.
+Starting test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_createsNewKeyPairAndReturnsItsNameByDefault(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_createsNewKeyPairAndReturnsItsNameByDefault(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 37ms
+Test suite progress: tests succeeded: 295, failed: 0, skipped: 0.
+Starting test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_doesntCreateAKeyPairAndReturnsNullWhenToldNotTo(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_doesntCreateAKeyPairAndReturnsNullWhenToldNotTo(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 296, failed: 0, skipped: 0.
+Starting test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_reusesKeyWhenToldTo(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_reusesKeyWhenToldTo(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 297, failed: 0, skipped: 0.
+Starting test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_reusesKeyWhenToldToWithRunScriptAndCredentialsAlreadyInMap(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_reusesKeyWhenToldToWithRunScriptAndCredentialsAlreadyInMap(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 27ms
+Test suite progress: tests succeeded: 298, failed: 0, skipped: 0.
+Starting test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_reusesKeyWhenToldToWithRunScriptAndCredentialsSpecified(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_reusesKeyWhenToldToWithRunScriptAndCredentialsSpecified(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 10ms
+Test suite progress: tests succeeded: 299, failed: 0, skipped: 0.
+Starting test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_reusesKeyWhenToldToWithRunScriptButNoCredentials(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testCreateNewKeyPairUnlessUserSpecifiedOtherwise_reusesKeyWhenToldToWithRunScriptButNoCredentials(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 300, failed: 0, skipped: 0.
+Starting test testExecuteWithDefaultOptionsEC2(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testExecuteWithDefaultOptionsEC2(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 59ms
+Test suite progress: tests succeeded: 301, failed: 0, skipped: 0.
+Starting test testExecuteWithUserData(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testExecuteWithUserData(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 302, failed: 0, skipped: 0.
+Starting test testGetSecurityGroupsForTagAndOptions_createsNewGroupByDefaultWhenNoPortsAreSpecifiedWhenDoesntExist(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testGetSecurityGroupsForTagAndOptions_createsNewGroupByDefaultWhenNoPortsAreSpecifiedWhenDoesntExist(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 303, failed: 0, skipped: 0.
+Starting test testGetSecurityGroupsForTagAndOptions_createsNewGroupByDefaultWhenPortsAreSpecifiedWhenDoesntExist(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testGetSecurityGroupsForTagAndOptions_createsNewGroupByDefaultWhenPortsAreSpecifiedWhenDoesntExist(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 304, failed: 0, skipped: 0.
+Starting test testGetSecurityGroupsForTagAndOptions_reusesGroupByDefaultWhenNoPortsAreSpecifiedWhenDoesExist(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testGetSecurityGroupsForTagAndOptions_reusesGroupByDefaultWhenNoPortsAreSpecifiedWhenDoesExist(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 305, failed: 0, skipped: 0.
+Starting test testGetSecurityGroupsForTagAndOptions_reusesGroupByDefaultWhenNoPortsAreSpecifiedWhenDoesExistAndAcceptsUserSuppliedGroups(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest)
+[pool-13-thread-1] Test testGetSecurityGroupsForTagAndOptions_reusesGroupByDefaultWhenNoPortsAreSpecifiedWhenDoesExistAndAcceptsUserSuppliedGroups(org.jclouds.ec2.compute.strategy.CreateKeyPairAndSecurityGroupsAsNeededAndReturnRunOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 306, failed: 0, skipped: 0.
+Starting test testIpAllocationThenAfterNodeRunningAssignThenUpdateCache(org.jclouds.ec2.compute.strategy.EC2CreateNodesInGroupThenAddToSetTest)
+[pool-14-thread-1] Test testIpAllocationThenAfterNodeRunningAssignThenUpdateCache(org.jclouds.ec2.compute.strategy.EC2CreateNodesInGroupThenAddToSetTest) succeeded: 58ms
+Test suite progress: tests succeeded: 307, failed: 0, skipped: 0.
+Starting test testRegionAsALocation(org.jclouds.ec2.compute.strategy.EC2CreateNodesInGroupThenAddToSetTest)
+[pool-14-thread-1] Test testRegionAsALocation(org.jclouds.ec2.compute.strategy.EC2CreateNodesInGroupThenAddToSetTest) succeeded: 2ms
+Test suite progress: tests succeeded: 308, failed: 0, skipped: 0.
+Starting test testZoneAsALocation(org.jclouds.ec2.compute.strategy.EC2CreateNodesInGroupThenAddToSetTest)
+[pool-14-thread-1] Test testZoneAsALocation(org.jclouds.ec2.compute.strategy.EC2CreateNodesInGroupThenAddToSetTest) succeeded: 2ms
+Test suite progress: tests succeeded: 309, failed: 0, skipped: 0.
+Starting test testDestroyNodeDisassociatesAndReleasesIpThenTerminatesInstanceAndReturnsRefreshedNode(org.jclouds.ec2.compute.strategy.EC2DestroyNodeStrategyTest)
+[pool-15-thread-1] Test testDestroyNodeDisassociatesAndReleasesIpThenTerminatesInstanceAndReturnsRefreshedNode(org.jclouds.ec2.compute.strategy.EC2DestroyNodeStrategyTest) succeeded: 4ms
+Test suite progress: tests succeeded: 310, failed: 0, skipped: 0.
+Starting test testDestroyNodeSafeOnCacheExecutionExceptionThenTerminatesInstanceAndReturnsRefreshedNode(org.jclouds.ec2.compute.strategy.EC2DestroyNodeStrategyTest)
+[pool-15-thread-1] Test testDestroyNodeSafeOnCacheExecutionExceptionThenTerminatesInstanceAndReturnsRefreshedNode(org.jclouds.ec2.compute.strategy.EC2DestroyNodeStrategyTest) succeeded: 0ms
+Test suite progress: tests succeeded: 311, failed: 0, skipped: 0.
+Starting test testDestroyNodeSafeOnCacheMissThenTerminatesInstanceAndReturnsRefreshedNode(org.jclouds.ec2.compute.strategy.EC2DestroyNodeStrategyTest)
+[pool-15-thread-1] Test testDestroyNodeSafeOnCacheMissThenTerminatesInstanceAndReturnsRefreshedNode(org.jclouds.ec2.compute.strategy.EC2DestroyNodeStrategyTest) succeeded: 1ms
+Test suite progress: tests succeeded: 312, failed: 0, skipped: 0.
+Starting test testDestroyNodeTerminatesInstanceAndReturnsRefreshedNode(org.jclouds.ec2.compute.strategy.EC2DestroyNodeStrategyTest)
+[pool-15-thread-1] Test testDestroyNodeTerminatesInstanceAndReturnsRefreshedNode(org.jclouds.ec2.compute.strategy.EC2DestroyNodeStrategyTest) succeeded: 0ms
+Test suite progress: tests succeeded: 313, failed: 0, skipped: 0.
+Starting test testLocationIdAndURIBindings(org.jclouds.ec2.config.EC2RestClientModuleExpectTest)
+Starting test testZoneToEndpoint(org.jclouds.ec2.config.EC2RestClientModuleExpectTest)
+Starting test testRegionToEndpointOrProviderIfNull(org.jclouds.ec2.config.EC2RestClientModuleExpectTest)
+[pool-16-thread-2] Test testRegionToEndpointOrProviderIfNull(org.jclouds.ec2.config.EC2RestClientModuleExpectTest) succeeded: 10ms
+Test suite progress: tests succeeded: 314, failed: 0, skipped: 0.
+[pool-16-thread-3] Test testZoneToEndpoint(org.jclouds.ec2.config.EC2RestClientModuleExpectTest) succeeded: 101ms
+Test suite progress: tests succeeded: 315, failed: 0, skipped: 0.
+[pool-16-thread-1] Test testLocationIdAndURIBindings(org.jclouds.ec2.config.EC2RestClientModuleExpectTest) succeeded: 113ms
+Test suite progress: tests succeeded: 316, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.ec2.EC2ApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.ec2.EC2ApiMetadataTest)
+[pool-17-thread-1] Test testAllContains(org.jclouds.ec2.EC2ApiMetadataTest) succeeded: 4ms
+Test suite progress: tests succeeded: 317, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.ec2.EC2ApiMetadataTest)
+[pool-17-thread-3] Test testWithId(org.jclouds.ec2.EC2ApiMetadataTest) succeeded: 2ms
+Test suite progress: tests succeeded: 318, failed: 0, skipped: 0.
+[pool-17-thread-2] Test testTransformableToContains(org.jclouds.ec2.EC2ApiMetadataTest) succeeded: 6ms
+Test suite progress: tests succeeded: 319, failed: 0, skipped: 0.
+Starting test testSync(org.jclouds.ec2.EC2AsyncClientTest)
+Starting test testAsync(org.jclouds.ec2.EC2AsyncClientTest)
+[pool-18-thread-1] Test testAsync(org.jclouds.ec2.EC2AsyncClientTest) succeeded: 125ms
+Test suite progress: tests succeeded: 320, failed: 0, skipped: 0.
+[pool-18-thread-2] Test testSync(org.jclouds.ec2.EC2AsyncClientTest) succeeded: 143ms
+Test suite progress: tests succeeded: 321, failed: 0, skipped: 0.
+Starting test testGetPasswordDataWhenResponseIs2xx(org.jclouds.ec2.features.WindowsApiExpectTest)
+Starting test testGetPasswordDataWhenResponseIs404(org.jclouds.ec2.features.WindowsApiExpectTest)
+[pool-19-thread-2] Test testGetPasswordDataWhenResponseIs404(org.jclouds.ec2.features.WindowsApiExpectTest) succeeded: 177ms
+Test suite progress: tests succeeded: 322, failed: 0, skipped: 0.
+[pool-19-thread-1] Test testGetPasswordDataWhenResponseIs2xx(org.jclouds.ec2.features.WindowsApiExpectTest) succeeded: 188ms
+Test suite progress: tests succeeded: 323, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ec2.parse.GetPasswordDataResponseTest)
+[pool-20-thread-1] Test test(org.jclouds.ec2.parse.GetPasswordDataResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 324, failed: 0, skipped: 0.
+Starting test testAddLaunchPermissionsToImage(org.jclouds.ec2.services.AMIAsyncClientTest)
+Starting test testCreateImage(org.jclouds.ec2.services.AMIAsyncClientTest)
+Starting test testDeregisterImage(org.jclouds.ec2.services.AMIAsyncClientTest)
+Starting test testCreateImageOptions(org.jclouds.ec2.services.AMIAsyncClientTest)
+Starting test testDescribeImages(org.jclouds.ec2.services.AMIAsyncClientTest)
+[pool-21-thread-1] Test testAddLaunchPermissionsToImage(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 11ms
+Test suite progress: tests succeeded: 325, failed: 0, skipped: 0.
+Starting test testDescribeImagesOptions(org.jclouds.ec2.services.AMIAsyncClientTest)
+[pool-21-thread-4] Test testDeregisterImage(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 326, failed: 0, skipped: 0.
+Starting test testGetBlockDeviceMappingsForImage(org.jclouds.ec2.services.AMIAsyncClientTest)
+[pool-21-thread-2] Test testCreateImage(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 15ms
+Test suite progress: tests succeeded: 327, failed: 0, skipped: 0.
+Starting test testGetLaunchPermissionForImage(org.jclouds.ec2.services.AMIAsyncClientTest)
+[pool-21-thread-5] Test testDescribeImages(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 24ms
+Test suite progress: tests succeeded: 328, failed: 0, skipped: 0.
+Starting test testRegisterImageBackedByEBS(org.jclouds.ec2.services.AMIAsyncClientTest)
+[pool-21-thread-2] Test testGetLaunchPermissionForImage(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 15ms
+Test suite progress: tests succeeded: 329, failed: 0, skipped: 0.
+[pool-21-thread-3] Test testCreateImageOptions(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 30ms
+Test suite progress: tests succeeded: 330, failed: 0, skipped: 0.
+[pool-21-thread-1] Test testDescribeImagesOptions(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 23ms
+Test suite progress: tests succeeded: 331, failed: 0, skipped: 0.
+Starting test testRegisterImageBackedByEBSOptions(org.jclouds.ec2.services.AMIAsyncClientTest)
+Starting test testRegisterImageFromManifest(org.jclouds.ec2.services.AMIAsyncClientTest)
+[pool-21-thread-4] Test testGetBlockDeviceMappingsForImage(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 25ms
+Test suite progress: tests succeeded: 332, failed: 0, skipped: 0.
+Starting test testRegisterImageFromManifestOptions(org.jclouds.ec2.services.AMIAsyncClientTest)
+[pool-21-thread-4] Test testRegisterImageFromManifestOptions(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 333, failed: 0, skipped: 0.
+Starting test testRemoveLaunchPermissionsFromImage(org.jclouds.ec2.services.AMIAsyncClientTest)
+Starting test testResetLaunchPermissionsOnImage(org.jclouds.ec2.services.AMIAsyncClientTest)
+[pool-21-thread-1] Test testRegisterImageFromManifest(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 11ms
+Test suite progress: tests succeeded: 334, failed: 0, skipped: 0.
+[pool-21-thread-5] Test testRegisterImageBackedByEBS(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 21ms
+Test suite progress: tests succeeded: 335, failed: 0, skipped: 0.
+[pool-21-thread-3] Test testResetLaunchPermissionsOnImage(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 336, failed: 0, skipped: 0.
+[pool-21-thread-4] Test testRemoveLaunchPermissionsFromImage(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 337, failed: 0, skipped: 0.
+[pool-21-thread-2] Test testRegisterImageBackedByEBSOptions(org.jclouds.ec2.services.AMIAsyncClientTest) succeeded: 14ms
+Test suite progress: tests succeeded: 338, failed: 0, skipped: 0.
+Starting test testDescribeAvailabilityZones(org.jclouds.ec2.services.AvailabilityZoneAndRegionAsyncClientTest)
+Starting test testDescribeAvailabilityZonesOptions(org.jclouds.ec2.services.AvailabilityZoneAndRegionAsyncClientTest)
+[pool-22-thread-2] Test testDescribeAvailabilityZonesOptions(org.jclouds.ec2.services.AvailabilityZoneAndRegionAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 339, failed: 0, skipped: 0.
+Starting test testDescribeRegions(org.jclouds.ec2.services.AvailabilityZoneAndRegionAsyncClientTest)
+[pool-22-thread-3] Test testDescribeRegions(org.jclouds.ec2.services.AvailabilityZoneAndRegionAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 340, failed: 0, skipped: 0.
+Starting test testDescribeRegionsOptions(org.jclouds.ec2.services.AvailabilityZoneAndRegionAsyncClientTest)
+[pool-22-thread-4] Test testDescribeRegionsOptions(org.jclouds.ec2.services.AvailabilityZoneAndRegionAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 341, failed: 0, skipped: 0.
+[pool-22-thread-1] Test testDescribeAvailabilityZones(org.jclouds.ec2.services.AvailabilityZoneAndRegionAsyncClientTest) succeeded: 18ms
+Test suite progress: tests succeeded: 342, failed: 0, skipped: 0.
+Starting test testCreateVolumeInAvailabilityZone(org.jclouds.ec2.services.EC2ElasticBlockStoreClientExpectTest)
+[pool-23-thread-1] Test testCreateVolumeInAvailabilityZone(org.jclouds.ec2.services.EC2ElasticBlockStoreClientExpectTest) succeeded: 194ms
+Test suite progress: tests succeeded: 343, failed: 0, skipped: 0.
+Starting test testAddCreateVolumePermissionsToSnapshot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+Starting test testAttachVolume(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+Starting test testCreateSnapshotOptions(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+Starting test testCreateVolume(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+Starting test testCreateSnapshot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+[pool-24-thread-1] Test testAddCreateVolumePermissionsToSnapshot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 22ms
+Test suite progress: tests succeeded: 344, failed: 0, skipped: 0.
+[pool-24-thread-2] Test testAttachVolume(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 16ms
+Test suite progress: tests succeeded: 345, failed: 0, skipped: 0.
+[pool-24-thread-5] Test testCreateVolume(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 15ms
+Test suite progress: tests succeeded: 346, failed: 0, skipped: 0.
+[pool-24-thread-3] Test testCreateSnapshot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 16ms
+Test suite progress: tests succeeded: 347, failed: 0, skipped: 0.
+Starting test testCreateVolumeFromSnapShot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+Starting test testCreateVolumeFromSnapShotWithSize(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+Starting test testDeleteVolume(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+Starting test testDescribeSnapshots(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+[pool-24-thread-2] Test testCreateVolumeFromSnapShotWithSize(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 348, failed: 0, skipped: 0.
+Starting test testDescribeSnapshotsArgs(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+[pool-24-thread-3] Test testDeleteVolume(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 3ms
+Test suite progress: tests succeeded: 349, failed: 0, skipped: 0.
+Starting test testDescribeVolumes(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+[pool-24-thread-2] Test testDescribeSnapshotsArgs(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 350, failed: 0, skipped: 0.
+Starting test testDescribeVolumesArgs(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+[pool-24-thread-5] Test testDescribeSnapshots(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 351, failed: 0, skipped: 0.
+Starting test testDetachVolume(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+[pool-24-thread-2] Test testDescribeVolumesArgs(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 352, failed: 0, skipped: 0.
+Starting test testDetachVolumeOptions(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+[pool-24-thread-2] Test testDetachVolumeOptions(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 3ms
+Test suite progress: tests succeeded: 353, failed: 0, skipped: 0.
+Starting test testGetCreateVolumePermissionForSnapshot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+[pool-24-thread-2] Test testGetCreateVolumePermissionForSnapshot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 354, failed: 0, skipped: 0.
+Starting test testRemoveCreateVolumePermissionsFromSnapshot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+[pool-24-thread-1] Test testCreateVolumeFromSnapShot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 23ms
+Test suite progress: tests succeeded: 355, failed: 0, skipped: 0.
+[pool-24-thread-4] Test testCreateSnapshotOptions(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 40ms
+Test suite progress: tests succeeded: 356, failed: 0, skipped: 0.
+Starting test testResetCreateVolumePermissionsOnSnapshot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest)
+[pool-24-thread-3] Test testDescribeVolumes(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 23ms
+Test suite progress: tests succeeded: 357, failed: 0, skipped: 0.
+[pool-24-thread-5] Test testDetachVolume(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 17ms
+Test suite progress: tests succeeded: 358, failed: 0, skipped: 0.
+[pool-24-thread-2] Test testRemoveCreateVolumePermissionsFromSnapshot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 359, failed: 0, skipped: 0.
+[pool-24-thread-1] Test testResetCreateVolumePermissionsOnSnapshot(org.jclouds.ec2.services.ElasticBlockStoreAsyncClientTest) succeeded: 3ms
+Test suite progress: tests succeeded: 360, failed: 0, skipped: 0.
+Starting test testAllocateAddress(org.jclouds.ec2.services.ElasticIPAddressAsyncClientTest)
+Starting test testAssociateAddress(org.jclouds.ec2.services.ElasticIPAddressAsyncClientTest)
+Starting test testDisassociateAddress(org.jclouds.ec2.services.ElasticIPAddressAsyncClientTest)
+Starting test testDescribeAddresses(org.jclouds.ec2.services.ElasticIPAddressAsyncClientTest)
+Starting test testReleaseAddress(org.jclouds.ec2.services.ElasticIPAddressAsyncClientTest)
+[pool-25-thread-4] Test testDisassociateAddress(org.jclouds.ec2.services.ElasticIPAddressAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 361, failed: 0, skipped: 0.
+[pool-25-thread-2] Test testAssociateAddress(org.jclouds.ec2.services.ElasticIPAddressAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 362, failed: 0, skipped: 0.
+[pool-25-thread-3] Test testDescribeAddresses(org.jclouds.ec2.services.ElasticIPAddressAsyncClientTest) succeeded: 10ms
+Test suite progress: tests succeeded: 363, failed: 0, skipped: 0.
+[pool-25-thread-5] Test testReleaseAddress(org.jclouds.ec2.services.ElasticIPAddressAsyncClientTest) succeeded: 10ms
+Test suite progress: tests succeeded: 364, failed: 0, skipped: 0.
+[pool-25-thread-1] Test testAllocateAddress(org.jclouds.ec2.services.ElasticIPAddressAsyncClientTest) succeeded: 29ms
+Test suite progress: tests succeeded: 365, failed: 0, skipped: 0.
+Starting test testDescribeInstances(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-1] Test testDescribeInstances(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 366, failed: 0, skipped: 0.
+Starting test testDescribeInstancesArgs(org.jclouds.ec2.services.InstanceAsyncClientTest)
+Starting test testGetBlockDeviceMappingForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-2] Test testDescribeInstancesArgs(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 367, failed: 0, skipped: 0.
+Starting test testGetConsoleOutputForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+Starting test testGetDisableApiTerminationForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+Starting test testGetInstanceInitiatedShutdownBehaviorForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-3] Test testGetBlockDeviceMappingForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 368, failed: 0, skipped: 0.
+Starting test testGetInstanceTypeForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-4] Test testGetConsoleOutputForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 16ms
+Test suite progress: tests succeeded: 369, failed: 0, skipped: 0.
+[pool-26-thread-5] Test testGetDisableApiTerminationForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 22ms
+Test suite progress: tests succeeded: 370, failed: 0, skipped: 0.
+[pool-26-thread-2] Test testGetInstanceInitiatedShutdownBehaviorForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 26ms
+Test suite progress: tests succeeded: 371, failed: 0, skipped: 0.
+Starting test testGetKernelForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-3] Test testGetInstanceTypeForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 27ms
+Test suite progress: tests succeeded: 372, failed: 0, skipped: 0.
+Starting test testRebootInstances(org.jclouds.ec2.services.InstanceAsyncClientTest)
+Starting test testGetRootDeviceNameForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+Starting test testGetRamdiskForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+Starting test testGetUserDataForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-4] Test testGetKernelForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 10ms
+Test suite progress: tests succeeded: 373, failed: 0, skipped: 0.
+Starting test testRunInstances(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-1] Test testGetUserDataForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 374, failed: 0, skipped: 0.
+Starting test testRunInstancesOptions(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-5] Test testGetRamdiskForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 375, failed: 0, skipped: 0.
+Starting test testSetApiTerminationDisabledForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-1] Test testRunInstancesOptions(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 376, failed: 0, skipped: 0.
+[pool-26-thread-3] Test testRebootInstances(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 17ms
+Test suite progress: tests succeeded: 377, failed: 0, skipped: 0.
+Starting test testSetBlockDeviceMappingForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-2] Test testGetRootDeviceNameForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 18ms
+Test suite progress: tests succeeded: 378, failed: 0, skipped: 0.
+Starting test testSetInstanceInitiatedShutdownBehaviorForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-5] Test testSetApiTerminationDisabledForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 13ms
+Test suite progress: tests succeeded: 379, failed: 0, skipped: 0.
+[pool-26-thread-1] Test testSetBlockDeviceMappingForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 2ms
+Starting test testSetInstanceTypeForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+Test suite progress: tests succeeded: 380, failed: 0, skipped: 0.
+Starting test testSetKernelForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-5] Test testSetInstanceTypeForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 1ms
+Test suite progress: tests succeeded: 381, failed: 0, skipped: 0.
+Starting test testSetRamdiskForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-1] Test testSetKernelForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 1ms
+Test suite progress: tests succeeded: 382, failed: 0, skipped: 0.
+Starting test testSetUserDataForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-5] Test testSetRamdiskForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 383, failed: 0, skipped: 0.
+Starting test testStartInstances(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-1] Test testSetUserDataForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 384, failed: 0, skipped: 0.
+Starting test testStopInstances(org.jclouds.ec2.services.InstanceAsyncClientTest)
+Starting test testTerminateInstances(org.jclouds.ec2.services.InstanceAsyncClientTest)
+[pool-26-thread-2] Test testSetInstanceInitiatedShutdownBehaviorForInstanceInRegion(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 385, failed: 0, skipped: 0.
+[pool-26-thread-5] Test testStartInstances(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 8ms
+Test suite progress: tests succeeded: 386, failed: 0, skipped: 0.
+[pool-26-thread-4] Test testRunInstances(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 31ms
+Test suite progress: tests succeeded: 387, failed: 0, skipped: 0.
+[pool-26-thread-1] Test testStopInstances(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 8ms
+Test suite progress: tests succeeded: 388, failed: 0, skipped: 0.
+[pool-26-thread-3] Test testTerminateInstances(org.jclouds.ec2.services.InstanceAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 389, failed: 0, skipped: 0.
+Starting test testDeleteKeyPair(org.jclouds.ec2.services.KeyPairAsyncClientTest)
+Starting test testDescribeKeyPairs(org.jclouds.ec2.services.KeyPairAsyncClientTest)
+Starting test testDescribeKeyPairsArgs(org.jclouds.ec2.services.KeyPairAsyncClientTest)
+[pool-27-thread-2] Test testDescribeKeyPairs(org.jclouds.ec2.services.KeyPairAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 390, failed: 0, skipped: 0.
+[pool-27-thread-1] Test testDeleteKeyPair(org.jclouds.ec2.services.KeyPairAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 391, failed: 0, skipped: 0.
+[pool-27-thread-3] Test testDescribeKeyPairsArgs(org.jclouds.ec2.services.KeyPairAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 392, failed: 0, skipped: 0.
+Starting test testAuthorizeSecurityGroupIngressCidr(org.jclouds.ec2.services.SecurityGroupAsyncClientTest)
+[pool-28-thread-1] Test testAuthorizeSecurityGroupIngressCidr(org.jclouds.ec2.services.SecurityGroupAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 393, failed: 0, skipped: 0.
+Starting test testCreateSecurityGroup(org.jclouds.ec2.services.SecurityGroupAsyncClientTest)
+Starting test testAuthorizeSecurityGroupIngressGroup(org.jclouds.ec2.services.SecurityGroupAsyncClientTest)
+[pool-28-thread-2] Test testAuthorizeSecurityGroupIngressGroup(org.jclouds.ec2.services.SecurityGroupAsyncClientTest) succeeded: 1ms
+Test suite progress: tests succeeded: 394, failed: 0, skipped: 0.
+[pool-28-thread-3] Test testCreateSecurityGroup(org.jclouds.ec2.services.SecurityGroupAsyncClientTest) succeeded: 3ms
+Test suite progress: tests succeeded: 395, failed: 0, skipped: 0.
+Starting test testDeleteSecurityGroup(org.jclouds.ec2.services.SecurityGroupAsyncClientTest)
+Starting test testDescribeSecurityGroups(org.jclouds.ec2.services.SecurityGroupAsyncClientTest)
+Starting test testDescribeSecurityGroupsArgs(org.jclouds.ec2.services.SecurityGroupAsyncClientTest)
+Starting test testRevokeSecurityGroupIngressCidr(org.jclouds.ec2.services.SecurityGroupAsyncClientTest)
+[pool-28-thread-4] Test testDeleteSecurityGroup(org.jclouds.ec2.services.SecurityGroupAsyncClientTest) succeeded: 1ms
+Test suite progress: tests succeeded: 396, failed: 0, skipped: 0.
+Starting test testRevokeSecurityGroupIngressGroup(org.jclouds.ec2.services.SecurityGroupAsyncClientTest)
+[pool-28-thread-3] Test testDescribeSecurityGroupsArgs(org.jclouds.ec2.services.SecurityGroupAsyncClientTest) succeeded: 3ms
+Test suite progress: tests succeeded: 397, failed: 0, skipped: 0.
+[pool-28-thread-1] Test testRevokeSecurityGroupIngressCidr(org.jclouds.ec2.services.SecurityGroupAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 398, failed: 0, skipped: 0.
+[pool-28-thread-5] Test testDescribeSecurityGroups(org.jclouds.ec2.services.SecurityGroupAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 399, failed: 0, skipped: 0.
+[pool-28-thread-4] Test testRevokeSecurityGroupIngressGroup(org.jclouds.ec2.services.SecurityGroupAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 400, failed: 0, skipped: 0.
+Starting test testBundleInstanceInRegion(org.jclouds.ec2.services.WindowsAsyncClientTest)
+Starting test testDescribeBundleTasks(org.jclouds.ec2.services.WindowsAsyncClientTest)
+Starting test testBundleInstanceInRegionOptions(org.jclouds.ec2.services.WindowsAsyncClientTest)
+Starting test testDescribeBundleTasksArgs(org.jclouds.ec2.services.WindowsAsyncClientTest)
+[pool-29-thread-3] Test testDescribeBundleTasks(org.jclouds.ec2.services.WindowsAsyncClientTest) succeeded: 8ms
+Test suite progress: tests succeeded: 401, failed: 0, skipped: 0.
+[pool-29-thread-2] Test testBundleInstanceInRegionOptions(org.jclouds.ec2.services.WindowsAsyncClientTest) succeeded: 8ms
+Test suite progress: tests succeeded: 402, failed: 0, skipped: 0.
+[pool-29-thread-1] Test testBundleInstanceInRegion(org.jclouds.ec2.services.WindowsAsyncClientTest) succeeded: 13ms
+Test suite progress: tests succeeded: 403, failed: 0, skipped: 0.
+[pool-29-thread-4] Test testDescribeBundleTasksArgs(org.jclouds.ec2.services.WindowsAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 404, failed: 0, skipped: 0.
+Starting test testAllProtocol(org.jclouds.ec2.util.IpPermissionsTest)
+[pool-30-thread-1] Test testAllProtocol(org.jclouds.ec2.util.IpPermissionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 405, failed: 0, skipped: 0.
+Starting test testProtocolFromAndToPortAndGroupIds(org.jclouds.ec2.util.IpPermissionsTest)
+Starting test testMultipleCidrs(org.jclouds.ec2.util.IpPermissionsTest)
+Starting test testJustProtocolAndCidr(org.jclouds.ec2.util.IpPermissionsTest)
+Starting test testAnyProtocol(org.jclouds.ec2.util.IpPermissionsTest)
+Starting test testAllProtocolCidrBound(org.jclouds.ec2.util.IpPermissionsTest)
+[pool-30-thread-2] Test testAllProtocolCidrBound(org.jclouds.ec2.util.IpPermissionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 406, failed: 0, skipped: 0.
+[pool-30-thread-5] Test testMultipleCidrs(org.jclouds.ec2.util.IpPermissionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 407, failed: 0, skipped: 0.
+Starting test testProtocolFromAndToPortAndUserGroups(org.jclouds.ec2.util.IpPermissionsTest)
+[pool-30-thread-5] Test testProtocolFromAndToPortAndUserGroups(org.jclouds.ec2.util.IpPermissionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 408, failed: 0, skipped: 0.
+[pool-30-thread-4] Test testJustProtocolAndCidr(org.jclouds.ec2.util.IpPermissionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 409, failed: 0, skipped: 0.
+Starting test testProtocolICMPAny(org.jclouds.ec2.util.IpPermissionsTest)
+Starting test testProtocolICMPTypeAnyCode(org.jclouds.ec2.util.IpPermissionsTest)
+[pool-30-thread-3] Test testAnyProtocol(org.jclouds.ec2.util.IpPermissionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 410, failed: 0, skipped: 0.
+[pool-30-thread-5] Test testProtocolICMPAny(org.jclouds.ec2.util.IpPermissionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 411, failed: 0, skipped: 0.
+Starting test testProtocolICMPTypeCode(org.jclouds.ec2.util.IpPermissionsTest)
+[pool-30-thread-3] Test testProtocolICMPTypeCode(org.jclouds.ec2.util.IpPermissionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 412, failed: 0, skipped: 0.
+[pool-30-thread-1] Test testProtocolFromAndToPortAndGroupIds(org.jclouds.ec2.util.IpPermissionsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 413, failed: 0, skipped: 0.
+[pool-30-thread-4] Test testProtocolICMPTypeAnyCode(org.jclouds.ec2.util.IpPermissionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 414, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.AllocateAddressResponseHandlerTest)
+[pool-31-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.AllocateAddressResponseHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 415, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.AttachmentHandlerTest)
+[pool-32-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.AttachmentHandlerTest) succeeded: 13ms
+Test suite progress: tests succeeded: 416, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.BlockDeviceMappingHandlerTest)
+[pool-33-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.BlockDeviceMappingHandlerTest) succeeded: 4ms
+Test suite progress: tests succeeded: 417, failed: 0, skipped: 0.
+Starting test testBundleInstance(org.jclouds.ec2.xml.BundleTaskHandlerTest)
+Starting test testCancleBundleTask(org.jclouds.ec2.xml.BundleTaskHandlerTest)
+[pool-34-thread-2] Test testCancleBundleTask(org.jclouds.ec2.xml.BundleTaskHandlerTest) succeeded: 3ms
+Test suite progress: tests succeeded: 418, failed: 0, skipped: 0.
+[pool-34-thread-1] Test testBundleInstance(org.jclouds.ec2.xml.BundleTaskHandlerTest) succeeded: 6ms
+Test suite progress: tests succeeded: 419, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.CreateVolumeResponseHandlerTest)
+[pool-35-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.CreateVolumeResponseHandlerTest) succeeded: 3ms
+Test suite progress: tests succeeded: 420, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.DescribeAddressesResponseHandlerTest)
+[pool-36-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.DescribeAddressesResponseHandlerTest) succeeded: 3ms
+Test suite progress: tests succeeded: 421, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.DescribeAvailabilityZonesResponseHandlerTest)
+[pool-37-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.DescribeAvailabilityZonesResponseHandlerTest) succeeded: 3ms
+Test suite progress: tests succeeded: 422, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.DescribeBundleTasksResponseHandlerTest)
+[pool-38-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.DescribeBundleTasksResponseHandlerTest) succeeded: 4ms
+Test suite progress: tests succeeded: 423, failed: 0, skipped: 0.
+Starting test testDiabloWithIncorrectDisplayNameField(org.jclouds.ec2.xml.DescribeImagesResponseHandlerTest)
+Starting test testEBS(org.jclouds.ec2.xml.DescribeImagesResponseHandlerTest)
+Starting test testUNIX(org.jclouds.ec2.xml.DescribeImagesResponseHandlerTest)
+[pool-39-thread-1] Test testDiabloWithIncorrectDisplayNameField(org.jclouds.ec2.xml.DescribeImagesResponseHandlerTest) succeeded: 9ms
+Test suite progress: tests succeeded: 424, failed: 0, skipped: 0.
+[pool-39-thread-2] Test testEBS(org.jclouds.ec2.xml.DescribeImagesResponseHandlerTest) succeeded: 10ms
+Test suite progress: tests succeeded: 425, failed: 0, skipped: 0.
+[pool-39-thread-3] Test testUNIX(org.jclouds.ec2.xml.DescribeImagesResponseHandlerTest) succeeded: 8ms
+Test suite progress: tests succeeded: 426, failed: 0, skipped: 0.
+Starting test testWindows(org.jclouds.ec2.xml.DescribeImagesResponseHandlerTest)
+[pool-39-thread-4] Test testWindows(org.jclouds.ec2.xml.DescribeImagesResponseHandlerTest) succeeded: 3ms
+Test suite progress: tests succeeded: 427, failed: 0, skipped: 0.
+Starting test testBooleanValueHandler(org.jclouds.ec2.xml.DescribeInstanceAttributeTest)
+Starting test testInstanceTypeHandler(org.jclouds.ec2.xml.DescribeInstanceAttributeTest)
+Starting test testInstanceInitiatedShutdownBehaviorHandler(org.jclouds.ec2.xml.DescribeInstanceAttributeTest)
+[pool-40-thread-3] Test testInstanceTypeHandler(org.jclouds.ec2.xml.DescribeInstanceAttributeTest) succeeded: 1ms
+Test suite progress: tests succeeded: 428, failed: 0, skipped: 0.
+[pool-40-thread-1] Test testBooleanValueHandler(org.jclouds.ec2.xml.DescribeInstanceAttributeTest) succeeded: 5ms
+Test suite progress: tests succeeded: 429, failed: 0, skipped: 0.
+Starting test testStringValueHandler(org.jclouds.ec2.xml.DescribeInstanceAttributeTest)
+[pool-40-thread-4] Test testStringValueHandler(org.jclouds.ec2.xml.DescribeInstanceAttributeTest) succeeded: 1ms
+Test suite progress: tests succeeded: 430, failed: 0, skipped: 0.
+Starting test testUnencodeStringValueHandler(org.jclouds.ec2.xml.DescribeInstanceAttributeTest)
+[pool-40-thread-5] Test testUnencodeStringValueHandler(org.jclouds.ec2.xml.DescribeInstanceAttributeTest) succeeded: 1ms
+Test suite progress: tests succeeded: 431, failed: 0, skipped: 0.
+[pool-40-thread-2] Test testInstanceInitiatedShutdownBehaviorHandler(org.jclouds.ec2.xml.DescribeInstanceAttributeTest) succeeded: 7ms
+Test suite progress: tests succeeded: 432, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.DescribeInstancesResponseHandlerTest)
+Starting test testEBS(org.jclouds.ec2.xml.DescribeInstancesResponseHandlerTest)
+Starting test testWhenRunning(org.jclouds.ec2.xml.DescribeInstancesResponseHandlerTest)
+[pool-41-thread-2] Test testEBS(org.jclouds.ec2.xml.DescribeInstancesResponseHandlerTest) succeeded: 7ms
+Test suite progress: tests succeeded: 433, failed: 0, skipped: 0.
+[pool-41-thread-3] Test testWhenRunning(org.jclouds.ec2.xml.DescribeInstancesResponseHandlerTest) succeeded: 9ms
+Test suite progress: tests succeeded: 434, failed: 0, skipped: 0.
+[pool-41-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.DescribeInstancesResponseHandlerTest) succeeded: 12ms
+Test suite progress: tests succeeded: 435, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.DescribeKeyPairsResponseHandlerTest)
+[pool-42-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.DescribeKeyPairsResponseHandlerTest) succeeded: 1ms
+Test suite progress: tests succeeded: 436, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.DescribeRegionsResponseHandlerTest)
+[pool-43-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.DescribeRegionsResponseHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 437, failed: 0, skipped: 0.
+Starting test testEuc2(org.jclouds.ec2.xml.DescribeRegionsResponseHandlerTest)
+Starting test testEuc(org.jclouds.ec2.xml.DescribeRegionsResponseHandlerTest)
+[pool-43-thread-3] Test testEuc2(org.jclouds.ec2.xml.DescribeRegionsResponseHandlerTest) succeeded: 1ms
+Test suite progress: tests succeeded: 438, failed: 0, skipped: 0.
+[pool-43-thread-2] Test testEuc(org.jclouds.ec2.xml.DescribeRegionsResponseHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 439, failed: 0, skipped: 0.
+Starting test testUnsupportedAdditionalRegionDoesntBreak(org.jclouds.ec2.xml.DescribeRegionsResponseHandlerTest)
+[pool-43-thread-4] Test testUnsupportedAdditionalRegionDoesntBreak(org.jclouds.ec2.xml.DescribeRegionsResponseHandlerTest) succeeded: 1ms
+Test suite progress: tests succeeded: 440, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.DescribeSecurityGroupsResponseHandlerTest)
+Starting test testApplyInputStreamWithEmptyFields(org.jclouds.ec2.xml.DescribeSecurityGroupsResponseHandlerTest)
+[pool-44-thread-2] Test testApplyInputStreamWithEmptyFields(org.jclouds.ec2.xml.DescribeSecurityGroupsResponseHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 441, failed: 0, skipped: 0.
+[pool-44-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.DescribeSecurityGroupsResponseHandlerTest) succeeded: 13ms
+Test suite progress: tests succeeded: 442, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.DescribeSnapshotsResponseHandlerTest)
+[pool-45-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.DescribeSnapshotsResponseHandlerTest) succeeded: 3ms
+Test suite progress: tests succeeded: 443, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.DescribeVolumesResponseHandlerTest)
+[pool-46-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.DescribeVolumesResponseHandlerTest) succeeded: 4ms
+Test suite progress: tests succeeded: 444, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.GetConsoleOutputResponseHandlerTest)
+[pool-47-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.GetConsoleOutputResponseHandlerTest) succeeded: 5ms
+Test suite progress: tests succeeded: 445, failed: 0, skipped: 0.
+Starting test testStart(org.jclouds.ec2.xml.InstanceStateChangeHandlerTest)
+Starting test testStop(org.jclouds.ec2.xml.InstanceStateChangeHandlerTest)
+Starting test testTerminate(org.jclouds.ec2.xml.InstanceStateChangeHandlerTest)
+[pool-48-thread-2] Test testStop(org.jclouds.ec2.xml.InstanceStateChangeHandlerTest) succeeded: 10ms
+Test suite progress: tests succeeded: 446, failed: 0, skipped: 0.
+[pool-48-thread-3] Test testTerminate(org.jclouds.ec2.xml.InstanceStateChangeHandlerTest) succeeded: 11ms
+Test suite progress: tests succeeded: 447, failed: 0, skipped: 0.
+[pool-48-thread-1] Test testStart(org.jclouds.ec2.xml.InstanceStateChangeHandlerTest) succeeded: 24ms
+Test suite progress: tests succeeded: 448, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.KeyPairResponseHandlerTest)
+[pool-49-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.KeyPairResponseHandlerTest) succeeded: 26ms
+Test suite progress: tests succeeded: 449, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.PermissionHandlerTest)
+[pool-50-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.PermissionHandlerTest) succeeded: 4ms
+Test suite progress: tests succeeded: 450, failed: 0, skipped: 0.
+Starting test testCloudBridge(org.jclouds.ec2.xml.RunInstancesResponseHandlerTest)
+[pool-51-thread-1] Test testCloudBridge(org.jclouds.ec2.xml.RunInstancesResponseHandlerTest) succeeded: 53ms
+Test suite progress: tests succeeded: 451, failed: 0, skipped: 0.
+Starting test testEC2(org.jclouds.ec2.xml.RunInstancesResponseHandlerTest)
+[pool-51-thread-2] Test testEC2(org.jclouds.ec2.xml.RunInstancesResponseHandlerTest) succeeded: 4ms
+Test suite progress: tests succeeded: 452, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.ec2.xml.SnapshotHandlerTest)
+[pool-52-thread-1] Test testApplyInputStream(org.jclouds.ec2.xml.SnapshotHandlerTest) succeeded: 6ms
+Test suite progress: tests succeeded: 453, failed: 0, skipped: 0.
+Tests run: 453, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.442 sec
+
+Results :
+
+Tests run: 453, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- clojure-maven-plugin:1.3.10:test (test-clojure) @ ec2 ---
+
+Testing com.theoryinpractise.clojure.testrunner
+
+Ran 0 tests containing 0 assertions.
+0 failures, 0 errors.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ ec2 ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ ec2 ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/apis/ec2/target/ec2-1.5.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ ec2 ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/apis/ec2/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@151a64ed
+Starting test testCreateImage(org.jclouds.ec2.compute.extensions.EC2ImageExtensionLiveTest)
+Starting test testWindowsAdminWorks(org.jclouds.ec2.compute.functions.PasswordCredentialsFromWindowsInstanceLiveTest)
+Starting test testDescribeAvailabilityZones(org.jclouds.ec2.services.AvailabilityZoneAndRegionClientLiveTest)
+Starting test testCanRecreateGroup(org.jclouds.ec2.compute.TestCanRecreateGroupLiveTest)
+[TestNG] Test testDescribeAvailabilityZones(org.jclouds.ec2.services.AvailabilityZoneAndRegionClientLiveTest) succeeded: 14434ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testDescribeRegions(org.jclouds.ec2.services.AvailabilityZoneAndRegionClientLiveTest)
+[TestNG] Test testDescribeRegions(org.jclouds.ec2.services.AvailabilityZoneAndRegionClientLiveTest) succeeded: 1638ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testAttachVolumeInRegion(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+[TestNG] Test testAttachVolumeInRegion(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testCreateVolumeInAvailabilityZone(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+[TestNG] Test testCreateVolumeInAvailabilityZone(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 6681ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testDescribeSnapshots(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+Starting test testCreateAndListEBSBackedImage(org.jclouds.ec2.services.AMIClientLiveTest)
+[TestNG] Test testDescribeSnapshots(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 70765ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testDescribeVolumes(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+[TestNG] Test testDescribeVolumes(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 6162ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testDetachVolumeInRegion(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+[TestNG] Test testDetachVolumeInRegion(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testCreateSnapshotInRegion(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+[TestNG] Test testCreateSnapshotInRegion(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 1535ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testCreateVolumeFromSnapshotInAvailabilityZone(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+[TestNG] Test testCreateVolumeFromSnapshotInAvailabilityZone(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 7068ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testCreateVolumeFromSnapshotInAvailabilityZoneWithSize(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+[TestNG] Test testCreateVolumeFromSnapshotInAvailabilityZoneWithSize(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 2247ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testDeleteVolumeInRegion(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+[TestNG] Test testDeleteVolumeInRegion(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 1148ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testGetCreateVolumePermissionForSnapshot(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+[TestNG] Test testGetCreateVolumePermissionForSnapshot(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 485ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testDeleteSnapshotInRegion(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest)
+[TestNG] Test testDeleteSnapshotInRegion(org.jclouds.ec2.services.ElasticBlockStoreClientLiveTest) succeeded: 878ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testDescribeAddresses(org.jclouds.ec2.services.ElasticIPAddressClientLiveTest)
+[TestNG] Test testDescribeAddresses(org.jclouds.ec2.services.ElasticIPAddressClientLiveTest) succeeded: 4764ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testDescribeInstances(org.jclouds.ec2.services.InstanceClientLiveTest)
+[TestNG] Test testDescribeInstances(org.jclouds.ec2.services.InstanceClientLiveTest) succeeded: 5114ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testCreateKeyPair(org.jclouds.ec2.services.KeyPairClientLiveTest)
+[TestNG] Test testCreateKeyPair(org.jclouds.ec2.services.KeyPairClientLiveTest) succeeded: 2977ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testDescribeKeyPairs(org.jclouds.ec2.services.KeyPairClientLiveTest)
+[TestNG] Test testDescribeKeyPairs(org.jclouds.ec2.services.KeyPairClientLiveTest) succeeded: 5909ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testAuthorizeSecurityGroupIngressCidr(org.jclouds.ec2.services.SecurityGroupClientLiveTest)
+[TestNG] Test testCreateAndListEBSBackedImage(org.jclouds.ec2.services.AMIClientLiveTest) succeeded: 81042ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testDescribeImageBadId(org.jclouds.ec2.services.AMIClientLiveTest)
+[TestNG] Test testDescribeImageBadId(org.jclouds.ec2.services.AMIClientLiveTest) succeeded: 577ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testDescribeImageNotExists(org.jclouds.ec2.services.AMIClientLiveTest)
+[TestNG] Test testDescribeImageNotExists(org.jclouds.ec2.services.AMIClientLiveTest) succeeded: 611ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testDescribeImages(org.jclouds.ec2.services.AMIClientLiveTest)
+[TestNG] Test testAuthorizeSecurityGroupIngressCidr(org.jclouds.ec2.services.SecurityGroupClientLiveTest) succeeded: 6114ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testAuthorizeSecurityGroupIngressSourceGroup(org.jclouds.ec2.services.SecurityGroupClientLiveTest)
+[TestNG] Test testAuthorizeSecurityGroupIngressSourceGroup(org.jclouds.ec2.services.SecurityGroupClientLiveTest) succeeded: 10803ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testAuthorizeSecurityGroupIngressSourcePort(org.jclouds.ec2.services.SecurityGroupClientLiveTest)
+[TestNG] Test testAuthorizeSecurityGroupIngressSourcePort(org.jclouds.ec2.services.SecurityGroupClientLiveTest) succeeded: 5247ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testCreateSecurityGroup(org.jclouds.ec2.services.SecurityGroupClientLiveTest)
+[TestNG] Test testCreateSecurityGroup(org.jclouds.ec2.services.SecurityGroupClientLiveTest) succeeded: 4587ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testDescribe(org.jclouds.ec2.services.SecurityGroupClientLiveTest)
+[TestNG] Test testDescribe(org.jclouds.ec2.services.SecurityGroupClientLiveTest) succeeded: 11804ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+[{id=us-east-1/i-f89bbd82, providerId=i-f89bbd82, location={scope=ZONE, id=us-east-1b, description=us-east-1b, parent=us-east-1}, group=adriancoleec2recreate, imageId=us-east-1/ami-20d82449, os={family=ubuntu, arch=paravirtual, version=10.04, description=ubuntu_test_karl/ubuntu-10.04-chef-0.9.8-x86_64-client1.manifest.xml, is64Bit=true}, status=TERMINATED[terminated], loginPort=22, hardware={id=m1.small, providerId=m1.small, processors=[{cores=1.0, speed=1.0}], ram=1740, volumes=[{type=LOCAL, size=10.0, device=/dev/sda1, bootDevice=true, durable=false}, {type=LOCAL, size=150.0, device=/dev/sda2, bootDevice=false, durable=false}], supportsImage=And(ALWAYS_TRUE,Or(isWindows(),requiresVirtualizationType(paravirtual)),ALWAYS_TRUE,ALWAYS_TRUE)}, loginUser=root}]
+[TestNG] Test testCreateImage(org.jclouds.ec2.compute.extensions.EC2ImageExtensionLiveTest) failed.
+Test suite progress: tests succeeded: 25, failed: 1, skipped: 0.
+[TestNG] Test testSpawnNodeFromImage(org.jclouds.ec2.compute.extensions.EC2ImageExtensionLiveTest) skipped.
+Test suite progress: tests succeeded: 25, failed: 1, skipped: 1.
+[TestNG] Test testDeleteImage(org.jclouds.ec2.compute.extensions.EC2ImageExtensionLiveTest) skipped.
+Test suite progress: tests succeeded: 25, failed: 1, skipped: 2.
+[TestNG] Test testCanRecreateGroup(org.jclouds.ec2.compute.TestCanRecreateGroupLiveTest) failed.
+Test suite progress: tests succeeded: 25, failed: 2, skipped: 2.
+[TestNG] Test testDescribeImages(org.jclouds.ec2.services.AMIClientLiveTest) succeeded: 297288ms
+Test suite progress: tests succeeded: 26, failed: 2, skipped: 2.
+Starting test setServiceDefaults(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 27, failed: 2, skipped: 2.
+Starting test testCompareSizes(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testWindowsAdminWorks(org.jclouds.ec2.compute.functions.PasswordCredentialsFromWindowsInstanceLiveTest) succeeded: 473173ms
+Test suite progress: tests succeeded: 28, failed: 2, skipped: 2.
+Sep 16, 2012 7:15:55 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: smallest {id=m1.small, providerId=m1.small, processors=[{cores=1.0, speed=1.0}], ram=1740, volumes=[{type=LOCAL, size=10.0, device=/dev/sda1, bootDevice=true, durable=false}, {type=LOCAL, size=150.0, device=/dev/sda2, bootDevice=false, durable=false}], supportsImage=And(ALWAYS_TRUE,Or(isWindows(),requiresVirtualizationType(paravirtual)),ALWAYS_TRUE,ALWAYS_TRUE)}
+Sep 16, 2012 7:15:55 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: fastest {id=c1.xlarge, providerId=c1.xlarge, processors=[{cores=8.0, speed=2.5}], ram=7168, volumes=[{type=LOCAL, size=10.0, device=/dev/sda1, bootDevice=true, durable=false}, {type=LOCAL, size=420.0, device=/dev/sdb, bootDevice=false, durable=false}, {type=LOCAL, size=420.0, device=/dev/sdc, bootDevice=false, durable=false}, {type=LOCAL, size=420.0, device=/dev/sdd, bootDevice=false, durable=false}, {type=LOCAL, size=420.0, device=/dev/sde, bootDevice=false, durable=false}], supportsImage=And(ALWAYS_TRUE,Or(isWindows(),requiresVirtualizationType(paravirtual)),ALWAYS_TRUE,is64Bit())}
+Sep 16, 2012 7:15:55 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: biggest {id=c1.xlarge, providerId=c1.xlarge, processors=[{cores=8.0, speed=2.5}], ram=7168, volumes=[{type=LOCAL, size=10.0, device=/dev/sda1, bootDevice=true, durable=false}, {type=LOCAL, size=420.0, device=/dev/sdb, bootDevice=false, durable=false}, {type=LOCAL, size=420.0, device=/dev/sdc, bootDevice=false, durable=false}, {type=LOCAL, size=420.0, device=/dev/sdd, bootDevice=false, durable=false}, {type=LOCAL, size=420.0, device=/dev/sde, bootDevice=false, durable=false}], supportsImage=And(ALWAYS_TRUE,Or(isWindows(),requiresVirtualizationType(paravirtual)),ALWAYS_TRUE,is64Bit())}
+[TestNG] Test testCompareSizes(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 85860ms
+Test suite progress: tests succeeded: 29, failed: 2, skipped: 2.
+Starting test testCorrectAuthException(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 527ms
+Test suite progress: tests succeeded: 30, failed: 2, skipped: 2.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 966ms
+Test suite progress: tests succeeded: 31, failed: 2, skipped: 2.
+Starting test testCreateAndRunAService(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testCreateAndRunAService(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 31, failed: 3, skipped: 2.
+Starting test testGetAssignableLocations(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=REGION, id=sa-east-1, description=sa-east-1, parent=ec2}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=REGION, id=ap-northeast-1, description=ap-northeast-1, parent=ec2}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=REGION, id=eu-west-1, description=eu-west-1, parent=ec2}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=REGION, id=us-east-1, description=us-east-1, parent=ec2}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=REGION, id=us-west-1, description=us-west-1, parent=ec2}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=REGION, id=us-west-2, description=us-west-2, parent=ec2}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=REGION, id=ap-southeast-1, description=ap-southeast-1, parent=ec2}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=sa-east-1a, description=sa-east-1a, parent=sa-east-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=sa-east-1b, description=sa-east-1b, parent=sa-east-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=ap-northeast-1a, description=ap-northeast-1a, parent=ap-northeast-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=ap-northeast-1b, description=ap-northeast-1b, parent=ap-northeast-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=ap-northeast-1c, description=ap-northeast-1c, parent=ap-northeast-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=eu-west-1a, description=eu-west-1a, parent=eu-west-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=eu-west-1b, description=eu-west-1b, parent=eu-west-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=eu-west-1c, description=eu-west-1c, parent=eu-west-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-east-1a, description=us-east-1a, parent=us-east-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-east-1b, description=us-east-1b, parent=us-east-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-east-1c, description=us-east-1c, parent=us-east-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-east-1d, description=us-east-1d, parent=us-east-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-east-1e, description=us-east-1e, parent=us-east-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-west-1a, description=us-west-1a, parent=us-west-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-west-1b, description=us-west-1b, parent=us-west-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-west-1c, description=us-west-1c, parent=us-west-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-west-2a, description=us-west-2a, parent=us-west-2}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-west-2b, description=us-west-2b, parent=us-west-2}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=us-west-2c, description=us-west-2c, parent=us-west-2}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=ap-southeast-1a, description=ap-southeast-1a, parent=ap-southeast-1}
+Sep 16, 2012 7:18:42 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=ap-southeast-1b, description=ap-southeast-1b, parent=ap-southeast-1}
+[TestNG] Test testGetAssignableLocations(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 6ms
+Test suite progress: tests succeeded: 32, failed: 3, skipped: 2.
+Starting test testImageById(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testImageById(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 91845ms
+Test suite progress: tests succeeded: 33, failed: 3, skipped: 2.
+Starting test testImagesCache(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 34, failed: 3, skipped: 2.
+Starting test testListImages(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 49ms
+Test suite progress: tests succeeded: 35, failed: 3, skipped: 2.
+Starting test testListSizes(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 36, failed: 3, skipped: 2.
+Starting test testOptionToNotBlock(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testOptionToNotBlock(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 13831ms
+Test suite progress: tests succeeded: 37, failed: 3, skipped: 2.
+[TestNG] Test cleanupExtendedStuffInRegion(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 37, failed: 3, skipped: 3.
+Starting test testAutoIpAllocation(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testAutoIpAllocation(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 37, failed: 4, skipped: 3.
+Starting test testMapEBS(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testMapEBS(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 82650ms
+Test suite progress: tests succeeded: 38, failed: 4, skipped: 3.
+Starting test testGetLaunchPermissionForImage(org.jclouds.ec2.services.AMIClientLiveTest)
+[TestNG] Test testGetLaunchPermissionForImage(org.jclouds.ec2.services.AMIClientLiveTest) succeeded: 1178ms
+Test suite progress: tests succeeded: 39, failed: 4, skipped: 3.
+Starting test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 39, failed: 5, skipped: 3.
+Starting test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 39, failed: 6, skipped: 3.
+Starting test testTemplateMatch(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testTemplateMatch(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 82835ms
+Test suite progress: tests succeeded: 40, failed: 6, skipped: 3.
+Starting test testExtendedOptionsAndLogin(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testExtendedOptionsAndLogin(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 40, failed: 7, skipped: 3.
+Starting test testImagesResolveCorrectly(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest)
+[TestNG] Test testImagesResolveCorrectly(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) succeeded: 81517ms
+Test suite progress: tests succeeded: 41, failed: 7, skipped: 3.
+[TestNG] Test testCreateTwoNodesWithRunScript(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 41, failed: 7, skipped: 4.
+[TestNG] Test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 41, failed: 7, skipped: 5.
+[TestNG] Test testCredentialsCache(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 41, failed: 7, skipped: 6.
+[TestNG] Test testGet(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 41, failed: 7, skipped: 7.
+[TestNG] Test testReboot(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 41, failed: 7, skipped: 8.
+[TestNG] Test testSuspendResume(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 41, failed: 7, skipped: 9.
+[TestNG] Test testGetNodesWithDetails(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 41, failed: 7, skipped: 10.
+[TestNG] Test testListNodes(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 41, failed: 7, skipped: 11.
+[TestNG] Test testDestroyNodes(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 41, failed: 7, skipped: 12.
+Tests run: 60, Failures: 7, Errors: 0, Skipped: 12, Time elapsed: 2,094.419 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testCreateImage(org.jclouds.ec2.compute.extensions.EC2ImageExtensionLiveTest): error running 1 node group(test-create-image) location(us-east-1) image(ami-20d82449) size(m1.small) options({})(..)
+  testCanRecreateGroup(org.jclouds.ec2.compute.TestCanRecreateGroupLiveTest): org.jclouds.compute.RunNodesException: error running 1 node group(adriancoleec2recreate) location(us-east-1) image(ami-20d82449) size(m1.small) options({})(..)
+  testCreateAndRunAService(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest): error running 1 node group(ec2-s) location(us-east-1) image(ami-20d82449) size(m1.small) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080], tags=[ec2-s], userMetadata={name=ec2-s}})(..)
+  testAutoIpAllocation(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest): request POST https://ec2.us-east-1.amazonaws.com/ HTTP/1.1 failed with code 400, error: AWSError{requestId='2cb25308-7a82-49df-bd18-c39a841573cc', requestToken='null', code='InvalidInstanceID', message='The terminated instance 'i-2071505a' is not in a valid state for this operation.', context='{Response=, Errors=}'}
+  testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest): error running 1 node group(ec2-r) location(us-east-1) image(ami-20d82449) size(m1.small) options({blockOnPort:seconds=22:120})(..)
+  testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest): org.jclouds.compute.RunNodesException: error running 1 node group(twin1) location(us-east-1) image(ami-20d82449) size(m1.small) options({blockOnPort:seconds=22:301, inboundPorts=[22, 8080]})(..)
+  testExtendedOptionsAndLogin(org.jclouds.ec2.compute.EC2ComputeServiceLiveTest): error running 1 node group(ec2-o) location(us-east-1) image(ami-20d82449) size(m1.small) options({loginPrivateKeyPresent=true, scriptPresent=true, groupNames=[ec2-o], keyPair=ec2-o})(..)
+
+Tests run: 60, Failures: 7, Errors: 0, Skipped: 12
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 35:36.455s
+[INFO] Finished at: Sun Sep 16 19:42:09 PDT 2012
+[INFO] Final Memory: 21M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project ec2: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/apis/ec2/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

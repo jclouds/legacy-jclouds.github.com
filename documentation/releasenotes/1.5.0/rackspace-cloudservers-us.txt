@@ -1,0 +1,504 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:rackspace-cloudservers-us:bundle:1.5.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Rackspace Next Generation Cloud Servers US provider 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ rackspace-cloudservers-us ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/providers/rackspace-cloudservers-us/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ rackspace-cloudservers-us ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ rackspace-cloudservers-us ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ rackspace-cloudservers-us ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ rackspace-cloudservers-us ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ rackspace-cloudservers-us ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/rackspace-cloudservers-us/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ rackspace-cloudservers-us ---
+[INFO] Compiling 2 source files to /Users/adriancole/workspace/git/jclouds/providers/rackspace-cloudservers-us/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ rackspace-cloudservers-us ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/providers/rackspace-cloudservers-us/src/test/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ rackspace-cloudservers-us ---
+[INFO] Compiling 7 source files to /Users/adriancole/workspace/git/jclouds/providers/rackspace-cloudservers-us/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ rackspace-cloudservers-us ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/providers/rackspace-cloudservers-us/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.rackspace.cloudservers.us.CloudServersUSProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@4139eeda
+Starting test testAllContains(org.jclouds.rackspace.cloudservers.us.CloudServersUSProviderTest)
+Starting test testOfApiContains(org.jclouds.rackspace.cloudservers.us.CloudServersUSProviderTest)
+Starting test testTransformableToContains(org.jclouds.rackspace.cloudservers.us.CloudServersUSProviderTest)
+Starting test testWithId(org.jclouds.rackspace.cloudservers.us.CloudServersUSProviderTest)
+[pool-2-thread-1] Test testAllContains(org.jclouds.rackspace.cloudservers.us.CloudServersUSProviderTest) succeeded: 15ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testWithId(org.jclouds.rackspace.cloudservers.us.CloudServersUSProviderTest) succeeded: 10ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.rackspace.cloudservers.us.CloudServersUSProviderTest) succeeded: 12ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.rackspace.cloudservers.us.CloudServersUSProviderTest) succeeded: 14ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.678 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ rackspace-cloudservers-us ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ rackspace-cloudservers-us ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/providers/rackspace-cloudservers-us/target/rackspace-cloudservers-us-1.5.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ rackspace-cloudservers-us ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/providers/rackspace-cloudservers-us/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@31f26605
+Starting test setServiceDefaults(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCompareSizes(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+Sep 16, 2012 8:22:38 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: smallest {id=ORD/2, providerId=2, name=512MB Standard Instance, location={scope=ZONE, id=ORD, description=ORD, parent=rackspace-cloudservers-us, iso3166Codes=[US-IL]}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{type=LOCAL, size=20.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+Sep 16, 2012 8:22:38 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: fastest {id=ORD/8, providerId=8, name=30GB Standard Instance, location={scope=ZONE, id=ORD, description=ORD, parent=rackspace-cloudservers-us, iso3166Codes=[US-IL]}, processors=[{cores=8.0, speed=1.0}], ram=30720, volumes=[{type=LOCAL, size=1200.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+Sep 16, 2012 8:22:38 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: biggest {id=ORD/8, providerId=8, name=30GB Standard Instance, location={scope=ZONE, id=ORD, description=ORD, parent=rackspace-cloudservers-us, iso3166Codes=[US-IL]}, processors=[{cores=8.0, speed=1.0}], ram=30720, volumes=[{type=LOCAL, size=1200.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+[TestNG] Test testCompareSizes(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 8940ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 1506ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+Sep 16, 2012 8:22:39 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=ORD, description=ORD, parent=rackspace-cloudservers-us, iso3166Codes=[US-IL]}
+Sep 16, 2012 8:22:39 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=DFW, description=DFW, parent=rackspace-cloudservers-us, iso3166Codes=[US-TX]}
+[TestNG] Test testGetAssignableLocations(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testImageById(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test testImageById(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 867ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testImagesCache(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testListImages(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testListSizes(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testOptionToNotBlock(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test testOptionToNotBlock(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testCreateAndRunAService(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+Sep 16, 2012 8:40:39 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest createAndRunAServiceInGroup
+INFO: << available node(ORD/68194806-028c-45cd-a0ce-71bcc144cf5a) os({family=ubuntu, name=Ubuntu 12.04 LTS (Precise Pangolin), version=12.04, description=Ubuntu 12.04 LTS (Precise Pangolin), is64Bit=true}) in 1078s
+Sep 16, 2012 8:42:27 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest createAndRunAServiceInGroup
+INFO: << configured node(ORD/68194806-028c-45cd-a0ce-71bcc144cf5a) with java full version "1.6.0_24-b24" and jetty jetty-8.1.5.v20120716 in 94s
+Sep 16, 2012 8:42:37 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest trackAvailabilityOfProcessOnNode
+INFO: << start jetty on node(ORD/68194806-028c-45cd-a0ce-71bcc144cf5a)[198.61.168.185:8080] [backgroundProcessMilliseconds=3703, socketOpenMilliseconds=6590]
+Sep 16, 2012 8:42:52 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest trackAvailabilityOfProcessOnNode
+INFO: << start jetty on node(ORD/68194806-028c-45cd-a0ce-71bcc144cf5a)[198.61.168.185:8080] [backgroundProcessMilliseconds=3703, socketOpenMilliseconds=6616]
+[TestNG] Test testCreateAndRunAService(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 1249551ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testCorrectAuthException(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 1122ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 11, failed: 1, skipped: 0.
+Starting test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+Sep 16, 2012 9:22:08 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest$1 call
+INFO: Started node ORD/df2f8dc3-98ad-4925-95dd-0b9d2b584639
+Sep 16, 2012 9:22:10 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest$1 call
+INFO: Started node ORD/b493d876-2890-4a88-a055-aeb678bbcf22
+[TestNG] Test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 1144780ms
+Test suite progress: tests succeeded: 12, failed: 1, skipped: 0.
+Starting test testTemplateMatch(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test testTemplateMatch(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 13, failed: 1, skipped: 0.
+Starting test testCreateTwoNodesWithRunScript(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest)
+[TestNG] Test testCreateTwoNodesWithRunScript(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 13, failed: 2, skipped: 0.
+[TestNG] Test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 13, failed: 2, skipped: 1.
+[TestNG] Test testCredentialsCache(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 13, failed: 2, skipped: 2.
+[TestNG] Test testGet(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 13, failed: 2, skipped: 3.
+[TestNG] Test testReboot(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 13, failed: 2, skipped: 4.
+[TestNG] Test testSuspendResume(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 13, failed: 2, skipped: 5.
+[TestNG] Test testGetNodesWithDetails(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 13, failed: 2, skipped: 6.
+[TestNG] Test testListNodes(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 13, failed: 2, skipped: 7.
+[TestNG] Test testDestroyNodes(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 13, failed: 2, skipped: 8.
+Starting test testCompareSizes(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+smallest {id=ORD/2, providerId=2, name=512MB Standard Instance, location={scope=ZONE, id=ORD, description=ORD, parent=rackspace-cloudservers-us, iso3166Codes=[US-IL]}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{type=LOCAL, size=20.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+fastest {id=ORD/8, providerId=8, name=30GB Standard Instance, location={scope=ZONE, id=ORD, description=ORD, parent=rackspace-cloudservers-us, iso3166Codes=[US-IL]}, processors=[{cores=8.0, speed=1.0}], ram=30720, volumes=[{type=LOCAL, size=1200.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+biggest {id=ORD/8, providerId=8, name=30GB Standard Instance, location={scope=ZONE, id=ORD, description=ORD, parent=rackspace-cloudservers-us, iso3166Codes=[US-IL]}, processors=[{cores=8.0, speed=1.0}], ram=30720, volumes=[{type=LOCAL, size=1200.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+[TestNG] Test testCompareSizes(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 5617ms
+Test suite progress: tests succeeded: 14, failed: 2, skipped: 8.
+Starting test testDefaultTemplateBuilder(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testDefaultTemplateBuilder(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 9ms
+Test suite progress: tests succeeded: 15, failed: 2, skipped: 8.
+Starting test testFromTemplate(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testFromTemplate(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 43ms
+Test suite progress: tests succeeded: 16, failed: 2, skipped: 8.
+Starting test testGetAssignableLocations(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+location {scope=ZONE, id=ORD, description=ORD, parent=rackspace-cloudservers-us, iso3166Codes=[US-IL]}
+location {scope=ZONE, id=DFW, description=DFW, parent=rackspace-cloudservers-us, iso3166Codes=[US-TX]}
+[TestNG] Test testGetAssignableLocations(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 9ms
+Test suite progress: tests succeeded: 17, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 18, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 15ms
+Test suite progress: tests succeeded: 19, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 10ms
+Test suite progress: tests succeeded: 20, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 30ms
+Test suite progress: tests succeeded: 21, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 6ms
+Test suite progress: tests succeeded: 22, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 11ms
+Test suite progress: tests succeeded: 23, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 24, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 25, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 26, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 27, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 28, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCanUseImageId(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanUseImageId(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 6608ms
+Test suite progress: tests succeeded: 29, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 30, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 31, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 32, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 33, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 34, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 35, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 36, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 37, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 38, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 16ms
+Test suite progress: tests succeeded: 39, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 40, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 41, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 42, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 43, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 44, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 45, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 46, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 48, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 49, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 50, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 51, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 52, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 53, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 54, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 55, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 56, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 57, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 58, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 59, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 60, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 61, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 62, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 63, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 64, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 65, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 66, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 67, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 68, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 10ms
+Test suite progress: tests succeeded: 69, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 70, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 71, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 72, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 73, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 74, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 75, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 76, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 77, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 78, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 79, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 80, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 81, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 82, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 83, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 84, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 85, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 86, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 87, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 88, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 19ms
+Test suite progress: tests succeeded: 89, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 90, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 91, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 92, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 93, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 94, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 35ms
+Test suite progress: tests succeeded: 95, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 96, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 97, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 98, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 99, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 100, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 101, failed: 2, skipped: 8.
+Starting test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 102, failed: 2, skipped: 8.
+Starting test testTemplateBuilderWithImageIdSpecified(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderWithImageIdSpecified(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 14462ms
+Test suite progress: tests succeeded: 103, failed: 2, skipped: 8.
+Starting test testTemplateBuilderWithLoginUserSpecified(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderWithLoginUserSpecified(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) succeeded: 12369ms
+Test suite progress: tests succeeded: 104, failed: 2, skipped: 8.
+Starting test testTemplateBuilder(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilder(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest) failed.
+Test suite progress: tests succeeded: 104, failed: 3, skipped: 8.
+Starting test testListFlavors(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSFlavorApiLiveTest)
+[TestNG] Test testListFlavors(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSFlavorApiLiveTest) succeeded: 945ms
+Test suite progress: tests succeeded: 105, failed: 3, skipped: 8.
+Starting test testListFlavorsInDetail(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSFlavorApiLiveTest)
+[TestNG] Test testListFlavorsInDetail(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSFlavorApiLiveTest) succeeded: 1133ms
+Test suite progress: tests succeeded: 106, failed: 3, skipped: 8.
+Starting test testGetFlavorById(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSFlavorApiLiveTest)
+[TestNG] Test testGetFlavorById(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSFlavorApiLiveTest) succeeded: 7294ms
+Test suite progress: tests succeeded: 107, failed: 3, skipped: 8.
+Starting test testListImages(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSImageApiLiveTest)
+[TestNG] Test testListImages(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSImageApiLiveTest) succeeded: 6504ms
+Test suite progress: tests succeeded: 108, failed: 3, skipped: 8.
+Starting test testListImagesInDetail(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSImageApiLiveTest)
+[TestNG] Test testListImagesInDetail(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSImageApiLiveTest) succeeded: 3768ms
+Test suite progress: tests succeeded: 109, failed: 3, skipped: 8.
+Starting test testGetImageById(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSImageApiLiveTest)
+[TestNG] Test testGetImageById(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSImageApiLiveTest) succeeded: 48048ms
+Test suite progress: tests succeeded: 110, failed: 3, skipped: 8.
+Starting test testListServers(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSServerApiLiveTest)
+[TestNG] Test testListServers(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSServerApiLiveTest) succeeded: 856ms
+Test suite progress: tests succeeded: 111, failed: 3, skipped: 8.
+Starting test testListServersInDetail(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSServerApiLiveTest)
+[TestNG] Test testListServersInDetail(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSServerApiLiveTest) succeeded: 1126ms
+Test suite progress: tests succeeded: 112, failed: 3, skipped: 8.
+Starting test testGetServerById(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSServerApiLiveTest)
+[TestNG] Test testGetServerById(org.jclouds.rackspace.cloudservers.us.features.CloudServersUSServerApiLiveTest) succeeded: 2496ms
+Test suite progress: tests succeeded: 113, failed: 3, skipped: 8.
+Tests run: 125, Failures: 4, Errors: 0, Skipped: 8, Time elapsed: 5,612.353 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest): error running 1 node group(rackspace-cloudservers-usr) location(ORD) image(5cebb13a-f783-4f8c-8058-c4182c724ccd) size(2) options({blockOnPort:seconds=22:120, autoAssignFloatingIp=false})(..)
+  testCreateTwoNodesWithRunScript(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest): error running 2 nodes group(rackspace-cloudservers-us) location(ORD) image(5cebb13a-f783-4f8c-8058-c4182c724ccd) size(2) options({scriptPresent=true, autoAssignFloatingIp=false})(..)
+  tearDownContext(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSComputeServiceLiveTest): {id=ORD/626b0975-da04-47ba-b1f4-b140b16be5b9, providerId=626b0975-da04-47ba-b1f4-b140b16be5b9, name=rackspace-cloudservers-us-b09, location={scope=HOST, id=f8007024260592ee009f74b7f98db8c9efa774344df0a2f8f7597337, description=f8007024260592ee009f74b7f98db8c9efa774344df0a2f8f7597337, parent=ORD}, group=rackspace-cloudservers-us, imageId=ORD/5cebb13a-f783-4f8c-8058-c4182c724ccd, os={family=ubuntu, name=Ubuntu 12.04 LTS (Precise Pangolin), version=12.04, description=Ubuntu 12.04 LTS (Precise Pangolin), is64Bit=true}, status=RUNNING, loginPort=22, hostname=rackspace-cloudservers-us-b09, privateAddresses=[10.177.8.145], publicAddresses=[198.61.169.9], hardware={id=ORD/2, providerId=2, name=512MB Standard Instance, location={scope=ZONE, id=ORD, description=ORD, parent=rackspace-cloudservers-us, iso3166Codes=[US-IL]}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{type=LOCAL, size=20.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}, loginUser=adriancole}
+  testTemplateBuilder(org.jclouds.rackspace.cloudservers.us.compute.CloudServersUSTemplateBuilderLiveTest): expected:<ORD> but was:<DFW>
+
+Tests run: 125, Failures: 4, Errors: 0, Skipped: 8
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1:33:47.532s
+[INFO] Finished at: Sun Sep 16 21:56:02 PDT 2012
+[INFO] Final Memory: 17M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project rackspace-cloudservers-us: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/providers/rackspace-cloudservers-us/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
