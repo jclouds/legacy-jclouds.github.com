@@ -1,0 +1,165 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:iam:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud iam api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ iam ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/iam/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ iam ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ iam ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ iam ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ iam ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ iam ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/iam/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ iam ---
+[INFO] Compiling 11 source files to /Users/adriancole/workspace/git/jclouds/labs/iam/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ iam ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/iam/src/test/clojure
+[INFO] Copying 4 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ iam ---
+[INFO] Compiling 11 source files to /Users/adriancole/workspace/git/jclouds/labs/iam/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ iam ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/iam/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@4de13d52
+Starting test testGetCurrentWhenResponseIs2xx(org.jclouds.iam.features.UserApiExpectTest)
+Starting test testGetWhenResponseIs2xx(org.jclouds.iam.features.UserApiExpectTest)
+Starting test testGetWhenResponseIs404(org.jclouds.iam.features.UserApiExpectTest)
+Starting test testList2PagesWhenResponseIs2xx(org.jclouds.iam.features.UserApiExpectTest)
+Starting test testListWhenResponseIs2xx(org.jclouds.iam.features.UserApiExpectTest)
+[pool-2-thread-1] Test testGetCurrentWhenResponseIs2xx(org.jclouds.iam.features.UserApiExpectTest) succeeded: 1586ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testListWhenResponseIs2xx(org.jclouds.iam.features.UserApiExpectTest) succeeded: 1555ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testListWithOptionsWhenResponseIs2xx(org.jclouds.iam.features.UserApiExpectTest)
+Starting test testListWhenResponseIs404(org.jclouds.iam.features.UserApiExpectTest)
+[pool-2-thread-2] Test testGetWhenResponseIs2xx(org.jclouds.iam.features.UserApiExpectTest) succeeded: 1595ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testList2PagesWhenResponseIs2xx(org.jclouds.iam.features.UserApiExpectTest) succeeded: 1619ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testGetWhenResponseIs404(org.jclouds.iam.features.UserApiExpectTest) succeeded: 1711ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testListWhenResponseIs404(org.jclouds.iam.features.UserApiExpectTest) succeeded: 179ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testListWithOptionsWhenResponseIs2xx(org.jclouds.iam.features.UserApiExpectTest) succeeded: 188ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.iam.IAMApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.iam.IAMApiMetadataTest)
+[pool-3-thread-2] Test testTransformableToContains(org.jclouds.iam.IAMApiMetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-3-thread-1] Test testAllContains(org.jclouds.iam.IAMApiMetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.iam.IAMApiMetadataTest)
+[pool-3-thread-3] Test testWithId(org.jclouds.iam.IAMApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testContextAssignableFromRestContext(org.jclouds.iam.IAMApiMetadataTest)
+[pool-3-thread-4] Test testContextAssignableFromRestContext(org.jclouds.iam.IAMApiMetadataTest) succeeded: 2ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testMarker(org.jclouds.iam.options.ListUsersOptionsTest)
+[pool-4-thread-1] Test testMarker(org.jclouds.iam.options.ListUsersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testMarkerStatic(org.jclouds.iam.options.ListUsersOptionsTest)
+[pool-4-thread-2] Test testMarkerStatic(org.jclouds.iam.options.ListUsersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testMaxItems(org.jclouds.iam.options.ListUsersOptionsTest)
+[pool-4-thread-3] Test testMaxItems(org.jclouds.iam.options.ListUsersOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testMaxItemsStatic(org.jclouds.iam.options.ListUsersOptionsTest)
+[pool-4-thread-4] Test testMaxItemsStatic(org.jclouds.iam.options.ListUsersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testPathPrefix(org.jclouds.iam.options.ListUsersOptionsTest)
+[pool-4-thread-5] Test testPathPrefix(org.jclouds.iam.options.ListUsersOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testPathPrefixStatic(org.jclouds.iam.options.ListUsersOptionsTest)
+[pool-4-thread-5] Test testPathPrefixStatic(org.jclouds.iam.options.ListUsersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test test(org.jclouds.iam.parse.GetUserResponseTest)
+[pool-5-thread-1] Test test(org.jclouds.iam.parse.GetUserResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test test(org.jclouds.iam.parse.ListUsersResponseTest)
+[pool-6-thread-1] Test test(org.jclouds.iam.parse.ListUsersResponseTest) succeeded: 4ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.361 sec
+
+Results :
+
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ iam ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ iam ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/iam/target/iam-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ iam ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/iam/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@5a77a7f9
+Starting test testGetCurrentUser(org.jclouds.iam.features.UserApiLiveTest)
+Starting test testWired(org.jclouds.iam.IAMApiLiveTest)
+[TestNG] Test testWired(org.jclouds.iam.IAMApiLiveTest) succeeded: 1149ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[TestNG] Test testGetCurrentUser(org.jclouds.iam.features.UserApiLiveTest) succeeded: 1151ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testListUsers(org.jclouds.iam.features.UserApiLiveTest)
+[TestNG] Test testListUsers(org.jclouds.iam.features.UserApiLiveTest) succeeded: 946ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.946 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ iam ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ iam ---
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/iam/target/iam-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/iam/1.6.0-SNAPSHOT/iam-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/iam/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/labs/iam/1.6.0-SNAPSHOT/iam-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/iam/target/iam-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/iam/1.6.0-SNAPSHOT/iam-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ iam ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20.292s
+[INFO] Finished at: Mon Sep 17 09:04:40 PDT 2012
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------

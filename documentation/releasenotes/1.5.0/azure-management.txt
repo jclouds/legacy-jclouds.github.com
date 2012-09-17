@@ -1,0 +1,253 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:azure-management:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud azure-management api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ azure-management ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/azure-management/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ azure-management ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ azure-management ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ azure-management ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ azure-management ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ azure-management ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/azure-management/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ azure-management ---
+[INFO] Compiling 94 source files to /Users/adriancole/workspace/git/jclouds/labs/azure-management/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ azure-management ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/azure-management/src/test/clojure
+[INFO] Copying 18 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ azure-management ---
+[INFO] Compiling 24 source files to /Users/adriancole/workspace/git/jclouds/labs/azure-management/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ azure-management ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/azure-management/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@77d80e6d
+Starting test testAllContains(org.jclouds.azure.management.AzureManagementProviderMetadataTest)
+[pool-2-thread-1] Test testAllContains(org.jclouds.azure.management.AzureManagementProviderMetadataTest) succeeded: 14ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testOfApiContains(org.jclouds.azure.management.AzureManagementProviderMetadataTest)
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.azure.management.AzureManagementProviderMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.azure.management.AzureManagementProviderMetadataTest)
+Starting test testWithId(org.jclouds.azure.management.AzureManagementProviderMetadataTest)
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.azure.management.AzureManagementProviderMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testWithId(org.jclouds.azure.management.AzureManagementProviderMetadataTest) succeeded: 5ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.azure.management.features.DiskApiExpectTest)
+Starting test testDeleteWhenResponseIs404(org.jclouds.azure.management.features.DiskApiExpectTest)
+Starting test testListWhenResponseIs2xx(org.jclouds.azure.management.features.DiskApiExpectTest)
+Starting test testListWhenResponseIs404(org.jclouds.azure.management.features.DiskApiExpectTest)
+[pool-3-thread-2] Test testDeleteWhenResponseIs404(org.jclouds.azure.management.features.DiskApiExpectTest) succeeded: 2577ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[pool-3-thread-1] Test testDeleteWhenResponseIs2xx(org.jclouds.azure.management.features.DiskApiExpectTest) succeeded: 2617ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-3-thread-4] Test testListWhenResponseIs404(org.jclouds.azure.management.features.DiskApiExpectTest) succeeded: 2688ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+[pool-3-thread-3] Test testListWhenResponseIs2xx(org.jclouds.azure.management.features.DiskApiExpectTest) succeeded: 2699ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testCreateServiceWithLabelInLocationWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest)
+Starting test testDeleteWhenResponseIs404(org.jclouds.azure.management.features.HostedServiceApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest)
+Starting test testCreateWithOptionalParamsWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest)
+Starting test testGetDetailsWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest)
+[pool-4-thread-3] Test testDeleteWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest) succeeded: 800ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testGetDetailsWhenResponseIs404(org.jclouds.azure.management.features.HostedServiceApiExpectTest)
+[pool-4-thread-4] Test testDeleteWhenResponseIs404(org.jclouds.azure.management.features.HostedServiceApiExpectTest) succeeded: 832ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testGetWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest)
+[pool-4-thread-5] Test testGetDetailsWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest) succeeded: 861ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testGetWhenResponseIs404(org.jclouds.azure.management.features.HostedServiceApiExpectTest)
+[pool-4-thread-2] Test testCreateWithOptionalParamsWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest) succeeded: 1055ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest)
+[pool-4-thread-1] Test testCreateServiceWithLabelInLocationWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest) succeeded: 1105ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs404(org.jclouds.azure.management.features.HostedServiceApiExpectTest)
+[pool-4-thread-3] Test testGetDetailsWhenResponseIs404(org.jclouds.azure.management.features.HostedServiceApiExpectTest) succeeded: 546ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+[pool-4-thread-4] Test testGetWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest) succeeded: 574ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[pool-4-thread-5] Test testGetWhenResponseIs404(org.jclouds.azure.management.features.HostedServiceApiExpectTest) succeeded: 589ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+[pool-4-thread-1] Test testListWhenResponseIs404(org.jclouds.azure.management.features.HostedServiceApiExpectTest) succeeded: 379ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testListWhenResponseIs2xx(org.jclouds.azure.management.features.HostedServiceApiExpectTest) succeeded: 432ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.azure.management.features.LocationApiExpectTest)
+Starting test testListWhenResponseIs404(org.jclouds.azure.management.features.LocationApiExpectTest)
+[pool-5-thread-2] Test testListWhenResponseIs404(org.jclouds.azure.management.features.LocationApiExpectTest) succeeded: 312ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+[pool-5-thread-1] Test testListWhenResponseIs2xx(org.jclouds.azure.management.features.LocationApiExpectTest) succeeded: 430ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testGetWhenResponseIs2xx(org.jclouds.azure.management.features.OperationApiExpectTest)
+Starting test testGetWhenResponseIs404(org.jclouds.azure.management.features.OperationApiExpectTest)
+[pool-6-thread-1] Test testGetWhenResponseIs2xx(org.jclouds.azure.management.features.OperationApiExpectTest) succeeded: 182ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+[pool-6-thread-2] Test testGetWhenResponseIs404(org.jclouds.azure.management.features.OperationApiExpectTest) succeeded: 194ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testAddWhenResponseIs2xx(org.jclouds.azure.management.features.OSImageApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.azure.management.features.OSImageApiExpectTest)
+Starting test testListWhenResponseIs2xx(org.jclouds.azure.management.features.OSImageApiExpectTest)
+Starting test testListWhenResponseIs404(org.jclouds.azure.management.features.OSImageApiExpectTest)
+Starting test testDeleteWhenResponseIs404(org.jclouds.azure.management.features.OSImageApiExpectTest)
+[pool-7-thread-2] Test testDeleteWhenResponseIs2xx(org.jclouds.azure.management.features.OSImageApiExpectTest) succeeded: 531ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testUpdateWhenResponseIs2xx(org.jclouds.azure.management.features.OSImageApiExpectTest)
+[pool-7-thread-3] Test testDeleteWhenResponseIs404(org.jclouds.azure.management.features.OSImageApiExpectTest) succeeded: 482ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+[pool-7-thread-4] Test testListWhenResponseIs2xx(org.jclouds.azure.management.features.OSImageApiExpectTest) succeeded: 533ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+[pool-7-thread-5] Test testListWhenResponseIs404(org.jclouds.azure.management.features.OSImageApiExpectTest) succeeded: 547ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+[pool-7-thread-1] Test testAddWhenResponseIs2xx(org.jclouds.azure.management.features.OSImageApiExpectTest) succeeded: 569ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+[pool-7-thread-2] Test testUpdateWhenResponseIs2xx(org.jclouds.azure.management.features.OSImageApiExpectTest) succeeded: 124ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testAddWhenResponseIs2xx(org.jclouds.azure.management.features.RoleApiExpectTest)
+Starting test testCaptureWhenResponseIs2xx(org.jclouds.azure.management.features.RoleApiExpectTest)
+Starting test testRestartWhenResponseIs2xx(org.jclouds.azure.management.features.RoleApiExpectTest)
+Starting test testShutdownWhenResponseIs2xx(org.jclouds.azure.management.features.RoleApiExpectTest)
+Starting test testStartWhenResponseIs2xx(org.jclouds.azure.management.features.RoleApiExpectTest)
+[pool-8-thread-3] Test testRestartWhenResponseIs2xx(org.jclouds.azure.management.features.RoleApiExpectTest) succeeded: 367ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+[pool-8-thread-2] Test testCaptureWhenResponseIs2xx(org.jclouds.azure.management.features.RoleApiExpectTest) succeeded: 384ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+[pool-8-thread-1] Test testAddWhenResponseIs2xx(org.jclouds.azure.management.features.RoleApiExpectTest) succeeded: 422ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+[pool-8-thread-5] Test testStartWhenResponseIs2xx(org.jclouds.azure.management.features.RoleApiExpectTest) succeeded: 371ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+[pool-8-thread-4] Test testShutdownWhenResponseIs2xx(org.jclouds.azure.management.features.RoleApiExpectTest) succeeded: 398ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test test(org.jclouds.azure.management.parse.ErrorTest)
+[pool-9-thread-1] Test test(org.jclouds.azure.management.parse.ErrorTest) succeeded: 2ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test test(org.jclouds.azure.management.parse.GetDeploymentTest)
+[pool-10-thread-1] Test test(org.jclouds.azure.management.parse.GetDeploymentTest) succeeded: 14ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test test(org.jclouds.azure.management.parse.GetHostedServiceDetailsTest)
+[pool-11-thread-1] Test test(org.jclouds.azure.management.parse.GetHostedServiceDetailsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test test(org.jclouds.azure.management.parse.GetHostedServiceTest)
+[pool-12-thread-1] Test test(org.jclouds.azure.management.parse.GetHostedServiceTest) succeeded: 2ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test test(org.jclouds.azure.management.parse.GetOperationTest)
+[pool-13-thread-1] Test test(org.jclouds.azure.management.parse.GetOperationTest) succeeded: 2ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test test(org.jclouds.azure.management.parse.ListDisksTest)
+[pool-14-thread-1] Test test(org.jclouds.azure.management.parse.ListDisksTest) succeeded: 3ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test test(org.jclouds.azure.management.parse.ListHostedServicesTest)
+[pool-15-thread-1] Test test(org.jclouds.azure.management.parse.ListHostedServicesTest) succeeded: 6ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test test(org.jclouds.azure.management.parse.ListLocationsTest)
+[pool-16-thread-1] Test test(org.jclouds.azure.management.parse.ListLocationsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test test(org.jclouds.azure.management.parse.ListOSImagesTest)
+[pool-17-thread-1] Test test(org.jclouds.azure.management.parse.ListOSImagesTest) succeeded: 4ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.91 sec
+
+Results :
+
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ azure-management ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ azure-management ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/azure-management/target/azure-management-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ azure-management ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/azure-management/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@79f6f296
+Starting test testList(org.jclouds.azure.management.features.LocationApiLiveTest)
+[TestNG] Test testList(org.jclouds.azure.management.features.LocationApiLiveTest) succeeded: 1382ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testList(org.jclouds.azure.management.features.OSImageApiLiveTest)
+Starting test testCreateHostedService(org.jclouds.azure.management.features.HostedServiceApiLiveTest)
+Starting test testList(org.jclouds.azure.management.features.DiskApiLiveTest)
+[TestNG] Test testList(org.jclouds.azure.management.features.OSImageApiLiveTest) succeeded: 1463ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[TestNG] Test testList(org.jclouds.azure.management.features.DiskApiLiveTest) succeeded: 974ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Sep 17, 2012 8:53:37 AM org.jclouds.azure.management.features.HostedServiceApiLiveTest testCreateHostedService
+INFO: operation succeeded: a99f167eda5541558b575b26bf2c8ff6
+Sep 17, 2012 8:53:39 AM org.jclouds.azure.management.features.HostedServiceApiLiveTest testCreateHostedService
+INFO: created hostedService: HostedServiceWithDetailedProperties{url=https://management.core.windows.net/eb0347c3-68d4-4550-9b39-5e7e0f92f7db/services/hostedservices/adriancole-jclouds-hostedservice, name=adriancole-jclouds-hostedservice, properties=DetailedHostedServiceProperties{location=West US, label=adriancole-jclouds-hostedservice, status=Created, created=Mon Sep 17 08:53:37 PDT 2012, lastModified=Mon Sep 17 08:53:36 PDT 2012, extendedProperties={}}}
+Sep 17, 2012 8:53:41 AM org.jclouds.azure.management.features.HostedServiceApiLiveTest testCreateHostedService
+INFO: hostedService available: HostedServiceWithDetailedProperties{url=https://management.core.windows.net/eb0347c3-68d4-4550-9b39-5e7e0f92f7db/services/hostedservices/adriancole-jclouds-hostedservice, name=adriancole-jclouds-hostedservice, properties=DetailedHostedServiceProperties{location=West US, label=adriancole-jclouds-hostedservice, status=Created, created=Mon Sep 17 08:53:37 PDT 2012, lastModified=Mon Sep 17 08:53:36 PDT 2012, extendedProperties={}}}
+[TestNG] Test testCreateHostedService(org.jclouds.azure.management.features.HostedServiceApiLiveTest) succeeded: 8048ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testList(org.jclouds.azure.management.features.HostedServiceApiLiveTest)
+[TestNG] Test testList(org.jclouds.azure.management.features.HostedServiceApiLiveTest) succeeded: 2282ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testDeleteHostedService(org.jclouds.azure.management.features.HostedServiceApiLiveTest)
+Sep 17, 2012 8:53:46 AM org.jclouds.azure.management.features.HostedServiceApiLiveTest testDeleteHostedService
+INFO: operation succeeded: eefafe93b8a0412a8e08e648d775bb00
+Sep 17, 2012 8:53:47 AM org.jclouds.azure.management.features.HostedServiceApiLiveTest testDeleteHostedService
+INFO: hostedService deleted: HostedServiceWithDetailedProperties{url=https://management.core.windows.net/eb0347c3-68d4-4550-9b39-5e7e0f92f7db/services/hostedservices/adriancole-jclouds-hostedservice, name=adriancole-jclouds-hostedservice, properties=DetailedHostedServiceProperties{location=West US, label=adriancole-jclouds-hostedservice, status=Created, created=Mon Sep 17 08:53:37 PDT 2012, lastModified=Mon Sep 17 08:53:36 PDT 2012, extendedProperties={}}}
+[TestNG] Test testDeleteHostedService(org.jclouds.azure.management.features.HostedServiceApiLiveTest) succeeded: 3761ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.04 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ azure-management ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ azure-management ---
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/azure-management/target/azure-management-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/azure-management/1.6.0-SNAPSHOT/azure-management-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/azure-management/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/labs/azure-management/1.6.0-SNAPSHOT/azure-management-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/azure-management/target/azure-management-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/azure-management/1.6.0-SNAPSHOT/azure-management-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ azure-management ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 43.642s
+[INFO] Finished at: Mon Sep 17 08:53:51 PDT 2012
+[INFO] Final Memory: 19M/265M
+[INFO] ------------------------------------------------------------------------

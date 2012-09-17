@@ -1,0 +1,336 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:elb:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud elb api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ elb ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/elb/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ elb ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ elb ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ elb ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ elb ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ elb ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/elb/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ elb ---
+[INFO] Compiling 56 source files to /Users/adriancole/workspace/git/jclouds/labs/elb/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ elb ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/elb/src/test/clojure
+[INFO] Copying 11 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ elb ---
+[INFO] Compiling 26 source files to /Users/adriancole/workspace/git/jclouds/labs/elb/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ elb ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/elb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@44bd928a
+Starting test testTransformableToContains(org.jclouds.elb.ELBApiMetadataTest)
+Starting test testWithId(org.jclouds.elb.ELBApiMetadataTest)
+Starting test testAllContains(org.jclouds.elb.ELBApiMetadataTest)
+[pool-2-thread-3] Test testWithId(org.jclouds.elb.ELBApiMetadataTest) succeeded: 38ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testTransformableToContains(org.jclouds.elb.ELBApiMetadataTest) succeeded: 42ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testAllContains(org.jclouds.elb.ELBApiMetadataTest) succeeded: 31ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testAddZoneToLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.AvailabilityZoneApiExpectTest)
+Starting test testAddZonesToLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.AvailabilityZoneApiExpectTest)
+Starting test testAddZoneToLoadBalancerWhenResponseIs404(org.jclouds.elb.features.AvailabilityZoneApiExpectTest)
+Starting test testRemoveZoneFromLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.AvailabilityZoneApiExpectTest)
+Starting test testAddZonesToLoadBalancerWhenResponseIs404(org.jclouds.elb.features.AvailabilityZoneApiExpectTest)
+[pool-3-thread-1] Test testAddZoneToLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.AvailabilityZoneApiExpectTest) succeeded: 1469ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testRemoveZoneFromLoadBalancerWhenResponseIs404(org.jclouds.elb.features.AvailabilityZoneApiExpectTest)
+[pool-3-thread-2] Test testAddZoneToLoadBalancerWhenResponseIs404(org.jclouds.elb.features.AvailabilityZoneApiExpectTest) succeeded: 1463ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testRemoveZonesFromLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.AvailabilityZoneApiExpectTest)
+[pool-3-thread-3] Test testAddZonesToLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.AvailabilityZoneApiExpectTest) succeeded: 1468ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-3-thread-4] Test testAddZonesToLoadBalancerWhenResponseIs404(org.jclouds.elb.features.AvailabilityZoneApiExpectTest) succeeded: 1467ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testRemoveZonesFromLoadBalancerWhenResponseIs404(org.jclouds.elb.features.AvailabilityZoneApiExpectTest)
+[pool-3-thread-5] Test testRemoveZoneFromLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.AvailabilityZoneApiExpectTest) succeeded: 1467ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-3-thread-3] Test testRemoveZonesFromLoadBalancerWhenResponseIs404(org.jclouds.elb.features.AvailabilityZoneApiExpectTest) succeeded: 228ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+[pool-3-thread-2] Test testRemoveZonesFromLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.AvailabilityZoneApiExpectTest) succeeded: 402ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+[pool-3-thread-1] Test testRemoveZoneFromLoadBalancerWhenResponseIs404(org.jclouds.elb.features.AvailabilityZoneApiExpectTest) succeeded: 565ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testDeregisterInstancesFromLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.InstanceApiExpectTest)
+Starting test testDeregisterInstanceFromLoadBalancerWhenResponseIs404(org.jclouds.elb.features.InstanceApiExpectTest)
+Starting test testDeregisterInstancesFromLoadBalancerWhenResponseIs404(org.jclouds.elb.features.InstanceApiExpectTest)
+Starting test testGetHealthOfInstancesOfLoadBalancerIs2xx(org.jclouds.elb.features.InstanceApiExpectTest)
+Starting test testDeregisterInstanceFromLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.InstanceApiExpectTest)
+[pool-4-thread-4] Test testDeregisterInstancesFromLoadBalancerWhenResponseIs404(org.jclouds.elb.features.InstanceApiExpectTest) succeeded: 315ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testGetHealthOfInstancesOfLoadBalancerWhenResponseIs404(org.jclouds.elb.features.InstanceApiExpectTest)
+[pool-4-thread-3] Test testDeregisterInstancesFromLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.InstanceApiExpectTest) succeeded: 331ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testRegisterInstanceWithLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.InstanceApiExpectTest)
+[pool-4-thread-1] Test testDeregisterInstanceFromLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.InstanceApiExpectTest) succeeded: 331ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testRegisterInstanceWithLoadBalancerWhenResponseIs404(org.jclouds.elb.features.InstanceApiExpectTest)
+[pool-4-thread-2] Test testDeregisterInstanceFromLoadBalancerWhenResponseIs404(org.jclouds.elb.features.InstanceApiExpectTest) succeeded: 349ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[pool-4-thread-5] Test testGetHealthOfInstancesOfLoadBalancerIs2xx(org.jclouds.elb.features.InstanceApiExpectTest) succeeded: 354ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testRegisterInstancesWithLoadBalancerWhenResponseIs404(org.jclouds.elb.features.InstanceApiExpectTest)
+Starting test testRegisterInstancesWithLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.InstanceApiExpectTest)
+[pool-4-thread-4] Test testGetHealthOfInstancesOfLoadBalancerWhenResponseIs404(org.jclouds.elb.features.InstanceApiExpectTest) succeeded: 403ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+[pool-4-thread-5] Test testRegisterInstancesWithLoadBalancerWhenResponseIs404(org.jclouds.elb.features.InstanceApiExpectTest) succeeded: 388ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+[pool-4-thread-3] Test testRegisterInstanceWithLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.InstanceApiExpectTest) succeeded: 425ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+[pool-4-thread-1] Test testRegisterInstanceWithLoadBalancerWhenResponseIs404(org.jclouds.elb.features.InstanceApiExpectTest) succeeded: 439ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testRegisterInstancesWithLoadBalancerWhenResponseIs2xx(org.jclouds.elb.features.InstanceApiExpectTest) succeeded: 405ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.elb.features.LoadBalancerApiExpectTest)
+Starting test testGetWhenResponseIs2xx(org.jclouds.elb.features.LoadBalancerApiExpectTest)
+Starting test testGetWhenResponseIs404(org.jclouds.elb.features.LoadBalancerApiExpectTest)
+Starting test testDeleteWhenResponseIs404(org.jclouds.elb.features.LoadBalancerApiExpectTest)
+Starting test testList2PagesWhenResponseIs2xx(org.jclouds.elb.features.LoadBalancerApiExpectTest)
+[pool-5-thread-2] Test testDeleteWhenResponseIs404(org.jclouds.elb.features.LoadBalancerApiExpectTest) succeeded: 458ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testList2PagesWhenResponseIs2xxInEU(org.jclouds.elb.features.LoadBalancerApiExpectTest)
+[pool-5-thread-3] Test testGetWhenResponseIs2xx(org.jclouds.elb.features.LoadBalancerApiExpectTest) succeeded: 556ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.elb.features.LoadBalancerApiExpectTest)
+[pool-5-thread-1] Test testDeleteWhenResponseIs2xx(org.jclouds.elb.features.LoadBalancerApiExpectTest) succeeded: 657ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs404(org.jclouds.elb.features.LoadBalancerApiExpectTest)
+[pool-5-thread-4] Test testGetWhenResponseIs404(org.jclouds.elb.features.LoadBalancerApiExpectTest) succeeded: 713ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testListWithOptionsWhenResponseIs2xx(org.jclouds.elb.features.LoadBalancerApiExpectTest)
+[pool-5-thread-5] Test testList2PagesWhenResponseIs2xx(org.jclouds.elb.features.LoadBalancerApiExpectTest) succeeded: 673ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+[pool-5-thread-1] Test testListWhenResponseIs404(org.jclouds.elb.features.LoadBalancerApiExpectTest) succeeded: 313ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+[pool-5-thread-4] Test testListWithOptionsWhenResponseIs2xx(org.jclouds.elb.features.LoadBalancerApiExpectTest) succeeded: 298ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+[pool-5-thread-3] Test testListWhenResponseIs2xx(org.jclouds.elb.features.LoadBalancerApiExpectTest) succeeded: 462ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+[pool-5-thread-2] Test testList2PagesWhenResponseIs2xxInEU(org.jclouds.elb.features.LoadBalancerApiExpectTest) succeeded: 484ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testGetTypeWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest)
+Starting test testGetTypeWhenResponseIs404(org.jclouds.elb.features.PolicyApiExpectTest)
+Starting test testGetWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest)
+Starting test testGetWhenResponseIs404(org.jclouds.elb.features.PolicyApiExpectTest)
+Starting test testListTypeWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest)
+[pool-6-thread-2] Test testGetTypeWhenResponseIs404(org.jclouds.elb.features.PolicyApiExpectTest) succeeded: 303ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testListTypesByNamesWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest)
+[pool-6-thread-5] Test testListTypeWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest) succeeded: 312ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testListTypesWhenResponseIs404(org.jclouds.elb.features.PolicyApiExpectTest)
+[pool-6-thread-3] Test testGetWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest) succeeded: 345ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest)
+[pool-6-thread-4] Test testGetWhenResponseIs404(org.jclouds.elb.features.PolicyApiExpectTest) succeeded: 337ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs404(org.jclouds.elb.features.PolicyApiExpectTest)
+[pool-6-thread-1] Test testGetTypeWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest) succeeded: 366ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testListWithOptionsWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest)
+[pool-6-thread-4] Test testListWhenResponseIs404(org.jclouds.elb.features.PolicyApiExpectTest) succeeded: 256ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+[pool-6-thread-3] Test testListWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest) succeeded: 294ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+[pool-6-thread-5] Test testListTypesWhenResponseIs404(org.jclouds.elb.features.PolicyApiExpectTest) succeeded: 313ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+[pool-6-thread-1] Test testListWithOptionsWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest) succeeded: 310ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+[pool-6-thread-2] Test testListTypesByNamesWhenResponseIs2xx(org.jclouds.elb.features.PolicyApiExpectTest) succeeded: 354ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testMarker(org.jclouds.elb.options.ListLoadBalancersOptionsTest)
+[pool-7-thread-1] Test testMarker(org.jclouds.elb.options.ListLoadBalancersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testName(org.jclouds.elb.options.ListLoadBalancersOptionsTest)
+Starting test testNameStatic(org.jclouds.elb.options.ListLoadBalancersOptionsTest)
+[pool-7-thread-3] Test testName(org.jclouds.elb.options.ListLoadBalancersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+[pool-7-thread-4] Test testNameStatic(org.jclouds.elb.options.ListLoadBalancersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testMarkerStatic(org.jclouds.elb.options.ListLoadBalancersOptionsTest)
+[pool-7-thread-2] Test testMarkerStatic(org.jclouds.elb.options.ListLoadBalancersOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test testLoadBalancerName(org.jclouds.elb.options.ListPoliciesOptionsTest)
+[pool-8-thread-1] Test testLoadBalancerName(org.jclouds.elb.options.ListPoliciesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test testLoadBalancerNameStatic(org.jclouds.elb.options.ListPoliciesOptionsTest)
+[pool-8-thread-2] Test testLoadBalancerNameStatic(org.jclouds.elb.options.ListPoliciesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test testName(org.jclouds.elb.options.ListPoliciesOptionsTest)
+Starting test testNameStatic(org.jclouds.elb.options.ListPoliciesOptionsTest)
+[pool-8-thread-4] Test testNameStatic(org.jclouds.elb.options.ListPoliciesOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+[pool-8-thread-3] Test testName(org.jclouds.elb.options.ListPoliciesOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test test(org.jclouds.elb.parse.AvailabilityZonesResultHandlerTest)
+[pool-9-thread-1] Test test(org.jclouds.elb.parse.AvailabilityZonesResultHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test test(org.jclouds.elb.parse.DescribeInstanceHealthResponseTest)
+[pool-10-thread-1] Test test(org.jclouds.elb.parse.DescribeInstanceHealthResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test test(org.jclouds.elb.parse.DescribeLoadBalancerPoliciesResponseTest)
+[pool-11-thread-1] Test test(org.jclouds.elb.parse.DescribeLoadBalancerPoliciesResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test test(org.jclouds.elb.parse.DescribeLoadBalancerPolicyTypesResponseTest)
+[pool-12-thread-1] Test test(org.jclouds.elb.parse.DescribeLoadBalancerPolicyTypesResponseTest) succeeded: 5ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test test(org.jclouds.elb.parse.DescribeLoadBalancersResponseTest)
+[pool-13-thread-1] Test test(org.jclouds.elb.parse.DescribeLoadBalancersResponseTest) succeeded: 44ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test test(org.jclouds.elb.parse.DescribeVPCLoadBalancersResponseTest)
+[pool-14-thread-1] Test test(org.jclouds.elb.parse.DescribeVPCLoadBalancersResponseTest) succeeded: 8ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test test(org.jclouds.elb.parse.GetLoadBalancerResponseTest)
+[pool-15-thread-1] Test test(org.jclouds.elb.parse.GetLoadBalancerResponseTest) succeeded: 7ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test test(org.jclouds.elb.parse.GetPolicyResponseTest)
+[pool-16-thread-1] Test test(org.jclouds.elb.parse.GetPolicyResponseTest) succeeded: 2ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test test(org.jclouds.elb.parse.GetPolicyTypeResponseTest)
+[pool-17-thread-1] Test test(org.jclouds.elb.parse.GetPolicyTypeResponseTest) succeeded: 4ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test test(org.jclouds.elb.parse.InstancesResultHandlerTest)
+[pool-18-thread-1] Test test(org.jclouds.elb.parse.InstancesResultHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.739 sec
+
+Results :
+
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ elb ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ elb ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/elb/target/elb-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ elb ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/elb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@52b2a2d8
+08:56:06,581 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+08:56:06,581 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+08:56:06,581 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/adriancole/workspace/git/jclouds/labs/elb/target/test-classes/logback.xml]
+08:56:06,582 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+08:56:06,582 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/Users/adriancole/workspace/git/jclouds/labs/elb/target/test-classes/logback.xml]
+08:56:06,582 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/jclouds-compute/1.6.0-SNAPSHOT/jclouds-compute-1.6.0-SNAPSHOT-tests.jar!/logback.xml]
+08:56:06,650 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+08:56:06,650 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+08:56:06,653 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+08:56:06,667 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:56:06,696 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/test-data/jclouds.log]
+08:56:06,697 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+08:56:06,697 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [WIREFILE]
+08:56:06,697 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:56:06,697 |-INFO in ch.qos.logback.core.FileAppender[WIREFILE] - File property is set to [target/test-data/jclouds-wire.log]
+08:56:06,698 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+08:56:06,698 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [LBFILE]
+08:56:06,698 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:56:06,698 |-INFO in ch.qos.logback.core.FileAppender[LBFILE] - File property is set to [target/test-data/jclouds-loadbalancer.log]
+08:56:06,698 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+08:56:06,699 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [COMPUTEFILE]
+08:56:06,699 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:56:06,699 |-INFO in ch.qos.logback.core.FileAppender[COMPUTEFILE] - File property is set to [target/test-data/jclouds-compute.log]
+08:56:06,699 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+08:56:06,699 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [SSHFILE]
+08:56:06,700 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:56:06,700 |-INFO in ch.qos.logback.core.FileAppender[SSHFILE] - File property is set to [target/test-data/jclouds-ssh.log]
+08:56:06,701 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - ROOT level set to WARN
+08:56:06,701 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.jclouds level set to DEBUG
+08:56:06,701 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[org.jclouds]
+08:56:06,702 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.wire level set to DEBUG
+08:56:06,702 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.wire]
+08:56:06,702 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.headers level set to DEBUG
+08:56:06,702 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.headers]
+08:56:06,702 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.compute level set to DEBUG
+08:56:06,702 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [COMPUTEFILE] to Logger[jclouds.compute]
+08:56:06,702 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.loadbalancer level set to DEBUG
+08:56:06,702 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [LBFILE] to Logger[jclouds.loadbalancer]
+08:56:06,703 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.ssh level set to DEBUG
+08:56:06,703 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [SSHFILE] to Logger[jclouds.ssh]
+08:56:06,704 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1ac7057c - Registering current configuration as safe fallback point
+
+Starting test testListInstanceStates(org.jclouds.elb.features.InstanceApiLiveTest)
+Starting test testList(org.jclouds.elb.features.LoadBalancerApiLiveTest)
+Starting test testDescribePolicies(org.jclouds.elb.features.PolicyApiLiveTest)
+[TestNG] Test testList(org.jclouds.elb.features.LoadBalancerApiLiveTest) succeeded: 1946ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[TestNG] Test testListInstanceStates(org.jclouds.elb.features.InstanceApiLiveTest) succeeded: 1969ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testListWithOptions(org.jclouds.elb.features.LoadBalancerApiLiveTest)
+[TestNG] Test testDescribePolicies(org.jclouds.elb.features.PolicyApiLiveTest) succeeded: 2608ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testDescribePolicyTypes(org.jclouds.elb.features.PolicyApiLiveTest)
+[TestNG] Test testListWithOptions(org.jclouds.elb.features.LoadBalancerApiLiveTest) succeeded: 861ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[TestNG] Test testDescribePolicyTypes(org.jclouds.elb.features.PolicyApiLiveTest) succeeded: 1579ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testLoadBalanceNodesMatching(org.jclouds.elb.loadbalancer.ELBLoadBalancerServiceLiveTest)
+[TestNG] Test testLoadBalanceNodesMatching(org.jclouds.elb.loadbalancer.ELBLoadBalancerServiceLiveTest) succeeded: 2795ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testDestroyLoadBalancers(org.jclouds.elb.loadbalancer.ELBLoadBalancerServiceLiveTest)
+[TestNG] Test testDestroyLoadBalancers(org.jclouds.elb.loadbalancer.ELBLoadBalancerServiceLiveTest) succeeded: 797ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 108.482 sec
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ elb ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ elb ---
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/elb/target/elb-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/elb/1.6.0-SNAPSHOT/elb-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/elb/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/labs/elb/1.6.0-SNAPSHOT/elb-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/elb/target/elb-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/elb/1.6.0-SNAPSHOT/elb-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ elb ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2:16.460s
+[INFO] Finished at: Mon Sep 17 08:57:55 PDT 2012
+[INFO] Final Memory: 19M/265M
+[INFO] ------------------------------------------------------------------------

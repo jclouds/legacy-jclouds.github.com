@@ -1,0 +1,161 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:aws-rds:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Amazon Relational Database Service provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ aws-rds ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/aws-rds/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ aws-rds ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ aws-rds ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ aws-rds ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ aws-rds ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ aws-rds ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/aws-rds/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ aws-rds ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/jclouds/labs/aws-rds/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ aws-rds ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/aws-rds/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/aws-rds/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ aws-rds ---
+[INFO] Compiling 4 source files to /Users/adriancole/workspace/git/jclouds/labs/aws-rds/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ aws-rds ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/aws-rds/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.aws.rds.AWSRDSProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@55d15445
+Starting test testAllContains(org.jclouds.aws.rds.AWSRDSProviderTest)
+[pool-2-thread-1] Test testAllContains(org.jclouds.aws.rds.AWSRDSProviderTest) succeeded: 13ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testOfApiContains(org.jclouds.aws.rds.AWSRDSProviderTest)
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.aws.rds.AWSRDSProviderTest) succeeded: 3ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.aws.rds.AWSRDSProviderTest)
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.aws.rds.AWSRDSProviderTest) succeeded: 0ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.aws.rds.AWSRDSProviderTest)
+[pool-2-thread-4] Test testWithId(org.jclouds.aws.rds.AWSRDSProviderTest) succeeded: 4ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.978 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ aws-rds ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ aws-rds ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/aws-rds/target/aws-rds-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ aws-rds ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/aws-rds/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@79f6f296
+Starting test testCreateSecurityGroup(org.jclouds.aws.rds.features.AWSSecurityGroupApiLiveTest)
+Starting test testDescribeSubnetGroups(org.jclouds.aws.rds.features.AWSSubnetGroupApiLiveTest)
+Sep 17, 2012 8:49:15 AM org.jclouds.rds.features.SecurityGroupApiLiveTest testCreateSecurityGroup
+INFO: created securityGroup: SecurityGroup{name=adriancole-jclouds-securitygroup, description=jclouds, ec2SecurityGroups=[], ipRanges=[], ownerId=993194456877}
+Sep 17, 2012 8:49:15 AM org.jclouds.rds.features.InstanceApiLiveTest createSecurityGroupAndAuthorizeIngressToAll
+INFO: created securityGroup: SecurityGroup{name=adriancole-jclouds-instance, description=jclouds, ec2SecurityGroups=[], ipRanges=[], ownerId=993194456877}
+[TestNG] Test testCreateSecurityGroup(org.jclouds.aws.rds.features.AWSSecurityGroupApiLiveTest) succeeded: 1210ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testDescribeSecurityGroups(org.jclouds.aws.rds.features.AWSSecurityGroupApiLiveTest)
+[TestNG] Test testDescribeSubnetGroups(org.jclouds.aws.rds.features.AWSSubnetGroupApiLiveTest) succeeded: 2140ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[TestNG] Test testDescribeSecurityGroups(org.jclouds.aws.rds.features.AWSSecurityGroupApiLiveTest) succeeded: 1399ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testAuthorizeIPRange(org.jclouds.aws.rds.features.AWSSecurityGroupApiLiveTest)
+Sep 17, 2012 8:49:20 AM org.jclouds.rds.features.SecurityGroupApiLiveTest testAuthorizeIPRange
+INFO: ip range authorized: SecurityGroup{name=adriancole-jclouds-securitygroup, description=jclouds, ec2SecurityGroups=[], ipRanges=[IPRange{cidrIp=0.0.0.0/0, status=authorized}], ownerId=993194456877}
+[TestNG] Test testAuthorizeIPRange(org.jclouds.aws.rds.features.AWSSecurityGroupApiLiveTest) succeeded: 3046ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testRevokeIPRange(org.jclouds.aws.rds.features.AWSSecurityGroupApiLiveTest)
+Sep 17, 2012 8:49:20 AM org.jclouds.rds.features.InstanceApiLiveTest createSecurityGroupAndAuthorizeIngressToAll
+INFO: ip range authorized: SecurityGroup{name=adriancole-jclouds-instance, description=jclouds, ec2SecurityGroups=[], ipRanges=[IPRange{cidrIp=0.0.0.0/0, status=authorized}], ownerId=993194456877}
+Starting test testCreateInstance(org.jclouds.aws.rds.features.AWSInstanceApiLiveTest)
+Sep 17, 2012 8:49:21 AM org.jclouds.rds.features.InstanceApiLiveTest testCreateInstance
+INFO: created instance: Instance{id=adriancole-jclouds-instance, name=jclouds, instanceClass=db.t1.micro, status=creating, multiAZ=false, engine=mysql, engineVersion=5.5.25a, licenseModel=general-public-license, masterUsername=master, allocatedStorageGB=5, securityGroupNameToStatus={adriancole-jclouds-instance=active}}
+Sep 17, 2012 8:49:28 AM org.jclouds.rds.features.SecurityGroupApiLiveTest testRevokeIPRange
+INFO: ip range revoked: SecurityGroup{name=adriancole-jclouds-securitygroup, description=jclouds, ec2SecurityGroups=[], ipRanges=[], ownerId=993194456877}
+[TestNG] Test testRevokeIPRange(org.jclouds.aws.rds.features.AWSSecurityGroupApiLiveTest) succeeded: 8376ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testDeleteSecurityGroup(org.jclouds.aws.rds.features.AWSSecurityGroupApiLiveTest)
+Sep 17, 2012 8:49:28 AM org.jclouds.rds.features.SecurityGroupApiLiveTest testDeleteSecurityGroup
+INFO: securityGroup deleted: SecurityGroup{name=adriancole-jclouds-securitygroup, description=jclouds, ec2SecurityGroups=[], ipRanges=[], ownerId=993194456877}
+[TestNG] Test testDeleteSecurityGroup(org.jclouds.aws.rds.features.AWSSecurityGroupApiLiveTest) succeeded: 421ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Sep 17, 2012 8:53:39 AM org.jclouds.rds.features.InstanceApiLiveTest testCreateInstance
+INFO: instance available: Instance{id=adriancole-jclouds-instance, name=jclouds, instanceClass=db.t1.micro, endpoint=adriancole-jclouds-instance.cucwyds3jbun.us-east-1.rds.amazonaws.com:3306, status=available, availabilityZone=us-east-1b, multiAZ=false, engine=mysql, engineVersion=5.5.25a, licenseModel=general-public-license, masterUsername=master, allocatedStorageGB=5, createdTime=Mon Sep 17 08:53:35 PDT 2012, securityGroupNameToStatus={adriancole-jclouds-instance=active}}
+[TestNG] Test testCreateInstance(org.jclouds.aws.rds.features.AWSInstanceApiLiveTest) succeeded: 258829ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testDescribeInstances(org.jclouds.aws.rds.features.AWSInstanceApiLiveTest)
+[TestNG] Test testDescribeInstances(org.jclouds.aws.rds.features.AWSInstanceApiLiveTest) succeeded: 1433ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testPortResponds(org.jclouds.aws.rds.features.AWSInstanceApiLiveTest)
+Sep 17, 2012 8:53:41 AM org.jclouds.rds.features.InstanceApiLiveTest testPortResponds
+INFO: instance reachable on: adriancole-jclouds-instance.cucwyds3jbun.us-east-1.rds.amazonaws.com:3306
+[TestNG] Test testPortResponds(org.jclouds.aws.rds.features.AWSInstanceApiLiveTest) succeeded: 543ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testDeleteInstance(org.jclouds.aws.rds.features.AWSInstanceApiLiveTest)
+Sep 17, 2012 8:57:37 AM org.jclouds.rds.features.InstanceApiLiveTest testDeleteInstance
+INFO: instance deleted: Instance{id=adriancole-jclouds-instance, name=jclouds, instanceClass=db.t1.micro, endpoint=adriancole-jclouds-instance.cucwyds3jbun.us-east-1.rds.amazonaws.com:3306, status=deleting, availabilityZone=us-east-1b, multiAZ=false, engine=mysql, engineVersion=5.5.25a, licenseModel=general-public-license, masterUsername=master, allocatedStorageGB=5, createdTime=Mon Sep 17 08:53:35 PDT 2012, securityGroupNameToStatus={adriancole-jclouds-instance=active}}
+[TestNG] Test testDeleteInstance(org.jclouds.aws.rds.features.AWSInstanceApiLiveTest) succeeded: 236391ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 506.334 sec
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ aws-rds ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ aws-rds ---
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/aws-rds/target/aws-rds-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/aws-rds/1.6.0-SNAPSHOT/aws-rds-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/aws-rds/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/labs/aws-rds/1.6.0-SNAPSHOT/aws-rds-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/aws-rds/target/aws-rds-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/aws-rds/1.6.0-SNAPSHOT/aws-rds-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ aws-rds ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8:39.362s
+[INFO] Finished at: Mon Sep 17 08:57:40 PDT 2012
+[INFO] Final Memory: 17M/265M
+[INFO] ------------------------------------------------------------------------
