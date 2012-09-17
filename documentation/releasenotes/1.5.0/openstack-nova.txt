@@ -1,0 +1,1377 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:openstack-nova:bundle:1.5.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud openstack-nova api 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ openstack-nova ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/apis/openstack-nova/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ openstack-nova ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ openstack-nova ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ openstack-nova ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ openstack-nova ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ openstack-nova ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/apis/openstack-nova/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ openstack-nova ---
+[INFO] Compiling 120 source files to /Users/adriancole/workspace/git/jclouds/apis/openstack-nova/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ openstack-nova ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/apis/openstack-nova/src/test/clojure
+[INFO] Copying 59 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ openstack-nova ---
+[INFO] Compiling 93 source files to /Users/adriancole/workspace/git/jclouds/apis/openstack-nova/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ openstack-nova ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/apis/openstack-nova/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@204f80d6
+Starting test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.AccessKeyAndSecretKeyAndTenantIdAuthenticationExpectTest)
+[pool-2-thread-1] Test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.AccessKeyAndSecretKeyAndTenantIdAuthenticationExpectTest) succeeded: 2749ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.AccessKeyAndSecretKeyAndTenantNamePropertyAuthenticationExpectTest)
+[pool-3-thread-1] Test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.AccessKeyAndSecretKeyAndTenantNamePropertyAuthenticationExpectTest) succeeded: 301ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.AccessKeyAndSecretKeyAuthenticationExpectTest)
+[pool-4-thread-1] Test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.AccessKeyAndSecretKeyAuthenticationExpectTest) succeeded: 250ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testAllocateWhenAllocationFailsLookupUnusedIpAddToServerAndUpdatesNodeMetadata(org.jclouds.openstack.nova.v2_0.compute.functions.AllocateAndAddFloatingIpToNodeExpectTest)
+Starting test testAllocateWhenAllocationReturnsIpIsAddedToServerAndUpdatesNodeMetadataButSavesCredentials(org.jclouds.openstack.nova.v2_0.compute.functions.AllocateAndAddFloatingIpToNodeExpectTest)
+[pool-5-thread-2] Test testAllocateWhenAllocationReturnsIpIsAddedToServerAndUpdatesNodeMetadataButSavesCredentials(org.jclouds.openstack.nova.v2_0.compute.functions.AllocateAndAddFloatingIpToNodeExpectTest) succeeded: 470ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[pool-5-thread-1] Test testAllocateWhenAllocationFailsLookupUnusedIpAddToServerAndUpdatesNodeMetadata(org.jclouds.openstack.nova.v2_0.compute.functions.AllocateAndAddFloatingIpToNodeExpectTest) succeeded: 534ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testConversionWhereLocationFound(org.jclouds.openstack.nova.v2_0.compute.functions.FlavorInZoneToHardwareTest)
+Starting test testConversionWhereLocationNotFound(org.jclouds.openstack.nova.v2_0.compute.functions.FlavorInZoneToHardwareTest)
+[pool-6-thread-1] Test testConversionWhereLocationFound(org.jclouds.openstack.nova.v2_0.compute.functions.FlavorInZoneToHardwareTest) succeeded: 5ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-6-thread-2] Test testConversionWhereLocationNotFound(org.jclouds.openstack.nova.v2_0.compute.functions.FlavorInZoneToHardwareTest) succeeded: 5ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testConversionWhereLocationFound(org.jclouds.openstack.nova.v2_0.compute.functions.ImageInZoneToImageTest)
+Starting test testConversionWhereLocationNotFound(org.jclouds.openstack.nova.v2_0.compute.functions.ImageInZoneToImageTest)
+[pool-7-thread-2] Test testConversionWhereLocationNotFound(org.jclouds.openstack.nova.v2_0.compute.functions.ImageInZoneToImageTest) succeeded: 0ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-7-thread-1] Test testConversionWhereLocationFound(org.jclouds.openstack.nova.v2_0.compute.functions.ImageInZoneToImageTest) succeeded: 3ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testOEL(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-1] Test testOEL(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 1ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testWindows98x86(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+Starting test testRHEL(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-3] Test testRHEL(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testWindowsServer2008R2x64(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+Starting test testTryStackNatty(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+Starting test testTryStackOneric(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 1ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+[pool-8-thread-4] Test testTryStackNatty(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 16ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+Starting test test400MakesIllegalStateExceptionOnAlreadyExists(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest)
+[pool-8-thread-5] Test testTryStackOneric(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 17ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test test400MakesIllegalStateExceptionOnQuotaExceededOnNoFixedIps(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest)
+[pool-8-thread-3] Test testWindowsServer2008R2x64(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 20ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test test400MakesInsufficientResourcesExceptionOnQuotaExceeded(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest)
+[pool-8-thread-1] Test testWindows98x86(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 21ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test test401MakesAuthorizationException(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 8ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 1ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 1ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 1ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 1ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 1ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 0ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest)
+[pool-8-thread-2] Test testOsFamilyValues(org.jclouds.openstack.nova.v2_0.compute.functions.ImageToOperatingSystemTest) succeeded: 1ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test test404MakesResourceNotFoundException(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest)
+[pool-8-thread-3] Test test400MakesInsufficientResourcesExceptionOnQuotaExceeded(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest) succeeded: 44ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+[pool-8-thread-5] Test test400MakesIllegalStateExceptionOnQuotaExceededOnNoFixedIps(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest) succeeded: 46ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test test413MakesInsufficientResourcesException(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest)
+[pool-8-thread-1] Test test401MakesAuthorizationException(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest) succeeded: 43ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+[pool-8-thread-2] Test test404MakesResourceNotFoundException(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest) succeeded: 28ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+[pool-8-thread-3] Test test413MakesInsufficientResourcesException(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+[pool-8-thread-4] Test test400MakesIllegalStateExceptionOnAlreadyExists(org.jclouds.openstack.nova.v2_0.NovaErrorHandlerTest) succeeded: 49ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testWhenComputeServiceSaysAllNodesAreDeadBothGroupsAreReturned(org.jclouds.openstack.nova.v2_0.compute.functions.OrphanedGroupsByZoneIdTest)
+Starting test testWhenComputeServiceSaysAllNodesAreDeadNoGroupsAreReturned(org.jclouds.openstack.nova.v2_0.compute.functions.OrphanedGroupsByZoneIdTest)
+[pool-9-thread-1] Test testWhenComputeServiceSaysAllNodesAreDeadBothGroupsAreReturned(org.jclouds.openstack.nova.v2_0.compute.functions.OrphanedGroupsByZoneIdTest) succeeded: 45ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+[pool-9-thread-2] Test testWhenComputeServiceSaysAllNodesAreDeadNoGroupsAreReturned(org.jclouds.openstack.nova.v2_0.compute.functions.OrphanedGroupsByZoneIdTest) succeeded: 46ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testNewServerWithoutHostIdSetsZoneAsLocation(org.jclouds.openstack.nova.v2_0.compute.functions.ServerInZoneToNodeMetadataTest)
+[pool-10-thread-1] Test testNewServerWithoutHostIdSetsZoneAsLocation(org.jclouds.openstack.nova.v2_0.compute.functions.ServerInZoneToNodeMetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testWhenNoHardwareAndImageMatchServerScopedIdsHardwareOperatingSystemAndImageIdAreSet(org.jclouds.openstack.nova.v2_0.compute.functions.ServerInZoneToNodeMetadataTest)
+Starting test testWhenNoHardwareOrImageMatchServerScopedIdsImageIdIsStillSet(org.jclouds.openstack.nova.v2_0.compute.functions.ServerInZoneToNodeMetadataTest)
+[pool-10-thread-2] Test testWhenNoHardwareAndImageMatchServerScopedIdsHardwareOperatingSystemAndImageIdAreSet(org.jclouds.openstack.nova.v2_0.compute.functions.ServerInZoneToNodeMetadataTest) succeeded: 8ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+[pool-10-thread-3] Test testWhenNoHardwareOrImageMatchServerScopedIdsImageIdIsStillSet(org.jclouds.openstack.nova.v2_0.compute.functions.ServerInZoneToNodeMetadataTest) succeeded: 4ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testApply(org.jclouds.openstack.nova.v2_0.compute.loaders.CreateUniqueKeyPairTest)
+Starting test testApplyWithIllegalStateException(org.jclouds.openstack.nova.v2_0.compute.loaders.CreateUniqueKeyPairTest)
+[pool-11-thread-2] Test testApplyWithIllegalStateException(org.jclouds.openstack.nova.v2_0.compute.loaders.CreateUniqueKeyPairTest) succeeded: 156ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+[pool-11-thread-1] Test testApply(org.jclouds.openstack.nova.v2_0.compute.loaders.CreateUniqueKeyPairTest) succeeded: 183ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testWhenFoundPredicateMustUpdateAtomicReference(org.jclouds.openstack.nova.v2_0.compute.loaders.FindSecurityGroupOrCreateTest)
+[pool-12-thread-1] Test testWhenFoundPredicateMustUpdateAtomicReference(org.jclouds.openstack.nova.v2_0.compute.loaders.FindSecurityGroupOrCreateTest) succeeded: 1ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testWhenFoundReturnsSecurityGroupFromAtomicReferenceValueUpdatedDuringPredicateCheck(org.jclouds.openstack.nova.v2_0.compute.loaders.FindSecurityGroupOrCreateTest)
+[pool-12-thread-1] Test testWhenFoundReturnsSecurityGroupFromAtomicReferenceValueUpdatedDuringPredicateCheck(org.jclouds.openstack.nova.v2_0.compute.loaders.FindSecurityGroupOrCreateTest) succeeded: 6ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testWhenNotFoundCreatesANewSecurityGroup(org.jclouds.openstack.nova.v2_0.compute.loaders.FindSecurityGroupOrCreateTest)
+[pool-12-thread-1] Test testWhenNotFoundCreatesANewSecurityGroup(org.jclouds.openstack.nova.v2_0.compute.loaders.FindSecurityGroupOrCreateTest) succeeded: 1ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testWhenNotFoundInputMustBeZoneSecurityGroupNameAndPorts(org.jclouds.openstack.nova.v2_0.compute.loaders.FindSecurityGroupOrCreateTest)
+[pool-12-thread-1] Test testWhenNotFoundInputMustBeZoneSecurityGroupNameAndPorts(org.jclouds.openstack.nova.v2_0.compute.loaders.FindSecurityGroupOrCreateTest) succeeded: 2ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testReturnsNullWhenNotAssigned(org.jclouds.openstack.nova.v2_0.compute.loaders.LoadFloatingIpsForInstanceTest)
+[pool-13-thread-1] Test testReturnsNullWhenNotAssigned(org.jclouds.openstack.nova.v2_0.compute.loaders.LoadFloatingIpsForInstanceTest) succeeded: 3ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testReturnsNullWhenNotFound(org.jclouds.openstack.nova.v2_0.compute.loaders.LoadFloatingIpsForInstanceTest)
+[pool-13-thread-1] Test testReturnsNullWhenNotFound(org.jclouds.openstack.nova.v2_0.compute.loaders.LoadFloatingIpsForInstanceTest) succeeded: 1ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testReturnsPublicIpOnMatch(org.jclouds.openstack.nova.v2_0.compute.loaders.LoadFloatingIpsForInstanceTest)
+[pool-13-thread-1] Test testReturnsPublicIpOnMatch(org.jclouds.openstack.nova.v2_0.compute.loaders.LoadFloatingIpsForInstanceTest) succeeded: 2ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testCreateNodeWithGroupEncodedIntoNameWhenSecurityGroupsArePresent(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceAdapterExpectTest)
+Starting test testWhenKeyPairPresentWeUsePrivateKeyAsCredentialNotPassword(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceAdapterExpectTest)
+[pool-14-thread-2] Test testWhenKeyPairPresentWeUsePrivateKeyAsCredentialNotPassword(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceAdapterExpectTest) succeeded: 749ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+[pool-14-thread-1] Test testCreateNodeWithGroupEncodedIntoNameWhenSecurityGroupsArePresent(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceAdapterExpectTest) succeeded: 754ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testCreateNodeWhileUserSpecifiesKeyPair(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceExpectTest)
+Starting test testCreateNodeWithGeneratedKeyPair(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceExpectTest)
+Starting test testDefaultTemplateTryStack(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceExpectTest)
+Starting test testListLocationsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceExpectTest)
+Starting test testListServersWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceExpectTest)
+[pool-15-thread-3] Test testDefaultTemplateTryStack(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceExpectTest) succeeded: 702ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+[pool-15-thread-5] Test testListServersWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceExpectTest) succeeded: 780ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+[pool-15-thread-4] Test testListLocationsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceExpectTest) succeeded: 1019ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+[pool-15-thread-1] Test testCreateNodeWhileUserSpecifiesKeyPair(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceExpectTest) succeeded: 1577ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+[pool-15-thread-2] Test testCreateNodeWithGeneratedKeyPair(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceExpectTest) succeeded: 1574ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+Starting test testAs(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testAs(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+Starting test testGenerateKeyPairDefault(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+Starting test testGenerateKeyPairStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testGenerateKeyPairStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+Starting test testNullauthorizePublicKey(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testNullauthorizePublicKey(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+Starting test testNullblockOnPort(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testNullblockOnPort(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
+Starting test testNullinstallPrivateKey(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testNullinstallPrivateKey(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
+Starting test testUserData(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testUserData(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+Starting test testauthorizePublicKey(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testauthorizePublicKey(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+Starting test testauthorizePublicKeyBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testauthorizePublicKeyBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+Starting test testauthorizePublicKeyNPE(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testauthorizePublicKeyNPE(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+Starting test testauthorizePublicKeyStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testauthorizePublicKeyStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+Starting test testautoAssignFloatingIp(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testautoAssignFloatingIp(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+Starting test testautoAssignFloatingIpDefault(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testautoAssignFloatingIpDefault(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+Starting test testautoAssignFloatingIpStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testautoAssignFloatingIpStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
+Starting test testblockOnPort(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testblockOnPort(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
+Starting test testblockOnPortBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testblockOnPortBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
+Starting test testblockOnPortStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testblockOnPortStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
+Starting test testinboundPorts(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testinboundPorts(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+Starting test testinboundPortsBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testinboundPortsBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 0.
+Starting test testinboundPortsStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testinboundPortsStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 0.
+Starting test testinstallPrivateKey(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testinstallPrivateKey(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 0.
+Starting test testinstallPrivateKeyBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testinstallPrivateKeyBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 90, failed: 0, skipped: 0.
+Starting test testinstallPrivateKeyNPE(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testinstallPrivateKeyNPE(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 91, failed: 0, skipped: 0.
+Starting test testinstallPrivateKeyStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testinstallPrivateKeyStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 92, failed: 0, skipped: 0.
+Starting test testsecurityGroupNamesIterable(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testsecurityGroupNamesIterable(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 7ms
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 0.
+Starting test testsecurityGroupNamesIterableBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testsecurityGroupNamesIterableBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 94, failed: 0, skipped: 0.
+Starting test testsecurityGroupNamesIterableStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testsecurityGroupNamesIterableStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 95, failed: 0, skipped: 0.
+Starting test testsecurityGroupNamesVarArgs(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testsecurityGroupNamesVarArgs(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 96, failed: 0, skipped: 0.
+Starting test testsecurityGroupNamesVarArgsBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testsecurityGroupNamesVarArgsBadFormat(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 97, failed: 0, skipped: 0.
+Starting test testsecurityGroupNamesVarArgsStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-1] Test testsecurityGroupNamesVarArgsStatic(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 98, failed: 0, skipped: 0.
+Starting test testGenerateKeyPair(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+Starting test testDefaultOpen22(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-4] Test testGenerateKeyPair(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 99, failed: 0, skipped: 0.
+[pool-16-thread-5] Test testGenerateKeyPairDefault(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 25ms
+Test suite progress: tests succeeded: 100, failed: 0, skipped: 0.
+Starting test testDefaultGroupsVarArgsEmpty(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest)
+[pool-16-thread-3] Test testDefaultOpen22(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 101, failed: 0, skipped: 0.
+[pool-16-thread-2] Test testDefaultGroupsVarArgsEmpty(org.jclouds.openstack.nova.v2_0.compute.options.NovaTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 102, failed: 0, skipped: 0.
+Starting test testFailsOnOtherStatuses(org.jclouds.openstack.nova.v2_0.compute.predicates.GetImageWhenImageInZoneHasActiveStatusPredicateWithResultExpectTest)
+Starting test testReturnsFalseOnImageStatusSavingAndTrueOnActive(org.jclouds.openstack.nova.v2_0.compute.predicates.GetImageWhenImageInZoneHasActiveStatusPredicateWithResultExpectTest)
+[pool-17-thread-2] Test testReturnsFalseOnImageStatusSavingAndTrueOnActive(org.jclouds.openstack.nova.v2_0.compute.predicates.GetImageWhenImageInZoneHasActiveStatusPredicateWithResultExpectTest) succeeded: 325ms
+Test suite progress: tests succeeded: 103, failed: 0, skipped: 0.
+[pool-17-thread-1] Test testFailsOnOtherStatuses(org.jclouds.openstack.nova.v2_0.compute.predicates.GetImageWhenImageInZoneHasActiveStatusPredicateWithResultExpectTest) succeeded: 362ms
+Test suite progress: tests succeeded: 104, failed: 0, skipped: 0.
+Starting test testBackupServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+Starting test testInjectNetworkInfoIntoServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+Starting test testInjectNetworkInfoIntoServerFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+Starting test testLiveMigrateServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+Starting test testBackupServerFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-3] Test testInjectNetworkInfoIntoServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 684ms
+Test suite progress: tests succeeded: 105, failed: 0, skipped: 0.
+Starting test testLiveMigrateServerFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-2] Test testBackupServerFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 722ms
+Test suite progress: tests succeeded: 106, failed: 0, skipped: 0.
+Starting test testLock(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-4] Test testInjectNetworkInfoIntoServerFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 739ms
+Test suite progress: tests succeeded: 107, failed: 0, skipped: 0.
+Starting test testLockFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-5] Test testLiveMigrateServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 773ms
+Test suite progress: tests succeeded: 108, failed: 0, skipped: 0.
+Starting test testMigrateServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-1] Test testBackupServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 798ms
+Test suite progress: tests succeeded: 109, failed: 0, skipped: 0.
+Starting test testMigrateServerFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-3] Test testLiveMigrateServerFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 779ms
+Test suite progress: tests succeeded: 110, failed: 0, skipped: 0.
+Starting test testPause(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-5] Test testMigrateServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 745ms
+Test suite progress: tests succeeded: 111, failed: 0, skipped: 0.
+Starting test testPauseFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-2] Test testLock(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 841ms
+Test suite progress: tests succeeded: 112, failed: 0, skipped: 0.
+Starting test testResetNetworkOfServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-4] Test testLockFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 831ms
+Test suite progress: tests succeeded: 113, failed: 0, skipped: 0.
+Starting test testResetNetworkOfServerFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-1] Test testMigrateServerFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 788ms
+Test suite progress: tests succeeded: 114, failed: 0, skipped: 0.
+Starting test testResume(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-4] Test testResetNetworkOfServerFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 596ms
+Test suite progress: tests succeeded: 115, failed: 0, skipped: 0.
+Starting test testResumeFailsNotAuthorized(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-2] Test testResetNetworkOfServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 625ms
+Test suite progress: tests succeeded: 116, failed: 0, skipped: 0.
+Starting test testResumeFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-3] Test testPause(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 748ms
+Test suite progress: tests succeeded: 117, failed: 0, skipped: 0.
+Starting test testSuspend(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-1] Test testResume(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 655ms
+Test suite progress: tests succeeded: 118, failed: 0, skipped: 0.
+Starting test testSuspendFailsNotAuthorized(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-5] Test testPauseFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 715ms
+Test suite progress: tests succeeded: 119, failed: 0, skipped: 0.
+Starting test testSuspendFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-4] Test testResumeFailsNotAuthorized(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 469ms
+Test suite progress: tests succeeded: 120, failed: 0, skipped: 0.
+Starting test testUnlock(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-2] Test testResumeFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 427ms
+Test suite progress: tests succeeded: 121, failed: 0, skipped: 0.
+Starting test testUnlockFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-3] Test testSuspend(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 427ms
+Test suite progress: tests succeeded: 122, failed: 0, skipped: 0.
+Starting test testUnpause(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-5] Test testSuspendFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 425ms
+Test suite progress: tests succeeded: 123, failed: 0, skipped: 0.
+Starting test testUnpauseFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest)
+[pool-18-thread-1] Test testSuspendFailsNotAuthorized(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 447ms
+Test suite progress: tests succeeded: 124, failed: 0, skipped: 0.
+[pool-18-thread-5] Test testUnpauseFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 483ms
+Test suite progress: tests succeeded: 125, failed: 0, skipped: 0.
+[pool-18-thread-4] Test testUnlock(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 553ms
+Test suite progress: tests succeeded: 126, failed: 0, skipped: 0.
+[pool-18-thread-3] Test testUnpause(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 534ms
+Test suite progress: tests succeeded: 127, failed: 0, skipped: 0.
+[pool-18-thread-2] Test testUnlockFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiExpectTest) succeeded: 545ms
+Test suite progress: tests succeeded: 128, failed: 0, skipped: 0.
+Starting test testDeleteExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest)
+Starting test testDeleteExtraSpecFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest)
+Starting test testGetAllExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest)
+Starting test testGetAllExtraSpecsFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest)
+Starting test testGetExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest)
+[pool-19-thread-1] Test testDeleteExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest) succeeded: 480ms
+Test suite progress: tests succeeded: 129, failed: 0, skipped: 0.
+Starting test testGetExtraSpecFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest)
+[pool-19-thread-5] Test testGetExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest) succeeded: 447ms
+Test suite progress: tests succeeded: 130, failed: 0, skipped: 0.
+Starting test testSetAllExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest)
+[pool-19-thread-3] Test testGetAllExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest) succeeded: 462ms
+Test suite progress: tests succeeded: 131, failed: 0, skipped: 0.
+Starting test testSetExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest)
+[pool-19-thread-2] Test testDeleteExtraSpecFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest) succeeded: 497ms
+Test suite progress: tests succeeded: 132, failed: 0, skipped: 0.
+[pool-19-thread-4] Test testGetAllExtraSpecsFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest) succeeded: 473ms
+Test suite progress: tests succeeded: 133, failed: 0, skipped: 0.
+[pool-19-thread-1] Test testGetExtraSpecFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest) succeeded: 420ms
+Test suite progress: tests succeeded: 134, failed: 0, skipped: 0.
+[pool-19-thread-5] Test testSetAllExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest) succeeded: 411ms
+Test suite progress: tests succeeded: 135, failed: 0, skipped: 0.
+[pool-19-thread-3] Test testSetExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiExpectTest) succeeded: 423ms
+Test suite progress: tests succeeded: 136, failed: 0, skipped: 0.
+Starting test testAllocateWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest)
+Starting test testAllocateWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest)
+Starting test testGetFloatingIPWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest)
+Starting test testGetFloatingIPWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest)
+Starting test testListFloatingIPsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest)
+[pool-20-thread-5] Test testListFloatingIPsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest) succeeded: 552ms
+Test suite progress: tests succeeded: 137, failed: 0, skipped: 0.
+Starting test testListFloatingIPsWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest)
+[pool-20-thread-4] Test testGetFloatingIPWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest) succeeded: 735ms
+Test suite progress: tests succeeded: 138, failed: 0, skipped: 0.
+Starting test testWhenNamespaceInExtensionsListFloatingIpPresent(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest)
+[pool-20-thread-2] Test testAllocateWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest) succeeded: 757ms
+Test suite progress: tests succeeded: 139, failed: 0, skipped: 0.
+Starting test testWhenNamespaceNotInExtensionsListFloatingIpNotPresent(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest)
+[pool-20-thread-3] Test testGetFloatingIPWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest) succeeded: 768ms
+Test suite progress: tests succeeded: 140, failed: 0, skipped: 0.
+[pool-20-thread-1] Test testAllocateWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest) succeeded: 778ms
+Test suite progress: tests succeeded: 141, failed: 0, skipped: 0.
+[pool-20-thread-5] Test testListFloatingIPsWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest) succeeded: 407ms
+Test suite progress: tests succeeded: 142, failed: 0, skipped: 0.
+[pool-20-thread-4] Test testWhenNamespaceInExtensionsListFloatingIpPresent(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest) succeeded: 247ms
+Test suite progress: tests succeeded: 143, failed: 0, skipped: 0.
+[pool-20-thread-2] Test testWhenNamespaceNotInExtensionsListFloatingIpNotPresent(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiExpectTest) succeeded: 311ms
+Test suite progress: tests succeeded: 144, failed: 0, skipped: 0.
+Starting test testAllocateWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest)
+Starting test testAllocateWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest)
+Starting test testGetFloatingIPWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest)
+Starting test testListFloatingIPsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest)
+Starting test testGetFloatingIPWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest)
+[pool-21-thread-3] Test testGetFloatingIPWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest) succeeded: 455ms
+Test suite progress: tests succeeded: 145, failed: 0, skipped: 0.
+Starting test testListFloatingIPsWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest)
+[pool-21-thread-1] Test testAllocateWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest) succeeded: 564ms
+Test suite progress: tests succeeded: 146, failed: 0, skipped: 0.
+[pool-21-thread-4] Test testGetFloatingIPWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest) succeeded: 561ms
+Test suite progress: tests succeeded: 147, failed: 0, skipped: 0.
+Starting test testWhenNamespaceInExtensionsListFloatingIpPresent(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest)
+Starting test testWhenNamespaceNotInExtensionsListFloatingIpNotPresent(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest)
+[pool-21-thread-2] Test testAllocateWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest) succeeded: 601ms
+Test suite progress: tests succeeded: 148, failed: 0, skipped: 0.
+[pool-21-thread-5] Test testListFloatingIPsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest) succeeded: 620ms
+Test suite progress: tests succeeded: 149, failed: 0, skipped: 0.
+[pool-21-thread-3] Test testListFloatingIPsWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest) succeeded: 394ms
+Test suite progress: tests succeeded: 150, failed: 0, skipped: 0.
+[pool-21-thread-1] Test testWhenNamespaceNotInExtensionsListFloatingIpNotPresent(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest) succeeded: 339ms
+Test suite progress: tests succeeded: 151, failed: 0, skipped: 0.
+[pool-21-thread-4] Test testWhenNamespaceInExtensionsListFloatingIpPresent(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPAsyncApiExpectTest) succeeded: 374ms
+Test suite progress: tests succeeded: 152, failed: 0, skipped: 0.
+Starting test testDisableHost(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+Starting test testEnableHostFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+Starting test testEnableHost(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+Starting test testEnableHostFailNotEnabled(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+Starting test testGet(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+[pool-22-thread-1] Test testDisableHost(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 375ms
+Test suite progress: tests succeeded: 153, failed: 0, skipped: 0.
+Starting test testList(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+[pool-22-thread-5] Test testGet(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 410ms
+Test suite progress: tests succeeded: 154, failed: 0, skipped: 0.
+[pool-22-thread-3] Test testEnableHostFailNotEnabled(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 411ms
+Test suite progress: tests succeeded: 155, failed: 0, skipped: 0.
+Starting test testRebootHost(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+Starting test testShutdownHost(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+[pool-22-thread-2] Test testEnableHost(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 432ms
+Test suite progress: tests succeeded: 156, failed: 0, skipped: 0.
+Starting test testStartMaintenance(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+[pool-22-thread-4] Test testEnableHostFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 435ms
+Test suite progress: tests succeeded: 157, failed: 0, skipped: 0.
+Starting test testStartupHost(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+[pool-22-thread-5] Test testRebootHost(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 451ms
+Test suite progress: tests succeeded: 158, failed: 0, skipped: 0.
+Starting test testStartupHostFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+[pool-22-thread-1] Test testList(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 533ms
+Test suite progress: tests succeeded: 159, failed: 0, skipped: 0.
+Starting test testStartupHostFailWrongActionInProgress(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+[pool-22-thread-3] Test testShutdownHost(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 583ms
+Test suite progress: tests succeeded: 160, failed: 0, skipped: 0.
+Starting test testStopMaintenance(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest)
+[pool-22-thread-2] Test testStartMaintenance(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 569ms
+Test suite progress: tests succeeded: 161, failed: 0, skipped: 0.
+[pool-22-thread-4] Test testStartupHost(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 581ms
+Test suite progress: tests succeeded: 162, failed: 0, skipped: 0.
+[pool-22-thread-1] Test testStartupHostFailWrongActionInProgress(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 349ms
+Test suite progress: tests succeeded: 163, failed: 0, skipped: 0.
+[pool-22-thread-5] Test testStartupHostFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 387ms
+Test suite progress: tests succeeded: 164, failed: 0, skipped: 0.
+[pool-22-thread-3] Test testStopMaintenance(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiExpectTest) succeeded: 277ms
+Test suite progress: tests succeeded: 165, failed: 0, skipped: 0.
+Starting test testAddHost(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+Starting test testCreateAggregate(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+Starting test testDeleteAggregateFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+Starting test testGet(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+Starting test testDeleteAggregate(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+[pool-23-thread-3] Test testDeleteAggregate(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 295ms
+Test suite progress: tests succeeded: 166, failed: 0, skipped: 0.
+Starting test testGetFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+[pool-23-thread-4] Test testDeleteAggregateFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 308ms
+Test suite progress: tests succeeded: 167, failed: 0, skipped: 0.
+[pool-23-thread-5] Test testGet(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 306ms
+Test suite progress: tests succeeded: 168, failed: 0, skipped: 0.
+Starting test testList(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+Starting test testRemoveHost(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+[pool-23-thread-1] Test testAddHost(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 341ms
+Test suite progress: tests succeeded: 169, failed: 0, skipped: 0.
+Starting test testSetMetadata(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+[pool-23-thread-2] Test testCreateAggregate(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 343ms
+Test suite progress: tests succeeded: 170, failed: 0, skipped: 0.
+Starting test testUpdateAvailabilityZone(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+[pool-23-thread-4] Test testRemoveHost(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 380ms
+Test suite progress: tests succeeded: 171, failed: 0, skipped: 0.
+Starting test testUpdateName(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest)
+[pool-23-thread-3] Test testGetFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 390ms
+Test suite progress: tests succeeded: 172, failed: 0, skipped: 0.
+[pool-23-thread-1] Test testSetMetadata(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 375ms
+Test suite progress: tests succeeded: 173, failed: 0, skipped: 0.
+[pool-23-thread-5] Test testList(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 385ms
+Test suite progress: tests succeeded: 174, failed: 0, skipped: 0.
+[pool-23-thread-2] Test testUpdateAvailabilityZone(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 374ms
+Test suite progress: tests succeeded: 175, failed: 0, skipped: 0.
+[pool-23-thread-4] Test testUpdateName(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiExpectTest) succeeded: 81ms
+Test suite progress: tests succeeded: 176, failed: 0, skipped: 0.
+Starting test testCreateKeyPair(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiExpectTest)
+Starting test testCreateKeyPairWithPublicKey(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiExpectTest)
+Starting test testDeleteKeyPair(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiExpectTest)
+Starting test testListKeyPairsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiExpectTest)
+Starting test testListKeyPairsWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiExpectTest)
+[pool-24-thread-3] Test testDeleteKeyPair(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiExpectTest) succeeded: 282ms
+Test suite progress: tests succeeded: 177, failed: 0, skipped: 0.
+[pool-24-thread-1] Test testCreateKeyPair(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiExpectTest) succeeded: 337ms
+Test suite progress: tests succeeded: 178, failed: 0, skipped: 0.
+[pool-24-thread-5] Test testListKeyPairsWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiExpectTest) succeeded: 335ms
+Test suite progress: tests succeeded: 179, failed: 0, skipped: 0.
+[pool-24-thread-4] Test testListKeyPairsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiExpectTest) succeeded: 340ms
+Test suite progress: tests succeeded: 180, failed: 0, skipped: 0.
+[pool-24-thread-2] Test testCreateKeyPairWithPublicKey(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiExpectTest) succeeded: 349ms
+Test suite progress: tests succeeded: 181, failed: 0, skipped: 0.
+Starting test testGetDefaultQuotas(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest)
+Starting test testGetDefaultQuotasFailsTenantNotFound(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest)
+Starting test testUpdateQuotas(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest)
+Starting test testGetQuotas(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest)
+Starting test testGetQuotasFailsTenantNotFound(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest)
+[pool-25-thread-2] Test testGetDefaultQuotasFailsTenantNotFound(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest) succeeded: 373ms
+Test suite progress: tests succeeded: 182, failed: 0, skipped: 0.
+Starting test testUpdateQuotasFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest)
+[pool-25-thread-3] Test testGetQuotas(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest) succeeded: 438ms
+Test suite progress: tests succeeded: 183, failed: 0, skipped: 0.
+[pool-25-thread-1] Test testGetDefaultQuotas(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest) succeeded: 460ms
+Test suite progress: tests succeeded: 184, failed: 0, skipped: 0.
+[pool-25-thread-4] Test testGetQuotasFailsTenantNotFound(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest) succeeded: 456ms
+Test suite progress: tests succeeded: 185, failed: 0, skipped: 0.
+[pool-25-thread-5] Test testUpdateQuotas(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest) succeeded: 481ms
+Test suite progress: tests succeeded: 186, failed: 0, skipped: 0.
+[pool-25-thread-2] Test testUpdateQuotasFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiExpectTest) succeeded: 150ms
+Test suite progress: tests succeeded: 187, failed: 0, skipped: 0.
+Starting test testGetQuotas(org.jclouds.openstack.nova.v2_0.extensions.QuotaClassApiExpectTest)
+Starting test testGetQuotasFailsTenantNotFound(org.jclouds.openstack.nova.v2_0.extensions.QuotaClassApiExpectTest)
+Starting test testUpdateQuotas(org.jclouds.openstack.nova.v2_0.extensions.QuotaClassApiExpectTest)
+Starting test testUpdateQuotasFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.QuotaClassApiExpectTest)
+[pool-26-thread-1] Test testGetQuotas(org.jclouds.openstack.nova.v2_0.extensions.QuotaClassApiExpectTest) succeeded: 268ms
+Test suite progress: tests succeeded: 188, failed: 0, skipped: 0.
+[pool-26-thread-3] Test testUpdateQuotas(org.jclouds.openstack.nova.v2_0.extensions.QuotaClassApiExpectTest) succeeded: 231ms
+Test suite progress: tests succeeded: 189, failed: 0, skipped: 0.
+[pool-26-thread-2] Test testGetQuotasFailsTenantNotFound(org.jclouds.openstack.nova.v2_0.extensions.QuotaClassApiExpectTest) succeeded: 247ms
+Test suite progress: tests succeeded: 190, failed: 0, skipped: 0.
+[pool-26-thread-4] Test testUpdateQuotasFailsNotFound(org.jclouds.openstack.nova.v2_0.extensions.QuotaClassApiExpectTest) succeeded: 238ms
+Test suite progress: tests succeeded: 191, failed: 0, skipped: 0.
+Starting test testCreateSecurityGroupRuleForCidrBlockWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest)
+Starting test testCreateSecurityGroupRuleForSecurityGroupIdWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest)
+Starting test testDeleteSecurityGroupRuleWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest)
+Starting test testCreateSecurityGroupWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest)
+Starting test testDeleteSecurityGroupWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest)
+[pool-27-thread-1] Test testCreateSecurityGroupRuleForCidrBlockWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest) succeeded: 338ms
+Test suite progress: tests succeeded: 192, failed: 0, skipped: 0.
+Starting test testGetSecurityGroupWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest)
+[pool-27-thread-4] Test testDeleteSecurityGroupRuleWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest) succeeded: 327ms
+Test suite progress: tests succeeded: 193, failed: 0, skipped: 0.
+Starting test testGetSecurityGroupWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest)
+[pool-27-thread-2] Test testCreateSecurityGroupRuleForSecurityGroupIdWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest) succeeded: 366ms
+Test suite progress: tests succeeded: 194, failed: 0, skipped: 0.
+Starting test testListSecurityGroupsWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest)
+[pool-27-thread-5] Test testDeleteSecurityGroupWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest) succeeded: 358ms
+Test suite progress: tests succeeded: 195, failed: 0, skipped: 0.
+Starting test testListSecurityGroupsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest)
+[pool-27-thread-3] Test testCreateSecurityGroupWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest) succeeded: 364ms
+Test suite progress: tests succeeded: 196, failed: 0, skipped: 0.
+[pool-27-thread-1] Test testGetSecurityGroupWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest) succeeded: 257ms
+Test suite progress: tests succeeded: 197, failed: 0, skipped: 0.
+[pool-27-thread-5] Test testListSecurityGroupsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest) succeeded: 219ms
+Test suite progress: tests succeeded: 198, failed: 0, skipped: 0.
+[pool-27-thread-2] Test testListSecurityGroupsWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest) succeeded: 231ms
+Test suite progress: tests succeeded: 199, failed: 0, skipped: 0.
+[pool-27-thread-4] Test testGetSecurityGroupWhenResponseIs404(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiExpectTest) succeeded: 283ms
+Test suite progress: tests succeeded: 200, failed: 0, skipped: 0.
+Starting test testGetServerWithSecurityGroups(org.jclouds.openstack.nova.v2_0.extensions.ServerWithSecurityGroupsApiExpectTest)
+Starting test testGetServerWithSecurityGroupsFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.ServerWithSecurityGroupsApiExpectTest)
+[pool-28-thread-2] Test testGetServerWithSecurityGroupsFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.ServerWithSecurityGroupsApiExpectTest) succeeded: 184ms
+Test suite progress: tests succeeded: 201, failed: 0, skipped: 0.
+[pool-28-thread-1] Test testGetServerWithSecurityGroups(org.jclouds.openstack.nova.v2_0.extensions.ServerWithSecurityGroupsApiExpectTest) succeeded: 202ms
+Test suite progress: tests succeeded: 202, failed: 0, skipped: 0.
+Starting test testGet(org.jclouds.openstack.nova.v2_0.extensions.SimpleTenantUsageApiExpectTest)
+Starting test testList(org.jclouds.openstack.nova.v2_0.extensions.SimpleTenantUsageApiExpectTest)
+[pool-29-thread-2] Test testList(org.jclouds.openstack.nova.v2_0.extensions.SimpleTenantUsageApiExpectTest) succeeded: 118ms
+Test suite progress: tests succeeded: 203, failed: 0, skipped: 0.
+[pool-29-thread-1] Test testGet(org.jclouds.openstack.nova.v2_0.extensions.SimpleTenantUsageApiExpectTest) succeeded: 143ms
+Test suite progress: tests succeeded: 204, failed: 0, skipped: 0.
+Starting test testListVirtualInterfaces(org.jclouds.openstack.nova.v2_0.extensions.VirtualInterfaceApiExpectTest)
+Starting test testListVirtualInterfacesFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VirtualInterfaceApiExpectTest)
+[pool-30-thread-2] Test testListVirtualInterfacesFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VirtualInterfaceApiExpectTest) succeeded: 120ms
+Test suite progress: tests succeeded: 205, failed: 0, skipped: 0.
+[pool-30-thread-1] Test testListVirtualInterfaces(org.jclouds.openstack.nova.v2_0.extensions.VirtualInterfaceApiExpectTest) succeeded: 143ms
+Test suite progress: tests succeeded: 206, failed: 0, skipped: 0.
+Starting test testAttachVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+Starting test testAttachVolumeFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+Starting test testCreateSnapshot(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+Starting test testCreateSnapshotFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+Starting test testCreateVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-2] Test testAttachVolumeFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 250ms
+Test suite progress: tests succeeded: 207, failed: 0, skipped: 0.
+Starting test testCreateVolumeFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-3] Test testCreateSnapshot(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 264ms
+Test suite progress: tests succeeded: 208, failed: 0, skipped: 0.
+Starting test testDeleteSnapshot(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-5] Test testCreateVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 311ms
+Test suite progress: tests succeeded: 209, failed: 0, skipped: 0.
+Starting test testDeleteSnapshotFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-1] Test testAttachVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 388ms
+Test suite progress: tests succeeded: 210, failed: 0, skipped: 0.
+Starting test testDeleteVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-4] Test testCreateSnapshotFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 374ms
+Test suite progress: tests succeeded: 211, failed: 0, skipped: 0.
+Starting test testDeleteVolumeFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-2] Test testCreateVolumeFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 418ms
+Test suite progress: tests succeeded: 212, failed: 0, skipped: 0.
+Starting test testDetachVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-1] Test testDeleteVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 340ms
+Test suite progress: tests succeeded: 213, failed: 0, skipped: 0.
+Starting test testDetachVolumeFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-5] Test testDeleteSnapshotFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 402ms
+Test suite progress: tests succeeded: 214, failed: 0, skipped: 0.
+Starting test testGetAttachment(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-3] Test testDeleteSnapshot(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 465ms
+Test suite progress: tests succeeded: 215, failed: 0, skipped: 0.
+[pool-31-thread-4] Test testDeleteVolumeFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 360ms
+Test suite progress: tests succeeded: 216, failed: 0, skipped: 0.
+Starting test testGetSnapshot(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+Starting test testGetAttachmentFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-2] Test testDetachVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 330ms
+Test suite progress: tests succeeded: 217, failed: 0, skipped: 0.
+Starting test testGetSnapshotFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-5] Test testGetAttachment(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 290ms
+Test suite progress: tests succeeded: 218, failed: 0, skipped: 0.
+Starting test testGetVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-1] Test testDetachVolumeFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 308ms
+Test suite progress: tests succeeded: 219, failed: 0, skipped: 0.
+Starting test testGetVolumeFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-4] Test testGetSnapshot(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 284ms
+Test suite progress: tests succeeded: 220, failed: 0, skipped: 0.
+Starting test testListAttachments(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-3] Test testGetAttachmentFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 299ms
+Test suite progress: tests succeeded: 221, failed: 0, skipped: 0.
+Starting test testListAttachmentsFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-5] Test testGetVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 425ms
+Test suite progress: tests succeeded: 222, failed: 0, skipped: 0.
+Starting test testListSnapshots(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-1] Test testGetVolumeFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 449ms
+Test suite progress: tests succeeded: 223, failed: 0, skipped: 0.
+Starting test testListSnapshotsFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-2] Test testGetSnapshotFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 481ms
+Test suite progress: tests succeeded: 224, failed: 0, skipped: 0.
+Starting test testListSnapshotsInDetail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-3] Test testListAttachmentsFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 445ms
+Test suite progress: tests succeeded: 225, failed: 0, skipped: 0.
+Starting test testListSnapshotsInDetailFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-4] Test testListAttachments(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 476ms
+Test suite progress: tests succeeded: 226, failed: 0, skipped: 0.
+Starting test testListVolumes(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-2] Test testListSnapshotsInDetail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 382ms
+Test suite progress: tests succeeded: 227, failed: 0, skipped: 0.
+Starting test testListVolumesFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-5] Test testListSnapshots(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 420ms
+Test suite progress: tests succeeded: 228, failed: 0, skipped: 0.
+Starting test testListVolumesInDetail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-1] Test testListSnapshotsFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 463ms
+Test suite progress: tests succeeded: 229, failed: 0, skipped: 0.
+Starting test testListVolumesInDetailFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest)
+[pool-31-thread-4] Test testListVolumes(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 464ms
+Test suite progress: tests succeeded: 230, failed: 0, skipped: 0.
+[pool-31-thread-3] Test testListSnapshotsInDetailFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 477ms
+Test suite progress: tests succeeded: 231, failed: 0, skipped: 0.
+[pool-31-thread-2] Test testListVolumesFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 305ms
+Test suite progress: tests succeeded: 232, failed: 0, skipped: 0.
+[pool-31-thread-5] Test testListVolumesInDetail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 306ms
+Test suite progress: tests succeeded: 233, failed: 0, skipped: 0.
+[pool-31-thread-1] Test testListVolumesInDetailFail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiExpectTest) succeeded: 261ms
+Test suite progress: tests succeeded: 234, failed: 0, skipped: 0.
+Starting test testCreateVolumeType(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+Starting test testCreateVolumeTypeWithOptsSet(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+Starting test testCreateVolumeTypeWithOptsNONE(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+Starting test testDeleteExtraSpecFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+Starting test testDeleteExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-4] Test testDeleteExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 354ms
+Test suite progress: tests succeeded: 235, failed: 0, skipped: 0.
+Starting test testDeleteVolumeType(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-5] Test testDeleteExtraSpecFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 376ms
+Test suite progress: tests succeeded: 236, failed: 0, skipped: 0.
+Starting test testDeleteVolumeTypeFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-1] Test testCreateVolumeType(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 383ms
+Test suite progress: tests succeeded: 237, failed: 0, skipped: 0.
+Starting test testGetAllExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-2] Test testCreateVolumeTypeWithOptsNONE(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 380ms
+Test suite progress: tests succeeded: 238, failed: 0, skipped: 0.
+Starting test testGetAllExtraSpecsFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-3] Test testCreateVolumeTypeWithOptsSet(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 393ms
+Test suite progress: tests succeeded: 239, failed: 0, skipped: 0.
+Starting test testGetExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-2] Test testGetAllExtraSpecsFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 330ms
+Test suite progress: tests succeeded: 240, failed: 0, skipped: 0.
+Starting test testGetExtraSpecFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-4] Test testDeleteVolumeType(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 375ms
+Test suite progress: tests succeeded: 241, failed: 0, skipped: 0.
+Starting test testGetVolumeType(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-5] Test testDeleteVolumeTypeFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 371ms
+Test suite progress: tests succeeded: 242, failed: 0, skipped: 0.
+Starting test testGetVolumeTypeFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-1] Test testGetAllExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 374ms
+Test suite progress: tests succeeded: 243, failed: 0, skipped: 0.
+Starting test testListVolumeTypes(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-3] Test testGetExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 373ms
+Test suite progress: tests succeeded: 244, failed: 0, skipped: 0.
+Starting test testSetAllExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-3] Test testSetAllExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 275ms
+Test suite progress: tests succeeded: 245, failed: 0, skipped: 0.
+Starting test testSetExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest)
+[pool-32-thread-4] Test testGetVolumeType(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 309ms
+Test suite progress: tests succeeded: 246, failed: 0, skipped: 0.
+[pool-32-thread-2] Test testGetExtraSpecFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 341ms
+Test suite progress: tests succeeded: 247, failed: 0, skipped: 0.
+[pool-32-thread-5] Test testGetVolumeTypeFailNotFound(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 307ms
+Test suite progress: tests succeeded: 248, failed: 0, skipped: 0.
+[pool-32-thread-1] Test testListVolumeTypes(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 316ms
+Test suite progress: tests succeeded: 249, failed: 0, skipped: 0.
+[pool-32-thread-3] Test testSetExtraSpec(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiExpectTest) succeeded: 94ms
+Test suite progress: tests succeeded: 250, failed: 0, skipped: 0.
+Starting test testGetExtensionByAliasWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ExtensionApiExpectTest)
+Starting test testListExtensionsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ExtensionApiExpectTest)
+Starting test testListExtensionsWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.features.ExtensionApiExpectTest)
+Starting test testGetExtensionByAliasWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ExtensionApiExpectTest)
+[pool-33-thread-3] Test testListExtensionsWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.features.ExtensionApiExpectTest) succeeded: 108ms
+Test suite progress: tests succeeded: 251, failed: 0, skipped: 0.
+[pool-33-thread-1] Test testGetExtensionByAliasWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ExtensionApiExpectTest) succeeded: 174ms
+Test suite progress: tests succeeded: 252, failed: 0, skipped: 0.
+[pool-33-thread-2] Test testGetExtensionByAliasWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ExtensionApiExpectTest) succeeded: 173ms
+Test suite progress: tests succeeded: 253, failed: 0, skipped: 0.
+[pool-33-thread-4] Test testListExtensionsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ExtensionApiExpectTest) succeeded: 175ms
+Test suite progress: tests succeeded: 254, failed: 0, skipped: 0.
+Starting test testGetFlavorWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.FlavorApiExpectTest)
+Starting test testGetFlavorWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.FlavorApiExpectTest)
+Starting test testListFlavorsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.FlavorApiExpectTest)
+Starting test testListFlavorsWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.features.FlavorApiExpectTest)
+[pool-34-thread-2] Test testGetFlavorWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.FlavorApiExpectTest) succeeded: 209ms
+Test suite progress: tests succeeded: 255, failed: 0, skipped: 0.
+[pool-34-thread-4] Test testListFlavorsWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.FlavorApiExpectTest) succeeded: 197ms
+Test suite progress: tests succeeded: 256, failed: 0, skipped: 0.
+[pool-34-thread-1] Test testGetFlavorWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.FlavorApiExpectTest) succeeded: 202ms
+Test suite progress: tests succeeded: 257, failed: 0, skipped: 0.
+[pool-34-thread-3] Test testListFlavorsWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.features.FlavorApiExpectTest) succeeded: 202ms
+Test suite progress: tests succeeded: 258, failed: 0, skipped: 0.
+Starting test testDeleteMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+Starting test testDeleteMetadataItemWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+Starting test testGetImageWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+Starting test testGetImageWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+Starting test testGetMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+[pool-35-thread-4] Test testGetImageWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 186ms
+Test suite progress: tests succeeded: 259, failed: 0, skipped: 0.
+Starting test testGetMetadataItemWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+[pool-35-thread-2] Test testDeleteMetadataItemWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 251ms
+Test suite progress: tests succeeded: 260, failed: 0, skipped: 0.
+Starting test testListImagesWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+[pool-35-thread-3] Test testGetImageWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 267ms
+Test suite progress: tests succeeded: 261, failed: 0, skipped: 0.
+Starting test testListImagesWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+[pool-35-thread-5] Test testGetMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 268ms
+Test suite progress: tests succeeded: 262, failed: 0, skipped: 0.
+Starting test testListMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+[pool-35-thread-1] Test testDeleteMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 333ms
+Test suite progress: tests succeeded: 263, failed: 0, skipped: 0.
+Starting test testListMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+[pool-35-thread-5] Test testListMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 198ms
+Test suite progress: tests succeeded: 264, failed: 0, skipped: 0.
+Starting test testSetMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+[pool-35-thread-4] Test testGetMetadataItemWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 297ms
+Test suite progress: tests succeeded: 265, failed: 0, skipped: 0.
+Starting test testSetMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+[pool-35-thread-3] Test testListImagesWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 248ms
+Test suite progress: tests succeeded: 266, failed: 0, skipped: 0.
+Starting test testSetMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ImageAsyncApi.getMetadata, request=GET https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/3456/images/52415800-8b69-11e0-9b19-734f5736d2a2/metadata HTTP/1.1]
+[pool-35-thread-1] Test testListMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 275ms
+Test suite progress: tests succeeded: 267, failed: 0, skipped: 0.
+Starting test testUpdateMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+[pool-35-thread-2] Test testListImagesWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 346ms
+Test suite progress: tests succeeded: 268, failed: 0, skipped: 0.
+Starting test testUpdateMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest)
+[pool-35-thread-4] Test testSetMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 286ms
+Test suite progress: tests succeeded: 269, failed: 0, skipped: 0.
+[pool-35-thread-5] Test testSetMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 350ms
+Test suite progress: tests succeeded: 270, failed: 0, skipped: 0.
+[pool-35-thread-1] Test testUpdateMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 246ms
+Test suite progress: tests succeeded: 271, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=ImageAsyncApi.setMetadata, request=PUT https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/3456/images/52415800-8b69-11e0-9b19-734f5736d2a2/metadata HTTP/1.1]
+[pool-35-thread-3] Test testSetMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 329ms
+Test suite progress: tests succeeded: 272, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=ImageAsyncApi.setMetadata, request=PUT https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/3456/images/52415800-8b69-11e0-9b19-734f5736d2a2/metadata HTTP/1.1]
+[pool-35-thread-2] Test testUpdateMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ImageApiExpectTest) succeeded: 299ms
+Test suite progress: tests succeeded: 273, failed: 0, skipped: 0.
+Starting test testCreateImageWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+Starting test testDeleteMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+Starting test testCreateImageWhenResponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+Starting test testCreateServerWhenResponseIs202(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+Starting test testCreateServerWithSecurityGroupsWhenResponseIs202(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-4] Test testCreateServerWithSecurityGroupsWhenResponseIs202(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 228ms
+Test suite progress: tests succeeded: 274, failed: 0, skipped: 0.
+Starting test testDeleteMetadataItemWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-5] Test testDeleteMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 246ms
+Test suite progress: tests succeeded: 275, failed: 0, skipped: 0.
+Starting test testGetMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-3] Test testCreateServerWhenResponseIs202(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 245ms
+Test suite progress: tests succeeded: 276, failed: 0, skipped: 0.
+Starting test testGetMetadataItemWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-1] Test testCreateImageWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 283ms
+Test suite progress: tests succeeded: 277, failed: 0, skipped: 0.
+Starting test testListMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-2] Test testCreateImageWhenResponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 282ms
+Test suite progress: tests succeeded: 278, failed: 0, skipped: 0.
+Starting test testListMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-5] Test testGetMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 242ms
+Test suite progress: tests succeeded: 279, failed: 0, skipped: 0.
+Starting test testListServersWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-4] Test testDeleteMetadataItemWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 278ms
+Test suite progress: tests succeeded: 280, failed: 0, skipped: 0.
+Starting test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-1] Test testListMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 267ms
+Test suite progress: tests succeeded: 281, failed: 0, skipped: 0.
+Starting test testSetMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.setMetadata, request=PUT https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/3456/servers/123/metadata HTTP/1.1]
+[pool-36-thread-3] Test testGetMetadataItemWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 317ms
+Test suite progress: tests succeeded: 282, failed: 0, skipped: 0.
+Starting test testSetMetadataItemWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.getMetadata, request=GET https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/3456/servers/123/metadata HTTP/1.1]
+[pool-36-thread-2] Test testListMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 285ms
+Test suite progress: tests succeeded: 283, failed: 0, skipped: 0.
+Starting test testSetMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-5] Test testListServersWhenReponseIs404IsEmpty(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 196ms
+Test suite progress: tests succeeded: 284, failed: 0, skipped: 0.
+Starting test testSetMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-4] Test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 286ms
+Test suite progress: tests succeeded: 285, failed: 0, skipped: 0.
+Starting test testStartServerWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-1] Test testSetMetadataItemWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 334ms
+Test suite progress: tests succeeded: 286, failed: 0, skipped: 0.
+Starting test testStartServerWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-2] Test testSetMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 301ms
+Test suite progress: tests succeeded: 287, failed: 0, skipped: 0.
+Starting test testStopServerWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.setMetadata, request=PUT https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/3456/servers/123/metadata HTTP/1.1]
+[pool-36-thread-3] Test testSetMetadataItemWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 363ms
+Test suite progress: tests succeeded: 288, failed: 0, skipped: 0.
+Starting test testStopServerWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.setMetadata, request=PUT https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/3456/servers/123/metadata HTTP/1.1]
+[pool-36-thread-5] Test testSetMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 425ms
+Test suite progress: tests succeeded: 289, failed: 0, skipped: 0.
+Starting test testUpdateMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-4] Test testStartServerWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 376ms
+Test suite progress: tests succeeded: 290, failed: 0, skipped: 0.
+Starting test testUpdateMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest)
+[pool-36-thread-3] Test testStopServerWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 255ms
+Test suite progress: tests succeeded: 291, failed: 0, skipped: 0.
+[pool-36-thread-2] Test testStopServerWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 325ms
+Test suite progress: tests succeeded: 292, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.start, request=POST https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/3456/servers/123/action HTTP/1.1]
+[pool-36-thread-1] Test testStartServerWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 390ms
+Test suite progress: tests succeeded: 293, failed: 0, skipped: 0.
+[pool-36-thread-5] Test testUpdateMetadataWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 106ms
+Test suite progress: tests succeeded: 294, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.setMetadata, request=PUT https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/3456/servers/123/metadata HTTP/1.1]
+[pool-36-thread-4] Test testUpdateMetadataWhenResponseIs404(org.jclouds.openstack.nova.v2_0.features.ServerApiExpectTest) succeeded: 153ms
+Test suite progress: tests succeeded: 295, failed: 0, skipped: 0.
+Starting test testCreateNewGroup(org.jclouds.openstack.nova.v2_0.functions.CreateSecurityGroupIfNeededTest)
+Starting test testReturnExistingGroupOnAlreadyExists(org.jclouds.openstack.nova.v2_0.functions.CreateSecurityGroupIfNeededTest)
+[pool-37-thread-1] Test testCreateNewGroup(org.jclouds.openstack.nova.v2_0.functions.CreateSecurityGroupIfNeededTest) succeeded: 104ms
+Test suite progress: tests succeeded: 296, failed: 0, skipped: 0.
+[pool-37-thread-2] Test testReturnExistingGroupOnAlreadyExists(org.jclouds.openstack.nova.v2_0.functions.CreateSecurityGroupIfNeededTest) succeeded: 121ms
+Test suite progress: tests succeeded: 297, failed: 0, skipped: 0.
+Starting test testDoesNotUpdateReferenceWhenSecurityGroupListMissingGroupName(org.jclouds.openstack.nova.v2_0.functions.FindSecurityGroupWithNameAndReturnTrueExpectTest)
+Starting test testUpdateReferenceWhenSecurityGroupListContainsGroupName(org.jclouds.openstack.nova.v2_0.functions.FindSecurityGroupWithNameAndReturnTrueExpectTest)
+[pool-38-thread-1] Test testDoesNotUpdateReferenceWhenSecurityGroupListMissingGroupName(org.jclouds.openstack.nova.v2_0.functions.FindSecurityGroupWithNameAndReturnTrueExpectTest) succeeded: 72ms
+Test suite progress: tests succeeded: 298, failed: 0, skipped: 0.
+[pool-38-thread-2] Test testUpdateReferenceWhenSecurityGroupListContainsGroupName(org.jclouds.openstack.nova.v2_0.functions.FindSecurityGroupWithNameAndReturnTrueExpectTest) succeeded: 71ms
+Test suite progress: tests succeeded: 299, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.openstack.nova.v2_0.NovaApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.openstack.nova.v2_0.NovaApiMetadataTest)
+Starting test testWithId(org.jclouds.openstack.nova.v2_0.NovaApiMetadataTest)
+[pool-39-thread-3] Test testWithId(org.jclouds.openstack.nova.v2_0.NovaApiMetadataTest) succeeded: 25ms
+Test suite progress: tests succeeded: 300, failed: 0, skipped: 0.
+[pool-39-thread-2] Test testTransformableToContains(org.jclouds.openstack.nova.v2_0.NovaApiMetadataTest) succeeded: 46ms
+Test suite progress: tests succeeded: 301, failed: 0, skipped: 0.
+[pool-39-thread-1] Test testAllContains(org.jclouds.openstack.nova.v2_0.NovaApiMetadataTest) succeeded: 57ms
+Test suite progress: tests succeeded: 302, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseComputeServiceTypicalSecurityGroupTest)
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseSecurityGroupTest)
+[pool-40-thread-2] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseSecurityGroupTest) succeeded: 12ms
+Test suite progress: tests succeeded: 303, failed: 0, skipped: 0.
+[pool-40-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseComputeServiceTypicalSecurityGroupTest) succeeded: 14ms
+Test suite progress: tests succeeded: 304, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseCreatedServerTest)
+[pool-41-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseCreatedServerTest) succeeded: 4ms
+Test suite progress: tests succeeded: 305, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.PublicIpsInPrivateAddressBlockExpectTest)
+[pool-41-thread-2] Test test(org.jclouds.openstack.nova.v2_0.parse.PublicIpsInPrivateAddressBlockExpectTest) succeeded: 7ms
+Test suite progress: tests succeeded: 306, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseExtensionListNormalTest)
+[pool-42-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseExtensionListNormalTest) succeeded: 20ms
+Test suite progress: tests succeeded: 307, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseExtensionListTest)
+[pool-43-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseExtensionListTest) succeeded: 3ms
+Test suite progress: tests succeeded: 308, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseExtensionTest)
+[pool-44-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseExtensionTest) succeeded: 2ms
+Test suite progress: tests succeeded: 309, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseFlavorListTest)
+[pool-45-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseFlavorListTest) succeeded: 3ms
+Test suite progress: tests succeeded: 310, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseFlavorTest)
+[pool-46-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseFlavorTest) succeeded: 2ms
+Test suite progress: tests succeeded: 311, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseFloatingIPListTest)
+[pool-47-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseFloatingIPListTest) succeeded: 2ms
+Test suite progress: tests succeeded: 312, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseFloatingIPTest)
+[pool-48-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseFloatingIPTest) succeeded: 2ms
+Test suite progress: tests succeeded: 313, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseImageListTest)
+[pool-49-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseImageListTest) succeeded: 2ms
+Test suite progress: tests succeeded: 314, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseImageTest)
+[pool-50-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseImageTest) succeeded: 4ms
+Test suite progress: tests succeeded: 315, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseKeyPairListTest)
+[pool-51-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseKeyPairListTest) succeeded: 2ms
+Test suite progress: tests succeeded: 316, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseKeyPairTest)
+[pool-52-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseKeyPairTest) succeeded: 2ms
+Test suite progress: tests succeeded: 317, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseMetadataItemTest)
+[pool-53-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseMetadataItemTest) succeeded: 3ms
+Test suite progress: tests succeeded: 318, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseMetadataListTest)
+[pool-54-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseMetadataListTest) succeeded: 1ms
+Test suite progress: tests succeeded: 319, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseMetadataUpdateTest)
+[pool-55-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseMetadataUpdateTest) succeeded: 2ms
+Test suite progress: tests succeeded: 320, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseSecurityGroupListTest)
+[pool-56-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseSecurityGroupListTest) succeeded: 3ms
+Test suite progress: tests succeeded: 321, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseServerDetailsEssexTest)
+[pool-57-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseServerDetailsEssexTest) succeeded: 15ms
+Test suite progress: tests succeeded: 322, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseServerListTest)
+[pool-58-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseServerListTest) succeeded: 2ms
+Test suite progress: tests succeeded: 323, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseServerTest)
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseServerWithInternetAddressesTest)
+[pool-59-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseServerTest) succeeded: 9ms
+Test suite progress: tests succeeded: 324, failed: 0, skipped: 0.
+[pool-59-thread-2] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseServerWithInternetAddressesTest) succeeded: 16ms
+Test suite progress: tests succeeded: 325, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.nova.v2_0.parse.ParseServerWithAllExtensionsTest)
+[pool-60-thread-1] Test test(org.jclouds.openstack.nova.v2_0.parse.ParseServerWithAllExtensionsTest) succeeded: 46ms
+Test suite progress: tests succeeded: 326, failed: 0, skipped: 0.
+Starting test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.PasswordAuthenticationExpectTest)
+[pool-61-thread-1] Test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.PasswordAuthenticationExpectTest) succeeded: 78ms
+Test suite progress: tests succeeded: 327, failed: 0, skipped: 0.
+Starting test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.PasswordAuthenticationWithTenantNameExpectTest)
+[pool-62-thread-1] Test testListServersWhenResponseIs2xx(org.jclouds.openstack.nova.v2_0.PasswordAuthenticationWithTenantNameExpectTest) succeeded: 71ms
+Test suite progress: tests succeeded: 328, failed: 0, skipped: 0.
+Starting test teststatusEqualsWhenEqual(org.jclouds.openstack.nova.v2_0.predicates.ImagePredicatesTest)
+[pool-63-thread-1] Test teststatusEqualsWhenEqual(org.jclouds.openstack.nova.v2_0.predicates.ImagePredicatesTest) succeeded: 0ms
+Test suite progress: tests succeeded: 329, failed: 0, skipped: 0.
+Starting test teststatusEqualsWhenNotEqual(org.jclouds.openstack.nova.v2_0.predicates.ImagePredicatesTest)
+[pool-63-thread-2] Test teststatusEqualsWhenNotEqual(org.jclouds.openstack.nova.v2_0.predicates.ImagePredicatesTest) succeeded: 0ms
+Test suite progress: tests succeeded: 330, failed: 0, skipped: 0.
+Starting test testnameEqualsWhenEqual(org.jclouds.openstack.nova.v2_0.predicates.SecurityGroupPredicatesTest)
+[pool-64-thread-1] Test testnameEqualsWhenEqual(org.jclouds.openstack.nova.v2_0.predicates.SecurityGroupPredicatesTest) succeeded: 0ms
+Test suite progress: tests succeeded: 331, failed: 0, skipped: 0.
+Starting test testnameEqualsWhenNotEqual(org.jclouds.openstack.nova.v2_0.predicates.SecurityGroupPredicatesTest)
+[pool-64-thread-2] Test testnameEqualsWhenNotEqual(org.jclouds.openstack.nova.v2_0.predicates.SecurityGroupPredicatesTest) succeeded: 0ms
+Test suite progress: tests succeeded: 332, failed: 0, skipped: 0.
+Tests run: 332, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.298 sec
+
+Results :
+
+Tests run: 332, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ openstack-nova ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ openstack-nova ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/apis/openstack-nova/target/openstack-nova-1.5.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ openstack-nova ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/apis/openstack-nova/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@2911a3a4
+19:22:46,694 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+19:22:46,694 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+19:22:46,694 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/api/openstack-keystone/1.5.0-SNAPSHOT/openstack-keystone-1.5.0-SNAPSHOT-tests.jar!/logback.xml]
+19:22:46,704 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+19:22:46,704 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/api/openstack-keystone/1.5.0-SNAPSHOT/openstack-keystone-1.5.0-SNAPSHOT-tests.jar!/logback.xml]
+19:22:46,704 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/jclouds-compute/1.5.0-SNAPSHOT/jclouds-compute-1.5.0-SNAPSHOT-tests.jar!/logback.xml]
+19:22:46,743 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@3589c12a - URL [jar:file:/Users/adriancole/.m2/repository/org/jclouds/api/openstack-keystone/1.5.0-SNAPSHOT/openstack-keystone-1.5.0-SNAPSHOT-tests.jar!/logback.xml] is not of type file
+19:22:47,107 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+19:22:47,143 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+19:22:47,148 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+19:22:47,163 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:22:47,200 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/test-data/jclouds.log]
+19:22:47,202 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+19:22:47,202 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [WIREFILE]
+19:22:47,202 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:22:47,202 |-INFO in ch.qos.logback.core.FileAppender[WIREFILE] - File property is set to [target/test-data/jclouds-wire.log]
+19:22:47,203 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+19:22:47,203 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [COMPUTEFILE]
+19:22:47,203 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:22:47,203 |-INFO in ch.qos.logback.core.FileAppender[COMPUTEFILE] - File property is set to [target/test-data/jclouds-compute.log]
+19:22:47,203 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+19:22:47,203 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [SSHFILE]
+19:22:47,204 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:22:47,204 |-INFO in ch.qos.logback.core.FileAppender[SSHFILE] - File property is set to [target/test-data/jclouds-ssh.log]
+19:22:47,204 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - ROOT level set to WARN
+19:22:47,204 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.jclouds level set to DEBUG
+19:22:47,204 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[org.jclouds]
+19:22:47,205 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.wire level set to DEBUG
+19:22:47,205 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.wire]
+19:22:47,205 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.headers level set to DEBUG
+19:22:47,205 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.headers]
+19:22:47,205 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.compute level set to DEBUG
+19:22:47,205 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [COMPUTEFILE] to Logger[jclouds.compute]
+19:22:47,205 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.ssh level set to DEBUG
+19:22:47,205 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [SSHFILE] to Logger[jclouds.ssh]
+19:22:47,207 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@66e8c7db - Registering current configuration as safe fallback point
+
+Starting test testCreateImage(org.jclouds.openstack.nova.v2_0.compute.extensions.NovaImageExtensionLiveTest)
+Starting test setServiceDefaults(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCompareSizes(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+Starting test testAddAndRemoveFloatingIp(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiLiveTest)
+Starting test testCreateBackupOfServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiLiveTest)
+[TestNG] Test testCreateBackupOfServer(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiLiveTest) skipped.
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 1.
+Starting test testLockAndUnlock(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiLiveTest)
+[TestNG] Test testLockAndUnlock(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiLiveTest) skipped.
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 2.
+Starting test testPauseAndUnpause(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiLiveTest)
+[TestNG] Test testPauseAndUnpause(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiLiveTest) skipped.
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 3.
+Starting test testResetNetworkAndInjectNetworkInfo(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiLiveTest)
+[TestNG] Test testResetNetworkAndInjectNetworkInfo(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiLiveTest) skipped.
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 4.
+Starting test testSuspendAndResume(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiLiveTest)
+[TestNG] Test testSuspendAndResume(org.jclouds.openstack.nova.v2_0.extensions.AdminActionsApiLiveTest) skipped.
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 5.
+Starting test testCreateExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiLiveTest)
+[TestNG] Test testCreateExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 5.
+Starting test testListExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiLiveTest)
+[TestNG] Test testListExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 5.
+Starting test testTwiddleIndividualSpecs(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiLiveTest)
+[TestNG] Test testTwiddleIndividualSpecs(org.jclouds.openstack.nova.v2_0.extensions.FlavorExtraSpecsApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 5.
+Starting test testListAndGet(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiLiveTest)
+[TestNG] Test testListAndGet(org.jclouds.openstack.nova.v2_0.extensions.HostAdministrationApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 5.
+Starting test testCreateAggregate(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiLiveTest)
+[TestNG] Test testCreateAggregate(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 5.
+Starting test testListAndGetAggregate(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiLiveTest)
+[TestNG] Test testListAndGetAggregate(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 5.
+Starting test testModifyMetadata(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiLiveTest)
+[TestNG] Test testModifyMetadata(org.jclouds.openstack.nova.v2_0.extensions.HostAggregateApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 5.
+Sep 16, 2012 7:22:58 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: smallest {id=az-3.region-a.geo-1/100, providerId=100, name=standard.xsmall, location={scope=ZONE, id=az-3.region-a.geo-1, description=az-3.region-a.geo-1, parent=openstack-nova}, processors=[{cores=1.0, speed=1.0}], ram=1024, volumes=[{type=LOCAL, size=30.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+Sep 16, 2012 7:22:58 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: fastest {id=az-3.region-a.geo-1/105, providerId=105, name=standard.2xlarge, location={scope=ZONE, id=az-3.region-a.geo-1, description=az-3.region-a.geo-1, parent=openstack-nova}, processors=[{cores=8.0, speed=1.0}], ram=32768, volumes=[{type=LOCAL, size=960.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+Sep 16, 2012 7:22:58 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: biggest {id=az-3.region-a.geo-1/105, providerId=105, name=standard.2xlarge, location={scope=ZONE, id=az-3.region-a.geo-1, description=az-3.region-a.geo-1, parent=openstack-nova}, processors=[{cores=8.0, speed=1.0}], ram=32768, volumes=[{type=LOCAL, size=960.0, bootDevice=true, durable=true}], supportsImage=ALWAYS_TRUE}
+[TestNG] Test testCompareSizes(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 7966ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 5.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+Starting test testCreateAndDeleteKeyPair(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 2109ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 5.
+Starting test testGetAssignableLocations(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+Sep 16, 2012 7:23:00 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=az-3.region-a.geo-1, description=az-3.region-a.geo-1, parent=openstack-nova}
+Sep 16, 2012 7:23:00 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=az-2.region-a.geo-1, description=az-2.region-a.geo-1, parent=openstack-nova}
+Sep 16, 2012 7:23:00 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=az-1.region-a.geo-1, description=az-1.region-a.geo-1, parent=openstack-nova}
+[TestNG] Test testGetAssignableLocations(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 5.
+Starting test testImageById(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+Starting test testGetDefaultQuotasForCurrentTenant(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiLiveTest)
+[TestNG] Test testGetDefaultQuotasForCurrentTenant(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 5.
+Starting test testGetQuotasForCurrentTenant(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiLiveTest)
+[TestNG] Test testGetQuotasForCurrentTenant(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 5.
+Starting test testUpdateQuotasOfCurrentTenantThenReset(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiLiveTest)
+[TestNG] Test testUpdateQuotasOfCurrentTenantThenReset(org.jclouds.openstack.nova.v2_0.extensions.QuotaApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 5.
+blocking on status ACTIVE
+Server{id=211979, name=adriancole, links=[Link{relation=SELF, href=https://az-3.region-a.geo-1.compute.hpcloudsvc.com/v1.1/37936628937291/servers/211979}, Link{relation=BOOKMARK, href=https://az-3.region-a.geo-1.compute.hpcloudsvc.com/37936628937291/servers/211979}], uuid=0dce90ac-3d19-4e86-b65a-a076b8d2d87c, tenantId=37936628937291, userId=54297837463082, updated=Sun Sep 16 19:23:00 PDT 2012, created=Sun Sep 16 19:23:00 PDT 2012, hostId=6bba0171996676cb8e22f9715fad2b93c489441e81c01a749240755a, accessIPv4=null, accessIPv6=null, status=BUILD, image=Resource{id=100, name=null, links=[Link{relation=BOOKMARK, href=https://az-3.region-a.geo-1.compute.hpcloudsvc.com/37936628937291/images/100}]}, flavor=Resource{id=100, name=null, links=[Link{relation=BOOKMARK, href=https://az-3.region-a.geo-1.compute.hpcloudsvc.com/37936628937291/flavors/100}]}, keyName=null, configDrive=null, addresses={}, metadata={}, extendedStatus=Optional.absent(), extendedAttributes=Optional.absent(), diskConfig=Optional.absent()}
+[TestNG] Test testImageById(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 680ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 5.
+Starting test testImagesCache(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 5.
+Starting test testListImages(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 5.
+Starting test testListSizes(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 5.
+Starting test testOptionToNotBlock(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+[TestNG] Test testOptionToNotBlock(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 5.
+Starting test testCreateAndRunAService(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+[TestNG] Test testCreateAndDeleteKeyPair(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiLiveTest) succeeded: 3272ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 5.
+Starting test testCreateAndDeleteKeyPairWithPublicKey(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiLiveTest)
+Starting test testUpdateAndGetQuotaClass(org.jclouds.openstack.nova.v2_0.extensions.QuotaClassApiLiveTest)
+[TestNG] Test testUpdateAndGetQuotaClass(org.jclouds.openstack.nova.v2_0.extensions.QuotaClassApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 5.
+[TestNG] Test testCreateAndDeleteKeyPairWithPublicKey(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiLiveTest) succeeded: 2864ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 5.
+Starting test testListKeyPairs(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiLiveTest)
+Starting test createAndDeleteSecurityGroupRule(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiLiveTest)
+[TestNG] Test testAddAndRemoveFloatingIp(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiLiveTest) failed.
+Test suite progress: tests succeeded: 22, failed: 1, skipped: 5.
+Starting test testAllocateAndDecreateFloatingIPs(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiLiveTest)
+[TestNG] Test testListKeyPairs(org.jclouds.openstack.nova.v2_0.extensions.KeyPairApiLiveTest) succeeded: 2245ms
+Test suite progress: tests succeeded: 23, failed: 1, skipped: 5.
+Starting test testGetServer(org.jclouds.openstack.nova.v2_0.extensions.ServerWithSecurityGroupsApiLiveTest)
+[TestNG] Test testGetServer(org.jclouds.openstack.nova.v2_0.extensions.ServerWithSecurityGroupsApiLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 24, failed: 1, skipped: 5.
+[TestNG] Test testAllocateAndDecreateFloatingIPs(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiLiveTest) succeeded: 6184ms
+Test suite progress: tests succeeded: 25, failed: 1, skipped: 5.
+Starting test testListFloatingIPs(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiLiveTest)
+Starting test testList(org.jclouds.openstack.nova.v2_0.extensions.SimpleTenantUsageApiLiveTest)
+[TestNG] Test testListFloatingIPs(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiLiveTest) succeeded: 2354ms
+Test suite progress: tests succeeded: 26, failed: 1, skipped: 5.
+[TestNG] Test testList(org.jclouds.openstack.nova.v2_0.extensions.SimpleTenantUsageApiLiveTest) succeeded: 1009ms
+Test suite progress: tests succeeded: 27, failed: 1, skipped: 5.
+[TestNG] Test createAndDeleteSecurityGroupRule(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiLiveTest) succeeded: 10556ms
+Test suite progress: tests succeeded: 28, failed: 1, skipped: 5.
+Starting test createGetAndDeleteSecurityGroup(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiLiveTest)
+Starting test testListVirtualInterfaces(org.jclouds.openstack.nova.v2_0.extensions.VirtualInterfaceApiLiveTest)
+[TestNG] Test testListVirtualInterfaces(org.jclouds.openstack.nova.v2_0.extensions.VirtualInterfaceApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 1, skipped: 5.
+Starting test testCreateVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest)
+[TestNG] Test testCreateVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest) failed.
+Test suite progress: tests succeeded: 29, failed: 2, skipped: 5.
+[TestNG] Test testAttachments(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest) skipped.
+Test suite progress: tests succeeded: 29, failed: 2, skipped: 6.
+[TestNG] Test testCreateSnapshot(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest) skipped.
+Test suite progress: tests succeeded: 29, failed: 2, skipped: 7.
+[TestNG] Test testListVolumes(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest) skipped.
+Test suite progress: tests succeeded: 29, failed: 2, skipped: 8.
+[TestNG] Test testListVolumesInDetail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest) skipped.
+Test suite progress: tests succeeded: 29, failed: 2, skipped: 9.
+[TestNG] Test testListSnapshots(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest) skipped.
+Test suite progress: tests succeeded: 29, failed: 2, skipped: 10.
+[TestNG] Test testListSnapshotsInDetail(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest) skipped.
+Test suite progress: tests succeeded: 29, failed: 2, skipped: 11.
+Starting test testCreateVolumeType(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiLiveTest)
+[TestNG] Test testCreateVolumeType(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 30, failed: 2, skipped: 11.
+Starting test testExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiLiveTest)
+[TestNG] Test testExtraSpecs(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 31, failed: 2, skipped: 11.
+Starting test testListVolumeTypes(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiLiveTest)
+[TestNG] Test testListVolumeTypes(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 32, failed: 2, skipped: 11.
+Starting test testUpdateIndividualSpec(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiLiveTest)
+[TestNG] Test testUpdateIndividualSpec(org.jclouds.openstack.nova.v2_0.extensions.VolumeTypeApiLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 33, failed: 2, skipped: 11.
+Starting test testListExtensions(org.jclouds.openstack.nova.v2_0.features.ExtensionApiLiveTest)
+[TestNG] Test createGetAndDeleteSecurityGroup(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiLiveTest) succeeded: 3521ms
+Test suite progress: tests succeeded: 34, failed: 2, skipped: 11.
+Starting test list(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiLiveTest)
+[TestNG] Test testListExtensions(org.jclouds.openstack.nova.v2_0.features.ExtensionApiLiveTest) succeeded: 1120ms
+Test suite progress: tests succeeded: 35, failed: 2, skipped: 11.
+Starting test testGetExtensionByAlias(org.jclouds.openstack.nova.v2_0.features.ExtensionApiLiveTest)
+[TestNG] Test list(org.jclouds.openstack.nova.v2_0.extensions.SecurityGroupApiLiveTest) succeeded: 1045ms
+Test suite progress: tests succeeded: 36, failed: 2, skipped: 11.
+Starting test testListFlavors(org.jclouds.openstack.nova.v2_0.features.FlavorApiLiveTest)
+[TestNG] Test testListFlavors(org.jclouds.openstack.nova.v2_0.features.FlavorApiLiveTest) succeeded: 1581ms
+Test suite progress: tests succeeded: 37, failed: 2, skipped: 11.
+Starting test testListFlavorsInDetail(org.jclouds.openstack.nova.v2_0.features.FlavorApiLiveTest)
+Starting test testListImages(org.jclouds.openstack.nova.v2_0.features.ImageApiLiveTest)
+[TestNG] Test testListFlavorsInDetail(org.jclouds.openstack.nova.v2_0.features.FlavorApiLiveTest) succeeded: 1615ms
+Test suite progress: tests succeeded: 38, failed: 2, skipped: 11.
+Starting test testGetFlavorById(org.jclouds.openstack.nova.v2_0.features.FlavorApiLiveTest)
+[TestNG] Test testGetExtensionByAlias(org.jclouds.openstack.nova.v2_0.features.ExtensionApiLiveTest) succeeded: 6766ms
+Test suite progress: tests succeeded: 39, failed: 2, skipped: 11.
+[TestNG] Test testListImages(org.jclouds.openstack.nova.v2_0.features.ImageApiLiveTest) succeeded: 4308ms
+Test suite progress: tests succeeded: 40, failed: 2, skipped: 11.
+Starting test testListImagesInDetail(org.jclouds.openstack.nova.v2_0.features.ImageApiLiveTest)
+Starting test testListServers(org.jclouds.openstack.nova.v2_0.features.ServerApiLiveTest)
+[TestNG] Test testGetFlavorById(org.jclouds.openstack.nova.v2_0.features.FlavorApiLiveTest) succeeded: 7258ms
+Test suite progress: tests succeeded: 41, failed: 2, skipped: 11.
+[TestNG] Test testListServers(org.jclouds.openstack.nova.v2_0.features.ServerApiLiveTest) succeeded: 1697ms
+Test suite progress: tests succeeded: 42, failed: 2, skipped: 11.
+Starting test testListServersInDetail(org.jclouds.openstack.nova.v2_0.features.ServerApiLiveTest)
+[TestNG] Test testListImagesInDetail(org.jclouds.openstack.nova.v2_0.features.ImageApiLiveTest) succeeded: 4185ms
+Test suite progress: tests succeeded: 43, failed: 2, skipped: 11.
+Starting test testGetImageById(org.jclouds.openstack.nova.v2_0.features.ImageApiLiveTest)
+[TestNG] Test testListServersInDetail(org.jclouds.openstack.nova.v2_0.features.ServerApiLiveTest) succeeded: 1966ms
+Test suite progress: tests succeeded: 44, failed: 2, skipped: 11.
+Starting test testGetServerById(org.jclouds.openstack.nova.v2_0.features.ServerApiLiveTest)
+[TestNG] Test testGetServerById(org.jclouds.openstack.nova.v2_0.features.ServerApiLiveTest) succeeded: 4575ms
+Test suite progress: tests succeeded: 45, failed: 2, skipped: 11.
+Sep 16, 2012 7:24:19 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest createAndRunAServiceInGroup
+INFO: << available node(az-3.region-a.geo-1/211983) os({family=ubuntu, name=Ubuntu Precise 12.04 LTS Server 64-bit 20120424, version=12.04, description=Ubuntu Precise 12.04 LTS Server 64-bit 20120424, is64Bit=true}) in 77s
+[TestNG] Test testCreateImage(org.jclouds.openstack.nova.v2_0.compute.extensions.NovaImageExtensionLiveTest) failed.
+Test suite progress: tests succeeded: 45, failed: 3, skipped: 11.
+[TestNG] Test testSpawnNodeFromImage(org.jclouds.openstack.nova.v2_0.compute.extensions.NovaImageExtensionLiveTest) skipped.
+Test suite progress: tests succeeded: 45, failed: 3, skipped: 12.
+[TestNG] Test testDeleteImage(org.jclouds.openstack.nova.v2_0.compute.extensions.NovaImageExtensionLiveTest) skipped.
+Test suite progress: tests succeeded: 45, failed: 3, skipped: 13.
+[TestNG] Test testGetImageById(org.jclouds.openstack.nova.v2_0.features.ImageApiLiveTest) succeeded: 70491ms
+Test suite progress: tests succeeded: 46, failed: 3, skipped: 13.
+[TestNG] Test testCreateAndRunAService(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 46, failed: 4, skipped: 13.
+Starting test testCorrectAuthException(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 458ms
+Test suite progress: tests succeeded: 47, failed: 4, skipped: 13.
+Starting test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 47, failed: 5, skipped: 13.
+Starting test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+Sep 16, 2012 7:28:44 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest$1 call
+INFO: Started node az-3.region-a.geo-1/211993
+Sep 16, 2012 7:32:08 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest$1 call
+INFO: Started node az-3.region-a.geo-1/211991
+[TestNG] Test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 317120ms
+Test suite progress: tests succeeded: 48, failed: 5, skipped: 13.
+Starting test testTemplateMatch(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+[TestNG] Test testTemplateMatch(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) succeeded: 24ms
+Test suite progress: tests succeeded: 49, failed: 5, skipped: 13.
+Starting test testCreateTwoNodesWithRunScript(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest)
+[TestNG] Test testCreateTwoNodesWithRunScript(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 49, failed: 6, skipped: 13.
+[TestNG] Test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 49, failed: 6, skipped: 14.
+[TestNG] Test testCredentialsCache(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 49, failed: 6, skipped: 15.
+[TestNG] Test testGet(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 49, failed: 6, skipped: 16.
+[TestNG] Test testReboot(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 49, failed: 6, skipped: 17.
+[TestNG] Test testSuspendResume(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 49, failed: 6, skipped: 18.
+[TestNG] Test testGetNodesWithDetails(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 49, failed: 6, skipped: 19.
+[TestNG] Test testListNodes(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 49, failed: 6, skipped: 20.
+[TestNG] Test testDestroyNodes(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 49, failed: 6, skipped: 21.
+Tests run: 76, Failures: 6, Errors: 0, Skipped: 21, Time elapsed: 746.792 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testAddAndRemoveFloatingIp(org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiLiveTest)
+  testCreateVolume(org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest): {"overLimit": {"message": "Volume quota exceeded. You cannot create a volume of size 1G", "code": 413, "retryAfter": 0}}
+  testCreateImage(org.jclouds.openstack.nova.v2_0.compute.extensions.NovaImageExtensionLiveTest): (ubuntu:pw[1d030d989d8c067f156f728794423e19]@15.185.225.162:22) (ubuntu:pw[1d030d989d8c067f156f728794423e19]@15.185.225.162:22) error acquiring {hostAndPort=15.185.225.162:22, loginUser=ubuntu, ssh=null, connectTimeout=60000, sessionTimeout=60000} (out of retries - max 7): Exhausted available authentication methods
+  testCreateAndRunAService(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest): (ubuntu:pw[0d37dd3f866d4c2cb72644a15f10869f]@15.185.224.249:22) (ubuntu:pw[0d37dd3f866d4c2cb72644a15f10869f]@15.185.224.249:22) error acquiring {hostAndPort=15.185.224.249:22, loginUser=ubuntu, ssh=null, connectTimeout=60000, sessionTimeout=60000} (out of retries - max 7): Exhausted available authentication methods
+  testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest): error running 1 node group(openstack-novar) location(az-3.region-a.geo-1) image(120) size(100) options({blockOnPort:seconds=22:120, autoAssignFloatingIp=false})(..)
+  testCreateTwoNodesWithRunScript(org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceLiveTest): error running 2 nodes group(openstack-nova) location(az-3.region-a.geo-1) image(120) size(100) options({scriptPresent=true, autoAssignFloatingIp=false})(..)
+
+Tests run: 76, Failures: 6, Errors: 0, Skipped: 21
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13:46.511s
+[INFO] Finished at: Sun Sep 16 19:35:15 PDT 2012
+[INFO] Final Memory: 20M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project openstack-nova: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/apis/openstack-nova/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

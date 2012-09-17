@@ -1,0 +1,1121 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:glesys:bundle:1.5.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds GleSYS core 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ glesys ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/glesys/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ glesys ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ glesys ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ glesys ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ glesys ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ glesys ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/glesys/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ glesys ---
+[INFO] Compiling 68 source files to /Users/adriancole/workspace/git/jclouds/labs/glesys/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ glesys ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/glesys/src/test/clojure
+[INFO] Copying 27 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ glesys ---
+[INFO] Compiling 28 source files to /Users/adriancole/workspace/git/jclouds/labs/glesys/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ glesys ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/glesys/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@4a4e79f1
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 21ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 1ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 2ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 1ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 1ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 1ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 1ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 1ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 1ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 1ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 1ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest)
+[pool-2-thread-1] Test test(org.jclouds.glesys.compute.functions.ParseOsFamilyVersion64BitFromImageNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testServerDetailsRequest(org.jclouds.glesys.compute.functions.ServerDetailsToNodeMetadataTest)
+[pool-3-thread-1] Test testServerDetailsRequest(org.jclouds.glesys.compute.functions.ServerDetailsToNodeMetadataTest) succeeded: 1064ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.parse.ParseFullIpDetailsTest)
+Starting test test401MakesAuthorizationException(org.jclouds.glesys.GleSYSErrorHandlerTest)
+Starting test test400MakesResourceNotFoundExceptionOnCouldNotFind(org.jclouds.glesys.GleSYSErrorHandlerTest)
+Starting test test404MakesResourceNotFoundException(org.jclouds.glesys.GleSYSErrorHandlerTest)
+Starting test test500LockedMakesIllegalStateException(org.jclouds.glesys.GleSYSErrorHandlerTest)
+[pool-4-thread-2] Test test400MakesResourceNotFoundExceptionOnCouldNotFind(org.jclouds.glesys.GleSYSErrorHandlerTest) succeeded: 40ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+[pool-4-thread-5] Test test500LockedMakesIllegalStateException(org.jclouds.glesys.GleSYSErrorHandlerTest) succeeded: 40ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testHardwareRequest(org.jclouds.glesys.compute.functions.ServerSpecToHardwareTest)
+[pool-4-thread-4] Test test404MakesResourceNotFoundException(org.jclouds.glesys.GleSYSErrorHandlerTest) succeeded: 43ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+[pool-4-thread-1] Test test(org.jclouds.glesys.parse.ParseFullIpDetailsTest) succeeded: 73ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+[pool-4-thread-3] Test test401MakesAuthorizationException(org.jclouds.glesys.GleSYSErrorHandlerTest) succeeded: 51ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testHardwareRequest(org.jclouds.glesys.compute.functions.ServerSpecToHardwareTest) succeeded: 307ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testListImages(org.jclouds.glesys.compute.GleSYSComputeServiceAdapterExpectTest)
+[pool-5-thread-1] Test testListImages(org.jclouds.glesys.compute.GleSYSComputeServiceAdapterExpectTest) succeeded: 217ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testAndExperiment(org.jclouds.glesys.compute.GleSYSExperimentExpectTest)
+[pool-6-thread-1] Test testAndExperiment(org.jclouds.glesys.compute.GleSYSExperimentExpectTest) succeeded: 227ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test testAs(org.jclouds.glesys.compute.options.GleSYSTemplateOptionsTest)
+[pool-7-thread-1] Test testAs(org.jclouds.glesys.compute.options.GleSYSTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testipIsInvalidThrowsIllegalArgument(org.jclouds.glesys.compute.options.GleSYSTemplateOptionsTest)
+Starting test testip(org.jclouds.glesys.compute.options.GleSYSTemplateOptionsTest)
+Starting test testDefaultip(org.jclouds.glesys.compute.options.GleSYSTemplateOptionsTest)
+[pool-7-thread-4] Test testipIsInvalidThrowsIllegalArgument(org.jclouds.glesys.compute.options.GleSYSTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test testipStatic(org.jclouds.glesys.compute.options.GleSYSTemplateOptionsTest)
+[pool-7-thread-2] Test testDefaultip(org.jclouds.glesys.compute.options.GleSYSTemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+[pool-7-thread-3] Test testip(org.jclouds.glesys.compute.options.GleSYSTemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+[pool-7-thread-5] Test testipStatic(org.jclouds.glesys.compute.options.GleSYSTemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testArchiveDetailsWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest)
+Starting test testArchiveDetailsWhenResponseIs4xxReturnsNull(org.jclouds.glesys.features.ArchiveApiExpectTest)
+Starting test testChangeArchivePasswordWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest)
+Starting test testChangeArchivePasswordWhenResponseIs4xxThrows(org.jclouds.glesys.features.ArchiveApiExpectTest)
+Starting test testCreateArchiveWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest)
+[pool-8-thread-1] Test testArchiveDetailsWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 553ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+[pool-8-thread-5] Test testCreateArchiveWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 453ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testDeleteArchiveWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest)
+Starting test testDeleteArchiveWhenResponseIs4xxThrows(org.jclouds.glesys.features.ArchiveApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ArchiveAsyncApi.changePassword, request=POST https://api.glesys.com/archive/changepassword/format/json HTTP/1.1]
+[pool-8-thread-4] Test testChangeArchivePasswordWhenResponseIs4xxThrows(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 604ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testGetArchiveAllowedArguments4xxWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest)
+[pool-8-thread-3] Test testChangeArchivePasswordWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 658ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testGetArchiveAllowedArgumentsWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ArchiveAsyncApi.get, request=POST https://api.glesys.com/archive/details/format/json HTTP/1.1]
+[pool-8-thread-2] Test testArchiveDetailsWhenResponseIs4xxReturnsNull(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 733ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testListArchivesWhenReponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest)
+[pool-8-thread-5] Test testDeleteArchiveWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 800ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testListArchivesWhenResponseIs4xxReturnsEmpty(org.jclouds.glesys.features.ArchiveApiExpectTest)
+[pool-8-thread-3] Test testGetArchiveAllowedArgumentsWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 723ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testResizeArchiveWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest)
+[pool-8-thread-2] Test testListArchivesWhenReponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 663ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testResizeArchiveWhenResponseIs4xxThrows(org.jclouds.glesys.features.ArchiveApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ArchiveAsyncApi.getAllowedArguments, request=GET https://api.glesys.com/archive/allowedarguments/format/json HTTP/1.1]
+Cannot retry after server error, command has exceeded retry limit 1: [method=ArchiveAsyncApi.delete, request=POST https://api.glesys.com/archive/delete/format/json HTTP/1.1]
+[pool-8-thread-1] Test testDeleteArchiveWhenResponseIs4xxThrows(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 867ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+[pool-8-thread-4] Test testGetArchiveAllowedArguments4xxWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 806ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+[pool-8-thread-3] Test testResizeArchiveWhenResponseIs2xx(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 532ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=ArchiveAsyncApi.list, request=POST https://api.glesys.com/archive/list/format/json HTTP/1.1]
+[pool-8-thread-5] Test testListArchivesWhenResponseIs4xxReturnsEmpty(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 616ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=ArchiveAsyncApi.resize, request=POST https://api.glesys.com/archive/resize/format/json HTTP/1.1]
+[pool-8-thread-2] Test testResizeArchiveWhenResponseIs4xxThrows(org.jclouds.glesys.features.ArchiveApiExpectTest) succeeded: 580ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testAddDomainRecordsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest)
+Starting test testAddDomainWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest)
+Starting test testAddDomainRecordsWhenResponseIs4xx(org.jclouds.glesys.features.DomainApiExpectTest)
+Starting test testAddDomainWithOptsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest)
+Starting test testDeleteDomainRecordsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest)
+[pool-9-thread-5] Test testDeleteDomainRecordsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 514ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testDeleteDomainRecordsWhenResponseIs4xx(org.jclouds.glesys.features.DomainApiExpectTest)
+[pool-9-thread-3] Test testAddDomainWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 575ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testDeleteDomainWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=DomainAsyncApi.createRecord, request=POST https://api.glesys.com/domain/addrecord/format/json HTTP/1.1]
+[pool-9-thread-1] Test testAddDomainRecordsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 757ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testDeleteDomainWhenResponseIs4xxThrows(org.jclouds.glesys.features.DomainApiExpectTest)
+[pool-9-thread-2] Test testAddDomainRecordsWhenResponseIs4xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 745ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testGetDomainWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest)
+[pool-9-thread-4] Test testAddDomainWithOptsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 771ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+Starting test testGetDomainWhenResponseIs4xx(org.jclouds.glesys.features.DomainApiExpectTest)
+[pool-9-thread-3] Test testDeleteDomainWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 616ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+Starting test testListDomainRecordsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest)
+[pool-9-thread-2] Test testGetDomainWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 535ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+Starting test testListDomainRecordsWhenResponseIs4xxReturnsEmpty(org.jclouds.glesys.features.DomainApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=DomainAsyncApi.deleteRecord, request=POST https://api.glesys.com/domain/deleterecord/format/json HTTP/1.1]
+[pool-9-thread-5] Test testDeleteDomainRecordsWhenResponseIs4xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 768ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+Starting test testListDomainsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=DomainAsyncApi.delete, request=POST https://api.glesys.com/domain/delete/format/json HTTP/1.1]
+Cannot retry after server error, command has exceeded retry limit 1: [method=DomainAsyncApi.get, request=POST https://api.glesys.com/domain/details/format/json HTTP/1.1]
+[pool-9-thread-4] Test testGetDomainWhenResponseIs4xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 580ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+[pool-9-thread-1] Test testDeleteDomainWhenResponseIs4xxThrows(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 647ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+Starting test testUpdateDomainRecordsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest)
+Starting test testListDomainsWhenResponseIs4xxReturnsEmpty(org.jclouds.glesys.features.DomainApiExpectTest)
+[pool-9-thread-3] Test testListDomainRecordsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 520ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+Starting test testUpdateDomainRecordsWhenResponseIs4xx(org.jclouds.glesys.features.DomainApiExpectTest)
+[pool-9-thread-5] Test testListDomainsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 475ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+Starting test testUpdateDomainWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest)
+[pool-9-thread-1] Test testUpdateDomainRecordsWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 428ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
+Starting test testUpdateDomainWhenResponseIs4xxThrows(org.jclouds.glesys.features.DomainApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=DomainAsyncApi.list, request=POST https://api.glesys.com/domain/list/format/json HTTP/1.1]
+[pool-9-thread-2] Test testListDomainRecordsWhenResponseIs4xxReturnsEmpty(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 561ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=DomainAsyncApi.list, request=POST https://api.glesys.com/domain/list/format/json HTTP/1.1]
+[pool-9-thread-4] Test testListDomainsWhenResponseIs4xxReturnsEmpty(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 471ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+[pool-9-thread-5] Test testUpdateDomainWhenResponseIs2xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 255ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=DomainAsyncApi.updateRecord, request=POST https://api.glesys.com/domain/updaterecord/format/json HTTP/1.1]
+[pool-9-thread-3] Test testUpdateDomainRecordsWhenResponseIs4xx(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 399ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=DomainAsyncApi.update, request=POST https://api.glesys.com/domain/edit/format/json HTTP/1.1]
+[pool-9-thread-1] Test testUpdateDomainWhenResponseIs4xxThrows(org.jclouds.glesys.features.DomainApiExpectTest) succeeded: 321ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+Starting test testCreateAccountWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+Starting test testCreateAccountWhenResponseIs4xxThrows(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+Starting test testCreateAliasWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+Starting test testCreateAliasWhenResponseIs4xxThrows(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+[pool-10-thread-5] Test testDeleteWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 329ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+[pool-10-thread-3] Test testCreateAliasWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 352ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+Starting test testDeleteWhenResponseIs4xxOk(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+Starting test testListAliasesWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+[pool-10-thread-1] Test testCreateAccountWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 384ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+Starting test testListAliasesWhenResponseIs404IsEmpty(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=EmailAccountAsyncApi.createWithPassword, request=POST https://api.glesys.com/email/createaccount/format/json HTTP/1.1]
+[pool-10-thread-2] Test testCreateAccountWhenResponseIs4xxThrows(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 473ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=EmailAccountAsyncApi.createAlias, request=POST https://api.glesys.com/email/createalias/format/json HTTP/1.1]
+[pool-10-thread-4] Test testCreateAliasWhenResponseIs4xxThrows(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 463ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs404IsEmpty(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+[pool-10-thread-5] Test testListAliasesWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 430ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
+Starting test testOverviewWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+[pool-10-thread-2] Test testListWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 435ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
+Starting test testOverviewWhenResponseIs404ReturnsNull(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=EmailAccountAsyncApi.delete, request=POST https://api.glesys.com/email/delete/format/json HTTP/1.1]
+[pool-10-thread-3] Test testDeleteWhenResponseIs4xxOk(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 616ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+Starting test testUpdateAccountWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=EmailAccountAsyncApi.listAliasesInDomain, request=POST https://api.glesys.com/email/list/format/json HTTP/1.1]
+[pool-10-thread-1] Test testListAliasesWhenResponseIs404IsEmpty(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 562ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 0.
+Starting test testUpdateAccountWhenResponseIs4xx(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=EmailAccountAsyncApi.listDomain, request=POST https://api.glesys.com/email/list/format/json HTTP/1.1]
+[pool-10-thread-4] Test testListWhenResponseIs404IsEmpty(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 511ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 0.
+Starting test testUpdateAliasWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+[pool-10-thread-5] Test testOverviewWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 543ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 0.
+Starting test testUpdateAliasWhenResponseIs4xxThrows(org.jclouds.glesys.features.EmailAccountApiExpectTest)
+[pool-10-thread-4] Test testUpdateAliasWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 361ms
+Test suite progress: tests succeeded: 90, failed: 0, skipped: 0.
+[pool-10-thread-3] Test testUpdateAccountWhenResponseIs2xx(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 396ms
+Test suite progress: tests succeeded: 91, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=EmailAccountAsyncApi.getOverview, request=POST https://api.glesys.com/email/overview/format/json HTTP/1.1]
+[pool-10-thread-2] Test testOverviewWhenResponseIs404ReturnsNull(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 513ms
+Test suite progress: tests succeeded: 92, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=EmailAccountAsyncApi.update, request=POST https://api.glesys.com/email/editaccount/format/json HTTP/1.1]
+[pool-10-thread-1] Test testUpdateAccountWhenResponseIs4xx(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 457ms
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=EmailAccountAsyncApi.updateAlias, request=POST https://api.glesys.com/email/editalias/format/json HTTP/1.1]
+[pool-10-thread-5] Test testUpdateAliasWhenResponseIs4xxThrows(org.jclouds.glesys.features.EmailAccountApiExpectTest) succeeded: 353ms
+Test suite progress: tests succeeded: 94, failed: 0, skipped: 0.
+Starting test testAddWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest)
+Starting test testGetIpDetailsWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest)
+Starting test testGetIpDetailsWhenResponseIs4xxReturnsNull(org.jclouds.glesys.features.IpApiExpectTest)
+Starting test testAddWhenResponseIs4xxThrowsHttpException(org.jclouds.glesys.features.IpApiExpectTest)
+Starting test testListFreeWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest)
+[pool-11-thread-1] Test testAddWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 366ms
+Test suite progress: tests succeeded: 95, failed: 0, skipped: 0.
+Starting test testListFreeWhenResponseIs404ReturnsEmptySet(org.jclouds.glesys.features.IpApiExpectTest)
+[pool-11-thread-5] Test testListFreeWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 339ms
+Test suite progress: tests succeeded: 96, failed: 0, skipped: 0.
+Starting test testListIpsWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest)
+[pool-11-thread-3] Test testGetIpDetailsWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 389ms
+Test suite progress: tests succeeded: 97, failed: 0, skipped: 0.
+Starting test testListIpsWhenResponseIs4xxReturnsEmpty(org.jclouds.glesys.features.IpApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=IpAsyncApi.addToServer, request=POST https://api.glesys.com/ip/add/format/json HTTP/1.1]
+[pool-11-thread-2] Test testAddWhenResponseIs4xxThrowsHttpException(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 391ms
+Test suite progress: tests succeeded: 98, failed: 0, skipped: 0.
+Starting test testReleaseWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=IpAsyncApi.get, request=GET https://api.glesys.com/ip/details/ipaddress/31.192.227.37/format/json HTTP/1.1]
+[pool-11-thread-4] Test testGetIpDetailsWhenResponseIs4xxReturnsNull(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 429ms
+Test suite progress: tests succeeded: 99, failed: 0, skipped: 0.
+Starting test testReleaseWhenResponseIs4xxThrowsResponseException(org.jclouds.glesys.features.IpApiExpectTest)
+[pool-11-thread-2] Test testReleaseWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 199ms
+Test suite progress: tests succeeded: 100, failed: 0, skipped: 0.
+Starting test testRemoveAndReleaseWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest)
+[pool-11-thread-5] Test testListIpsWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 261ms
+Test suite progress: tests succeeded: 101, failed: 0, skipped: 0.
+Starting test testRemoveAndReleaseWhenResponseIs4xxThrowsHttpException(org.jclouds.glesys.features.IpApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=IpAsyncApi.listFree, request=GET https://api.glesys.com/ip/listfree/ipversion/6/datacenter/Falkenberg/platform/OpenVZ/format/json HTTP/1.1]
+[pool-11-thread-1] Test testListFreeWhenResponseIs404ReturnsEmptySet(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 344ms
+Test suite progress: tests succeeded: 102, failed: 0, skipped: 0.
+Starting test testRemoveWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=IpAsyncApi.release, request=POST https://api.glesys.com/ip/release/format/json HTTP/1.1]
+[pool-11-thread-4] Test testReleaseWhenResponseIs4xxThrowsResponseException(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 282ms
+Test suite progress: tests succeeded: 103, failed: 0, skipped: 0.
+Starting test testRemoveWhenResponseIs4xxThrowsHttpException(org.jclouds.glesys.features.IpApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=IpAsyncApi.list, request=GET https://api.glesys.com/ip/listown/format/json HTTP/1.1]
+[pool-11-thread-3] Test testListIpsWhenResponseIs4xxReturnsEmpty(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 345ms
+Test suite progress: tests succeeded: 104, failed: 0, skipped: 0.
+Starting test testResetPrtWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=IpAsyncApi.removeFromServerAndRelease, request=POST https://api.glesys.com/ip/remove/format/json HTTP/1.1]
+[pool-11-thread-5] Test testRemoveAndReleaseWhenResponseIs4xxThrowsHttpException(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 258ms
+Test suite progress: tests succeeded: 105, failed: 0, skipped: 0.
+Starting test testResetPtrWhenResponseIs4xxThrowsHttpException(org.jclouds.glesys.features.IpApiExpectTest)
+[pool-11-thread-2] Test testRemoveAndReleaseWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 347ms
+Test suite progress: tests succeeded: 106, failed: 0, skipped: 0.
+Starting test testSetPrtWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest)
+[pool-11-thread-1] Test testRemoveWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 294ms
+Test suite progress: tests succeeded: 107, failed: 0, skipped: 0.
+Starting test testSetPtrWhenResponseIs4xxThrowsHttpException(org.jclouds.glesys.features.IpApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=IpAsyncApi.removeFromServer, request=POST https://api.glesys.com/ip/remove/format/json HTTP/1.1]
+[pool-11-thread-4] Test testRemoveWhenResponseIs4xxThrowsHttpException(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 313ms
+Test suite progress: tests succeeded: 108, failed: 0, skipped: 0.
+Starting test testTakeWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest)
+[pool-11-thread-3] Test testResetPrtWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 310ms
+Test suite progress: tests succeeded: 109, failed: 0, skipped: 0.
+Starting test testTakeWhenResponseIs4xxThrowsResponseException(org.jclouds.glesys.features.IpApiExpectTest)
+[pool-11-thread-2] Test testSetPrtWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 290ms
+Test suite progress: tests succeeded: 110, failed: 0, skipped: 0.
+[pool-11-thread-4] Test testTakeWhenResponseIs2xx(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 246ms
+Test suite progress: tests succeeded: 111, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=IpAsyncApi.setPtr, request=POST https://api.glesys.com/ip/setptr/format/json HTTP/1.1]
+[pool-11-thread-1] Test testSetPtrWhenResponseIs4xxThrowsHttpException(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 290ms
+Test suite progress: tests succeeded: 112, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=IpAsyncApi.resetPtr, request=POST https://api.glesys.com/ip/resetptr/format/json HTTP/1.1]
+[pool-11-thread-5] Test testResetPtrWhenResponseIs4xxThrowsHttpException(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 405ms
+Test suite progress: tests succeeded: 113, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=IpAsyncApi.take, request=POST https://api.glesys.com/ip/take/format/json HTTP/1.1]
+[pool-11-thread-3] Test testTakeWhenResponseIs4xxThrowsResponseException(org.jclouds.glesys.features.IpApiExpectTest) succeeded: 331ms
+Test suite progress: tests succeeded: 114, failed: 0, skipped: 0.
+Starting test testCloneServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Starting test testCloneServerWithOptsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Starting test testCreateServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Starting test testCloneServerWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Starting test testCreateServerWithOptsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-1] Test testCloneServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 267ms
+Test suite progress: tests succeeded: 115, failed: 0, skipped: 0.
+Starting test testDestroyServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-4] Test testCreateServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 211ms
+Test suite progress: tests succeeded: 116, failed: 0, skipped: 0.
+Starting test testDestroyServerWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.clone, request=POST https://api.glesys.com/server/clone/format/json HTTP/1.1]
+[pool-12-thread-2] Test testCloneServerWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 234ms
+Test suite progress: tests succeeded: 117, failed: 0, skipped: 0.
+Starting test testGetAllowedArgumentsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-3] Test testCloneServerWithOptsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 280ms
+Test suite progress: tests succeeded: 118, failed: 0, skipped: 0.
+Starting test testGetConsoleWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-5] Test testCreateServerWithOptsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 284ms
+Test suite progress: tests succeeded: 119, failed: 0, skipped: 0.
+Starting test testGetConsoleWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-1] Test testDestroyServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 313ms
+Test suite progress: tests succeeded: 120, failed: 0, skipped: 0.
+Starting test testGetServerDetailsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-2] Test testGetAllowedArgumentsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 368ms
+Test suite progress: tests succeeded: 121, failed: 0, skipped: 0.
+Starting test testGetServerLimitsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-3] Test testGetConsoleWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 354ms
+Test suite progress: tests succeeded: 122, failed: 0, skipped: 0.
+Starting test testGetServerStatusWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.destroy, request=POST https://api.glesys.com/server/destroy/format/json HTTP/1.1]
+[pool-12-thread-4] Test testDestroyServerWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 430ms
+Test suite progress: tests succeeded: 123, failed: 0, skipped: 0.
+Starting test testGetServerStatusWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.getConsole, request=POST https://api.glesys.com/server/console/format/json HTTP/1.1]
+[pool-12-thread-5] Test testGetConsoleWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 390ms
+Test suite progress: tests succeeded: 124, failed: 0, skipped: 0.
+Starting test testGetServerStatusWithOptsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-1] Test testGetServerDetailsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 362ms
+Test suite progress: tests succeeded: 125, failed: 0, skipped: 0.
+Starting test testGetTemplatesWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-2] Test testGetServerLimitsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 268ms
+Test suite progress: tests succeeded: 126, failed: 0, skipped: 0.
+Starting test testHardStopServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-5] Test testGetServerStatusWithOptsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 211ms
+Test suite progress: tests succeeded: 127, failed: 0, skipped: 0.
+[pool-12-thread-3] Test testGetServerStatusWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 267ms
+Test suite progress: tests succeeded: 128, failed: 0, skipped: 0.
+Starting test testListServersWhenReponseIs404IsEmpty(org.jclouds.glesys.features.ServerApiExpectTest)
+Starting test testListServersWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.getStatus, request=POST https://api.glesys.com/server/status/format/json HTTP/1.1]
+[pool-12-thread-4] Test testGetServerStatusWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 308ms
+Test suite progress: tests succeeded: 129, failed: 0, skipped: 0.
+Starting test testRebootServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-4] Test testRebootServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 279ms
+Test suite progress: tests succeeded: 130, failed: 0, skipped: 0.
+Starting test testRebootServerWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-2] Test testHardStopServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 374ms
+Test suite progress: tests succeeded: 131, failed: 0, skipped: 0.
+Starting test testResouceUsageWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-5] Test testListServersWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 386ms
+Test suite progress: tests succeeded: 132, failed: 0, skipped: 0.
+Starting test testResourceUsageWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-1] Test testGetTemplatesWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 463ms
+Test suite progress: tests succeeded: 133, failed: 0, skipped: 0.
+Starting test testServerDetailsWhenResponseIs4xxReturnsNull(org.jclouds.glesys.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.list, request=POST https://api.glesys.com/server/list/format/json HTTP/1.1]
+[pool-12-thread-3] Test testListServersWhenReponseIs404IsEmpty(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 670ms
+Test suite progress: tests succeeded: 134, failed: 0, skipped: 0.
+Starting test testStartServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.get, request=POST https://api.glesys.com/server/details/format/json HTTP/1.1]
+[pool-12-thread-1] Test testServerDetailsWhenResponseIs4xxReturnsNull(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 270ms
+Test suite progress: tests succeeded: 135, failed: 0, skipped: 0.
+Starting test testStartServerWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.getResourceUsage, request=POST https://api.glesys.com/server/resourceusage/format/json HTTP/1.1]
+[pool-12-thread-2] Test testResouceUsageWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 406ms
+Test suite progress: tests succeeded: 136, failed: 0, skipped: 0.
+Starting test testStopServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.reboot, request=POST https://api.glesys.com/server/reboot/format/json HTTP/1.1]
+[pool-12-thread-4] Test testRebootServerWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 454ms
+Test suite progress: tests succeeded: 137, failed: 0, skipped: 0.
+Starting test testStopServerWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-5] Test testResourceUsageWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 362ms
+Test suite progress: tests succeeded: 138, failed: 0, skipped: 0.
+Starting test testUpdateServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-3] Test testStartServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 168ms
+Test suite progress: tests succeeded: 139, failed: 0, skipped: 0.
+Starting test testUpdateServerWithOptsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest)
+[pool-12-thread-2] Test testStopServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 187ms
+Test suite progress: tests succeeded: 140, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.start, request=POST https://api.glesys.com/server/start/format/json HTTP/1.1]
+[pool-12-thread-1] Test testStartServerWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 253ms
+Test suite progress: tests succeeded: 141, failed: 0, skipped: 0.
+[pool-12-thread-5] Test testUpdateServerWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 181ms
+Test suite progress: tests succeeded: 142, failed: 0, skipped: 0.
+[pool-12-thread-3] Test testUpdateServerWithOptsWhenResponseIs2xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 158ms
+Test suite progress: tests succeeded: 143, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=ServerAsyncApi.stop, request=POST https://api.glesys.com/server/stop/format/json HTTP/1.1]
+[pool-12-thread-4] Test testStopServerWhenResponseIs4xx(org.jclouds.glesys.features.ServerApiExpectTest) succeeded: 212ms
+Test suite progress: tests succeeded: 144, failed: 0, skipped: 0.
+Starting test testAsync(org.jclouds.glesys.GleSYSAsyncApiTest)
+Starting test testSync(org.jclouds.glesys.GleSYSAsyncApiTest)
+[pool-13-thread-1] Test testAsync(org.jclouds.glesys.GleSYSAsyncApiTest) succeeded: 5ms
+Test suite progress: tests succeeded: 145, failed: 0, skipped: 0.
+[pool-13-thread-2] Test testSync(org.jclouds.glesys.GleSYSAsyncApiTest) succeeded: 5ms
+Test suite progress: tests succeeded: 146, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.glesys.GleSYSProviderTest)
+Starting test testOfApiContains(org.jclouds.glesys.GleSYSProviderTest)
+[pool-14-thread-1] Test testAllContains(org.jclouds.glesys.GleSYSProviderTest) succeeded: 1ms
+Test suite progress: tests succeeded: 147, failed: 0, skipped: 0.
+[pool-14-thread-2] Test testOfApiContains(org.jclouds.glesys.GleSYSProviderTest) succeeded: 3ms
+Test suite progress: tests succeeded: 148, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.glesys.GleSYSProviderTest)
+[pool-14-thread-3] Test testTransformableToContains(org.jclouds.glesys.GleSYSProviderTest) succeeded: 2ms
+Test suite progress: tests succeeded: 149, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.glesys.GleSYSProviderTest)
+[pool-14-thread-4] Test testWithId(org.jclouds.glesys.GleSYSProviderTest) succeeded: 0ms
+Test suite progress: tests succeeded: 150, failed: 0, skipped: 0.
+Starting test test(org.jclouds.glesys.parse.ParseIpAddressFromResponseTest)
+[pool-15-thread-1] Test test(org.jclouds.glesys.parse.ParseIpAddressFromResponseTest) succeeded: 5ms
+Test suite progress: tests succeeded: 151, failed: 0, skipped: 0.
+Tests run: 151, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.31 sec
+
+Results :
+
+Tests run: 151, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ glesys ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ glesys ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/glesys/target/glesys-1.5.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ glesys ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/glesys/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@2107ebe1
+Starting test testAndExperiment(org.jclouds.glesys.compute.GleSYSExperimentLiveTest)
+Starting test testCompareSizes(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+Starting test testAllowedArguments(org.jclouds.glesys.features.ArchiveApiLiveTest)
+Starting test setServiceDefaults(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCompareSizes(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testAllowedArguments(org.jclouds.glesys.features.ArchiveApiLiveTest) succeeded: 2806ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testCreateArchive(org.jclouds.glesys.features.ArchiveApiLiveTest)
+[TestNG] Test testAndExperiment(org.jclouds.glesys.compute.GleSYSExperimentLiveTest) succeeded: 3109ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+smallest {id=datacenter(Falkenberg)platform(Xen)cpuCores(1)memorySizeMB(768)diskSizeGB(5), providerId=datacenter(Falkenberg)platform(Xen)cpuCores(1)memorySizeMB(768)diskSizeGB(5), location={scope=ZONE, id=Falkenberg, description=Falkenberg, parent=glesys}, processors=[{cores=1.0, speed=1.0}], ram=768, volumes=[{type=LOCAL, size=5.0, bootDevice=true, durable=true}], hypervisor=Xen, supportsImage=idIn([FreeBSD 8.2, CentOS 5.5 x86, Ubuntu 10.10 x64, Ubuntu 8.04 x64, Centos 6 x64, Ubuntu 11.04 x64, CentOS 5.5 x64, Debian 5.0.1 x64, Ubuntu 12.04 x64, Ubuntu 12.04 x86, Ubuntu 10.04 LTS 64-bit, Centos 6 x86, Gentoo 10.1 x64, Debian-6 x64])}
+fastest {id=datacenter(Falkenberg)platform(OpenVZ)cpuCores(8)memorySizeMB(128)diskSizeGB(5), providerId=datacenter(Falkenberg)platform(OpenVZ)cpuCores(8)memorySizeMB(128)diskSizeGB(5), location={scope=ZONE, id=Falkenberg, description=Falkenberg, parent=glesys}, processors=[{cores=8.0, speed=1.0}], ram=128, volumes=[{type=LOCAL, size=5.0, bootDevice=true, durable=true}], hypervisor=OpenVZ, supportsImage=idIn([Debian 6.0 32-bit, Centos 5, Gentoo, Ubuntu 10.04 LTS 32-bit, Centos 6 32-bit, Fedora Core 11, Debian 5.0 32-bit, Slackware 12, Debian 6.0 64-bit, Fedora Core 11 64-bit, Debian 5.0 64-bit, Scientific Linux 6 64-bit, Ubuntu 11.04 64-bit, Ubuntu 10.04 LTS 64-bit, Ubuntu 12.04 LTS 32-bit, Scientific Linux 6, Ubuntu 12.04 LTS 64-bit, Gentoo 64-bit, Centos 6 64-bit, Centos 5 64-bit])}
+biggest {id=datacenter(Falkenberg)platform(Xen)cpuCores(8)memorySizeMB(16384)diskSizeGB(300), providerId=datacenter(Falkenberg)platform(Xen)cpuCores(8)memorySizeMB(16384)diskSizeGB(300), location={scope=ZONE, id=Falkenberg, description=Falkenberg, parent=glesys}, processors=[{cores=8.0, speed=1.0}], ram=16384, volumes=[{type=LOCAL, size=300.0, bootDevice=true, durable=true}], hypervisor=Xen, supportsImage=idIn([FreeBSD 8.2, CentOS 5.5 x86, Ubuntu 10.10 x64, Ubuntu 8.04 x64, Centos 6 x64, Ubuntu 11.04 x64, Windows Server 2008 x64 web, CentOS 5.5 x64, Debian 5.0.1 x64, Windows Server 2008 R2 x64 std, Ubuntu 12.04 x64, Ubuntu 12.04 x86, Windows Server 2008 R2 x64 web, Ubuntu 10.04 LTS 64-bit, Centos 6 x86, Gentoo 10.1 x64, Debian-6 x64])}
+[TestNG] Test testCompareSizes(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 9846ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testFromTemplate(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+Sep 16, 2012 9:09:47 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: smallest {id=datacenter(Falkenberg)platform(Xen)cpuCores(1)memorySizeMB(768)diskSizeGB(5), providerId=datacenter(Falkenberg)platform(Xen)cpuCores(1)memorySizeMB(768)diskSizeGB(5), location={scope=ZONE, id=Falkenberg, description=Falkenberg, parent=glesys}, processors=[{cores=1.0, speed=1.0}], ram=768, volumes=[{type=LOCAL, size=5.0, bootDevice=true, durable=true}], hypervisor=Xen, supportsImage=idIn([FreeBSD 8.2, CentOS 5.5 x86, Ubuntu 10.10 x64, Ubuntu 8.04 x64, Centos 6 x64, Ubuntu 11.04 x64, CentOS 5.5 x64, Debian 5.0.1 x64, Ubuntu 12.04 x64, Ubuntu 12.04 x86, Ubuntu 10.04 LTS 64-bit, Centos 6 x86, Gentoo 10.1 x64, Debian-6 x64])}
+Sep 16, 2012 9:09:47 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: fastest {id=datacenter(Falkenberg)platform(OpenVZ)cpuCores(8)memorySizeMB(128)diskSizeGB(5), providerId=datacenter(Falkenberg)platform(OpenVZ)cpuCores(8)memorySizeMB(128)diskSizeGB(5), location={scope=ZONE, id=Falkenberg, description=Falkenberg, parent=glesys}, processors=[{cores=8.0, speed=1.0}], ram=128, volumes=[{type=LOCAL, size=5.0, bootDevice=true, durable=true}], hypervisor=OpenVZ, supportsImage=idIn([Debian 6.0 32-bit, Centos 5, Gentoo, Ubuntu 10.04 LTS 32-bit, Centos 6 32-bit, Fedora Core 11, Debian 5.0 32-bit, Slackware 12, Debian 6.0 64-bit, Fedora Core 11 64-bit, Debian 5.0 64-bit, Scientific Linux 6 64-bit, Ubuntu 11.04 64-bit, Ubuntu 10.04 LTS 64-bit, Ubuntu 12.04 LTS 32-bit, Scientific Linux 6, Ubuntu 12.04 LTS 64-bit, Gentoo 64-bit, Centos 6 64-bit, Centos 5 64-bit])}
+Sep 16, 2012 9:09:47 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testCompareSizes
+INFO: biggest {id=datacenter(Falkenberg)platform(Xen)cpuCores(8)memorySizeMB(16384)diskSizeGB(300), providerId=datacenter(Falkenberg)platform(Xen)cpuCores(8)memorySizeMB(16384)diskSizeGB(300), location={scope=ZONE, id=Falkenberg, description=Falkenberg, parent=glesys}, processors=[{cores=8.0, speed=1.0}], ram=16384, volumes=[{type=LOCAL, size=300.0, bootDevice=true, durable=true}], hypervisor=Xen, supportsImage=idIn([FreeBSD 8.2, CentOS 5.5 x86, Ubuntu 10.10 x64, Ubuntu 8.04 x64, Centos 6 x64, Ubuntu 11.04 x64, Windows Server 2008 x64 web, CentOS 5.5 x64, Debian 5.0.1 x64, Windows Server 2008 R2 x64 std, Ubuntu 12.04 x64, Ubuntu 12.04 x86, Windows Server 2008 R2 x64 web, Ubuntu 10.04 LTS 64-bit, Centos 6 x86, Gentoo 10.1 x64, Debian-6 x64])}
+[TestNG] Test testCompareSizes(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 9335ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testFromTemplate(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1049ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+location {scope=ZONE, id=Falkenberg, description=Falkenberg, parent=glesys}
+location {scope=ZONE, id=Amsterdam, description=Amsterdam, parent=glesys}
+location {scope=ZONE, id=New York City, description=New York City, parent=glesys}
+location {scope=ZONE, id=Stockholm, description=Stockholm, parent=glesys}
+[TestNG] Test testGetAssignableLocations(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 1288ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+Sep 16, 2012 9:09:48 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=Falkenberg, description=Falkenberg, parent=glesys}
+Sep 16, 2012 9:09:48 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=Amsterdam, description=Amsterdam, parent=glesys}
+Sep 16, 2012 9:09:48 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=New York City, description=New York City, parent=glesys}
+Sep 16, 2012 9:09:48 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest testGetAssignableLocations
+WARNING: location {scope=ZONE, id=Stockholm, description=Stockholm, parent=glesys}
+[TestNG] Test testGetAssignableLocations(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testImageById(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 338ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 128ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 110ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 78ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 59ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 116ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 58ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 109ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 95ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 149ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 35ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 163ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testImageById(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 1308ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testImagesCache(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testListImages(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testListSizes(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 13ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testOptionToNotBlock(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 144ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 74ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 90ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 30ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 66ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+Starting test testCreateEmail(org.jclouds.glesys.features.EmailAccountApiLiveTest)
+[TestNG] Test testCreateEmail(org.jclouds.glesys.features.EmailAccountApiLiveTest) skipped.
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 1.
+[TestNG] Test testAliases(org.jclouds.glesys.features.EmailAccountApiLiveTest) skipped.
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 2.
+[TestNG] Test testListAccounts(org.jclouds.glesys.features.EmailAccountApiLiveTest) skipped.
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 3.
+[TestNG] Test testOverview(org.jclouds.glesys.features.EmailAccountApiLiveTest) skipped.
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 4.
+[TestNG] Test testUpdateAccount(org.jclouds.glesys.features.EmailAccountApiLiveTest) skipped.
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 5.
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 402ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 158ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 656ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 573ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 317ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+Starting test testCreateRecord(org.jclouds.glesys.features.DomainApiLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 171ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 153ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 116ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 89ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCanUseImageId(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testCreateArchive(org.jclouds.glesys.features.ArchiveApiLiveTest) succeeded: 14761ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 5.
+Starting test testArchiveDetails(org.jclouds.glesys.features.ArchiveApiLiveTest)
+[TestNG] Test testArchiveDetails(org.jclouds.glesys.features.ArchiveApiLiveTest) succeeded: 1199ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 5.
+Starting test testChangePassword(org.jclouds.glesys.features.ArchiveApiLiveTest)
+[TestNG] Test testCreateRecord(org.jclouds.glesys.features.DomainApiLiveTest) succeeded: 4861ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 5.
+Starting test testDeleteRecord(org.jclouds.glesys.features.DomainApiLiveTest)
+[TestNG] Test testChangePassword(org.jclouds.glesys.features.ArchiveApiLiveTest) succeeded: 1234ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 5.
+Starting test testResizeArchive(org.jclouds.glesys.features.ArchiveApiLiveTest)
+[TestNG] Test testTemplateBuilderCanUseImageId(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 5706ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 8ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 26ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 90, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 91, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 92, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 94, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 95, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 96, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 97, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 98, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 99, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 8ms
+Test suite progress: tests succeeded: 100, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 101, failed: 0, skipped: 5.
+Starting test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 102, failed: 0, skipped: 5.
+Starting test testTemplateBuilderWithImageIdSpecified(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testDeleteRecord(org.jclouds.glesys.features.DomainApiLiveTest) succeeded: 3600ms
+Test suite progress: tests succeeded: 103, failed: 0, skipped: 5.
+Starting test testGetDomain(org.jclouds.glesys.features.DomainApiLiveTest)
+[TestNG] Test testGetDomain(org.jclouds.glesys.features.DomainApiLiveTest) succeeded: 1181ms
+Test suite progress: tests succeeded: 104, failed: 0, skipped: 5.
+Starting test testUpdateDomain(org.jclouds.glesys.features.DomainApiLiveTest)
+[TestNG] Test testResizeArchive(org.jclouds.glesys.features.ArchiveApiLiveTest) succeeded: 5763ms
+Test suite progress: tests succeeded: 105, failed: 0, skipped: 5.
+[TestNG] Test testUpdateDomain(org.jclouds.glesys.features.DomainApiLiveTest) succeeded: 2404ms
+Test suite progress: tests succeeded: 106, failed: 0, skipped: 5.
+Starting test testUpdateRecord(org.jclouds.glesys.features.DomainApiLiveTest)
+[TestNG] Test testTemplateBuilderWithImageIdSpecified(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 10690ms
+Test suite progress: tests succeeded: 107, failed: 0, skipped: 5.
+Starting test testTemplateBuilderWithLoginUserSpecified(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testUpdateRecord(org.jclouds.glesys.features.DomainApiLiveTest) succeeded: 7314ms
+Test suite progress: tests succeeded: 108, failed: 0, skipped: 5.
+[TestNG] Test testTemplateBuilderWithLoginUserSpecified(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 11088ms
+Test suite progress: tests succeeded: 109, failed: 0, skipped: 5.
+Starting test testDefaultTemplateBuilder(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest)
+[TestNG] Test testDefaultTemplateBuilder(org.jclouds.glesys.compute.GleSYSTemplateBuilderLiveTest) succeeded: 128ms
+Test suite progress: tests succeeded: 110, failed: 0, skipped: 5.
+Starting test reserveIp(org.jclouds.glesys.features.IpApiLiveTest)
+[TestNG] Test reserveIp(org.jclouds.glesys.features.IpApiLiveTest) failed.
+Test suite progress: tests succeeded: 110, failed: 1, skipped: 5.
+Starting test testGetXenDetails(org.jclouds.glesys.features.IpApiLiveTest)
+[TestNG] Test testGetXenDetails(org.jclouds.glesys.features.IpApiLiveTest) succeeded: 2896ms
+Test suite progress: tests succeeded: 111, failed: 1, skipped: 5.
+Starting test testListFree(org.jclouds.glesys.features.IpApiLiveTest)
+[TestNG] Test testListFree(org.jclouds.glesys.features.IpApiLiveTest) succeeded: 1497ms
+Test suite progress: tests succeeded: 112, failed: 1, skipped: 5.
+Starting test testGetOpenVZDetails(org.jclouds.glesys.features.IpApiLiveTest)
+[TestNG] Test testGetOpenVZDetails(org.jclouds.glesys.features.IpApiLiveTest) succeeded: 2601ms
+Test suite progress: tests succeeded: 113, failed: 1, skipped: 5.
+[TestNG] Test reserveAndReleaseIp(org.jclouds.glesys.features.IpApiLiveTest) skipped.
+Test suite progress: tests succeeded: 113, failed: 1, skipped: 6.
+[TestNG] Test testAddRemove(org.jclouds.glesys.features.IpApiLiveTest) skipped.
+Test suite progress: tests succeeded: 113, failed: 1, skipped: 7.
+[TestNG] Test testList(org.jclouds.glesys.features.IpApiLiveTest) skipped.
+Test suite progress: tests succeeded: 113, failed: 1, skipped: 8.
+[TestNG] Test testPtrSetReset(org.jclouds.glesys.features.IpApiLiveTest) skipped.
+Test suite progress: tests succeeded: 113, failed: 1, skipped: 9.
+Starting test testAllowedArguments(org.jclouds.glesys.features.ServerApiLiveTest)
+[TestNG] Test testAllowedArguments(org.jclouds.glesys.features.ServerApiLiveTest) succeeded: 1193ms
+Test suite progress: tests succeeded: 114, failed: 1, skipped: 9.
+Starting test testConsole(org.jclouds.glesys.features.ServerApiLiveTest)
+[TestNG] Test testConsole(org.jclouds.glesys.features.ServerApiLiveTest) succeeded: 1340ms
+Test suite progress: tests succeeded: 115, failed: 1, skipped: 9.
+Starting test testListServers(org.jclouds.glesys.features.ServerApiLiveTest)
+[TestNG] Test testListServers(org.jclouds.glesys.features.ServerApiLiveTest) succeeded: 3609ms
+Test suite progress: tests succeeded: 116, failed: 1, skipped: 9.
+Starting test testListTemplates(org.jclouds.glesys.features.ServerApiLiveTest)
+[TestNG] Test testListTemplates(org.jclouds.glesys.features.ServerApiLiveTest) succeeded: 1212ms
+Test suite progress: tests succeeded: 117, failed: 1, skipped: 9.
+Starting test testRebootServer(org.jclouds.glesys.features.ServerApiLiveTest)
+[TestNG] Test testOptionToNotBlock(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 86790ms
+Test suite progress: tests succeeded: 118, failed: 1, skipped: 9.
+Starting test testCreateAndRunAService(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testRebootServer(org.jclouds.glesys.features.ServerApiLiveTest) succeeded: 33210ms
+Test suite progress: tests succeeded: 119, failed: 1, skipped: 9.
+Starting test testResourceUsage(org.jclouds.glesys.features.ServerApiLiveTest)
+[TestNG] Test testResourceUsage(org.jclouds.glesys.features.ServerApiLiveTest) succeeded: 14217ms
+Test suite progress: tests succeeded: 120, failed: 1, skipped: 9.
+Starting test testServerDetails(org.jclouds.glesys.features.ServerApiLiveTest)
+[TestNG] Test testServerDetails(org.jclouds.glesys.features.ServerApiLiveTest) succeeded: 1259ms
+Test suite progress: tests succeeded: 121, failed: 1, skipped: 9.
+Starting test testServerLimits(org.jclouds.glesys.features.ServerApiLiveTest)
+[TestNG] Test testServerLimits(org.jclouds.glesys.features.ServerApiLiveTest) succeeded: 1282ms
+Test suite progress: tests succeeded: 122, failed: 1, skipped: 9.
+Starting test testServerStatus(org.jclouds.glesys.features.ServerApiLiveTest)
+[TestNG] Test testServerStatus(org.jclouds.glesys.features.ServerApiLiveTest) succeeded: 1189ms
+Test suite progress: tests succeeded: 123, failed: 1, skipped: 9.
+Starting test testStopAndStartServer(org.jclouds.glesys.features.ServerApiLiveTest)
+Sep 16, 2012 9:13:37 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest createAndRunAServiceInGroup
+INFO: << available node(xm3877741) os({family=ubuntu, name=Ubuntu 12.04 x64, version=12.04, description=Ubuntu 12.04 x64, is64Bit=true}) in 138s
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Sep 16, 2012 9:15:00 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest createAndRunAServiceInGroup
+INFO: << configured node(xm3877741) with java full version "1.6.0_24-b24" and jetty jetty-8.1.5.v20120716 in 71s
+Sep 16, 2012 9:15:09 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest trackAvailabilityOfProcessOnNode
+INFO: << start jetty on node(xm3877741)[109.74.13.252:8080] [backgroundProcessMilliseconds=5812, socketOpenMilliseconds=3107]
+Sep 16, 2012 9:15:24 PM org.jclouds.compute.internal.BaseComputeServiceLiveTest trackAvailabilityOfProcessOnNode
+INFO: << start jetty on node(xm3877741)[109.74.13.252:8080] [backgroundProcessMilliseconds=5194, socketOpenMilliseconds=3281]
+[TestNG] Test testCreateAndRunAService(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 261590ms
+Test suite progress: tests succeeded: 124, failed: 1, skipped: 9.
+Starting test testCorrectAuthException(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 9090ms
+Test suite progress: tests succeeded: 125, failed: 1, skipped: 9.
+Starting test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testStopAndStartServer(org.jclouds.glesys.features.ServerApiLiveTest) failed.
+Test suite progress: tests succeeded: 125, failed: 2, skipped: 9.
+Starting test testUpdateServer(org.jclouds.glesys.features.ServerApiLiveTest)
+[TestNG] Test testUpdateServer(org.jclouds.glesys.features.ServerApiLiveTest) succeeded: 8133ms
+Test suite progress: tests succeeded: 126, failed: 2, skipped: 9.
+<< problem applying options to node(xm3484635): 
+org.jclouds.rest.AuthorizationException: (root:pw[5d907853a9617cfd55fb62eae803595b]@109.74.13.252:22) (root:pw[5d907853a9617cfd55fb62eae803595b]@109.74.13.252:22) error acquiring {hostAndPort=109.74.13.252:22, loginUser=root, ssh=null, connectTimeout=60000, sessionTimeout=60000} (out of retries - max 5): Exhausted available authentication methods
+	at org.jclouds.sshj.SshjSshClient.propagate(SshjSshClient.java:380)
+	at org.jclouds.sshj.SshjSshClient.acquire(SshjSshClient.java:201)
+	at org.jclouds.sshj.SshjSshClient.connect(SshjSshClient.java:221)
+	at org.jclouds.compute.callables.RunScriptOnNodeUsingSsh.call(RunScriptOnNodeUsingSsh.java:80)
+	at org.jclouds.compute.strategy.RunScriptOnNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(RunScriptOnNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:69)
+	at org.jclouds.compute.strategy.RunScriptOnNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(RunScriptOnNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:44)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: net.schmizz.sshj.userauth.UserAuthException: Exhausted available authentication methods
+	at net.schmizz.sshj.userauth.UserAuthImpl.authenticate(UserAuthImpl.java:114)
+	at net.schmizz.sshj.SSHClient.auth(SSHClient.java:205)
+	at net.schmizz.sshj.SSHClient.auth(SSHClient.java:190)
+	at net.schmizz.sshj.SSHClient.authPassword(SSHClient.java:266)
+	at net.schmizz.sshj.SSHClient.authPassword(SSHClient.java:236)
+	at net.schmizz.sshj.SSHClient.authPassword(SSHClient.java:220)
+	at org.jclouds.sshj.SSHClientConnection.create(SSHClientConnection.java:140)
+	at org.jclouds.sshj.SSHClientConnection.create(SSHClientConnection.java:40)
+	at org.jclouds.sshj.SshjSshClient.acquire(SshjSshClient.java:191)
+	... 9 more
+Caused by: net.schmizz.sshj.userauth.UserAuthException: keyboard-interactive auth not allowed by server
+	at net.schmizz.sshj.userauth.UserAuthImpl.authenticate(UserAuthImpl.java:81)
+	... 17 more
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 358977ms
+Test suite progress: tests succeeded: 127, failed: 2, skipped: 9.
+Starting test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 127, failed: 3, skipped: 9.
+Starting test testTemplateMatch(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest)
+[TestNG] Test testTemplateMatch(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) succeeded: 2709ms
+Test suite progress: tests succeeded: 128, failed: 3, skipped: 9.
+[TestNG] Test testCreateTwoNodesWithRunScript(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 128, failed: 3, skipped: 10.
+[TestNG] Test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 128, failed: 3, skipped: 11.
+[TestNG] Test testCredentialsCache(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 128, failed: 3, skipped: 12.
+[TestNG] Test testGet(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 128, failed: 3, skipped: 13.
+[TestNG] Test testReboot(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 128, failed: 3, skipped: 14.
+[TestNG] Test testSuspendResume(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 128, failed: 3, skipped: 15.
+[TestNG] Test testGetNodesWithDetails(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 128, failed: 3, skipped: 16.
+[TestNG] Test testListNodes(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 128, failed: 3, skipped: 17.
+[TestNG] Test testDestroyNodes(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 128, failed: 3, skipped: 18.
+Exception in thread "user thread 0" java.lang.IllegalStateException: interrupted calling get() on [[method=ServerAsyncApi.get, request=POST https://api.glesys.com/server/details/format/json HTTP/1.1]], so could not run listeners
+	at org.jclouds.concurrent.Futures$CallGetAndRunExecutionList.run(Futures.java:66)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:979)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:218)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at org.jclouds.concurrent.config.DescribedFuture.get(DescribedFuture.java:45)
+	at org.jclouds.concurrent.Futures$CallGetAndRunExecutionList.run(Futures.java:59)
+	... 3 more
+Caused by: java.util.concurrent.ExecutionException: task submitted from the following trace
+	at org.jclouds.concurrent.config.DescribedFuture.ensureCauseHasSubmissionTrace(DescribedFuture.java:78)
+	at org.jclouds.concurrent.config.DescribedFuture.get(DescribedFuture.java:49)
+	... 4 more
+Sep 16, 2012 9:23:40 PM com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair execute
+SEVERE: RuntimeException while executing runnable callGetOnFuture(twin0-e2,com.google.common.util.concurrent.Futures$ChainingListenableFuture@36527386) with executor java.util.concurrent.ThreadPoolExecutor@5f1e7e46
+java.util.concurrent.RejectedExecutionException
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:1768)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:767)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:658)
+	at org.jclouds.concurrent.config.DescribingExecutorService.execute(DescribingExecutorService.java:105)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:134)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:175)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture$1.run(Futures.java:538)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:262)
+	at com.google.common.util.concurrent.ExecutionList$RunnableExecutorPair.execute(ExecutionList.java:149)
+	at com.google.common.util.concurrent.ExecutionList.add(ExecutionList.java:105)
+	at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:160)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:531)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Tests run: 151, Failures: 4, Errors: 0, Skipped: 19, Time elapsed: 847.785 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   setupContext(org.jclouds.glesys.features.EmailAccountApiLiveTest): {"response":{"status":{"code":400,"timestamp":"2012-09-17T06:09:50+02:00","text":"Can not find this email account or email alias on this account.\n"},"debug":{"input":{"email":"test@adriancole-email.test.jclouds.org"}}}}
+  reserveIp(org.jclouds.glesys.features.IpApiLiveTest): command: POST https://api.glesys.com/ip/take/format/json HTTP/1.1 failed with response: HTTP/1.1 500 Internal Server Error; content: [{"response":{"status":{"code":701,"timestamp":"2012-09-17T06:10:30+02:00","text":"You are not allowed to assign more IP addresses right now, please contact customer support."},"debug":{"input":{"ipaddress":"31.192.226.125"}}}}]
+  testStopAndStartServer(org.jclouds.glesys.features.ServerApiLiveTest): expected:<true> but was:<false>
+  testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.glesys.compute.GleSYSComputeServiceLiveTest): org.jclouds.compute.RunNodesException: error running 1 node group(twin1) location(Falkenberg) image(Ubuntu 12.04 x64) size(datacenter(Falkenberg)platform(Xen)cpuCores(1)memorySizeMB(768)diskSizeGB(5)) options({blockOnPort:seconds=22:301, inboundPorts=[22, 8080]})(..)
+
+Tests run: 151, Failures: 4, Errors: 0, Skipped: 19
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14:46.147s
+[INFO] Finished at: Sun Sep 16 21:23:42 PDT 2012
+[INFO] Final Memory: 19M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project glesys: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/labs/glesys/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

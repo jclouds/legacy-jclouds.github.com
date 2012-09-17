@@ -1,16 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 131, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1,050.926 sec <<< FAILURE!
-testCreateAndRunAService(org.jclouds.elastichosts.compute.ElasticHostsBlueSquareLondonComputeServiceLiveTest)  Time elapsed: 234.959 sec  <<< FAILURE!
-org.jclouds.ssh.SshException: (toor:pw[cb0704ede95d3683c58d674e71230eaf]@84.45.121.120:22) (toor:pw[cb0704ede95d3683c58d674e71230eaf]@84.45.121.120:22) error acquiring {hostAndPort=84.45.121.120:22, loginUser=toor, ssh=null, connectTimeout=60000, sessionTimeout=60000} (out of retries - max 5): Broken transport; encountered EOF
-	at org.jclouds.sshj.SshjSshClient.propagate(SshjSshClient.java:381)
-	at org.jclouds.sshj.SshjSshClient.acquire(SshjSshClient.java:201)
+Tests run: 124, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2,786.23 sec <<< FAILURE!
+testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.rackspace.cloudservers.uk.compute.CloudServersUKComputeServiceLiveTest)  Time elapsed: 570.146 sec  <<< FAILURE!
+java.lang.AssertionError
+	at net.schmizz.sshj.SSHClient.auth(SSHClient.java:204)
+	at net.schmizz.sshj.SSHClient.authPublickey(SSHClient.java:305)
+	at net.schmizz.sshj.SSHClient.authPublickey(SSHClient.java:324)
+	at org.jclouds.sshj.SSHClientConnection.create(SSHClientConnection.java:144)
+	at org.jclouds.sshj.SSHClientConnection.create(SSHClientConnection.java:40)
+	at org.jclouds.sshj.SshjSshClient.acquire(SshjSshClient.java:191)
 	at org.jclouds.sshj.SshjSshClient.connect(SshjSshClient.java:221)
-	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSsh.call(RunScriptOnNodeAsInitScriptUsingSsh.java:78)
-	at org.jclouds.compute.internal.BaseComputeService.runScriptOnNode(BaseComputeService.java:601)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:667)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:640)
+	at org.jclouds.compute.callables.SudoAwareInitManager.refreshAndRunAction(SudoAwareInitManager.java:80)
+	at org.jclouds.compute.callables.BlockUntilInitScriptStatusIsZeroThenReturnOutput.interruptTask(BlockUntilInitScriptStatusIsZeroThenReturnOutput.java:173)
+	at com.google.common.util.concurrent.AbstractFuture.cancel(AbstractFuture.java:136)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.weCanCancelTasks(BaseComputeServiceLiveTest.java:302)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:259)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -32,7 +37,3 @@ org.jclouds.ssh.SshException: (toor:pw[cb0704ede95d3683c58d674e71230eaf]@84.45.1
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
 	at java.lang.Thread.run(Thread.java:680)
-Caused by: net.schmizz.sshj.transport.TransportException: Broken transport; encountered EOF
-	at net.schmizz.sshj.transport.Reader.run(Reader.java:70)
-Caused by: net.schmizz.sshj.transport.TransportException: Broken transport; encountered EOF
-	at net.schmizz.sshj.transport.Reader.run(Reader.java:70)

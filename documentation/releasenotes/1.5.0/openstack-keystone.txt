@@ -1,0 +1,398 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:openstack-keystone:bundle:1.5.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud openstack-keystone api 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ openstack-keystone ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/apis/openstack-keystone/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ openstack-keystone ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ openstack-keystone ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ openstack-keystone ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ openstack-keystone ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ openstack-keystone ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/apis/openstack-keystone/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ openstack-keystone ---
+[INFO] Compiling 71 source files to /Users/adriancole/workspace/git/jclouds/apis/openstack-keystone/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ openstack-keystone ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/apis/openstack-keystone/src/test/clojure
+[INFO] Copying 16 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ openstack-keystone ---
+[INFO] Compiling 31 source files to /Users/adriancole/workspace/git/jclouds/apis/openstack-keystone/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ openstack-keystone ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/apis/openstack-keystone/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@2911a3a4
+Starting test testCredentialTypeOfWhenValid(org.jclouds.openstack.keystone.v2_0.config.CredentialTypesTest)
+Starting test testIndexByCredentialTypeWithoutAnnotation(org.jclouds.openstack.keystone.v2_0.config.CredentialTypesTest)
+Starting test testCredentialTypeOfWithoutAnnotation(org.jclouds.openstack.keystone.v2_0.config.CredentialTypesTest)
+Starting test testIndexByCredentialTypeWhenValid(org.jclouds.openstack.keystone.v2_0.config.CredentialTypesTest)
+[pool-2-thread-2] Test testCredentialTypeOfWithoutAnnotation(org.jclouds.openstack.keystone.v2_0.config.CredentialTypesTest) succeeded: 17ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testIndexByCredentialTypeWithoutAnnotation(org.jclouds.openstack.keystone.v2_0.config.CredentialTypesTest) succeeded: 18ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testCredentialTypeOfWhenValid(org.jclouds.openstack.keystone.v2_0.config.CredentialTypesTest) succeeded: 19ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testIndexByCredentialTypeWhenValid(org.jclouds.openstack.keystone.v2_0.config.CredentialTypesTest) succeeded: 19ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testListTenants(org.jclouds.openstack.keystone.v2_0.features.ServiceApiExpectTest)
+Starting test testListTenantsFailNotFound(org.jclouds.openstack.keystone.v2_0.features.ServiceApiExpectTest)
+[pool-3-thread-1] Test testListTenants(org.jclouds.openstack.keystone.v2_0.features.ServiceApiExpectTest) succeeded: 1166ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[pool-3-thread-2] Test testListTenantsFailNotFound(org.jclouds.openstack.keystone.v2_0.features.ServiceApiExpectTest) succeeded: 1175ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testGetTenant(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest)
+Starting test testGetTenantByName(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest)
+Starting test testGetTenantByNameFailNotFound(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest)
+Starting test testListTenants(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest)
+Starting test testListTenantsFailNotAuthorized(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest)
+[pool-4-thread-1] Test testGetTenant(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest) succeeded: 559ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testListTenantsPage(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest)
+[pool-4-thread-3] Test testGetTenantByNameFailNotFound(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest) succeeded: 547ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-4-thread-4] Test testListTenants(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest) succeeded: 514ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testGetTenantByName(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest) succeeded: 573ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+[pool-4-thread-5] Test testListTenantsFailNotAuthorized(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest) succeeded: 519ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+[pool-4-thread-1] Test testListTenantsPage(org.jclouds.openstack.keystone.v2_0.features.TenantApiExpectTest) succeeded: 286ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testCheckTokenIsValid(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest)
+Starting test testCheckTokenIsValidFailNotValid(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest)
+Starting test testGetEndpointsForTokenFailNotFound(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest)
+Starting test testGetEndpointsForToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest)
+Starting test testGetToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest)
+[pool-5-thread-4] Test testGetEndpointsForTokenFailNotFound(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest) succeeded: 383ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testGetTokenFail500(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest)
+[pool-5-thread-2] Test testCheckTokenIsValidFailNotValid(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest) succeeded: 451ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+[pool-5-thread-1] Test testCheckTokenIsValid(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest) succeeded: 453ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testGetUserOfToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest)
+[pool-5-thread-3] Test testGetEndpointsForToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest) succeeded: 388ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testGetUserOfTokenFailNotFound(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest)
+[pool-5-thread-5] Test testGetToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest) succeeded: 404ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testGetTokenFailNotFound(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest)
+[pool-5-thread-1] Test testGetUserOfToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest) succeeded: 500ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+[pool-5-thread-2] Test testGetTokenFailNotFound(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest) succeeded: 500ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Cannot retry after server error, command has exceeded retry limit 1: [method=TokenAsyncApi.get, request=GET https://csnode.jclouds.org:35357/v2.0/tokens/sometokenorother HTTP/1.1]
+[pool-5-thread-4] Test testGetTokenFail500(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest) succeeded: 559ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+[pool-5-thread-3] Test testGetUserOfTokenFailNotFound(org.jclouds.openstack.keystone.v2_0.features.TokenApiExpectTest) succeeded: 554ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testGetUser(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testGetUser(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 156ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testGetUserByName(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testGetUserByName(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 209ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testGetUserByNameFailNotFound(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testGetUserByNameFailNotFound(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 197ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testGetUserFailNotFound(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testGetUserFailNotFound(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 183ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testListRolesOfUser(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testListRolesOfUser(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 165ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testListRolesOfUserFailNotFound(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testListRolesOfUserFailNotFound(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 199ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testListRolesOfUserFailNotImplemented(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+Cannot retry after server error, command has exceeded retry limit 1: [method=UserAsyncApi.listRolesOfUser, request=GET https://csnode.jclouds.org:35357/v2.0/users/5f6c1c9ba993495ead7d2eb2192e284f/roles HTTP/1.1]
+[pool-6-thread-1] Test testListRolesOfUserFailNotImplemented(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 162ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testListRolesOfUserInTenant(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testListRolesOfUserInTenant(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 144ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testListRolesOfUserInTenantFailNotFound(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testListRolesOfUserInTenantFailNotFound(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 137ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testListUsers(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testListUsers(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 146ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testListUsersFailNotAuth(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testListUsersFailNotAuth(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 89ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testListUsersNotFound(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testListUsersNotFound(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 85ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testListUsersPage(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest)
+[pool-6-thread-1] Test testListUsersPage(org.jclouds.openstack.keystone.v2_0.features.UserApiExpectTest) succeeded: 64ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testAdminURL(org.jclouds.openstack.keystone.v2_0.functions.AdminURLTest)
+Starting test testPublicURLNullReturnsInternalURL(org.jclouds.openstack.keystone.v2_0.functions.AdminURLTest)
+[pool-7-thread-2] Test testPublicURLNullReturnsInternalURL(org.jclouds.openstack.keystone.v2_0.functions.AdminURLTest) succeeded: 0ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+[pool-7-thread-1] Test testAdminURL(org.jclouds.openstack.keystone.v2_0.functions.AdminURLTest) succeeded: 2ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testPublicURLNotNullReturnsPublicURL(org.jclouds.openstack.keystone.v2_0.functions.PublicURLOrInternalIfNullTest)
+[pool-8-thread-1] Test testPublicURLNotNullReturnsPublicURL(org.jclouds.openstack.keystone.v2_0.functions.PublicURLOrInternalIfNullTest) succeeded: 0ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testPublicURLNullReturnsInternalURL(org.jclouds.openstack.keystone.v2_0.functions.PublicURLOrInternalIfNullTest)
+[pool-8-thread-2] Test testPublicURLNullReturnsInternalURL(org.jclouds.openstack.keystone.v2_0.functions.PublicURLOrInternalIfNullTest) succeeded: 0ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testRegionNotNullReturnsRegion(org.jclouds.openstack.keystone.v2_0.functions.ReturnRegionOrProviderTest)
+[pool-9-thread-1] Test testRegionNotNullReturnsRegion(org.jclouds.openstack.keystone.v2_0.functions.ReturnRegionOrProviderTest) succeeded: 2ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testRegionNullReturnsProvider(org.jclouds.openstack.keystone.v2_0.functions.ReturnRegionOrProviderTest)
+[pool-9-thread-2] Test testRegionNullReturnsProvider(org.jclouds.openstack.keystone.v2_0.functions.ReturnRegionOrProviderTest) succeeded: 1ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test test401ShouldRetry(org.jclouds.openstack.keystone.v2_0.handlers.RetryOnRenewTest)
+[pool-10-thread-1] Test test401ShouldRetry(org.jclouds.openstack.keystone.v2_0.handlers.RetryOnRenewTest) succeeded: 227ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testGetApiMetaData(org.jclouds.openstack.keystone.v2_0.KeystoneApiExpectTest)
+Starting test testGetApiMetaDataFailNotFound(org.jclouds.openstack.keystone.v2_0.KeystoneApiExpectTest)
+[pool-11-thread-2] Test testGetApiMetaDataFailNotFound(org.jclouds.openstack.keystone.v2_0.KeystoneApiExpectTest) succeeded: 92ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+[pool-11-thread-1] Test testGetApiMetaData(org.jclouds.openstack.keystone.v2_0.KeystoneApiExpectTest) succeeded: 105ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.keystone.v2_0.parse.ParseAccessTest)
+Starting test test(org.jclouds.openstack.keystone.v2_0.parse.ParseRackspaceAccessTest)
+[pool-12-thread-1] Test test(org.jclouds.openstack.keystone.v2_0.parse.ParseAccessTest) succeeded: 25ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+[pool-12-thread-2] Test test(org.jclouds.openstack.keystone.v2_0.parse.ParseRackspaceAccessTest) succeeded: 27ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.keystone.v2_0.parse.ParseAdminAccessTest)
+[pool-13-thread-1] Test test(org.jclouds.openstack.keystone.v2_0.parse.ParseAdminAccessTest) succeeded: 17ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.keystone.v2_0.parse.ParseDevstackApiMetadataTest)
+[pool-14-thread-1] Test test(org.jclouds.openstack.keystone.v2_0.parse.ParseDevstackApiMetadataTest) succeeded: 6ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.keystone.v2_0.parse.ParseRackspaceApiMetadataTest)
+[pool-15-thread-1] Test test(org.jclouds.openstack.keystone.v2_0.parse.ParseRackspaceApiMetadataTest) succeeded: 6ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testOkWithNoVersions(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToAdminURIFromAccessForTypeAndVersionTest)
+[pool-16-thread-1] Test testOkWithNoVersions(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToAdminURIFromAccessForTypeAndVersionTest) succeeded: 4ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testProviderWhenNoRegions(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToAdminURIFromAccessForTypeAndVersionTest)
+[pool-16-thread-2] Test testProviderWhenNoRegions(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToAdminURIFromAccessForTypeAndVersionTest) succeeded: 0ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testRegionMatches(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToAdminURIFromAccessForTypeAndVersionTest)
+[pool-16-thread-3] Test testRegionMatches(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToAdminURIFromAccessForTypeAndVersionTest) succeeded: 1ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testWhenNotInList(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToAdminURIFromAccessForTypeAndVersionTest)
+[pool-16-thread-4] Test testWhenNotInList(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToAdminURIFromAccessForTypeAndVersionTest) succeeded: 1ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testOkWithNoVersions(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToURIFromAccessForTypeAndVersionTest)
+[pool-17-thread-1] Test testOkWithNoVersions(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToURIFromAccessForTypeAndVersionTest) succeeded: 1ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testProviderWhenNoRegions(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToURIFromAccessForTypeAndVersionTest)
+[pool-17-thread-2] Test testProviderWhenNoRegions(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToURIFromAccessForTypeAndVersionTest) succeeded: 1ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testRegionMatches(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToURIFromAccessForTypeAndVersionTest)
+[pool-17-thread-3] Test testRegionMatches(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToURIFromAccessForTypeAndVersionTest) succeeded: 1ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testRegionUnmatches(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToURIFromAccessForTypeAndVersionTest)
+[pool-17-thread-4] Test testRegionUnmatches(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToURIFromAccessForTypeAndVersionTest) succeeded: 1ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testWhenNotInList(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToURIFromAccessForTypeAndVersionTest)
+[pool-17-thread-5] Test testWhenNotInList(org.jclouds.openstack.keystone.v2_0.suppliers.RegionIdToURIFromAccessForTypeAndVersionTest) succeeded: 2ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testOkWithNoVersions(org.jclouds.openstack.keystone.v2_0.suppliers.ZoneIdToURIFromAccessForTypeAndVersionTest)
+[pool-18-thread-1] Test testOkWithNoVersions(org.jclouds.openstack.keystone.v2_0.suppliers.ZoneIdToURIFromAccessForTypeAndVersionTest) succeeded: 2ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testProviderWhenNoZones(org.jclouds.openstack.keystone.v2_0.suppliers.ZoneIdToURIFromAccessForTypeAndVersionTest)
+[pool-18-thread-2] Test testProviderWhenNoZones(org.jclouds.openstack.keystone.v2_0.suppliers.ZoneIdToURIFromAccessForTypeAndVersionTest) succeeded: 0ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testWhenNotInList(org.jclouds.openstack.keystone.v2_0.suppliers.ZoneIdToURIFromAccessForTypeAndVersionTest)
+Starting test testZoneMatches(org.jclouds.openstack.keystone.v2_0.suppliers.ZoneIdToURIFromAccessForTypeAndVersionTest)
+[pool-18-thread-3] Test testWhenNotInList(org.jclouds.openstack.keystone.v2_0.suppliers.ZoneIdToURIFromAccessForTypeAndVersionTest) succeeded: 1ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+[pool-18-thread-4] Test testZoneMatches(org.jclouds.openstack.keystone.v2_0.suppliers.ZoneIdToURIFromAccessForTypeAndVersionTest) succeeded: 1ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testZoneUnmatches(org.jclouds.openstack.keystone.v2_0.suppliers.ZoneIdToURIFromAccessForTypeAndVersionTest)
+[pool-18-thread-5] Test testZoneUnmatches(org.jclouds.openstack.keystone.v2_0.suppliers.ZoneIdToURIFromAccessForTypeAndVersionTest) succeeded: 1ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testChangesHttpsToHttp(org.jclouds.openstack.v2_0.functions.ExtensionToNameSpaceTest)
+[pool-19-thread-1] Test testChangesHttpsToHttp(org.jclouds.openstack.v2_0.functions.ExtensionToNameSpaceTest) succeeded: 0ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testReturnsNamespace(org.jclouds.openstack.v2_0.functions.ExtensionToNameSpaceTest)
+[pool-19-thread-2] Test testReturnsNamespace(org.jclouds.openstack.v2_0.functions.ExtensionToNameSpaceTest) succeeded: 0ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testZoneWithoutExtensionsReturnsAbsent(org.jclouds.openstack.v2_0.functions.PresentWhenExtensionAnnotationNamespaceEqualsAnyNamespaceInExtensionsSetTest)
+Starting test testPresentWhenAliasForExtensionMapsToNamespace(org.jclouds.openstack.v2_0.functions.PresentWhenExtensionAnnotationNamespaceEqualsAnyNamespaceInExtensionsSetTest)
+Starting test testPresentWhenExtensionsIncludeNamespaceFromAnnotationAbsentWhenNot(org.jclouds.openstack.v2_0.functions.PresentWhenExtensionAnnotationNamespaceEqualsAnyNamespaceInExtensionsSetTest)
+[pool-20-thread-3] Test testZoneWithoutExtensionsReturnsAbsent(org.jclouds.openstack.v2_0.functions.PresentWhenExtensionAnnotationNamespaceEqualsAnyNamespaceInExtensionsSetTest) succeeded: 31ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+[pool-20-thread-1] Test testPresentWhenAliasForExtensionMapsToNamespace(org.jclouds.openstack.v2_0.functions.PresentWhenExtensionAnnotationNamespaceEqualsAnyNamespaceInExtensionsSetTest) succeeded: 31ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+[pool-20-thread-2] Test testPresentWhenExtensionsIncludeNamespaceFromAnnotationAbsentWhenNot(org.jclouds.openstack.v2_0.functions.PresentWhenExtensionAnnotationNamespaceEqualsAnyNamespaceInExtensionsSetTest) succeeded: 33ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+Starting test testChangesSince(org.jclouds.openstack.v2_0.options.PaginationOptionsTest)
+[pool-21-thread-1] Test testChangesSince(org.jclouds.openstack.v2_0.options.PaginationOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+Starting test testMarker(org.jclouds.openstack.v2_0.options.PaginationOptionsTest)
+[pool-21-thread-3] Test testMarker(org.jclouds.openstack.v2_0.options.PaginationOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+Starting test testMarkerStatic(org.jclouds.openstack.v2_0.options.PaginationOptionsTest)
+[pool-21-thread-4] Test testMarkerStatic(org.jclouds.openstack.v2_0.options.PaginationOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+Starting test testMaxResults(org.jclouds.openstack.v2_0.options.PaginationOptionsTest)
+[pool-21-thread-5] Test testMaxResults(org.jclouds.openstack.v2_0.options.PaginationOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+Starting test testChangesSinceStatic(org.jclouds.openstack.v2_0.options.PaginationOptionsTest)
+[pool-21-thread-2] Test testChangesSinceStatic(org.jclouds.openstack.v2_0.options.PaginationOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+Starting test testMaxResultsStatic(org.jclouds.openstack.v2_0.options.PaginationOptionsTest)
+[pool-21-thread-2] Test testMaxResultsStatic(org.jclouds.openstack.v2_0.options.PaginationOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
+Starting test testAliasEqualsWhenEqual(org.jclouds.openstack.v2_0.predicates.ExtensionPredicatesTest)
+[pool-22-thread-1] Test testAliasEqualsWhenEqual(org.jclouds.openstack.v2_0.predicates.ExtensionPredicatesTest) succeeded: 0ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
+Starting test testNamespaceEqualsWhenEqual(org.jclouds.openstack.v2_0.predicates.ExtensionPredicatesTest)
+[pool-22-thread-3] Test testNamespaceEqualsWhenEqual(org.jclouds.openstack.v2_0.predicates.ExtensionPredicatesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+Starting test testNamespaceEqualsWhenEqualEvenOnInputHttps(org.jclouds.openstack.v2_0.predicates.ExtensionPredicatesTest)
+[pool-22-thread-4] Test testNamespaceEqualsWhenEqualEvenOnInputHttps(org.jclouds.openstack.v2_0.predicates.ExtensionPredicatesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+Starting test testAliasEqualsWhenNotEqual(org.jclouds.openstack.v2_0.predicates.ExtensionPredicatesTest)
+[pool-22-thread-2] Test testAliasEqualsWhenNotEqual(org.jclouds.openstack.v2_0.predicates.ExtensionPredicatesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+Starting test testNamespaceEqualsWhenNotEqual(org.jclouds.openstack.v2_0.predicates.ExtensionPredicatesTest)
+[pool-22-thread-5] Test testNamespaceEqualsWhenNotEqual(org.jclouds.openstack.v2_0.predicates.ExtensionPredicatesTest) succeeded: 0ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+Starting test testHrefEqualsWhenEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest)
+Starting test testRelationEqualsWhenNotEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest)
+Starting test testTypeEqualsWhenEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest)
+Starting test testRelationEqualsWhenEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest)
+Starting test testHrefEqualsWhenNotEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest)
+[pool-23-thread-1] Test testHrefEqualsWhenEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest) succeeded: 2ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+Starting test testTypeEqualsWhenNotEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest)
+[pool-23-thread-5] Test testTypeEqualsWhenEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest) succeeded: 4ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+[pool-23-thread-4] Test testRelationEqualsWhenNotEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest) succeeded: 5ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+[pool-23-thread-1] Test testTypeEqualsWhenNotEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
+[pool-23-thread-2] Test testHrefEqualsWhenNotEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest) succeeded: 5ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
+[pool-23-thread-3] Test testRelationEqualsWhenEqual(org.jclouds.openstack.v2_0.predicates.LinkPredicatesTest) succeeded: 5ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
+Tests run: 84, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.42 sec
+
+Results :
+
+Tests run: 84, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ openstack-keystone ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ openstack-keystone ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/apis/openstack-keystone/target/openstack-keystone-1.5.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ openstack-keystone ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/apis/openstack-keystone/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@74b2002f
+Starting test testListRolesOfUser(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)
+Starting test testGetApiMetaData(org.jclouds.openstack.keystone.v2_0.KeystoneApiLiveTest)
+Starting test testTenants(org.jclouds.openstack.keystone.v2_0.features.ServiceApiLiveTest)
+Starting test testTenants(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest)
+Starting test testInvalidToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)
+[TestNG] Test testInvalidToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest) failed.
+Test suite progress: tests succeeded: 0, failed: 1, skipped: 0.
+Starting test testInvalidTokenEndpoints(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)
+[TestNG] Test testInvalidTokenEndpoints(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest) failed.
+Test suite progress: tests succeeded: 0, failed: 2, skipped: 0.
+Starting test testToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)
+[TestNG] Test testToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest) failed.
+Test suite progress: tests succeeded: 0, failed: 3, skipped: 0.
+Starting test testTokenEndpoints(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)
+[TestNG] Test testTenants(org.jclouds.openstack.keystone.v2_0.features.ServiceApiLiveTest) succeeded: 2654ms
+Test suite progress: tests succeeded: 1, failed: 3, skipped: 0.
+[TestNG] Test testTokenEndpoints(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 4, skipped: 0.
+[TestNG] Test testGetApiMetaData(org.jclouds.openstack.keystone.v2_0.KeystoneApiLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 5, skipped: 0.
+[TestNG] Test testListRolesOfUser(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 6, skipped: 0.
+Starting test testUserRolesOnTenant(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)
+[TestNG] Test testTenants(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 7, skipped: 0.
+Starting test testTenantsByName(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest)
+[TestNG] Test testTenantsByName(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 8, skipped: 0.
+[TestNG] Test testUserRolesOnTenant(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 9, skipped: 0.
+Starting test testUsers(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)
+[TestNG] Test testUsers(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 10, skipped: 0.
+Starting test testUsersByName(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)
+[TestNG] Test testUsersByName(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 11, skipped: 0.
+Tests run: 12, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 16.765 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testInvalidToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest): request: HEAD https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/thisisnotarealtoken%21 HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed
+  testInvalidTokenEndpoints(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest): command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/thisisnotarealtoken%21/endpoints HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [<fault>(..)
+  testToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest): request: HEAD https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/HPAuth_50560fcde4b0df297b1b253c HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed
+  testTokenEndpoints(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest): command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/HPAuth_50560fcde4b0df297b1b253c/endpoints HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [<fault>(..)
+  testGetApiMetaData(org.jclouds.openstack.keystone.v2_0.KeystoneApiLiveTest): command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/ HTTP/1.1 failed with response: HTTP/1.1 500 Internal Server Error; content: [<fault>(..)
+  testListRolesOfUser(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest): command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 500 Internal Server Error; content: [<fault>(..)
+  testTenants(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest): get returned null for tenant: Tenant{id=37936628937291, name=adrian@jclouds.org, description=null} expected object to not be null
+  testTenantsByName(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest): get returned null for tenant: Tenant{id=37936628937291, name=adrian@jclouds.org, description=null} expected object to not be null
+  testUserRolesOnTenant(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest): command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 500 Internal Server Error; content: [<fault>(..)
+  testUsers(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest): command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 500 Internal Server Error; content: [<fault>(..)
+  testUsersByName(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest): command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 500 Internal Server Error; content: [<fault>(..)
+
+Tests run: 12, Failures: 11, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 44.473s
+[INFO] Finished at: Sun Sep 16 21:23:44 PDT 2012
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project openstack-keystone: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/apis/openstack-keystone/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,152 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:rackspace-cloudidentity:bundle:1.5.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud rackspace cloudidentity api 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ rackspace-cloudidentity ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/apis/rackspace-cloudidentity/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ rackspace-cloudidentity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ rackspace-cloudidentity ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ rackspace-cloudidentity ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ rackspace-cloudidentity ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ rackspace-cloudidentity ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/apis/rackspace-cloudidentity/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ rackspace-cloudidentity ---
+[INFO] Compiling 7 source files to /Users/adriancole/workspace/git/jclouds/apis/rackspace-cloudidentity/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ rackspace-cloudidentity ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/apis/rackspace-cloudidentity/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/apis/rackspace-cloudidentity/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ rackspace-cloudidentity ---
+[INFO] Compiling 6 source files to /Users/adriancole/workspace/git/jclouds/apis/rackspace-cloudidentity/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ rackspace-cloudidentity ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/apis/rackspace-cloudidentity/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiMetadataTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@21f3aa07
+Starting test testAllContains(org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiMetadataTest)
+[pool-2-thread-1] Test testAllContains(org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiMetadataTest) succeeded: 24ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testTransformableToContains(org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiMetadataTest) succeeded: 24ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiMetadataTest)
+[pool-2-thread-3] Test testWithId(org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiMetadataTest) succeeded: 5ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testContextAssignableFromRestContext(org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiMetadataTest)
+[pool-2-thread-4] Test testContextAssignableFromRestContext(org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.535 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ rackspace-cloudidentity ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ rackspace-cloudidentity ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/apis/rackspace-cloudidentity/target/rackspace-cloudidentity-1.5.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ rackspace-cloudidentity ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/apis/rackspace-cloudidentity/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@68861f24
+Starting test testTenants(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTenantApiLiveTest)
+Starting test testListRolesOfUser(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityUserApiLiveTest)
+Starting test testTenants(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityServiceApiLiveTest)
+Starting test testGetApiMetaData(org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiLiveTest)
+[TestNG] Test testGetApiMetaData(org.jclouds.rackspace.cloudidentity.v2_0.CloudIdentityApiLiveTest) succeeded: 1265ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testInvalidToken(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest)
+[TestNG] Test testTenants(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityServiceApiLiveTest) succeeded: 1918ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[TestNG] Test testInvalidToken(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest) failed.
+Test suite progress: tests succeeded: 2, failed: 1, skipped: 0.
+Starting test testInvalidTokenEndpoints(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest)
+[TestNG] Test testListRolesOfUser(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityUserApiLiveTest) succeeded: 2216ms
+Test suite progress: tests succeeded: 3, failed: 1, skipped: 0.
+Starting test testUserRolesOnTenant(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityUserApiLiveTest)
+[TestNG] Test testInvalidTokenEndpoints(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest) failed.
+Test suite progress: tests succeeded: 3, failed: 2, skipped: 0.
+Starting test testToken(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest)
+[TestNG] Test testTenants(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTenantApiLiveTest) failed.
+Test suite progress: tests succeeded: 3, failed: 3, skipped: 0.
+Starting test testTenantsByName(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTenantApiLiveTest)
+[TestNG] Test testToken(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest) failed.
+Test suite progress: tests succeeded: 3, failed: 4, skipped: 0.
+Starting test testTokenEndpoints(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest)
+[TestNG] Test testUserRolesOnTenant(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityUserApiLiveTest) succeeded: 1150ms
+Test suite progress: tests succeeded: 4, failed: 4, skipped: 0.
+Starting test testUsers(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityUserApiLiveTest)
+[TestNG] Test testTokenEndpoints(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest) failed.
+Test suite progress: tests succeeded: 4, failed: 5, skipped: 0.
+[TestNG] Test testTenantsByName(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTenantApiLiveTest) failed.
+Test suite progress: tests succeeded: 4, failed: 6, skipped: 0.
+[TestNG] Test testUsers(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityUserApiLiveTest) failed.
+Test suite progress: tests succeeded: 4, failed: 7, skipped: 0.
+Starting test testUsersByName(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityUserApiLiveTest)
+[TestNG] Test testUsersByName(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityUserApiLiveTest) succeeded: 478ms
+Test suite progress: tests succeeded: 5, failed: 7, skipped: 0.
+Tests run: 12, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 6.984 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testInvalidToken(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest): HEAD https://identity.api.rackspacecloud.com/v2.0/tokens/thisisnotarealtoken%21 HTTP/1.1 -> HTTP/1.1 403 Forbidden
+  testInvalidTokenEndpoints(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest): {"forbidden":{"code":403,"message":"Access is denied"}}(..)
+  testTenants(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTenantApiLiveTest): {"forbidden":{"code":403,"message":"Access is denied"}}(..)
+  testToken(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest): HEAD https://identity.api.rackspacecloud.com/v2.0/tokens/2980bb65-48b0-47a2-b7c8-0ef58b6c5327 HTTP/1.1 -> HTTP/1.1 403 Forbidden
+  testTokenEndpoints(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTokenApiLiveTest): {"forbidden":{"code":403,"message":"Access is denied"}}(..)
+  testTenantsByName(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityTenantApiLiveTest): {"forbidden":{"code":403,"message":"Access is denied"}}(..)
+  testUsers(org.jclouds.rackspace.cloudidentity.v2_0.features.CloudIdentityUserApiLiveTest): expected:<false> but was:<true>
+
+Tests run: 12, Failures: 7, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.183s
+[INFO] Finished at: Sun Sep 16 21:26:33 PDT 2012
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project rackspace-cloudidentity: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/apis/rackspace-cloudidentity/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
