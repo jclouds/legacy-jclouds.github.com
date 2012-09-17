@@ -1,0 +1,861 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:greenqloud-storage:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds GreenQloud Simple Storage Service (S3) provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ greenqloud-storage ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/greenqloud-storage/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ greenqloud-storage ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ greenqloud-storage ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ greenqloud-storage ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ greenqloud-storage ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ greenqloud-storage ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/greenqloud-storage/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ greenqloud-storage ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/jclouds/labs/greenqloud-storage/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ greenqloud-storage ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/greenqloud-storage/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/greenqloud-storage/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ greenqloud-storage ---
+[INFO] Compiling 10 source files to /Users/adriancole/workspace/git/jclouds/labs/greenqloud-storage/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ greenqloud-storage ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/greenqloud-storage/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.greenqloud.storage.GreenQloudStorageProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@55d15445
+Starting test testAllContains(org.jclouds.greenqloud.storage.GreenQloudStorageProviderTest)
+Starting test testOfApiContains(org.jclouds.greenqloud.storage.GreenQloudStorageProviderTest)
+Starting test testTransformableToContains(org.jclouds.greenqloud.storage.GreenQloudStorageProviderTest)
+Starting test testWithId(org.jclouds.greenqloud.storage.GreenQloudStorageProviderTest)
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.greenqloud.storage.GreenQloudStorageProviderTest) succeeded: 20ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testWithId(org.jclouds.greenqloud.storage.GreenQloudStorageProviderTest) succeeded: 24ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testAllContains(org.jclouds.greenqloud.storage.GreenQloudStorageProviderTest) succeeded: 31ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.greenqloud.storage.GreenQloudStorageProviderTest) succeeded: 33ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.375 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ greenqloud-storage ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ greenqloud-storage ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/greenqloud-storage/target/greenqloud-storage-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ greenqloud-storage ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/greenqloud-storage/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@270e3293
+org.jclouds.aws.AWSResponseException: request PUT https://adriancole-blobstore1.s.greenqloud.com/ HTTP/1.1 failed with code 503, error: AWSError{requestId='null', requestToken='null', code='ServiceUnavailable', message='', context='{BucketName=adriancole-blobstore1}'}
+	at org.jclouds.aws.handlers.ParseAWSErrorFromXmlContent.handleError(ParseAWSErrorFromXmlContent.java:78)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:71)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.shouldContinue(BaseHttpCommandExecutorService.java:197)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.call(BaseHttpCommandExecutorService.java:167)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.call(BaseHttpCommandExecutorService.java:135)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+	at org.jclouds.concurrent.config.DescribingExecutorService.submit(DescribingExecutorService.java:89)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.submit(BaseHttpCommandExecutorService.java:132)
+	at org.jclouds.http.TransformingHttpCommandExecutorServiceImpl.submit(TransformingHttpCommandExecutorServiceImpl.java:54)
+	at org.jclouds.http.TransformingHttpCommandImpl.execute(TransformingHttpCommandImpl.java:73)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
+	at $Proxy71.putBucketInRegion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	at $Proxy72.putBucketInRegion(Unknown Source)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:286)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:134)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainerAndEnsureEmpty(BaseBlobStoreIntegrationTest.java:241)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainersSharedByAllThreads(BaseBlobStoreIntegrationTest.java:143)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.setUpResourcesForAllThreads(BaseBlobStoreIntegrationTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:76)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:161)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:101)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+	at org.jclouds.concurrent.config.DescribingExecutorService.submit(DescribingExecutorService.java:89)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.submit(BaseHttpCommandExecutorService.java:132)
+	at org.jclouds.http.TransformingHttpCommandExecutorServiceImpl.submit(TransformingHttpCommandExecutorServiceImpl.java:54)
+	at org.jclouds.http.TransformingHttpCommandImpl.execute(TransformingHttpCommandImpl.java:73)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
+	at $Proxy71.putBucketInRegion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	at $Proxy72.putBucketInRegion(Unknown Source)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:286)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:134)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainerAndEnsureEmpty(BaseBlobStoreIntegrationTest.java:241)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainersSharedByAllThreads(BaseBlobStoreIntegrationTest.java:143)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.setUpResourcesForAllThreads(BaseBlobStoreIntegrationTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:76)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:161)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:101)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+org.jclouds.aws.AWSResponseException: request PUT https://adriancole-blobstore3.s.greenqloud.com/ HTTP/1.1 failed with code 503, error: AWSError{requestId='null', requestToken='null', code='ServiceUnavailable', message='', context='{BucketName=adriancole-blobstore3}'}
+	at org.jclouds.aws.handlers.ParseAWSErrorFromXmlContent.handleError(ParseAWSErrorFromXmlContent.java:78)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:71)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.shouldContinue(BaseHttpCommandExecutorService.java:197)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.call(BaseHttpCommandExecutorService.java:167)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.call(BaseHttpCommandExecutorService.java:135)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+	at org.jclouds.concurrent.config.DescribingExecutorService.submit(DescribingExecutorService.java:89)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.submit(BaseHttpCommandExecutorService.java:132)
+	at org.jclouds.http.TransformingHttpCommandExecutorServiceImpl.submit(TransformingHttpCommandExecutorServiceImpl.java:54)
+	at org.jclouds.http.TransformingHttpCommandImpl.execute(TransformingHttpCommandImpl.java:73)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
+	at $Proxy71.putBucketInRegion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	at $Proxy72.putBucketInRegion(Unknown Source)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:286)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:134)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainerAndEnsureEmpty(BaseBlobStoreIntegrationTest.java:241)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainersSharedByAllThreads(BaseBlobStoreIntegrationTest.java:143)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.setUpResourcesForAllThreads(BaseBlobStoreIntegrationTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:76)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:161)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:101)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+	at org.jclouds.concurrent.config.DescribingExecutorService.submit(DescribingExecutorService.java:89)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.submit(BaseHttpCommandExecutorService.java:132)
+	at org.jclouds.http.TransformingHttpCommandExecutorServiceImpl.submit(TransformingHttpCommandExecutorServiceImpl.java:54)
+	at org.jclouds.http.TransformingHttpCommandImpl.execute(TransformingHttpCommandImpl.java:73)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
+	at $Proxy71.putBucketInRegion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	at $Proxy72.putBucketInRegion(Unknown Source)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:286)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:134)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainerAndEnsureEmpty(BaseBlobStoreIntegrationTest.java:241)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainersSharedByAllThreads(BaseBlobStoreIntegrationTest.java:143)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.setUpResourcesForAllThreads(BaseBlobStoreIntegrationTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:76)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:161)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:101)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+org.jclouds.aws.AWSResponseException: request PUT https://adriancole-blobstore6.s.greenqloud.com/ HTTP/1.1 failed with code 503, error: AWSError{requestId='null', requestToken='null', code='ServiceUnavailable', message='', context='{BucketName=adriancole-blobstore6}'}
+	at org.jclouds.aws.handlers.ParseAWSErrorFromXmlContent.handleError(ParseAWSErrorFromXmlContent.java:78)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:71)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.shouldContinue(BaseHttpCommandExecutorService.java:197)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.call(BaseHttpCommandExecutorService.java:167)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.call(BaseHttpCommandExecutorService.java:135)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+	at org.jclouds.concurrent.config.DescribingExecutorService.submit(DescribingExecutorService.java:89)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.submit(BaseHttpCommandExecutorService.java:132)
+	at org.jclouds.http.TransformingHttpCommandExecutorServiceImpl.submit(TransformingHttpCommandExecutorServiceImpl.java:54)
+	at org.jclouds.http.TransformingHttpCommandImpl.execute(TransformingHttpCommandImpl.java:73)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
+	at $Proxy71.putBucketInRegion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	at $Proxy72.putBucketInRegion(Unknown Source)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:286)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:134)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainerAndEnsureEmpty(BaseBlobStoreIntegrationTest.java:241)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainersSharedByAllThreads(BaseBlobStoreIntegrationTest.java:143)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.setUpResourcesForAllThreads(BaseBlobStoreIntegrationTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:76)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:161)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:101)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+	at org.jclouds.concurrent.config.DescribingExecutorService.submit(DescribingExecutorService.java:89)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.submit(BaseHttpCommandExecutorService.java:132)
+	at org.jclouds.http.TransformingHttpCommandExecutorServiceImpl.submit(TransformingHttpCommandExecutorServiceImpl.java:54)
+	at org.jclouds.http.TransformingHttpCommandImpl.execute(TransformingHttpCommandImpl.java:73)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
+	at $Proxy71.putBucketInRegion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	at $Proxy72.putBucketInRegion(Unknown Source)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:286)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:134)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainerAndEnsureEmpty(BaseBlobStoreIntegrationTest.java:241)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainersSharedByAllThreads(BaseBlobStoreIntegrationTest.java:143)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.setUpResourcesForAllThreads(BaseBlobStoreIntegrationTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:76)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:161)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:101)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+org.jclouds.aws.AWSResponseException: request PUT https://adriancole-blobstore8.s.greenqloud.com/ HTTP/1.1 failed with code 503, error: AWSError{requestId='null', requestToken='null', code='ServiceUnavailable', message='', context='{BucketName=adriancole-blobstore8}'}
+	at org.jclouds.aws.handlers.ParseAWSErrorFromXmlContent.handleError(ParseAWSErrorFromXmlContent.java:78)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:71)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.shouldContinue(BaseHttpCommandExecutorService.java:197)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.call(BaseHttpCommandExecutorService.java:167)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.call(BaseHttpCommandExecutorService.java:135)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+	at org.jclouds.concurrent.config.DescribingExecutorService.submit(DescribingExecutorService.java:89)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.submit(BaseHttpCommandExecutorService.java:132)
+	at org.jclouds.http.TransformingHttpCommandExecutorServiceImpl.submit(TransformingHttpCommandExecutorServiceImpl.java:54)
+	at org.jclouds.http.TransformingHttpCommandImpl.execute(TransformingHttpCommandImpl.java:73)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
+	at $Proxy71.putBucketInRegion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	at $Proxy72.putBucketInRegion(Unknown Source)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:286)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:134)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainerAndEnsureEmpty(BaseBlobStoreIntegrationTest.java:241)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainersSharedByAllThreads(BaseBlobStoreIntegrationTest.java:143)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.setUpResourcesForAllThreads(BaseBlobStoreIntegrationTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:76)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:161)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:101)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+	at org.jclouds.concurrent.config.DescribingExecutorService.submit(DescribingExecutorService.java:89)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.submit(BaseHttpCommandExecutorService.java:132)
+	at org.jclouds.http.TransformingHttpCommandExecutorServiceImpl.submit(TransformingHttpCommandExecutorServiceImpl.java:54)
+	at org.jclouds.http.TransformingHttpCommandImpl.execute(TransformingHttpCommandImpl.java:73)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
+	at $Proxy71.putBucketInRegion(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	at $Proxy72.putBucketInRegion(Unknown Source)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:286)
+	at org.jclouds.s3.blobstore.S3BlobStore.createContainerInLocation(S3BlobStore.java:134)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainerAndEnsureEmpty(BaseBlobStoreIntegrationTest.java:241)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.createContainersSharedByAllThreads(BaseBlobStoreIntegrationTest.java:143)
+	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.setUpResourcesForAllThreads(BaseBlobStoreIntegrationTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:76)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:161)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:101)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+*** containers to test: [adriancole-blobstore0, adriancole-blobstore2, adriancole-blobstore4, adriancole-blobstore5, adriancole-blobstore7, adriancole-blobstore9, adriancole-blobstore10, adriancole-blobstore11, adriancole-blobstore12, adriancole-blobstore13]
+Starting test testSignGetUrl(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest)
+Starting test testCopyUrl(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobLiveTest)
+Starting test testContains(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+Starting test containerDoesntExist(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+Starting test blobNotFound(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test containerDoesntExist(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 2154ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test containerExists(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test containerExists(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 4544ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test deleteContainerIfEmpty(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test testSignGetUrl(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest) succeeded: 7218ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testSignGetUrlOptions(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest)
+[TestNG] Test testCopyUrl(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobLiveTest) succeeded: 9649ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testPublicAccess(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerLiveTest)
+[TestNG] Test testContains(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 0.
+Starting test testEntrySet(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test blobNotFound(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 0.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+*** allocated new container adriancole-blobstore9...
+*** allocated new container adriancole-blobstore11...
+[TestNG] Test testSignGetUrlOptions(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest) succeeded: 7148ms
+Test suite progress: tests succeeded: 5, failed: 2, skipped: 0.
+Starting test testSignGetUrlWithTime(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest)
+[TestNG] Test deleteContainerIfEmpty(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 8413ms
+Test suite progress: tests succeeded: 6, failed: 2, skipped: 0.
+Starting test deleteContainerWithContents(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 7205ms
+Test suite progress: tests succeeded: 7, failed: 2, skipped: 0.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+*** allocated new container adriancole-blobstore114926522643977033587...
+[TestNG] Test testSignGetUrlWithTime(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest) skipped.
+Test suite progress: tests succeeded: 7, failed: 2, skipped: 1.
+Starting test testSignPutUrl(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest)
+[TestNG] Test testPublicAccess(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerLiveTest) succeeded: 13038ms
+Test suite progress: tests succeeded: 8, failed: 2, skipped: 1.
+Starting test testPublicAccessInNonDefaultLocation(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerLiveTest)
+[TestNG] Test testPublicAccessInNonDefaultLocation(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerLiveTest) skipped.
+Test suite progress: tests succeeded: 8, failed: 2, skipped: 2.
+Starting test testPublicAccessInNonDefaultLocationWithBigBlob(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerLiveTest)
+[TestNG] Test testPublicAccessInNonDefaultLocationWithBigBlob(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerLiveTest) skipped.
+Test suite progress: tests succeeded: 8, failed: 2, skipped: 3.
+Starting test testContainsBytesValue(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+*** allocated new container adriancole-blobstore0...
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 8005ms
+Test suite progress: tests succeeded: 9, failed: 2, skipped: 3.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteContainerWithContents(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 11852ms
+Test suite progress: tests succeeded: 10, failed: 2, skipped: 3.
+Starting test testClearWhenContentsUnderPath(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test testSignPutUrl(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest) succeeded: 6243ms
+Test suite progress: tests succeeded: 11, failed: 2, skipped: 3.
+Starting test testSignPutUrlWithTime(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest)
+[TestNG] Test testSignPutUrlWithTime(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest) skipped.
+Test suite progress: tests succeeded: 11, failed: 2, skipped: 4.
+Starting test testSignRemoveUrl(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest)
+[TestNG] Test testContainsBytesValue(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 11, failed: 3, skipped: 4.
+Starting test testContainsFileValue(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 8135ms
+Test suite progress: tests succeeded: 12, failed: 3, skipped: 4.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testEntrySet(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 27352ms
+Test suite progress: tests succeeded: 13, failed: 3, skipped: 4.
+Starting test testPut(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testSignRemoveUrl(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobSignerLiveTest) succeeded: 7853ms
+Test suite progress: tests succeeded: 14, failed: 3, skipped: 4.
+Starting test containerDoesntExist(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageServiceIntegrationLiveTest)
+[TestNG] Test containerDoesntExist(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageServiceIntegrationLiveTest) succeeded: 861ms
+Test suite progress: tests succeeded: 15, failed: 3, skipped: 4.
+Starting test testAllLocations(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageServiceIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 6981ms
+Test suite progress: tests succeeded: 16, failed: 3, skipped: 4.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+*** allocated new container adriancole-blobstore10...
+ >> creating container in location {scope=REGION, id=is-1, description=is-1, parent=greenqloud-storage, iso3166Codes=[IS-1]}
+[TestNG] Test testClearWhenContentsUnderPath(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 16466ms
+Test suite progress: tests succeeded: 17, failed: 3, skipped: 4.
+Starting test testDirectory(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+ << call complete.. checking
+[TestNG] Test testContainsFileValue(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 11208ms
+Test suite progress: tests succeeded: 18, failed: 3, skipped: 4.
+Starting test testContainsInputStreamValue(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+*** allocated new container adriancole-blobstore10-4964433775835135103...
+[TestNG] Test testAllLocations(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageServiceIntegrationLiveTest) succeeded: 7627ms
+Test suite progress: tests succeeded: 19, failed: 3, skipped: 4.
+Starting test testGetAssignableLocations(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageServiceIntegrationLiveTest)
+location {scope=REGION, id=is-1, description=is-1, parent=greenqloud-storage, iso3166Codes=[IS-1]}
+[TestNG] Test testGetAssignableLocations(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageServiceIntegrationLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 20, failed: 3, skipped: 4.
+Starting test deleteContainerIfEmptyButHasContents(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 8089ms
+Test suite progress: tests succeeded: 21, failed: 3, skipped: 4.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPut(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 12647ms
+Test suite progress: tests succeeded: 22, failed: 3, skipped: 4.
+Starting test testPutAll(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test deleteContainerIfEmptyButHasContents(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 5299ms
+Test suite progress: tests succeeded: 23, failed: 3, skipped: 4.
+Starting test deleteContainerIfEmptyNotFound(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test deleteContainerIfEmptyNotFound(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 1061ms
+Test suite progress: tests succeeded: 24, failed: 3, skipped: 4.
+Starting test testCopyCannedAccessPolicyPublic(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testContainsInputStreamValue(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 24, failed: 4, skipped: 4.
+Starting test testContainsStringValue(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 7857ms
+Test suite progress: tests succeeded: 25, failed: 4, skipped: 4.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutAll(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 10559ms
+Test suite progress: tests succeeded: 26, failed: 4, skipped: 4.
+Starting test testPutMoreThanSingleListing(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testContainsStringValue(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 7871ms
+Test suite progress: tests succeeded: 27, failed: 4, skipped: 4.
+Starting test testEntrySet(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 6253ms
+Test suite progress: tests succeeded: 28, failed: 4, skipped: 4.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 6223ms
+Test suite progress: tests succeeded: 29, failed: 4, skipped: 4.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testCopyCannedAccessPolicyPublic(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 15476ms
+Test suite progress: tests succeeded: 30, failed: 4, skipped: 4.
+Starting test testCopyIfMatch(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 8008ms
+Test suite progress: tests succeeded: 31, failed: 4, skipped: 4.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testCopyIfMatch(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) failed.
+Test suite progress: tests succeeded: 31, failed: 5, skipped: 4.
+Starting test testCopyIfModifiedSince(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 6294ms
+Test suite progress: tests succeeded: 32, failed: 5, skipped: 4.
+Starting test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutMoreThanSingleListing(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 23576ms
+Test suite progress: tests succeeded: 33, failed: 5, skipped: 4.
+Starting test testRemove(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 7049ms
+Test suite progress: tests succeeded: 34, failed: 5, skipped: 4.
+Starting test deleteObjectNoContainer(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testDirectory(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 47591ms
+Test suite progress: tests succeeded: 35, failed: 5, skipped: 4.
+Starting test testListContainer(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test deleteObjectNoContainer(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 1086ms
+Test suite progress: tests succeeded: 36, failed: 5, skipped: 4.
+Starting test deleteObjectNotFound(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testEntrySet(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 31528ms
+Test suite progress: tests succeeded: 37, failed: 5, skipped: 4.
+Starting test testPut(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testRemove(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 11382ms
+Test suite progress: tests succeeded: 38, failed: 5, skipped: 4.
+Starting test testValues(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test deleteObjectNotFound(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 4460ms
+Test suite progress: tests succeeded: 39, failed: 5, skipped: 4.
+Starting test testBigFileGets(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testCopyIfModifiedSince(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 18105ms
+Test suite progress: tests succeeded: 40, failed: 5, skipped: 4.
+Starting test testCopyIfNoneMatch(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testValues(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 8297ms
+Test suite progress: tests succeeded: 41, failed: 5, skipped: 4.
+Starting test testClear(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testPut(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 12423ms
+Test suite progress: tests succeeded: 42, failed: 5, skipped: 4.
+Starting test testPutAll(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 19075ms
+Test suite progress: tests succeeded: 43, failed: 5, skipped: 4.
+Starting test testListContainerMarker(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test testClear(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 10807ms
+Test suite progress: tests succeeded: 44, failed: 5, skipped: 4.
+Starting test testContainsKey(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testCopyIfNoneMatch(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 16093ms
+Test suite progress: tests succeeded: 45, failed: 5, skipped: 4.
+Starting test testCopyIfUnmodifiedSince(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testPutAll(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 10628ms
+Test suite progress: tests succeeded: 46, failed: 5, skipped: 4.
+Starting test testPutAllBytes(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsKey(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 9063ms
+Test suite progress: tests succeeded: 47, failed: 5, skipped: 4.
+Starting test testDirectory(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testPutAllBytes(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 14217ms
+Test suite progress: tests succeeded: 48, failed: 5, skipped: 4.
+Starting test testPutAllFiles(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testCopyIfUnmodifiedSince(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) failed.
+Test suite progress: tests succeeded: 48, failed: 6, skipped: 4.
+Starting test testCopyObject(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testPutAllFiles(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 11912ms
+Test suite progress: tests succeeded: 49, failed: 6, skipped: 4.
+Starting test testPutAllStrings(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testListContainerMarker(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 35670ms
+Test suite progress: tests succeeded: 50, failed: 6, skipped: 4.
+Starting test testListContainerMaxResults(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test testBigFileGets(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 50465ms
+Test suite progress: tests succeeded: 51, failed: 6, skipped: 4.
+Starting test testCreateBlobWithExpiry(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testCopyObject(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 14605ms
+Test suite progress: tests succeeded: 52, failed: 6, skipped: 4.
+Starting test testCopyWithMetadata(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testPutAllStrings(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 10806ms
+Test suite progress: tests succeeded: 53, failed: 6, skipped: 4.
+Starting test testPutBytes(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testCopyWithMetadata(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 16676ms
+Test suite progress: tests succeeded: 54, failed: 6, skipped: 4.
+Starting test testMetadataContentEncoding(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testPutBytes(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 13310ms
+Test suite progress: tests succeeded: 55, failed: 6, skipped: 4.
+Starting test testPutFile(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testMetadataContentEncoding(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 7038ms
+Test suite progress: tests succeeded: 56, failed: 6, skipped: 4.
+Starting test testMetadataWithCacheControlAndContentDisposition(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testListContainerMaxResults(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 32015ms
+Test suite progress: tests succeeded: 57, failed: 6, skipped: 4.
+Starting test testListContainerPrefix(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test testMetadataWithCacheControlAndContentDisposition(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) failed.
+Test suite progress: tests succeeded: 57, failed: 7, skipped: 4.
+Starting test testPrivateAclIsDefaultForObject(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testPutFile(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 13136ms
+Test suite progress: tests succeeded: 58, failed: 7, skipped: 4.
+Starting test testPutMoreThanSingleListing(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPrivateAclIsDefaultForObject(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 8407ms
+Test suite progress: tests succeeded: 59, failed: 7, skipped: 4.
+Starting test testPublicReadOnObject(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testCreateBlobWithExpiry(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 59, failed: 8, skipped: 4.
+Starting test testGetIfMatch(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPublicReadOnObject(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 6376ms
+Test suite progress: tests succeeded: 60, failed: 8, skipped: 4.
+Starting test testPublicWriteOnObject(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testGetIfMatch(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 60, failed: 9, skipped: 4.
+Starting test testGetIfModifiedSince(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPublicWriteOnObject(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 7275ms
+Test suite progress: tests succeeded: 61, failed: 9, skipped: 4.
+Starting test testPutCannedAccessPolicyPublic(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testPutMoreThanSingleListing(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 24441ms
+Test suite progress: tests succeeded: 62, failed: 9, skipped: 4.
+Starting test testPutString(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testPutCannedAccessPolicyPublic(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) succeeded: 5792ms
+Test suite progress: tests succeeded: 63, failed: 9, skipped: 4.
+Starting test testUpdateObjectACL(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+[TestNG] Test testListContainerPrefix(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 29420ms
+Test suite progress: tests succeeded: 64, failed: 9, skipped: 4.
+Starting test testListRootUsesDelimiter(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test testDirectory(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 86825ms
+Test suite progress: tests succeeded: 65, failed: 9, skipped: 4.
+Starting test testIsEmpty(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testUpdateObjectACL(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest) failed.
+Test suite progress: tests succeeded: 65, failed: 10, skipped: 4.
+[TestNG] Test testGetIfModifiedSince(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 15739ms
+Test suite progress: tests succeeded: 66, failed: 10, skipped: 4.
+Starting test testGetIfNoneMatch(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutString(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 13195ms
+Test suite progress: tests succeeded: 67, failed: 10, skipped: 4.
+Starting test testRemove(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testIsEmpty(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 9983ms
+Test suite progress: tests succeeded: 68, failed: 10, skipped: 4.
+Starting test testKeySet(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testKeySet(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 9733ms
+Test suite progress: tests succeeded: 69, failed: 10, skipped: 4.
+Starting test testListContainer(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest)
+[TestNG] Test testRemove(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 12325ms
+Test suite progress: tests succeeded: 70, failed: 10, skipped: 4.
+Starting test testValues(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testGetIfNoneMatch(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 20244ms
+Test suite progress: tests succeeded: 71, failed: 10, skipped: 4.
+Starting test testGetIfUnmodifiedSince(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testListRootUsesDelimiter(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 28957ms
+Test suite progress: tests succeeded: 72, failed: 10, skipped: 4.
+Starting test testPutTwiceIsOkAndDoesntOverwrite(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest) succeeded: 6161ms
+Test suite progress: tests succeeded: 73, failed: 10, skipped: 4.
+[TestNG] Test testValues(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 8931ms
+Test suite progress: tests succeeded: 74, failed: 10, skipped: 4.
+Starting test testClear(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testGetIfUnmodifiedSince(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 74, failed: 11, skipped: 4.
+Starting test testGetRange(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutTwiceIsOkAndDoesntOverwrite(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 7876ms
+Test suite progress: tests succeeded: 75, failed: 11, skipped: 4.
+Starting test testWithDetails(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest)
+[TestNG] Test testClear(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 11451ms
+Test suite progress: tests succeeded: 76, failed: 11, skipped: 4.
+Starting test testContainsKey(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testWithDetails(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageContainerIntegrationLiveTest) succeeded: 8676ms
+Test suite progress: tests succeeded: 77, failed: 11, skipped: 4.
+[TestNG] Test testGetRange(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 10852ms
+Test suite progress: tests succeeded: 78, failed: 11, skipped: 4.
+Starting test testGetTwoRanges(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testContainsKey(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 8049ms
+Test suite progress: tests succeeded: 79, failed: 11, skipped: 4.
+Starting test testDirectory(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testGetTwoRanges(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 79, failed: 12, skipped: 4.
+Starting test testMetadata(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testMetadata(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 10504ms
+Test suite progress: tests succeeded: 80, failed: 12, skipped: 4.
+Starting test testPutFileParallel(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutFileParallel(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 35505ms
+Test suite progress: tests succeeded: 81, failed: 12, skipped: 4.
+Starting test testPutObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 81, failed: 13, skipped: 4.
+Starting test testPutObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 81, failed: 14, skipped: 4.
+Starting test testPutObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) failed.
+Test suite progress: tests succeeded: 81, failed: 15, skipped: 4.
+Starting test testPutObjectStream(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+[TestNG] Test testPutObjectStream(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest) succeeded: 5362ms
+Test suite progress: tests succeeded: 82, failed: 15, skipped: 4.
+[TestNG] Test testDirectory(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 76958ms
+Test suite progress: tests succeeded: 83, failed: 15, skipped: 4.
+Starting test testIsEmpty(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testIsEmpty(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 8059ms
+Test suite progress: tests succeeded: 84, failed: 15, skipped: 4.
+Starting test testKeySet(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testKeySet(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 9989ms
+Test suite progress: tests succeeded: 85, failed: 15, skipped: 4.
+Starting test testListContainer(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest) succeeded: 6151ms
+Test suite progress: tests succeeded: 86, failed: 15, skipped: 4.
+Tests run: 105, Failures: 15, Errors: 0, Skipped: 4, Time elapsed: 515.886 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testContains(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobMapIntegrationLiveTest): request GET https://adriancole-blobstore2.s.greenqloud.com/one HTTP/1.1 failed with code 503, error: AWSError{requestId='null', requestToken='null', code='ServiceUnavailable', message='', context='{BucketName=adriancole-blobstore2}'}
+  blobNotFound(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest): request: HEAD https://adriancole-blobstore5.s.greenqloud.com/test HTTP/1.1 failed with response: HTTP/1.1 503 Service Unavailable
+  testContainsBytesValue(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest): request: HEAD https://adriancole-blobstore5.s.greenqloud.com/one HTTP/1.1 failed with response: HTTP/1.1 503 Service Unavailable
+  testContainsInputStreamValue(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageInputStreamMapIntegrationLiveTest): request: HEAD https://adriancole-blobstore7.s.greenqloud.com/one HTTP/1.1 failed with response: HTTP/1.1 503 Service Unavailable
+  testCopyIfMatch(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest): request PUT https://adriancole-blobstore2.s.greenqloud.com/pears HTTP/1.1 failed with code 412, error: AWSError{requestId='null', requestToken='null', code='PreconditionFailed', message='', context='{BucketName=adriancole-blobstore2}'}
+  testCopyIfUnmodifiedSince(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest): request PUT https://adriancole-blobstore13.s.greenqloud.com/pears HTTP/1.1 failed with code 412, error: AWSError{requestId='null', requestToken='null', code='PreconditionFailed', message='', context='{BucketName=adriancole-blobstore13}'}
+  testMetadataWithCacheControlAndContentDisposition(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest)
+  testCreateBlobWithExpiry(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest): expires=null; expected=Mon Sep 17 09:04:40 PDT 2012
+  testGetIfMatch(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest): request GET https://adriancole-blobstore2.s.greenqloud.com/apples HTTP/1.1 failed with code 412, error: AWSError{requestId='null', requestToken='null', code='PreconditionFailed', message='', context='{BucketName=adriancole-blobstore2}'}
+  testUpdateObjectACL(org.jclouds.greenqloud.storage.GreenQloudStorageClientLiveTest): request PUT https://adriancole-blobstore7.s.greenqloud.com/private-acl?acl HTTP/1.1 failed with code 400, error: AWSError{requestId='null', requestToken='null', code='MalformedAclError', message='', context='{BucketName=adriancole-blobstore7}'}
+  testGetIfUnmodifiedSince(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest): request GET https://adriancole-blobstore13.s.greenqloud.com/apples HTTP/1.1 failed with code 412, error: AWSError{requestId='null', requestToken='null', code='PreconditionFailed', message='', context='{BucketName=adriancole-blobstore13}'}
+  testGetTwoRanges(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest): request GET https://adriancole-blobstore13.s.greenqloud.com/apples HTTP/1.1 failed with code 416, error: AWSError{requestId='null', requestToken='null', code='Requested Range Not Satisfiable', message=''
+  testPutObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+  testPutObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+  testPutObject(org.jclouds.greenqloud.storage.blobstore.GreenQloudStorageBlobIntegrationLiveTest)
+
+Tests run: 105, Failures: 15, Errors: 0, Skipped: 4
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8:49.958s
+[INFO] Finished at: Mon Sep 17 09:07:10 PDT 2012
+[INFO] Final Memory: 17M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project greenqloud-storage: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/labs/greenqloud-storage/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

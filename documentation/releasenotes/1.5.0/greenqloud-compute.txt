@@ -1,0 +1,194 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:greenqloud-compute:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Greenqloud compute provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ greenqloud-compute ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/greenqloud-compute/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ greenqloud-compute ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ greenqloud-compute ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ greenqloud-compute ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ greenqloud-compute ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ greenqloud-compute ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/greenqloud-compute/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ greenqloud-compute ---
+[INFO] Compiling 3 source files to /Users/adriancole/workspace/git/jclouds/labs/greenqloud-compute/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ greenqloud-compute ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/greenqloud-compute/src/test/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ greenqloud-compute ---
+[INFO] Compiling 12 source files to /Users/adriancole/workspace/git/jclouds/labs/greenqloud-compute/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ greenqloud-compute ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/greenqloud-compute/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@522a4983
+Starting test testAllContains(org.jclouds.greenqloud.compute.GreenQloudComputeProviderTest)
+[pool-2-thread-1] Test testAllContains(org.jclouds.greenqloud.compute.GreenQloudComputeProviderTest) succeeded: 14ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.greenqloud.compute.GreenQloudComputeProviderTest)
+Starting test testOfApiContains(org.jclouds.greenqloud.compute.GreenQloudComputeProviderTest)
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.greenqloud.compute.GreenQloudComputeProviderTest) succeeded: 4ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.greenqloud.compute.GreenQloudComputeProviderTest) succeeded: 6ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.greenqloud.compute.GreenQloudComputeProviderTest)
+[pool-2-thread-4] Test testWithId(org.jclouds.greenqloud.compute.GreenQloudComputeProviderTest) succeeded: 4ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test test(org.jclouds.greenqloud.compute.parse.DescribeRegionsResponseHandlerTest)
+[pool-3-thread-1] Test test(org.jclouds.greenqloud.compute.parse.DescribeRegionsResponseHandlerTest) succeeded: 67ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testParseGreenQloudImage(org.jclouds.greenqloud.compute.strategy.GreenQloudComputeReviseParsedImageTest)
+[pool-4-thread-1] Test testParseGreenQloudImage(org.jclouds.greenqloud.compute.strategy.GreenQloudComputeReviseParsedImageTest) succeeded: 648ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.172 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ greenqloud-compute ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ greenqloud-compute ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/greenqloud-compute/target/greenqloud-compute-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ greenqloud-compute ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/greenqloud-compute/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@31f26605
+Starting test testCreateAndListEBSBackedImage(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest)
+[TestNG] Test testCreateAndListEBSBackedImage(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest) failed.
+Test suite progress: tests succeeded: 0, failed: 1, skipped: 0.
+Starting test testDescribeImageBadId(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest)
+[TestNG] Test testDescribeImageBadId(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest) failed.
+Test suite progress: tests succeeded: 0, failed: 2, skipped: 0.
+Starting test testDescribeImageNotExists(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest)
+[TestNG] Test testDescribeImageNotExists(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest) succeeded: 900ms
+Test suite progress: tests succeeded: 1, failed: 2, skipped: 0.
+Starting test testDescribeImages(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest)
+[TestNG] Test testDescribeImages(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest) succeeded: 2041ms
+Test suite progress: tests succeeded: 2, failed: 2, skipped: 0.
+[TestNG] Test testGetLaunchPermissionForImage(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 2, skipped: 1.
+Starting test testDescribeAvailabilityZones(org.jclouds.greenqloud.compute.services.GreenQloudAvailabilityZoneAndRegionClientLiveTest)
+[TestNG] Test testDescribeAvailabilityZones(org.jclouds.greenqloud.compute.services.GreenQloudAvailabilityZoneAndRegionClientLiveTest) succeeded: 2693ms
+Test suite progress: tests succeeded: 3, failed: 2, skipped: 1.
+Starting test testDescribeRegions(org.jclouds.greenqloud.compute.services.GreenQloudAvailabilityZoneAndRegionClientLiveTest)
+[TestNG] Test testDescribeRegions(org.jclouds.greenqloud.compute.services.GreenQloudAvailabilityZoneAndRegionClientLiveTest) succeeded: 1760ms
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 1.
+Starting test testAttachVolumeInRegion(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest)
+[TestNG] Test testAttachVolumeInRegion(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 2.
+Starting test testCreateVolumeInAvailabilityZone(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest)
+[TestNG] Test testCreateVolumeInAvailabilityZone(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 3.
+Starting test testDescribeSnapshots(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest)
+[TestNG] Test testDescribeSnapshots(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 4.
+Starting test testDescribeVolumes(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest)
+[TestNG] Test testDescribeVolumes(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 5.
+Starting test testDetachVolumeInRegion(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest)
+[TestNG] Test testDetachVolumeInRegion(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 6.
+[TestNG] Test testCreateSnapshotInRegion(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 7.
+[TestNG] Test testCreateVolumeFromSnapshotInAvailabilityZone(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 8.
+[TestNG] Test testCreateVolumeFromSnapshotInAvailabilityZoneWithSize(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 9.
+[TestNG] Test testDeleteVolumeInRegion(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 10.
+[TestNG] Test testGetCreateVolumePermissionForSnapshot(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 11.
+[TestNG] Test testDeleteSnapshotInRegion(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 2, skipped: 12.
+Starting test testDescribeAddresses(org.jclouds.greenqloud.compute.services.GreenQloudElasticIPAddressClientLiveTest)
+[TestNG] Test testDescribeAddresses(org.jclouds.greenqloud.compute.services.GreenQloudElasticIPAddressClientLiveTest) succeeded: 1882ms
+Test suite progress: tests succeeded: 5, failed: 2, skipped: 12.
+Starting test testDescribeInstances(org.jclouds.greenqloud.compute.services.GreenQloudInstanceClientLiveTest)
+[TestNG] Test testDescribeInstances(org.jclouds.greenqloud.compute.services.GreenQloudInstanceClientLiveTest) succeeded: 2110ms
+Test suite progress: tests succeeded: 6, failed: 2, skipped: 12.
+Starting test testCreateKeyPair(org.jclouds.greenqloud.compute.services.GreenQloudKeyPairClientLiveTest)
+[TestNG] Test testCreateKeyPair(org.jclouds.greenqloud.compute.services.GreenQloudKeyPairClientLiveTest) failed.
+Test suite progress: tests succeeded: 6, failed: 3, skipped: 12.
+Starting test testDescribeKeyPairs(org.jclouds.greenqloud.compute.services.GreenQloudKeyPairClientLiveTest)
+[TestNG] Test testDescribeKeyPairs(org.jclouds.greenqloud.compute.services.GreenQloudKeyPairClientLiveTest) succeeded: 2914ms
+Test suite progress: tests succeeded: 7, failed: 3, skipped: 12.
+Starting test testAuthorizeSecurityGroupIngressCidr(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest)
+[TestNG] Test testAuthorizeSecurityGroupIngressCidr(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest) succeeded: 10327ms
+Test suite progress: tests succeeded: 8, failed: 3, skipped: 12.
+Starting test testAuthorizeSecurityGroupIngressSourceGroup(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest)
+[TestNG] Test testAuthorizeSecurityGroupIngressSourceGroup(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest) failed.
+Test suite progress: tests succeeded: 8, failed: 4, skipped: 12.
+Starting test testAuthorizeSecurityGroupIngressSourcePort(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest)
+[TestNG] Test testAuthorizeSecurityGroupIngressSourcePort(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest) succeeded: 8525ms
+Test suite progress: tests succeeded: 9, failed: 4, skipped: 12.
+Starting test testCreateSecurityGroup(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest)
+[TestNG] Test testCreateSecurityGroup(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest) succeeded: 6568ms
+Test suite progress: tests succeeded: 10, failed: 4, skipped: 12.
+Starting test testDescribe(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest)
+[TestNG] Test testDescribe(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest) succeeded: 1815ms
+Test suite progress: tests succeeded: 11, failed: 4, skipped: 12.
+Tests run: 28, Failures: 5, Errors: 0, Skipped: 12, Time elapsed: 239.589 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testCreateAndListEBSBackedImage(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest): device: /dev/sda1 not present on: RunningInstance{region=is-1, availabilityZone=is-1a, id=i-19aed8fd, state=running, type=m1.small, virtualizationType=paravirtual, imageId=qmi-9ac92558, ipAddress=46.149.22.139, dnsName=i-46-149-22-139.compute.is-1.greenqloud.com, privateIpAddress=10.1.1.42, keyName=default, groupNames=[default], launchTime=Mon Sep 17 08:58:37 PDT 2012, rootDeviceName=/dev/vda, rootDeviceType=ebs, ebsBlockDevices={/dev/vda=[volumeId=vol-d72efbd1, attachmentStatus=attached, attachTime=Mon Sep 17 08:58:37 PDT 2012, deleteOnTermination=false]}} expected object to not be null
+  testDescribeImageBadId(org.jclouds.greenqloud.compute.services.GreenQloudAMIClientLiveTest): (..)
+  setupContext(org.jclouds.greenqloud.compute.services.GreenQloudElasticBlockStoreClientLiveTest): region of AvailabilityZoneInfo [messages=[], region=, state=available, zone=is-1a]
+  testCreateKeyPair(org.jclouds.greenqloud.compute.services.GreenQloudKeyPairClientLiveTest): A key pair with name 'adriancole-ec21' does not exist.
+  testAuthorizeSecurityGroupIngressSourceGroup(org.jclouds.greenqloud.compute.services.GreenQloudSecurityGroupClientLiveTest): expected:<adriancole-ec2ingress1> but was:<adriancole-ec2ingress2>
+
+Tests run: 28, Failures: 5, Errors: 0, Skipped: 12
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4:17.366s
+[INFO] Finished at: Mon Sep 17 09:02:25 PDT 2012
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project greenqloud-compute: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/labs/greenqloud-compute/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
