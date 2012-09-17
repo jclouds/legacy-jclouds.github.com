@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 1.84 sec <<< FAILURE!
-setupContext(org.jclouds.rackspace.cloudloadbalancers.CloudLoadBalancersUKLoadBalancerClientLiveTest)  Time elapsed: 0.144 sec  <<< FAILURE!
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 3.157 sec <<< FAILURE!
+setupContext(org.jclouds.rackspace.cloudloadbalancers.CloudLoadBalancersUKLoadBalancerClientLiveTest)  Time elapsed: 0.163 sec  <<< FAILURE!
 java.lang.AssertionError: null: lists don't have the same size expected:<1> but was:<0>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
@@ -16,13 +16,13 @@ java.lang.AssertionError: null: lists don't have the same size expected:<1> but 
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
 	at java.lang.reflect.Method.invoke(Method.java:597)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:701)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:893)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1218)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:758)
-	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
@@ -32,7 +32,7 @@ java.lang.AssertionError: null: lists don't have the same size expected:<1> but 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
 	at java.lang.Thread.run(Thread.java:680)
-testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.CloudLoadBalancersUKNodeClientLiveTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.CloudLoadBalancersUKNodeClientLiveTest)  Time elapsed: 0.004 sec  <<< FAILURE!
 java.lang.AssertionError: Need to have some regions! expected:<true> but was:<false>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
@@ -43,13 +43,13 @@ java.lang.AssertionError: Need to have some regions! expected:<true> but was:<fa
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
 	at java.lang.reflect.Method.invoke(Method.java:597)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:701)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:893)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1218)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:758)
-	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
