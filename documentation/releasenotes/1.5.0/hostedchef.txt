@@ -1,0 +1,86 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:hostedchef:jar:1.5.0
+[WARNING] 'parent.relativePath' of POM org.jclouds.chef:chef-parent:1.5.0 (/opt/src/jclouds-chef/project/pom.xml) points at org.jclouds.chef:chef-project instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds.chef:chef-parent:1.5.0, /opt/src/jclouds-chef/project/pom.xml, line 24, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JClouds Chef :: Hosted Chef 1.5.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ hostedchef ---
+[INFO] Deleting /opt/src/jclouds-chef/labs/hostedchef/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0-beta-1:enforce (enforce-maven) @ hostedchef ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ hostedchef ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ hostedchef ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ hostedchef ---
+[INFO] Compiling 1 source file to /opt/src/jclouds-chef/labs/hostedchef/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ hostedchef ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /opt/src/jclouds-chef/labs/hostedchef/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ hostedchef ---
+[INFO] Compiling 2 source files to /opt/src/jclouds-chef/labs/hostedchef/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ hostedchef ---
+[INFO] Surefire report directory: /opt/src/jclouds-chef/labs/hostedchef/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running Unit and Performance Tests
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@24a37368
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.812 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ hostedchef ---
+[INFO] Building jar: /opt/src/jclouds-chef/labs/hostedchef/target/hostedchef.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ hostedchef ---
+[INFO] Building jar: /opt/src/jclouds-chef/labs/hostedchef/target/hostedchef-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ hostedchef ---
+[INFO] Surefire report directory: /opt/src/jclouds-chef/labs/hostedchef/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running Live Integration Tests
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@24a37368
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 96.69 sec
+
+Results :
+
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ hostedchef ---
+[INFO] Installing /opt/src/jclouds-chef/labs/hostedchef/target/hostedchef.jar to /home/ibarrera/.m2/repository/org/jclouds/labs/hostedchef/1.5.0/hostedchef-1.5.0.jar
+[INFO] Installing /opt/src/jclouds-chef/labs/hostedchef/pom.xml to /home/ibarrera/.m2/repository/org/jclouds/labs/hostedchef/1.5.0/hostedchef-1.5.0.pom
+[INFO] Installing /opt/src/jclouds-chef/labs/hostedchef/target/hostedchef-tests.jar to /home/ibarrera/.m2/repository/org/jclouds/labs/hostedchef/1.5.0/hostedchef-1.5.0-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1:44.926s
+[INFO] Finished at: Mon Sep 17 17:38:07 CEST 2012
+[INFO] Final Memory: 17M/618M
+[INFO] ------------------------------------------------------------------------

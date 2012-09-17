@@ -1,0 +1,86 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:privatechef:jar:1.5.0
+[WARNING] 'parent.relativePath' of POM org.jclouds.chef:chef-parent:1.5.0 (/opt/src/jclouds-chef/project/pom.xml) points at org.jclouds.chef:chef-project instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds.chef:chef-parent:1.5.0, /opt/src/jclouds-chef/project/pom.xml, line 24, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JClouds Chef :: Private Chef 1.5.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ privatechef ---
+[INFO] Deleting /opt/src/jclouds-chef/labs/privatechef/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0-beta-1:enforce (enforce-maven) @ privatechef ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ privatechef ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ privatechef ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ privatechef ---
+[INFO] Compiling 12 source files to /opt/src/jclouds-chef/labs/privatechef/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ privatechef ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ privatechef ---
+[INFO] Compiling 5 source files to /opt/src/jclouds-chef/labs/privatechef/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ privatechef ---
+[INFO] Surefire report directory: /opt/src/jclouds-chef/labs/privatechef/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running Unit and Performance Tests
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@46ae506e
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.382 sec
+
+Results :
+
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ privatechef ---
+[INFO] Building jar: /opt/src/jclouds-chef/labs/privatechef/target/privatechef.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ privatechef ---
+[INFO] Building jar: /opt/src/jclouds-chef/labs/privatechef/target/privatechef-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ privatechef ---
+[INFO] Surefire report directory: /opt/src/jclouds-chef/labs/privatechef/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running Live Integration Tests
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@46ae506e
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 84.376 sec
+
+Results :
+
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ privatechef ---
+[INFO] Installing /opt/src/jclouds-chef/labs/privatechef/target/privatechef.jar to /home/ibarrera/.m2/repository/org/jclouds/labs/privatechef/1.5.0/privatechef-1.5.0.jar
+[INFO] Installing /opt/src/jclouds-chef/labs/privatechef/pom.xml to /home/ibarrera/.m2/repository/org/jclouds/labs/privatechef/1.5.0/privatechef-1.5.0.pom
+[INFO] Installing /opt/src/jclouds-chef/labs/privatechef/target/privatechef-tests.jar to /home/ibarrera/.m2/repository/org/jclouds/labs/privatechef/1.5.0/privatechef-1.5.0-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1:53.466s
+[INFO] Finished at: Mon Sep 17 17:41:06 CEST 2012
+[INFO] Final Memory: 16M/490M
+[INFO] ------------------------------------------------------------------------
