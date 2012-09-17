@@ -1,0 +1,200 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:openstack-swift:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud openstack-swift api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ openstack-swift ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/openstack-swift/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ openstack-swift ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ openstack-swift ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ openstack-swift ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ openstack-swift ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ openstack-swift ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/openstack-swift/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ openstack-swift ---
+[INFO] Compiling 16 source files to /Users/adriancole/workspace/git/jclouds/labs/openstack-swift/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ openstack-swift ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/openstack-swift/src/test/clojure
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ openstack-swift ---
+[INFO] Compiling 15 source files to /Users/adriancole/workspace/git/jclouds/labs/openstack-swift/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ openstack-swift ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/openstack-swift/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@31f26605
+Starting test testGetAccountMetadataWhenResponseIs2xx(org.jclouds.openstack.swift.v1.features.AccountApiExpectTest)
+[pool-2-thread-1] Test testGetAccountMetadataWhenResponseIs2xx(org.jclouds.openstack.swift.v1.features.AccountApiExpectTest) succeeded: 1703ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testListContainersWhenResponseIs404(org.jclouds.openstack.swift.v1.features.ContainerApiExpectTest)
+Starting test testListContainersWhenResponseIs2xx(org.jclouds.openstack.swift.v1.features.ContainerApiExpectTest)
+[pool-3-thread-1] Test testListContainersWhenResponseIs2xx(org.jclouds.openstack.swift.v1.features.ContainerApiExpectTest) succeeded: 350ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-3-thread-2] Test testListContainersWhenResponseIs404(org.jclouds.openstack.swift.v1.features.ContainerApiExpectTest) succeeded: 358ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testAssignability(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest)
+[pool-4-thread-1] Test testAssignability(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testLimitStatic(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest)
+Starting test testMarkerNPE(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest)
+Starting test testLimitNegative(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest)
+[pool-4-thread-3] Test testLimitNegative(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[pool-4-thread-4] Test testLimitStatic(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-4-thread-1] Test testMarkerNPE(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testNullLimit(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest)
+Starting test testNoOptionsQueryString(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest)
+[pool-4-thread-1] Test testNullLimit(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-4-thread-4] Test testNoOptionsQueryString(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testMarkerStatic(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest)
+[pool-4-thread-3] Test testMarkerStatic(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testLimit(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest)
+[pool-4-thread-2] Test testLimit(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testNullMarker(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest)
+[pool-4-thread-1] Test testNullMarker(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testMarker(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest)
+[pool-4-thread-5] Test testMarker(org.jclouds.openstack.swift.v1.options.ListContainersOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test test(org.jclouds.openstack.swift.v1.parse.ParseContainerListTest)
+[pool-5-thread-1] Test test(org.jclouds.openstack.swift.v1.parse.ParseContainerListTest) succeeded: 11ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testListContainersWhenResponseIs2xx(org.jclouds.openstack.swift.v1.PasswordAuthenticationExpectTest)
+[pool-6-thread-1] Test testListContainersWhenResponseIs2xx(org.jclouds.openstack.swift.v1.PasswordAuthenticationExpectTest) succeeded: 160ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.openstack.swift.v1.SwiftApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.openstack.swift.v1.SwiftApiMetadataTest)
+[pool-7-thread-2] Test testTransformableToContains(org.jclouds.openstack.swift.v1.SwiftApiMetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.openstack.swift.v1.SwiftApiMetadataTest)
+[pool-7-thread-3] Test testWithId(org.jclouds.openstack.swift.v1.SwiftApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+[pool-7-thread-1] Test testAllContains(org.jclouds.openstack.swift.v1.SwiftApiMetadataTest) succeeded: 11ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test test404SetsContainerNotFoundExceptionSwift(org.jclouds.openstack.swift.v1.SwiftErrorHandlerTest)
+Starting test test404SetsContainerNotFoundExceptionMosso(org.jclouds.openstack.swift.v1.SwiftErrorHandlerTest)
+Starting test test404SetsKeyNotFoundExceptionSwift(org.jclouds.openstack.swift.v1.SwiftErrorHandlerTest)
+Starting test test404SetsKeyNotFoundExceptionMosso(org.jclouds.openstack.swift.v1.SwiftErrorHandlerTest)
+[pool-8-thread-3] Test test404SetsKeyNotFoundExceptionMosso(org.jclouds.openstack.swift.v1.SwiftErrorHandlerTest) succeeded: 11ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+[pool-8-thread-4] Test test404SetsKeyNotFoundExceptionSwift(org.jclouds.openstack.swift.v1.SwiftErrorHandlerTest) succeeded: 16ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+[pool-8-thread-2] Test test404SetsContainerNotFoundExceptionSwift(org.jclouds.openstack.swift.v1.SwiftErrorHandlerTest) succeeded: 31ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+[pool-8-thread-1] Test test404SetsContainerNotFoundExceptionMosso(org.jclouds.openstack.swift.v1.SwiftErrorHandlerTest) succeeded: 28ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.94 sec
+
+Results :
+
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ openstack-swift ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ openstack-swift ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/openstack-swift/target/openstack-swift-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ openstack-swift ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/openstack-swift/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@1cc7b00c
+09:08:09,849 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+09:08:09,849 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+09:08:09,849 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/adriancole/workspace/git/jclouds/labs/openstack-swift/target/test-classes/logback.xml]
+09:08:09,850 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+09:08:09,850 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/Users/adriancole/workspace/git/jclouds/labs/openstack-swift/target/test-classes/logback.xml]
+09:08:09,850 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/api/openstack-keystone/1.6.0-SNAPSHOT/openstack-keystone-1.6.0-SNAPSHOT-tests.jar!/logback.xml]
+09:08:09,909 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+09:08:09,910 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+09:08:09,914 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+09:08:09,936 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+09:08:09,966 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/test-data/jclouds.log]
+09:08:09,967 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+09:08:09,967 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [WIREFILE]
+09:08:09,967 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+09:08:09,968 |-INFO in ch.qos.logback.core.FileAppender[WIREFILE] - File property is set to [target/test-data/jclouds-wire.log]
+09:08:09,968 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+09:08:09,968 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [BLOBSTOREFILE]
+09:08:09,968 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+09:08:09,969 |-INFO in ch.qos.logback.core.FileAppender[BLOBSTOREFILE] - File property is set to [target/test-data/jclouds-blobstore.log]
+09:08:09,969 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - ROOT level set to WARN
+09:08:09,969 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.jclouds level set to DEBUG
+09:08:09,969 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[org.jclouds]
+09:08:09,970 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.wire level set to DEBUG
+09:08:09,970 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.wire]
+09:08:09,970 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.headers level set to DEBUG
+09:08:09,970 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.headers]
+09:08:09,970 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.blobstore level set to DEBUG
+09:08:09,970 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [BLOBSTOREFILE] to Logger[jclouds.blobstore]
+09:08:09,971 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@49f8d077 - Registering current configuration as safe fallback point
+
+Starting test testGetAccountMetadata(org.jclouds.openstack.swift.v1.features.AccountApiLiveTest)
+[TestNG] Test testGetAccountMetadata(org.jclouds.openstack.swift.v1.features.AccountApiLiveTest) failed.
+Test suite progress: tests succeeded: 0, failed: 1, skipped: 0.
+Starting test testListContainers(org.jclouds.openstack.swift.v1.features.ContainerApiLiveTest)
+[TestNG] Test testListContainers(org.jclouds.openstack.swift.v1.features.ContainerApiLiveTest) succeeded: 1925ms
+Test suite progress: tests succeeded: 1, failed: 1, skipped: 0.
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.185 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testGetAccountMetadata(org.jclouds.openstack.swift.v1.features.AccountApiLiveTest)
+
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.325s
+[INFO] Finished at: Mon Sep 17 09:08:12 PDT 2012
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project openstack-swift: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/jclouds/labs/openstack-swift/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
