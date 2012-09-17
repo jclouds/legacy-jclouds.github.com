@@ -1,0 +1,2092 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:abiquo:bundle:1.5.0
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.0 (/home/ibarrera/workspace/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.0, /home/ibarrera/workspace/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Abiquo api 1.5.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ abiquo ---
+[INFO] Deleting /home/ibarrera/workspace/jclouds/labs/abiquo/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ abiquo ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ abiquo ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ abiquo ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ abiquo ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ abiquo ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ibarrera/workspace/jclouds/labs/abiquo/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ abiquo ---
+[INFO] Compiling 259 source files to /home/ibarrera/workspace/jclouds/labs/abiquo/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ abiquo ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ abiquo ---
+[INFO] Compiling 136 source files to /home/ibarrera/workspace/jclouds/labs/abiquo/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ abiquo ---
+[INFO] Surefire report directory: /home/ibarrera/workspace/jclouds/labs/abiquo/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@7e0c2ff5
+Starting test testGetRoleFromUser(org.jclouds.abiquo.features.AdminAsyncApiTest)
+Starting test testDeleteRole(org.jclouds.abiquo.features.AdminAsyncApiTest)
+Starting test testGetCurrentUser(org.jclouds.abiquo.features.AdminAsyncApiTest)
+Starting test testGetRoleById(org.jclouds.abiquo.features.AdminAsyncApiTest)
+Starting test testCreateRole(org.jclouds.abiquo.features.AdminAsyncApiTest)
+[pool-2-thread-4] Test testGetRoleById(org.jclouds.abiquo.features.AdminAsyncApiTest) succeeded: 86ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testListPrivilegesByRoles(org.jclouds.abiquo.features.AdminAsyncApiTest)
+[pool-2-thread-5] Test testGetRoleFromUser(org.jclouds.abiquo.features.AdminAsyncApiTest) succeeded: 94ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testListRoles(org.jclouds.abiquo.features.AdminAsyncApiTest)
+[pool-2-thread-2] Test testDeleteRole(org.jclouds.abiquo.features.AdminAsyncApiTest) succeeded: 98ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testUpdateRole(org.jclouds.abiquo.features.AdminAsyncApiTest)
+[pool-2-thread-5] Test testListRoles(org.jclouds.abiquo.features.AdminAsyncApiTest) succeeded: 3ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testGetCurrentUser(org.jclouds.abiquo.features.AdminAsyncApiTest) succeeded: 98ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testListPrivilegesByRoles(org.jclouds.abiquo.features.AdminAsyncApiTest) succeeded: 12ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testUpdateRole(org.jclouds.abiquo.features.AdminAsyncApiTest) succeeded: 230ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testCreateRole(org.jclouds.abiquo.features.AdminAsyncApiTest) succeeded: 334ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testAllFeaturesHaveTest(org.jclouds.abiquo.features.FeatureCoverageTest)
+[pool-4-thread-1] Test testAllFeaturesHaveTest(org.jclouds.abiquo.features.FeatureCoverageTest) succeeded: 44ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testDeleteEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+Starting test testCreateTemplateDefinitionList(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+Starting test testCreateLimits(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testDeleteEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 7ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testDeleteLimits(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testDeleteLimits(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testDeleteTemplateDefinitionList(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testDeleteTemplateDefinitionList(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testDeleteUser(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+Starting test testCreateUser(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testDeleteUser(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testGetDatacenterRepository(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testGetDatacenterRepository(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 18ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testGetEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testGetEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testGetEnterpriseProperties(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+Starting test testCreateEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testGetEnterpriseProperties(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testGetLimits(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testGetLimits(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 3ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testGetTemplateDefinitionList(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testGetTemplateDefinitionList(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testGetUser(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testGetUser(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testListAllowedDatacenters(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testListAllowedDatacenters(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testListEnterprises(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testListEnterprises(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 23ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testListEnterprisesByDatacenter(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testListEnterprisesByDatacenter(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 3ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testListEnterprisesWithOptions(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testListEnterprisesWithOptions(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testListExternalNetworks(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testListExternalNetworks(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 4ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testListLimitsEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testListLimitsEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+[pool-5-thread-4] Test testCreateUser(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 107ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testListReservedMachines(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testListReservedMachines(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testListTemplateListStatus(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+Starting test testListTemplateDefinitionLists(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-4] Test testListTemplateDefinitionLists(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testListUsers(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-4] Test testListUsers(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testListVirtualAppliances(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-4] Test testListVirtualAppliances(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testListVirtualDatacentersFromEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-4] Test testListVirtualDatacentersFromEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+[pool-5-thread-5] Test testListTemplateListStatus(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 34ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testListVirtualMachines(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testListVirtualMachines(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testListVirtualMachinesByUser(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testListVirtualMachinesByUser(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testRefreshTemplateRepository(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-5] Test testRefreshTemplateRepository(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+[pool-5-thread-2] Test testCreateLimits(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 165ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testUpdateEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+Starting test testUpdateEnterpriseProperties(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+Starting test testUpdateLimits(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-1] Test testCreateEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 192ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testUpdateTemplateDefinitionList(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-4] Test testUpdateEnterpriseProperties(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 60ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testUpdateUser(org.jclouds.abiquo.features.EnterpriseAsyncApiTest)
+[pool-5-thread-3] Test testCreateTemplateDefinitionList(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 250ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+[pool-5-thread-5] Test testUpdateLimits(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 85ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+[pool-5-thread-2] Test testUpdateEnterprise(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 135ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+[pool-5-thread-4] Test testUpdateUser(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 75ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+[pool-5-thread-1] Test testUpdateTemplateDefinitionList(org.jclouds.abiquo.features.EnterpriseAsyncApiTest) succeeded: 89ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testCreateHardDisk(org.jclouds.abiquo.features.CloudAsyncApiTest)
+Starting test testCreateVirtualDatacenter(org.jclouds.abiquo.features.CloudAsyncApiTest)
+Starting test testCreateVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest)
+Starting test testCreatePrivateNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest)
+Starting test testChangeVirtualMachineState(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-1] Test testChangeVirtualMachineState(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 85ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test testCreateVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testCreateHardDisk(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 119ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test testCreateVolume(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testCreatePrivateNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 198ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test testDeleteHardDisk(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testDeleteHardDisk(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testDeletePrivateNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testDeletePrivateNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testDeleteVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testCreateVolume(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 103ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testDeleteVirtualDatacenter(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-4] Test testCreateVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 222ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testDeleteVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-4] Test testDeleteVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testDeleteVolume(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-4] Test testDeleteVolume(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testDeployVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testDeleteVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 30ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testDeployVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testDeleteVirtualDatacenter(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 22ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testDetachAllHardDisks(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testDetachAllHardDisks(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 3ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testDetachAllVolumes(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testCreateVirtualDatacenter(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 258ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testGetDefaultNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testGetDefaultNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testGetHardDisk(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testGetHardDisk(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testGetPrivateNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testGetPrivateNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+[pool-7-thread-2] Test testDetachAllVolumes(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 7ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testGetPrivateNetworkIp(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testGetPrivateNetworkIp(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testGetStorageTier(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testGetStorageTier(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testGetVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testGetVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 2ms
+Starting test testGetVirtualApplianceState(org.jclouds.abiquo.features.CloudAsyncApiTest)
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testGetVirtualDatacenter(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testGetVirtualDatacenter(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testGetVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testGetVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+[pool-7-thread-4] Test testDeployVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 81ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+Starting test testGetVirtualMachineState(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-4] Test testGetVirtualMachineState(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+Starting test testGetVirtualMachineTemplate(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-4] Test testGetVirtualMachineTemplate(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+Starting test testGetVolume(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-4] Test testGetVolume(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Starting test testListAttachedHardDisks(org.jclouds.abiquo.features.CloudAsyncApiTest)
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+[pool-7-thread-1] Test testCreateVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 226ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+Starting test testListAttachedVolumes(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testDeployVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 88ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+Starting test testListAvailablePublicIpsWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testGetVirtualApplianceState(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 28ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+Starting test testListAvailableTemplates(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testListAvailableTemplates(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
+Starting test testListAvailableTemplatesWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testListAvailableTemplatesWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
+Starting test testListHardDisks(org.jclouds.abiquo.features.CloudAsyncApiTest)
+Starting test testListNetworkConfigurations(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testListAvailablePublicIpsWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 13ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+Starting test testListPrivateNetworkIps(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testListHardDisks(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 11ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+Starting test testListPrivateNetworkIpsWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testListPrivateNetworkIps(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+Starting test testListPrivateNetworks(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testListPrivateNetworkIpsWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+Starting test testListPurchasedPublicIpsWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-1] Test testListAttachedVolumes(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 25ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+[pool-7-thread-5] Test testListPurchasedPublicIpsWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+Starting test testListStorageTiers(org.jclouds.abiquo.features.CloudAsyncApiTest)
+Starting test testListVirtualAppliances(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testListAttachedHardDisks(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 30ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+Starting test testListVirtualDatacentersNoParams(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testListVirtualAppliances(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
+Starting test testListVirtualDatacentersParams(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testListVirtualDatacentersNoParams(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
+Starting test testListVirtualMachines(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testListVirtualMachines(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
+Starting test testListVirtualMachinesWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testListVirtualMachinesWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
+Starting test testListVolumes(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testListVolumes(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+Starting test testListVolumesWithFilterOptions(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-1] Test testListStorageTiers(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 10ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 0.
+Starting test testListVolumesWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-1] Test testListVolumesWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 0.
+Starting test testMoveVolume(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testListPrivateNetworks(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 21ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 0.
+Starting test testPurchasePublicIp(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testListVirtualDatacentersParams(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 17ms
+Test suite progress: tests succeeded: 90, failed: 0, skipped: 0.
+Starting test testRebootVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testPurchasePublicIp(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 8ms
+Test suite progress: tests succeeded: 91, failed: 0, skipped: 0.
+Starting test testReleasePublicIp(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testReleasePublicIp(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 92, failed: 0, skipped: 0.
+Starting test testReplaceHardDisks(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-4] Test testListNetworkConfigurations(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 42ms
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 0.
+Starting test testReplaceVolumes(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testListVolumesWithFilterOptions(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 52ms
+Test suite progress: tests succeeded: 94, failed: 0, skipped: 0.
+Starting test testSetDefaultNetworkExternal(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testRebootVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 48ms
+Test suite progress: tests succeeded: 95, failed: 0, skipped: 0.
+Starting test testSetDefaultNetworkInternal(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-1] Test testMoveVolume(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 75ms
+Test suite progress: tests succeeded: 96, failed: 0, skipped: 0.
+Starting test testSetGatewayNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testSetDefaultNetworkInternal(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 44ms
+Test suite progress: tests succeeded: 97, failed: 0, skipped: 0.
+Starting test testUndeployVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-4] Test testReplaceVolumes(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 78ms
+Test suite progress: tests succeeded: 98, failed: 0, skipped: 0.
+Starting test testUndeployVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-2] Test testSetDefaultNetworkExternal(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 80ms
+Test suite progress: tests succeeded: 99, failed: 0, skipped: 0.
+Starting test testUpdatePrivateNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testReplaceHardDisks(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 121ms
+Test suite progress: tests succeeded: 100, failed: 0, skipped: 0.
+Starting test testUpdateVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-1] Test testSetGatewayNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 55ms
+Test suite progress: tests succeeded: 101, failed: 0, skipped: 0.
+Starting test testUpdateVirtualDatacenter(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-5] Test testUndeployVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 37ms
+Test suite progress: tests succeeded: 102, failed: 0, skipped: 0.
+Starting test testUpdateVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-4] Test testUndeployVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 34ms
+Test suite progress: tests succeeded: 103, failed: 0, skipped: 0.
+Starting test testUpdateVirtualMachineWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-3] Test testUpdateVirtualAppliance(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 150ms
+Test suite progress: tests succeeded: 104, failed: 0, skipped: 0.
+Starting test testUpdateVolume(org.jclouds.abiquo.features.CloudAsyncApiTest)
+[pool-7-thread-4] Test testUpdateVirtualMachineWithOptions(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 131ms
+Test suite progress: tests succeeded: 105, failed: 0, skipped: 0.
+[pool-7-thread-5] Test testUpdateVirtualMachine(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 185ms
+Test suite progress: tests succeeded: 106, failed: 0, skipped: 0.
+[pool-7-thread-1] Test testUpdateVirtualDatacenter(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 208ms
+Test suite progress: tests succeeded: 107, failed: 0, skipped: 0.
+[pool-7-thread-2] Test testUpdatePrivateNetwork(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 215ms
+Test suite progress: tests succeeded: 108, failed: 0, skipped: 0.
+[pool-7-thread-3] Test testUpdateVolume(org.jclouds.abiquo.features.CloudAsyncApiTest) succeeded: 74ms
+Test suite progress: tests succeeded: 109, failed: 0, skipped: 0.
+Starting test testAddLicense(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+Starting test testGetPrivilege(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+Starting test testCreateCategory(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+Starting test testGetCategory(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+Starting test testDeleteCategory(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+[pool-9-thread-3] Test testDeleteCategory(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 3ms
+Test suite progress: tests succeeded: 110, failed: 0, skipped: 0.
+[pool-9-thread-4] Test testGetCategory(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 6ms
+Test suite progress: tests succeeded: 111, failed: 0, skipped: 0.
+Starting test testListCategories(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+[pool-9-thread-4] Test testListCategories(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 112, failed: 0, skipped: 0.
+Starting test testListLicenseWithOptions(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+[pool-9-thread-4] Test testListLicenseWithOptions(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 113, failed: 0, skipped: 0.
+Starting test testListLicenses(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+Starting test testListPrivileges(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+[pool-9-thread-3] Test testListPrivileges(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 114, failed: 0, skipped: 0.
+Starting test testListSystemProperties(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+[pool-9-thread-3] Test testListSystemProperties(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 115, failed: 0, skipped: 0.
+Starting test testListSystemPropertiesWithOptions(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+[pool-9-thread-3] Test testListSystemPropertiesWithOptions(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 116, failed: 0, skipped: 0.
+[pool-9-thread-5] Test testGetPrivilege(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 19ms
+Test suite progress: tests succeeded: 117, failed: 0, skipped: 0.
+Starting test testUpdateCategory(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+[pool-9-thread-4] Test testListLicenses(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 35ms
+Test suite progress: tests succeeded: 118, failed: 0, skipped: 0.
+Starting test testUpdateSystemProperty(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+Starting test testRemoveLicense(org.jclouds.abiquo.features.ConfigAsyncApiTest)
+[pool-9-thread-5] Test testUpdateCategory(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 36ms
+Test suite progress: tests succeeded: 119, failed: 0, skipped: 0.
+[pool-9-thread-1] Test testAddLicense(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 63ms
+Test suite progress: tests succeeded: 120, failed: 0, skipped: 0.
+[pool-9-thread-3] Test testRemoveLicense(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 17ms
+Test suite progress: tests succeeded: 121, failed: 0, skipped: 0.
+[pool-9-thread-2] Test testCreateCategory(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 74ms
+Test suite progress: tests succeeded: 122, failed: 0, skipped: 0.
+[pool-9-thread-4] Test testUpdateSystemProperty(org.jclouds.abiquo.features.ConfigAsyncApiTest) succeeded: 56ms
+Test suite progress: tests succeeded: 123, failed: 0, skipped: 0.
+Starting test testListTasksVirtualMachineTemplate(org.jclouds.abiquo.features.TaskAsyncApiTest)
+Starting test testGetTaskVirtualMachineTemplate(org.jclouds.abiquo.features.TaskAsyncApiTest)
+Starting test testListTasksVirtualMachine(org.jclouds.abiquo.features.TaskAsyncApiTest)
+Starting test testGetTaskVirtualMachine(org.jclouds.abiquo.features.TaskAsyncApiTest)
+[pool-11-thread-1] Test testGetTaskVirtualMachine(org.jclouds.abiquo.features.TaskAsyncApiTest) succeeded: 5ms
+Test suite progress: tests succeeded: 124, failed: 0, skipped: 0.
+[pool-11-thread-2] Test testGetTaskVirtualMachineTemplate(org.jclouds.abiquo.features.TaskAsyncApiTest) succeeded: 8ms
+Test suite progress: tests succeeded: 125, failed: 0, skipped: 0.
+[pool-11-thread-4] Test testListTasksVirtualMachineTemplate(org.jclouds.abiquo.features.TaskAsyncApiTest) succeeded: 9ms
+Test suite progress: tests succeeded: 126, failed: 0, skipped: 0.
+[pool-11-thread-3] Test testListTasksVirtualMachine(org.jclouds.abiquo.features.TaskAsyncApiTest) succeeded: 9ms
+Test suite progress: tests succeeded: 127, failed: 0, skipped: 0.
+Starting test testGetVirtualMachineTemplate(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest)
+Starting test testListConversions(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest)
+[pool-13-thread-4] Test testGetVirtualMachineTemplate(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest) succeeded: 4ms
+Test suite progress: tests succeeded: 128, failed: 0, skipped: 0.
+Starting test testDeleteVirtualMachineTemplate(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest)
+Starting test testGetConversion(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest)
+Starting test testCreatePersistentVirtualMachineTemplate(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest)
+Starting test testListConversionsWithOptions(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest)
+[pool-13-thread-2] Test testDeleteVirtualMachineTemplate(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest) succeeded: 3ms
+Test suite progress: tests succeeded: 129, failed: 0, skipped: 0.
+Starting test testListVirtualMachineTemplates(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest)
+[pool-13-thread-2] Test testListVirtualMachineTemplates(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 130, failed: 0, skipped: 0.
+Starting test testListVirtualMachineTemplatesWithOptions(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest)
+[pool-13-thread-2] Test testListVirtualMachineTemplatesWithOptions(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 131, failed: 0, skipped: 0.
+Starting test testRequestConversion(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest)
+[pool-13-thread-5] Test testListConversions(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest) succeeded: 22ms
+Test suite progress: tests succeeded: 132, failed: 0, skipped: 0.
+Starting test testUpdateVirtualMachineTemplate(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest)
+[pool-13-thread-3] Test testGetConversion(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest) succeeded: 13ms
+Test suite progress: tests succeeded: 133, failed: 0, skipped: 0.
+[pool-13-thread-4] Test testListConversionsWithOptions(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest) succeeded: 13ms
+Test suite progress: tests succeeded: 134, failed: 0, skipped: 0.
+[pool-13-thread-1] Test testCreatePersistentVirtualMachineTemplate(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest) succeeded: 20ms
+Test suite progress: tests succeeded: 135, failed: 0, skipped: 0.
+[pool-13-thread-2] Test testRequestConversion(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest) succeeded: 27ms
+Test suite progress: tests succeeded: 136, failed: 0, skipped: 0.
+[pool-13-thread-5] Test testUpdateVirtualMachineTemplate(org.jclouds.abiquo.features.VirtualMachineTemplateAsyncApiTest) succeeded: 77ms
+Test suite progress: tests succeeded: 137, failed: 0, skipped: 0.
+Starting test testListEvents(org.jclouds.abiquo.features.EventAsyncApiTest)
+[pool-15-thread-1] Test testListEvents(org.jclouds.abiquo.features.EventAsyncApiTest) succeeded: 10ms
+Test suite progress: tests succeeded: 138, failed: 0, skipped: 0.
+Starting test testDeleteCurrency(org.jclouds.abiquo.features.PricingAsyncApiTest)
+[pool-17-thread-1] Test testDeleteCurrency(org.jclouds.abiquo.features.PricingAsyncApiTest) succeeded: 3ms
+Test suite progress: tests succeeded: 139, failed: 0, skipped: 0.
+Starting test testGetCurrency(org.jclouds.abiquo.features.PricingAsyncApiTest)
+[pool-17-thread-1] Test testGetCurrency(org.jclouds.abiquo.features.PricingAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 140, failed: 0, skipped: 0.
+Starting test testListCurrencies(org.jclouds.abiquo.features.PricingAsyncApiTest)
+[pool-17-thread-1] Test testListCurrencies(org.jclouds.abiquo.features.PricingAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 141, failed: 0, skipped: 0.
+Starting test testCheckMachineIpmiStateWithALLOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testAssociateTemplate(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testAssociateLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testCheckMachineIpmiState(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testCancelReservation(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testCheckMachineIpmiState(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 11ms
+Test suite progress: tests succeeded: 142, failed: 0, skipped: 0.
+Starting test testCheckMachineIpmiStateWithoutOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testCheckMachineIpmiStateWithALLOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 26ms
+Test suite progress: tests succeeded: 143, failed: 0, skipped: 0.
+Starting test testCheckMachineState(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testCheckMachineIpmiStateWithoutOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 6ms
+Test suite progress: tests succeeded: 144, failed: 0, skipped: 0.
+Starting test testCheckMachineStateAllParams(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testCancelReservation(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 24ms
+Test suite progress: tests succeeded: 145, failed: 0, skipped: 0.
+Starting test testCheckMachineStateWithoutOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testCheckMachineStateWithoutOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 146, failed: 0, skipped: 0.
+Starting test testCheckTagAvailability(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testCheckMachineState(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 9ms
+Test suite progress: tests succeeded: 147, failed: 0, skipped: 0.
+Starting test testCloneAndAssociateLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testCloneAndAssociateLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 148, failed: 0, skipped: 0.
+Starting test testCloneLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-2] Test testAssociateTemplate(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 38ms
+Test suite progress: tests succeeded: 149, failed: 0, skipped: 0.
+Starting test testCreateDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testCheckMachineStateAllParams(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 17ms
+Test suite progress: tests succeeded: 150, failed: 0, skipped: 0.
+[pool-19-thread-1] Test testAssociateLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 36ms
+Test suite progress: tests succeeded: 151, failed: 0, skipped: 0.
+Starting test testCreateMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testCreateManagedRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testCloneLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 13ms
+Test suite progress: tests succeeded: 152, failed: 0, skipped: 0.
+Starting test testCreateNetwork(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testCheckTagAvailability(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 30ms
+Test suite progress: tests succeeded: 153, failed: 0, skipped: 0.
+Starting test testCreateRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testCreateRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 98ms
+Test suite progress: tests succeeded: 154, failed: 0, skipped: 0.
+Starting test testCreateRemoteService(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-2] Test testCreateDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 150ms
+Test suite progress: tests succeeded: 155, failed: 0, skipped: 0.
+Starting test testCreateStorageDevice(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testCreateNetwork(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 141ms
+Test suite progress: tests succeeded: 156, failed: 0, skipped: 0.
+Starting test testCreateStoragePool(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testCreateManagedRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 151ms
+Test suite progress: tests succeeded: 157, failed: 0, skipped: 0.
+Starting test testDeleteDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testDeleteDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 158, failed: 0, skipped: 0.
+Starting test testDeleteLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testDeleteLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 0ms
+Test suite progress: tests succeeded: 159, failed: 0, skipped: 0.
+Starting test testDeleteMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testDeleteMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 160, failed: 0, skipped: 0.
+Starting test testDeleteNetwork(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testDeleteNetwork(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 161, failed: 0, skipped: 0.
+Starting test testDeleteRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testDeleteRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 162, failed: 0, skipped: 0.
+Starting test testDeleteRemoteService(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testDeleteRemoteService(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 163, failed: 0, skipped: 0.
+Starting test testDeleteStorageDevice(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testCreateMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 189ms
+Test suite progress: tests succeeded: 164, failed: 0, skipped: 0.
+Starting test testDeleteStoragePool(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testDeleteStorageDevice(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 6ms
+Test suite progress: tests succeeded: 165, failed: 0, skipped: 0.
+Starting test testDiscoverMultipleMachinesAllParams(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testDeleteStoragePool(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 166, failed: 0, skipped: 0.
+Starting test testDiscoverMultipleMachinesWithoutOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testDiscoverMultipleMachinesAllParams(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 167, failed: 0, skipped: 0.
+Starting test testDiscoverSingleMachineAllParams(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testDiscoverMultipleMachinesWithoutOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 168, failed: 0, skipped: 0.
+Starting test testDiscoverSingleMachineDefaultValues(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testDiscoverSingleMachineAllParams(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 169, failed: 0, skipped: 0.
+Starting test testDiscoverSingleMachineWithoutOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testDiscoverSingleMachineDefaultValues(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 170, failed: 0, skipped: 0.
+Starting test testDissociateLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testDiscoverSingleMachineWithoutOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 171, failed: 0, skipped: 0.
+[pool-19-thread-4] Test testDissociateLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 172, failed: 0, skipped: 0.
+Starting test testGetDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testGetDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 173, failed: 0, skipped: 0.
+[pool-19-thread-3] Test testCreateRemoteService(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 60ms
+Test suite progress: tests succeeded: 174, failed: 0, skipped: 0.
+Starting test testGetHypervisorTypeFromMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testGetHypervisorTypeFromMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 3ms
+Starting test testGetHypervisorTypesFromDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Test suite progress: tests succeeded: 175, failed: 0, skipped: 0.
+Starting test testGetLocatorLed(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testGetLocatorLed(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 176, failed: 0, skipped: 0.
+[pool-19-thread-1] Test testGetHypervisorTypesFromDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 4ms
+Test suite progress: tests succeeded: 177, failed: 0, skipped: 0.
+Starting test testGetLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testGetLogicServer(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 178, failed: 0, skipped: 0.
+Starting test testGetMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testGetExternalIp(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-2] Test testCreateStorageDevice(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 69ms
+Test suite progress: tests succeeded: 179, failed: 0, skipped: 0.
+Starting test testGetManagedRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testCreateStoragePool(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 65ms
+Test suite progress: tests succeeded: 180, failed: 0, skipped: 0.
+Starting test testGetNetworks(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testGetNetworks(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 181, failed: 0, skipped: 0.
+Starting test testGetPublicIp(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testGetPublicIp(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 182, failed: 0, skipped: 0.
+Starting test testGetRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testGetRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 183, failed: 0, skipped: 0.
+Starting test testGetRemoteService(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testGetStorageDevice(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testGetStorageDevice(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 184, failed: 0, skipped: 0.
+Starting test testGetStoragePool(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testGetExternalIp(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 15ms
+Test suite progress: tests succeeded: 185, failed: 0, skipped: 0.
+[pool-19-thread-2] Test testGetManagedRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 14ms
+Test suite progress: tests succeeded: 186, failed: 0, skipped: 0.
+Starting test testGetTier(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testGetMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 15ms
+Test suite progress: tests succeeded: 187, failed: 0, skipped: 0.
+Starting test testGetUnmanagedIp(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-2] Test testGetTier(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 188, failed: 0, skipped: 0.
+Starting test testGetVirtualMachineByMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-2] Test testGetVirtualMachineByMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 189, failed: 0, skipped: 0.
+Starting test testIsAvailableRemoteService(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testGetRemoteService(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 12ms
+Test suite progress: tests succeeded: 190, failed: 0, skipped: 0.
+Starting test testLedOff(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testLedOn(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-2] Test testIsAvailableRemoteService(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 4ms
+Test suite progress: tests succeeded: 191, failed: 0, skipped: 0.
+[pool-19-thread-3] Test testGetStoragePool(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 7ms
+Test suite progress: tests succeeded: 192, failed: 0, skipped: 0.
+Starting test testListDatacenters(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testGetUnmanagedIp(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 7ms
+Test suite progress: tests succeeded: 193, failed: 0, skipped: 0.
+Starting test testListExternalIps(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListDatacenters(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 194, failed: 0, skipped: 0.
+Starting test testListExternalIpsWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListExternalIpsWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 195, failed: 0, skipped: 0.
+Starting test testListFsms(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListFsms(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 196, failed: 0, skipped: 0.
+Starting test testListLimitsDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListLimitsDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 197, failed: 0, skipped: 0.
+Starting test testListMachines(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListMachines(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 198, failed: 0, skipped: 0.
+Starting test testListManagedRacks(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListManagedRacks(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 199, failed: 0, skipped: 0.
+Starting test testListNetworks(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testLedOff(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 10ms
+Test suite progress: tests succeeded: 200, failed: 0, skipped: 0.
+Starting test testListNetworksWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testListOrganizations(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testListNetworksWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 201, failed: 0, skipped: 0.
+Starting test testListOrganizationsWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testListOrganizationsWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 202, failed: 0, skipped: 0.
+Starting test testListPublicIps(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testListPublicIps(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 203, failed: 0, skipped: 0.
+Starting test testListPublicIpsWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testListPublicIpsWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 204, failed: 0, skipped: 0.
+[pool-19-thread-3] Test testListNetworks(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 7ms
+Test suite progress: tests succeeded: 205, failed: 0, skipped: 0.
+Starting test testListRemoteServices(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListRemoteServices(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 206, failed: 0, skipped: 0.
+Starting test testListServiceProfileTemplates(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testListExternalIps(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 16ms
+Test suite progress: tests succeeded: 207, failed: 0, skipped: 0.
+Starting test testListServiceProfileTemplatesWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListServiceProfileTemplates(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 2ms
+Starting test testListRacks(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Test suite progress: tests succeeded: 208, failed: 0, skipped: 0.
+Starting test testListServiceProfiles(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListServiceProfiles(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 209, failed: 0, skipped: 0.
+Starting test testListServiceProfilesWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testListRacks(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 5ms
+Test suite progress: tests succeeded: 210, failed: 0, skipped: 0.
+[pool-19-thread-4] Test testLedOn(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 35ms
+Test suite progress: tests succeeded: 211, failed: 0, skipped: 0.
+Starting test testListStorageDevices(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testListStoragePoolsFromTier(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testListStorageDevices(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 212, failed: 0, skipped: 0.
+Starting test testListStoragePoolsNoParams(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testListStoragePoolsFromTier(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 213, failed: 0, skipped: 0.
+Starting test testListSupportedStorageDevices(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testListServiceProfileTemplatesWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 20ms
+Test suite progress: tests succeeded: 214, failed: 0, skipped: 0.
+Starting test testListSyncStoragePools(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testListSyncStoragePools(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 215, failed: 0, skipped: 0.
+Starting test testListTiers(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-2] Test testListOrganizations(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 29ms
+Test suite progress: tests succeeded: 216, failed: 0, skipped: 0.
+Starting test testListUnmanagedIps(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testListTiers(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 217, failed: 0, skipped: 0.
+Starting test testListUnmanagedIpsWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListServiceProfilesWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 218, failed: 0, skipped: 0.
+Starting test testListVirtualMachinesByMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testListUnmanagedIpsWithOptions(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 2ms
+Test suite progress: tests succeeded: 219, failed: 0, skipped: 0.
+Starting test testPowerOff(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testListStoragePoolsNoParams(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 8ms
+Test suite progress: tests succeeded: 220, failed: 0, skipped: 0.
+[pool-19-thread-4] Test testListSupportedStorageDevices(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 11ms
+Test suite progress: tests succeeded: 221, failed: 0, skipped: 0.
+Starting test testRefreshStoragePool(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-2] Test testListUnmanagedIps(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 7ms
+Test suite progress: tests succeeded: 222, failed: 0, skipped: 0.
+Starting test testReserveMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testRefreshStoragePool(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 1ms
+Test suite progress: tests succeeded: 223, failed: 0, skipped: 0.
+Starting test testUpdateDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+Starting test testPowerOn(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testPowerOn(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 0ms
+Test suite progress: tests succeeded: 224, failed: 0, skipped: 0.
+Starting test testUpdateMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testPowerOff(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 14ms
+Test suite progress: tests succeeded: 225, failed: 0, skipped: 0.
+Starting test testUpdateManagedRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testListVirtualMachinesByMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 17ms
+Test suite progress: tests succeeded: 226, failed: 0, skipped: 0.
+Starting test testUpdateNetwork(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testUpdateManagedRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 67ms
+Test suite progress: tests succeeded: 227, failed: 0, skipped: 0.
+Starting test testUpdateRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-4] Test testUpdateDatacenter(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 91ms
+Test suite progress: tests succeeded: 228, failed: 0, skipped: 0.
+Starting test testUpdateRemoteService(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-3] Test testUpdateNetwork(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 99ms
+Test suite progress: tests succeeded: 229, failed: 0, skipped: 0.
+Starting test testUpdateStorageDevice(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-5] Test testUpdateMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 111ms
+Test suite progress: tests succeeded: 230, failed: 0, skipped: 0.
+Starting test testUpdateStoragePool(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-2] Test testReserveMachine(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 117ms
+Test suite progress: tests succeeded: 231, failed: 0, skipped: 0.
+Starting test testUpdateTier(org.jclouds.abiquo.features.InfrastructureAsyncApiTest)
+[pool-19-thread-1] Test testUpdateRack(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 29ms
+Test suite progress: tests succeeded: 232, failed: 0, skipped: 0.
+[pool-19-thread-4] Test testUpdateRemoteService(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 44ms
+Test suite progress: tests succeeded: 233, failed: 0, skipped: 0.
+[pool-19-thread-5] Test testUpdateStoragePool(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 42ms
+Test suite progress: tests succeeded: 234, failed: 0, skipped: 0.
+[pool-19-thread-3] Test testUpdateStorageDevice(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 49ms
+Test suite progress: tests succeeded: 235, failed: 0, skipped: 0.
+[pool-19-thread-2] Test testUpdateTier(org.jclouds.abiquo.features.InfrastructureAsyncApiTest) succeeded: 55ms
+Test suite progress: tests succeeded: 236, failed: 0, skipped: 0.
+Starting test testGetNewEnpoint(org.jclouds.abiquo.binders.BindLinkToPathTest)
+[pool-21-thread-1] Test testGetNewEnpoint(org.jclouds.abiquo.binders.BindLinkToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 237, failed: 0, skipped: 0.
+Starting test testGetNewEnpointInvalidInput(org.jclouds.abiquo.binders.BindLinkToPathTest)
+[pool-21-thread-2] Test testGetNewEnpointInvalidInput(org.jclouds.abiquo.binders.BindLinkToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 238, failed: 0, skipped: 0.
+Starting test testGetNewEnpointNullInput(org.jclouds.abiquo.binders.BindLinkToPathTest)
+[pool-21-thread-3] Test testGetNewEnpointNullInput(org.jclouds.abiquo.binders.BindLinkToPathTest) succeeded: 1ms
+Test suite progress: tests succeeded: 239, failed: 0, skipped: 0.
+Starting test testAddHeader(org.jclouds.abiquo.binders.BindLinkToPathAndAcceptHeaderTest)
+[pool-22-thread-1] Test testAddHeader(org.jclouds.abiquo.binders.BindLinkToPathAndAcceptHeaderTest) succeeded: 0ms
+Test suite progress: tests succeeded: 240, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.BindLinkToPathAndAcceptHeaderTest)
+[pool-22-thread-2] Test testInvalidNullInput(org.jclouds.abiquo.binders.BindLinkToPathAndAcceptHeaderTest) succeeded: 0ms
+Test suite progress: tests succeeded: 241, failed: 0, skipped: 0.
+Starting test testGetValueWithInvalidInput(org.jclouds.abiquo.binders.infrastructure.AppendMachineIdToPathTest)
+Starting test testGetValue(org.jclouds.abiquo.binders.infrastructure.AppendMachineIdToPathTest)
+[pool-23-thread-2] Test testGetValueWithInvalidInput(org.jclouds.abiquo.binders.infrastructure.AppendMachineIdToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 242, failed: 0, skipped: 0.
+[pool-23-thread-1] Test testGetValue(org.jclouds.abiquo.binders.infrastructure.AppendMachineIdToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 243, failed: 0, skipped: 0.
+Starting test testGetValueWithNullInput(org.jclouds.abiquo.binders.infrastructure.AppendMachineIdToPathTest)
+[pool-23-thread-3] Test testGetValueWithNullInput(org.jclouds.abiquo.binders.infrastructure.AppendMachineIdToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 244, failed: 0, skipped: 0.
+Starting test testGetValue(org.jclouds.abiquo.binders.infrastructure.AppendRemoteServiceTypeToPathTest)
+[pool-24-thread-1] Test testGetValue(org.jclouds.abiquo.binders.infrastructure.AppendRemoteServiceTypeToPathTest) succeeded: 1ms
+Test suite progress: tests succeeded: 245, failed: 0, skipped: 0.
+Starting test testGetValueWithInvalidInput(org.jclouds.abiquo.binders.infrastructure.AppendRemoteServiceTypeToPathTest)
+Starting test testGetValueWithNullInput(org.jclouds.abiquo.binders.infrastructure.AppendRemoteServiceTypeToPathTest)
+[pool-24-thread-2] Test testGetValueWithInvalidInput(org.jclouds.abiquo.binders.infrastructure.AppendRemoteServiceTypeToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 246, failed: 0, skipped: 0.
+[pool-24-thread-3] Test testGetValueWithNullInput(org.jclouds.abiquo.binders.infrastructure.AppendRemoteServiceTypeToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 247, failed: 0, skipped: 0.
+Starting test testBindLogicServer(org.jclouds.abiquo.binders.infrastructure.ucs.BindLogicServerParametersTest)
+[pool-25-thread-1] Test testBindLogicServer(org.jclouds.abiquo.binders.infrastructure.ucs.BindLogicServerParametersTest) succeeded: 0ms
+Test suite progress: tests succeeded: 248, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.infrastructure.ucs.BindLogicServerParametersTest)
+Starting test testBindLogicServerWithEmptyName(org.jclouds.abiquo.binders.infrastructure.ucs.BindLogicServerParametersTest)
+[pool-25-thread-3] Test testInvalidNullInput(org.jclouds.abiquo.binders.infrastructure.ucs.BindLogicServerParametersTest) succeeded: 1ms
+Test suite progress: tests succeeded: 249, failed: 0, skipped: 0.
+[pool-25-thread-2] Test testBindLogicServerWithEmptyName(org.jclouds.abiquo.binders.infrastructure.ucs.BindLogicServerParametersTest) succeeded: 0ms
+Test suite progress: tests succeeded: 250, failed: 0, skipped: 0.
+Starting test testInvalidTypeInput(org.jclouds.abiquo.binders.infrastructure.ucs.BindLogicServerParametersTest)
+[pool-25-thread-4] Test testInvalidTypeInput(org.jclouds.abiquo.binders.infrastructure.ucs.BindLogicServerParametersTest) succeeded: 0ms
+Test suite progress: tests succeeded: 251, failed: 0, skipped: 0.
+Starting test testBindLogicServer(org.jclouds.abiquo.binders.infrastructure.ucs.BindOrganizationParametersTest)
+Starting test testBindLogicServerWithEmptyName(org.jclouds.abiquo.binders.infrastructure.ucs.BindOrganizationParametersTest)
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.infrastructure.ucs.BindOrganizationParametersTest)
+[pool-26-thread-3] Test testInvalidNullInput(org.jclouds.abiquo.binders.infrastructure.ucs.BindOrganizationParametersTest) succeeded: 1ms
+Test suite progress: tests succeeded: 252, failed: 0, skipped: 0.
+[pool-26-thread-1] Test testBindLogicServer(org.jclouds.abiquo.binders.infrastructure.ucs.BindOrganizationParametersTest) succeeded: 1ms
+Test suite progress: tests succeeded: 253, failed: 0, skipped: 0.
+[pool-26-thread-2] Test testBindLogicServerWithEmptyName(org.jclouds.abiquo.binders.infrastructure.ucs.BindOrganizationParametersTest) succeeded: 1ms
+Test suite progress: tests succeeded: 254, failed: 0, skipped: 0.
+Starting test testInvalidTypeInput(org.jclouds.abiquo.binders.infrastructure.ucs.BindOrganizationParametersTest)
+[pool-26-thread-4] Test testInvalidTypeInput(org.jclouds.abiquo.binders.infrastructure.ucs.BindOrganizationParametersTest) succeeded: 0ms
+Test suite progress: tests succeeded: 255, failed: 0, skipped: 0.
+Starting test testGetNewEnpoint(org.jclouds.abiquo.binders.infrastructure.BindSupportedDevicesLinkToPathTest)
+[pool-27-thread-1] Test testGetNewEnpoint(org.jclouds.abiquo.binders.infrastructure.BindSupportedDevicesLinkToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 256, failed: 0, skipped: 0.
+Starting test testGetNewEnpointInvalidInput(org.jclouds.abiquo.binders.infrastructure.BindSupportedDevicesLinkToPathTest)
+[pool-27-thread-2] Test testGetNewEnpointInvalidInput(org.jclouds.abiquo.binders.infrastructure.BindSupportedDevicesLinkToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 257, failed: 0, skipped: 0.
+Starting test testGetNewEnpointNullInput(org.jclouds.abiquo.binders.infrastructure.BindSupportedDevicesLinkToPathTest)
+[pool-27-thread-3] Test testGetNewEnpointNullInput(org.jclouds.abiquo.binders.infrastructure.BindSupportedDevicesLinkToPathTest) succeeded: 1ms
+Test suite progress: tests succeeded: 258, failed: 0, skipped: 0.
+Starting test testGetNewEnpointWithoutLink(org.jclouds.abiquo.binders.infrastructure.BindSupportedDevicesLinkToPathTest)
+[pool-27-thread-4] Test testGetNewEnpointWithoutLink(org.jclouds.abiquo.binders.infrastructure.BindSupportedDevicesLinkToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 259, failed: 0, skipped: 0.
+Starting test testBindNumber(org.jclouds.abiquo.binders.AppendToPathTest)
+[pool-28-thread-1] Test testBindNumber(org.jclouds.abiquo.binders.AppendToPathTest) succeeded: 1ms
+Test suite progress: tests succeeded: 260, failed: 0, skipped: 0.
+Starting test testBindString(org.jclouds.abiquo.binders.AppendToPathTest)
+[pool-28-thread-2] Test testBindString(org.jclouds.abiquo.binders.AppendToPathTest) succeeded: 1ms
+Test suite progress: tests succeeded: 261, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.AppendToPathTest)
+[pool-28-thread-3] Test testInvalidNullInput(org.jclouds.abiquo.binders.AppendToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 262, failed: 0, skipped: 0.
+Starting test testBindSingleVolume(org.jclouds.abiquo.binders.cloud.BindVirtualDatacenterRefToPayloadTest)
+[pool-29-thread-1] Test testBindSingleVolume(org.jclouds.abiquo.binders.cloud.BindVirtualDatacenterRefToPayloadTest) succeeded: 19ms
+Test suite progress: tests succeeded: 263, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindVirtualDatacenterRefToPayloadTest)
+[pool-29-thread-2] Test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindVirtualDatacenterRefToPayloadTest) succeeded: 1ms
+Test suite progress: tests succeeded: 264, failed: 0, skipped: 0.
+Starting test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindVirtualDatacenterRefToPayloadTest)
+[pool-29-thread-3] Test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindVirtualDatacenterRefToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 265, failed: 0, skipped: 0.
+Starting test testBindEmptyArray(org.jclouds.abiquo.binders.cloud.BindHardDiskRefsToPayloadTest)
+Starting test testBindMultipleHardDisks(org.jclouds.abiquo.binders.cloud.BindHardDiskRefsToPayloadTest)
+[pool-30-thread-2] Test testBindMultipleHardDisks(org.jclouds.abiquo.binders.cloud.BindHardDiskRefsToPayloadTest) succeeded: 8ms
+Starting test testBindSingleHardDisk(org.jclouds.abiquo.binders.cloud.BindHardDiskRefsToPayloadTest)
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindHardDiskRefsToPayloadTest)
+Test suite progress: tests succeeded: 266, failed: 0, skipped: 0.
+[pool-30-thread-3] Test testBindSingleHardDisk(org.jclouds.abiquo.binders.cloud.BindHardDiskRefsToPayloadTest) succeeded: 8ms
+Test suite progress: tests succeeded: 267, failed: 0, skipped: 0.
+Starting test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindHardDiskRefsToPayloadTest)
+[pool-30-thread-4] Test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindHardDiskRefsToPayloadTest) succeeded: 5ms
+Test suite progress: tests succeeded: 268, failed: 0, skipped: 0.
+[pool-30-thread-1] Test testBindEmptyArray(org.jclouds.abiquo.binders.cloud.BindHardDiskRefsToPayloadTest) succeeded: 36ms
+Test suite progress: tests succeeded: 269, failed: 0, skipped: 0.
+[pool-30-thread-5] Test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindHardDiskRefsToPayloadTest) succeeded: 1ms
+Test suite progress: tests succeeded: 270, failed: 0, skipped: 0.
+Starting test testBindIpRef(org.jclouds.abiquo.binders.cloud.BindIpRefToPayloadTest)
+[pool-31-thread-1] Test testBindIpRef(org.jclouds.abiquo.binders.cloud.BindIpRefToPayloadTest) succeeded: 7ms
+Test suite progress: tests succeeded: 271, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindIpRefToPayloadTest)
+[pool-31-thread-2] Test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindIpRefToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 272, failed: 0, skipped: 0.
+Starting test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindIpRefToPayloadTest)
+[pool-31-thread-3] Test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindIpRefToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 273, failed: 0, skipped: 0.
+Starting test testBindNetworkRef(org.jclouds.abiquo.binders.cloud.BindNetworkRefToPayloadTest)
+[pool-32-thread-1] Test testBindNetworkRef(org.jclouds.abiquo.binders.cloud.BindNetworkRefToPayloadTest) succeeded: 11ms
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindNetworkRefToPayloadTest)
+Test suite progress: tests succeeded: 274, failed: 0, skipped: 0.
+[pool-32-thread-2] Test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindNetworkRefToPayloadTest) succeeded: 1ms
+Test suite progress: tests succeeded: 275, failed: 0, skipped: 0.
+Starting test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindNetworkRefToPayloadTest)
+[pool-32-thread-3] Test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindNetworkRefToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 276, failed: 0, skipped: 0.
+Starting test testBindNetworkConfigurationRef(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest)
+Starting test testBindNetworkConfigurationRefWithoutVirtualMachine(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest)
+[pool-33-thread-2] Test testBindNetworkConfigurationRefWithoutVirtualMachine(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest) succeeded: 1ms
+Test suite progress: tests succeeded: 277, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest)
+[pool-33-thread-3] Test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 278, failed: 0, skipped: 0.
+[pool-33-thread-1] Test testBindNetworkConfigurationRef(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest) succeeded: 18ms
+Test suite progress: tests succeeded: 279, failed: 0, skipped: 0.
+Starting test testInvalidNullRequest(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest)
+[pool-33-thread-4] Test testInvalidNullRequest(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 280, failed: 0, skipped: 0.
+Starting test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest)
+Starting test testInvalidRequestType(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest)
+[pool-33-thread-5] Test testInvalidRequestType(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 281, failed: 0, skipped: 0.
+[pool-33-thread-3] Test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindNetworkConfigurationRefToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 282, failed: 0, skipped: 0.
+Starting test testBindEmptyArray(org.jclouds.abiquo.binders.cloud.BindIpRefsToPayloadTest)
+Starting test testBindMultipleIps(org.jclouds.abiquo.binders.cloud.BindIpRefsToPayloadTest)
+Starting test testBindSingleIp(org.jclouds.abiquo.binders.cloud.BindIpRefsToPayloadTest)
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindIpRefsToPayloadTest)
+[pool-34-thread-4] Test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindIpRefsToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 283, failed: 0, skipped: 0.
+Starting test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindIpRefsToPayloadTest)
+[pool-34-thread-5] Test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindIpRefsToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 284, failed: 0, skipped: 0.
+[pool-34-thread-3] Test testBindSingleIp(org.jclouds.abiquo.binders.cloud.BindIpRefsToPayloadTest) succeeded: 16ms
+Test suite progress: tests succeeded: 285, failed: 0, skipped: 0.
+[pool-34-thread-2] Test testBindMultipleIps(org.jclouds.abiquo.binders.cloud.BindIpRefsToPayloadTest) succeeded: 29ms
+Test suite progress: tests succeeded: 286, failed: 0, skipped: 0.
+[pool-34-thread-1] Test testBindEmptyArray(org.jclouds.abiquo.binders.cloud.BindIpRefsToPayloadTest) succeeded: 36ms
+Test suite progress: tests succeeded: 287, failed: 0, skipped: 0.
+Starting test testBindUnmanagedNetworkIpRef(org.jclouds.abiquo.binders.cloud.BindUnmanagedIpRefToPayloadTest)
+[pool-35-thread-1] Test testBindUnmanagedNetworkIpRef(org.jclouds.abiquo.binders.cloud.BindUnmanagedIpRefToPayloadTest) succeeded: 7ms
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindUnmanagedIpRefToPayloadTest)
+Test suite progress: tests succeeded: 288, failed: 0, skipped: 0.
+[pool-35-thread-2] Test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindUnmanagedIpRefToPayloadTest) succeeded: 1ms
+Test suite progress: tests succeeded: 289, failed: 0, skipped: 0.
+Starting test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindUnmanagedIpRefToPayloadTest)
+[pool-35-thread-3] Test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindUnmanagedIpRefToPayloadTest) succeeded: 1ms
+Test suite progress: tests succeeded: 290, failed: 0, skipped: 0.
+Starting test testBindEmptyArray(org.jclouds.abiquo.binders.cloud.BindVolumeRefsToPayloadTest)
+[pool-36-thread-1] Test testBindEmptyArray(org.jclouds.abiquo.binders.cloud.BindVolumeRefsToPayloadTest) succeeded: 7ms
+Test suite progress: tests succeeded: 291, failed: 0, skipped: 0.
+Starting test testBindMultipleVolumes(org.jclouds.abiquo.binders.cloud.BindVolumeRefsToPayloadTest)
+[pool-36-thread-2] Test testBindMultipleVolumes(org.jclouds.abiquo.binders.cloud.BindVolumeRefsToPayloadTest) succeeded: 17ms
+Test suite progress: tests succeeded: 292, failed: 0, skipped: 0.
+Starting test testBindSingleVolume(org.jclouds.abiquo.binders.cloud.BindVolumeRefsToPayloadTest)
+[pool-36-thread-3] Test testBindSingleVolume(org.jclouds.abiquo.binders.cloud.BindVolumeRefsToPayloadTest) succeeded: 8ms
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindVolumeRefsToPayloadTest)
+Test suite progress: tests succeeded: 293, failed: 0, skipped: 0.
+[pool-36-thread-4] Test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindVolumeRefsToPayloadTest) succeeded: 1ms
+Test suite progress: tests succeeded: 294, failed: 0, skipped: 0.
+Starting test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindVolumeRefsToPayloadTest)
+[pool-36-thread-5] Test testInvalidTypeInput(org.jclouds.abiquo.binders.cloud.BindVolumeRefsToPayloadTest) succeeded: 0ms
+Test suite progress: tests succeeded: 295, failed: 0, skipped: 0.
+Starting test testGetNewEndpoint(org.jclouds.abiquo.binders.cloud.BindMoveVolumeToPathTest)
+[pool-37-thread-1] Test testGetNewEndpoint(org.jclouds.abiquo.binders.cloud.BindMoveVolumeToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 296, failed: 0, skipped: 0.
+Starting test testInvalidInputType(org.jclouds.abiquo.binders.cloud.BindMoveVolumeToPathTest)
+[pool-37-thread-2] Test testInvalidInputType(org.jclouds.abiquo.binders.cloud.BindMoveVolumeToPathTest) succeeded: 1ms
+Test suite progress: tests succeeded: 297, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindMoveVolumeToPathTest)
+[pool-37-thread-3] Test testInvalidNullInput(org.jclouds.abiquo.binders.cloud.BindMoveVolumeToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 298, failed: 0, skipped: 0.
+Starting test testAnnotationNotPresent(org.jclouds.abiquo.binders.BindToPathTest)
+[pool-38-thread-1] Test testAnnotationNotPresent(org.jclouds.abiquo.binders.BindToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 299, failed: 0, skipped: 0.
+Starting test testBindWithQueryAndMatrixParameters(org.jclouds.abiquo.binders.BindToPathTest)
+Starting test testBindWithQueryParameters(org.jclouds.abiquo.binders.BindToPathTest)
+[pool-38-thread-3] Test testBindWithQueryParameters(org.jclouds.abiquo.binders.BindToPathTest) succeeded: 1ms
+Test suite progress: tests succeeded: 300, failed: 0, skipped: 0.
+[pool-38-thread-2] Test testBindWithQueryAndMatrixParameters(org.jclouds.abiquo.binders.BindToPathTest) succeeded: 1ms
+Test suite progress: tests succeeded: 301, failed: 0, skipped: 0.
+Starting test testBindWithoutParameters(org.jclouds.abiquo.binders.BindToPathTest)
+[pool-38-thread-4] Test testBindWithoutParameters(org.jclouds.abiquo.binders.BindToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 302, failed: 0, skipped: 0.
+Starting test testInvalidInputType(org.jclouds.abiquo.binders.BindToPathTest)
+[pool-38-thread-5] Test testInvalidInputType(org.jclouds.abiquo.binders.BindToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 303, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.binders.BindToPathTest)
+[pool-38-thread-5] Test testInvalidNullInput(org.jclouds.abiquo.binders.BindToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 304, failed: 0, skipped: 0.
+Starting test testInvalidNullRequest(org.jclouds.abiquo.binders.BindToPathTest)
+[pool-38-thread-5] Test testInvalidNullRequest(org.jclouds.abiquo.binders.BindToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 305, failed: 0, skipped: 0.
+Starting test testInvalidRequestType(org.jclouds.abiquo.binders.BindToPathTest)
+[pool-38-thread-5] Test testInvalidRequestType(org.jclouds.abiquo.binders.BindToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 306, failed: 0, skipped: 0.
+Starting test testLinkNotPresent(org.jclouds.abiquo.binders.BindToPathTest)
+[pool-38-thread-5] Test testLinkNotPresent(org.jclouds.abiquo.binders.BindToPathTest) succeeded: 0ms
+Test suite progress: tests succeeded: 307, failed: 0, skipped: 0.
+Starting test testScheduledExecutorIsProvided(org.jclouds.abiquo.config.SchedulerModuleTest)
+[pool-39-thread-1] Test testScheduledExecutorIsProvided(org.jclouds.abiquo.config.SchedulerModuleTest) succeeded: 0ms
+Test suite progress: tests succeeded: 308, failed: 0, skipped: 0.
+Starting test testAbiquoApiRegistered(org.jclouds.abiquo.AbiquoApiMetadataTest)
+[pool-43-thread-1] Test testAbiquoApiRegistered(org.jclouds.abiquo.AbiquoApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 309, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.abiquo.AbiquoApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.abiquo.AbiquoApiMetadataTest)
+[pool-43-thread-3] Test testTransformableToContains(org.jclouds.abiquo.AbiquoApiMetadataTest) succeeded: 8ms
+Test suite progress: tests succeeded: 310, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.abiquo.AbiquoApiMetadataTest)
+[pool-43-thread-4] Test testWithId(org.jclouds.abiquo.AbiquoApiMetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 311, failed: 0, skipped: 0.
+[pool-43-thread-2] Test testAllContains(org.jclouds.abiquo.AbiquoApiMetadataTest) succeeded: 9ms
+Test suite progress: tests succeeded: 312, failed: 0, skipped: 0.
+Starting test testAsync(org.jclouds.abiquo.AbiquoDelegateApiTest)
+Starting test testSync(org.jclouds.abiquo.AbiquoDelegateApiTest)
+[pool-44-thread-1] Test testAsync(org.jclouds.abiquo.AbiquoDelegateApiTest) succeeded: 52ms
+Test suite progress: tests succeeded: 313, failed: 0, skipped: 0.
+[pool-44-thread-2] Test testSync(org.jclouds.abiquo.AbiquoDelegateApiTest) succeeded: 62ms
+Test suite progress: tests succeeded: 314, failed: 0, skipped: 0.
+Starting test testBasicAuthentication(org.jclouds.abiquo.http.filters.AbiquoAuthenticationTest)
+[pool-46-thread-1] Test testBasicAuthentication(org.jclouds.abiquo.http.filters.AbiquoAuthenticationTest) succeeded: 3ms
+Test suite progress: tests succeeded: 315, failed: 0, skipped: 0.
+Starting test testBasicAuthenticationWithoutCredential(org.jclouds.abiquo.http.filters.AbiquoAuthenticationTest)
+[pool-46-thread-2] Test testBasicAuthenticationWithoutCredential(org.jclouds.abiquo.http.filters.AbiquoAuthenticationTest) succeeded: 0ms
+Test suite progress: tests succeeded: 316, failed: 0, skipped: 0.
+Starting test testBasicAuthenticationWithoutIdentity(org.jclouds.abiquo.http.filters.AbiquoAuthenticationTest)
+[pool-46-thread-3] Test testBasicAuthenticationWithoutIdentity(org.jclouds.abiquo.http.filters.AbiquoAuthenticationTest) succeeded: 0ms
+Starting test testTokenAuthentication(org.jclouds.abiquo.http.filters.AbiquoAuthenticationTest)
+Test suite progress: tests succeeded: 317, failed: 0, skipped: 0.
+[pool-46-thread-4] Test testTokenAuthentication(org.jclouds.abiquo.http.filters.AbiquoAuthenticationTest) succeeded: 0ms
+Test suite progress: tests succeeded: 318, failed: 0, skipped: 0.
+Starting test testAppendVersionToNonPayloadHeadersWithStandardMediaType(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+Starting test testAppendVersionToNonPayloadHeadersWithVersionInMediaType(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+Starting test testAppendVersionToNonPayloadHeadersWithoutHeaders(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+[pool-47-thread-3] Test testAppendVersionToNonPayloadHeadersWithoutHeaders(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 319, failed: 0, skipped: 0.
+Starting test testAppendVersionToNonPayloadHeadersWithoutVersionInMediaType(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+Starting test testAppendVersionToPayloadHeadersWithStandardPayload(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+Starting test testAppendVersionToPayloadHeadersWithDefaultPayload(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+[pool-47-thread-5] Test testAppendVersionToPayloadHeadersWithDefaultPayload(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 106ms
+Test suite progress: tests succeeded: 320, failed: 0, skipped: 0.
+[pool-47-thread-3] Test testAppendVersionToPayloadHeadersWithStandardPayload(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 111ms
+Test suite progress: tests succeeded: 321, failed: 0, skipped: 0.
+Starting test testAppendVersionToPayloadHeadersWithVersionInPayload(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+Starting test testAppendVersionToPayloadHeadersWithoutPayload(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+[pool-47-thread-3] Test testAppendVersionToPayloadHeadersWithoutPayload(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 322, failed: 0, skipped: 0.
+Starting test testAppendVersionToPayloadHeadersWithoutVersionInPayload(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+[pool-47-thread-5] Test testAppendVersionToPayloadHeadersWithVersionInPayload(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 323, failed: 0, skipped: 0.
+[pool-47-thread-3] Test testAppendVersionToPayloadHeadersWithoutVersionInPayload(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 324, failed: 0, skipped: 0.
+Starting test testFilterWithAcceptAndContentTypeWithVersion(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+Starting test testFilterWithAcceptAndContentTypeWithoutVersion(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+[pool-47-thread-3] Test testFilterWithAcceptAndContentTypeWithoutVersion(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 1ms
+Test suite progress: tests succeeded: 325, failed: 0, skipped: 0.
+[pool-47-thread-5] Test testFilterWithAcceptAndContentTypeWithVersion(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 1ms
+Test suite progress: tests succeeded: 326, failed: 0, skipped: 0.
+Starting test testFilterWithversionInAccept(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+[pool-47-thread-5] Test testFilterWithversionInAccept(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 327, failed: 0, skipped: 0.
+Starting test testFilterWithversionInContentType(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest)
+[pool-47-thread-5] Test testFilterWithversionInContentType(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 1ms
+Test suite progress: tests succeeded: 328, failed: 0, skipped: 0.
+[pool-47-thread-4] Test testAppendVersionToNonPayloadHeadersWithoutVersionInMediaType(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 115ms
+Test suite progress: tests succeeded: 329, failed: 0, skipped: 0.
+[pool-47-thread-1] Test testAppendVersionToNonPayloadHeadersWithStandardMediaType(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 116ms
+Test suite progress: tests succeeded: 330, failed: 0, skipped: 0.
+[pool-47-thread-2] Test testAppendVersionToNonPayloadHeadersWithVersionInMediaType(org.jclouds.abiquo.http.filters.AppendApiVersionToMediaTypeTest) succeeded: 115ms
+Test suite progress: tests succeeded: 331, failed: 0, skipped: 0.
+Starting test testAs(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest)
+[pool-49-thread-1] Test testAs(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 332, failed: 0, skipped: 0.
+Starting test testGatewayNetwork(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest)
+Starting test testOverrideCores(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest)
+[pool-49-thread-4] Test testOverrideCores(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 333, failed: 0, skipped: 0.
+Starting test testUnmanagedIps(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest)
+Starting test testVirtualDatacenter(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest)
+[pool-49-thread-4] Test testVirtualDatacenter(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 334, failed: 0, skipped: 0.
+Starting test testVncPassword(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest)
+[pool-49-thread-4] Test testVncPassword(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 335, failed: 0, skipped: 0.
+Starting test testOverrideRam(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest)
+[pool-49-thread-5] Test testOverrideRam(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 336, failed: 0, skipped: 0.
+Starting test testIps(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest)
+[pool-49-thread-1] Test testUnmanagedIps(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 337, failed: 0, skipped: 0.
+[pool-49-thread-2] Test testGatewayNetwork(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 338, failed: 0, skipped: 0.
+[pool-49-thread-3] Test testIps(org.jclouds.abiquo.compute.options.AbiquoTemplateOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 339, failed: 0, skipped: 0.
+Starting test testVirtualMachineStateToNodeState(org.jclouds.abiquo.compute.functions.VirtualMachineStateToNodeStateTest)
+[pool-50-thread-1] Test testVirtualMachineStateToNodeState(org.jclouds.abiquo.compute.functions.VirtualMachineStateToNodeStateTest) succeeded: 2ms
+Test suite progress: tests succeeded: 340, failed: 0, skipped: 0.
+Starting test testConvertWithoutDownloadLink(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToImageTest)
+[pool-51-thread-1] Test testConvertWithoutDownloadLink(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToImageTest) succeeded: 3ms
+Test suite progress: tests succeeded: 341, failed: 0, skipped: 0.
+Starting test testConvertWithoutId(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToImageTest)
+[pool-51-thread-2] Test testConvertWithoutId(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToImageTest) succeeded: 0ms
+Test suite progress: tests succeeded: 342, failed: 0, skipped: 0.
+Starting test testVirtualMachineTemplateToImage(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToImageTest)
+[pool-51-thread-3] Test testVirtualMachineTemplateToImage(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToImageTest) succeeded: 1ms
+Test suite progress: tests succeeded: 343, failed: 0, skipped: 0.
+Starting test testVirtualMachineToNodeMetadata(org.jclouds.abiquo.compute.functions.VirtualMachineToNodeMetadataTest)
+[pool-52-thread-1] Test testVirtualMachineToNodeMetadata(org.jclouds.abiquo.compute.functions.VirtualMachineToNodeMetadataTest) succeeded: 68ms
+Test suite progress: tests succeeded: 344, failed: 0, skipped: 0.
+Starting test testConvertWithoutCpu(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest)
+[pool-53-thread-1] Test testConvertWithoutCpu(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest) succeeded: 1ms
+Test suite progress: tests succeeded: 345, failed: 0, skipped: 0.
+Starting test testConvertWithoutEditLink(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest)
+[pool-53-thread-2] Test testConvertWithoutEditLink(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest) succeeded: 0ms
+Test suite progress: tests succeeded: 346, failed: 0, skipped: 0.
+Starting test testConvertWithoutHd(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest)
+[pool-53-thread-3] Test testConvertWithoutHd(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest) succeeded: 0ms
+Test suite progress: tests succeeded: 347, failed: 0, skipped: 0.
+Starting test testConvertWithoutId(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest)
+[pool-53-thread-4] Test testConvertWithoutId(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest) succeeded: 0ms
+Test suite progress: tests succeeded: 348, failed: 0, skipped: 0.
+Starting test testVirtualMachineTemplateToHardware(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest)
+[pool-53-thread-3] Test testVirtualMachineTemplateToHardware(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest) succeeded: 0ms
+Test suite progress: tests succeeded: 349, failed: 0, skipped: 0.
+Starting test testConvertWithoutRam(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest)
+[pool-53-thread-5] Test testConvertWithoutRam(org.jclouds.abiquo.compute.functions.VirtualMachineTemplateToHardwareTest) succeeded: 0ms
+Test suite progress: tests succeeded: 350, failed: 0, skipped: 0.
+Starting test testDatacenterToLocation(org.jclouds.abiquo.compute.functions.DatacenterToLocationTest)
+[pool-54-thread-1] Test testDatacenterToLocation(org.jclouds.abiquo.compute.functions.DatacenterToLocationTest) succeeded: 2ms
+Test suite progress: tests succeeded: 351, failed: 0, skipped: 0.
+Starting test testAllPropertiesInjected(org.jclouds.abiquo.internal.BaseEventServiceTest)
+[pool-55-thread-1] Test testAllPropertiesInjected(org.jclouds.abiquo.internal.BaseEventServiceTest) succeeded: 0ms
+Test suite progress: tests succeeded: 352, failed: 0, skipped: 0.
+Starting test testCreateMonitorWithNullFunction(org.jclouds.abiquo.internal.AsyncMonitorTest)
+Starting test testCreateMonitorWithNullObject(org.jclouds.abiquo.internal.AsyncMonitorTest)
+Starting test testIsTimeoutReturnsFalseWhenNotFinished(org.jclouds.abiquo.internal.AsyncMonitorTest)
+[pool-59-thread-1] Test testCreateMonitorWithNullFunction(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 353, failed: 0, skipped: 0.
+[pool-59-thread-2] Test testCreateMonitorWithNullObject(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 354, failed: 0, skipped: 0.
+Starting test testIsTimeoutReturnsTrueWhenFinished(org.jclouds.abiquo.internal.AsyncMonitorTest)
+Starting test testMonitorAndContinueWithoutTimeout(org.jclouds.abiquo.internal.AsyncMonitorTest)
+Starting test testMonitorAndContinueWithtTimeout(org.jclouds.abiquo.internal.AsyncMonitorTest)
+Starting test testIsTimeoutWhenNullTimeout(org.jclouds.abiquo.internal.AsyncMonitorTest)
+[pool-59-thread-5] Test testIsTimeoutWhenNullTimeout(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 2ms
+Test suite progress: tests succeeded: 355, failed: 0, skipped: 0.
+[pool-59-thread-2] Test testMonitorAndContinueWithoutTimeout(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 3ms
+Test suite progress: tests succeeded: 356, failed: 0, skipped: 0.
+Starting test testMonitorAndDone(org.jclouds.abiquo.internal.AsyncMonitorTest)
+Starting test testMonitorAndFail(org.jclouds.abiquo.internal.AsyncMonitorTest)
+[pool-59-thread-3] Test testIsTimeoutReturnsFalseWhenNotFinished(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 4ms
+Test suite progress: tests succeeded: 357, failed: 0, skipped: 0.
+Starting test testStartMonitoringWithTimeout(org.jclouds.abiquo.internal.AsyncMonitorTest)
+[pool-59-thread-3] Test testStartMonitoringWithTimeout(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 358, failed: 0, skipped: 0.
+Starting test testStartMonitoringWithoutTimeout(org.jclouds.abiquo.internal.AsyncMonitorTest)
+[pool-59-thread-3] Test testStartMonitoringWithoutTimeout(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 359, failed: 0, skipped: 0.
+Starting test testStopMonitoringWhenFutureIsCancelled(org.jclouds.abiquo.internal.AsyncMonitorTest)
+[pool-59-thread-3] Test testStopMonitoringWhenFutureIsCancelled(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 360, failed: 0, skipped: 0.
+[pool-59-thread-4] Test testIsTimeoutReturnsTrueWhenFinished(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 5ms
+Test suite progress: tests succeeded: 361, failed: 0, skipped: 0.
+[pool-59-thread-2] Test testMonitorAndDone(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 2ms
+Test suite progress: tests succeeded: 362, failed: 0, skipped: 0.
+Starting test testStopMonitoringWhenFutureIsDone(org.jclouds.abiquo.internal.AsyncMonitorTest)
+Starting test testStopMonitoringWhenFutureIsNotComplete(org.jclouds.abiquo.internal.AsyncMonitorTest)
+[pool-59-thread-2] Test testStopMonitoringWhenFutureIsNotComplete(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 363, failed: 0, skipped: 0.
+[pool-59-thread-1] Test testMonitorAndContinueWithtTimeout(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 6ms
+Test suite progress: tests succeeded: 364, failed: 0, skipped: 0.
+[pool-59-thread-5] Test testMonitorAndFail(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 3ms
+Test suite progress: tests succeeded: 365, failed: 0, skipped: 0.
+[pool-59-thread-3] Test testStopMonitoringWhenFutureIsDone(org.jclouds.abiquo.internal.AsyncMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 366, failed: 0, skipped: 0.
+Starting test testAwaitCompletionWithoutTasks(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+Starting test testAwaitCompletionWithNullFunction(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+Starting test testAwaitCompletionMultipleTasks(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+Starting test testAwaitCompletion(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+Starting test testAllPropertiesInjected(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+[pool-60-thread-4] Test testAwaitCompletionWithNullFunction(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 1ms
+Test suite progress: tests succeeded: 367, failed: 0, skipped: 0.
+Starting test testBlockingHandlerWithoutArguments(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+[pool-60-thread-4] Test testBlockingHandlerWithoutArguments(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 1ms
+Test suite progress: tests succeeded: 368, failed: 0, skipped: 0.
+Starting test testDelegateToAsyncTaskMonitor(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+[pool-60-thread-1] Test testAllPropertiesInjected(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 6ms
+Test suite progress: tests succeeded: 369, failed: 0, skipped: 0.
+Starting test testDelegateToVirtualApplianceMonitor(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+[pool-60-thread-5] Test testAwaitCompletionWithoutTasks(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 26ms
+Test suite progress: tests succeeded: 370, failed: 0, skipped: 0.
+[pool-60-thread-4] Test testDelegateToAsyncTaskMonitor(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 21ms
+Test suite progress: tests succeeded: 371, failed: 0, skipped: 0.
+Starting test testMonitor(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+Starting test testDelegateToVirtualMachineMonitor(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+[pool-60-thread-1] Test testDelegateToVirtualApplianceMonitor(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 45ms
+Test suite progress: tests succeeded: 372, failed: 0, skipped: 0.
+Starting test testMonitorMultipleTasks(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+[pool-60-thread-4] Test testDelegateToVirtualMachineMonitor(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 28ms
+Test suite progress: tests succeeded: 373, failed: 0, skipped: 0.
+Starting test testMonitorMultipleTasksReachesTimeout(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+[pool-60-thread-2] Test testAwaitCompletion(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 131ms
+Test suite progress: tests succeeded: 374, failed: 0, skipped: 0.
+Starting test testMonitorReachesTimeout(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+[pool-60-thread-3] Test testAwaitCompletionMultipleTasks(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 152ms
+Test suite progress: tests succeeded: 375, failed: 0, skipped: 0.
+Starting test testMonitorWithNullCompletecondition(org.jclouds.abiquo.internal.BaseMonitoringServiceTest)
+[pool-60-thread-3] Test testMonitorWithNullCompletecondition(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 0ms
+Test suite progress: tests succeeded: 376, failed: 0, skipped: 0.
+[pool-60-thread-5] Test testMonitor(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 130ms
+Test suite progress: tests succeeded: 377, failed: 0, skipped: 0.
+[pool-60-thread-1] Test testMonitorMultipleTasks(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 102ms
+Test suite progress: tests succeeded: 378, failed: 0, skipped: 0.
+[pool-60-thread-4] Test testMonitorMultipleTasksReachesTimeout(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 202ms
+Test suite progress: tests succeeded: 379, failed: 0, skipped: 0.
+[pool-60-thread-2] Test testMonitorReachesTimeout(org.jclouds.abiquo.internal.BaseMonitoringServiceTest) succeeded: 203ms
+Test suite progress: tests succeeded: 380, failed: 0, skipped: 0.
+Starting test testAllPropertiesInjected(org.jclouds.abiquo.internal.BaseCloudServiceTest)
+[pool-64-thread-1] Test testAllPropertiesInjected(org.jclouds.abiquo.internal.BaseCloudServiceTest) succeeded: 0ms
+Test suite progress: tests succeeded: 381, failed: 0, skipped: 0.
+Starting test testAllPropertiesInjected(org.jclouds.abiquo.internal.BaseSearchServiceTest)
+[pool-68-thread-1] Test testAllPropertiesInjected(org.jclouds.abiquo.internal.BaseSearchServiceTest) succeeded: 0ms
+Test suite progress: tests succeeded: 382, failed: 0, skipped: 0.
+Starting test testAllPropertiesInjected(org.jclouds.abiquo.internal.BaseAdministrationServiceTest)
+[pool-72-thread-1] Test testAllPropertiesInjected(org.jclouds.abiquo.internal.BaseAdministrationServiceTest) succeeded: 0ms
+Test suite progress: tests succeeded: 383, failed: 0, skipped: 0.
+Starting test testGet(org.jclouds.abiquo.rest.internal.AbiquoHttpAsyncClientTest)
+[pool-76-thread-1] Test testGet(org.jclouds.abiquo.rest.internal.AbiquoHttpAsyncClientTest) succeeded: 3ms
+Test suite progress: tests succeeded: 384, failed: 0, skipped: 0.
+Starting test testAllPropertiesInjected(org.jclouds.abiquo.monitor.internal.BaseVirtualApplianceMonitorTest)
+[pool-78-thread-1] Test testAllPropertiesInjected(org.jclouds.abiquo.monitor.internal.BaseVirtualApplianceMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 385, failed: 0, skipped: 0.
+Starting test testAllPropertiesInjected(org.jclouds.abiquo.monitor.internal.BaseAsyncTaskMonitorTest)
+[pool-82-thread-1] Test testAllPropertiesInjected(org.jclouds.abiquo.monitor.internal.BaseAsyncTaskMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 386, failed: 0, skipped: 0.
+Starting test testAllPropertiesInjected(org.jclouds.abiquo.monitor.internal.BaseVirtualMachineMonitorTest)
+[pool-86-thread-1] Test testAllPropertiesInjected(org.jclouds.abiquo.monitor.internal.BaseVirtualMachineMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 387, failed: 0, skipped: 0.
+Starting test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.VirtualMachineDeployMonitorTest)
+[pool-90-thread-1] Test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.VirtualMachineDeployMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 388, failed: 0, skipped: 0.
+Starting test testReturnContinue(org.jclouds.abiquo.monitor.functions.VirtualMachineDeployMonitorTest)
+[pool-90-thread-2] Test testReturnContinue(org.jclouds.abiquo.monitor.functions.VirtualMachineDeployMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 389, failed: 0, skipped: 0.
+Starting test testReturnDone(org.jclouds.abiquo.monitor.functions.VirtualMachineDeployMonitorTest)
+[pool-90-thread-3] Test testReturnDone(org.jclouds.abiquo.monitor.functions.VirtualMachineDeployMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 390, failed: 0, skipped: 0.
+Starting test testReturnFail(org.jclouds.abiquo.monitor.functions.VirtualMachineDeployMonitorTest)
+[pool-90-thread-4] Test testReturnFail(org.jclouds.abiquo.monitor.functions.VirtualMachineDeployMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 391, failed: 0, skipped: 0.
+Starting test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.VirtualApplianceDeployMonitorTest)
+[pool-91-thread-1] Test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.VirtualApplianceDeployMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 392, failed: 0, skipped: 0.
+Starting test testReturnContinue(org.jclouds.abiquo.monitor.functions.VirtualApplianceDeployMonitorTest)
+[pool-91-thread-2] Test testReturnContinue(org.jclouds.abiquo.monitor.functions.VirtualApplianceDeployMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 393, failed: 0, skipped: 0.
+Starting test testReturnDone(org.jclouds.abiquo.monitor.functions.VirtualApplianceDeployMonitorTest)
+[pool-91-thread-3] Test testReturnDone(org.jclouds.abiquo.monitor.functions.VirtualApplianceDeployMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 394, failed: 0, skipped: 0.
+Starting test testReturnFail(org.jclouds.abiquo.monitor.functions.VirtualApplianceDeployMonitorTest)
+[pool-91-thread-4] Test testReturnFail(org.jclouds.abiquo.monitor.functions.VirtualApplianceDeployMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 395, failed: 0, skipped: 0.
+Starting test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.ConversionStatusMonitorTest)
+[pool-92-thread-1] Test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.ConversionStatusMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 396, failed: 0, skipped: 0.
+Starting test testReturnContinue(org.jclouds.abiquo.monitor.functions.ConversionStatusMonitorTest)
+[pool-92-thread-2] Test testReturnContinue(org.jclouds.abiquo.monitor.functions.ConversionStatusMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 397, failed: 0, skipped: 0.
+Starting test testReturnDone(org.jclouds.abiquo.monitor.functions.ConversionStatusMonitorTest)
+[pool-92-thread-3] Test testReturnDone(org.jclouds.abiquo.monitor.functions.ConversionStatusMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 398, failed: 0, skipped: 0.
+Starting test testReturnFail(org.jclouds.abiquo.monitor.functions.ConversionStatusMonitorTest)
+[pool-92-thread-4] Test testReturnFail(org.jclouds.abiquo.monitor.functions.ConversionStatusMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 399, failed: 0, skipped: 0.
+Starting test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.VirtualMachineUndeployMonitorTest)
+[pool-93-thread-1] Test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.VirtualMachineUndeployMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 400, failed: 0, skipped: 0.
+Starting test testReturnContinue(org.jclouds.abiquo.monitor.functions.VirtualMachineUndeployMonitorTest)
+[pool-93-thread-2] Test testReturnContinue(org.jclouds.abiquo.monitor.functions.VirtualMachineUndeployMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 401, failed: 0, skipped: 0.
+Starting test testReturnDone(org.jclouds.abiquo.monitor.functions.VirtualMachineUndeployMonitorTest)
+[pool-93-thread-3] Test testReturnDone(org.jclouds.abiquo.monitor.functions.VirtualMachineUndeployMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 402, failed: 0, skipped: 0.
+Starting test testReturnFail(org.jclouds.abiquo.monitor.functions.VirtualMachineUndeployMonitorTest)
+[pool-93-thread-4] Test testReturnFail(org.jclouds.abiquo.monitor.functions.VirtualMachineUndeployMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 403, failed: 0, skipped: 0.
+Starting test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.VirtualApplianceUndeployMonitorTest)
+[pool-94-thread-1] Test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.VirtualApplianceUndeployMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 404, failed: 0, skipped: 0.
+Starting test testReturnContinue(org.jclouds.abiquo.monitor.functions.VirtualApplianceUndeployMonitorTest)
+[pool-94-thread-2] Test testReturnContinue(org.jclouds.abiquo.monitor.functions.VirtualApplianceUndeployMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 405, failed: 0, skipped: 0.
+Starting test testReturnDone(org.jclouds.abiquo.monitor.functions.VirtualApplianceUndeployMonitorTest)
+[pool-94-thread-3] Test testReturnDone(org.jclouds.abiquo.monitor.functions.VirtualApplianceUndeployMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 406, failed: 0, skipped: 0.
+Starting test testReturnFail(org.jclouds.abiquo.monitor.functions.VirtualApplianceUndeployMonitorTest)
+[pool-94-thread-4] Test testReturnFail(org.jclouds.abiquo.monitor.functions.VirtualApplianceUndeployMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 407, failed: 0, skipped: 0.
+Starting test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.AsyncTaskStatusMonitorTest)
+[pool-95-thread-1] Test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.AsyncTaskStatusMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 408, failed: 0, skipped: 0.
+Starting test testReturnContinue(org.jclouds.abiquo.monitor.functions.AsyncTaskStatusMonitorTest)
+[pool-95-thread-2] Test testReturnContinue(org.jclouds.abiquo.monitor.functions.AsyncTaskStatusMonitorTest) succeeded: 12ms
+Test suite progress: tests succeeded: 409, failed: 0, skipped: 0.
+Starting test testReturnDone(org.jclouds.abiquo.monitor.functions.AsyncTaskStatusMonitorTest)
+[pool-95-thread-3] Test testReturnDone(org.jclouds.abiquo.monitor.functions.AsyncTaskStatusMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 410, failed: 0, skipped: 0.
+Starting test testReturnFail(org.jclouds.abiquo.monitor.functions.AsyncTaskStatusMonitorTest)
+[pool-95-thread-4] Test testReturnFail(org.jclouds.abiquo.monitor.functions.AsyncTaskStatusMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 411, failed: 0, skipped: 0.
+Starting test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.VirtualMachineStateMonitorTest)
+[pool-96-thread-1] Test testInvalidNullArgument(org.jclouds.abiquo.monitor.functions.VirtualMachineStateMonitorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 412, failed: 0, skipped: 0.
+Starting test testInvalidNullState(org.jclouds.abiquo.monitor.functions.VirtualMachineStateMonitorTest)
+[pool-96-thread-2] Test testInvalidNullState(org.jclouds.abiquo.monitor.functions.VirtualMachineStateMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 413, failed: 0, skipped: 0.
+Starting test testReturnContinue(org.jclouds.abiquo.monitor.functions.VirtualMachineStateMonitorTest)
+[pool-96-thread-3] Test testReturnContinue(org.jclouds.abiquo.monitor.functions.VirtualMachineStateMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 414, failed: 0, skipped: 0.
+Starting test testReturnDone(org.jclouds.abiquo.monitor.functions.VirtualMachineStateMonitorTest)
+[pool-96-thread-4] Test testReturnDone(org.jclouds.abiquo.monitor.functions.VirtualMachineStateMonitorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 415, failed: 0, skipped: 0.
+Starting test testReturnExceptionIfNot5xx(org.jclouds.abiquo.functions.ReturnFalseIfNotAvailableTest)
+Starting test testReturnFalseIf5xx(org.jclouds.abiquo.functions.ReturnFalseIfNotAvailableTest)
+Starting test testReturnFalseIfResourceNotFound(org.jclouds.abiquo.functions.ReturnFalseIfNotAvailableTest)
+[pool-97-thread-3] Test testReturnFalseIfResourceNotFound(org.jclouds.abiquo.functions.ReturnFalseIfNotAvailableTest) succeeded: 1ms
+Test suite progress: tests succeeded: 416, failed: 0, skipped: 0.
+Starting test testReturnOriginalExceptionIfUnknownException(org.jclouds.abiquo.functions.ReturnFalseIfNotAvailableTest)
+[pool-97-thread-4] Test testReturnOriginalExceptionIfUnknownException(org.jclouds.abiquo.functions.ReturnFalseIfNotAvailableTest) succeeded: 0ms
+Test suite progress: tests succeeded: 417, failed: 0, skipped: 0.
+[pool-97-thread-2] Test testReturnFalseIf5xx(org.jclouds.abiquo.functions.ReturnFalseIfNotAvailableTest) succeeded: 22ms
+Test suite progress: tests succeeded: 418, failed: 0, skipped: 0.
+[pool-97-thread-1] Test testReturnExceptionIfNot5xx(org.jclouds.abiquo.functions.ReturnFalseIfNotAvailableTest) succeeded: 24ms
+Test suite progress: tests succeeded: 419, failed: 0, skipped: 0.
+Starting test testReturnExceptionIfNot303(org.jclouds.abiquo.functions.ReturnNullOn303Test)
+[pool-98-thread-1] Test testReturnExceptionIfNot303(org.jclouds.abiquo.functions.ReturnNullOn303Test) succeeded: 1ms
+Test suite progress: tests succeeded: 420, failed: 0, skipped: 0.
+Starting test testReturnNullIf303(org.jclouds.abiquo.functions.ReturnNullOn303Test)
+[pool-98-thread-2] Test testReturnNullIf303(org.jclouds.abiquo.functions.ReturnNullOn303Test) succeeded: 0ms
+Test suite progress: tests succeeded: 421, failed: 0, skipped: 0.
+Starting test testReturnOriginalExceptionIfNotHttpResponseException(org.jclouds.abiquo.functions.ReturnNullOn303Test)
+[pool-98-thread-3] Test testReturnOriginalExceptionIfNotHttpResponseException(org.jclouds.abiquo.functions.ReturnNullOn303Test) succeeded: 0ms
+Test suite progress: tests succeeded: 422, failed: 0, skipped: 0.
+Starting test testInvalidId(org.jclouds.abiquo.functions.enterprise.ParseEnterpriseIdTest)
+[pool-99-thread-1] Test testInvalidId(org.jclouds.abiquo.functions.enterprise.ParseEnterpriseIdTest) succeeded: 0ms
+Test suite progress: tests succeeded: 423, failed: 0, skipped: 0.
+Starting test testInvalidInputType(org.jclouds.abiquo.functions.enterprise.ParseEnterpriseIdTest)
+[pool-99-thread-2] Test testInvalidInputType(org.jclouds.abiquo.functions.enterprise.ParseEnterpriseIdTest) succeeded: 1ms
+Test suite progress: tests succeeded: 424, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.functions.enterprise.ParseEnterpriseIdTest)
+[pool-99-thread-3] Test testInvalidNullInput(org.jclouds.abiquo.functions.enterprise.ParseEnterpriseIdTest) succeeded: 0ms
+Test suite progress: tests succeeded: 425, failed: 0, skipped: 0.
+Starting test testValidId(org.jclouds.abiquo.functions.enterprise.ParseEnterpriseIdTest)
+[pool-99-thread-4] Test testValidId(org.jclouds.abiquo.functions.enterprise.ParseEnterpriseIdTest) succeeded: 0ms
+Test suite progress: tests succeeded: 426, failed: 0, skipped: 0.
+Starting test testReturnAbiquoException(org.jclouds.abiquo.functions.ReturnAbiquoExceptionOnNotFoundOr4xxTest)
+[pool-100-thread-1] Test testReturnAbiquoException(org.jclouds.abiquo.functions.ReturnAbiquoExceptionOnNotFoundOr4xxTest) succeeded: 1ms
+Test suite progress: tests succeeded: 427, failed: 0, skipped: 0.
+Starting test testReturnOriginalExceptionIfNotAbiquoException(org.jclouds.abiquo.functions.ReturnAbiquoExceptionOnNotFoundOr4xxTest)
+[pool-100-thread-2] Test testReturnOriginalExceptionIfNotAbiquoException(org.jclouds.abiquo.functions.ReturnAbiquoExceptionOnNotFoundOr4xxTest) succeeded: 1ms
+Test suite progress: tests succeeded: 428, failed: 0, skipped: 0.
+Starting test testReturnOriginalExceptionIfNotResourceNotFound(org.jclouds.abiquo.functions.ReturnAbiquoExceptionOnNotFoundOr4xxTest)
+[pool-100-thread-3] Test testReturnOriginalExceptionIfNotResourceNotFound(org.jclouds.abiquo.functions.ReturnAbiquoExceptionOnNotFoundOr4xxTest) succeeded: 0ms
+Test suite progress: tests succeeded: 429, failed: 0, skipped: 0.
+Starting test testReturnExceptionIfNot5xx(org.jclouds.abiquo.functions.ReturnFalseOn5xxTest)
+Starting test testReturnFalseIf5xx(org.jclouds.abiquo.functions.ReturnFalseOn5xxTest)
+[pool-101-thread-2] Test testReturnFalseIf5xx(org.jclouds.abiquo.functions.ReturnFalseOn5xxTest) succeeded: 1ms
+Test suite progress: tests succeeded: 430, failed: 0, skipped: 0.
+[pool-101-thread-1] Test testReturnExceptionIfNot5xx(org.jclouds.abiquo.functions.ReturnFalseOn5xxTest) succeeded: 1ms
+Test suite progress: tests succeeded: 431, failed: 0, skipped: 0.
+Starting test testReturnOriginalExceptionIfNotHttpResponseException(org.jclouds.abiquo.functions.ReturnFalseOn5xxTest)
+[pool-101-thread-3] Test testReturnOriginalExceptionIfNotHttpResponseException(org.jclouds.abiquo.functions.ReturnFalseOn5xxTest) succeeded: 0ms
+Test suite progress: tests succeeded: 432, failed: 0, skipped: 0.
+Starting test testInvalidId(org.jclouds.abiquo.functions.infrastructure.ParseDatacenterIdTest)
+Starting test testInvalidInputType(org.jclouds.abiquo.functions.infrastructure.ParseDatacenterIdTest)
+[pool-102-thread-2] Test testInvalidInputType(org.jclouds.abiquo.functions.infrastructure.ParseDatacenterIdTest) succeeded: 1ms
+Test suite progress: tests succeeded: 433, failed: 0, skipped: 0.
+[pool-102-thread-1] Test testInvalidId(org.jclouds.abiquo.functions.infrastructure.ParseDatacenterIdTest) succeeded: 1ms
+Test suite progress: tests succeeded: 434, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.functions.infrastructure.ParseDatacenterIdTest)
+Starting test testValidId(org.jclouds.abiquo.functions.infrastructure.ParseDatacenterIdTest)
+[pool-102-thread-3] Test testInvalidNullInput(org.jclouds.abiquo.functions.infrastructure.ParseDatacenterIdTest) succeeded: 0ms
+Test suite progress: tests succeeded: 435, failed: 0, skipped: 0.
+[pool-102-thread-4] Test testValidId(org.jclouds.abiquo.functions.infrastructure.ParseDatacenterIdTest) succeeded: 3ms
+Test suite progress: tests succeeded: 436, failed: 0, skipped: 0.
+Starting test testInvalidId(org.jclouds.abiquo.functions.infrastructure.ParseMachineIdTest)
+Starting test testInvalidInputType(org.jclouds.abiquo.functions.infrastructure.ParseMachineIdTest)
+[pool-103-thread-1] Test testInvalidId(org.jclouds.abiquo.functions.infrastructure.ParseMachineIdTest) succeeded: 0ms
+Test suite progress: tests succeeded: 437, failed: 0, skipped: 0.
+[pool-103-thread-2] Test testInvalidInputType(org.jclouds.abiquo.functions.infrastructure.ParseMachineIdTest) succeeded: 0ms
+Test suite progress: tests succeeded: 438, failed: 0, skipped: 0.
+Starting test testInvalidNullInput(org.jclouds.abiquo.functions.infrastructure.ParseMachineIdTest)
+Starting test testValidId(org.jclouds.abiquo.functions.infrastructure.ParseMachineIdTest)
+[pool-103-thread-3] Test testInvalidNullInput(org.jclouds.abiquo.functions.infrastructure.ParseMachineIdTest) succeeded: 1ms
+Test suite progress: tests succeeded: 439, failed: 0, skipped: 0.
+[pool-103-thread-4] Test testValidId(org.jclouds.abiquo.functions.infrastructure.ParseMachineIdTest) succeeded: 0ms
+Test suite progress: tests succeeded: 440, failed: 0, skipped: 0.
+Starting test testInvalidInputType(org.jclouds.abiquo.functions.infrastructure.ParseRemoteServiceTypeTest)
+Starting test testInvalidNullInput(org.jclouds.abiquo.functions.infrastructure.ParseRemoteServiceTypeTest)
+[pool-104-thread-1] Test testInvalidInputType(org.jclouds.abiquo.functions.infrastructure.ParseRemoteServiceTypeTest) succeeded: 1ms
+Test suite progress: tests succeeded: 441, failed: 0, skipped: 0.
+[pool-104-thread-2] Test testInvalidNullInput(org.jclouds.abiquo.functions.infrastructure.ParseRemoteServiceTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 442, failed: 0, skipped: 0.
+Starting test testValidId(org.jclouds.abiquo.functions.infrastructure.ParseRemoteServiceTypeTest)
+[pool-104-thread-3] Test testValidId(org.jclouds.abiquo.functions.infrastructure.ParseRemoteServiceTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 443, failed: 0, skipped: 0.
+Starting test testReturnOriginalExceptionIfNotHttpResponseException(org.jclouds.abiquo.functions.cloud.ReturnMovedVolumeTest)
+[pool-105-thread-1] Test testReturnOriginalExceptionIfNotHttpResponseException(org.jclouds.abiquo.functions.cloud.ReturnMovedVolumeTest) succeeded: 1ms
+Test suite progress: tests succeeded: 444, failed: 0, skipped: 0.
+Starting test testReturnVolume(org.jclouds.abiquo.functions.cloud.ReturnMovedVolumeTest)
+[pool-105-thread-2] Test testReturnVolume(org.jclouds.abiquo.functions.cloud.ReturnMovedVolumeTest) succeeded: 34ms
+Test suite progress: tests succeeded: 445, failed: 0, skipped: 0.
+Starting test testApplyToAbiquoMediaTypeWithVersion(org.jclouds.abiquo.functions.AppendApiVersionToAbiquoMimeTypeTest)
+[pool-106-thread-1] Test testApplyToAbiquoMediaTypeWithVersion(org.jclouds.abiquo.functions.AppendApiVersionToAbiquoMimeTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 446, failed: 0, skipped: 0.
+Starting test testApplyToAbiquoMediaTypeWithoutVersion(org.jclouds.abiquo.functions.AppendApiVersionToAbiquoMimeTypeTest)
+[pool-106-thread-2] Test testApplyToAbiquoMediaTypeWithoutVersion(org.jclouds.abiquo.functions.AppendApiVersionToAbiquoMimeTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 447, failed: 0, skipped: 0.
+Starting test testApplyToStandardMediaType(org.jclouds.abiquo.functions.AppendApiVersionToAbiquoMimeTypeTest)
+[pool-106-thread-3] Test testApplyToStandardMediaType(org.jclouds.abiquo.functions.AppendApiVersionToAbiquoMimeTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 448, failed: 0, skipped: 0.
+Starting test testApplyWithInvalidMediaType(org.jclouds.abiquo.functions.AppendApiVersionToAbiquoMimeTypeTest)
+Starting test testApplyWithNullInput(org.jclouds.abiquo.functions.AppendApiVersionToAbiquoMimeTypeTest)
+[pool-106-thread-5] Test testApplyWithNullInput(org.jclouds.abiquo.functions.AppendApiVersionToAbiquoMimeTypeTest) succeeded: 0ms
+Test suite progress: tests succeeded: 449, failed: 0, skipped: 0.
+[pool-106-thread-4] Test testApplyWithInvalidMediaType(org.jclouds.abiquo.functions.AppendApiVersionToAbiquoMimeTypeTest) succeeded: 15ms
+Test suite progress: tests succeeded: 450, failed: 0, skipped: 0.
+Starting test testReturnNullIfNoContent(org.jclouds.abiquo.functions.ReturnTaskReferenceOrNullTest)
+[pool-107-thread-1] Test testReturnNullIfNoContent(org.jclouds.abiquo.functions.ReturnTaskReferenceOrNullTest) succeeded: 0ms
+Test suite progress: tests succeeded: 451, failed: 0, skipped: 0.
+Starting test testReturnTaskIfAccepted(org.jclouds.abiquo.functions.ReturnTaskReferenceOrNullTest)
+[pool-107-thread-2] Test testReturnTaskIfAccepted(org.jclouds.abiquo.functions.ReturnTaskReferenceOrNullTest) succeeded: 7ms
+Test suite progress: tests succeeded: 452, failed: 0, skipped: 0.
+Starting test testConstructorWithNullObjects(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest)
+[pool-108-thread-1] Test testConstructorWithNullObjects(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest) succeeded: 0ms
+Test suite progress: tests succeeded: 453, failed: 0, skipped: 0.
+Starting test testConstructorWithoutObjects(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest)
+[pool-108-thread-2] Test testConstructorWithoutObjects(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest) succeeded: 0ms
+Test suite progress: tests succeeded: 454, failed: 0, skipped: 0.
+Starting test testConstructorWithtEmptyObjects(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest)
+[pool-108-thread-3] Test testConstructorWithtEmptyObjects(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest) succeeded: 0ms
+Test suite progress: tests succeeded: 455, failed: 0, skipped: 0.
+Starting test testHandle(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest)
+Starting test testLockDoesNothingIfNoObjects(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest)
+[pool-108-thread-3] Test testLockDoesNothingIfNoObjects(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest) succeeded: 0ms
+Test suite progress: tests succeeded: 456, failed: 0, skipped: 0.
+Starting test testRelease(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest)
+Starting test testReleaseDoesNothingIfNotLocked(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest)
+[pool-108-thread-2] Test testReleaseDoesNothingIfNotLocked(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest) succeeded: 0ms
+Test suite progress: tests succeeded: 457, failed: 0, skipped: 0.
+Starting test testHandles(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest)
+[pool-108-thread-5] Test testHandles(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest) succeeded: 0ms
+Test suite progress: tests succeeded: 458, failed: 0, skipped: 0.
+[pool-108-thread-4] Test testHandle(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest) succeeded: 501ms
+Test suite progress: tests succeeded: 459, failed: 0, skipped: 0.
+[pool-108-thread-3] Test testRelease(org.jclouds.abiquo.events.handlers.BlockingEventHandlerTest) succeeded: 500ms
+Test suite progress: tests succeeded: 460, failed: 0, skipped: 0.
+Tests run: 460, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.819 sec
+
+Results :
+
+Tests run: 460, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ abiquo ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ abiquo ---
+[INFO] Building jar: /home/ibarrera/workspace/jclouds/labs/abiquo/target/abiquo-1.5.0-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ abiquo ---
+[INFO] Surefire report directory: /home/ibarrera/workspace/jclouds/labs/abiquo/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@10b61fd1
+Starting test testUpdate(org.jclouds.abiquo.domain.config.SystemPropertiesLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.config.SystemPropertiesLiveApiTest) succeeded: 134ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCreateRepeated(org.jclouds.abiquo.domain.config.LicenseLiveApiTest)
+[TestNG] Test testCreateRepeated(org.jclouds.abiquo.domain.config.LicenseLiveApiTest) succeeded: 31ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testCreateAndGet(org.jclouds.abiquo.domain.config.CategoryLiveApiTest)
+[TestNG] Test testCreateAndGet(org.jclouds.abiquo.domain.config.CategoryLiveApiTest) succeeded: 85ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.config.CategoryLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.config.CategoryLiveApiTest) succeeded: 118ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testCreateAndGet(org.jclouds.abiquo.domain.config.CurrencyLiveApiTest)
+[TestNG] Test testCreateAndGet(org.jclouds.abiquo.domain.config.CurrencyLiveApiTest) succeeded: 136ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.config.CurrencyLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.config.CurrencyLiveApiTest) succeeded: 148ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testUnsupportedVersion(org.jclouds.abiquo.domain.AbiquoVersionLiveApiTest)
+[TestNG] Test testUnsupportedVersion(org.jclouds.abiquo.domain.AbiquoVersionLiveApiTest) succeeded: 32ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testAllowTwiceWorks(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest)
+[TestNG] Test testAllowTwiceWorks(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest) succeeded: 111ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testCreateRepeated(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest)
+[TestNG] Test testCreateRepeated(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest) succeeded: 34ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testListAllowedDatacenters(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest)
+[TestNG] Test testListAllowedDatacenters(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest) succeeded: 34ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testListLimits(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest)
+[TestNG] Test testListLimits(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest) succeeded: 28ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testListVirtualAppliances(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest)
+[TestNG] Test testListVirtualAppliances(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest) succeeded: 53ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testListVirtualMachines(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest)
+[TestNG] Test testListVirtualMachines(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest) succeeded: 48ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest) succeeded: 123ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testUpdateInvalidLimits(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest)
+[TestNG] Test testUpdateInvalidLimits(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest) succeeded: 51ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testUpdateLimits(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest)
+[TestNG] Test testUpdateLimits(org.jclouds.abiquo.domain.enterprise.EnterpriseLiveApiTest) succeeded: 98ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testListStates(org.jclouds.abiquo.domain.enterprise.TemplateDefinitionListLiveApiTest)
+[TestNG] Test testListStates(org.jclouds.abiquo.domain.enterprise.TemplateDefinitionListLiveApiTest) succeeded: 333ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.enterprise.TemplateDefinitionListLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.enterprise.TemplateDefinitionListLiveApiTest) succeeded: 77ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testChangeRoleAndUpdate(org.jclouds.abiquo.domain.enterprise.UserLiveApiTest)
+[TestNG] Test testChangeRoleAndUpdate(org.jclouds.abiquo.domain.enterprise.UserLiveApiTest) succeeded: 159ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testCreateRepeated(org.jclouds.abiquo.domain.enterprise.UserLiveApiTest)
+[TestNG] Test testCreateRepeated(org.jclouds.abiquo.domain.enterprise.UserLiveApiTest) succeeded: 59ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testGetCurrentUser(org.jclouds.abiquo.domain.enterprise.UserLiveApiTest)
+[TestNG] Test testGetCurrentUser(org.jclouds.abiquo.domain.enterprise.UserLiveApiTest) succeeded: 25ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testListUser(org.jclouds.abiquo.domain.enterprise.UserLiveApiTest)
+[TestNG] Test testListUser(org.jclouds.abiquo.domain.enterprise.UserLiveApiTest) succeeded: 91ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.enterprise.UserLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.enterprise.UserLiveApiTest) succeeded: 129ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.enterprise.EnterprisePropertiesLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.enterprise.EnterprisePropertiesLiveApiTest) succeeded: 73ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByActionPerformed(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByActionPerformed(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 124ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByComponent(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByComponent(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 143ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByDatacenter(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByDatacenter(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 140ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByDescription(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByDescription(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 136ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByEnterprise(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByEnterprise(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 142ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByPM(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByPM(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 97ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByRack(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByRack(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 79ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testListEventsFilteredBySeverity(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredBySeverity(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 96ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByStorageDevice(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByStorageDevice(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 104ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByStoragePool(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByStoragePool(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 179ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByVDC(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByVDC(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 122ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByVM(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByVM(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 226ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByVapp(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByVapp(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 68ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testListEventsFilteredByVolume(org.jclouds.abiquo.domain.event.EventLiveApiTest)
+[TestNG] Test testListEventsFilteredByVolume(org.jclouds.abiquo.domain.event.EventLiveApiTest) succeeded: 15526ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testListTiers(org.jclouds.abiquo.domain.infrastructure.TierLiveApiTest)
+[TestNG] Test testListTiers(org.jclouds.abiquo.domain.infrastructure.TierLiveApiTest) succeeded: 54ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.infrastructure.TierLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.infrastructure.TierLiveApiTest) succeeded: 113ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testCreateRepeated(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest)
+[TestNG] Test testCreateRepeated(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest) succeeded: 58ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testDelete(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest)
+[TestNG] Test testDelete(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest) succeeded: 114ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test testFindRemoteService(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest)
+[TestNG] Test testFindRemoteService(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest) succeeded: 48ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testIsAvailable(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest)
+[TestNG] Test testIsAvailable(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest) succeeded: 48ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test testIsAvailableNonCheckeable(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest)
+[TestNG] Test testIsAvailableNonCheckeable(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest) succeeded: 29ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test testListRemoteServices(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest)
+[TestNG] Test testListRemoteServices(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest) succeeded: 60ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.infrastructure.RemoteServiceLiveApiTest) succeeded: 97ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testFindRack(org.jclouds.abiquo.domain.infrastructure.RackLiveApiTest)
+[TestNG] Test testFindRack(org.jclouds.abiquo.domain.infrastructure.RackLiveApiTest) succeeded: 47ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testListRacks(org.jclouds.abiquo.domain.infrastructure.RackLiveApiTest)
+[TestNG] Test testListRacks(org.jclouds.abiquo.domain.infrastructure.RackLiveApiTest) succeeded: 66ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.infrastructure.RackLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.infrastructure.RackLiveApiTest) succeeded: 68ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testFindStorageDevice(org.jclouds.abiquo.domain.infrastructure.StorageDeviceLiveApiTest)
+[TestNG] Test testFindStorageDevice(org.jclouds.abiquo.domain.infrastructure.StorageDeviceLiveApiTest) succeeded: 61ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testListStorageDevices(org.jclouds.abiquo.domain.infrastructure.StorageDeviceLiveApiTest)
+[TestNG] Test testListStorageDevices(org.jclouds.abiquo.domain.infrastructure.StorageDeviceLiveApiTest) succeeded: 81ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.infrastructure.StorageDeviceLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.infrastructure.StorageDeviceLiveApiTest) succeeded: 77ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testCheckHypervisorType(org.jclouds.abiquo.domain.infrastructure.DatacenterLiveApiTest)
+[TestNG] Test testCheckHypervisorType(org.jclouds.abiquo.domain.infrastructure.DatacenterLiveApiTest) succeeded: 2807ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testCreateRepeated(org.jclouds.abiquo.domain.infrastructure.DatacenterLiveApiTest)
+[TestNG] Test testCreateRepeated(org.jclouds.abiquo.domain.infrastructure.DatacenterLiveApiTest) succeeded: 42ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testListLimits(org.jclouds.abiquo.domain.infrastructure.DatacenterLiveApiTest)
+[TestNG] Test testListLimits(org.jclouds.abiquo.domain.infrastructure.DatacenterLiveApiTest) succeeded: 42ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.infrastructure.DatacenterLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.infrastructure.DatacenterLiveApiTest) succeeded: 80ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testFindStoragePool(org.jclouds.abiquo.domain.infrastructure.StoragePoolLiveApiTest)
+[TestNG] Test testFindStoragePool(org.jclouds.abiquo.domain.infrastructure.StoragePoolLiveApiTest) succeeded: 181ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testGetDevice(org.jclouds.abiquo.domain.infrastructure.StoragePoolLiveApiTest)
+[TestNG] Test testGetDevice(org.jclouds.abiquo.domain.infrastructure.StoragePoolLiveApiTest) succeeded: 24ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testListStoragePool(org.jclouds.abiquo.domain.infrastructure.StoragePoolLiveApiTest)
+[TestNG] Test testListStoragePool(org.jclouds.abiquo.domain.infrastructure.StoragePoolLiveApiTest) succeeded: 83ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testRefreshStoragePool(org.jclouds.abiquo.domain.infrastructure.StoragePoolLiveApiTest)
+[TestNG] Test testRefreshStoragePool(org.jclouds.abiquo.domain.infrastructure.StoragePoolLiveApiTest) succeeded: 385ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.infrastructure.StoragePoolLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.infrastructure.StoragePoolLiveApiTest) succeeded: 235ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testCheck(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest)
+[TestNG] Test testCheck(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest) succeeded: 53176ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testCheckFromDatacenter(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest)
+[TestNG] Test testCheckFromDatacenter(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest) succeeded: 37016ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testDiscoverMachineWithouRemoteService(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest)
+[TestNG] Test testDiscoverMachineWithouRemoteService(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest) succeeded: 141ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+Starting test testFindAvailableVirtualSwitch(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest)
+[TestNG] Test testFindAvailableVirtualSwitch(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest) succeeded: 0ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+Starting test testFindDatastore(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest)
+[TestNG] Test testFindDatastore(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest) succeeded: 0ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+Starting test testGetRack(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest)
+[TestNG] Test testGetRack(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest) succeeded: 22ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+Starting test testListVirtualMachines(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest)
+[TestNG] Test testListVirtualMachines(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest) succeeded: 6358ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+Starting test testReserveMachine(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest)
+[TestNG] Test testReserveMachine(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest) succeeded: 116ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest) succeeded: 184ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+Starting test testCancelReservation(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest)
+[TestNG] Test testCancelReservation(org.jclouds.abiquo.domain.infrastructure.MachineLiveApiTest) succeeded: 21ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+Starting test testListDatacenterNetworks(org.jclouds.abiquo.domain.network.GenericNetworkLiveApiTest)
+[TestNG] Test testListDatacenterNetworks(org.jclouds.abiquo.domain.network.GenericNetworkLiveApiTest) succeeded: 34ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
+Starting test testListExternaletworks(org.jclouds.abiquo.domain.network.GenericNetworkLiveApiTest)
+[TestNG] Test testListExternaletworks(org.jclouds.abiquo.domain.network.GenericNetworkLiveApiTest) succeeded: 29ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
+Starting test testListPrivateNetworks(org.jclouds.abiquo.domain.network.GenericNetworkLiveApiTest)
+[TestNG] Test testListPrivateNetworks(org.jclouds.abiquo.domain.network.GenericNetworkLiveApiTest) succeeded: 15ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+Starting test testListPublicNetworks(org.jclouds.abiquo.domain.network.GenericNetworkLiveApiTest)
+[TestNG] Test testListPublicNetworks(org.jclouds.abiquo.domain.network.GenericNetworkLiveApiTest) succeeded: 37ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+Starting test testListUnmanagedNetworks(org.jclouds.abiquo.domain.network.GenericNetworkLiveApiTest)
+[TestNG] Test testListUnmanagedNetworks(org.jclouds.abiquo.domain.network.GenericNetworkLiveApiTest) succeeded: 29ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+Starting test testGetDatacenter(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest)
+[TestNG] Test testGetDatacenter(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest) succeeded: 29ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+Starting test testGetNetworkFromIp(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest)
+[TestNG] Test testGetNetworkFromIp(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest) succeeded: 440ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+Starting test testListIps(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest)
+[TestNG] Test testListIps(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest) succeeded: 384ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+Starting test testListIpsWithOptions(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest)
+[TestNG] Test testListIpsWithOptions(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest) succeeded: 168ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+Starting test testListUnusedIps(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest)
+[TestNG] Test testListUnusedIps(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest) succeeded: 349ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
+Starting test testUpdateBasicInfo(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest)
+[TestNG] Test testUpdateBasicInfo(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest) succeeded: 367ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
+Starting test testUpdateReadOnlyFields(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest)
+[TestNG] Test testUpdateReadOnlyFields(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest) succeeded: 430ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
+Starting test testUpdateWithInvalidValues(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest)
+[TestNG] Test testUpdateWithInvalidValues(org.jclouds.abiquo.domain.network.PublicNetworkLiveApiTest) succeeded: 401ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
+Starting test testGetNetworkFromIp(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest)
+[TestNG] Test testGetNetworkFromIp(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest) succeeded: 471ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+Starting test testListIps(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest)
+[TestNG] Test testListIps(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest) succeeded: 452ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 0.
+Starting test testListIpsWithOptions(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest)
+[TestNG] Test testListIpsWithOptions(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest) succeeded: 32ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 0.
+Starting test testListUnusedIps(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest)
+[TestNG] Test testListUnusedIps(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest) succeeded: 436ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 0.
+Starting test testUpdateBasicInfo(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest)
+[TestNG] Test testUpdateBasicInfo(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest) succeeded: 373ms
+Test suite progress: tests succeeded: 90, failed: 0, skipped: 0.
+Starting test testUpdateReadOnlyFields(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest)
+[TestNG] Test testUpdateReadOnlyFields(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest) succeeded: 438ms
+Test suite progress: tests succeeded: 91, failed: 0, skipped: 0.
+Starting test testUpdateWithInvalidValues(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest)
+[TestNG] Test testUpdateWithInvalidValues(org.jclouds.abiquo.domain.network.PrivateNetworkLiveApiTest) succeeded: 439ms
+Test suite progress: tests succeeded: 92, failed: 0, skipped: 0.
+Starting test testGetDatacenter(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest)
+[TestNG] Test testGetDatacenter(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest) succeeded: 58ms
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 0.
+Starting test testGetEnterprise(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest)
+[TestNG] Test testGetEnterprise(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest) succeeded: 27ms
+Test suite progress: tests succeeded: 94, failed: 0, skipped: 0.
+Starting test testGetNetworkFromIp(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest)
+[TestNG] Test testGetNetworkFromIp(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest) succeeded: 24ms
+Test suite progress: tests succeeded: 95, failed: 0, skipped: 0.
+Starting test testListIps(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest)
+[TestNG] Test testListIps(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest) succeeded: 79ms
+Test suite progress: tests succeeded: 96, failed: 0, skipped: 0.
+Starting test testListIpsWithOptions(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest)
+[TestNG] Test testListIpsWithOptions(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest) succeeded: 37ms
+Test suite progress: tests succeeded: 97, failed: 0, skipped: 0.
+Starting test testListUnusedIps(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest)
+[TestNG] Test testListUnusedIps(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest) succeeded: 84ms
+Test suite progress: tests succeeded: 98, failed: 0, skipped: 0.
+Starting test testUpdateBasicInfo(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest)
+[TestNG] Test testUpdateBasicInfo(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest) succeeded: 351ms
+Test suite progress: tests succeeded: 99, failed: 0, skipped: 0.
+Starting test testUpdateReadOnlyFields(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest)
+[TestNG] Test testUpdateReadOnlyFields(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest) succeeded: 264ms
+Test suite progress: tests succeeded: 100, failed: 0, skipped: 0.
+Starting test testUpdateWithInvalidValues(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest)
+[TestNG] Test testUpdateWithInvalidValues(org.jclouds.abiquo.domain.network.UnmanagedNetworkLiveApiTest) succeeded: 248ms
+Test suite progress: tests succeeded: 101, failed: 0, skipped: 0.
+Starting test testGetDatacenter(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest)
+[TestNG] Test testGetDatacenter(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest) succeeded: 51ms
+Test suite progress: tests succeeded: 102, failed: 0, skipped: 0.
+Starting test testGetEnterprise(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest)
+[TestNG] Test testGetEnterprise(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest) succeeded: 42ms
+Test suite progress: tests succeeded: 103, failed: 0, skipped: 0.
+Starting test testGetNetworkFromIp(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest)
+[TestNG] Test testGetNetworkFromIp(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest) succeeded: 434ms
+Test suite progress: tests succeeded: 104, failed: 0, skipped: 0.
+Starting test testListIps(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest)
+[TestNG] Test testListIps(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest) succeeded: 659ms
+Test suite progress: tests succeeded: 105, failed: 0, skipped: 0.
+Starting test testListIpsWithOptions(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest)
+[TestNG] Test testListIpsWithOptions(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest) succeeded: 46ms
+Test suite progress: tests succeeded: 106, failed: 0, skipped: 0.
+Starting test testListUnusedIps(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest)
+[TestNG] Test testListUnusedIps(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest) succeeded: 431ms
+Test suite progress: tests succeeded: 107, failed: 0, skipped: 0.
+Starting test testUpdateBasicInfo(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest)
+[TestNG] Test testUpdateBasicInfo(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest) succeeded: 515ms
+Test suite progress: tests succeeded: 108, failed: 0, skipped: 0.
+Starting test testUpdateReadOnlyFields(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest)
+[TestNG] Test testUpdateReadOnlyFields(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest) succeeded: 433ms
+Test suite progress: tests succeeded: 109, failed: 0, skipped: 0.
+Starting test testUpdateWithInvalidValues(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest)
+[TestNG] Test testUpdateWithInvalidValues(org.jclouds.abiquo.domain.network.ExternalNetworkLiveApiTest) succeeded: 440ms
+Test suite progress: tests succeeded: 110, failed: 0, skipped: 0.
+Starting test testCreateRepeated(org.jclouds.abiquo.domain.cloud.VirtualApplianceLiveApiTest)
+[TestNG] Test testCreateRepeated(org.jclouds.abiquo.domain.cloud.VirtualApplianceLiveApiTest) succeeded: 156ms
+Test suite progress: tests succeeded: 111, failed: 0, skipped: 0.
+Starting test testGetState(org.jclouds.abiquo.domain.cloud.VirtualApplianceLiveApiTest)
+[TestNG] Test testGetState(org.jclouds.abiquo.domain.cloud.VirtualApplianceLiveApiTest) succeeded: 39ms
+Test suite progress: tests succeeded: 112, failed: 0, skipped: 0.
+Starting test testListVirtualMachinesReturnsAll(org.jclouds.abiquo.domain.cloud.VirtualApplianceLiveApiTest)
+[TestNG] Test testListVirtualMachinesReturnsAll(org.jclouds.abiquo.domain.cloud.VirtualApplianceLiveApiTest) succeeded: 7773ms
+Test suite progress: tests succeeded: 113, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.cloud.VirtualApplianceLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.cloud.VirtualApplianceLiveApiTest) succeeded: 92ms
+Test suite progress: tests succeeded: 114, failed: 0, skipped: 0.
+Starting test testCreateVolume(org.jclouds.abiquo.domain.cloud.VolumeLiveApiTest)
+[TestNG] Test testCreateVolume(org.jclouds.abiquo.domain.cloud.VolumeLiveApiTest) succeeded: 6977ms
+Test suite progress: tests succeeded: 115, failed: 0, skipped: 0.
+Starting test testFilterVolumes(org.jclouds.abiquo.domain.cloud.VolumeLiveApiTest)
+[TestNG] Test testFilterVolumes(org.jclouds.abiquo.domain.cloud.VolumeLiveApiTest) succeeded: 54ms
+Test suite progress: tests succeeded: 116, failed: 0, skipped: 0.
+Starting test testUpdateVolume(org.jclouds.abiquo.domain.cloud.VolumeLiveApiTest)
+[TestNG] Test testUpdateVolume(org.jclouds.abiquo.domain.cloud.VolumeLiveApiTest) succeeded: 214ms
+Test suite progress: tests succeeded: 117, failed: 0, skipped: 0.
+Starting test testMoveVolume(org.jclouds.abiquo.domain.cloud.VolumeLiveApiTest)
+[TestNG] Test testMoveVolume(org.jclouds.abiquo.domain.cloud.VolumeLiveApiTest) succeeded: 711ms
+Test suite progress: tests succeeded: 118, failed: 0, skipped: 0.
+Starting test testDeleteVolume(org.jclouds.abiquo.domain.cloud.VolumeLiveApiTest)
+[TestNG] Test testDeleteVolume(org.jclouds.abiquo.domain.cloud.VolumeLiveApiTest) succeeded: 9549ms
+Test suite progress: tests succeeded: 119, failed: 0, skipped: 0.
+Starting test testAttachPublicIp(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest)
+[TestNG] Test testAttachPublicIp(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest) succeeded: 199ms
+Test suite progress: tests succeeded: 120, failed: 0, skipped: 0.
+Starting test testAttachPrivateIp(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest)
+[TestNG] Test testAttachPrivateIp(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest) succeeded: 426ms
+Test suite progress: tests succeeded: 121, failed: 0, skipped: 0.
+Starting test testAttachExternalIp(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest)
+[TestNG] Test testAttachExternalIp(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest) succeeded: 300ms
+Test suite progress: tests succeeded: 122, failed: 0, skipped: 0.
+Starting test testAddUnmanagedNics(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest)
+[TestNG] Test testAddUnmanagedNics(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest) succeeded: 375ms
+Test suite progress: tests succeeded: 123, failed: 0, skipped: 0.
+Starting test testReorderNics(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest)
+[TestNG] Test testReorderNics(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest) succeeded: 453ms
+Test suite progress: tests succeeded: 124, failed: 0, skipped: 0.
+Starting test testDetachNics(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest)
+[TestNG] Test testDetachNics(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest) succeeded: 432ms
+Test suite progress: tests succeeded: 125, failed: 0, skipped: 0.
+Starting test testSetDefaultGateway(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest)
+[TestNG] Test testSetDefaultGateway(org.jclouds.abiquo.domain.cloud.VirtualMachineNetworkingLiveApiTest) succeeded: 190ms
+Test suite progress: tests succeeded: 126, failed: 0, skipped: 0.
+Starting test testCreateFromEnterprise(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest)
+[TestNG] Test testCreateFromEnterprise(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest) succeeded: 572ms
+Test suite progress: tests succeeded: 127, failed: 0, skipped: 0.
+Starting test testCreateFromVirtualDatacenter(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest)
+[TestNG] Test testCreateFromVirtualDatacenter(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest) succeeded: 691ms
+Test suite progress: tests succeeded: 128, failed: 0, skipped: 0.
+Starting test testCreateRepeated(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest)
+[TestNG] Test testCreateRepeated(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest) succeeded: 490ms
+Test suite progress: tests succeeded: 129, failed: 0, skipped: 0.
+Starting test testGetAvailableTemplates(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest)
+[TestNG] Test testGetAvailableTemplates(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest) succeeded: 81ms
+Test suite progress: tests succeeded: 130, failed: 0, skipped: 0.
+Starting test testPurchaseIp(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest)
+[TestNG] Test testPurchaseIp(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest) succeeded: 359ms
+Test suite progress: tests succeeded: 131, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest) succeeded: 175ms
+Test suite progress: tests succeeded: 132, failed: 0, skipped: 0.
+Starting test testGetDefaultNetwork(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest)
+[TestNG] Test testGetDefaultNetwork(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest) succeeded: 45ms
+Test suite progress: tests succeeded: 133, failed: 0, skipped: 0.
+Starting test testFindAvailableTemplate(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest)
+[TestNG] Test testFindAvailableTemplate(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest) succeeded: 96ms
+Test suite progress: tests succeeded: 134, failed: 0, skipped: 0.
+Starting test testGetAvailableTemplate(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest)
+[TestNG] Test testGetAvailableTemplate(org.jclouds.abiquo.domain.cloud.VirtualDatacenterLiveApiTest) succeeded: 26ms
+Test suite progress: tests succeeded: 135, failed: 0, skipped: 0.
+Starting test createHardDisk(org.jclouds.abiquo.domain.cloud.HardDiskLiveApiTest)
+[TestNG] Test createHardDisk(org.jclouds.abiquo.domain.cloud.HardDiskLiveApiTest) succeeded: 73ms
+Test suite progress: tests succeeded: 136, failed: 0, skipped: 0.
+Starting test deleteHardDisk(org.jclouds.abiquo.domain.cloud.HardDiskLiveApiTest)
+[TestNG] Test deleteHardDisk(org.jclouds.abiquo.domain.cloud.HardDiskLiveApiTest) succeeded: 57ms
+Test suite progress: tests succeeded: 137, failed: 0, skipped: 0.
+Starting test testAttachDvd(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest)
+[TestNG] Test testAttachDvd(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest) succeeded: 190ms
+Test suite progress: tests succeeded: 138, failed: 0, skipped: 0.
+Starting test testGetState(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest)
+[TestNG] Test testGetState(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest) succeeded: 18ms
+Test suite progress: tests succeeded: 139, failed: 0, skipped: 0.
+Starting test testGetTasks(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest)
+[TestNG] Test testGetTasks(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest) succeeded: 47ms
+Test suite progress: tests succeeded: 140, failed: 0, skipped: 0.
+Starting test testGetVirtualAppliance(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest)
+[TestNG] Test testGetVirtualAppliance(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest) succeeded: 37ms
+Test suite progress: tests succeeded: 141, failed: 0, skipped: 0.
+Starting test testHasDataFromNode(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest)
+[TestNG] Test testHasDataFromNode(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest) succeeded: 0ms
+Test suite progress: tests succeeded: 142, failed: 0, skipped: 0.
+Starting test testIsPersistent(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest)
+[TestNG] Test testIsPersistent(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest) succeeded: 29ms
+Test suite progress: tests succeeded: 143, failed: 0, skipped: 0.
+Starting test testRebootVirtualMachineFailsWhenNotAllocated(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest)
+[TestNG] Test testRebootVirtualMachineFailsWhenNotAllocated(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest) succeeded: 18ms
+Test suite progress: tests succeeded: 144, failed: 0, skipped: 0.
+Starting test testUpdateForcingLimits(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest)
+[TestNG] Test testUpdateForcingLimits(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest) succeeded: 356ms
+Test suite progress: tests succeeded: 145, failed: 0, skipped: 0.
+Starting test testUpdateInfoFromNode(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest)
+[TestNG] Test testUpdateInfoFromNode(org.jclouds.abiquo.domain.cloud.VirtualMachineLiveApiTest) succeeded: 123ms
+Test suite progress: tests succeeded: 146, failed: 0, skipped: 0.
+Starting test testGetCategory(org.jclouds.abiquo.domain.cloud.VirtualMachineTemplateLiveApiTest)
+[TestNG] Test testGetCategory(org.jclouds.abiquo.domain.cloud.VirtualMachineTemplateLiveApiTest) succeeded: 41ms
+Test suite progress: tests succeeded: 147, failed: 0, skipped: 0.
+Starting test testGetParent(org.jclouds.abiquo.domain.cloud.VirtualMachineTemplateLiveApiTest)
+[TestNG] Test testGetParent(org.jclouds.abiquo.domain.cloud.VirtualMachineTemplateLiveApiTest) succeeded: 52ms
+Test suite progress: tests succeeded: 148, failed: 0, skipped: 0.
+Starting test testRequestConversionToSameFormat(org.jclouds.abiquo.domain.cloud.VirtualMachineTemplateLiveApiTest)
+[TestNG] Test testRequestConversionToSameFormat(org.jclouds.abiquo.domain.cloud.VirtualMachineTemplateLiveApiTest) succeeded: 100ms
+Test suite progress: tests succeeded: 149, failed: 0, skipped: 0.
+Starting test testAttachHardDisks(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest)
+[TestNG] Test testAttachHardDisks(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest) succeeded: 259ms
+Test suite progress: tests succeeded: 150, failed: 0, skipped: 0.
+Starting test testAttachVolumes(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest)
+[TestNG] Test testAttachVolumes(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest) succeeded: 6119ms
+Test suite progress: tests succeeded: 151, failed: 0, skipped: 0.
+Starting test detachHardDisk(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest)
+[TestNG] Test detachHardDisk(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest) succeeded: 216ms
+Test suite progress: tests succeeded: 152, failed: 0, skipped: 0.
+Starting test detachVolume(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest)
+[TestNG] Test detachVolume(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest) succeeded: 168ms
+Test suite progress: tests succeeded: 153, failed: 0, skipped: 0.
+Starting test detachAllHardDisks(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest)
+[TestNG] Test detachAllHardDisks(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest) succeeded: 261ms
+Test suite progress: tests succeeded: 154, failed: 0, skipped: 0.
+Starting test detachAllVolumes(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest)
+[TestNG] Test detachAllVolumes(org.jclouds.abiquo.domain.cloud.VirtualMachineStorageLiveApiTest) succeeded: 9332ms
+Test suite progress: tests succeeded: 155, failed: 0, skipped: 0.
+Starting test testAddPrivilege(org.jclouds.abiquo.domain.admin.RoleLiveApiTest)
+[TestNG] Test testAddPrivilege(org.jclouds.abiquo.domain.admin.RoleLiveApiTest) succeeded: 111ms
+Test suite progress: tests succeeded: 156, failed: 0, skipped: 0.
+Starting test testCreateEnterpriseRole(org.jclouds.abiquo.domain.admin.RoleLiveApiTest)
+[TestNG] Test testCreateEnterpriseRole(org.jclouds.abiquo.domain.admin.RoleLiveApiTest) succeeded: 73ms
+Test suite progress: tests succeeded: 157, failed: 0, skipped: 0.
+Starting test testCreateRepeated(org.jclouds.abiquo.domain.admin.RoleLiveApiTest)
+[TestNG] Test testCreateRepeated(org.jclouds.abiquo.domain.admin.RoleLiveApiTest) succeeded: 19ms
+Test suite progress: tests succeeded: 158, failed: 0, skipped: 0.
+Starting test testUpdate(org.jclouds.abiquo.domain.admin.RoleLiveApiTest)
+[TestNG] Test testUpdate(org.jclouds.abiquo.domain.admin.RoleLiveApiTest) succeeded: 135ms
+Test suite progress: tests succeeded: 159, failed: 0, skipped: 0.
+Starting test testAuthenticateWithInvalidToken(org.jclouds.abiquo.http.filters.AbiquoAuthenticationLiveApiTest)
+[TestNG] Test testAuthenticateWithInvalidToken(org.jclouds.abiquo.http.filters.AbiquoAuthenticationLiveApiTest) succeeded: 179ms
+Test suite progress: tests succeeded: 160, failed: 0, skipped: 0.
+Starting test testAuthenticateWithToken(org.jclouds.abiquo.http.filters.AbiquoAuthenticationLiveApiTest)
+[TestNG] Test testAuthenticateWithToken(org.jclouds.abiquo.http.filters.AbiquoAuthenticationLiveApiTest) succeeded: 188ms
+Test suite progress: tests succeeded: 161, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.config.internal.ListPropertiesImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.config.internal.ListPropertiesImplLiveApiTest) succeeded: 57ms
+Test suite progress: tests succeeded: 162, failed: 0, skipped: 0.
+Starting test testExecuteNotPredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListPropertiesImplLiveApiTest)
+[TestNG] Test testExecuteNotPredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListPropertiesImplLiveApiTest) succeeded: 107ms
+Test suite progress: tests succeeded: 163, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListPropertiesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListPropertiesImplLiveApiTest) succeeded: 56ms
+Test suite progress: tests succeeded: 164, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.config.internal.ListPropertiesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.config.internal.ListPropertiesImplLiveApiTest) succeeded: 71ms
+Test suite progress: tests succeeded: 165, failed: 0, skipped: 0.
+Starting test testExecuteWithOptions(org.jclouds.abiquo.strategy.config.internal.ListPropertiesImplLiveApiTest)
+[TestNG] Test testExecuteWithOptions(org.jclouds.abiquo.strategy.config.internal.ListPropertiesImplLiveApiTest) succeeded: 56ms
+Test suite progress: tests succeeded: 166, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.config.internal.ListCategoriesImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.config.internal.ListCategoriesImplLiveApiTest) succeeded: 16ms
+Test suite progress: tests succeeded: 167, failed: 0, skipped: 0.
+Starting test testExecuteNotPredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListCategoriesImplLiveApiTest)
+[TestNG] Test testExecuteNotPredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListCategoriesImplLiveApiTest) succeeded: 30ms
+Test suite progress: tests succeeded: 168, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListCategoriesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListCategoriesImplLiveApiTest) succeeded: 16ms
+Test suite progress: tests succeeded: 169, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.config.internal.ListCategoriesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.config.internal.ListCategoriesImplLiveApiTest) succeeded: 15ms
+Test suite progress: tests succeeded: 170, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.config.internal.ListLicensesImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.config.internal.ListLicensesImplLiveApiTest) succeeded: 19ms
+Test suite progress: tests succeeded: 171, failed: 0, skipped: 0.
+Starting test testExecuteActive(org.jclouds.abiquo.strategy.config.internal.ListLicensesImplLiveApiTest)
+[TestNG] Test testExecuteActive(org.jclouds.abiquo.strategy.config.internal.ListLicensesImplLiveApiTest) succeeded: 26ms
+Test suite progress: tests succeeded: 172, failed: 0, skipped: 0.
+Starting test testExecuteInactive(org.jclouds.abiquo.strategy.config.internal.ListLicensesImplLiveApiTest)
+[TestNG] Test testExecuteInactive(org.jclouds.abiquo.strategy.config.internal.ListLicensesImplLiveApiTest) succeeded: 15ms
+Test suite progress: tests succeeded: 173, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListLicensesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListLicensesImplLiveApiTest) succeeded: 21ms
+Test suite progress: tests succeeded: 174, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.config.internal.ListLicensesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.config.internal.ListLicensesImplLiveApiTest) succeeded: 18ms
+Test suite progress: tests succeeded: 175, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.config.internal.ListPrivilegesImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.config.internal.ListPrivilegesImplLiveApiTest) succeeded: 45ms
+Test suite progress: tests succeeded: 176, failed: 0, skipped: 0.
+Starting test testExecuteNotPredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListPrivilegesImplLiveApiTest)
+[TestNG] Test testExecuteNotPredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListPrivilegesImplLiveApiTest) succeeded: 76ms
+Test suite progress: tests succeeded: 177, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListPrivilegesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.config.internal.ListPrivilegesImplLiveApiTest) succeeded: 39ms
+Test suite progress: tests succeeded: 178, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.config.internal.ListPrivilegesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.config.internal.ListPrivilegesImplLiveApiTest) succeeded: 37ms
+Test suite progress: tests succeeded: 179, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.enterprise.internal.ListVirtualMachineTemplatesImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.enterprise.internal.ListVirtualMachineTemplatesImplLiveApiTest) succeeded: 156ms
+Test suite progress: tests succeeded: 180, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.enterprise.internal.ListVirtualMachineTemplatesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.enterprise.internal.ListVirtualMachineTemplatesImplLiveApiTest) succeeded: 146ms
+Test suite progress: tests succeeded: 181, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.enterprise.internal.ListVirtualMachineTemplatesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.enterprise.internal.ListVirtualMachineTemplatesImplLiveApiTest) succeeded: 164ms
+Test suite progress: tests succeeded: 182, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.enterprise.internal.ListEnterprisesImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.enterprise.internal.ListEnterprisesImplLiveApiTest) succeeded: 33ms
+Test suite progress: tests succeeded: 183, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.enterprise.internal.ListEnterprisesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.enterprise.internal.ListEnterprisesImplLiveApiTest) succeeded: 38ms
+Test suite progress: tests succeeded: 184, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.enterprise.internal.ListEnterprisesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.enterprise.internal.ListEnterprisesImplLiveApiTest) succeeded: 28ms
+Test suite progress: tests succeeded: 185, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.infrastructure.internal.ListDatacentersImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.infrastructure.internal.ListDatacentersImplLiveApiTest) succeeded: 28ms
+Test suite progress: tests succeeded: 186, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.infrastructure.internal.ListDatacentersImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.infrastructure.internal.ListDatacentersImplLiveApiTest) succeeded: 27ms
+Test suite progress: tests succeeded: 187, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.infrastructure.internal.ListDatacentersImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.infrastructure.internal.ListDatacentersImplLiveApiTest) succeeded: 26ms
+Test suite progress: tests succeeded: 188, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.infrastructure.internal.ListMachinesImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.infrastructure.internal.ListMachinesImplLiveApiTest) succeeded: 85ms
+Test suite progress: tests succeeded: 189, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.infrastructure.internal.ListMachinesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.infrastructure.internal.ListMachinesImplLiveApiTest) succeeded: 83ms
+Test suite progress: tests succeeded: 190, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.infrastructure.internal.ListMachinesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.infrastructure.internal.ListMachinesImplLiveApiTest) succeeded: 88ms
+Test suite progress: tests succeeded: 191, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.cloud.internal.ListAttachedNicsImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.cloud.internal.ListAttachedNicsImplLiveApiTest) succeeded: 123ms
+Test suite progress: tests succeeded: 192, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.cloud.internal.ListAttachedNicsImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.cloud.internal.ListAttachedNicsImplLiveApiTest) succeeded: 131ms
+Test suite progress: tests succeeded: 193, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.cloud.internal.ListAttachedNicsImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.cloud.internal.ListAttachedNicsImplLiveApiTest) succeeded: 116ms
+Test suite progress: tests succeeded: 194, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualMachinesImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualMachinesImplLiveApiTest) succeeded: 109ms
+Test suite progress: tests succeeded: 195, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualMachinesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualMachinesImplLiveApiTest) succeeded: 110ms
+Test suite progress: tests succeeded: 196, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualMachinesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualMachinesImplLiveApiTest) succeeded: 114ms
+Test suite progress: tests succeeded: 197, failed: 0, skipped: 0.
+Starting test testExecuteWhenExceedsPagination(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualMachinesImplLiveApiTest)
+[TestNG] Test testExecuteWhenExceedsPagination(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualMachinesImplLiveApiTest) succeeded: 5301ms
+Test suite progress: tests succeeded: 198, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualDatacentersImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualDatacentersImplLiveApiTest) succeeded: 37ms
+Test suite progress: tests succeeded: 199, failed: 0, skipped: 0.
+Starting test testExecutePredicateOptionsWithResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualDatacentersImplLiveApiTest)
+[TestNG] Test testExecutePredicateOptionsWithResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualDatacentersImplLiveApiTest) succeeded: 44ms
+Test suite progress: tests succeeded: 200, failed: 0, skipped: 0.
+Starting test testExecutePredicateOptionsWithoutResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualDatacentersImplLiveApiTest)
+[TestNG] Test testExecutePredicateOptionsWithoutResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualDatacentersImplLiveApiTest) succeeded: 26ms
+Test suite progress: tests succeeded: 201, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualDatacentersImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualDatacentersImplLiveApiTest) succeeded: 33ms
+Test suite progress: tests succeeded: 202, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualDatacentersImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualDatacentersImplLiveApiTest) succeeded: 36ms
+Test suite progress: tests succeeded: 203, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualAppliancesImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualAppliancesImplLiveApiTest) succeeded: 67ms
+Test suite progress: tests succeeded: 204, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualAppliancesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualAppliancesImplLiveApiTest) succeeded: 63ms
+Test suite progress: tests succeeded: 205, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualAppliancesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.cloud.internal.ListVirtualAppliancesImplLiveApiTest) succeeded: 65ms
+Test suite progress: tests succeeded: 206, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.abiquo.strategy.admin.internal.ListRolesImplLiveApiTest)
+[TestNG] Test testExecute(org.jclouds.abiquo.strategy.admin.internal.ListRolesImplLiveApiTest) succeeded: 20ms
+Test suite progress: tests succeeded: 207, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.admin.internal.ListRolesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithResults(org.jclouds.abiquo.strategy.admin.internal.ListRolesImplLiveApiTest) succeeded: 19ms
+Test suite progress: tests succeeded: 208, failed: 0, skipped: 0.
+Starting test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.admin.internal.ListRolesImplLiveApiTest)
+[TestNG] Test testExecutePredicateWithoutResults(org.jclouds.abiquo.strategy.admin.internal.ListRolesImplLiveApiTest) succeeded: 18ms
+Test suite progress: tests succeeded: 209, failed: 0, skipped: 0.
+Tests run: 209, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 262.836 sec
+
+Results :
+
+Tests run: 209, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4:49.663s
+[INFO] Finished at: Mon Sep 17 18:31:52 CEST 2012
+[INFO] Final Memory: 32M/618M
+[INFO] ------------------------------------------------------------------------

@@ -115,8 +115,9 @@ title: A List of applications that use jclouds
   * [Apache Camel](http://camel.apache.org/jclouds.html)
     * allows interaction with cloud provider key-value engines (blobstores) and compute services
 
-  * [Abiquo 2.0](http://www.abiquo.com/products/abiquo-2.0.php)
-    * uses jclouds for OpsCode Chef integration
+  * [Abiquo](http://www.abiquo.com/)
+    * Uses jclouds for OpsCode Chef integration
+    * Uses jclouds internally to communicate the UI with the Abiquo API
 
   * [Nimble Servers](http://www.nimbleservers.com/)
     * Nimble Servers uses jclouds to provision servers on public clouds in response to user demand
