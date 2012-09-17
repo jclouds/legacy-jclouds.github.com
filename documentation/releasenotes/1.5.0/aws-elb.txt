@@ -1,0 +1,175 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:aws-elb:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Amazon Elastic Load Balancer provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ aws-elb ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/aws-elb/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ aws-elb ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ aws-elb ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ aws-elb ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ aws-elb ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ aws-elb ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/aws-elb/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ aws-elb ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/jclouds/labs/aws-elb/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ aws-elb ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/aws-elb/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/aws-elb/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ aws-elb ---
+[INFO] Compiling 6 source files to /Users/adriancole/workspace/git/jclouds/labs/aws-elb/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ aws-elb ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/aws-elb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.aws.elb.AWSELBProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@4139eeda
+Starting test testAllContains(org.jclouds.aws.elb.AWSELBProviderTest)
+Starting test testOfApiContains(org.jclouds.aws.elb.AWSELBProviderTest)
+Starting test testTransformableToContains(org.jclouds.aws.elb.AWSELBProviderTest)
+Starting test testWithId(org.jclouds.aws.elb.AWSELBProviderTest)
+[pool-2-thread-4] Test testWithId(org.jclouds.aws.elb.AWSELBProviderTest) succeeded: 5ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.aws.elb.AWSELBProviderTest) succeeded: 38ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testAllContains(org.jclouds.aws.elb.AWSELBProviderTest) succeeded: 63ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.aws.elb.AWSELBProviderTest) succeeded: 51ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.865 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ aws-elb ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ aws-elb ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/aws-elb/target/aws-elb-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ aws-elb ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/aws-elb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@3d66aa18
+08:43:02,027 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+08:43:02,027 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+08:43:02,027 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/labs/elb/1.6.0-SNAPSHOT/elb-1.6.0-SNAPSHOT-tests.jar!/logback.xml]
+08:43:02,028 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+08:43:02,028 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/labs/elb/1.6.0-SNAPSHOT/elb-1.6.0-SNAPSHOT-tests.jar!/logback.xml]
+08:43:02,028 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/jclouds-compute/1.6.0-SNAPSHOT/jclouds-compute-1.6.0-SNAPSHOT-tests.jar!/logback.xml]
+08:43:02,049 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5d90b72c - URL [jar:file:/Users/adriancole/.m2/repository/org/jclouds/labs/elb/1.6.0-SNAPSHOT/elb-1.6.0-SNAPSHOT-tests.jar!/logback.xml] is not of type file
+08:43:02,127 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+08:43:02,128 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+08:43:02,132 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+08:43:02,147 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:43:02,179 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/test-data/jclouds.log]
+08:43:02,180 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+08:43:02,180 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [WIREFILE]
+08:43:02,181 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:43:02,181 |-INFO in ch.qos.logback.core.FileAppender[WIREFILE] - File property is set to [target/test-data/jclouds-wire.log]
+08:43:02,181 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+08:43:02,182 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [LBFILE]
+08:43:02,182 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:43:02,182 |-INFO in ch.qos.logback.core.FileAppender[LBFILE] - File property is set to [target/test-data/jclouds-loadbalancer.log]
+08:43:02,182 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+08:43:02,182 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [COMPUTEFILE]
+08:43:02,183 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:43:02,183 |-INFO in ch.qos.logback.core.FileAppender[COMPUTEFILE] - File property is set to [target/test-data/jclouds-compute.log]
+08:43:02,183 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+08:43:02,183 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [SSHFILE]
+08:43:02,184 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:43:02,184 |-INFO in ch.qos.logback.core.FileAppender[SSHFILE] - File property is set to [target/test-data/jclouds-ssh.log]
+08:43:02,184 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - ROOT level set to WARN
+08:43:02,184 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.jclouds level set to DEBUG
+08:43:02,184 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[org.jclouds]
+08:43:02,185 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.wire level set to DEBUG
+08:43:02,185 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.wire]
+08:43:02,185 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.headers level set to DEBUG
+08:43:02,185 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.headers]
+08:43:02,185 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.compute level set to DEBUG
+08:43:02,185 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [COMPUTEFILE] to Logger[jclouds.compute]
+08:43:02,185 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.loadbalancer level set to DEBUG
+08:43:02,185 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [LBFILE] to Logger[jclouds.loadbalancer]
+08:43:02,185 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.ssh level set to DEBUG
+08:43:02,185 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [SSHFILE] to Logger[jclouds.ssh]
+08:43:02,186 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@47e9d9b1 - Registering current configuration as safe fallback point
+
+Starting test testDescribePolicies(org.jclouds.aws.elb.features.AWSPolicyApiLiveTest)
+Starting test testList(org.jclouds.aws.elb.features.AWSLoadBalancerApiLiveTest)
+Starting test testListInstanceStates(org.jclouds.aws.elb.features.AWSInstanceApiLiveTest)
+[TestNG] Test testListInstanceStates(org.jclouds.aws.elb.features.AWSInstanceApiLiveTest) succeeded: 2386ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[TestNG] Test testList(org.jclouds.aws.elb.features.AWSLoadBalancerApiLiveTest) succeeded: 2386ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testListWithOptions(org.jclouds.aws.elb.features.AWSLoadBalancerApiLiveTest)
+[TestNG] Test testDescribePolicies(org.jclouds.aws.elb.features.AWSPolicyApiLiveTest) succeeded: 3043ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testDescribePolicyTypes(org.jclouds.aws.elb.features.AWSPolicyApiLiveTest)
+[TestNG] Test testListWithOptions(org.jclouds.aws.elb.features.AWSLoadBalancerApiLiveTest) succeeded: 901ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[TestNG] Test testDescribePolicyTypes(org.jclouds.aws.elb.features.AWSPolicyApiLiveTest) succeeded: 1606ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testLoadBalanceNodesMatching(org.jclouds.aws.elb.loadbalancer.AWSELBLoadBalancerServiceLiveTest)
+[TestNG] Test testLoadBalanceNodesMatching(org.jclouds.aws.elb.loadbalancer.AWSELBLoadBalancerServiceLiveTest) succeeded: 2027ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testDestroyLoadBalancers(org.jclouds.aws.elb.loadbalancer.AWSELBLoadBalancerServiceLiveTest)
+[TestNG] Test testDestroyLoadBalancers(org.jclouds.aws.elb.loadbalancer.AWSELBLoadBalancerServiceLiveTest) succeeded: 814ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 109.834 sec
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ aws-elb ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ aws-elb ---
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/aws-elb/target/aws-elb-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/aws-elb/1.6.0-SNAPSHOT/aws-elb-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/aws-elb/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/labs/aws-elb/1.6.0-SNAPSHOT/aws-elb-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/aws-elb/target/aws-elb-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/aws-elb/1.6.0-SNAPSHOT/aws-elb-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ aws-elb ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2:07.397s
+[INFO] Finished at: Mon Sep 17 08:44:51 PDT 2012
+[INFO] Final Memory: 19M/265M
+[INFO] ------------------------------------------------------------------------

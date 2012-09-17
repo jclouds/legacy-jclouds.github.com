@@ -1,0 +1,120 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.labs:aws-iam:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Amazon Identity and Access Management (IAM) provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ aws-iam ---
+[INFO] Deleting /Users/adriancole/workspace/git/jclouds/labs/aws-iam/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ aws-iam ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ aws-iam ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ aws-iam ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ aws-iam ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ aws-iam ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/aws-iam/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ aws-iam ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/jclouds/labs/aws-iam/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ aws-iam ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/aws-iam/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/jclouds/labs/aws-iam/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ aws-iam ---
+[INFO] Compiling 3 source files to /Users/adriancole/workspace/git/jclouds/labs/aws-iam/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ aws-iam ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/aws-iam/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.aws.iam.AWSIAMProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@21f3aa07
+Starting test testAllContains(org.jclouds.aws.iam.AWSIAMProviderTest)
+Starting test testOfApiContains(org.jclouds.aws.iam.AWSIAMProviderTest)
+[pool-2-thread-1] Test testAllContains(org.jclouds.aws.iam.AWSIAMProviderTest) succeeded: 13ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.aws.iam.AWSIAMProviderTest) succeeded: 13ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.aws.iam.AWSIAMProviderTest)
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.aws.iam.AWSIAMProviderTest) succeeded: 0ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.aws.iam.AWSIAMProviderTest)
+[pool-2-thread-4] Test testWithId(org.jclouds.aws.iam.AWSIAMProviderTest) succeeded: 5ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.013 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ aws-iam ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ aws-iam ---
+[INFO] Building jar: /Users/adriancole/workspace/git/jclouds/labs/aws-iam/target/aws-iam-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ aws-iam ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/jclouds/labs/aws-iam/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@4ba33d48
+Starting test testGetCurrentUser(org.jclouds.aws.iam.features.AWSUserApiLiveTest)
+Starting test testWired(org.jclouds.aws.iam.AWSIAMApiLiveTest)
+[TestNG] Test testGetCurrentUser(org.jclouds.aws.iam.features.AWSUserApiLiveTest) succeeded: 1186ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testListUsers(org.jclouds.aws.iam.features.AWSUserApiLiveTest)
+[TestNG] Test testWired(org.jclouds.aws.iam.AWSIAMApiLiveTest) succeeded: 1178ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[TestNG] Test testListUsers(org.jclouds.aws.iam.features.AWSUserApiLiveTest) succeeded: 878ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.755 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ aws-iam ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ aws-iam ---
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/aws-iam/target/aws-iam-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/aws-iam/1.6.0-SNAPSHOT/aws-iam-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/aws-iam/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/labs/aws-iam/1.6.0-SNAPSHOT/aws-iam-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/jclouds/labs/aws-iam/target/aws-iam-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/labs/aws-iam/1.6.0-SNAPSHOT/aws-iam-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ aws-iam ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.019s
+[INFO] Finished at: Mon Sep 17 08:46:22 PDT 2012
+[INFO] Final Memory: 17M/265M
+[INFO] ------------------------------------------------------------------------
