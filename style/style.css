@@ -1,9 +1,8 @@
 
 body {
-font-family:verdana, arial, sans-serif;
+font-family: 'Varela Round', sans-serif;
 font-size:.68em;
-background:#FFF;
-color:#FFF;
+background:#F0F0F7;
 margin:0;
 padding:0;
 }
@@ -15,7 +14,7 @@ padding:8px 0;
 }
 
 h1 {
-font-family:arial, sans-serif;
+font-family: 'Varela Round', sans-serif;
 letter-spacing:.1em;
 }
 
@@ -79,8 +78,6 @@ padding:0;
 width:1080px;
 margin-left:auto;
 margin-right:auto;
-background:#FFF;
-color:#FFF;
 }
 
 #links, #footer {
@@ -108,35 +105,39 @@ text-decoration:none;
 text-decoration:underline;
 }
 
+#top {
+margin-top:30px;
+background:#0289c3;
+height:100px;	
+}
+
 #logo {
 margin-left:auto;
 margin-right:auto;
-width:1060px;
+width:264px;
 height:100px;
 text-align:left;
-background:#FFF url(jcloudslogo.jpg) no-repeat;
+background:url(jcloudslogo.jpg) no-repeat;
+float:left;
 }
 
 #menu {
-height:42px;
-width:1060px;
-margin-left:auto;
-margin-right:auto;
+padding-top:40px;
+padding-right:20px;
+float:right;
 }
 
 #menu li {
-float:left;
-margin:0;
-padding:0;
+list-style-type: none;
+float: left;
+height: 37px;
+padding-right : 38px;
 }
 
-#menu li a {
-display:block;
-float:left;
-height:37px;
-text-decoration:none;
-text-transform:uppercase;
-padding:3px 19px 2px;
+#menu a {
+font-size:150%;	
+color: #FFF;
+text-decoration: none;
 }
 
 #content {
@@ -165,7 +166,7 @@ border-bottom:1px solid;
 font-size:150%;
 text-transform:uppercase;
 font-weight:400;
-margin:0 0 12px;
+margin:12px 0 12px;
 padding:6px 0 4px;
 }
 
@@ -206,17 +207,16 @@ width:80px;
 
 input,textarea {
 width:259px;
-font-family:verdana, arial, sans-serif;
+font-family:'Varela Round', sans-serif;
 border:1px solid;
 font-size:100%;
-background:#FFF;
 color:#165872;
 border-color:#165872;
 margin:2px;
 }
 
 .submit {
-font-family:verdana, arial, sans-serif;
+font-family:'Varela Round', sans-serif;
 border:1px solid;
 width:70px;
 height:22px;
@@ -235,10 +235,8 @@ code {
 font-family:'Droid Sans Mono', sans-serif;
 }
 
-#links,#footer,#menu,#menu li a {
-background:#FFF;
+#links,#footer {
 color:#165872;
-border-color:#FFF;
 }
 
 #links a,#footer a,#links a:hover,#footer a:hover {
@@ -266,6 +264,18 @@ padding:0;
 }
 
 #menu li a:hover, #column1 li a:hover {
-background:#FFF;
 color:#F79C88;
+}
+
+h1.news {
+float:left;
+}
+
+h2.news {
+float:right;
+}
+
+span.news p{
+clear:both;
+}
 }
