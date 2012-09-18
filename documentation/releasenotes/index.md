@@ -7,7 +7,7 @@ title: Release Notes Index
 
 The Release Notes and Javadocs for every major release of jclouds are listed chronologically below.
 
-* [1.5.0-beta.4](/documentation/releasenotes/1.5) | [Javadoc](http://demobox.github.com/jclouds-maven-site-1.5.0-beta.4/1.5.0-beta.4/jclouds-multi/apidocs/)
+* [1.5.0-rc.1](/documentation/releasenotes/1.5) | [Javadoc](http://demobox.github.com/jclouds-maven-site-1.5.0-rc.1/1.5.0-rc.1/jclouds-multi/apidocs/)
 * [1.4.1](/documentation/releasenotes/1.4) | [Javadoc](http://demobox.github.com/jclouds-maven-site-1.4.1/1.4.1/jclouds-multi/apidocs/)
 * [1.4.0](/documentation/releasenotes/1.4) | [Javadoc](http://demobox.github.com/jclouds-maven-site-1.4.0/1.4.0/jclouds-multi/apidocs/)
 * [1.3.2](/documentation/releasenotes/1.3) | [Javadoc](http://demobox.github.com/jclouds-maven-site-1.3.2/1.3.2/jclouds-multi/apidocs/)
