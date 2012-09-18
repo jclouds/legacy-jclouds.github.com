@@ -10,14 +10,16 @@ This page helps you get started with jclouds API with
 1. Sign up for [HP Cloud Services](http://hpcloud.com/).
 2. Get your Account ID and Access Key by going to this [page](https://manage.hpcloud.com/api_keys).
 3. Ensure you are using a recent JDK 6 version.
-4. Setup your project to include `hpcloud-objectstorage` and `hpcloud-compute`
+4. Setup your project to include `hpcloud-objectstorage` and `hpcloud-compute`.
 	* Get the dependencies `org.jclouds.provider/hpcloud-objectstorage` and `org.jclouds.provider/hpcloud-compute` using jclouds [Installation](/documentation/userguide/installation-guide).
-5. Start coding
+5. Start coding.
+
+** Note: The identity for hpcloud is the same now as of 1.5.0-rc.1 which is "tenantName:userName" and the credential is "userPassword"
 
 ## HP Cloud Object Storage
 
 {% highlight java %}
-// Get a context with hpcloud that offers the portable BlobStore api
+// Get a context with hpcloud that offers the portable BlobStore API
 BlobStoreContext context = new BlobStoreContextFactory().createContext("hpcloud-objectstorage", "tenantName:accessKey", "secretKey");
 
 // Create a container in the default location

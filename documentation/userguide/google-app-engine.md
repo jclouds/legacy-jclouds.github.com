@@ -11,7 +11,11 @@ There are only a couple things you need to keep in mind:
 
   * You have to configure your context to use Google AppEngine compatible components.
   * You also have to ensure your requests don't take longer than 30 seconds.
-  * You have to ensure you don't attempt to use ssh, as it implies socket creation
+  * You have to ensure you don't attempt to use ssh, as it implies socket creation.
+
+### jclouds with Google App Engine Demo
+
+Before you get started, check out our [Google App Engine with jclouds demo](/documentation/examples/google-app-engine).
 
 ### Configuring to use GAE compatible components
 Configuration can be made via property or a typed module.  Here's how you can do this:

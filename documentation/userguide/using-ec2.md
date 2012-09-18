@@ -1,8 +1,8 @@
 ---
 layout: jclouds
-title: Using the amazon EC2 cloud
+title: Using the Amazon EC2 Cloud
 ---
-# Using the amazon EC2 cloud
+# Using the Amazon EC2 Cloud
 
 ## Introduction
 
@@ -10,6 +10,8 @@ The compute service is implemented fully for EC2 - so you can follow the guides 
 
 For credentials you will want you access key id and secret access key (don't use your user id or anything else). 
 For practical EC2 usage - you will probably want to check out [AWS Quick Start](/documentation/quickstart/aws) 
+
+If you get stuck, please consult the [Using Amazon EC2 with jclouds FAQ](/documentation/faqs/ec2-faq).
 
 ## Images
 ### Default image
