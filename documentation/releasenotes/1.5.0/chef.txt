@@ -1,0 +1,86 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:chef:bundle:1.5.0
+[WARNING] 'parent.relativePath' of POM org.jclouds.chef:chef-parent:1.5.0 (/opt/src/jclouds-chef/project/pom.xml) points at org.jclouds.chef:chef-project instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds.chef:chef-parent:1.5.0, /opt/src/jclouds-chef/project/pom.xml, line 24, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JClouds Chef :: Core 1.5.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ chef ---
+[INFO] Deleting /opt/src/jclouds-chef/core/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0-beta-1:enforce (enforce-maven) @ chef ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ chef ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ chef ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ chef ---
+[INFO] Compiling 94 source files to /opt/src/jclouds-chef/core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ chef ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ chef ---
+[INFO] Compiling 41 source files to /opt/src/jclouds-chef/core/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ chef ---
+[INFO] Surefire report directory: /opt/src/jclouds-chef/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running Unit and Performance Tests
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@fd7ad1c
+Tests run: 105, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.249 sec
+
+Results :
+
+Tests run: 105, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ chef ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ chef ---
+[INFO] Building jar: /opt/src/jclouds-chef/core/target/chef-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ chef ---
+[INFO] Surefire report directory: /opt/src/jclouds-chef/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running Live Integration Tests
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@3ebfc8e0
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.777 sec
+
+Results :
+
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ chef ---
+[INFO] Installing /opt/src/jclouds-chef/core/target/chef.jar to /home/ibarrera/.m2/repository/org/jclouds/api/chef/1.5.0/chef-1.5.0.jar
+[INFO] Installing /opt/src/jclouds-chef/core/pom.xml to /home/ibarrera/.m2/repository/org/jclouds/api/chef/1.5.0/chef-1.5.0.pom
+[INFO] Installing /opt/src/jclouds-chef/core/target/chef-tests.jar to /home/ibarrera/.m2/repository/org/jclouds/api/chef/1.5.0/chef-1.5.0-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ chef ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 31.849s
+[INFO] Finished at: Tue Sep 18 11:20:02 CEST 2012
+[INFO] Final Memory: 21M/618M
+[INFO] ------------------------------------------------------------------------
