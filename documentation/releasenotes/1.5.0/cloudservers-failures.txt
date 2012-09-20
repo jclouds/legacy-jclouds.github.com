@@ -1,38 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 152, Failures: 7, Errors: 0, Skipped: 23, Time elapsed: 1,972.514 sec <<< FAILURE!
-testGetImagesDetail(org.jclouds.rackspace.cloudservers.CloudServersUSClientLiveTest)  Time elapsed: 0.378 sec  <<< FAILURE!
+Tests run: 64, Failures: 8, Errors: 0, Skipped: 23, Time elapsed: 2,155.203 sec <<< FAILURE!
+testGetImagesDetail(org.jclouds.cloudservers.CloudServersClientLiveTest)  Time elapsed: 0.38 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Image{created=Wed Aug 17 10:11:30 UTC 2011, id=118, name=CentOS 6.0, progress=null, serverId=null, status=ACTIVE, updated=Wed Aug 17 10:11:30 UTC 2011}> but was:<Image{created=null, id=118, name=CentOS 6.0, progress=null, serverId=null, status=ACTIVE, updated=Wed Aug 17 10:11:30 UTC 2011}>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:160)
 	at org.jclouds.cloudservers.CloudServersClientLiveTest.testGetImagesDetail(CloudServersClientLiveTest.java:152)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:616)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:768)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
-	at java.lang.Thread.run(Thread.java:679)
-testLimits(org.jclouds.rackspace.cloudservers.CloudServersUSClientLiveTest)  Time elapsed: 0.349 sec  <<< FAILURE!
+testLimits(org.jclouds.cloudservers.CloudServersClientLiveTest)  Time elapsed: 0.38 sec  <<< FAILURE!
 org.jclouds.http.HttpResponseException: Error parsing input
-{statusCode=200, message=OK, headers={Age=[0], Last-Modified=[Wed, 19 Sep 2012 23:57:06 GMT], Connection=[keep-alive], vary=[Accept, Accept-Encoding, X-Auth-Token], Server=[Apache-Coyote/1.1], Cache-Control=[s-maxage=1800], X-Varnish=[888132643], Date=[Wed, 19 Sep 2012 23:57:06 GMT], X-PURGE-KEY=[/717071/limits], Via=[1.1 varnish]}, payload=[content=true, contentMetadata=[contentDisposition=null, contentEncoding=null, contentLanguage=null, contentLength=674, contentMD5=null, contentType=application/json, expires=null], written=false]}
+{statusCode=200, message=OK, headers={Age=[0], Last-Modified=[Wed, 19 Sep 2012 23:20:57 GMT], Connection=[keep-alive], vary=[Accept, Accept-Encoding, X-Auth-Token], Server=[Apache-Coyote/1.1], Cache-Control=[s-maxage=1800], X-Varnish=[706395721], Date=[Wed, 19 Sep 2012 23:20:57 GMT], X-PURGE-KEY=[/717071/limits], Via=[1.1 varnish]}, payload=[content=true, contentMetadata=[contentDisposition=null, contentEncoding=null, contentLanguage=null, contentLength=674, contentMD5=null, contentType=application/json, expires=null], written=false]}
 	at org.jclouds.http.functions.ParseJson.apply(ParseJson.java:71)
 	at org.jclouds.http.functions.UnwrapOnlyJsonValue.apply(UnwrapOnlyJsonValue.java:46)
 	at org.jclouds.http.functions.UnwrapOnlyJsonValue.apply(UnwrapOnlyJsonValue.java:34)
@@ -91,87 +70,16 @@ Caused by: java.lang.NullPointerException: uri
 	at org.jclouds.http.functions.ParseJson.apply(ParseJson.java:80)
 	at org.jclouds.http.functions.ParseJson.apply(ParseJson.java:66)
 	... 7 more
-testListSharedIpGroupsDetail(org.jclouds.rackspace.cloudservers.CloudServersUSClientLiveTest)  Time elapsed: 0.534 sec  <<< FAILURE!
+testListSharedIpGroupsDetail(org.jclouds.cloudservers.CloudServersClientLiveTest)  Time elapsed: 0.381 sec  <<< FAILURE!
 java.lang.AssertionError: SharedIpGroup{id=12459, name=ever5257.cscreateSharedIpGroup-208249245, servers=null}
 	at org.jclouds.cloudservers.CloudServersClientLiveTest.testListSharedIpGroupsDetail(CloudServersClientLiveTest.java:238)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:616)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:768)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
-	at java.lang.Thread.run(Thread.java:679)
-testCreateSharedIpGroup(org.jclouds.rackspace.cloudservers.CloudServersUSClientLiveTest)  Time elapsed: 1.045 sec  <<< FAILURE!
+testCreateSharedIpGroup(org.jclouds.cloudservers.CloudServersClientLiveTest)  Time elapsed: 0.768 sec  <<< FAILURE!
 java.lang.NullPointerException
 	at org.jclouds.cloudservers.CloudServersClientLiveTest.testCreateSharedIpGroup(CloudServersClientLiveTest.java:275)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:616)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
-	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
-	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:222)
-	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:717)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:768)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
-	at java.lang.Thread.run(Thread.java:679)
-testRenameServer(org.jclouds.rackspace.cloudservers.CloudServersUSClientLiveTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+testRenameServer(org.jclouds.cloudservers.CloudServersClientLiveTest)  Time elapsed: 0.005 sec  <<< FAILURE!
 java.lang.reflect.UndeclaredThrowableException
 	at $Proxy79.getServer(Unknown Source)
 	at org.jclouds.cloudservers.CloudServersClientLiveTest.testRenameServer(CloudServersClientLiveTest.java:409)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:616)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
-	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
-	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:222)
-	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:717)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:768)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
-	at java.lang.Thread.run(Thread.java:679)
 Caused by: java.lang.InterruptedException
 	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1325)
 	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:263)
@@ -179,62 +87,49 @@ Caused by: java.lang.InterruptedException
 	at org.jclouds.concurrent.ExceptionParsingListenableFuture.get(ExceptionParsingListenableFuture.java:76)
 	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
 	... 27 more
-Caused by: java.lang.InterruptedException
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1325)
-	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:263)
-	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
-	at org.jclouds.concurrent.ExceptionParsingListenableFuture.get(ExceptionParsingListenableFuture.java:76)
-	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
-	... 27 more
-testServerDetails(org.jclouds.rackspace.cloudservers.CloudServersUSClientLiveTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+testServerDetails(org.jclouds.cloudservers.CloudServersClientLiveTest)  Time elapsed: 0.006 sec  <<< FAILURE!
 java.lang.reflect.UndeclaredThrowableException
 	at $Proxy79.getServer(Unknown Source)
 	at org.jclouds.cloudservers.CloudServersClientLiveTest.testServerDetails(CloudServersClientLiveTest.java:342)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1325)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:263)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
+	at org.jclouds.concurrent.ExceptionParsingListenableFuture.get(ExceptionParsingListenableFuture.java:76)
+	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
+	... 27 more
+deleteServersOnEnd(org.jclouds.cloudservers.CloudServersClientLiveTest)  Time elapsed: 0.078 sec  <<< FAILURE!
+java.util.concurrent.RejectedExecutionException: java.lang.InterruptedException
+	at org.jclouds.concurrent.DynamicThreadPoolExecutor$ForceQueuePolicy.rejectedExecution(DynamicThreadPoolExecutor.java:159)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:816)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1337)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:120)
+	at org.jclouds.concurrent.config.DescribingExecutorService.submit(DescribingExecutorService.java:89)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.submit(BaseHttpCommandExecutorService.java:132)
+	at org.jclouds.http.TransformingHttpCommandExecutorServiceImpl.submit(TransformingHttpCommandExecutorServiceImpl.java:54)
+	at org.jclouds.http.TransformingHttpCommandImpl.execute(TransformingHttpCommandImpl.java:73)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
+	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
+	at $Proxy78.deleteServer(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:616)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
-	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
-	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:222)
-	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:717)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:768)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
-	at java.lang.Thread.run(Thread.java:679)
-Caused by: java.lang.InterruptedException
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1325)
-	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:263)
-	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
-	at org.jclouds.concurrent.ExceptionParsingListenableFuture.get(ExceptionParsingListenableFuture.java:76)
 	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
-	... 27 more
+	at $Proxy79.deleteServer(Unknown Source)
+	at org.jclouds.cloudservers.CloudServersClientLiveTest.deleteServersOnEnd(CloudServersClientLiveTest.java:596)
 Caused by: java.lang.InterruptedException
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1325)
-	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:263)
-	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
-	at org.jclouds.concurrent.ExceptionParsingListenableFuture.get(ExceptionParsingListenableFuture.java:76)
-	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
-	... 27 more
-testCreateTwoNodesWithRunScript(org.jclouds.rackspace.cloudservers.compute.CloudServersUSComputeServiceLiveTest)  Time elapsed: 274.973 sec  <<< FAILURE!
-org.jclouds.compute.RunNodesException: error running 2 nodes group(cs-) location(cloudservers-us) image(125) size(1) options({taskName=bootstrap, scriptPresent=true})
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(AbstractQueuedSynchronizer.java:1222)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(ReentrantLock.java:340)
+	at java.util.concurrent.LinkedBlockingQueue.put(LinkedBlockingQueue.java:269)
+	at org.jclouds.concurrent.DynamicThreadPoolExecutor$ForceQueuePolicy.rejectedExecution(DynamicThreadPoolExecutor.java:156)
+	... 36 more
+testCreateTwoNodesWithRunScript(org.jclouds.cloudservers.compute.CloudServersComputeServiceLiveTest)  Time elapsed: 234.41 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 2 nodes group(cloudservers-) location(cloudservers) image(125) size(1) options({taskName=bootstrap, scriptPresent=true})
 Execution failures:
 0 error[s]
 Node failures:
-1) IllegalArgumentException on node 21144541:
+1) IllegalArgumentException on node 21144486:
 java.lang.IllegalArgumentException: cannot create admin user 'root'; ensure jclouds is not running as root, or specify an explicit non-root username in AdminAccess
 	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:92)
 	at org.jclouds.scriptbuilder.statements.login.AdminAccess.render(AdminAccess.java:410)
@@ -257,7 +152,7 @@ java.lang.IllegalArgumentException: cannot create admin user 'root'; ensure jclo
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
 	at java.lang.Thread.run(Thread.java:679)
-2) IllegalArgumentException on node 21144542:
+2) IllegalArgumentException on node 21144485:
 java.lang.IllegalArgumentException: cannot create admin user 'root'; ensure jclouds is not running as root, or specify an explicit non-root username in AdminAccess
 	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:92)
 	at org.jclouds.scriptbuilder.statements.login.AdminAccess.render(AdminAccess.java:410)
