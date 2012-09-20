@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 2.529 sec <<< FAILURE!
+testCreateLoadBalancers(org.jclouds.cloudloadbalancers.features.NodeClientLiveTest)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: Need to have some regions! expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.jclouds.cloudloadbalancers.features.NodeClientLiveTest.testCreateLoadBalancers(NodeClientLiveTest.java:55)

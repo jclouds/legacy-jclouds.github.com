@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 99, Failures: 4, Errors: 0, Skipped: 2, Time elapsed: 1,699.139 sec <<< FAILURE!
-testCreateBlobWithExpiry(org.jclouds.rackspace.cloudfiles.blobstore.integration.CloudFilesUKBlobIntegrationLiveTest)  Time elapsed: 3.188 sec  <<< FAILURE!
-java.lang.AssertionError: expires=null; expected=Wed Sep 19 22:52:36 UTC 2012
+Tests run: 99, Failures: 4, Errors: 0, Skipped: 2, Time elapsed: 322.334 sec <<< FAILURE!
+testCreateBlobWithExpiry(org.jclouds.cloudfiles.blobstore.integration.CloudFilesBlobIntegrationLiveTest)  Time elapsed: 2.18 sec  <<< FAILURE!
+java.lang.AssertionError: expires=null; expected=Thu Sep 20 01:40:37 UTC 2012
 	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest$7.run(BaseBlobStoreIntegrationTest.java:392)
 	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.assertConsistencyAware(BaseBlobStoreIntegrationTest.java:216)
 	at org.jclouds.blobstore.integration.internal.BaseBlobStoreIntegrationTest.assertConsistencyAware(BaseBlobStoreIntegrationTest.java:236)
@@ -30,8 +30,8 @@ java.lang.AssertionError: expires=null; expected=Wed Sep 19 22:52:36 UTC 2012
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
 	at java.lang.Thread.run(Thread.java:679)
-testGetIfModifiedSince(org.jclouds.rackspace.cloudfiles.blobstore.integration.CloudFilesUKBlobIntegrationLiveTest)  Time elapsed: 6.76 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: command: GET https://storage101.lon3.clouddrive.com/v1/MossoCloudFS_a08a5deb-7b0e-433b-8033-578340b0d63d/root-blobstore13/apples HTTP/1.1 failed with response: HTTP/1.1 304 Not Modified; content: []
+testGetIfModifiedSince(org.jclouds.cloudfiles.blobstore.integration.CloudFilesBlobIntegrationLiveTest)  Time elapsed: 0.734 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: GET https://storage101.dfw1.clouddrive.com/v1/MossoCloudFS_5bcf396e-39dd-45ff-93a1-712b9aba90a9/root-blobstore3/apples HTTP/1.1 failed with response: HTTP/1.1 304 Not Modified; content: []
 	at org.jclouds.openstack.swift.handlers.ParseSwiftErrorFromHttpResponse.handleError(ParseSwiftErrorFromHttpResponse.java:57)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:67)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService$HttpResponseCallable.shouldContinue(BaseHttpCommandExecutorService.java:197)
@@ -54,8 +54,7 @@ org.jclouds.http.HttpResponseException: command: GET https://storage101.lon3.clo
 	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
 	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
 	at $Proxy78.getObject(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:616)
 	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
@@ -101,8 +100,7 @@ org.jclouds.http.HttpResponseException: command: GET https://storage101.lon3.clo
 	at org.jclouds.rest.internal.AsyncRestClientProxy.createListenableFutureForHttpRequestMappedToMethodAndArgs(AsyncRestClientProxy.java:248)
 	at org.jclouds.rest.internal.AsyncRestClientProxy.invoke(AsyncRestClientProxy.java:148)
 	at $Proxy78.getObject(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:616)
 	at org.jclouds.concurrent.internal.SyncProxy.invoke(SyncProxy.java:164)
@@ -136,7 +134,7 @@ org.jclouds.http.HttpResponseException: command: GET https://storage101.lon3.clo
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
 	at java.lang.Thread.run(Thread.java:679)
-testSignGetUrlWithTime(org.jclouds.rackspace.cloudfiles.blobstore.integration.CloudFilesUKBlobSignerLiveTest)  Time elapsed: 8.809 sec  <<< FAILURE!
+testSignGetUrlWithTime(org.jclouds.cloudfiles.blobstore.integration.CloudFilesBlobSignerLiveTest)  Time elapsed: 4.63 sec  <<< FAILURE!
 java.lang.AssertionError: Temporary URL did not expire as expected
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.jclouds.blobstore.integration.internal.BaseBlobSignerLiveTest.testSignGetUrlWithTime(BaseBlobSignerLiveTest.java:99)
@@ -161,7 +159,7 @@ java.lang.AssertionError: Temporary URL did not expire as expected
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
 	at java.lang.Thread.run(Thread.java:679)
-testSignPutUrlWithTime(org.jclouds.rackspace.cloudfiles.blobstore.integration.CloudFilesUKBlobSignerLiveTest)  Time elapsed: 9.598 sec  <<< FAILURE!
+testSignPutUrlWithTime(org.jclouds.cloudfiles.blobstore.integration.CloudFilesBlobSignerLiveTest)  Time elapsed: 4.867 sec  <<< FAILURE!
 java.lang.AssertionError: Temporary URL did not expire as expected
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.jclouds.blobstore.integration.internal.BaseBlobSignerLiveTest.testSignPutUrlWithTime(BaseBlobSignerLiveTest.java:146)
