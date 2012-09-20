@@ -1,0 +1,203 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:cloudloadbalancers:bundle:1.5.1-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.5.1-SNAPSHOT (/root/dev/everett-toews/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.5.1-SNAPSHOT, /root/dev/everett-toews/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds cloudloadbalancers api 1.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/jclouds-loadbalancer/1.5.1-SNAPSHOT/maven-metadata.xml
+993 B           Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/jclouds-loadbalancer/1.5.1-SNAPSHOT/maven-metadata.xml (993 B at 0.5 KB/sec)
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/jclouds-loadbalancer/1.5.1-SNAPSHOT/jclouds-loadbalancer-1.5.1-20120917.145212-1.pom
+824 B   3 KB    4 KB          Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/jclouds-loadbalancer/1.5.1-SNAPSHOT/jclouds-loadbalancer-1.5.1-20120917.145212-1.pom (4 KB at 11.9 KB/sec)
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/jclouds-scriptbuilder/1.5.1-SNAPSHOT/maven-metadata.xml
+994 B           Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/jclouds-scriptbuilder/1.5.1-SNAPSHOT/maven-metadata.xml (994 B at 2.3 KB/sec)
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/jclouds-loadbalancer/1.5.1-SNAPSHOT/jclouds-loadbalancer-1.5.1-20120917.145212-1.jar
+Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/jclouds-loadbalancer/1.5.1-SNAPSHOT/jclouds-loadbalancer-1.5.1-20120917.145212-1-tests.jar
+4/26 KB   8/26 KB   12/26 KB   16/26 KB   20/26 KB   24/26 KB   26/26 KB   4/13 KB   26/26 KB   8/13 KB   26/26 KB   12/13 KB   26/26 KB   13/13 KB   26/26 KB                         Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/jclouds-loadbalancer/1.5.1-SNAPSHOT/jclouds-loadbalancer-1.5.1-20120917.145212-1.jar (26 KB at 63.7 KB/sec)
+                      Downloaded: https://oss.sonatype.org/content/repositories/snapshots/org/jclouds/jclouds-loadbalancer/1.5.1-SNAPSHOT/jclouds-loadbalancer-1.5.1-20120917.145212-1-tests.jar (13 KB at 25.9 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cloudloadbalancers ---
+[INFO] Deleting /root/dev/everett-toews/jclouds/apis/cloudloadbalancers/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-maven) @ cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-banned-dependencies) @ cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1:enforce (enforce-java) @ cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cloudloadbalancers ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/dev/everett-toews/jclouds/apis/cloudloadbalancers/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ cloudloadbalancers ---
+[INFO] Compiling 39 source files to /root/dev/everett-toews/jclouds/apis/cloudloadbalancers/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cloudloadbalancers ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/dev/everett-toews/jclouds/apis/cloudloadbalancers/src/test/clojure
+[INFO] Copying 6 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ cloudloadbalancers ---
+[INFO] Compiling 13 source files to /root/dev/everett-toews/jclouds/apis/cloudloadbalancers/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cloudloadbalancers ---
+[INFO] Surefire report directory: /root/dev/everett-toews/jclouds/apis/cloudloadbalancers/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@33db4f6f
+Starting test test(org.jclouds.cloudloadbalancers.functions.UnwrapLoadBalancersTest)
+Starting test testLimit(org.jclouds.cloudloadbalancers.options.ListOptionsTest)
+Starting test testLimitStatic(org.jclouds.cloudloadbalancers.options.ListOptionsTest)
+Starting test testMarker(org.jclouds.cloudloadbalancers.options.ListOptionsTest)
+Starting test testMarkerStatic(org.jclouds.cloudloadbalancers.options.ListOptionsTest)
+[pool-2-thread-2] Test testLimit(org.jclouds.cloudloadbalancers.options.ListOptionsTest) succeeded: 75ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test test404NotFound(org.jclouds.cloudloadbalancers.handlers.ParseCloudLoadBalancersErrorFromHttpResponseTest)
+[pool-2-thread-4] Test testMarker(org.jclouds.cloudloadbalancers.options.ListOptionsTest) succeeded: 61ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testLimitStatic(org.jclouds.cloudloadbalancers.options.ListOptionsTest) succeeded: 83ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testMarkerStatic(org.jclouds.cloudloadbalancers.options.ListOptionsTest) succeeded: 60ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[pool-2-thread-2] Test test404NotFound(org.jclouds.cloudloadbalancers.handlers.ParseCloudLoadBalancersErrorFromHttpResponseTest) succeeded: 649ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[pool-2-thread-1] Test test(org.jclouds.cloudloadbalancers.functions.UnwrapLoadBalancersTest) succeeded: 951ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test test(org.jclouds.cloudloadbalancers.functions.UnwrapLoadBalancerWhenDeletedTest)
+[pool-3-thread-1] Test test(org.jclouds.cloudloadbalancers.functions.UnwrapLoadBalancerWhenDeletedTest) succeeded: 25ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test test(org.jclouds.cloudloadbalancers.functions.UnwrapLoadBalancerTest)
+[pool-4-thread-1] Test test(org.jclouds.cloudloadbalancers.functions.UnwrapLoadBalancerTest) succeeded: 47ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testSync(org.jclouds.cloudloadbalancers.CloudLoadBalancersAsyncClientTest)
+Starting test testAsync(org.jclouds.cloudloadbalancers.CloudLoadBalancersAsyncClientTest)
+[pool-5-thread-1] Test testAsync(org.jclouds.cloudloadbalancers.CloudLoadBalancersAsyncClientTest) succeeded: 36ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+[pool-5-thread-2] Test testSync(org.jclouds.cloudloadbalancers.CloudLoadBalancersAsyncClientTest) succeeded: 46ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.cloudloadbalancers.CloudLoadBalancersApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.cloudloadbalancers.CloudLoadBalancersApiMetadataTest)
+Starting test testWithId(org.jclouds.cloudloadbalancers.CloudLoadBalancersApiMetadataTest)
+[pool-6-thread-1] Test testAllContains(org.jclouds.cloudloadbalancers.CloudLoadBalancersApiMetadataTest) succeeded: 13ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+[pool-6-thread-2] Test testTransformableToContains(org.jclouds.cloudloadbalancers.CloudLoadBalancersApiMetadataTest) succeeded: 13ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+[pool-6-thread-3] Test testWithId(org.jclouds.cloudloadbalancers.CloudLoadBalancersApiMetadataTest) succeeded: 11ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testCreateLoadBalancerWithId(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest)
+Starting test testRemoveLoadBalancer(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest)
+Starting test testGetLoadBalancer(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest)
+Starting test testCreateLoadBalancerWithType(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest)
+Starting test testListLoadBalancers(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest)
+[pool-7-thread-4] Test testListLoadBalancers(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest) succeeded: 39ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testUpdateLoadBalancerAttributes(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest)
+[pool-7-thread-3] Test testGetLoadBalancer(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest) succeeded: 47ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[pool-7-thread-2] Test testCreateLoadBalancerWithType(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest) succeeded: 53ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+[pool-7-thread-5] Test testRemoveLoadBalancer(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest) succeeded: 62ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+[pool-7-thread-1] Test testCreateLoadBalancerWithId(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest) succeeded: 68ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+[pool-7-thread-4] Test testUpdateLoadBalancerAttributes(org.jclouds.cloudloadbalancers.features.LoadBalancerAsyncClientTest) succeeded: 22ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testUpdateAttributesForNodeInLoadBalancer(org.jclouds.cloudloadbalancers.features.NodeAsyncClientTest)
+Starting test createNodesInLoadBalancerWithType(org.jclouds.cloudloadbalancers.features.NodeAsyncClientTest)
+Starting test testRemoveNodeFromLoadBalancer(org.jclouds.cloudloadbalancers.features.NodeAsyncClientTest)
+[pool-8-thread-4] Test testRemoveNodeFromLoadBalancer(org.jclouds.cloudloadbalancers.features.NodeAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+[pool-8-thread-5] Test testUpdateAttributesForNodeInLoadBalancer(org.jclouds.cloudloadbalancers.features.NodeAsyncClientTest) succeeded: 10ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testGetNodeInLoadBalancer(org.jclouds.cloudloadbalancers.features.NodeAsyncClientTest)
+[pool-8-thread-2] Test testGetNodeInLoadBalancer(org.jclouds.cloudloadbalancers.features.NodeAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testListNodes(org.jclouds.cloudloadbalancers.features.NodeAsyncClientTest)
+[pool-8-thread-3] Test testListNodes(org.jclouds.cloudloadbalancers.features.NodeAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+[pool-8-thread-1] Test createNodesInLoadBalancerWithType(org.jclouds.cloudloadbalancers.features.NodeAsyncClientTest) succeeded: 19ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.268 sec
+
+Results :
+
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ cloudloadbalancers ---
+[INFO] Building jar: /root/dev/everett-toews/jclouds/apis/cloudloadbalancers/target/cloudloadbalancers-1.5.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ cloudloadbalancers ---
+[INFO] Surefire report directory: /root/dev/everett-toews/jclouds/apis/cloudloadbalancers/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@1827391d
+Starting test setupContext(org.jclouds.cloudloadbalancers.features.LoadBalancerClientLiveTest)
+Starting test testCreateLoadBalancers(org.jclouds.cloudloadbalancers.features.NodeClientLiveTest)
+[TestNG] Test testCreateLoadBalancers(org.jclouds.cloudloadbalancers.features.NodeClientLiveTest) failed.
+Test suite progress: tests succeeded: 0, failed: 1, skipped: 0.
+Sep 19, 2012 11:18:52 PM org.jclouds.cloudloadbalancers.features.LoadBalancerClientLiveTest setupContext
+INFO: running against regions []
+[TestNG] Test testAddNodes(org.jclouds.cloudloadbalancers.features.NodeClientLiveTest) skipped.
+Test suite progress: tests succeeded: 0, failed: 1, skipped: 1.
+[TestNG] Test setupContext(org.jclouds.cloudloadbalancers.features.LoadBalancerClientLiveTest) succeeded: 1929ms
+Test suite progress: tests succeeded: 1, failed: 1, skipped: 1.
+Starting test testCreateLoadBalancer(org.jclouds.cloudloadbalancers.features.LoadBalancerClientLiveTest)
+[TestNG] Test testCreateLoadBalancer(org.jclouds.cloudloadbalancers.features.LoadBalancerClientLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 2, failed: 1, skipped: 1.
+[TestNG] Test testModifyNode(org.jclouds.cloudloadbalancers.features.NodeClientLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 1, skipped: 2.
+[TestNG] Test testListNodes(org.jclouds.cloudloadbalancers.features.NodeClientLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 1, skipped: 3.
+Starting test testUpdateLoadBalancer(org.jclouds.cloudloadbalancers.features.LoadBalancerClientLiveTest)
+[TestNG] Test testUpdateLoadBalancer(org.jclouds.cloudloadbalancers.features.LoadBalancerClientLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 3, failed: 1, skipped: 3.
+Starting test testListLoadBalancers(org.jclouds.cloudloadbalancers.features.LoadBalancerClientLiveTest)
+[TestNG] Test testListLoadBalancers(org.jclouds.cloudloadbalancers.features.LoadBalancerClientLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 3.
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 2.529 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testCreateLoadBalancers(org.jclouds.cloudloadbalancers.features.NodeClientLiveTest): Need to have some regions! expected:<true> but was:<false>
+
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 3
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 24.780s
+[INFO] Finished at: Wed Sep 19 23:18:52 UTC 2012
+[INFO] Final Memory: 25M/303M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (integration) on project cloudloadbalancers: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/dev/everett-toews/jclouds/apis/cloudloadbalancers/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
