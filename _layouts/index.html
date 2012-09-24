@@ -8,9 +8,6 @@
   <!-- **** jclouds stylesheet **** -->
   <link rel="stylesheet" type="text/css" href="/style/style.css"/>
 
-  <!-- **** syntax highlighting stylesheet **** -->
-  <link rel="stylesheet" type="text/css" href="/style/syntax.css"/>
-
   <!-- **** Google Fonts **** -->
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet'/>
@@ -33,20 +30,33 @@
 
 <body>
   <div id="main">
-	<div id="top">
-      <a href="/"><div id="logo"></div></a>
-      <div id="menu">
-        {% capture menu %}{% include menu.md %}{% endcapture %} {{ menu | markdownify }} <!-- This bit of liquid lets us render the template components as markdown -->
-      </div>
-    </div>
-    <div id="content">
-      <div id="column2">
-		{{ content }}
-      </div>
-    </div>
+    <div id="header">
+		<span><a href="/documentation/gettingstarted/">Getting Started</a></span>
+		<span><a href="/documentation/userguide/">Provider User Guides</a></span>
+		<span><a href="/documentation/releasenotes/">Release Notes</a></span>
+	</div>
+
+	<div id="cloud_section">
+	    <div id="cloud_logo">
+			<img src="/style/fullsizejcloudslogo.jpg"></img>
+			<h2>Cloud interfaces, simplified.</h2>
+	    </div>
+		<div id="who_what_how">
+			<h1><a href="/documentation/gettingstarted/what-is-jclouds/">What is jclouds?</a></h1>
+			<h1><a href="/documentation/reference/apps-that-use-jclouds/">Who uses jclouds?</a></h1>
+			<h1><a href="/documentation/devguides/">How can I help?</a></h1>
+		</div>
+	</div>
+	<div id="menu" class="index_page">
+		<li><a href="/news/">News</a></li>
+		<li><a href="https://twitter.com/jclouds">Twitter</a></li>
+		<li><a href="https://github.com/jclouds">Github</a></li>
+		<li><a href="http://groups.google.com/group/jclouds">Contact</a></li>
+	</div>
     <div id="footer">
       {% capture footer %}{% include footer.md %}{% endcapture %} {{ footer | markdownify }} <!-- This bit of liquid lets us render the template components as markdown -->
     </div>
   </div>
 </body>
 </html>
+

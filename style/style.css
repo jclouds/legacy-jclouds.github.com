@@ -80,7 +80,73 @@ margin-left:auto;
 margin-right:auto;
 }
 
+#cloud_section {
+	width: 100%;
+	min-height: 460px;
+	background-color: #0289c3;
+	color: white;
+	padding-left: 6px;
+}
+
+#cloud_logo {
+	padding: 50px;
+	float:left;
+	text-align:center;
+}
+
+#cloud_logo img {
+	border-radius:20px;
+}
+
+#cloud_logo h2 {
+	font-size: 180%;
+}
+
+#who_what_how {
+	text-align: left;
+	margin-left: 550px;
+	font-size: 150%;
+	line-height:500%;
+	padding-top:45px;
+}
+
+#who_what_how a {
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+#header a {
+	text-decoration: none;
+	color: #000;
+}
+
+#header {
+	margin-top:10px;
+	vertical-align: middle;
+	font-size: 200%;
+}
+
+#header span {
+	margin: 85px;
+}
+
+#menu.index_page {
+	float: none;
+	padding-top: 0;
+	clear: both;
+}
+
+#menu.index_page li {
+	padding-left: 130px;
+	padding-right: 75px;
+}
+
+#menu.index_page a {
+	color: #808080;
+}
+
 #links, #footer {
+clear:both;
 margin-left:auto;
 margin-right:auto;
 height:26px;
@@ -149,16 +215,8 @@ overflow:hidden;
 padding:0;
 }
 
-#column1 {
-width:210px;
-float:right;
-padding:16px 0 15px;
-}
-
 #column2 {
-width:820px;
-float:left;
-padding:12px 3px 15px 19px;
+width:100%;
 }
 
 #column2 h1 {
