@@ -7,12 +7,20 @@ title: Quick Start - Rackspace Cloud
 
 1. Sign up for Rackspace Cloud by going to this [page](https://www.rackspacecloud.com/signup)
 2. Login to the portal and get your username and key from [the management portal](https://manage.rackspacecloud.com/Login.do)
-3. Ensure you are using a recent JDK 6
+3. Ensure you are using a recent version of Java 6
 4. Setup your project to include cloudfiles-us,-uk or cloudservers-us,-uk
 	get the dependency `org.jclouds.provider/cloudfiles-us`, `org.jclouds.provider/cloudfiles-uk`, 
 	`org.jclouds.provider/cloudservers-us`, or `org.jclouds.provider/cloudservers-uk`
 	using jclouds [Installation](/documentation/userguide/installation-guide).
 5. Start coding
+
+
+**Note: By default, the authentication mechanism for all OpenStack Keystone based APIs will use your password as the credential to log in.
+
+The following specifications may serve as a guide if you wish to set API Access Keys:
+properties.setProperty(KeystoneProperties.CREDENTIAL_TYPE, CredentialTypes.API_ACCESS_KEY_CREDENTIALS)
+
+To get the CredentialTypes class, please see the [Javadoc](http://demobox.github.com/jclouds-maven-site-1.5.0/1.5.0/jclouds-multi/apidocs/org/jclouds/openstack/keystone/v2_0/config/CredentialTypes.html).
 
 ## Cloud Files
 

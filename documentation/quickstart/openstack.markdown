@@ -12,9 +12,9 @@ title: Quick Start - OpenStack
 2. Get credentials for the OpenStack API
   * You will require a Username and API Key to use the OpenStack API. 
 	The valid credentials are in novarc file generated for your Openstack project with `nova-manage project zipfile` command.
-	 API endpoint URL is in this file as well.
-3. Ensure you are using a recent JDK 6
-  * There is a bug in HotSpot JDK v1.6.18 HTTP library. Host header of the HTTP request omits port of the remote service sometimes.
+	 API endpoint URL is in this file as well.	
+3. Ensure you are using a recent version of Java 6.
+  * There is a bug in HotSpot JDK v1.6.18 HTTP library. The host header of the HTTP request omits port of the remote service sometimes.
  Correct information in the Host header is required during the authentication part. Just use the recent JDK.
 4. Setup your project to include nova
 	The maven dependency `org.jclouds.api/nova` will add the following jar files to your project:
@@ -23,7 +23,14 @@ title: Quick Start - OpenStack
   	* openstack-common
   	* nova
 
-Instructions for downloading the dependencies are available in the [Installation](/documentation/userguide/installation-guide).
+Instructions for downloading the dependencies are available in the [Installation Guide](/documentation/userguide/installation-guide).
+
+**Note: By default, the authentication mechanism for all OpenStack Keystone based APIs will use your password as the credential to log in.
+
+The following specifications may serve as a guide if you wish to set API Access Keys:
+properties.setProperty(KeystoneProperties.CREDENTIAL_TYPE, CredentialTypes.API_ACCESS_KEY_CREDENTIALS)
+
+To get the CredentialTypes class, please see the [Javadoc](http://demobox.github.com/jclouds-maven-site-1.5.0/1.5.0/jclouds-multi/apidocs/org/jclouds/openstack/keystone/v2_0/config/CredentialTypes.html).
 
 5. Start coding using Nova
 
