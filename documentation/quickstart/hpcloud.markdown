@@ -9,18 +9,25 @@ This page helps you get started with jclouds API with
 
 1. Sign up for [HP Cloud Services](http://hpcloud.com/).
 2. Get your Account ID and Access Key by going to this [page](https://manage.hpcloud.com/api_keys).
-3. Ensure you are using a recent JDK 6 version.
+3. Ensure you are using a recent version of Java 6.
 4. Setup your project to include `hpcloud-objectstorage` and `hpcloud-compute`.
 	* Get the dependencies `org.jclouds.provider/hpcloud-objectstorage` and `org.jclouds.provider/hpcloud-compute` using jclouds [Installation](/documentation/userguide/installation-guide).
 5. Start coding.
 
-** Note: The identity for hpcloud is the same now as of 1.5.0-rc.1 which is "tenantName:userName" and the credential is "userPassword"
+** Note: The identity for hpcloud is the same now as of 1.5.0 which is "tenantName:userName" and the credential is "userPassword"
+
+By default, the authentication mechanism for all OpenStack Keystone based APIs will use your password as the credential to log in.
+
+The following specifications may serve as a guide if you wish to set API Access Keys:
+properties.setProperty(KeystoneProperties.CREDENTIAL_TYPE, CredentialTypes.API_ACCESS_KEY_CREDENTIALS)
+
+To get the CredentialTypes class, please see the [Javadoc](http://demobox.github.com/jclouds-maven-site-1.5.0/1.5.0/jclouds-multi/apidocs/org/jclouds/openstack/keystone/v2_0/config/CredentialTypes.html).
 
 ## HP Cloud Object Storage
 
 {% highlight java %}
 // Get a context with hpcloud that offers the portable BlobStore API
-BlobStoreContext context = new BlobStoreContextFactory().createContext("hpcloud-objectstorage", "tenantName:accessKey", "secretKey");
+BlobStoreContext context = new BlobStoreContextFactory().createContext("hpcloud-objectstorage", "tenantName:accessKey", "password");
 
 // Create a container in the default location
 context.getBlobStore().createContainerInLocation(null, container);
@@ -60,7 +67,7 @@ context.close();
 
 {% highlight java %}
 // Get a context with hpcloud-compute that offers the portable ComputeService API
-ComputeServiceContext ctx = new ComputeServiceContextFactory().createContext("hpcloud-compute", "tenantName:accessKey", "secretKey");
+ComputeServiceContext ctx = new ComputeServiceContextFactory().createContext("hpcloud-compute", "tenantName:accessKey", "password");
 ComputeService cs = ctx.getComputeService();
 
 // List availability zones
