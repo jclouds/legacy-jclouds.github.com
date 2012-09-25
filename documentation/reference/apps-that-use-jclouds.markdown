@@ -11,6 +11,9 @@ are some of the valuable members of our community.
   * [Adobe](http://www.adobe.com/)
     * use jclouds to provision EC2 and vCloud infrastructure under their Enterprise PaaS
 
+  * [Salesforce](http://www.salesforce.com/)
+    * use jclouds to provision servers for their automation stacks
+
   * [Twitter](http://www.twitter.com)
     * uses pallet to deploy their storm platform to standard and variable count of spot EC2 instances
     * uses whirr to setup test cassandra clusters
@@ -129,3 +132,6 @@ are some of the valuable members of our community.
 
   * [Ning Atlas](http://atlas-project.org/)
     * Atlas uses jclouds to provision machines, databases, and loadbalancers that compose environments.
+
+  * [Cloudstore](https://cldstr.com/)
+    * uses jclouds to enable non-technical users to run web apps on EC2, Rackspace and others
