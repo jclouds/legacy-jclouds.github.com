@@ -1,83 +1,138 @@
 ---
 layout: jclouds
-title: Quick Start - Rackspace Cloud
+title: Getting Started: The Rackspace open cloud
 ---
 
-# Quick Start: Rackspace Cloud
+# Getting Started: The Rackspace open cloud
+## Introduction
+The [Rackspace open cloud](http://www.rackspace.com/cloud/public/) platform includes everything you need to build websites and applications that scale—servers, storage, networking, APIs, and more. The Rackspace open cloud is based on OpenStack, which is a global collaboration of developers and cloud computing technologists producing the ubiquitous open source cloud computing platform for public and private clouds.
 
-1. Sign up for Rackspace Cloud by going to this [page](https://www.rackspacecloud.com/signup)
-2. Login to the portal and get your username and key from [the management portal](https://manage.rackspacecloud.com/Login.do)
-3. Ensure you are using a recent version of Java 6
-4. Setup your project to include cloudfiles-us,-uk or cloudservers-us,-uk
-	get the dependency `org.jclouds.provider/cloudfiles-us`, `org.jclouds.provider/cloudfiles-uk`, 
-	`org.jclouds.provider/cloudservers-us`, or `org.jclouds.provider/cloudservers-uk`
-	using jclouds [Installation](/documentation/userguide/installation-guide).
-5. Start coding
+This guide assumes you're familiar with Java and its technologies. To get started you'll need access to the Rackspace cloud and jclouds.
+
+## Terminology
+There are some differences in terminology between jclouds and Rackspace/OpenStack that should be made clear.
+
+| jclouds | Rackspace/OpenStack |
+|---------|---------------------|
+| Compute | Cloud Servers (aka Nova) |
+| BlobStore | Cloud Files (aka Swift) |
+| Location | Region |
+| Hardware | Flavor |
+| NodeMetadata | Server details |
+| UserMetadata | Metadata |
 
 
-**Note: By default, the authentication mechanism for all OpenStack Keystone based APIs will use your password as the credential to log in.
+## Get a Username and API Key
+1. Sign up for free for the [Rackspace open cloud](https://cart.rackspace.com/cloud/)
+1. Login to the [Cloud Control Panel](https://mycloud.rackspace.com/)
+1. In the top right corner click on your username and then API Keys.
 
-The following specifications may serve as a guide if you wish to set API Access Keys:
-properties.setProperty(KeystoneProperties.CREDENTIAL_TYPE, CredentialTypes.API_ACCESS_KEY_CREDENTIALS)
+## Get jclouds
 
-To get the CredentialTypes class, please see the [Javadoc](http://demobox.github.com/jclouds-maven-site-1.5.0/1.5.0/jclouds-multi/apidocs/org/jclouds/openstack/keystone/v2_0/config/CredentialTypes.html).
+1. Ensure you are using the [Java Development Kit (JDK) version 6 or later](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+1. In your Terminal or Command Prompt run the following to verify the JDK is installed correctly.
+    * `javac -version` 
+1. Create a directory to try out jclouds
+    * `mkdir jclouds` 
+1. Follow the instructions for [Getting the latest jclouds binaries](/documentation/userguide/installation-guide).
+1. You should now have a directory with the following structure
+    * jclouds/
+        * lein
+        * project.clj
+        * lib/
+            * *.jar
 
-## Cloud Files
+## Your First Cloud Files App
+### Introduction
 
-{% highlight java %}
-// get a context with rackspace that offers the portable BlobStore api
-BlobStoreContext context = new BlobStoreContextFactory().createContext("cloudfiles-us", user, apikey);
+Cloud Files is an easy to use online storage for files and media which can be delivered globally over Akamai's content delivery network (CDN).
 
-// create a container in the default location
-context.getBlobStore().createContainerInLocation(null, container);
+### The Source Code
 
-// use the map interface for easy access to put/get things, keySet, etc.
-context.createInputStreamMap(container).put("blob.txt", inputStream);
+1. Create the directory hierarchy org/jclouds/examples/rackspace/cloudfiles/ in your jclouds directory
+1. Create a Java source file called CreateContainer.java in the directory above
+1. You should now have a directory with the following structure
+    * jclouds/
+        * lein
+        * project.clj
+        * lib/
+            * *.jar
+        * org/jclouds/examples/rackspace/cloudfiles/
+            * CreateContainer.java
+1. Open CreateContainer.java for editting
+1. Go to the example code [CreateContainer.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles/CreateContainer.java), read it over, and copy the code into your file
 
-// when you need access to rackspace-specific features, use the provider-specific context
-CloudFilesClient rackspaceClient = CloudFilesClient.class.cast(context.getProviderSpecificContext()
-         .getApi());
+### Compile and Run
 
-// get a cdn uri for the container
-URI cdnURI = rackspaceClient.enableCDN(container);
+```
+$ javac -classpath ".:lib/*" org/jclouds/examples/rackspace/cloudfiles/CreateContainer.java
+$ java -classpath ".:lib/*" org.jclouds.examples.rackspace.cloudfiles.CreateContainer myUsername myApiKey
+Create Container
+  jclouds-example
+```
 
-context.close();
-{% endhighlight %}
+### Next Steps
+
+1. Try the rest of the [examples](https://github.com/jclouds/jclouds-examples/tree/master/rackspace) in the [cloudfiles package](https://github.com/jclouds/jclouds-examples/tree/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles) and the [Logging example](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/Logging.java)
+1. When you're ready to publish some files on the internet, try the [CloudFilesPublish.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles/CloudFilesPublish.java) example
+1. Change the examples to do different things that you want to do
+1. After running some examples, compare the output with what you see in the [Cloud Control Panel](https://mycloud.rackspace.com/)
+1. Browse the [documentation](http://www.jclouds.org/documentation/) and have a look at the [Javadoc](http://www.jclouds.org/documentation/releasenotes/) (choose the Javadoc for the current version)
+1. Return to the [Installation Guide](http://www.jclouds.org/documentation/userguide/installation-guide/) and have a look at the different ways to integrate jclouds with your project
+1. Join the [jclouds mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds) or maybe even the [jclouds developer mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds-dev)
 
 ## Cloud Servers
-{% highlight java %}
-import static org.jclouds.cloudservers.options.CreateServerOptions.Builder.withFile;
-import static org.jclouds.cloudservers.options.ListOptions.Builder.*;
+### Introduction
 
-// get a context with rackspace that offers the portable ComputeService api
- ComputeServiceContext context = new ComputeServiceContextFactory().createContext("cloudservers-us", user, apikey,
-                                                         ImmutableSet.<Module> of(new SshjSshClientModule()));
+Cloud Servers is an easy to use service that provides on-demand servers that you can use to to build dynamic websites, deliver mobile apps, or crunch big data.
 
- // here's an example of the portable api
+### The Source Code
 
- // run a couple nodes accessible via group
- Set<? extends NodeMetadata> nodes = context.getComputeService().createNodesInGroup("webserver", 2);
- 
- // when you need access to rackspace-specific features, use the provider-specific context
- CloudServersClient rackspaceClient = CloudServersClient.class.cast(context.getProviderSpecificContext()
-          .getApi());
- 
- 
- // create a server with a new file called /etc/jclouds.txt and some metadata
- Map<String, String> metadata = ImmutableMap.of("jclouds", "rackspace");
- int imageId = 2;
- int flavorId = 1;
- Server server = rackspaceClient.createServer("myservername", imageId, flavorId,
-        withFile("/etc/jclouds.txt", "rackspace".getBytes()).withMetadata(metadata));
+1. Create the directory hierarchy org/jclouds/examples/rackspace/cloudservers/ in your jclouds directory
+1. Create a Java source file called CreateServer.java in the directory above
+1. You should now have a directory with the following structure
+    * jclouds/
+        * lein
+        * project.clj
+        * lib/
+            * *.jar
+        * org/jclouds/examples/rackspace/cloudservers/
+            * CreateServer.java
+1. Open CreateServer.java for editting
+1. Go to the example code [CreateServer.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers/CreateServer.java), read it over, and copy the code into your file
 
- // list all of my servers including details such as metadata
- Set<Server> servers = rackspaceClient.listServers(withDetails());
+### Compile and Run
 
- // list the id and name of my servers that were modified since yesterday
- servers = rackspaceClient.listServers(changesSince(yesterday));
+```
+$ javac -classpath ".:lib/*" org/jclouds/examples/rackspace/cloudservers/CreateServer.java
+$ java -classpath ".:lib/*" org.jclouds.examples.rackspace.cloudservers.CreateServer myUsername myApiKey
+Images
+  Image{id=9eb71a23-2c7e-...}
+  ...
+Flavors
+  Flavor{id=2,...}
+  ...
+Create Server
+.....................................................
+  ServerCreated{id=b037b1a1-...}
+  Login IP: 123.123.123.123 Username: root Password: a1b2c3d4
 
- // list the id and name of images I have access to, starting at index 200 limited to 100 results.
- Set<Image> images = rackspaceClient.listImages(startAt(200).maxResults(100));
+```
 
- context.close();
-{% endhighlight %}
+### Next Steps
+
+1. Try the rest of the [examples](https://github.com/jclouds/jclouds-examples/tree/master/rackspace) in the [cloudservers package](https://github.com/jclouds/jclouds-examples/tree/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers) and the [Logging example](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/Logging.java)
+1. When you're ready to publish a web page on the internet, try the [CloudServersPublish.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers/CloudServersPublish.java) example
+1. Change the examples to do different things that you want to do
+1. After running some examples, compare the output with what you see in the [Cloud Control Panel](https://mycloud.rackspace.com/)
+1. Browse the [documentation](http://www.jclouds.org/documentation/) and have a look at the [Javadoc](http://www.jclouds.org/documentation/releasenotes/) (choose the Javadoc for the current version)
+1. Return to the [Installation Guide](http://www.jclouds.org/documentation/userguide/installation-guide/) and have a look at the different ways to integrate jclouds with your project
+1. Join the [jclouds mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds) or maybe even the [jclouds developer mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds-dev)
+
+## Support and Feedback
+
+Your feedback is appreciated! If you have specific issues with Rackspace support in jclouds, we'd prefer that you file an issue via [Github](https://github.com/jclouds/jclouds/issues).
+
+For general feedback and support requests, send an email to:
+
+[sdk-support@rackspace.com](mailto:sdk-support@rackspace.com)
