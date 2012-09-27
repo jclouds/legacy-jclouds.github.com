@@ -13,7 +13,7 @@ title: Getting Started with jclouds
 
 * The installation guide for jclouds
 
-## [BlobStore](/documentation/userguide/compute/)
+## [BlobStore](/documentation/userguide/blobstore-guide/)
 
 * The user guide for the BlobStore abstraction
 
