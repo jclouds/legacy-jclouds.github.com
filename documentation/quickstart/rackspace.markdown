@@ -1,26 +1,13 @@
 ---
 layout: jclouds
-title: Getting Started: The Rackspace open cloud
+title: Getting Started - The Rackspace open cloud
 ---
 
 # Getting Started: The Rackspace open cloud
 ## Introduction
-The [Rackspace open cloud](http://www.rackspace.com/cloud/public/) platform includes everything you need to build websites and applications that scale—servers, storage, networking, APIs, and more. The Rackspace open cloud is based on OpenStack, which is a global collaboration of developers and cloud computing technologists producing the ubiquitous open source cloud computing platform for public and private clouds.
+The [Rackspace open cloud](http://www.rackspace.com/cloud/public/) platform includes everything you need to build websites and applications that scale servers, storage, networking, APIs, and more. The Rackspace open cloud is based on OpenStack, which is a global collaboration of developers and cloud computing technologists producing the ubiquitous open source cloud computing platform for public and private clouds.
 
 This guide assumes you're familiar with Java and its technologies. To get started you'll need access to the Rackspace cloud and jclouds.
-
-## Terminology
-There are some differences in terminology between jclouds and Rackspace/OpenStack that should be made clear.
-
-| jclouds | Rackspace/OpenStack |
-|---------|---------------------|
-| Compute | Cloud Servers (aka Nova) |
-| BlobStore | Cloud Files (aka Swift) |
-| Location | Region |
-| Hardware | Flavor |
-| NodeMetadata | Server details |
-| UserMetadata | Metadata |
-
 
 ## Get a Username and API Key
 1. Sign up for free for the [Rackspace open cloud](https://cart.rackspace.com/cloud/)
@@ -42,10 +29,22 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
         * lib/
             * *.jar
 
+## Terminology
+There are some differences in terminology between jclouds and Rackspace/OpenStack that should be made clear.
+
+| jclouds | Rackspace/OpenStack |
+|---------|---------------------|
+| Compute | Cloud Servers (aka Nova)
+| BlobStore | Cloud Files (aka Swift)
+| Location | Region
+| Hardware | Flavor
+| NodeMetadata | Server details
+| UserMetadata | Metadata
+
 ## Your First Cloud Files App
 ### Introduction
 
-Cloud Files is an easy to use online storage for files and media which can be delivered globally over Akamai's content delivery network (CDN).
+[Cloud Files](http://www.rackspace.com/cloud/public/files/) is an easy to use online storage for files and media which can be delivered globally over Akamai's content delivery network (CDN).
 
 ### The Source Code
 
@@ -64,12 +63,12 @@ Cloud Files is an easy to use online storage for files and media which can be de
 
 ### Compile and Run
 
-```
-$ javac -classpath ".:lib/*" org/jclouds/examples/rackspace/cloudfiles/CreateContainer.java
-$ java -classpath ".:lib/*" org.jclouds.examples.rackspace.cloudfiles.CreateContainer myUsername myApiKey
-Create Container
-  jclouds-example
-```
+    javac -classpath ".:lib/*" org/jclouds/examples/rackspace/cloudfiles/CreateContainer.java
+
+    java -classpath ".:lib/*" org.jclouds.examples.rackspace.cloudfiles.CreateContainer myUsername myApiKey
+
+    Create Container
+      jclouds-example
 
 ### Next Steps
 
@@ -81,10 +80,10 @@ Create Container
 1. Return to the [Installation Guide](http://www.jclouds.org/documentation/userguide/installation-guide/) and have a look at the different ways to integrate jclouds with your project
 1. Join the [jclouds mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds) or maybe even the [jclouds developer mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds-dev)
 
-## Cloud Servers
+## Your First Cloud Servers App
 ### Introduction
 
-Cloud Servers is an easy to use service that provides on-demand servers that you can use to to build dynamic websites, deliver mobile apps, or crunch big data.
+[Cloud Servers](http://www.rackspace.com/cloud/public/servers/) is an easy to use service that provides on-demand servers that you can use to to build dynamic websites, deliver mobile apps, or crunch big data.
 
 ### The Source Code
 
@@ -103,21 +102,20 @@ Cloud Servers is an easy to use service that provides on-demand servers that you
 
 ### Compile and Run
 
-```
-$ javac -classpath ".:lib/*" org/jclouds/examples/rackspace/cloudservers/CreateServer.java
-$ java -classpath ".:lib/*" org.jclouds.examples.rackspace.cloudservers.CreateServer myUsername myApiKey
-Images
-  Image{id=9eb71a23-2c7e-...}
-  ...
-Flavors
-  Flavor{id=2,...}
-  ...
-Create Server
-.....................................................
-  ServerCreated{id=b037b1a1-...}
-  Login IP: 123.123.123.123 Username: root Password: a1b2c3d4
+    javac -classpath ".:lib/*" org/jclouds/examples/rackspace/cloudservers/CreateServer.java
+    
+    java -classpath ".:lib/*" org.jclouds.examples.rackspace.cloudservers.CreateServer myUsername myApiKey
 
-```
+    Images
+      Image{id=9eb71a23-2c7e-...}
+      ...
+    Flavors
+      Flavor{id=2,...}
+      ...
+    Create Server
+    .....................................................
+      ServerCreated{id=b037b1a1-...}
+      Login IP: 123.123.123.123 Username: root Password: a1b2c3d4
 
 ### Next Steps
 
