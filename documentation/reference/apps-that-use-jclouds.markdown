@@ -140,4 +140,10 @@ are some of the valuable members of our community.
     * uses jclouds to enable non-technical users to run web apps on EC2, Rackspace and others
 
   * [Maginatics](http://maginatics.com/)
-    * Maginatics uses jclouds to integrate with a variety of object stores.
+    * uses jclouds to integrate with a variety of object stores.
+
+  * [Mastodon C](https://www.mastodonc.com/)
+    * uses jclouds via pallet in order to provision carbon-neutral hadoop services 
+
+  * [Blow!](https://github.com/paoloditommaso/blow)
+    * uses jclouds for cluster deployments in the cloud
