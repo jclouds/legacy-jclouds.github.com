@@ -7,6 +7,17 @@ title: Quick Start - Simple Queue Service Models
 
 Amazon SQS (`aws-sqs`) is an easy queuing service with which you can easily send or receive 1-10 messages at a time. SQS support has been in jclouds since version 1.5.0.
 
+### Creating a queue
+
+You can lookup a queue by name or create one on demand.  Here's a common pattern for that:
+
+{% highlight java %}
+URI queue = queueApi.get(queueName);
+if (queue == null) {
+  queue = queueApi.create(queueName);
+}
+{% endhighlight %}
+
 ### Getting an api connection to a queue
 
 In SQS, once you discover or create a queue, you can focus a connection to to that, by supplying the queue's url.
