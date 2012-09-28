@@ -13,6 +13,7 @@ title: User Guides Index
 * [Amazon Elastic Block Storage](/documentation/quickstart/ebs)
 * [Azure Storage Service](/documentation/quickstart/azure-storage)
 * [BlueLock vCloud](/documentation/quickstart/bluelock)
+* [Chef](/documentation/quickstart/chef)
 * [CloudSigma](/documentation/quickstart/cloudsigma)
 * [Eucalyptus](/documentation/quickstart/eucalyptus)
 * [GoGrid](/documentation/quickstart/go-grid)
