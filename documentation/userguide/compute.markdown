@@ -60,11 +60,11 @@ All of the following providers can be used equally in any Compute API tool.
 				<td>US-IN</td>
 			</tr>
 			<tr>
-				<td>org.jclouds.provider/cloudservers-uk</td>
+				<td>org.jclouds.provider/cloudservers-uk (<a href="http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison">First Gen</a>)</td>
 				<td>GB-SLG</td>
 			</tr>
 			<tr>
-				<td>org.jclouds.provider/cloudservers-us</td>
+				<td>org.jclouds.provider/cloudservers-us (<a href="http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison">First Gen</a>)</td>
 				<td>US-IL,US-TX</td>
 			</tr>
 			<tr>
@@ -94,6 +94,14 @@ All of the following providers can be used equally in any Compute API tool.
 			<tr>
 				<td>org.jclouds.provider/openhosting-east1</td>
 				<td>US-VA</td>
+			</tr>
+			<tr>
+				<td>org.jclouds.provider/rackspace-cloudservers-uk (<a href="http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison">Next Gen</a>)</td>
+				<td>GB-SLG</td>
+			</tr>
+			<tr>
+				<td>org.jclouds.provider/rackspace-cloudservers-us (<a href="http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison">Next Gen</a>)</td>
+				<td>US-IL,US-TX</td>
 			</tr>
 			<tr>
 				<td>org.jclouds.provider/rimuhosting (compute)</td>
