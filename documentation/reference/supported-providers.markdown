@@ -13,8 +13,8 @@ The following is the list of providers that are supported by the jclouds API.
  * aws-ec2
  * bluelock-vclouddirector
  * byon
- * cloudservers-uk
- * cloudservers-us
+ * cloudservers-uk ([First Gen](http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison))
+ * cloudservers-us ([First Gen](http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison))
  * cloudsigma-lvs
  * cloudsigma-zrh
  * cloudstack
@@ -35,6 +35,8 @@ The following is the list of providers that are supported by the jclouds API.
  * openstack-nova
  * openstack-nova-ec2
  * openhosting-east1
+ * rackspace-cloudservers-uk ([Next Gen](http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison))
+ * rackspace-cloudservers-us ([Next Gen](http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison))
  * rimuhosting
  * serverlove-z1-man
  * skalicloud-sdg-my

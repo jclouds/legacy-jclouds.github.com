@@ -10,24 +10,26 @@ The [Rackspace open cloud](http://www.rackspace.com/cloud/public/) platform incl
 This guide assumes you're familiar with Java and its technologies. To get started you'll need access to the Rackspace cloud and jclouds.
 
 ## Get a Username and API Key
-1. Sign up for free for the [Rackspace open cloud](https://cart.rackspace.com/cloud/)
-1. Login to the [Cloud Control Panel](https://mycloud.rackspace.com/)
+1. Sign up for free for the [Rackspace open cloud (US)](https://cart.rackspace.com/cloud/).
+1. Login to the [Cloud Control Panel (US)](https://mycloud.rackspace.com/).
 1. In the top right corner click on your username and then API Keys.
+
+Likewise you can go to the [Rackspace open cloud (UK)](https://buyonline.rackspace.co.uk/cloud/userinfo?type=normal) and login to the [Cloud Control Panel (UK)](https://mycloud.rackspace.co.uk/).
 
 ## Get jclouds
 
-1. Ensure you are using the [Java Development Kit (JDK) version 6 or later](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+1. Ensure you are using the [Java Development Kit (JDK) version 6 or later](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 1. In your Terminal or Command Prompt run the following to verify the JDK is installed correctly.
     * `javac -version` 
-1. Create a directory to try out jclouds
+1. Create a directory to try out jclouds.
     * `mkdir jclouds` 
-1. Follow the instructions for [Getting the latest jclouds binaries](/documentation/userguide/installation-guide).
-1. You should now have a directory with the following structure
-    * jclouds/
-        * lein
-        * project.clj
-        * lib/
-            * *.jar
+1. Follow the instructions for [Getting the binaries using Apache Ant](/documentation/userguide/installation-guide).
+1. You should now have a directory with the following structure:
+    * `jclouds/`
+        * `build.xml`
+        * `maven-ant-tasks.jar`
+        * `lib/`
+            * `*.jar`
 
 ## Terminology
 There are some differences in terminology between jclouds and Rackspace/OpenStack that should be made clear.
@@ -48,18 +50,18 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
 
 ### The Source Code
 
-1. Create the directory hierarchy org/jclouds/examples/rackspace/cloudfiles/ in your jclouds directory
-1. Create a Java source file called CreateContainer.java in the directory above
-1. You should now have a directory with the following structure
-    * jclouds/
-        * lein
-        * project.clj
-        * lib/
-            * *.jar
-        * org/jclouds/examples/rackspace/cloudfiles/
-            * CreateContainer.java
-1. Open CreateContainer.java for editting
-1. Go to the example code [CreateContainer.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles/CreateContainer.java), read it over, and copy the code into your file
+1. Create the directory hierarchy org/jclouds/examples/rackspace/cloudfiles/ in your jclouds directory.
+1. Create a Java source file called CreateContainer.java in the directory above.
+1. You should now have a directory with the following structure:
+    * `jclouds/`
+        * `build.xml`
+        * `maven-ant-tasks.jar`
+        * `lib/`
+            * `*.jar`
+        * `org/jclouds/examples/rackspace/cloudfiles/`
+            * `CreateContainer.java`
+1. Open CreateContainer.java for editing.
+1. Go to the example code [CreateContainer.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles/CreateContainer.java), read it over, and copy the code into your file.
 
 ### Compile and Run
 
@@ -72,13 +74,13 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
 
 ### Next Steps
 
-1. Try the rest of the [examples](https://github.com/jclouds/jclouds-examples/tree/master/rackspace) in the [cloudfiles package](https://github.com/jclouds/jclouds-examples/tree/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles) and the [Logging example](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/Logging.java)
-1. When you're ready to publish some files on the internet, try the [CloudFilesPublish.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles/CloudFilesPublish.java) example
-1. Change the examples to do different things that you want to do
-1. After running some examples, compare the output with what you see in the [Cloud Control Panel](https://mycloud.rackspace.com/)
-1. Browse the [documentation](http://www.jclouds.org/documentation/) and have a look at the [Javadoc](http://www.jclouds.org/documentation/releasenotes/) (choose the Javadoc for the current version)
-1. Return to the [Installation Guide](http://www.jclouds.org/documentation/userguide/installation-guide/) and have a look at the different ways to integrate jclouds with your project
-1. Join the [jclouds mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds) or maybe even the [jclouds developer mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds-dev)
+1. Try the rest of the [examples](https://github.com/jclouds/jclouds-examples/tree/master/rackspace) in the [cloudfiles package](https://github.com/jclouds/jclouds-examples/tree/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles) and the [Logging example](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/Logging.java).
+1. When you're ready to publish some files on the internet, try the [CloudFilesPublish.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles/CloudFilesPublish.java) example.
+1. Change the examples to do different things that you want to do.
+1. After running some examples, compare the output with what you see in the [Cloud Control Panel](https://mycloud.rackspace.com/).
+1. Browse the [documentation](http://www.jclouds.org/documentation/) and have a look at the [Javadoc](http://demobox.github.com/jclouds-maven-site/latest/apidocs).
+1. Return to the [Installation Guide](http://www.jclouds.org/documentation/userguide/installation-guide/) and have a look at the different ways to integrate jclouds with your project.
+1. Join the [jclouds mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds) or maybe even the [jclouds developer mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds-dev).
 
 ## Your First Cloud Servers App
 ### Introduction
@@ -87,18 +89,18 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
 
 ### The Source Code
 
-1. Create the directory hierarchy org/jclouds/examples/rackspace/cloudservers/ in your jclouds directory
-1. Create a Java source file called CreateServer.java in the directory above
-1. You should now have a directory with the following structure
-    * jclouds/
-        * lein
-        * project.clj
-        * lib/
-            * *.jar
-        * org/jclouds/examples/rackspace/cloudservers/
-            * CreateServer.java
-1. Open CreateServer.java for editting
-1. Go to the example code [CreateServer.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers/CreateServer.java), read it over, and copy the code into your file
+1. Create the directory hierarchy org/jclouds/examples/rackspace/cloudservers/ in your jclouds directory.
+1. Create a Java source file called CreateServer.java in the directory above.
+1. You should now have a directory with the following structure:
+    * `jclouds/`
+        * `build.xml`
+        * `maven-ant-tasks.jar`
+        * `lib/`
+            * `*.jar`
+        * `org/jclouds/examples/rackspace/cloudservers/`
+            * `CreateServer.java`
+1. Open CreateServer.java for editing.
+1. Go to the example code [CreateServer.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers/CreateServer.java), read it over, and copy the code into your file.
 
 ### Compile and Run
 
@@ -119,13 +121,24 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
 
 ### Next Steps
 
-1. Try the rest of the [examples](https://github.com/jclouds/jclouds-examples/tree/master/rackspace) in the [cloudservers package](https://github.com/jclouds/jclouds-examples/tree/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers) and the [Logging example](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/Logging.java)
-1. When you're ready to publish a web page on the internet, try the [CloudServersPublish.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers/CloudServersPublish.java) example
-1. Change the examples to do different things that you want to do
-1. After running some examples, compare the output with what you see in the [Cloud Control Panel](https://mycloud.rackspace.com/)
-1. Browse the [documentation](http://www.jclouds.org/documentation/) and have a look at the [Javadoc](http://www.jclouds.org/documentation/releasenotes/) (choose the Javadoc for the current version)
-1. Return to the [Installation Guide](http://www.jclouds.org/documentation/userguide/installation-guide/) and have a look at the different ways to integrate jclouds with your project
-1. Join the [jclouds mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds) or maybe even the [jclouds developer mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds-dev)
+1. Try the rest of the [examples](https://github.com/jclouds/jclouds-examples/tree/master/rackspace) in the [cloudservers package](https://github.com/jclouds/jclouds-examples/tree/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers) and the [Logging example](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/Logging.java).
+1. When you're ready to publish a web page on the internet, try the [CloudServersPublish.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers/CloudServersPublish.java) example.
+1. Change the examples to do different things that you want to do.
+1. After running some examples, compare the output with what you see in the [Cloud Control Panel](https://mycloud.rackspace.com/).
+1. Browse the [documentation](http://www.jclouds.org/documentation/) and have a look at the [Javadoc](http://demobox.github.com/jclouds-maven-site/latest/apidocs).
+1. Return to the [Installation Guide](http://www.jclouds.org/documentation/userguide/installation-guide/) and have a look at the different ways to integrate jclouds with your project.
+1. Join the [jclouds mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds) or maybe even the [jclouds developer mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds-dev).
+
+## Rackspace open cloud providers
+
+This is a list of providers that work with the Rackspace open cloud that you can use to build your Context.
+
+* `"cloudfiles-us"`
+* `"cloudfiles-uk"`
+* `"cloudloadbalancers-us"`
+* `"cloudloadbalancers-uk"`
+* `"rackspace-cloudservers-us"`
+* `"rackspace-cloudservers-uk"`
 
 ## Support and Feedback
 
