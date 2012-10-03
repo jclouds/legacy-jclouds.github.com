@@ -2,6 +2,32 @@
 layout: jclouds
 title: Logging
 ---
+## Logging in jclouds
+
+Logging in jclouds can save you time and effort when developing your code or looking for help. If your code is not behaving how you expect it to, enabling and configuring logging in jclouds can quickly give you valuable insight into the root cause of the issue. If you need help from the [jclouds mailing list](https://groups.google.com/forum/?fromgroups#!forum/jclouds), the logs can help the people there assist you. The logs can be verbose so it's often best to simply copy and paste them into a [gist](https://gist.github.com/) and just post the link on the mailing list.
+
+By default, jclouds does no logging whatsoever for maximum performance.
+
+When enabled, jclouds performs different kinds of logging: 
+
+  * Standard context logging - used within each class
+  * Wire logging - log the information going over the wire
+  * Header logging - log the headers of requests/responses
+
+### Standard Context Logging
+
+Context Logging will show you how jclouds translates the ReST API of a service into HTTP calls and how HTTP results are translated back into java objects.
+
+Each class has its own log named according to the class's fully qualified name.  For example the class `JavaUrlHttpCommandExecutorService` has a log named `org.jclouds.http.internal.JavaUrlHttpCommandExecutorService`. Since all classes follow this convention it is possible to configure context logging for all classes using the single logging rule using `org.jclouds`.
+
+### Wire and Header Logging
+
+Wire Logging is intentionally nearly identical to the Apache HTTP Components project system of the same name.
+
+The wire log is used to log all data transmitted to and from servers when executing HTTP requests. This log should only be enabled to debug problems, as it will produce an extremely large amount of log data, some of it in binary format.
+
+Because the content of HTTP requests is usually less important for debugging than the HTTP headers, these two types of data have been separated into different wire logs.
+
 ## Usage
 
 You enable logging when you are building your Context.
@@ -21,7 +47,7 @@ To get an optional dependency go to the [Installation Guide](/documentation/user
 
 ### log4j
 
-To use log4j you need the jclouds-log4j-X.X.X.jar file on your classpath. 
+[log4j](http://logging.apache.org/log4j/) a logging library for Java from the Apache Software Foundation. To use log4j you need the jclouds-log4j-X.X.X.jar file on your classpath. 
 
 Here is example code of how to enable your components to use log4j:
 {% highlight java %}
@@ -38,7 +64,7 @@ You'll also need a log4j.xml ([example](https://github.com/jclouds/jclouds/blob/
 
 ### SLF4J
 
-To use SLF4J you need the jclouds-slf4j-X.X.X.jar and the logback-*.jar ([dowload](http://logback.qos.ch/download.html)) files on your classpath. 
+[SLF4J](http://www.slf4j.org/) is a simple facade for various logging frameworks (e.g. java.util.logging, log4j, logback, etc.) allowing the end user to plug in the desired logging framework at deployment time. To use SLF4J you need the jclouds-slf4j-X.X.X.jar and the logback-*.jar ([download](http://logback.qos.ch/download.html)) files on your classpath. 
 
 Here is example code of how to enable your components to use SLF4J:
 {% highlight java %}
@@ -52,28 +78,6 @@ Here is example code of how to enable your components to use SLF4J:
 {% endhighlight %}
 
 You'll also need a logback.xml ([example](https://github.com/jclouds/jclouds/blob/master/compute/src/test/resources/logback.xml)) configuration file on your classpath.
-
-## Logging in jclouds
-
-jclouds performs different kinds of logging: 
-
-  * Standard context logging - used within each class
-  * Wire logging - log the information going over the wire
-  * Header logging - log the headers of requests/responses
-
-### Standard Context Logging
-
-Context Logging will show you how jclouds translates the ReST API of a service into HTTP calls and how HTTP results are translated back into java objects.
-
-Each class has its own log named according to the class's fully qualified name.  For example the class `JavaUrlHttpCommandExecutorService` has a log named `org.jclouds.http.internal.JavaUrlHttpCommandExecutorService`. Since all classes follow this convention it is possible to configure context logging for all classes using the single logging rule using `org.jclouds`.
-
-### Wire and Header Logging
-
-Wire Logging is intentionally nearly identical to the Apache HTTP Components project system of the same name.
-
-The wire log is used to log all data transmitted to and from servers when executing HTTP requests. This log should only be enabled to debug problems, as it will produce an extremely large amount of log data, some of it in binary format.
-
-Because the content of HTTP requests is usually less important for debugging than the HTTP headers, these two types of data have been separated into different wire logs.
 
 ## Implementation
 
