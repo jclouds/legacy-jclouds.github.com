@@ -47,7 +47,7 @@ To get an optional dependency go to the [Installation Guide](/documentation/user
 
 ### log4j
 
-[log4j](http://logging.apache.org/log4j/) a logging library for Java from the Apache Software Foundation. To use log4j you need the jclouds-log4j-X.X.X.jar file on your classpath. 
+[log4j](http://logging.apache.org/log4j/) is a logging library for Java from the Apache Software Foundation. To use log4j you need the jclouds-log4j-X.X.X.jar file on your classpath. 
 
 Here is example code of how to enable your components to use log4j:
 {% highlight java %}
