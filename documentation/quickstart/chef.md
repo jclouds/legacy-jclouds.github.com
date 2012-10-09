@@ -57,31 +57,42 @@ show how you could combine both apis to accomplish this.
 ### Relationship between compute groups and run lists
 
 Jclouds compute-chef integration is facilitated by the Chef concept of databags. 
-We use a databag to store the relationships between Chef nodes and jclouds compute groups. By default these relationships are stored in a databag named "bootstrap". 
-However, you can change this by adjusting the property `chef.bootstrap-databag`.
+We use a databag to store the relationships between Chef nodes and jclouds compute groups. By default these relationships are stored in a databag named "bootstrap", however, you can change this by adjusting the property `chef.bootstrap-databag`.
 We provide a couple of utilities to help manage the data in this special bag. The two methods are named `updateRunListForGroup` and `getRunListForGroup` in java, and `update-run-list` and `run-list` in clojure at the moment.
 
 {% highlight java %}
-// Make a connection to compute provider. Note that ssh will be used ssh to bootstrap chef
-ComputeServiceContext computeContext = ContextBuilder.newBuilder("<the compute provider name>") //
-    .endpoint("<the compute endpoint>") //
-    .credentials("identity", "credential") //
-    .modules(ImmutableSet.<Module> of(new SshjSshClientModule())) //
-    .buildView(ComputeServiceContext.class);
-
-// Make a connection to the Chef platform
+// Get the credentials that will be used to authenticate with the Chef server
 String client = "clientName";
 String organization = "organization"
 String pemFile = System.getProperty("user.home") + "/.chef/" + client + ".pem";
 String credential = Files.toString(new File(pemFile), Charsets.UTF_8);
 
+// Provide the validator information to let the nodes autoregister in the Chef server
+// during bootstrap
+String validator = organization + "-validator";
+String validatorPemFile = System.getProperty("user.home") + "/.chef/" + validator + ".pem";
+String validatorCredential = Files.toString(new File(validatorPemFile), Charsets.UTF_8);
+
+Properties chefConfig = new Properties();
+chefConfig.put(ChefProperties.CHEF_VALIDATOR_NAME, validator);
+chefConfig.put(ChefProperties.CHEF_VALIDATOR_CREDENTIAL, validatorCredential);
+
+// Create the connection to the Chef server
 ChefContext context = ContextBuilder.newBuilder("chef") //
     .endpoint("https://api.opscode.com/organizations/" + organization) //
     .credentials(client, credential) //
+    .overrides(chefConfig) //
     .build();
         
+// Make a connection to compute provider. Note that ssh will be used ssh to bootstrap chef
+ComputeServiceContext computeContext = ContextBuilder.newBuilder("<the compute provider name>") //
+    .endpoint("<the compute endpoint>") //
+    .credentials("<identity>", "<credential>") //
+    .modules(ImmutableSet.<Module> of(new SshjSshClientModule())) //
+    .buildView(ComputeServiceContext.class);
+
 // Group all nodes in both Chef and the compute provider by this group
-String group = "test";
+String group = "jclouds-chef-example";
 String recipe = "apache2";
 
 // Check to see if the recipe you want exists
@@ -92,12 +103,11 @@ if (any(cookbookVersions, containsRecipe(recipe))) {
     runlist = new RunListBuilder().addRecipe(recipe).build();
 }
 
-// Update the chef service with the run list you wish to apply to all nodes with the tag
+// Update the chef service with the run list you wish to apply to all nodes in the group
 chefContext.getChefService().updateRunListForGroup(runlist, group);
 
-// Build the script that will bootstrap the chef client
-Statement bootstrap =
-    chefContext.getChefService().createClientAndBootstrapScriptForGroup(group);
+// Build the script that will bootstrap the node
+Statement bootstrap = chefContext.getChefService().createBootstrapScriptForGroup(group);
 
 // Run a node on the compute provider that bootstraps chef
 Set< ? extends NodeMetadata> nodes =
@@ -110,15 +120,14 @@ computeContext.close();
 
 ### What does the generated bootstrap script do?
 
-The method named `createClientAndBootstrapScriptForGroup` in java and `create-bootstrap` in clojure do all the heavy lifting required to create a valid bootstrap script for chef.
+The method named `createBootstrapScriptForGroup` in java and `create-bootstrap` in clojure do all the heavy lifting required to create a valid bootstrap script for chef.
 Here is the overall process:
 
-1. Create a new client for the group if one isn't in memory (note that the naming convention for this client is group-validator-%02d sequentially. Ex. hadoop-validator-21).
-2. Grab the run-list associated with the group from the bootstrap databag.
-3. Write a single shell script that does the following:
+1. Grab the run-list associated with the group from the bootstrap databag.
+2. Write a single shell script that does the following:
     1. Installs Ruby and Chef Gems using the same process as [Knife Bootstrap](http://wiki.opscode.com/display/chef/Knife+Bootstrap)
     2. mkdir /etc/chef
     3. Write /etc/chef/client.rb, which sets the nodename as group-ip_address Ex. hadoop-175.2.2.3 (note that the ip address comes from ohai).
-    4. Write /etc/chef/validation.pem associated with the client from step 1 above.
-    5. Write /etc/chef/first-boot.json with the run-list from step 2 above.
-    6. Execute chef-client -j /etc/chef/first-boot.json 
+    4. Write /etc/chef/validation.pem associated with the provided validator.
+    5. Write /etc/chef/first-boot.json with the run-list from step 1 above.
+    6. Execute chef-client -j /etc/chef/first-boot.json
