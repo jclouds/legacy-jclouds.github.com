@@ -45,8 +45,8 @@ are some of the valuable members of our community.
   * [Dasein Cloud](http://sourceforge.net/projects/dasein-cloud)
     * uses jclouds for rackspace, gogrid, azure, and terremark integration
 
-  * [GigaSpaces](http://www.gigaspaces.com)
-    * uses jclouds to integrate !GigaSpaces monitoring and application management with Terremark and Rackspace.
+  * [GigaSpaces Cloudify](http://www.cloudifysource.org)
+    * useds jclouds to provision compute resources from multiple cloud providers for the GigaSpaces Cloudify Platform-as-a-Service.
 
   * [Pallet](http://palletops.com/)
     * uses jclouds clojure to manage node counts and provision instances
