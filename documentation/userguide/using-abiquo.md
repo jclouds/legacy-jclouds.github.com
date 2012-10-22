@@ -12,10 +12,10 @@ The Abiquo API uses high-level domain objects to perform the operations against 
 The first thing to do to use the Abiquo API is to create the context that will point to the API endpoint. This can be done using the **ContextBuilder**:
 
 {% highlight java %}
-AbiquoContext context = ContextBuilder.newBuilder(new AbiquoApiMetadata())
+AbiquoContext context = ContextBuilder.newBuilder("abiquo")
     .endpoint("http://localhost/api")
     .credentials("user", "password")
-    .build(AbiquoContext.class);
+    .buildView(AbiquoContext.class);
 {% endhighlight %}
 
 ## Context root services
@@ -55,10 +55,10 @@ datacenter.delete();
 This more complete example shows how regular operations can be done using the Abiquo API. It is important to note that the context must be closed when finishing, so the used resources can be released.
 
 {% highlight java %}
-AbiquoContext context = ContextBuilder.newBuilder(new AbiquoApiMetadata())
+AbiquoContext context = ContextBuilder.newBuilder("abiquo")
     .endpoint("http://localhost/api")
     .credentials("user", "password")
-    .build(AbiquoContext.class);
+    .buildView(AbiquoContext.class);
 AdministrationService administration = context.getAdministrationService();
 
 try
@@ -597,11 +597,11 @@ public class DeployExample {
     public static void main(final String[] args) {
         // Build the context (we use a NullLoggingModule because we don't want logging in this
         // example)
-        AbiquoContext context = ContextBuilder.newBuilder(new AbiquoApiMetadata())
+        AbiquoContext context = ContextBuilder.newBuilder("abiquo")
             .endpoint("http://10.60.21.33/api")
             .credentials("user", "password")
             .modules(ImmutableSet.<Module> of(new NullLoggingModule()))
-            .build(AbiquoContext.class);
+            .buildView(AbiquoContext.class);
 
         try
         {
