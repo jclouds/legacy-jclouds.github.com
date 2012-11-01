@@ -7,11 +7,11 @@ title: Quick Start - Abiquo
 
 1. Get access to a running Abiquo cloud.
 2. Ensure you are using a recent JDK 6 version.
-3. Setup your project to include `abiquo`.
+3. Set up your project to include `abiquo`.
 	* Get the dependencies `org.jclouds.labs/abiquo` using jclouds [Installation](/documentation/userguide/installation-guide).
-4. Start coding
+4. Start coding.
 
-## Using the ComputeService portable api
+## Using the ComputeService portable API
 
 The following example will deploy a single node using the default settings configured by the administrator of your tenant account:
 
@@ -38,7 +38,7 @@ compute.createNodesInGroup("chef-servers", 1, template);
 context.close();
 {% endhighlight %}
 
-## Using the provider specific API
+## Using the provider-specific API
 
-The provider specific API gives you more control over what is going on, and allows you to better configure your nodes. For a complete documentation on using the provider, refer to the [Abiquo User Guide](/documentation/userguide/using-abiquo).
+The provider-specific API gives you more control and enables you to better configure your nodes. For complete documentation on using the provider, refer to the [Abiquo User Guide](/documentation/userguide/using-abiquo).
 
