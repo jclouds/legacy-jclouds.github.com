@@ -11,9 +11,6 @@ are some of the valuable members of our community.
   * [Adobe](http://www.adobe.com/)
     * use jclouds to provision EC2 and vCloud infrastructure under their Enterprise PaaS
 
-  * [General Electric](http://www.gereports.com/)
-    * GE uses jclouds to deploy and manage at scale,  industrial PaaS/SaaS solutions in private and hybrid cloud infrastructure.
-
   * [Salesforce](http://www.salesforce.com/)
     * use jclouds to provision servers for their automation stacks
 
