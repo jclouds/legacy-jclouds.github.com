@@ -14,34 +14,36 @@ The following document will help you get started, if you are unfamiliar with ecl
 *  Eclipse 3.4 or higher
 
 ## Setup
-*  Clone jclouds from git
-   *  If you are a collaborator, use: git clone git@github.com:jclouds/jclouds.git or 
+###  Clone jclouds from git
+  *  If you are a collaborator, use: git clone git@github.com:jclouds/jclouds.git or 
   	you can use the EGit plugin for eclipse - http://www.eclipse.org/egit/
   *  Otherwise clone from read-only, or clone your fork of jclouds, see the 
   	 [Developer's Guide](http://code.google.com/p/jclouds/wiki/DevelopersGuide) for more information.
 
-*  At the root directory where you checked out, execute `mvn clean install eclipse:eclipse -Dmaven.javadoc.skip=true -DdownloadSources=true -DdownloadJavadocs=true`
-   *  If the module you are working on is not in the default build list, change to that directory and execute `mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=true`
-   *  Note: if you are running windows, add `-DskipTests` as some tests fail on windows
+### Import into Eclipse
+1.  At the root directory where you checked out, execute `mvn clean install eclipse:eclipse -Dmaven.javadoc.skip=true -DdownloadSources=true -DdownloadJavadocs=true`
+  *  If the module you are working on is not in the default build list, change to that directory and execute `mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=true`
+  *  Note: if you are running windows, add `-DskipTests` as some tests fail on windows
 
-*  Open eclipse
-   *  Setup M2_REPO classpath variable
-     *  Goto Eclipse Preferences &rarr; Java &rarr; Build Path &rarr; Classpath Variables
-     *  New
-       *  Name: M2_REPO
-       *  Path: /path/to/.m2/repository
-          *  Ex. windows: it is in your user profile (`%USERPROFILE%`), like `c:\Documents and Settings\username\.m2\repository`
-          *  Ex. mac: it is in your home directory (`$HOME`). like `/Users/username/.m2/repository`
-  *  Import projects
-     *  File, import, General, Existing projects into workspace
-     *  Choose the directory your git clone created
-     *  Choose all modules
-  *  Setup TestNG plugin
-     *  Help, Install New Software
-     *  Add 
-       *  Name: testng
-       *  Location: `http://beust.com/eclipse`
-     *  You should see a checkbox near `TestNG` now in the `Available Software` view.  Check and click until done.
+1.  Open eclipse
+1.  Setup M2_REPO classpath variable
+  1.  Goto Eclipse Preferences &rarr; Java &rarr; Build Path &rarr; Classpath Variables
+  1.  New
+    *  Name: M2_REPO
+    *  Path: /path/to/.m2/repository
+      *  Ex. windows: it is in your user profile (`%USERPROFILE%`), like `c:\Documents and Settings\username\.m2\repository`
+      *  Ex. mac: it is in your home directory (`$HOME`). like `/Users/username/.m2/repository`
+1.  Import projects
+  1.  File, import, General, Existing projects into workspace
+  1.  Choose the directory your git clone created. ex. `/Users/username/git/jclouds`
+  1.  Choose all modules
+### Setup TestNG plugin
+1.  Help, Install New Software
+1.  Add 
+  *  Name: testng
+  *  Location: `http://beust.com/eclipse`
+    *  You should see a checkbox near `TestNG` now in the `Available Software` view.
+1.  Check and click until done.
 
 ## Running Tests
 
