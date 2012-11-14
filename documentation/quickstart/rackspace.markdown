@@ -142,7 +142,7 @@ This is a list of providers that work with the Rackspace open cloud that you can
 
 ## Support and Feedback
 
-Your feedback is appreciated! If you have specific issues with Rackspace support in jclouds, we'd prefer that you file an issue via [Github](https://github.com/jclouds/jclouds/issues).
+Your feedback is appreciated! If you have specific issues with Rackspace support in jclouds, we'd prefer that you file an issue via [GitHub](https://github.com/jclouds/jclouds/issues).
 
 For general feedback and support requests, send an email to:
 

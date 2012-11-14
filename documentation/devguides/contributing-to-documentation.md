@@ -16,7 +16,7 @@ contributing code to jclouds.
 
 ## Information about jclouds.org for Getting Started on Documentation
 
-The jclouds website is built using [Github pages](http://pages.github.com/) which uses [Jekyll](https://github.com/mojombo/jekyll/). To preview any changes 
+The jclouds website is built using [GitHub pages](http://pages.github.com/) which uses [Jekyll](https://github.com/mojombo/jekyll/). To preview any changes 
 you make, install [Jekyll](https://github.com/mojombo/jekyll/wiki/install) then run `jekyll --auto --server` and open [localhost:4000](http://localhost:4000) 
 in the browser.  Running `--auto` will automatically regenerate the site when you make changes.
 
