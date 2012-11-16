@@ -11,7 +11,7 @@ title: Installation
 {% highlight clojure %}
 (defproject deps "1" :dependencies [[org.jclouds/jclouds-all "1.5.3"] [org.jclouds.driver/jclouds-sshj "1.5.3"]])
 {% endhighlight %}
-  * Execute __lein deps__ which will fill a lib dir with all the jclouds jars.
+  * Execute __lein pom__, then __mvn dependency:copy-dependencies__ which will fill `target/dependency` with all the jclouds jars.
 
 Replace the __provider__ and __api__ in the above directory paths to the ones you want to use in your project.
 
