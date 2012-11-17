@@ -37,12 +37,9 @@ The following document will help you get started, if you are unfamiliar with ecl
   1.  Choose the directory your git clone created. ex. `/Users/username/git/jclouds`
   1.  Choose all modules
 ### Setup TestNG plugin
-1.  Help, Install New Software
-1.  Add 
-  *  Name: testng
-  *  Location: `http://beust.com/eclipse`
-    *  You should see a checkbox near `TestNG` now in the `Available Software` view.
-1.  Check and click until done.
+1.  Help, Eclipse Marketplace
+1.  Find "testng"
+1.  Click through installation
 
 ## Running Tests
 
