@@ -1,0 +1,28 @@
+= Effective jclouds
+
+== Introduction
+Becoming an effective jclouds core developer includes becoming fluent in the jclouds-way.  The style, conventions, and practices we use to produce change all represent decisions made over time.  A newcomer to jclouds may find some of these things curious, and rightly ask for rationale and challenge our practices.  Consider this document an attempt to represent where we are in the craft of development.  When a change is warranted, please socialize through http://webchat.freenode.net?channels=jclouds[irc], and the https://groups.google.com/forum/?fromgroups#!forum/jclouds-dev[google group], and issue a pull-request to this document.
+
+== Java practices
+
+jclouds prefers immutable, composition-vs-inheritance mechanics as facilitated by our adoption of link:/documentation/devguides/guice-guava-primer/[Guava and Guice]. The intention is more testable and less chaotic code.  While not hailed as an absolute rulebook, one can get a good understanding of our coding practice by reading the http://www.amazon.com/Effective-Java-2nd-Joshua-Bloch/dp/0321356683[Effective Java] book.  To that point, this book should be considered a prerequisite read before challenging coding practices.  Below are specific points that jclouds employs, which may not have a direct corollary in a specific book.
+
+=== Null keys or values in collections are bugs
+
+If there are null values in a collection, this is due to a service bug we are unable to fix.  Such cases deserve code comment warnings.  Null values arbitrarily created by jclouds internally are bugs.  If the intent is storing reference to something that may not be present, wrap it in http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/base/Optional.html[Optional].
+
+=== Use Immutable, insertion-order maps
+
+It is often the case that people use TreeMap in main source code in order to have consistent ordering for unit test assertions.  This introduces problems.  The first is that basic operations in a TreeMap are less efficient, than one that is hash-based (log(n) vs constant-time).  More specific to jclouds is that some apis expect idempotent PUT commands to be in the same order as the original entity, and this is not always alphabetical.  The best way to ensure consistent ordering is to use Collections that maintain insertion order. 
+
+Accordingly, use ImmutableMap, as it satisfies our immutable constraint and insertion order bias.  For the rare case that null values are required (for example a clone of an api which has a server error that returns null), use LinkedHashMap, and make it unmodifiable.
+
+=== Use Multimap vs Map<K, Collection<V>>
+
+Guava has a type for multimaps, which avoids the various known problems in java usage of Maps of Collections such as null guarding the collection on put or get.  Multimap of course is implemented with an internal Map<K, Collection<V>>, but provides a safer interface to the users which is semantically aligned with the intent of users who otherwise user maps with collection values.  Do not use Map<K, Collection<V>> and instead use Multimap for representing Maps with multiple values for keys.
+
+=== Only consider uniqueness in equals/hashCode
+
+Many people automatically click all fields and generate a hashCode/equals pair.  However, this screws up Set semantics.  For example, adding a Server which now includes its ip address collection will show up as a new value in a set, when we really wanted to replace the old value.  Accordingly, please only use true sources of uniqueness (such as href) in hashCode/equals, which has the additional benefit of faster hashCode operations.
+
+
