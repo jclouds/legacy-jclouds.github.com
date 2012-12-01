@@ -5,11 +5,11 @@ title: Using the Abiquo cloud
 
 # Using the Abiquo cloud
 
-The Abiquo API uses high-level domain objects to perform the operations against the Abiquo API. This domain objects provide all necessary functionaliry to avoid consuming directly the REST api, although it can be used if needed. 
+The Abiquo API uses high-level domain objects to perform operations against the Abiquo API. These domain objects provide the necessary functionality to avoid directly consuming the REST API, although this can still be done if needed.
 
 ## Creating the context
 
-The first thing to do to use the Abiquo API is to create the context that will point to the API endpoint. This can be done using the **ContextBuilder**:
+The first step in using the Abiquo API is to create the context that will point to the API endpoint. This can be done using the **ContextBuilder**:
 
 {% highlight java %}
 AbiquoContext context = ContextBuilder.newBuilder("abiquo")
@@ -20,21 +20,21 @@ AbiquoContext context = ContextBuilder.newBuilder("abiquo")
 
 ## Context root services
 
-The Abiquo context provides a set of services to access the functionality of the different underlying APIs. These services serve as an entry point to those APIs, and provide some high level features such as listing and filtering. The following code snippet shows a few examples of these services.
+The Abiquo context provides a set of services to access the functionality of the different underlying APIs. These services are an entry point to the APIs and provide some high-level features, such as listing and filtering. The following code snippet shows a few examples of these services.
 
 {% highlight java %}
-// Get access to the administration api
+// Get access to the administration API
 AdministrationService admin = context.getAdministrationService()
-List<Datacenter> datacentes = admin.listDatacenters()
+List<Datacenter> datacenters = admin.listDatacenters()
 
-// Get access to the cloud api
+// Get access to the cloud API
 CloudService cloud = context.getCloudService()
 List<VirtualMachine> vms = cloud.listVirtualMachines()
 {% endhighlight %}
 
 ## Using the domain objects to perform operations
 
-The domain objects are the core of teh Abiquo api. They can be used to perform all operations such as CRUD operations and other actions. The following example shows how a CRUD of a Datacenter would be:
+The domain objects are the core of the Abiquo API. They can be used to perform all operations. The following example shows the basic operations on a datacenter:
 
 {% highlight java %}
 Datacenter datacenter = Datacenter.builder(context.getApiContext())
@@ -52,7 +52,7 @@ datacenter.delete();
 
 ## A more complete example
 
-This more complete example shows how regular operations can be done using the Abiquo API. It is important to note that the context must be closed when finishing, so the used resources can be released.
+This more complete example shows how regular operations can be done using the Abiquo API. It is important to note that the context must be closed when finishing, so the resources that were used can be released.
 
 {% highlight java %}
 AbiquoContext context = ContextBuilder.newBuilder("abiquo")
@@ -77,7 +77,12 @@ finally
 
 ## Configuring the compute infrastructure
 
-This example shows how to create the physical infrastructure of your cloud. The following code will create a **Datacenter**, a **Rack**, and will connect to a hypervisor, discover its information, and add it to Abiquo so it can be used in virtual machine deployments.
+This example shows how to create the physical infrastructure of your cloud. The following code will:
+1. create a **datacenter** 
+2. create a **rack**
+3. connect to a hypervisor
+4. discover hypervisor details
+5. add hypervisor to Abiquo so it can be used for deploying virtual machines.
 
 {% highlight java %}
 // Create a datacenter with the Enterprise Edition features
@@ -105,7 +110,7 @@ String vswitch = machine.findAvailableVirtualSwitch("eth1");
 
 datastore.setEnabled(true);
 machine.setVirtualSwitch(vswitch);
-machine.setRack(rack);    // We will add the hypervisor to the just created rack
+machine.setRack(rack);    // We will add the hypervisor to the newly created rack
 
 machine.save();
 
@@ -115,14 +120,14 @@ machine.save();
 
 ## Configuring the storage infrastructure
 
-This example shows a basic configuration for a tiered storage. It shows how to configure the different tiers, how to add an storage device and assign a concrete storage pool to the desired tier.
+This example shows a basic configuration of tiered storage. It shows how to configure the different tiers, add a storage device and assign a specific storage pool to a tier.
 
 {% highlight java %}
 // Get an existing Datacenter
 Datacenter datacenter =
     context.getAdministrationService().findDatacenter(DatacenterPredicates.name("San Francisco"));
 
-// Configure the storage Tiers (each Datacenter has 4 tiers by default)
+// Configure the storage tiers (each datacenter has 4 tiers by default)
 List<Tier> tiers = datacenter.listTiers();
 tiers.get(0).setName("Gold Storage");
 tiers.get(0).update();
@@ -136,9 +141,9 @@ tiers.get(3).update();
 // Add a storage device to the datacenter
 StorageDevice device = StorageDevice.builder(context.getApiContext(), datacenter)
     .name("Storage Device")           // A name for the remote device
-    .iscsiIp("10.60.21.203")          // Ip address to access the device using the iSCSI protocol. Hypervisors will use it to access the volumes and expose them to the guests
+    .iscsiIp("10.60.21.203")          // IP address to access the device using the iSCSI protocol. Hypervisors will use it to access the volumes and expose them to the guests
     .iscsiPort(3260)                  // Port to access the device using the iSCSI protocol. Hypervisors will use it to access the volumes and expose them to the guests (it is set to the default value when setting the storage type)
-    .managementIp("10.60.21.203")     // Ip address of the device management API. Abiquo will use it to manage volumes
+    .managementIp("10.60.21.203")     // IP address of the device management API. Abiquo will use it to manage volumes
     .managementPort(8180)             // Port of the device management API. Abiquo will use it to manage volumes (this port is set to the right default value when setting the device type)
     .type(StorageTechnologyType.LVM)  // The type of the storage device
     .build();
@@ -153,7 +158,7 @@ pool.setTier(tier);
     
 pool.save();
 
-// At this point the infrastructure is ready with one storage Tier and users will be
+// At this point the infrastructure is ready with one storage tier and users will be
 // able to create volumes on demand.
 {% endhighlight %}
 
@@ -161,16 +166,16 @@ pool.save();
 
 This example shows the steps that a Cloud Administrator should perform to prepare the networks that will be used by the end users. It shows how to configure the different network types that exist in Abiquo:
 
-* **External:** Usually used to connect virtual machines inside a virtual datacenter to a VPN network property of the tenant.
+* **External:** Usually used to connect virtual machines inside a virtual datacenter to a VPN network belonging to the tenant.
 * **Public:** Used to make virtual machines attached to public networks reachable from the Internet.
-* **Unmanaged:** Used to delegate to a local DHCP the configuration of the NICs of the virtual machines.
+* **Unmanaged:** Used to delegate the configuration of the NICs in the virtual machines to a local DHCP outside of Abiquo.
 
 {% highlight java %}
 // Get the Datacenter where the network configurations will be applied
 Datacenter datacenter =
     context.getAdministrationService().findDatacenter(DatacenterPredicates.name("San Francisco"));
 
-// Configure a Public network
+// Configure a public network
 PublicNetwork publicNetwork = PublicNetwork.builder(context.getApiContext(), datacenter)
     .name("PublicNetwork")    // The name of the network
     .address("80.80.80.0")    // The network address
@@ -204,8 +209,8 @@ UnmanagedNetwork unmanagedNetwork = UnmanagedNetwork.builder(context.getApiConte
     .tag(11)                   // The VLAN tag for this network
     .build();
 
-// When creating the UnmanagedNetwork, no IP addresses will be created. Since unmanaged networks are used to
-// let external systems configure the NICs, and those external systems will be the ones that will configure
+// When creating the UnmanagedNetwork, no IP addresses will be created. Unmanaged networks are used to
+// allow external systems to configure the NICs, and those external systems will be the ones that will configure
 // the IP addresses accordingly when attaching NICs to a virtual machine.
 unmanagedNetwork.save();
 
@@ -213,7 +218,7 @@ unmanagedNetwork.save();
 // and unmanaged network that have been assigned to a tenant.
 {% endhighlight %}
 
-The creation of the networks by default enables all IP addresses inside the network range. To customize this, and disable a set of IPs so they can not be used, or to put them in quarantine, you can iterate the available IPs and update them accordingly as shown in the example:
+The default network creation enables all IP addresses inside the network range. To customize this, and disable a set of IPs so they cannot be used, or to put them in quarantine, you can iterate the available IPs and update them accordingly as shown in the example:
 
 {% highlight java %}
 List<PublicIp> publicIps = publicNetwork.listIps(IpPredicates.<PublicIp> available());
@@ -226,7 +231,7 @@ for (PublicIp publicIp : publicIps)
 
 ## Managing tenants
 
-This example shows ho to create new Enterprises that will consume the resources of the cloud. It shows how to create the initial enterprise administrator that will be able to manage the enterprise and their users.
+This example shows how to create new Enterprises that will consume the resources of the cloud. It shows how to create the initial enterprise administrator that will be able to manage their enterprise and users.
 
 {% highlight java %}
 // Create a new enterprise with a given set of limits
@@ -246,12 +251,12 @@ Datacenter datacenter =
 
 enterprise.allowDatacenter(datacenter);
 
-// Create an Enterprise administrator, so it can begin using the cloud infrastructure
+// Create an Enterprise administrator, so she can begin using the cloud infrastructure
 // and can start creating the users of the enterprise
 Role role =
     context.getAdministrationService().findRole(RolePredicates.name("ENTERPRISE_ADMIN"));
 
-// Create the user with the selected role in the just created enterprise
+// Create the user with the selected role in the newly created enterprise
 User enterpriseAdmin = User.builder(context.getApiContext(), enterprise, role) 
     .name("Name", "Surname")       // The name and surname
     .email("username@company.com") // The email address
@@ -275,12 +280,12 @@ This example shows how an enterprise administrator can create a **virtual datace
 // Get the enterprise you are managing (the current one in this example)
 Enterprise enterprise = context.getAdministrationService().getCurrentEnterprise();
 
-// Get the datacenter where the virtual datacenter will be created (must be allowed to
+// Get the datacenter where the virtual datacenter will be created (must be allowed for
 // the enterprise)
 Datacenter datacenter =
     enterprise.findAllowedDatacenter(DatacenterPredicates.name("API datacenter"));
 
-// Choose the type of hypervisor among the availables in the datacenter
+// Choose the type of hypervisor among those available in the datacenter
 HypervisorType hypervisor =
     datacenter.findHypervisor(HypervisorPredicates.type(HypervisorType.KVM));
 
@@ -299,7 +304,7 @@ VirtualDatacenter virtualDatacenter =
         .cpuCountLimits(18, 20)               // Number of CPUs: Maximum 20, warn when 18 are in use
         .hdLimitsInMb(10240 * 1204 * 1024, 20480 * 1204 * 1024)   // Hard Drive capacity: 20GB, warn when 10GB are in use
         .publicIpsLimits(2, 2)                // Available public IPs: 2, warn when both are in use
-        .ramLimits(2048, 4096)                // Ram in MB: 4GB total, warn when 2GB are in use
+        .ramLimits(2048, 4096)                // RAM in MB: 4GB total, warn when 2GB are in use
         .storageLimits(5120 * 1204 * 1024, 10240 * 1204 * 1024)  // External storage capacity: 10GB, warn when 5GB are in use
         .vlansLimits(1, 2)                   // VLAN: Maximum 2, warn when 1 is in use
         .hypervisorType(hypervisor)          // Type of the hypervisor
@@ -308,11 +313,11 @@ VirtualDatacenter virtualDatacenter =
 
 virtualDatacenter.save();
 
-// Once the virtual datacenter has been created, we can assign some public ips to it, so they can be attached
+// Once the virtual datacenter has been created, we can assign some public IPs to it, so they can be attached
 // to the virtual machines created in the virtual datacenter.
 List<PublicIps> availablePublicIps = virtualDatacenter.listAvailablePublicIps();
 
-// Purchase public ups up to the hard limit of the virtual datacenter
+// Purchase public IPs up to the hard limit of the virtual datacenter
 // A 0 limit means unlimited, so take the enterprise limit in that case
 long limit = virtualDatacenter.getPublicIpsHard() != 0 ?
                 virtualDatacenter.getPublicIpsHard()
@@ -329,7 +334,7 @@ for (int i = 0; i < limit; i++) {
 
 ## Deploying virtual machines
 
-This example shows how to create and deploy new virtual machines. It shows how to get the Virtual Datacenter where the virtual machine will be deployed, and how to configure the resources of the virtual machine to deploy.
+This example shows how to create and deploy new virtual machines. It shows how to get the virtual datacenter where the virtual machine will be deployed, and how to configure the resources of the virtual machine to deploy.
 
 {% highlight java %}
 // Get the virtual datacenter where the virtual machine will be deployed
@@ -360,14 +365,14 @@ vm.save();
 vm.deploy();
 
 // At this point a deployment job has been started asynchronously and the 
-// virtual machine will be deployed in background
+// virtual machine will be deployed in the background
 {% endhighlight %}
 
 ### Monitoring virtual machine deployments
 
-As seen in the previous example, virtual machine deployments are performed asynchronously, since they may take a long time to complete. There are two ways to monitor these asynchronous tasks: the following examples show how to monitor deployments using a blocking and a non-blocking approach.
+As seen in the previous example, virtual machine deployments are performed asynchronously, because they may take a long time to complete. There are two ways to monitor these asynchronous tasks: the following examples show how to monitor deployments using a blocking and a non-blocking approach.
 
-**NOTE ON ASYNCHRONOUS TASKS**: All asynchronous operations return an **AsyncTask** object that can be queried to see the current state of the task. However, when monitoring such an operation it is recommended to use the methods shown in the examples below, to monitor the object that generated the task instead of the task itself. *AsyncTask* objects represent the state of the job that configures the hypervisor, but after that job finishes, the Abiquo server still performs some actions, so it is not recommended to use this *AsyncTask* objects to monitor deployments, etc.
+**NOTE ON ASYNCHRONOUS TASKS**: All asynchronous operations return an **AsyncTask** object that can be queried to see the current state of the task. However, when monitoring such an operation it is recommended to use the methods shown in the examples below, to monitor the object that generated the task instead of the task itself. *AsyncTask* objects represent the state of the job that configures the hypervisor, but after that job finishes, the Abiquo server still performs some actions, so it is not recommended to use this *AsyncTask* object to monitor deployments, etc.
 
 #### Deploy a virtual machine and block until deployment finishes
 
@@ -404,7 +409,7 @@ public class DeployHandler {
 }
 {% endhighlight %}
 
-Once the handler has been defined, it only needs to be registered to start receiving events. It will receive **ALL** events from all objects, so if you only want to handle the events of a concrete object, make sure to check against the **event.getTarget()** method in your handler code to ensure you are handling the right event.
+Once the handler has been defined, it only needs to be registered to start receiving events. It will receive **ALL** events from all objects, so if you only want to handle the events of a particular object, make sure to check against the **event.getTarget()** method in your handler code to ensure you are handling the right event.
 
 {% highlight java %}
 // Deploy the virtual machine
@@ -420,22 +425,22 @@ monitor.register(handler);
 monitor.monitorDeploy(vm);
 
 // The 'monitor' method will not block and the program execution will continue
-// normally. Events will be dispatched to handlers when monitor completes, fails
+// normally. Events will be dispatched to handlers when the monitor completes, fails
 // or reaches timeout.
 {% endhighlight %}
 
-Don't forget to **unregister** your handler so you stop receiving events when you are done. This can be done by invoking the monitoring service as follows:
+Do not forget to **unregister** your handler so you stop receiving events when you are done. This can be done by invoking the monitoring service as follows:
 
 {% highlight java %}
 VirtualMachineMonitor monitor = context.getMonitoringService().getVirtualMachineMonitor();
 monitor.unregister(handler);
 {% endhighlight %}
 
-You may want to unregister the handler inside the event handler methods. There is no limitation about that. Feel free to code your handlers the way you want.
+You may want to unregister the handler inside the event handler methods. There is no limitation on that. Feel free to code your handlers however you like.
 
 ## Adding storage to the virtual machines
 
-This example shows how to create a new virtual machine and add some additional storage to it. It shows how to get the Virtual Datacenter where the virtual machine will be created, and how to configure the resources of the virtual machine.
+This example shows how to create a new virtual machine and add some additional storage to it. It shows how to get the virtual datacenter where the virtual machine will be created, and how to configure the resources of the virtual machine.
 
 {% highlight java %}
 // Get the virtual datacenter where the virtual machine will be created
@@ -513,7 +518,7 @@ ExternalNetwork extNet =
         NetworkPredicates.<ExternalIp> name("ExternalNetwork"));
 ExternalIp extIp = extNet.listUnusedIps().get(0);
 
-// Get an unused public IP form the public network
+// Get an unused public IP from the public network
 PublicIp pubIp = vdc.findPurchasedPublicIp(IpPredicates.<PublicIp> notUsed());
 
 // Get a private IP from the privateNetwork
@@ -521,13 +526,13 @@ PrivateNetwork privNet = vdc.findPrivateNetwork(
     NetworkPredicates.<PrivateIp> name("PrivateNetwork"));
 PrivateIp privIp = privNet.listUnusedIps().get(0);
 
-// At this point we have all we need to attach the IPs to the virtual machine.
+// At this point we have everything we need to attach the IPs to the virtual machine.
 
 // Attach the IPs in the appropriate order
 List<Ip<?, ?> ips = Lists.<Ip< ? , ? >> newArrayList(extIp, pubIp, privIp);
 vm.setNics(ips);
 
-// At this point we have the virtual machine with the provided IP addresses attached to it.
+// At this point we have the virtual machine with the IP addresses attached to it.
 {% endhighlight %}
 
 ### Configuring the default gateway
@@ -544,11 +549,11 @@ PublicNetwork gateway = pubIp.getNetwork();
 vm.setNics(gateway, extIp, pubIp, privIp);
 {% endhighlight %}
 
-### Attaching IPs from Unmanaged networks
+### Attaching IPs from unmanaged networks
 
-Unmanaged networks are special. Since Abiquo is not the one who will assign the IPs to the virtual machine, ups from unmanaged networks can not be directly assigned. It is the external system the one who will configure the ups for the virtual machine when it is deployed. However we must indicate that the virtual machine will have NICs form a concrete unmanaged network.
+Unmanaged networks are special. Because Abiquo will not assign the IPs to the virtual machines, IPs from unmanaged networks cannot be directly assigned. An external system will configure the IPs for the virtual machine when it is deployed. However we must indicate that the virtual machine will have NICs from a specific unmanaged network.
 
-To do that, we can call the **setNics** method providing as many unmanaged networks as we want, to indicate that an ip address of each network (or many ip addresses if the unmanaged network is provided more than once) must be attached to the virtual machine.
+To do that, we can call the **setNics** method providing as many unmanaged networks as we want, to indicate that an IP address in each network (or many IP addresses if an unmanaged network is provided more than once) must be attached to the virtual machine.
 
 {% highlight java %}
 Unmanagednetwork unmanagedNet = enterprise.findUnmanagedNetwork(datacenter,
@@ -557,12 +562,12 @@ Unmanagednetwork unmanagedNet = enterprise.findUnmanagedNetwork(datacenter,
 List<UnmanagedNetwork> unmanagedNicsFromNet =
     Lists.<UnmanagedNetwork> newArrayList(unmanagedNet);
 
-// This will attach the ups provided in the first list, and the corresponding
-// unmanaged IPs from the provide unmanaged networks.
+// This will attach the IPs provided in the first list, and the corresponding
+// unmanaged IPs from the given unmanaged networks.
 vm.setNics(ips, unmanagedNicsFromNet);
 {% endhighlight %}
 
-# Misc examples
+# Miscellaneous examples
 
 ## Asynchronous monitor example
 
@@ -595,7 +600,7 @@ import com.google.inject.Module;
 public class DeployExample {
 
     public static void main(final String[] args) {
-        // Build the context (we use a NullLoggingModule because we don't want logging in this
+        // Build the context (we use a NullLoggingModule because we do not want logging in this
         // example)
         AbiquoContext context = ContextBuilder.newBuilder("abiquo")
             .endpoint("http://10.60.21.33/api")
@@ -605,7 +610,7 @@ public class DeployExample {
 
         try
         {
-            // Get the virtual datacenter and virtual appliance by id
+            // Get the virtual datacenter and virtual appliance by ID
             VirtualDatacenter vdc = context.getCloudService().getVirtualDatacenter(7);
             VirtualAppliance vapp = vdc.getVirtualAppliance(6);
             VirtualMachine vm =
@@ -617,7 +622,7 @@ public class DeployExample {
             VmEventHandler handler = new VmEventHandler(context, vm);
 
             // Register the event handler in the monitoring service. This way the service will
-            // notify all deploy related events to it.
+            // notify all deploy-related events to it.
             VirtualMachineMonitor monitor =
                 context.getMonitoringService().getVirtualMachineMonitor();
             monitor.register(handler);
@@ -663,14 +668,14 @@ import org.jclouds.abiquo.monitor.VirtualMachineMonitor;
 import com.google.common.eventbus.Subscribe;
 
 /**
- * Handles events related to a concrete virtual machine.
+ * Handles events related to a specific virtual machine.
  */
 public class VmEventHandler extends AbstractEventHandler<VirtualMachine> {
 
     /** Used to close the context when the job finishes. */
     private AbiquoContext context;
 
-    /** Thwe monitored virtual machine. */
+    /** The monitored virtual machine. */
     private VirtualMachine vm;
 
     public VmEventHandler(final AbiquoContext context, final VirtualMachine vm) {
@@ -700,8 +705,8 @@ public class VmEventHandler extends AbstractEventHandler<VirtualMachine> {
         if (handles(event)) {
             System.out.println("VM " + event.getTarget().getName() + " deployed");
 
-            // Stop listening to events and close the context (in this example when the vm is
-            // deployed the application should end)
+            // Stop listening to events and close the context (in this example when the VM is
+            // deployed, the application should end)
             unregisterAndClose();
         }
     }
@@ -714,7 +719,7 @@ public class VmEventHandler extends AbstractEventHandler<VirtualMachine> {
         if (handles(event)) {
             System.out.println("Deployment for" + event.getTarget().getName() + " failed");
 
-            // Stop listening to events and close the context (in this example when the vm is
+            // Stop listening to events and close the context (in this example when the VM is
             // deployed the application should end)
             unregisterAndClose();
         }
@@ -732,8 +737,8 @@ public class VmEventHandler extends AbstractEventHandler<VirtualMachine> {
         if (handles(event)) {
             System.out.println("Deployment for vm " + event.getTarget().getName() + " timed out");
 
-            // Stop listening to events and close the context (in this example when the vm is
-            // deployed the application should end)
+            // Stop listening to events and close the context (in this example when the VM is
+            // deployed, the application should end)
             unregisterAndClose();
         }
     }
