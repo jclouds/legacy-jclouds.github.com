@@ -58,12 +58,13 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
 | jclouds | Rackspace/OpenStack |
 |---------|---------------------|
 | Compute | Cloud Servers (aka Nova)
-| BlobStore | Cloud Files (aka Swift)
 | Node | Server
 | Location | Region
 | Hardware | Flavor
 | NodeMetadata | Server details
 | UserMetadata | Metadata
+| BlobStore | Cloud Files (aka Swift)
+| Blob | File
 
 ## <a id="files"></a>Your First Cloud Files App
 ### <a id="files-intro"></a>Introduction
@@ -73,7 +74,7 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
 ### <a id="files-source"></a>The Source Code
 
 1. Create the directory hierarchy org/jclouds/examples/rackspace/cloudfiles/ in your jclouds directory.
-1. Create a Java source file called CreateContainer.java in the directory above.
+1. Create Java source files called CreateContainer.java and Constants.java in the directory above.
 1. You should now have a directory with the following structure:
     * `jclouds/`
         * `build.xml`
@@ -82,8 +83,11 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
             * `*.jar`
         * `org/jclouds/examples/rackspace/cloudfiles/`
             * `CreateContainer.java`
+            * `Constants.java`
 1. Open CreateContainer.java for editing.
 1. Go to the example code [CreateContainer.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles/CreateContainer.java), read it over, and copy the code into your file.
+1. Open Constants.java for editing.
+1. Go to the example code [Constants.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudfiles/Constants.java), read it over, and copy the code into your file.
 
 ### <a id="files-compile"></a>Compile and Run
 
@@ -102,7 +106,7 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
 ### <a id="servers-source"></a>The Source Code
 
 1. Create the directory hierarchy org/jclouds/examples/rackspace/cloudservers/ in your jclouds directory.
-1. Create a Java source file called CreateServer.java in the directory above.
+1. Create Java source files called CreateServer.java and Constants.java in the directory above.
 1. You should now have a directory with the following structure:
     * `jclouds/`
         * `build.xml`
@@ -111,8 +115,11 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
             * `*.jar`
         * `org/jclouds/examples/rackspace/cloudservers/`
             * `CreateServer.java`
+            * `Constants.java`
 1. Open CreateServer.java for editing.
 1. Go to the example code [CreateServer.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers/CreateServer.java), read it over, and copy the code into your file.
+1. Open Constants.java for editing.
+1. Go to the example code [Constants.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudservers/Constants.java), read it over, and copy the code into your file.
 
 ### <a id="servers-compile"></a>Compile and Run
 
@@ -139,7 +146,7 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
 ### <a id="volumes-source"></a>The Source Code
 
 1. Create the directory hierarchy org/jclouds/examples/rackspace/cloudblockstorage/ in your jclouds directory.
-1. Create a Java source file called CreateVolumeAndAttach.java in the directory above.
+1. Create Java source files called CreateVolumeAndAttach.java and Constants.java in the directory above.
 1. You should now have a directory with the following structure:
     * `jclouds/`
         * `build.xml`
@@ -148,8 +155,11 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
             * `*.jar`
         * `org/jclouds/examples/rackspace/cloudblockstorage/`
             * `CreateVolumeAndAttach.java`
+            * `Constants.java`
 1. Open CreateVolumeAndAttach.java for editing.
 1. Go to the example code [CreateVolumeAndAttach.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudblockstorage/CreateVolumeAndAttach.java), read it over, and copy the code into your file.
+1. Open Constants.java for editing.
+1. Go to the example code [Constants.java](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/src/main/java/org/jclouds/examples/rackspace/cloudblockstorage/Constants.java), read it over, and copy the code into your file.
 
 ### <a id="volumes-compile"></a>Compile and Run
 
@@ -186,8 +196,8 @@ This is a list of providers that work with the Rackspace open cloud that you can
 
 * `"cloudfiles-us"`
 * `"cloudfiles-uk"`
-* `"cloudloadbalancers-us"`
-* `"cloudloadbalancers-uk"`
+* `"rackspace-cloudloadbalancers-us"`
+* `"rackspace-cloudloadbalancers-uk"`
 * `"rackspace-cloudblockstorage-us"`
 * `"rackspace-cloudblockstorage-uk"`
 * `"rackspace-cloudservers-us"`
