@@ -1,8 +1,8 @@
 ---
 layout: jclouds
-title: Using the Amazon EC2 Cloud
+title: Using the EC2 Api
 ---
-# Using the Amazon EC2 Cloud
+# Using the EC2 Api
 
 ## Introduction
 
@@ -12,6 +12,22 @@ For credentials you will want you access key id and secret access key (don't use
 For practical EC2 usage - you will probably want to check out [AWS Quick Start](/documentation/quickstart/aws) 
 
 If you get stuck, please consult the [Using Amazon EC2 with jclouds FAQ](/documentation/faqs/ec2-faq).
+
+## Compatibility
+Private clouds often expose EC2-compatible interfaces.  Very commonly, users install clones on non-https, or self-signed servers.  If you do so, make sure you set the following properties:
+```
+jclouds.trust-all-certs=true
+jclouds.relax-hostname=true
+```
+Here are a few configuration examples of common EC2 clones:           
+### Eucalyptus
+The following properties should help use the `ec2` provider on a eucalyptus install:
+```
+# in version 3, lowercase 'e' version 2, uppercase 'E'
+jclouds.regions=eucalyptus
+# note the trailing slash is important
+ec2.endpoint=http://host:8773/services/Eucalyptus/
+```
 
 ## Images
 ### Default image
