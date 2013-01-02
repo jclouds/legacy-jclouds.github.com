@@ -37,7 +37,6 @@ jclouds provides the following Karaf "features":
   * jclouds-scaleup-storage
   * jclouds-serverlove-z1-man
   * jclouds-skalicloud-sdg-my
-  * jclouds-slicehost
   * jclouds-synaptic-storage
   * jclouds-tiscali-storage
   * jclouds-trmk-ecloud

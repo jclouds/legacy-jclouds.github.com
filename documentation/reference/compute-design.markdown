@@ -29,7 +29,6 @@ There are a lot of service providers that provide this type of IaaS functionalit
 ones currently supported by jclouds are [Amazon EC2](http://aws.amazon.com/ec2/), 
 [Rackspace Cloud Servers](http://www.rackspacecloud.com/cloud_hosting_products/servers), 
 [VMware vCloud API](http://www.vmware.com/appliances/services/vcloud-express.html), and
-[RimuHosting VPS](http://rimuhosting.com/vps/aboutvps.jsp).  
 
 For better or worse, each of these services model their systems in different ways and
  therefore have different APIs to access them.  In some cases, there is large overlap in features.  
