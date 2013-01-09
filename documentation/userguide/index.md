@@ -9,6 +9,7 @@ title: User Guides Index
 * [Abiquo Detailed User Guide](/documentation/userguide/using-abiquo)
 * [Amazon Web Services](/documentation/quickstart/aws)
 * [Amazon EC2](/documentation/userguide/using-ec2)
+* [Amazon S3](/documentation/userguide/using-s3)
 * [Amazon SQS](/documentation/quickstart/sqs)
 * [Amazon Elastic Block Storage](/documentation/quickstart/ebs)
 * [Azure Storage Service](/documentation/quickstart/azure-storage)
