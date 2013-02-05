@@ -38,118 +38,7 @@ As of jclouds beta-9, you can now supply a map to persist credentials of your no
 this means you can keep track of all of your cloud nodes' credentials in a single place.
 
 ### Supported Providers
-All of the following providers can be used equally in any Compute API tool.
-
-<table>
-	<thead>
-		<tr>
-			<th>maven dependency*</th>
-			<th>iso 3166 codes</th>
-		</tr>
-		<tbody>
-			<tr>
-				<td>org.jclouds.provider/aws-ec2</td>
-				<td>US-VA,US-CA,IE,SG</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/bluelock-vcloud-vcenterprise</td>
-				<td>US-IN</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/bluelock-vcloud-zone01</td>
-				<td>US-IN</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/cloudservers-uk (<a href="http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison">First Gen</a>)</td>
-				<td>GB-SLG</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/cloudservers-us (<a href="http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison">First Gen</a>)</td>
-				<td>US-IL,US-TX</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/cloudsigma-zrh</td>
-				<td>CH-ZH</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/elastichosts-lon-b</td>
-				<td>GB-LND</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/elastichosts-lon-p</td>
-				<td>GB-LND</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/elastichosts-sat-p</td>
-				<td>US-TX</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/eucalyptus-partnercloud-ec2</td>
-				<td>US-CA</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/gogrid</td>
-				<td>US-CA,US-VA</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/openhosting-east1</td>
-				<td>US-VA</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/rackspace-cloudservers-uk (<a href="http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison">Next Gen</a>)</td>
-				<td>GB-SLG</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/rackspace-cloudservers-us (<a href="http://www.rackspace.com/knowledge_center/article/next-gen-vs-first-gen-feature-comparison">Next Gen</a>)</td>
-				<td>US-IL,US-TX</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/rimuhosting (compute)</td>
-				<td>NZ-AUK,US-TX,AU-NSW,GB-LND</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/serverlove-z1-man</td>
-				<td>GB-MAN</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/skalicloud-sdg-my</td>
-				<td>MY-10</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/slicehost</td>
-				<td>US-IL,US-TX,US-MO</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/stratogen-vcloud-mycloud (compute)</td>
-				<td>GB</td>
-			</tr>
-			<tr>
-				<td>org.jclouds.provider/trmk-ecloud</td>
-				<td>US-FL,NL-NH</td>
-			</tr>
-			<tr>
-				<td>org.jclouds./trmk-vcloudexpress</td>
-				<td>US-FL</td>
-			</tr>
-		</tbody>
-
-	</thead>
-</table>
-
-
-
-You can also set the context property `provider`.endpoint to use the following APIs for your private cloud                                                                                
-                                                                                                                                                                                          
-| *maven dependency*  		|                                                                                                                                                            
-|:--------------------------|
-| org.jclouds.api/byon 		|                                                                                                                                                                  
-| org.jclouds.api/deltacloud	|                                                                                                                                                            
-| org.jclouds.api/elasticstack	|                                                                                                                                                          
-| org.jclouds.api/eucalyptus	|                                                                                                                                                            
-| org.jclouds.api/nova		|                                                                                                                                                                  
-| org.jclouds.api/vcloud	|                                                                                                                                                                
-                                                                                                                                                                                          
-
+See [Compute API: Supported Providers](/documentation/reference/supported-providers#compute) for providers that can be used equally in any Compute API tool.
 
 *Note, that if you use the `jclouds-allcompute` dependency, your project will have all of the above!*
 
@@ -632,7 +521,6 @@ _This is significantly out of date._
 | trmk-vcloudexpress | osFamily(UBUNTU).osDescriptionMatches(".*JeOS.*").os64Bit(true) |
 | trmk-ecloud | osFamily(CENTOS).os64Bit(true) |
 | ec2 | osFamily(AMZN_LINUX).os64Bit(true) |
-| eucalyptus | osFamily(CENTOS) |
 | gogrid | osFamily(CENTOS).imageNameMatches(".*w/ None.*") |
 
 ##### Test Scripts 
