@@ -30,7 +30,6 @@ Here's an example that gets all the libraries needed for the compute task.
 
   <artifact:dependencies pathId="jclouds.classpath">
     <dependency groupId="org.jclouds" artifactId="jclouds-antcontrib" version="1.0.0" />
-    <dependency groupId="org.jclouds" artifactId="jclouds-rimuhosting" version="1.0.0" />
     <dependency groupId="org.jclouds" artifactId="jclouds-aws" version="1.0.0" />
     <dependency groupId="org.jclouds" artifactId="jclouds-rackspace" version="1.0.0" />
     <dependency groupId="org.jclouds" artifactId="jclouds-terremark" version="1.0.0" />
