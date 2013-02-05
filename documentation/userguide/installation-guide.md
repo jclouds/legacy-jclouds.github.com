@@ -9,7 +9,7 @@ title: Installation
   * Download [lein](https://github.com/technomancy/leiningen/raw/stable/bin/lein) and make it executable.
   * Create a __project.clj__ file with the below contents.
 {% highlight clojure %}
-(defproject deps "1" :dependencies [[org.jclouds/jclouds-all "1.5.6"] [org.jclouds.driver/jclouds-sshj "1.5.6"]])
+(defproject deps "1" :dependencies [[org.jclouds/jclouds-all "1.5.7"] [org.jclouds.driver/jclouds-sshj "1.5.7"]])
 {% endhighlight %}
   * Execute __lein pom__, then __mvn dependency:copy-dependencies__ which will fill `target/dependency` with all the jclouds jars.
 
@@ -25,12 +25,12 @@ the following your project's __pom.xml__:
   <dependency>
     <groupId>org.jclouds</groupId>
     <artifactId>jclouds-allcompute</artifactId>
-    <version>1.5.6</version>
+    <version>1.5.7</version>
   </dependency>
   <dependency>
     <groupId>org.jclouds</groupId>
     <artifactId>jclouds-allblobstore</artifactId>
-    <version>1.5.6</version>
+    <version>1.5.7</version>
   </dependency>
 </dependencies>
 {% endhighlight %}
@@ -49,8 +49,8 @@ When you run this script with __ant__, it will build a __lib__ directory full of
     <delete dir="lib" />
     <mkdir dir="lib" />
     <artifact:dependencies filesetId="jclouds.fileset" versionsId="dependency.versions">
-      <dependency groupId="org.jclouds" artifactId="jclouds-all" version="1.5.6" />
-      <dependency groupId="org.jclouds.driver" artifactId="jclouds-sshj" version="1.5.6" />
+      <dependency groupId="org.jclouds" artifactId="jclouds-all" version="1.5.7" />
+      <dependency groupId="org.jclouds.driver" artifactId="jclouds-sshj" version="1.5.7" />
       <dependency groupId="ch.qos.logback" artifactId="logback-classic" version="[1.0.0,)" />
     </artifact:dependencies>
     <copy todir="lib" verbose="true">
@@ -73,13 +73,13 @@ When you run this script with __ant__, it will build a __lib__ directory full of
 To only fetch the jars for a particular provider replace
 
 {% highlight xml %}
-      <dependency groupId="org.jclouds" artifactId="jclouds-all" version="1.5.6" />
+      <dependency groupId="org.jclouds" artifactId="jclouds-all" version="1.5.7" />
 {% endhighlight %}
 
 with
 
 {% highlight xml %}
-      <dependency groupId="org.jclouds.provider" artifactId="the-provider-id" version="1.5.6" />
+      <dependency groupId="org.jclouds.provider" artifactId="the-provider-id" version="1.5.7" />
 {% endhighlight %}
 
 You can see the list of supported providers and their ids in the [Supported Providers](/documentation/reference/supported-providers).
@@ -93,10 +93,10 @@ Then, add jclouds to your __build.xml__ as shown below:
 <artifact:dependencies pathId="jclouds.classpath">
   <dependency groupId="org.jclouds" 
               artifactId="jclouds-allcompute"
-              version="1.5.6" />
+              version="1.5.7" />
   <dependency groupId="org.jclouds"
               artifactId="jclouds-allblobstore"
-              version="1.5.6" />
+              version="1.5.7" />
 </artifact:dependencies>
 {% endhighlight %}
 
@@ -108,8 +108,8 @@ If you use lieningen, you can add jclouds to your project.clj like below, suppor
 :dependencies [[org.clojure/clojure "1.3.0"]
                [org.clojure/core.incubator "0.1.0"]
                [org.clojure/tools.logging "0.2.3"]
-               [org.jclouds/jclouds-allcompute "1.5.6"]
-               [org.jclouds/jclouds-allblobstore "1.5.6"]]
+               [org.jclouds/jclouds-allcompute "1.5.7"]
+               [org.jclouds/jclouds-allblobstore "1.5.7"]]
 {% endhighlight %}
 
 ## Making your own lib dir
