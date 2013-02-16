@@ -29,6 +29,8 @@ and [Guava for Netflix](http://guava-libraries.googlecode.com/files/Guava_for_Ne
 [<it>Effective Java</it>](http://books.google.com/books?id=Ft8t0S4VjmwC&hl=en) by Joshua Block is a fantastic book that tells you how to 
 use Java and its fundamental libraries to maximum effect.
 
+Watch [An Overview of Guava: Google Core Libraries for Java](http://www.infoq.com/presentations/Guava) from QCon SF 2012, presented by Google's Kevin Bourrillion.
+
 ### Guice
 
 Guice is a dependency injection framework developed at Google.  It allows for type safe dependency injection using all native Java syntax.  Guice helps
