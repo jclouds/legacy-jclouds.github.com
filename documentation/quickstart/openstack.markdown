@@ -8,7 +8,8 @@ title: Quick Start - OpenStack
 1. [Get OpenStack](#openstack)
 1. [Get jclouds](#install)
 1. [Terminology](#terminology)
-1. [List Servers](#servers)
+1. [List Servers](#nova)
+1. [List Containers](#swift)
 1. [Next Steps](#next)
 1. [OpenStack Providers](#providers)
 
@@ -55,12 +56,12 @@ There are some differences in terminology between jclouds and OpenStack that sho
 | BlobStore | Swift
 | Blob | File
 
-## <a id="servers"></a>List Servers
-### <a id="servers-intro"></a>Introduction
+## <a id="nova"></a>List Servers
+### <a id="nova-intro"></a>Introduction
 
 [OpenStack Compute](http://www.openstack.org/software/openstack-compute/) (aka Nova) is an easy to use service that provides on-demand servers that you can use to to build dynamic websites, deliver mobile apps, or crunch big data.
 
-### <a id="servers-source"></a>The Source Code
+### <a id="nova-source"></a>The Source Code
 
 1. Create a Java source file called JCloudsNova.java in the jclouds directory above.
 1. You should now have a directory with the following structure:
@@ -70,9 +71,9 @@ There are some differences in terminology between jclouds and OpenStack that sho
         * `maven-ant-tasks.jar`
         * `lib/`
             * `*.jar`
-1. Open CreateServer.java for editing, read the code below, and copy it in.
+1. Open JCloudsNova.java for editing, read the code below, and copy it in.
 
-<pre>
+```java
 import static com.google.common.io.Closeables.closeQuietly;
     
 import java.io.Closeable;
@@ -120,7 +121,7 @@ public class JCloudsNova implements Closeable {
       String password = "devstack"; // demo account uses ADMIN_PASSWORD too
 
       ComputeServiceContext context = ContextBuilder.newBuilder(provider)
-            .endpoint("http://172.16.0.2:5000/v2.0/")
+            .endpoint("http://172.16.0.1:5000/v2.0/")
             .credentials(identity, password)
             .modules(modules)
             .buildView(ComputeServiceContext.class);
@@ -145,7 +146,7 @@ public class JCloudsNova implements Closeable {
       closeQuietly(compute.getContext());
    }
 }
-</pre>
+```
 
 In the init() method note that
 
@@ -160,7 +161,7 @@ In the init() method note that
   * When the devstack installation completes successfully, one of the last few lines will read something like "`Keystone is serving at http://172.16.0.1:5000/v2.0/`"
   * Set the endpoint to this URL depending on the method used to get OpenStack above. 
 
-### <a id="servers-compile"></a>Compile and Run
+### <a id="nova-compile"></a>Compile and Run
 
     javac -classpath ".:lib/*" JCloudsNova.java
     
@@ -170,6 +171,105 @@ In the init() method note that
     Servers in RegionOne
     [logging output]
       Server{uuid=...}
+      ...
+
+## <a id="swift"></a>List Containers
+### <a id="swift-intro"></a>Introduction
+
+[OpenStack Object Storage](http://www.openstack.org/software/openstack-storage/) (aka Swift) provides redundant, scalable object storage using clusters of standardized servers capable of storing petabytes of data.
+
+### <a id="swift-source"></a>The Source Code
+
+1. Create a Java source file called JCloudsSwift.java in the jclouds directory above.
+1. You should now have a directory with the following structure:
+    * `jclouds/`
+        * `JCloudsSwift.java`
+        * `build.xml`
+        * `maven-ant-tasks.jar`
+        * `lib/`
+            * `*.jar`
+1. Open JCloudsSwift.java for editing, read the code below, and copy it in.
+
+```java
+import static com.google.common.io.Closeables.closeQuietly;
+
+import java.io.Closeable;
+import java.util.Set;
+
+import org.jclouds.ContextBuilder;
+import org.jclouds.blobstore.BlobStore;
+import org.jclouds.blobstore.BlobStoreContext;
+import org.jclouds.logging.slf4j.config.SLF4JLoggingModule;
+import org.jclouds.openstack.swift.CommonSwiftAsyncClient;
+import org.jclouds.openstack.swift.CommonSwiftClient;
+import org.jclouds.openstack.swift.domain.ContainerMetadata;
+import org.jclouds.rest.RestContext;
+
+import com.google.common.collect.ImmutableSet;
+import com.google.inject.Module;
+
+public class JCloudsSwift implements Closeable {
+   private BlobStore storage;
+   private RestContext<CommonSwiftClient, CommonSwiftAsyncClient> swift;
+
+   public static void main(String[] args) {
+      JCloudsSwift jCloudsSwift = new JCloudsSwift();
+
+      try {
+         jCloudsSwift.init();
+         jCloudsSwift.listContainers();
+         jCloudsSwift.close();
+      }
+      catch (Exception e) {
+         e.printStackTrace();
+      }
+      finally {
+         jCloudsSwift.close();
+      }
+   }
+   
+   private void init() {
+      Iterable<Module> modules = ImmutableSet.<Module> of(
+            new SLF4JLoggingModule());
+
+      String provider = "swift-keystone";
+      String identity = "demo:demo"; // tenantName:userName
+      String password = "devstack"; // demo account uses ADMIN_PASSWORD too
+
+      BlobStoreContext context = ContextBuilder.newBuilder(provider)
+            .endpoint("http://172.16.0.1:5000/v2.0/")
+            .credentials(identity, password)
+            .modules(modules)
+            .buildView(BlobStoreContext.class);
+      storage = context.getBlobStore();
+      swift = context.unwrap();
+   }
+
+   private void listContainers() {
+      System.out.println("List Containers");
+      Set<ContainerMetadata> containers = swift.getApi().listContainers();
+
+      for (ContainerMetadata container: containers) {
+         System.out.println("  " + container);
+      }
+   }
+
+   public void close() {
+      closeQuietly(storage.getContext());
+   }
+}
+```
+
+### <a id="swift-compile"></a>Compile and Run
+
+    javac -classpath ".:lib/*" JCloudsSwift.java
+    
+    java -classpath ".:lib/*" JCloudsSwift
+    
+    [logging output]
+    List Containers
+    [logging output]
+      ContainerMetadata{name=...}
       ...
 
 ## <a id="next"></a>Next Steps
@@ -214,3 +314,4 @@ This is a list of providers that work with OpenStack that you can use to build y
 * `"openstack-nova"`
 * `"openstack-keystone"`
 * `"openstack-cinder"`
+* `"swift-keystone"`
