@@ -41,7 +41,7 @@ Set<String> databags = context.getApi().listDatabags();
 
 // ChefService has helpers for common commands
 String nodeName = "chef-example";
-Set<String> runlist = ImmutableSet.of("recipe[apache2]");
+List<String> runlist = new RunListBuilder().addRecipe("apache2").build();
 Node node = context.getChefService().createNodeAndPopulateAutomaticAttributes(nodeName, runlist);
 
 // Release resources
@@ -90,7 +90,10 @@ ComputeServiceContext computeContext = ContextBuilder.newBuilder("<the compute p
 
 // Group all nodes in both Chef and the compute provider by this group
 String group = "jclouds-chef-example";
+
+// Set the recipe to install and the configuration values to override
 String recipe = "apache2";
+String config = "{\"apache\": {\"listen_ports\": \"8080\"}}";
 
 // Check to see if the recipe you want exists
 List<String> runlist = null;
@@ -101,7 +104,8 @@ if (any(cookbookVersions, containsRecipe(recipe))) {
 }
 
 // Update the chef service with the run list you wish to apply to all nodes in the group
-chefContext.getChefService().updateRunListForGroup(runlist, group);
+// and also provide the json configuration used to customize the desired values
+chefContext.getChefService().updateBootstrapConfigForGroup(runlist, new JsonBall(config), group);
 
 // Build the script that will bootstrap the node
 Statement bootstrap = chefContext.getChefService().createBootstrapScriptForGroup(group);
