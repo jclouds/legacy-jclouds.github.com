@@ -73,7 +73,8 @@ There are some differences in terminology between jclouds and OpenStack that sho
             * `*.jar`
 1. Open JCloudsNova.java for editing, read the code below, and copy it in.
 
-```java
+<pre>
+{% highlight java %}
 import static com.google.common.io.Closeables.closeQuietly;
     
 import java.io.Closeable;
@@ -146,7 +147,8 @@ public class JCloudsNova implements Closeable {
       closeQuietly(compute.getContext());
    }
 }
-```
+{% endhighlight %}
+</pre>
 
 In the init() method note that
 
@@ -190,7 +192,8 @@ In the init() method note that
             * `*.jar`
 1. Open JCloudsSwift.java for editing, read the code below, and copy it in.
 
-```java
+<pre>
+{% highlight java %}
 import static com.google.common.io.Closeables.closeQuietly;
 
 import java.io.Closeable;
@@ -258,7 +261,8 @@ public class JCloudsSwift implements Closeable {
       closeQuietly(storage.getContext());
    }
 }
-```
+{% endhighlight %}
+</pre>
 
 ### <a id="swift-compile"></a>Compile and Run
 
