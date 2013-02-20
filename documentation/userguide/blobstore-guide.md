@@ -120,7 +120,7 @@ Each blobstore has its own limitations.
 
 ### Connecting to a BlobStore
 
-A connection to a `BlobStore` like S3 in jclouds is called a `BlobStoreContext`.  
+A connection to a `BlobStore` like S3 in jclouds is called a `BlobStoreContext`. It should be reused for multiple requests and is thread-safe.
 An `BlobStoreContext` associates an identity on a provider to a set of network connections. 
 At a minimum, you need to specify your identity (in the case of S3, AWS Access Key ID) and a credential (in S3, your Secret Access Key).  
 Once you have your credentials, connecting to your `BlobStore` service is easy:
