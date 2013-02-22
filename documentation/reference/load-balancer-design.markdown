@@ -51,7 +51,7 @@ trusted network groups, http monitors, back services, etc.
   * [API Documentation](http://support.theenterprisecloud.com/kb/default.asp?id=922&Lang=1&SID=)
 
 ### jclouds code 
-  * model [IntenetService](https://github.com/jclouds/jclouds/blob/master/common/trmk/src/main/java/org/jclouds/vcloud/terremark/domain/InternetService.java) [Node](https://github.com/jclouds/jclouds/blob/master/common/trmk/src/main/java/org/jclouds/vcloud/terremark/domain/Node.java)
+  * model [InternetService](https://github.com/jclouds/jclouds/blob/master/common/trmk/src/main/java/org/jclouds/vcloud/terremark/domain/InternetService.java) [Node](https://github.com/jclouds/jclouds/blob/master/common/trmk/src/main/java/org/jclouds/vcloud/terremark/domain/Node.java)
   * [API](https://github.com/jclouds/jclouds/blob/master/common/trmk/src/main/java/org/jclouds/vcloud/terremark/TerremarkVCloudClient.java)
   * [Live test](https://github.com/jclouds/jclouds/blob/master/common/trmk/src/test/java/org/jclouds/vcloud/terremark/TerremarkClientLiveTest.java)
 
@@ -74,7 +74,7 @@ jclouds model is not up to date, supporting the eCloud features
 Currently supported as a standalone product and as a service providers including [Ninefold](http://ninefold.com/)
 
 ### Documentation
-  * [API Documentaiton](http://download.cloud.com/releases/2.2.0/api/TOC_User.html)
+  * [API Documentation](http://download.cloud.com/releases/2.2.0/api/TOC_User.html)
 
 ### jclouds code
 
@@ -116,7 +116,7 @@ SoftLayer includes the following load balancers.  We will need to decide which o
 
   * Geo Load Balancer - a DNS-based system that uses rules and health checks
   * datacenter load balancer - hardware device to do ip and port load balancing for use with a single datacenter
-  * Netscaler VPX - full access to a Netscaler devicewhich can be a layer 7 load balancer
+  * Netscaler VPX - full access to a Netscaler device which can be a layer 7 load balancer
 
 ### Documentation
   * [overview](http://knowledgelayer.softlayer.com/categories/Load+Balancing/)

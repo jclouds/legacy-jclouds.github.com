@@ -16,7 +16,7 @@ The Maven Group ID for all supported providers below is [org.jclouds.provider](h
 	<thead>
 		<tr>
 		    <th>Provider</th>
-			<th>Maven Aritfact ID</th>
+			<th>Maven Artifact ID</th>
 			<th>ISO 3166 Codes</th>
 		</tr>
 		<tbody>
@@ -154,7 +154,7 @@ The Maven Group ID for all supported APIs below is [org.jclouds.api](http://sear
 	<thead>
 		<tr>
 		    <th>Provider</th>
-			<th>Maven Aritfact ID</th>
+			<th>Maven Artifact ID</th>
 		</tr>
 		<tbody>
 			<tr>
@@ -203,7 +203,7 @@ The Maven Group ID for all supported providers below is [org.jclouds.provider](h
 	<thead>
 		<tr>
 		    <th>Provider</th>
-			<th>Maven Aritfact ID</th>
+			<th>Maven Artifact ID</th>
 		</tr>
 		<tbody>
 			<tr>
@@ -252,7 +252,7 @@ The Maven Group ID for all supported APIs below is [org.jclouds.api](http://sear
 	<thead>
 		<tr>
 		    <th>Provider</th>
-			<th>Maven Aritfact ID</th>
+			<th>Maven Artifact ID</th>
 		</tr>
 		<tbody>
 			<tr>

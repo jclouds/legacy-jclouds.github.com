@@ -56,7 +56,7 @@ is used for collections.
 * Package [com.google.common.util.concurrent](http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/com/google/common/util/concurrent/package-summary.html)
 is used for asynchronous processing.
 * Package [com.google.common.cache](http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/com/google/common/cache/package-summary.html) 
-is used for cacheing information returned from cloud APIs.
+is used for caching information returned from cloud APIs.
 * Class [Optional](http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/com/google/common/base/Optional.html) is used extensively 
 to avoid troublesome confusions around the meaning of null.
 * Interface [Function](http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/com/google/common/base/Function.html) is used
@@ -67,7 +67,7 @@ jclouds compute context as being built by a Guice injector.
 
 jclouds uses the following Guice features:
 
-* @Implementedby under [Just-in-time Bindings](http://code.google.com/p/google-guice/wiki/JustInTimeBindings) is a default implementing class.
+* @ImplementedBy under [Just-in-time Bindings](http://code.google.com/p/google-guice/wiki/JustInTimeBindings) is a default implementing class.
 * @Inject(optional=true) under [Injections](http://code.google.com/p/google-guice/wiki/Injections) is a way to specify optional fields and Guice
 constructed objects.
 * An example of how jclouds integrates with the Guice SPI internally for assisting in managing the lifecycle of an object can be seen by reading 
