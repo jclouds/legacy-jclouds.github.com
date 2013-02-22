@@ -48,9 +48,7 @@ If you want to change these rules, create a new class that implements interface 
 ## Know issues and limits 
 
   * blobstore list method lists all the file inside the container in a recursive way. 
-	Other options of the method aren't manager yes.
-	
-  * There are issues when compiling the class under Windows. Need to be fixed
+	Other options of the method are not managed yet.
 
   * No blob metadata are stored in this current implementation. Only the name and
  	the content of the source payload is stored. 
