@@ -503,7 +503,7 @@ Note that SSH must be configured for this feature to work.
 
 #### Default Template
 While many configurations may work with runScript, we setup the default template so that it can work 
-without parameters (ex. `templateBulder().build()` works). 
+without parameters (ex. `templateBuilder().build()` works).
 
 
 ##### 1.0.0

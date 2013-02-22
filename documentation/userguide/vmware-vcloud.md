@@ -68,8 +68,7 @@ RestContext<VCloudClient, VCloudAsyncClient> providerContext = context.getProvid
 
 {% highlight java %}                                                                                                                                                                      
       // add the ssh module, if you are using ComputeService, otherwise leave it out                                                                                     
-      ComputeServiceContext context = new ComputeServiceContextFactory().createContext("stratogen-vcloud-mycloud", user, password, ImmutableSet.of(new JshSshClientModul\
-()));                                                                                                                                                                    
+      ComputeServiceContext context = new ComputeServiceContextFactory().createContext("stratogen-vcloud-mycloud", user, password, ImmutableSet.of(new JshSshClientModule()));
                                                                                                                                                                          
       RestContext<VCloudClient, VCloudAsyncClient> providerContext = context.getProviderContext();                                                                       
 {% endhighlight %}                                                                                                                                                                  
@@ -128,7 +127,7 @@ To make use of a vApp, you must first instantiate it, then deploy it, finally po
 
 {% highlight java %}
 // lookup the datacenter you are deploying into, nulls for default
-vdc = clent.findVDCInOrgNamed(null, null);
+vdc = client.findVDCInOrgNamed(null, null);
 
 // instantiate, noting vApp returned has minimal details: id, name, location
 VCloudExpressVApp = client.instantiateVAppTemplateInVDC(vdc.getHref(), vAppTemplate.getHref(), serverName);
@@ -159,7 +158,7 @@ to transition to powerOn state from instantiate.
 
 {% highlight java %}
 // lookup the datacenter you are deploying into, nulls for default
-vdc = clent.findVDCInOrgNamed(null, null);
+vdc = client.findVDCInOrgNamed(null, null);
 
 // instantiate, noting vApp returned has minimal details: id, name, location
 VApp = client.instantiateVAppTemplateInVDC(vdc.getHref(), vAppTemplate.getHref(), serverName);
@@ -269,7 +268,7 @@ This is the default behavior of cloneVApp.
 
 {% highlight java %}
 // lookup the datacenter you are deploying into, nulls for default
-vdc = clent.findVDCInOrgNamed(null, null);
+vdc = client.findVDCInOrgNamed(null, null);
 
 String newName = "clone of "+sourceVApp.getName();
 
@@ -284,7 +283,7 @@ You need to set a couple options for this.  deploy, then poweron.
 import static org.jclouds.vcloud.options.CloneVAppOptions.Builder.deploy;
 
 // lookup the datacenter you are deploying into, nulls for default
-vdc = clent.findVDCInOrgNamed(null, null);
+vdc = client.findVDCInOrgNamed(null, null);
 
 String newName = "clone of "+sourceVApp.getName();
 

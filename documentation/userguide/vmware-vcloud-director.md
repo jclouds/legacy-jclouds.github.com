@@ -28,7 +28,7 @@ vmApi = context.getApi().getVmApi();
 networkApi = context.getApi().getNetworkApi();
 {% endhighlight %}
 
-Each one of them allows you to access the API functionalities of any vCloud Director subsytem.
+Each one of them allows you to access the API functionalities of any vCloud Director subsystem.
 
 ## Portability 
 The actual implementation assumes that some vAppTemplates are already available in this vCD instance.

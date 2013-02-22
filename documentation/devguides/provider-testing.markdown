@@ -108,7 +108,7 @@ Here's an example of running a live test with a specific username and password (
 ### Writing Unit Tests
 
 These instructions assume you are familiar with (TestNG)[testng.org].
-Some of the tests make heavy use of `@Before` and `@Test(dependsOn...)`, as well as TestNG's parametrization support, 
+Some of the tests make heavy use of `@Before` and `@Test(dependsOn...)`, as well as TestNG's parameterization support,
 so if you haven't been a power user of TestNG it might be helpful to review some of its more advanced features.
 
 jclouds also makes heavy use of (Google Guava)[http://code.google.com/p/guava-libraries/]'s `Function` interface 
@@ -117,7 +117,7 @@ You can see examples of this type of testing in, for instance, `apis/ec2/src/tes
 
 For testing provider-client behaviour, we have developed some other design patterns and helpful fixtures, described below. 
 
-*Important:* If you're in doubt about how to unit test some code, hollar for help.
+*Important:* If you're in doubt about how to unit test some code, holler for help.
 We don't like code which is *only* exercised in live tests!  
 
 
@@ -198,7 +198,7 @@ For an example of this type of test, see for example `SlicehostAsyncClientTest`.
 
 The tool `curl` is a very handy and powerful way to download contents from web sites and (more importantly for us) services. 
 (It is similar to `wget` but slightly more geared towards services than sites.)
-Here are some of the main command-line optoins:
+Here are some of the main command-line options:
 
  * `curl -o output_file url` : download from `url` and write to `output_file`
   * `-u user:pass` : use the given user and password (inserted in above)

@@ -413,8 +413,7 @@ HttpRequest request = context.getSigner().
 
 ## Configure multipart upload strategies ==                                                                                                                                               
 There are two `MultipartUploadStrategy` implementations: `SequentialMultipartUploadStrategy` and `ParallelMultipartUploadStrategy`.                                                       
-Default strategy is the `ParallelMultipartUploadStrategy`. With parallel strategy the number of threads running in parallel can be configured using `jclouds.mpu.parallel.degree` propert\
-y, the default value is 4.
+Default strategy is the `ParallelMultipartUploadStrategy`. With parallel strategy the number of threads running in parallel can be configured using `jclouds.mpu.parallel.degree` property, the default value is 4.
 
 # Design 
 <!-- TODO -->
@@ -438,8 +437,8 @@ for flat trees removes all known deviations of directory markers.
 
 ## Content Metadata : Content Disposition
 
-You may be using jclouds to upload some phots to the cloud, show thumbnails of them to the user 
-via a website and allow to download the original image.  When the user clicks on the thumbnail, 
+You may be using jclouds to upload some photos to the cloud, show thumbnails of them to the user
+via a website and allow to download the original image.  When the user clicks on the thumbnail,
 a the download dialog appears.  To control the name of the file in the "save as" dialog, 
 you must set [Content Disposition](http://www.jtricks.com/bits/content_disposition.html).  Here's how you can do 
 it with BlobStore API:

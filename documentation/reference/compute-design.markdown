@@ -214,7 +214,7 @@ The above are fairly "fine-grained" use cases, and as such it would appear helpf
   * Monitoring from existing infrastructure monitors, e.g. [Nagios](http://www.nagios.org/about/)
   * Monitoring from within a cloud application
   * Monitoring and auto-provisioning from an infrastructure management application, e.g. a [hypervisor](http://en.wikipedia.org/wiki/Hypervisor) or [RightScale](http://www.rightscale.com/)
-  * Monitoring and auto-provisioning from an application platfrom, e.g. [GigaSpaces]http://www.gigaspaces.com/)
+  * Monitoring and auto-provisioning from an application platform, e.g. [GigaSpaces]http://www.gigaspaces.com/)
 
 
 ## Platform Extension 
