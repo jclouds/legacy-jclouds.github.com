@@ -43,7 +43,7 @@ are some of the valuable members of our community.
     * uses jclouds for rackspace, gogrid, azure, and terremark integration
 
   * [GigaSpaces Cloudify](http://www.cloudifysource.org)
-    * useds jclouds to provision compute resources from multiple cloud providers for the GigaSpaces Cloudify Platform-as-a-Service.
+    * uses jclouds to provision compute resources from multiple cloud providers for the GigaSpaces Cloudify Platform-as-a-Service.
 
   * [Pallet](http://palletops.com/)
     * uses jclouds clojure to manage node counts and provision instances
@@ -109,10 +109,10 @@ are some of the valuable members of our community.
     * provides managed service factories and command line support for easily creating and managing blobstore & compute as osgi services
 
   * [Apache Karaf Cellar](http://karaf.apache.org/index/subprojects/cellar.html)
-    * uses jclouds in order to provide a node discovery mechanism, it currently uses a blobostore whiteboard / blackboard pattern and it will switch to a compute based solution soon
+    * uses jclouds in order to provide a node discovery mechanism, it currently uses a blobstore whiteboard / blackboard pattern and it will switch to a compute based solution soon
 
   * [Fuse Fabric](http://fabric.fusesource.org/)
-    * uses jclouds for creatting/provisioning the agents that run in the cloud
+    * uses jclouds for creating/provisioning the agents that run in the cloud
 
   * [ElasticInbox](http://www.elasticinbox.com/)
     * Uses jclouds to store email messages on blobstores such as AWS S3 and whirr to deploy ElasticInbox and Cassandra instances

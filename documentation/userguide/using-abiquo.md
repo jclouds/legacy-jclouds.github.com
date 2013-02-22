@@ -188,7 +188,7 @@ PublicNetwork publicNetwork = PublicNetwork.builder(context.getApiContext(), dat
 publicNetwork.save();
 
 // Create an external network for an enterprise
-Enterpise tenant = context.getAdministrationService().findEnterprise(EnterprisePredicates.name("Abiquo"));
+Enterprise tenant = context.getAdministrationService().findEnterprise(EnterprisePredicates.name("Abiquo"));
 ExternalNetwork externalNetwork = ExternalNetwork.builder(context.getApiContext(), datacenter, tenant)
     .name("ExternalNetwork")   // The name of the network
     .address("10.60.0.0")      // The network address

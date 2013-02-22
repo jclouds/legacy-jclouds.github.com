@@ -56,7 +56,7 @@ Here is the current antcontrib library
 {% highlight xml %}
 <typedef group="compute" classgroup="org.jclouds.tools.ant.taskdefs.compute.ComputeTask" classpathref="jclouds.classpath" />
 {% endhighlight %}
-#### Basic usag
+#### Basic usage
 
 If you are using the default [build.xml](http://github.com/jclouds/jclouds/blob/1.0.0/tools/antcontrib/samples/compute/build.xml) 
 and have the [Ant Maven integration JAR](http://jclouds.googlecode.com/svn/trunk/tools/ant-plugin/maven-ant-tasks-2.1.0.jar) 
@@ -182,7 +182,7 @@ See an example below:
 </compute>
 {% endhighlight %}
 ##### Alternate endpoints 
-If you are using an alternate endpoint, or standing up a private cloud without a proper certifcate,
+If you are using an alternate endpoint, or standing up a private cloud without a proper certificate,
  you can add options to ensure clouds will be flexible on ssl
 
 {% highlight bash %}

@@ -221,7 +221,7 @@ with
 
 Check virtualbox->Preferences->Networks for more details.
 
-**NB**: jclouds-virtualbox will not edit/replace a pre-exisiting Host-Only network.
+**NB**: jclouds-virtualbox will not edit/replace a pre-existing Host-Only network.
 
 --------------
 
@@ -238,6 +238,6 @@ As jclouds vbox support is quite new, issues may occasionally arise. Please foll
 
 1. Remove all relevant VMs (named "jclouds-* ") with the vbox GUI. Make sure to select "delete all files". This step will solve most issues.
 2. If you are still receiving errors, please try the following steps to resolve any issues:
-     * Kill all vbox processes (VboxHadless, VBoxSVC, VBoxXPCOMIPCD, VirtualBox, vboxwebsrv)
+     * Kill all vbox processes (VboxHeadless, VBoxSVC, VBoxXPCOMIPCD, VirtualBox, vboxwebsrv)
      * Manually delete the files by executing: "rm -rf ~/.jclouds-vbox/jclouds-*"
      * Restart the vbox GUI and make sure to delete all remaining machines while ignoring all errors

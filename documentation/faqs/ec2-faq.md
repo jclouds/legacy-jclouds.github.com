@@ -20,7 +20,7 @@ overrideLoginCredentialWith(your_id_rsa_string)
 overrideCredentialsWith(new Credentials("root", your_id_rsa_string))
 {% endhighlight %}
 
-If you want to authorize your keypair, you can use the `auhtorizePublicKey(yourKey)` method 
+If you want to authorize your keypair, you can use the `authorizePublicKey(yourKey)` method
 {% highlight java %}
 client.createNodesInGroup(group, 1, authorizePublicKey(myKey));
 {% endhighlight %}
