@@ -54,7 +54,7 @@ help lead users to the right cloud.  Users should not have to know internal deta
 clouds like Amazon, for example their region names and zone ids.
 
 This project aims to expose just enough details that users can create cloud portable applications who 
-have physical, juridictional, or service level concerns.  
+have physical, jurisdictional, or service level concerns.
 
 ## New Use Cases
 
@@ -314,7 +314,7 @@ Oren presents this following: "What makes people run code in different places?"
 
 are these ideas red herrings?  Heroku performed tests revealing no strong relationship between 
 geographic location and network latency. Moreover jurisdictional availability is currently limited;
- Amazon's EU region only exists in Ireland, which doesn't help those in Swizerland, for example.
+ Amazon's EU region only exists in Ireland, which doesn't help those in Switzerland, for example.
 
 Heroku's system includes the concept of add-on providers.  
 Most add-ons are not latency sensitive.  
@@ -418,7 +418,7 @@ These temptations are obviously contradictory but which should dominate?
 It is my belief that the ideal granularity at which this location information 
 is intended is an individual site used by an individual cloud service provider.  
 To some extent this may scale vertically, either up (to allow a cloud company with
- multiple sites and/or a datacenter shared by multilpe cloud companies) or 
+ multiple sites and/or a datacenter shared by multiple cloud companies) or
 down (to indicate a particular physical rack or virtual "vOrg"-like entity).  
 These *should not* be the primary concern, although where choosing between 
 otherwise equally good options these larger and smaller granularities could be a consideration.

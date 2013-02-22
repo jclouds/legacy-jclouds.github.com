@@ -200,7 +200,7 @@ public class FooAWSEC2ReviseParsedImage extends AWSEC2ReviseParsedImage {
    }
 
    /**
-    * revide image
+    * revise image
     */
    @Override
    public void reviseParsedImage(org.jclouds.ec2.domain.Image from, ImageBuilder builder, OsFamily family,

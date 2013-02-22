@@ -27,7 +27,7 @@ ComputeServiceContext context = new ComputeServiceContextFactory().createContext
 nodes = context.getComputeService().client.runNodesInGroup("webserver", 2);
 
 
-// get a synchronous object to use for manipulating vcloud objects in terremarrk
+// get a synchronous object to use for manipulating vcloud objects in terremark
 TerremarkVCloudExpressClient  tmClient = 
 			TerremarkVCloudExpressClient .class.cast(
 				context.getProviderSpecificContext().getApi());

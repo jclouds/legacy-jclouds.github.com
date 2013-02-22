@@ -46,7 +46,7 @@ jclouds provides the following Karaf "features":
 
 1. Get jclouds-karaf from the [jclouds-karaf repository](https://github.com/jclouds/jclouds-karaf) on GitHub.
 
-As of the jclouds Version 1.0.0 release, the jcoulds-karaf feature is available on the central maven repository, so you can skip this step of getting the 
+As of the jclouds Version 1.0.0 release, the jclouds-karaf feature is available on the central maven repository, so you can skip this step of getting the
 source and building it and go directly to the install of the jclouds feature.
 
 {% highlight sh %}
@@ -87,7 +87,7 @@ The first step is to get and build the example:
 
 {% highlight text %}
 git clone https://iocanel@github.com/jclouds/jclouds-examples.git
-cd jcoulds-examples/blobstore-karaf-shell
+cd jclouds-examples/blobstore-karaf-shell
 mvn clean install
 {% endhighlight %}
 

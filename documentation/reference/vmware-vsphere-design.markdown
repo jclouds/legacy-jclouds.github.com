@@ -10,7 +10,7 @@ This design document will overview our approach to creating a jclouds adapter fo
 
 This adapter is intended for anyone who needs to run a small-scale deployment managed by jclouds. 
 
-Tipically, developers and devops can benefit of this adapter that allows them to test/validate their jclouds code on a local, controlled environment before pointing the jclouds API towards a public supported provider.
+Typically, developers and devops can benefit of this adapter that allows them to test/validate their jclouds code on a local, controlled environment before pointing the jclouds API towards a public supported provider.
 
 See [supported providers](http://www.jclouds.org/documentation/reference/supported-providers/)
 
@@ -99,11 +99,11 @@ How do we allow with creating machines from scratch instead of cloning? Either y
 depending on the guest OS you wants to support, there a number of parameters that need to be passed to the OS installer.
 
 For example, jclouds-vbox offers a solution for this problem inspired by [veewee](https://github.com/jedi4ever/veewee/):
-jclouds-vbox passes a kickstart file by pushing to the installer a serie of scancodes using the keyboard api offered by virtualbox.
+jclouds-vbox passes a kickstart file by pushing to the installer a series of scancodes using the keyboard api offered by virtualbox.
 
 We need to verify if VMware offers a similar API.
 
-Moreovere, VMware VM almost must have the VMware tools installed to enable a set of extra features to give more control over the VM.
+Moreover, VMware VM almost must have the VMware tools installed to enable a set of extra features to give more control over the VM.
 Particularly, jclouds-vsphere needs to use a getIpAddress API only available if the VMware tools are installed.
 
 We need to find a way to programmatically install the VMware tools possibly using ssh.
@@ -147,7 +147,7 @@ Doing so will allow easier mapping to async provisioners like ec2 spot, and appl
 
 ### Managing Images
 
-Mapping VMware volumes to blobstore could help deal with image-based use cases such as groupging, bulk transfer, conversion, etc. 
+Mapping VMware volumes to blobstore could help deal with image-based use cases such as grouping, bulk transfer, conversion, etc.
 
 This could provide a clean and testable means to integrate with the compute service.
 

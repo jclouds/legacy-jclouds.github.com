@@ -15,7 +15,7 @@ Their cloud offers features like load balancing (Internet Service) and customiza
 
 The two services Terremark offers that jclouds supports are vCloud Express (trmk-vcloudexpress) and eCloud (trmk-ecloud)
 
-## Usage Notes for Terremerk vCloud
+## Usage Notes for Terremark vCloud
 
 ### Features not yet implemented
 
@@ -35,7 +35,7 @@ You must use a vpn or connect an IP to an InternetService discussed below, if yo
 Terremark's instantiateVApp command automatically transitions to OFF.  
 Calling deployVApp has no effect, except to return you an in-progress task.
 
-## Usage Notes for Terremerk vCloud
+## Usage Notes for Terremark vCloud
 
 ### Default passwords
 
@@ -125,7 +125,7 @@ Even though this happens, you need to call deploy as it will return the task, wh
 
 {% highlight java %}
       // lookup the datacenter you are deploying into, nulls for default
-      vdc = clent.findVDCInOrgNamed(null, null);
+      vdc = client.findVDCInOrgNamed(null, null);
 
       // instantiate, noting vApp returned has minimal details: id, name, location
       VCloudExpressVApp vApp = client.instantiateVAppTemplateInVDC(vdc.getHref(), vAppTemplate.getHref(), serverName);
@@ -265,7 +265,7 @@ Here's how:
 
 {% highlight java %}
 // lookup the datacenter you are deploying into, nulls for default
-vdc = clent.findVDCInOrgNamed(null, null);
+vdc = client.findVDCInOrgNamed(null, null);
 
 // add a Internet service so you can ssh outside the vpn, noting ecloud and vcloud express are slightly different
 PublicIpAddress ip;

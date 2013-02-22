@@ -23,7 +23,7 @@ import static org.jclouds.vcloud.terremark.options.TerremarkInstantiateVAppTempl
 // TODO: eCloud in ComputeService example
 
 
-// get a synchronous object to use for manipulating eCloud objects in terremarrk
+// get a synchronous object to use for manipulating eCloud objects in terremark
 TerremarkECloudClient eCloudClient = TerremarkECloudClient.class.cast(context.getProviderSpecificContext().getApi());
 
  // lookup the id of the datacenter you are deploying into

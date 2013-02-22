@@ -64,7 +64,7 @@ to compose the runtime environment of the Instance.
 	without creating a lot of complexity, some shortcuts are taken.  
 	For example, the process depends on the `ps auxwww` command to work.  
 	As such, on Solaris hosts, this implies /usr/ucb/ps be found first in the `PATH`.  
-	Eventhough the path /usr/ucb isn't present on other UNIX-style hosts, 
+	Even though the path /usr/ucb isn't present on other UNIX-style hosts,
 	paths that are not found do not hurt anything.  Pragmatically, we prefix /usr/ucb to all
 	 unix paths so that we don't need to write a function to determine this per-platform. 
 	

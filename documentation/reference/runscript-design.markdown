@@ -17,5 +17,5 @@ If `RunScriptOptions.wrapInInitScript(false)` in the case of directly invoked `e
 
 If `RunScriptOptions.wrapInInitScript(true)` option is set (the default is true), then we set variables and wrap the supplied script in "init-script".
 
-The code that handles customizing the script forrunning in the background is `RunScriptOnNodeAsInitScriptUsingSsh` particularly `RunScriptOnNodeAsInitScriptUsingSsh#createInitScript`
+The code that handles customizing the script for running in the background is `RunScriptOnNodeAsInitScriptUsingSsh` particularly `RunScriptOnNodeAsInitScriptUsingSsh#createInitScript`
 The name of the script will be set as specified by  `RunScriptOptions#getTaskName`.
