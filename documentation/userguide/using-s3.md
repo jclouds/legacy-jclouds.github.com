@@ -1,3 +1,5 @@
+---
+layout: jclouds
 title: Using the s3 Api
 ---
 # Using the s3 Api
