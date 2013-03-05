@@ -14,6 +14,14 @@ jclouds master.
 Please see [Contributing to the jclouds Code Base](http://www.jclouds.org/documentation/devguides/contributing-to-jclouds/) if you are interested in 
 contributing code to jclouds.
 
+## Contributor License Agreement
+
+Before we can accept your contributions, you will need to sign a contributor license agreement.  Please contact us so that we may send you a form to 
+sign digitally.  The following documents are copies of our license agreements for your reference.
+
+   *  [Corporate Contributor License Agreement](https://github.com/jclouds/jclouds.github.com/blob/master/licenses/cla-corporate.txt)
+   *  [Individual Contributor License Agreement](https://github.com/jclouds/jclouds.github.com/blob/master/licenses/icla.txt)
+
 ## Information about jclouds.org for Getting Started on Documentation
 
 The jclouds website is built using [GitHub pages](http://pages.github.com/) which uses [Jekyll](https://github.com/mojombo/jekyll/). To preview any changes 
@@ -29,10 +37,10 @@ Please be aware that making changes to the jclouds.html file under the *_layouts
 our layouts requires considerable knowledge of CSS and html.  In general, it is a good idea to stick to content of the main column and sidebar rather 
 than the layout.
 
-jclouds currently has a technical writer dedicated to documentation on a full time basis.  If you should come across a documentation issue while browsing 
+jclouds currently has a technical writer dedicated to documentation.  If you come across a documentation issue while browsing 
 [jclouds.org](http://www.jclouds.org/), and you would feel more comfortable having someone else work on the issue, feel free to log an issue on the
-[issue tracker](http://code.google.com/p/jclouds/issues/list?can=2&q=Component%3DDocs).  Our technical writer keeps track of all documentation issues that are logged and will 
-respond to them quickly.
+[documentation issue tracker](https://github.com/jclouds/jclouds.github.com/issues?state=open).  Our technical writer keeps track of all documentation 
+issues that are logged and will respond to them quickly.
 
 ## Working with jclouds on GitHub
 
@@ -49,7 +57,7 @@ master.
 
 ## Creating and Working with your Fork of the jclouds Documentation
 
-### 1.  Setup your Personal Fork
+### 1.  Set up your Personal Fork
 
    *  [Download Git](http://git-scm.com/download)  (Alternatively, Mac users may consider [mac.github.com](http://mac.github.com/))
    *  Go to [GitHub](http://github.com) and fork [jclouds/jclouds.github.com](https://github.com/jclouds/jclouds.github.com)

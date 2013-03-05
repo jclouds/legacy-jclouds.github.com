@@ -18,7 +18,7 @@ Code hosting for jclouds is done on [GitHub](https://github.com/jclouds/jclouds)
 ## References for Developers
 
    *  [Google Code Site](http://code.google.com/p/jclouds/)
-   *  [Issues Tracker](http://code.google.com/p/jclouds/issues/)
+   *  [Issue Tracker](https://github.com/jclouds/jclouds/issues?state=open)
    *  [jclouds Continuous Integration](/documentation/devguides/continuous-integration)
    *  [Provider Metadata](/documentation/devguides/provider-metadata)
    *  [Using Eclipse](/documentation/devguides/using-eclipse)

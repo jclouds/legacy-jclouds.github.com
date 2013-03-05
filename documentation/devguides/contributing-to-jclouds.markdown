@@ -13,6 +13,14 @@ processes.
 
 If you are interested in helping us out with the jclouds documentation, please see our instructions for [contributing to jclouds documentation](http://www.jclouds.org/documentation/devguides/contributing-to-documentation/). 
 
+## Contributor License Agreement
+
+Before we can accept your contributions, you will need to sign a contributor license agreement.  Please contact us so that we may send you a form to 
+sign digitally.  The following documents are copies of our license agreements for your reference.
+
+   *  [Corporate Contributor License Agreement](https://github.com/jclouds/jclouds.github.com/blob/master/licenses/cla-corporate.txt)
+   *  [Individual Contributor License Agreement](https://github.com/jclouds/jclouds.github.com/blob/master/licenses/icla.txt)
+
 ## Working with jclouds on GitHub
 
 The jclouds website currently resides on GitHub, and the source code is available at the [jclouds Git repository](https://github.com/jclouds/jclouds.github.com).
@@ -23,12 +31,16 @@ visit [learn.github](http://learn.github.com/p/intro.html) for an introduction a
 Git is an open source, distributed version control system.  It conveniently keeps a history on the state of the jclouds source code. The jclouds website is 
 rebuilt and updated whenever a new commit is pushed to the jclouds Git repository. This makes it simple for us to review and accept your contributions. 
 
+Current issues being addressed may be found in the [jclouds Issue Tracker](https://github.com/jclouds/jclouds/issues?state=open).  Please check the
+issue tracker and log the issue you are working on before contributing in order to avoid duplications.  If you feel more comfortable having someone 
+else work on an issue, please log your request on the issue tracker.
+
 The following sections explain how to access the jclouds code base, make changes to it, and send us a request to pull your changes into the jclouds
 master.
 
 ## Creating and Working with your Fork of jclouds
 
-### 1.  Setup your Personal Fork
+### 1.  Set up your Personal Fork
 
    *  [Download Git](http://git-scm.com/download)  (Alternatively, Mac users may consider [mac.github.com](http://mac.github.com/))
    *  Go to [GitHub](http://github.com) and fork [jclouds/jclouds](http://github.com/jclouds/jclouds)
