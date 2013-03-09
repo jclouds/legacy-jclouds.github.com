@@ -1,0 +1,96 @@
+-------------------------------------------------------------------------------
+Test set: Live Integration Tests
+-------------------------------------------------------------------------------
+Tests run: 49, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 214.614 sec <<< FAILURE!
+testListCookbooks(org.jclouds.hostedchef.HostedChefApiLiveTest)  Time elapsed: 5.851 sec  <<< FAILURE!
+org.jclouds.rest.AuthorizationException: <?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>SignatureDoesNotMatch</Code><Message>The request signature we calculated does not match the signature you provided. Check your key and signing method.</Message><StringToSignBytes>47 45 54 0a 0a 0a 31 33 36 32 38 35 38 30 35 39 0a 2f 6f 70 73 63 6f 64 65 2d 70 6c 61 74 66 6f 72 6d 2d 70 72 6f 64 75 63 74 69 6f 6e 2d 64 61 74 61 2f 6f 72 67 61 6e 69 7a 61 74 69 6f 6e 2d 34 34 38 38 34 32 61 64 63 65 39 39 34 39 30 32 61 63 65 31 63 34 33 61 33 36 39 66 61 31 30 62 2f 63 68 65 63 6b 73 75 6d 2d 61 66 64 30 35 61 38 38 63 36 64 61 35 35 61 63 37 31 37 37 39 39 32 61 34 33 31 65 35 30 34 61</StringToSignBytes><RequestId>28C30C20816B2F14</RequestId><HostId>ACK1o10CkggHcDjapwjisV7bVu/hQu4GpPe7Kxl8tXeBxzWX4KW6yngNDvLJi1W+</HostId><SignatureProvided>F5ukXgKrSYKiW 80u GxcSdfMrw=</SignatureProvided><StringToSign>GET
+1362858059
+/opscode-platform-production-data/organization-448842adce994902ace1c43a369fa10b/checksum-afd05a88c6da55ac7177992a431e504a</StringToSign><AWSAccessKeyId>AKIAIN4GUX4PULV7JQSA</AWSAccessKeyId></Error>
+	at org.jclouds.chef.handlers.ChefErrorHandler.handleError(ChefErrorHandler.java:66)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod$InvokeAndTransform.call(InvokeHttpMethod.java:201)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:126)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invokeWithTimeout(InvokeHttpMethod.java:167)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:95)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy62.getResourceContents(Unknown Source)
+	at org.jclouds.chef.internal.BaseChefApiLiveTest.testListCookbooks(BaseChefApiLiveTest.java:170)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:232)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:91)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:130)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invokeWithTimeout(InvokeHttpMethod.java:167)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:95)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy62.getResourceContents(Unknown Source)
+	at org.jclouds.chef.internal.BaseChefApiLiveTest.testListCookbooks(BaseChefApiLiveTest.java:170)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.http.HttpResponseException: command: GET https://s3-external-1.amazonaws.com/opscode-platform-production-data/organization-448842adce994902ace1c43a369fa10b/checksum-afd05a88c6da55ac7177992a431e504a?AWSAccessKeyId=AKIAIN4GUX4PULV7JQSA&Expires=1362858059&Signature=F5ukXgKrSYKiW%2080u%20GxcSdfMrw%3D HTTP/1.1 failed with response: HTTP/1.1 403 Forbidden; content: [<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>SignatureDoesNotMatch</Code><Message>The request signature we calculated does not match the signature you provided. Check your key and signing method.</Message><StringToSignBytes>47 45 54 0a 0a 0a 31 33 36 32 38 35 38 30 35 39 0a 2f 6f 70 73 63 6f 64 65 2d 70 6c 61 74 66 6f 72 6d 2d 70 72 6f 64 75 63 74 69 6f 6e 2d 64 61 74 61 2f 6f 72 67 61 6e 69 7a 61 74 69 6f 6e 2d 34 34 38 38 34 32 61 64 63 65 39 39 34 39 30 32 61 63 65 31 63 34 33 61 33 36 39 66 61 31 30 62 2f 63 68 65 63 6b 73 75 6d 2d 61 66 64 30 35 61 38 38 63 36 64 61 35 35 61 63 37 31 37 37 39 39 32 61 34 33 31 65 35 30 34 61</StringToSignBytes><RequestId>28C30C20816B2F14</RequestId><HostId>ACK1o10CkggHcDjapwjisV7bVu/hQu4GpPe7Kxl8tXeBxzWX4KW6yngNDvLJi1W+</HostId><SignatureProvided>F5ukXgKrSYKiW 80u GxcSdfMrw=</SignatureProvided><StringToSign>GET
+1362858059
+/opscode-platform-production-data/organization-448842adce994902ace1c43a369fa10b/checksum-afd05a88c6da55ac7177992a431e504a</StringToSign><AWSAccessKeyId>AKIAIN4GUX4PULV7JQSA</AWSAccessKeyId></Error>]
+	at org.jclouds.chef.handlers.ChefErrorHandler.handleError(ChefErrorHandler.java:59)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod$InvokeAndTransform.call(InvokeHttpMethod.java:201)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+Caused by: org.jclouds.http.HttpResponseException: command: GET https://s3-external-1.amazonaws.com/opscode-platform-production-data/organization-448842adce994902ace1c43a369fa10b/checksum-afd05a88c6da55ac7177992a431e504a?AWSAccessKeyId=AKIAIN4GUX4PULV7JQSA&Expires=1362858059&Signature=F5ukXgKrSYKiW%2080u%20GxcSdfMrw%3D HTTP/1.1 failed with response: HTTP/1.1 403 Forbidden; content: [<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>SignatureDoesNotMatch</Code><Message>The request signature we calculated does not match the signature you provided. Check your key and signing method.</Message><StringToSignBytes>47 45 54 0a 0a 0a 31 33 36 32 38 35 38 30 35 39 0a 2f 6f 70 73 63 6f 64 65 2d 70 6c 61 74 66 6f 72 6d 2d 70 72 6f 64 75 63 74 69 6f 6e 2d 64 61 74 61 2f 6f 72 67 61 6e 69 7a 61 74 69 6f 6e 2d 34 34 38 38 34 32 61 64 63 65 39 39 34 39 30 32 61 63 65 31 63 34 33 61 33 36 39 66 61 31 30 62 2f 63 68 65 63 6b 73 75 6d 2d 61 66 64 30 35 61 38 38 63 36 64 61 35 35 61 63 37 31 37 37 39 39 32 61 34 33 31 65 35 30 34 61</StringToSignBytes><RequestId>28C30C20816B2F14</RequestId><HostId>ACK1o10CkggHcDjapwjisV7bVu/hQu4GpPe7Kxl8tXeBxzWX4KW6yngNDvLJi1W+</HostId><SignatureProvided>F5ukXgKrSYKiW 80u GxcSdfMrw=</SignatureProvided><StringToSign>GET
+1362858059
+/opscode-platform-production-data/organization-448842adce994902ace1c43a369fa10b/checksum-afd05a88c6da55ac7177992a431e504a</StringToSign><AWSAccessKeyId>AKIAIN4GUX4PULV7JQSA</AWSAccessKeyId></Error>]
+	at org.jclouds.chef.handlers.ChefErrorHandler.handleError(ChefErrorHandler.java:59)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod$InvokeAndTransform.call(InvokeHttpMethod.java:201)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+testSearchClientsWithOptions(org.jclouds.hostedchef.HostedChefApiLiveTest)  Time elapsed: 61.446 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at org.jclouds.chef.internal.BaseChefApiLiveTest.testSearchClientsWithOptions(BaseChefApiLiveTest.java:406)
+	at org.jclouds.hostedchef.HostedChefApiLiveTest.testSearchClientsWithOptions(HostedChefApiLiveTest.java:68)
