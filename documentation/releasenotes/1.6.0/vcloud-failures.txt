@@ -1,0 +1,220 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 35, Failures: 5, Errors: 0, Skipped: 9, Time elapsed: 2,206.2 sec <<< FAILURE!
+testFindCatalogIsWriteableIfNotVersion1_5(org.jclouds.vcloud.features.CatalogClientLiveTest)  Time elapsed: 1.254 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.vcloud.features.CatalogClientLiveTest.testFindCatalogIsWriteableIfNotVersion1_5(CatalogClientLiveTest.java:53)
+
+testExtendedOptionsWithCustomizationScript(org.jclouds.vcloud.features.VmClientLiveTest)  Time elapsed: 68.635 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 1 node group(vcdcus) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({blockOnPort:seconds=22:180, description=vcdcus, customizationScript=cat > /root/foo.txt<<EOF
+I '"love"' {asc|!}*&
+EOF
+})
+Execution failures:
+0 error[s]
+Node failures:
+1) NoSuchElementException on node https://zone01.bluelock.com/api/v1.0/vApp/vapp-13cf42d9-ac3a-41f0-ba4e-637a15eb3fc0:
+java.util.NoSuchElementException: could not connect to any ip address port 22 on node {id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-13cf42d9-ac3a-41f0-ba4e-637a15eb3fc0, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-13cf42d9-ac3a-41f0-ba4e-637a15eb3fc0, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-13cf42d9-ac3a-41f0-ba4e-637a15eb3fc0, name=vcdcus-38a, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-13cf42d9-ac3a-41f0-ba4e-637a15eb3fc0, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, group=vcdcus, os={family=ubuntu, name=Ubuntu 64-Bit, version=, description=Ubuntu Linux (64-bit), is64Bit=true, osType=UBUNTU_64}, status=RUNNING, loginPort=22, hostname=vcdcus-38a, privateAddresses=[192.168.1.101], hardware={id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-13cf42d9-ac3a-41f0-ba4e-637a15eb3fc0, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-13cf42d9-ac3a-41f0-ba4e-637a15eb3fc0, name=vcdcus-38a, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=30.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vApp/vapp-13cf42d9-ac3a-41f0-ba4e-637a15eb3fc0)}, loginUser=root}
+	at org.jclouds.compute.util.ConcurrentOpenSocketFinder.findOpenSocketOnNode(ConcurrentOpenSocketFinder.java:106)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:132)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:148)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:55)
+	at com.google.common.util.concurrent.Futures$1.apply(Futures.java:725)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:864)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+1 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.vcloud.features.VmClientLiveTest.testExtendedOptionsWithCustomizationScript(VmClientLiveTest.java:111)
+
+testCreateAndRunAService(org.jclouds.vcloud.compute.VCloudComputeServiceLiveTest)  Time elapsed: 53.128 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 1 node group(vcds) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080], tags=[vcds], userMetadata={test=vcds}})
+Execution failures:
+0 error[s]
+Node failures:
+1) NoSuchElementException on node https://zone01.bluelock.com/api/v1.0/vApp/vapp-99d72380-e9a6-4ec7-8fa7-7af936cba1e0:
+java.util.NoSuchElementException: could not connect to any ip address port 22 on node {id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-99d72380-e9a6-4ec7-8fa7-7af936cba1e0, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-99d72380-e9a6-4ec7-8fa7-7af936cba1e0, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-99d72380-e9a6-4ec7-8fa7-7af936cba1e0, name=vcds-349, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-99d72380-e9a6-4ec7-8fa7-7af936cba1e0, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, group=vcds, os={family=ubuntu, name=Ubuntu 64-Bit, version=, description=Ubuntu Linux (64-bit), is64Bit=true, osType=UBUNTU_64}, status=RUNNING, loginPort=22, hostname=vcds-349, privateAddresses=[192.168.1.102], hardware={id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-99d72380-e9a6-4ec7-8fa7-7af936cba1e0, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-99d72380-e9a6-4ec7-8fa7-7af936cba1e0, name=vcds-349, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=30.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vApp/vapp-99d72380-e9a6-4ec7-8fa7-7af936cba1e0)}, loginUser=root, tags=[vcds], userMetadata={test=vcds}}
+	at org.jclouds.compute.util.ConcurrentOpenSocketFinder.findOpenSocketOnNode(ConcurrentOpenSocketFinder.java:106)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:132)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:148)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:55)
+	at com.google.common.util.concurrent.Futures$1.apply(Futures.java:725)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:864)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+1 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:655)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:642)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.vcloud.compute.VCloudComputeServiceLiveTest)  Time elapsed: 358.648 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 1 node group(vcdr) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({blockOnPort:seconds=22:120})
+Execution failures:
+0 error[s]
+Node failures:
+1) NoSuchElementException on node https://zone01.bluelock.com/api/v1.0/vApp/vapp-5342f03e-0e63-439c-82bc-12fd3f1f97cb:
+java.util.NoSuchElementException: could not connect to any ip address port 22 on node {id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-5342f03e-0e63-439c-82bc-12fd3f1f97cb, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-5342f03e-0e63-439c-82bc-12fd3f1f97cb, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-5342f03e-0e63-439c-82bc-12fd3f1f97cb, name=vcdr-fae, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-5342f03e-0e63-439c-82bc-12fd3f1f97cb, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, group=vcdr, os={family=ubuntu, name=Ubuntu 64-Bit, version=, description=Ubuntu Linux (64-bit), is64Bit=true, osType=UBUNTU_64}, status=RUNNING, loginPort=22, hostname=vcdr-fae, privateAddresses=[192.168.1.100], hardware={id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-5342f03e-0e63-439c-82bc-12fd3f1f97cb, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-5342f03e-0e63-439c-82bc-12fd3f1f97cb, name=vcdr-fae, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=30.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vApp/vapp-5342f03e-0e63-439c-82bc-12fd3f1f97cb)}, loginUser=root}
+	at org.jclouds.compute.util.ConcurrentOpenSocketFinder.findOpenSocketOnNode(ConcurrentOpenSocketFinder.java:106)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:132)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:148)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:55)
+	at com.google.common.util.concurrent.Futures$1.apply(Futures.java:725)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:864)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+1 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.vcloud.compute.VCloudComputeServiceLiveTest)  Time elapsed: 747.259 sec  <<< FAILURE!
+java.util.concurrent.ExecutionException: org.jclouds.compute.RunNodesException: error running 1 node group(twin0) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080]})
+Execution failures:
+0 error[s]
+Node failures:
+1) NoSuchElementException on node https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1:
+java.util.NoSuchElementException: could not connect to any ip address port 22 on node {id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, name=twin0-f40, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, group=twin0, os={family=ubuntu, name=Ubuntu 64-Bit, version=, description=Ubuntu Linux (64-bit), is64Bit=true, osType=UBUNTU_64}, status=RUNNING, loginPort=22, hostname=twin0-f40, privateAddresses=[192.168.1.102], hardware={id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, name=twin0-f40, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=30.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1)}, loginUser=root}
+	at org.jclouds.compute.util.ConcurrentOpenSocketFinder.findOpenSocketOnNode(ConcurrentOpenSocketFinder.java:106)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:132)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:148)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:55)
+	at com.google.common.util.concurrent.Futures$1.apply(Futures.java:725)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:864)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+1 error[s]
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:279)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:446)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.compute.RunNodesException: error running 1 node group(twin0) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080]})
+Execution failures:
+0 error[s]
+Node failures:
+1) NoSuchElementException on node https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1:
+java.util.NoSuchElementException: could not connect to any ip address port 22 on node {id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, name=twin0-f40, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, group=twin0, os={family=ubuntu, name=Ubuntu 64-Bit, version=, description=Ubuntu Linux (64-bit), is64Bit=true, osType=UBUNTU_64}, status=RUNNING, loginPort=22, hostname=twin0-f40, privateAddresses=[192.168.1.102], hardware={id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, name=twin0-f40, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=30.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1)}, loginUser=root}
+	at org.jclouds.compute.util.ConcurrentOpenSocketFinder.findOpenSocketOnNode(ConcurrentOpenSocketFinder.java:106)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:132)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:148)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:55)
+	at com.google.common.util.concurrent.Futures$1.apply(Futures.java:725)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:864)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+1 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:434)
+	... 21 more
+Caused by: org.jclouds.compute.RunNodesException: error running 1 node group(twin0) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080]})
+Execution failures:
+0 error[s]
+Node failures:
+1) NoSuchElementException on node https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1:
+java.util.NoSuchElementException: could not connect to any ip address port 22 on node {id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, name=twin0-f40, uri=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, group=twin0, os={family=ubuntu, name=Ubuntu 64-Bit, version=, description=Ubuntu Linux (64-bit), is64Bit=true, osType=UBUNTU_64}, status=RUNNING, loginPort=22, hostname=twin0-f40, privateAddresses=[192.168.1.102], hardware={id=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, providerId=https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1, name=twin0-f40, location={scope=ZONE, id=https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b, description=Cluster01-Jclouds, parent=https://zone01.bluelock.com/api/v1.0/org/d7b75404-aef4-4977-a007-03d0a21c1bc0}, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=30.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vApp/vapp-2c0efdd8-0dc3-41fe-9f4c-fbad41228fd1)}, loginUser=root}
+	at org.jclouds.compute.util.ConcurrentOpenSocketFinder.findOpenSocketOnNode(ConcurrentOpenSocketFinder.java:106)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:132)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:148)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:55)
+	at com.google.common.util.concurrent.Futures$1.apply(Futures.java:725)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:864)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+1 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:434)
+	... 21 more
+

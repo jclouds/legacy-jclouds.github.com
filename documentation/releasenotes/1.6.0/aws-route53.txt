@@ -1,0 +1,132 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:aws-route53:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Amazon Route 53 provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ aws-route53 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ aws-route53 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ aws-route53 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ aws-route53 ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ aws-route53 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ aws-route53 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ aws-route53 ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ aws-route53 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ aws-route53 ---
+[INFO] Compiling 4 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ aws-route53 ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.aws.route53.AWSRoute53ProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5ca352a5
+Starting test testAllContains(org.jclouds.aws.route53.AWSRoute53ProviderTest)
+[pool-1-thread-1] Test testAllContains(org.jclouds.aws.route53.AWSRoute53ProviderTest) succeeded: 40ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testOfApiContains(org.jclouds.aws.route53.AWSRoute53ProviderTest)
+Starting test testTransformableToContains(org.jclouds.aws.route53.AWSRoute53ProviderTest)
+[pool-1-thread-2] Test testOfApiContains(org.jclouds.aws.route53.AWSRoute53ProviderTest) succeeded: 9ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testTransformableToContains(org.jclouds.aws.route53.AWSRoute53ProviderTest) succeeded: 12ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.aws.route53.AWSRoute53ProviderTest)
+[pool-1-thread-4] Test testWithId(org.jclouds.aws.route53.AWSRoute53ProviderTest) succeeded: 5ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.888 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ aws-route53 ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ aws-route53 ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/target/aws-route53-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ aws-route53 ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@4a0c68c3
+Starting test testCreateAndDeleteBulkRecords(org.jclouds.aws.route53.features.AWSResourceRecordSetApiLiveTest)
+Starting test testCreateAndDeleteHostedZone(org.jclouds.aws.route53.features.AWSHostedZoneApiLiveTest)
+Starting test testGetChangeReturnsNullOnNotFound(org.jclouds.aws.route53.AWSRoute53ApiLiveTest)
+[TestNG] Test testGetChangeReturnsNullOnNotFound(org.jclouds.aws.route53.AWSRoute53ApiLiveTest) succeeded: 2036ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[TestNG] Test testCreateAndDeleteHostedZone(org.jclouds.aws.route53.features.AWSHostedZoneApiLiveTest) succeeded: 68321ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testDeleteHostedZoneWhenNotFound(org.jclouds.aws.route53.features.AWSHostedZoneApiLiveTest)
+[TestNG] Test testDeleteHostedZoneWhenNotFound(org.jclouds.aws.route53.features.AWSHostedZoneApiLiveTest) succeeded: 553ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testGetHostedZoneWhenNotFound(org.jclouds.aws.route53.features.AWSHostedZoneApiLiveTest)
+[TestNG] Test testGetHostedZoneWhenNotFound(org.jclouds.aws.route53.features.AWSHostedZoneApiLiveTest) succeeded: 630ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testListHostedZones(org.jclouds.aws.route53.features.AWSHostedZoneApiLiveTest)
+[TestNG] Test testListHostedZones(org.jclouds.aws.route53.features.AWSHostedZoneApiLiveTest) succeeded: 2104ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[TestNG] Test testCreateAndDeleteBulkRecords(org.jclouds.aws.route53.features.AWSResourceRecordSetApiLiveTest) succeeded: 137780ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testDeleteRRSNotFound(org.jclouds.aws.route53.features.AWSResourceRecordSetApiLiveTest)
+[TestNG] Test testDeleteRRSNotFound(org.jclouds.aws.route53.features.AWSResourceRecordSetApiLiveTest) succeeded: 878ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testListRRSs(org.jclouds.aws.route53.features.AWSResourceRecordSetApiLiveTest)
+[TestNG] Test testListRRSs(org.jclouds.aws.route53.features.AWSResourceRecordSetApiLiveTest) succeeded: 1198ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 142.423 sec
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ aws-route53 ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ aws-route53 ---
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/target/aws-route53-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-route53/1.6.0-SNAPSHOT/aws-route53-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-route53/1.6.0-SNAPSHOT/aws-route53-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-route53/target/aws-route53-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-route53/1.6.0-SNAPSHOT/aws-route53-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ aws-route53 ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2:37.955s
+[INFO] Finished at: Sat Mar 09 08:35:25 PST 2013
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------

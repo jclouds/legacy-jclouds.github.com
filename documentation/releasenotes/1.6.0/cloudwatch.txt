@@ -1,0 +1,177 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:cloudwatch:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud cloudwatch api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cloudwatch ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ cloudwatch ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ cloudwatch ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ cloudwatch ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ cloudwatch ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cloudwatch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/cloudwatch/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ cloudwatch ---
+[INFO] Compiling 40 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/cloudwatch/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cloudwatch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/cloudwatch/src/test/clojure
+[INFO] Copying 4 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ cloudwatch ---
+[INFO] Compiling 12 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/cloudwatch/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cloudwatch ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/cloudwatch/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@7ddf5a8f
+Starting test testMetricWithMultipleDatum(org.jclouds.cloudwatch.binders.MetricDataBinderTest)
+[pool-1-thread-1] Test testMetricWithMultipleDatum(org.jclouds.cloudwatch.binders.MetricDataBinderTest) succeeded: 81ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testMetricWithMultipleDimensions(org.jclouds.cloudwatch.binders.MetricDataBinderTest)
+Starting test testMetricWithoutTimestamp(org.jclouds.cloudwatch.binders.MetricDataBinderTest)
+[pool-1-thread-3] Test testMetricWithoutTimestamp(org.jclouds.cloudwatch.binders.MetricDataBinderTest) succeeded: 3ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testMetricWithMultipleDimensions(org.jclouds.cloudwatch.binders.MetricDataBinderTest) succeeded: 9ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.cloudwatch.CloudWatchApiMetadataTest)
+[pool-2-thread-1] Test testAllContains(org.jclouds.cloudwatch.CloudWatchApiMetadataTest) succeeded: 15ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.cloudwatch.CloudWatchApiMetadataTest)
+[pool-2-thread-2] Test testTransformableToContains(org.jclouds.cloudwatch.CloudWatchApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.cloudwatch.CloudWatchApiMetadataTest)
+[pool-2-thread-3] Test testWithId(org.jclouds.cloudwatch.CloudWatchApiMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testContextAssignableFromRestContext(org.jclouds.cloudwatch.CloudWatchApiMetadataTest)
+[pool-2-thread-4] Test testContextAssignableFromRestContext(org.jclouds.cloudwatch.CloudWatchApiMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testMultiPageResult(org.jclouds.cloudwatch.CloudWatchTest)
+Starting test testPutMetricData(org.jclouds.cloudwatch.CloudWatchTest)
+Starting test testSinglePageResult(org.jclouds.cloudwatch.CloudWatchTest)
+[pool-3-thread-2] Test testPutMetricData(org.jclouds.cloudwatch.CloudWatchTest) succeeded: 40ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-3-thread-1] Test testMultiPageResult(org.jclouds.cloudwatch.CloudWatchTest) succeeded: 145ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+[pool-3-thread-3] Test testSinglePageResult(org.jclouds.cloudwatch.CloudWatchTest) succeeded: 138ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testGetMetricStatisticsWhenResponseIs2xx(org.jclouds.cloudwatch.features.MetricApiExpectTest)
+Starting test testGetMetricStatisticsWithOptionsWhenResponseIs2xx(org.jclouds.cloudwatch.features.MetricApiExpectTest)
+Starting test testGetMetricStatisticsWhenResponseIs404(org.jclouds.cloudwatch.features.MetricApiExpectTest)
+Starting test testListMetrics2PagesWhenResponseIs2xx(org.jclouds.cloudwatch.features.MetricApiExpectTest)
+Starting test testListMetricsWhenResponseIs2xx(org.jclouds.cloudwatch.features.MetricApiExpectTest)
+[pool-4-thread-2] Test testGetMetricStatisticsWhenResponseIs404(org.jclouds.cloudwatch.features.MetricApiExpectTest) succeeded: 1760ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testListMetricsWhenResponseIs404(org.jclouds.cloudwatch.features.MetricApiExpectTest)
+[pool-4-thread-1] Test testGetMetricStatisticsWhenResponseIs2xx(org.jclouds.cloudwatch.features.MetricApiExpectTest) succeeded: 1831ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testListMetricsWithOptionsWhenResponseIs2xx(org.jclouds.cloudwatch.features.MetricApiExpectTest)
+[pool-4-thread-4] Test testListMetrics2PagesWhenResponseIs2xx(org.jclouds.cloudwatch.features.MetricApiExpectTest) succeeded: 1754ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+[pool-4-thread-3] Test testGetMetricStatisticsWithOptionsWhenResponseIs2xx(org.jclouds.cloudwatch.features.MetricApiExpectTest) succeeded: 1782ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+[pool-4-thread-5] Test testListMetricsWhenResponseIs2xx(org.jclouds.cloudwatch.features.MetricApiExpectTest) succeeded: 1753ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testListMetricsWhenResponseIs404(org.jclouds.cloudwatch.features.MetricApiExpectTest) succeeded: 133ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+[pool-4-thread-1] Test testListMetricsWithOptionsWhenResponseIs2xx(org.jclouds.cloudwatch.features.MetricApiExpectTest) succeeded: 219ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testInstanceId(org.jclouds.cloudwatch.options.GetMetricStatisticsOptionsTest)
+[pool-5-thread-1] Test testInstanceId(org.jclouds.cloudwatch.options.GetMetricStatisticsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testUnit(org.jclouds.cloudwatch.options.GetMetricStatisticsOptionsTest)
+[pool-5-thread-3] Test testUnit(org.jclouds.cloudwatch.options.GetMetricStatisticsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testInstanceIdStatic(org.jclouds.cloudwatch.options.GetMetricStatisticsOptionsTest)
+[pool-5-thread-2] Test testInstanceIdStatic(org.jclouds.cloudwatch.options.GetMetricStatisticsOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testUnitStatic(org.jclouds.cloudwatch.options.GetMetricStatisticsOptionsTest)
+[pool-5-thread-4] Test testUnitStatic(org.jclouds.cloudwatch.options.GetMetricStatisticsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.cloudwatch.xml.GetMetricStatisticsResponseHandlerTest)
+[pool-6-thread-1] Test testApplyInputStream(org.jclouds.cloudwatch.xml.GetMetricStatisticsResponseHandlerTest) succeeded: 9ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.915 sec
+
+Results :
+
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ cloudwatch ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ cloudwatch ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/cloudwatch/target/cloudwatch-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ cloudwatch ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/cloudwatch/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@21f3aa07
+Starting test testCloudWatchListMetrics(org.jclouds.cloudwatch.CloudWatchLiveTest)
+Starting test testGetMetricStatistics(org.jclouds.cloudwatch.features.MetricApiLiveTest)
+[TestNG] Test testCloudWatchListMetrics(org.jclouds.cloudwatch.CloudWatchLiveTest) succeeded: 1941ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCloudWatchPutMetrics(org.jclouds.cloudwatch.CloudWatchLiveTest)
+[TestNG] Test testGetMetricStatistics(org.jclouds.cloudwatch.features.MetricApiLiveTest) succeeded: 106129ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testListMetrics(org.jclouds.cloudwatch.features.MetricApiLiveTest)
+[TestNG] Test testListMetrics(org.jclouds.cloudwatch.features.MetricApiLiveTest) succeeded: 3256ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testPutMetricData(org.jclouds.cloudwatch.features.MetricApiLiveTest)
+[TestNG] Test testPutMetricData(org.jclouds.cloudwatch.features.MetricApiLiveTest) succeeded: 491311ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[TestNG] Test testCloudWatchPutMetrics(org.jclouds.cloudwatch.CloudWatchLiveTest) succeeded: 794732ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 798.624 sec
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ cloudwatch ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ cloudwatch ---
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/cloudwatch/target/cloudwatch-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/api/cloudwatch/1.6.0-SNAPSHOT/cloudwatch-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/cloudwatch/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/api/cloudwatch/1.6.0-SNAPSHOT/cloudwatch-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/cloudwatch/target/cloudwatch-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/api/cloudwatch/1.6.0-SNAPSHOT/cloudwatch-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ cloudwatch ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13:34.917s
+[INFO] Finished at: Sat Mar 09 08:33:02 PST 2013
+[INFO] Final Memory: 16M/265M
+[INFO] ------------------------------------------------------------------------

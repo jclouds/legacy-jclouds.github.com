@@ -1,0 +1,57 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 58, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 9.795 sec <<< FAILURE!
+testPutObject(org.jclouds.aws.s3.AWSS3AsyncClientTest)  Time elapsed: 0.544 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Expect: 100-continue
+Host: bucket.s3.amazonaws.com
+] but found [Host: bucket.s3.amazonaws.com
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at org.jclouds.rest.internal.BaseRestApiTest.assertNonPayloadHeadersEqual(BaseRestApiTest.java:156)
+	at org.jclouds.aws.s3.AWSS3AsyncClientTest.testPutObject(AWSS3AsyncClientTest.java:108)
+
+testPutWithReducedRedundancy(org.jclouds.aws.s3.AWSS3ClientExpectTest)  Time elapsed: 1.068 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: PUT https://test.s3-eu-west-1.amazonaws.com/test HTTP/1.1 failed with response: HTTP/1.1 500 no response configured for request; content: [
+the following request is not configured:
+----------------------------------------
+PUT https://test.s3-eu-west-1.amazonaws.com/test HTTP/1.1
+x-amz-storage-class: REDUCED_REDUNDANCY
+Host: test.s3-eu-west-1.amazonaws.com
+Date: 2009-11-08T15:54:08.897Z
+Authorization: AWS identity:1mJrW85/mqZpYTFIK5Ebtt2MM6E=
+Content-Type: application/unknown
+Content-Length: 7
+content----------------------------------------
+configured requests:
+----------------------------------------
+GET https://test.s3.amazonaws.com/?location HTTP/1.1
+Host: test.s3.amazonaws.com
+Date: 2009-11-08T15:54:08.897Z
+Authorization: AWS identity:D1rymKrEdvzvhmZXeg+Z0R+tiug=
+----------------------------------------
+PUT https://test.s3-eu-west-1.amazonaws.com/test HTTP/1.1
+Expect: 100-continue
+x-amz-storage-class: REDUCED_REDUNDANCY
+Host: test.s3-eu-west-1.amazonaws.com
+Date: 2009-11-08T15:54:08.897Z
+Authorization: AWS identity:1mJrW85/mqZpYTFIK5Ebtt2MM6E=
+Content-Type: application/unknown
+Content-Length: 7
+content]
+	at org.jclouds.aws.handlers.ParseAWSErrorFromXmlContent.handleError(ParseAWSErrorFromXmlContent.java:80)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:71)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy51.putObject(Unknown Source)
+	at org.jclouds.aws.s3.AWSS3ClientExpectTest.testPutWithReducedRedundancy(AWSS3ClientExpectTest.java:91)
+
