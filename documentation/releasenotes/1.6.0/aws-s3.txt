@@ -1,0 +1,303 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:aws-s3:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Amazon Simple Storage Service (S3) provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ aws-s3 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ aws-s3 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ aws-s3 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ aws-s3 ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ aws-s3 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ aws-s3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-s3/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ aws-s3 ---
+[INFO] Compiling 28 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-s3/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ aws-s3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-s3/src/test/clojure
+[INFO] Copying 4 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ aws-s3 ---
+[INFO] Compiling 24 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-s3/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ aws-s3 ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-s3/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@26544ec1
+Starting test testGetBucketLocationEUIsStillDefault(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+Starting test testGetBucketLocation(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+Starting test testCopyObjectInvalidName(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+Starting test testCompleteMultipartUpload(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+Starting test testAbortMultipartUpload(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-3] Test testCopyObjectInvalidName(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 113ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testInitiateMultipartUpload(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-5] Test testGetBucketLocationEUIsStillDefault(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 250ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testPutBucketDefault(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-1] Test testAbortMultipartUpload(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 205ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testPutBucketEu(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-5] Test testPutBucketDefault(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 25ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testPutObject(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-2] Test testCompleteMultipartUpload(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 284ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testUploadPart(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-1] Test testPutBucketEu(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 71ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testAllRegions(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-2] Test testUploadPart(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 15ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testBucketExists(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-2] Test testBucketExists(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testCopyObject(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-2] Test testCopyObject(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 13ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testDeleteBucketIfEmpty(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-1] Test testAllRegions(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 63ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testDeleteObject(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-1] Test testDeleteObject(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testDisableBucketLogging(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-2] Test testDeleteBucketIfEmpty(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 66ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testEnableBucketLoggingOwner(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-1] Test testDisableBucketLogging(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 65ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testGetBucketACL(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-2] Test testEnableBucketLoggingOwner(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 262ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testGetBucketLogging(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-2] Test testGetBucketLogging(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 52ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testGetBucketPayer(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-1] Test testGetBucketACL(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 187ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testGetObject(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-2] Test testGetBucketPayer(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 61ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testGetObjectACL(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-4] Test testGetBucketLocation(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 792ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testHeadObject(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-3] Test testInitiateMultipartUpload(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 676ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testListBucket(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-4] Test testHeadObject(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 19ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testGetObjectACL(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 81ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testListBucket(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 63ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testListOwnedBuckets(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-1] Test testGetObject(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 145ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testNewS3Object(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-1] Test testNewS3Object(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 0ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testObjectExists(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+Starting test testPutBucketACL(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+Starting test testPutObjectACL(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-3] Test testListOwnedBuckets(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 21ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testSetBucketPayerOwner(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-3] Test testSetBucketPayerOwner(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 63ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testSetBucketPayerRequester(org.jclouds.aws.s3.AWSS3AsyncClientTest)
+[pool-1-thread-1] Test testObjectExists(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 111ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testSetBucketPayerRequester(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 62ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testPutObjectACL(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 218ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testPutBucketACL(org.jclouds.aws.s3.AWSS3AsyncClientTest) succeeded: 227ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+[pool-1-thread-5] Test testPutObject(org.jclouds.aws.s3.AWSS3AsyncClientTest) failed.
+Test suite progress: tests succeeded: 30, failed: 1, skipped: 0.
+Starting test testDeleteMultipleObjects(org.jclouds.aws.s3.AWSS3ClientExpectTest)
+Starting test testPutWithReducedRedundancy(org.jclouds.aws.s3.AWSS3ClientExpectTest)
+Starting test testEmptySetThrowsException(org.jclouds.aws.s3.binders.BindIterableAsPayloadToDeleteRequestTest)
+[pool-4-thread-3] Test testEmptySetThrowsException(org.jclouds.aws.s3.binders.BindIterableAsPayloadToDeleteRequestTest) succeeded: 1ms
+Test suite progress: tests succeeded: 31, failed: 1, skipped: 0.
+Starting test testWithASmallSet(org.jclouds.aws.s3.binders.BindIterableAsPayloadToDeleteRequestTest)
+[pool-4-thread-3] Test testWithASmallSet(org.jclouds.aws.s3.binders.BindIterableAsPayloadToDeleteRequestTest) succeeded: 1ms
+Test suite progress: tests succeeded: 32, failed: 1, skipped: 0.
+Starting test testLowerLimitFromWhereMultipartBecomeActive(org.jclouds.aws.s3.blobstore.strategy.internal.MpuPartitioningAlgorithmTest)
+[pool-4-thread-3] Test testLowerLimitFromWhereMultipartBecomeActive(org.jclouds.aws.s3.blobstore.strategy.internal.MpuPartitioningAlgorithmTest) succeeded: 1ms
+Test suite progress: tests succeeded: 33, failed: 1, skipped: 0.
+Starting test testExpectedASetInstance(org.jclouds.aws.s3.binders.BindIterableAsPayloadToDeleteRequestTest)
+Starting test testWhenChunkSizeHasToStartGrowing(org.jclouds.aws.s3.blobstore.strategy.internal.MpuPartitioningAlgorithmTest)
+[pool-4-thread-3] Test testWhenChunkSizeHasToStartGrowing(org.jclouds.aws.s3.blobstore.strategy.internal.MpuPartitioningAlgorithmTest) succeeded: 0ms
+Test suite progress: tests succeeded: 34, failed: 1, skipped: 0.
+[pool-4-thread-4] Test testExpectedASetInstance(org.jclouds.aws.s3.binders.BindIterableAsPayloadToDeleteRequestTest) succeeded: 0ms
+Test suite progress: tests succeeded: 35, failed: 1, skipped: 0.
+Starting test testWhenPartsExceedsMaxNumberOfParts(org.jclouds.aws.s3.blobstore.strategy.internal.MpuPartitioningAlgorithmTest)
+[pool-4-thread-3] Test testWhenPartsExceedsMaxNumberOfParts(org.jclouds.aws.s3.blobstore.strategy.internal.MpuPartitioningAlgorithmTest) succeeded: 0ms
+Test suite progress: tests succeeded: 36, failed: 1, skipped: 0.
+Starting test testWhenPartsHasToStartGrowingFromMagnitudeBase(org.jclouds.aws.s3.blobstore.strategy.internal.MpuPartitioningAlgorithmTest)
+[pool-4-thread-4] Test testWhenPartsHasToStartGrowingFromMagnitudeBase(org.jclouds.aws.s3.blobstore.strategy.internal.MpuPartitioningAlgorithmTest) succeeded: 0ms
+Starting test testWithTimeout(org.jclouds.aws.s3.blobstore.strategy.internal.SequentialMultipartUploadStrategyTest)
+Test suite progress: tests succeeded: 37, failed: 1, skipped: 0.
+Starting test testWithTwoParts(org.jclouds.aws.s3.blobstore.strategy.internal.SequentialMultipartUploadStrategyTest)
+Starting test testFailsOnNullSet(org.jclouds.aws.s3.binders.BindIterableAsPayloadToDeleteRequestTest)
+[pool-4-thread-5] Test testFailsOnNullSet(org.jclouds.aws.s3.binders.BindIterableAsPayloadToDeleteRequestTest) succeeded: 0ms
+Test suite progress: tests succeeded: 38, failed: 1, skipped: 0.
+[pool-4-thread-3] Test testWithTimeout(org.jclouds.aws.s3.blobstore.strategy.internal.SequentialMultipartUploadStrategyTest) succeeded: 390ms
+Test suite progress: tests succeeded: 39, failed: 1, skipped: 0.
+[pool-4-thread-4] Test testWithTwoParts(org.jclouds.aws.s3.blobstore.strategy.internal.SequentialMultipartUploadStrategyTest) succeeded: 392ms
+Test suite progress: tests succeeded: 40, failed: 1, skipped: 0.
+[pool-4-thread-1] Test testDeleteMultipleObjects(org.jclouds.aws.s3.AWSS3ClientExpectTest) succeeded: 801ms
+Test suite progress: tests succeeded: 41, failed: 1, skipped: 0.
+[pool-4-thread-2] Test testPutWithReducedRedundancy(org.jclouds.aws.s3.AWSS3ClientExpectTest) failed.
+Test suite progress: tests succeeded: 41, failed: 2, skipped: 0.
+Starting test testAllContains(org.jclouds.aws.s3.AWSS3ProviderTest)
+[pool-5-thread-1] Test testAllContains(org.jclouds.aws.s3.AWSS3ProviderTest) succeeded: 1ms
+Test suite progress: tests succeeded: 42, failed: 2, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.aws.s3.AWSS3ProviderTest)
+[pool-5-thread-3] Test testTransformableToContains(org.jclouds.aws.s3.AWSS3ProviderTest) succeeded: 2ms
+Test suite progress: tests succeeded: 43, failed: 2, skipped: 0.
+Starting test testOfApiContains(org.jclouds.aws.s3.AWSS3ProviderTest)
+[pool-5-thread-2] Test testOfApiContains(org.jclouds.aws.s3.AWSS3ProviderTest) succeeded: 2ms
+Test suite progress: tests succeeded: 44, failed: 2, skipped: 0.
+Starting test testWithId(org.jclouds.aws.s3.AWSS3ProviderTest)
+[pool-5-thread-4] Test testWithId(org.jclouds.aws.s3.AWSS3ProviderTest) succeeded: 1ms
+Test suite progress: tests succeeded: 45, failed: 2, skipped: 0.
+Starting test testPassWithMinimumDetailsAndPayload5GB(org.jclouds.aws.s3.binders.BindObjectMetadataToRequestTest)
+Starting test testNoKeyIsBad(org.jclouds.aws.s3.binders.BindObjectMetadataToRequestTest)
+[pool-6-thread-3] Test testNoKeyIsBad(org.jclouds.aws.s3.binders.BindObjectMetadataToRequestTest) succeeded: 1ms
+Test suite progress: tests succeeded: 46, failed: 2, skipped: 0.
+Starting test testMustBeObjectMetadata(org.jclouds.aws.s3.binders.BindObjectMetadataToRequestTest)
+Starting test testNullIsBad(org.jclouds.aws.s3.binders.BindObjectMetadataToRequestTest)
+[pool-6-thread-4] Test testNullIsBad(org.jclouds.aws.s3.binders.BindObjectMetadataToRequestTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 2, skipped: 0.
+[pool-6-thread-5] Test testPassWithMinimumDetailsAndPayload5GB(org.jclouds.aws.s3.binders.BindObjectMetadataToRequestTest) succeeded: 4ms
+Test suite progress: tests succeeded: 48, failed: 2, skipped: 0.
+[pool-6-thread-2] Test testMustBeObjectMetadata(org.jclouds.aws.s3.binders.BindObjectMetadataToRequestTest) succeeded: 3ms
+Test suite progress: tests succeeded: 49, failed: 2, skipped: 0.
+Starting test testExtendedPropertiesBind(org.jclouds.aws.s3.binders.BindObjectMetadataToRequestTest)
+[pool-6-thread-1] Test testExtendedPropertiesBind(org.jclouds.aws.s3.binders.BindObjectMetadataToRequestTest) succeeded: 16ms
+Test suite progress: tests succeeded: 50, failed: 2, skipped: 0.
+Starting test testEmptyIsBad(org.jclouds.aws.s3.binders.BindPartIdsAndETagsToRequestTest)
+[pool-7-thread-1] Test testEmptyIsBad(org.jclouds.aws.s3.binders.BindPartIdsAndETagsToRequestTest) succeeded: 0ms
+Test suite progress: tests succeeded: 51, failed: 2, skipped: 0.
+Starting test testNullIsBad(org.jclouds.aws.s3.binders.BindPartIdsAndETagsToRequestTest)
+Starting test testPassWithMinimumDetailsAndPayload5GB(org.jclouds.aws.s3.binders.BindPartIdsAndETagsToRequestTest)
+[pool-7-thread-2] Test testNullIsBad(org.jclouds.aws.s3.binders.BindPartIdsAndETagsToRequestTest) succeeded: 3ms
+Test suite progress: tests succeeded: 52, failed: 2, skipped: 0.
+[pool-7-thread-3] Test testPassWithMinimumDetailsAndPayload5GB(org.jclouds.aws.s3.binders.BindPartIdsAndETagsToRequestTest) succeeded: 2ms
+Test suite progress: tests succeeded: 53, failed: 2, skipped: 0.
+Starting test test(org.jclouds.aws.s3.functions.ETagFromHttpResponseViaRegexTest)
+[pool-8-thread-1] Test test(org.jclouds.aws.s3.functions.ETagFromHttpResponseViaRegexTest) succeeded: 1ms
+Test suite progress: tests succeeded: 54, failed: 2, skipped: 0.
+Starting test test(org.jclouds.aws.s3.functions.UploadIdFromHttpResponseViaRegexTest)
+[pool-9-thread-1] Test test(org.jclouds.aws.s3.functions.UploadIdFromHttpResponseViaRegexTest) succeeded: 1ms
+Test suite progress: tests succeeded: 55, failed: 2, skipped: 0.
+Starting test test(org.jclouds.aws.s3.xml.DeleteResultHandlerTest)
+[pool-10-thread-1] Test test(org.jclouds.aws.s3.xml.DeleteResultHandlerTest) succeeded: 7ms
+Test suite progress: tests succeeded: 56, failed: 2, skipped: 0.
+Tests run: 58, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 9.795 sec <<< FAILURE!
+testPutObject(org.jclouds.aws.s3.AWSS3AsyncClientTest)  Time elapsed: 0.544 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Expect: 100-continue
+Host: bucket.s3.amazonaws.com
+] but found [Host: bucket.s3.amazonaws.com
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at org.jclouds.rest.internal.BaseRestApiTest.assertNonPayloadHeadersEqual(BaseRestApiTest.java:156)
+	at org.jclouds.aws.s3.AWSS3AsyncClientTest.testPutObject(AWSS3AsyncClientTest.java:108)
+
+testPutWithReducedRedundancy(org.jclouds.aws.s3.AWSS3ClientExpectTest)  Time elapsed: 1.068 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: PUT https://test.s3-eu-west-1.amazonaws.com/test HTTP/1.1 failed with response: HTTP/1.1 500 no response configured for request; content: [
+the following request is not configured:
+----------------------------------------
+PUT https://test.s3-eu-west-1.amazonaws.com/test HTTP/1.1
+x-amz-storage-class: REDUCED_REDUNDANCY
+Host: test.s3-eu-west-1.amazonaws.com
+Date: 2009-11-08T15:54:08.897Z
+Authorization: AWS identity:1mJrW85/mqZpYTFIK5Ebtt2MM6E=
+Content-Type: application/unknown
+Content-Length: 7
+content----------------------------------------
+configured requests:
+----------------------------------------
+GET https://test.s3.amazonaws.com/?location HTTP/1.1
+Host: test.s3.amazonaws.com
+Date: 2009-11-08T15:54:08.897Z
+Authorization: AWS identity:D1rymKrEdvzvhmZXeg+Z0R+tiug=
+----------------------------------------
+PUT https://test.s3-eu-west-1.amazonaws.com/test HTTP/1.1
+Expect: 100-continue
+x-amz-storage-class: REDUCED_REDUNDANCY
+Host: test.s3-eu-west-1.amazonaws.com
+Date: 2009-11-08T15:54:08.897Z
+Authorization: AWS identity:1mJrW85/mqZpYTFIK5Ebtt2MM6E=
+Content-Type: application/unknown
+Content-Length: 7
+content]
+	at org.jclouds.aws.handlers.ParseAWSErrorFromXmlContent.handleError(ParseAWSErrorFromXmlContent.java:80)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:71)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy51.putObject(Unknown Source)
+	at org.jclouds.aws.s3.AWSS3ClientExpectTest.testPutWithReducedRedundancy(AWSS3ClientExpectTest.java:91)
+
+
+Results :
+
+Failed tests:   testPutObject(org.jclouds.aws.s3.AWSS3AsyncClientTest): expected [Expect: 100-continue(..)
+  testPutWithReducedRedundancy(org.jclouds.aws.s3.AWSS3ClientExpectTest): command: PUT https://test.s3-eu-west-1.amazonaws.com/test HTTP/1.1 failed with response: HTTP/1.1 500 no response configured for request; content: [(..)
+
+Tests run: 58, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 35.081s
+[INFO] Finished at: Sat Mar 09 08:36:06 PST 2013
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project aws-s3: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-s3/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

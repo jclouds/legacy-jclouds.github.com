@@ -1,0 +1,1227 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:skalicloud-sdg-my:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds SkaliCloud Malaysia provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ skalicloud-sdg-my ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ skalicloud-sdg-my ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ skalicloud-sdg-my ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ skalicloud-sdg-my ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ skalicloud-sdg-my ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ skalicloud-sdg-my ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/skalicloud-sdg-my/src/main/clojure
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ skalicloud-sdg-my ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/skalicloud-sdg-my/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ skalicloud-sdg-my ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/skalicloud-sdg-my/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/skalicloud-sdg-my/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ skalicloud-sdg-my ---
+[INFO] Compiling 4 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/skalicloud-sdg-my/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ skalicloud-sdg-my ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/skalicloud-sdg-my/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.skalicloud.SkaliCloudMalaysiaProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@6686fe26
+Starting test testAllContains(org.jclouds.skalicloud.SkaliCloudMalaysiaProviderTest)
+Starting test testOfApiContains(org.jclouds.skalicloud.SkaliCloudMalaysiaProviderTest)
+Starting test testTransformableToContains(org.jclouds.skalicloud.SkaliCloudMalaysiaProviderTest)
+Starting test testWithId(org.jclouds.skalicloud.SkaliCloudMalaysiaProviderTest)
+[pool-1-thread-1] Test testAllContains(org.jclouds.skalicloud.SkaliCloudMalaysiaProviderTest) succeeded: 15ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testWithId(org.jclouds.skalicloud.SkaliCloudMalaysiaProviderTest) succeeded: 19ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testTransformableToContains(org.jclouds.skalicloud.SkaliCloudMalaysiaProviderTest) succeeded: 25ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testOfApiContains(org.jclouds.skalicloud.SkaliCloudMalaysiaProviderTest) succeeded: 28ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.888 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ skalicloud-sdg-my ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ skalicloud-sdg-my ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/skalicloud-sdg-my/target/skalicloud-sdg-my-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ skalicloud-sdg-my ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/skalicloud-sdg-my/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@522a4983
+Starting test testCompareSizes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+Starting test setServiceDefaults(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCompareSizes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+Starting test testCreateDrive(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testCompareSizes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 15905ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+smallest {id=cpu=1000.000000,ram=512,disk=1.000000, providerId=cpu=1000.000000,ram=512,disk=1.000000, processors=[{cores=1.0, speed=1000.0}], ram=512, volumes=[{type=LOCAL, size=1.0, bootDevice=true, durable=true}], hypervisor=kvm, supportsImage=sizeLessThanOrEqual(1.0)}
+fastest {id=cpu=20000.000000,ram=512,disk=20.000000, providerId=cpu=20000.000000,ram=512,disk=20.000000, processors=[{cores=1.0, speed=20000.0}], ram=512, volumes=[{type=LOCAL, size=20.0, bootDevice=true, durable=true}], hypervisor=kvm, supportsImage=sizeLessThanOrEqual(20.0)}
+biggest {id=cpu=20000.000000,ram=8192,disk=20.000000, providerId=cpu=20000.000000,ram=8192,disk=20.000000, processors=[{cores=1.0, speed=20000.0}], ram=8192, volumes=[{type=LOCAL, size=20.0, bootDevice=true, durable=true}], hypervisor=kvm, supportsImage=sizeLessThanOrEqual(20.0)}
+[TestNG] Test testCompareSizes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 16518ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testFromTemplate(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testFromTemplate(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 13ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testGetAssignableLocations(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 5ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 23ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 5ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 9ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCanUseImageId(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 1174ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testGetAssignableLocations(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testImageById(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testImageById(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 1197ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testImagesCache(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testListImages(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testListSizes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testOptionToNotBlock(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testOptionToNotBlock(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testCreateAndRunAService(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testCreateDrive(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) succeeded: 4479ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testGetDrive(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testGetDrive(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) succeeded: 8169ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testGetServer(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testGetServer(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) succeeded: 1185ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testListDriveInfo(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testListDriveInfo(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) succeeded: 1232ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testListDrives(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testTemplateBuilderCanUseImageId(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 15177ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 7ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 10ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 90, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 91, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 92, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 94, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 95, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 96, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 97, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 98, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 99, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 100, failed: 0, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 101, failed: 0, skipped: 0.
+Starting test testTemplateBuilderWithImageIdSpecified(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testListDrives(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) succeeded: 1155ms
+Test suite progress: tests succeeded: 102, failed: 0, skipped: 0.
+Starting test testListServers(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testListServers(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) succeeded: 1143ms
+Test suite progress: tests succeeded: 103, failed: 0, skipped: 0.
+Starting test testWeCanReadAndWriteToDrive(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testWeCanReadAndWriteToDrive(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) succeeded: 5254ms
+Test suite progress: tests succeeded: 104, failed: 0, skipped: 0.
+Starting test testListServerInfo(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testListServerInfo(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) succeeded: 1120ms
+Test suite progress: tests succeeded: 105, failed: 0, skipped: 0.
+Starting test testSetDriveData(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testSetDriveData(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) succeeded: 1842ms
+Test suite progress: tests succeeded: 106, failed: 0, skipped: 0.
+Starting test testWeCopyADriveContentsViaGzip(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testTemplateBuilderWithImageIdSpecified(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 30856ms
+Test suite progress: tests succeeded: 107, failed: 0, skipped: 0.
+Starting test testTemplateBuilderWithLoginUserSpecified(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderWithLoginUserSpecified(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 31227ms
+Test suite progress: tests succeeded: 108, failed: 0, skipped: 0.
+Starting test testDefaultTemplateBuilder(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest)
+[TestNG] Test testDefaultTemplateBuilder(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaTemplateBuilderLiveTest) succeeded: 10ms
+Test suite progress: tests succeeded: 109, failed: 0, skipped: 0.
+[TestNG] Test testCreateAndRunAService(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 109, failed: 1, skipped: 0.
+Starting test testCorrectAuthException(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 1269ms
+Test suite progress: tests succeeded: 110, failed: 1, skipped: 0.
+Starting test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testWeCopyADriveContentsViaGzip(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) succeeded: 68307ms
+Test suite progress: tests succeeded: 111, failed: 1, skipped: 0.
+Starting test testCreateAndStartServer(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 111, failed: 2, skipped: 0.
+Starting test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testCreateAndStartServer(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) failed.
+Test suite progress: tests succeeded: 111, failed: 3, skipped: 0.
+[TestNG] Test testConnectivity(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 3, skipped: 1.
+[TestNG] Test testLifeCycle(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 3, skipped: 2.
+[TestNG] Test testSetServerConfiguration(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 3, skipped: 3.
+[TestNG] Test testDestroyServer(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 3, skipped: 4.
+[TestNG] Test testDestroyDrive(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 3, skipped: 5.
+[TestNG] Test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 111, failed: 4, skipped: 5.
+Starting test testTemplateMatch(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)
+[TestNG] Test testTemplateMatch(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) succeeded: 25ms
+Test suite progress: tests succeeded: 112, failed: 4, skipped: 5.
+[TestNG] Test testCreateTwoNodesWithRunScript(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 112, failed: 4, skipped: 6.
+[TestNG] Test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 112, failed: 4, skipped: 7.
+[TestNG] Test testCredentialsCache(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 112, failed: 4, skipped: 8.
+[TestNG] Test testGet(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 112, failed: 4, skipped: 9.
+[TestNG] Test testReboot(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 112, failed: 4, skipped: 10.
+[TestNG] Test testSuspendResume(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 112, failed: 4, skipped: 11.
+[TestNG] Test testGetNodesWithDetails(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 112, failed: 4, skipped: 12.
+[TestNG] Test testListNodes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 112, failed: 4, skipped: 13.
+[TestNG] Test testDestroyNodes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 112, failed: 4, skipped: 14.
+Tests run: 130, Failures: 4, Errors: 0, Skipped: 14, Time elapsed: 700.784 sec <<< FAILURE!
+testCreateAndRunAService(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)  Time elapsed: 10.895 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 1 node group(skalicloud-sdg-mys) location(skalicloud-sdg-my) image(3051699a-a536-4220-aeb5-67f2ec101a09) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080], tags=[skalicloud-sdg-mys], userMetadata={test=skalicloud-sdg-mys}})
+Execution failures:
+1) ExecutionException on skalicloud-sdg-mys-ba1:
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at org.jclouds.concurrent.FutureIterables$1.run(FutureIterables.java:127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:67)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:655)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:642)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.sdg-my.skalicloud.com/servers/create/stopped HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Invalid key vnc:ip
+]
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	... 5 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:655)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:642)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:67)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:655)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:642)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.sdg-my.skalicloud.com/servers/create/stopped HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Invalid key vnc:ip
+]
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	... 5 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:655)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:642)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)  Time elapsed: 283.599 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 1 node group(skalicloud-sdg-myr) location(skalicloud-sdg-my) image(3051699a-a536-4220-aeb5-67f2ec101a09) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:120})
+Execution failures:
+1) ExecutionException on skalicloud-sdg-myr-17a:
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at org.jclouds.concurrent.FutureIterables$1.run(FutureIterables.java:127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:67)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.sdg-my.skalicloud.com/servers/create/stopped HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Invalid key vnc:ip
+]
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	... 5 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:67)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.sdg-my.skalicloud.com/servers/create/stopped HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Invalid key vnc:ip
+]
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	... 5 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testCreateAndStartServer(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest)  Time elapsed: 0.025 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:67)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.ElasticStackClientLiveTest.testCreateAndStartServer(ElasticStackClientLiveTest.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.sdg-my.skalicloud.com/servers/create/stopped HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Invalid key vnc:ip
+]
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
+	... 31 more
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.sdg-my.skalicloud.com/servers/create/stopped HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Invalid key vnc:ip
+]
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
+	... 31 more
+
+testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest)  Time elapsed: 304.315 sec  <<< FAILURE!
+java.util.concurrent.ExecutionException: org.jclouds.compute.RunNodesException: error running 1 node group(twin0) location(skalicloud-sdg-my) image(3051699a-a536-4220-aeb5-67f2ec101a09) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080]})
+Execution failures:
+1) ExecutionException on twin0-dad:
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at org.jclouds.concurrent.FutureIterables$1.run(FutureIterables.java:127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:67)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.sdg-my.skalicloud.com/servers/create/stopped HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Invalid key vnc:ip
+]
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	... 5 more
+1 error[s]
+Node failures:
+0 error[s]
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:279)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:446)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.compute.RunNodesException: error running 1 node group(twin0) location(skalicloud-sdg-my) image(3051699a-a536-4220-aeb5-67f2ec101a09) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080]})
+Execution failures:
+1) ExecutionException on twin0-dad:
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at org.jclouds.concurrent.FutureIterables$1.run(FutureIterables.java:127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:67)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.sdg-my.skalicloud.com/servers/create/stopped HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Invalid key vnc:ip
+]
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	... 5 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:434)
+	... 21 more
+Caused by: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:67)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.sdg-my.skalicloud.com/servers/create/stopped HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Invalid key vnc:ip
+]
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	... 5 more
+1 error[s]
+Node failures:
+0 error[s]
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:279)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:446)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.compute.RunNodesException: error running 1 node group(twin0) location(skalicloud-sdg-my) image(3051699a-a536-4220-aeb5-67f2ec101a09) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080]})
+Execution failures:
+1) ExecutionException on twin0-dad:
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at org.jclouds.concurrent.FutureIterables$1.run(FutureIterables.java:127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.lang.IllegalArgumentException: Invalid key vnc:ip
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:67)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.sdg-my.skalicloud.com/servers/create/stopped HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Invalid key vnc:ip
+]
+	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.createServer(Unknown Source)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:127)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	... 5 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:434)
+	... 21 more
+
+
+Results :
+
+Failed tests:   testCreateAndRunAService(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest): error running 1 node group(skalicloud-sdg-mys) location(skalicloud-sdg-my) image(3051699a-a536-4220-aeb5-67f2ec101a09) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080], tags=[skalicloud-sdg-mys], userMetadata={test=skalicloud-sdg-mys}})(..)
+  testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest): error running 1 node group(skalicloud-sdg-myr) location(skalicloud-sdg-my) image(3051699a-a536-4220-aeb5-67f2ec101a09) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:120})(..)
+  testCreateAndStartServer(org.jclouds.skalicloud.SkaliCloudMalaysiaClientLiveTest): Invalid key vnc:ip(..)
+  testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.skalicloud.compute.SkaliCloudMalaysiaComputeServiceLiveTest): org.jclouds.compute.RunNodesException: error running 1 node group(twin0) location(skalicloud-sdg-my) image(3051699a-a536-4220-aeb5-67f2ec101a09) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080]})(..)
+
+Tests run: 130, Failures: 4, Errors: 0, Skipped: 14
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11:50.916s
+[INFO] Finished at: Sat Mar 09 18:00:11 PST 2013
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (integration) on project skalicloud-sdg-my: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/skalicloud-sdg-my/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

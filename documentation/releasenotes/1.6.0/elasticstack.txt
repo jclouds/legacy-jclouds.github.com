@@ -1,0 +1,550 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:elasticstack:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds elasticstack core 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ elasticstack ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ elasticstack ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ elasticstack ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ elasticstack ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ elasticstack ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ elasticstack ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/elasticstack/src/main/clojure
+[INFO] Copying 3 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ elasticstack ---
+[INFO] Compiling 55 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/elasticstack/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ elasticstack ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/elasticstack/src/test/clojure
+[INFO] Copying 10 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ elasticstack ---
+[INFO] Compiling 21 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/elasticstack/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ elasticstack ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/elasticstack/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@270e3293
+Starting test testBasics(org.jclouds.elasticstack.functions.BaseDriveToMapTest)
+Starting test testComplete(org.jclouds.elasticstack.binders.BindDriveToPlainTextStringTest)
+[pool-1-thread-1] Test testBasics(org.jclouds.elasticstack.functions.BaseDriveToMapTest) succeeded: 24ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testSimple(org.jclouds.elasticstack.binders.BindDriveToPlainTextStringTest)
+Starting test testComplete(org.jclouds.elasticstack.binders.BindDriveDataToPlainTextStringTest)
+Starting test testComplete(org.jclouds.elasticstack.functions.BaseDriveToMapTest)
+Starting test testSimple(org.jclouds.elasticstack.binders.BindDriveDataToPlainTextStringTest)
+[pool-1-thread-2] Test testComplete(org.jclouds.elasticstack.functions.BaseDriveToMapTest) succeeded: 8ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testSimple(org.jclouds.elasticstack.binders.BindServerToPlainTextStringTest)
+[pool-1-thread-1] Test testSimple(org.jclouds.elasticstack.binders.BindDriveToPlainTextStringTest) succeeded: 68ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testSimple(org.jclouds.elasticstack.binders.BindServerToPlainTextStringTest) succeeded: 10ms
+Starting test testBasics(org.jclouds.elasticstack.functions.CreateDriveRequestToMapTest)
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testBasics(org.jclouds.elasticstack.functions.CreateDriveRequestToMapTest) succeeded: 0ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testComplete(org.jclouds.elasticstack.functions.CreateDriveRequestToMapTest)
+Starting test testBasics(org.jclouds.elasticstack.functions.DriveDataToMapTest)
+[pool-1-thread-1] Test testBasics(org.jclouds.elasticstack.functions.DriveDataToMapTest) succeeded: 0ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testComplete(org.jclouds.elasticstack.functions.DriveDataToMapTest)
+[pool-1-thread-1] Test testComplete(org.jclouds.elasticstack.functions.DriveDataToMapTest) succeeded: 0ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test test400MakesIllegalArgumentException(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest)
+[pool-1-thread-2] Test testComplete(org.jclouds.elasticstack.functions.CreateDriveRequestToMapTest) succeeded: 11ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test test400MakesResourceNotFoundExceptionOnInfo(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest)
+[pool-1-thread-5] Test testComplete(org.jclouds.elasticstack.binders.BindDriveToPlainTextStringTest) succeeded: 105ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test test400MakesResourceNotFoundExceptionOnMessageNotFound(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest)
+[pool-1-thread-3] Test testComplete(org.jclouds.elasticstack.binders.BindDriveDataToPlainTextStringTest) succeeded: 57ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test test401MakesAuthorizationException(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest)
+[pool-1-thread-4] Test testSimple(org.jclouds.elasticstack.binders.BindDriveDataToPlainTextStringTest) succeeded: 56ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test test404MakesResourceNotFoundException(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest)
+[pool-1-thread-3] Test test401MakesAuthorizationException(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest) succeeded: 170ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+[pool-1-thread-2] Test test400MakesResourceNotFoundExceptionOnInfo(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest) succeeded: 196ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test test405MakesIllegalArgumentException(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest)
+[pool-1-thread-4] Test test404MakesResourceNotFoundException(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest) succeeded: 169ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testNone(org.jclouds.elasticstack.functions.KeyValuesDelimitedByBlankLinesToDriveInfoTest)
+[pool-1-thread-1] Test test400MakesIllegalArgumentException(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest) succeeded: 209ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testOne(org.jclouds.elasticstack.functions.KeyValuesDelimitedByBlankLinesToDriveInfoTest)
+[pool-1-thread-5] Test test400MakesResourceNotFoundExceptionOnMessageNotFound(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest) succeeded: 198ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+[pool-1-thread-3] Test test405MakesIllegalArgumentException(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testNew(org.jclouds.elasticstack.functions.KeyValuesDelimitedByBlankLinesToServerInfoTest)
+Starting test test409MakesIllegalStateException(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest)
+Starting test testNone(org.jclouds.elasticstack.functions.KeyValuesDelimitedByBlankLinesToServerInfoTest)
+[pool-1-thread-4] Test testNone(org.jclouds.elasticstack.functions.KeyValuesDelimitedByBlankLinesToDriveInfoTest) succeeded: 8ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testOne(org.jclouds.elasticstack.functions.KeyValuesDelimitedByBlankLinesToServerInfoTest)
+[pool-1-thread-2] Test test409MakesIllegalStateException(org.jclouds.elasticstack.handlers.ElasticStackErrorHandlerTest) succeeded: 7ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testNone(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToDriveInfoSetTest)
+[pool-1-thread-2] Test testNone(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToDriveInfoSetTest) succeeded: 0ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testOne(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToDriveInfoSetTest)
+[pool-1-thread-3] Test testNone(org.jclouds.elasticstack.functions.KeyValuesDelimitedByBlankLinesToServerInfoTest) succeeded: 12ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testNone(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToListOfMapsTest)
+[pool-1-thread-3] Test testNone(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToListOfMapsTest) succeeded: 24ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testOneMap(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToListOfMapsTest)
+[pool-1-thread-1] Test testOne(org.jclouds.elasticstack.functions.KeyValuesDelimitedByBlankLinesToDriveInfoTest) succeeded: 42ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testTwoMaps(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToListOfMapsTest)
+[pool-1-thread-1] Test testTwoMaps(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToListOfMapsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testOne(org.jclouds.elasticstack.functions.KeyValuesDelimitedByBlankLinesToServerInfoTest) succeeded: 36ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testValueEncodesNewlines(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToListOfMapsTest)
+[pool-1-thread-4] Test testValueEncodesNewlines(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToListOfMapsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testNone(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToServerInfoSetTest)
+[pool-1-thread-4] Test testNone(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToServerInfoSetTest) succeeded: 1ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testOne(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToServerInfoSetTest)
+Starting test testNone(org.jclouds.elasticstack.functions.ListOfMapsToListOfKeyValuesDelimitedByBlankLinesTest)
+[pool-1-thread-1] Test testNone(org.jclouds.elasticstack.functions.ListOfMapsToListOfKeyValuesDelimitedByBlankLinesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testOneMap(org.jclouds.elasticstack.functions.ListOfMapsToListOfKeyValuesDelimitedByBlankLinesTest)
+[pool-1-thread-1] Test testOneMap(org.jclouds.elasticstack.functions.ListOfMapsToListOfKeyValuesDelimitedByBlankLinesTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testTwoMaps(org.jclouds.elasticstack.functions.ListOfMapsToListOfKeyValuesDelimitedByBlankLinesTest)
+[pool-1-thread-1] Test testTwoMaps(org.jclouds.elasticstack.functions.ListOfMapsToListOfKeyValuesDelimitedByBlankLinesTest) succeeded: 0ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testValueEncodesNewlines(org.jclouds.elasticstack.functions.ListOfMapsToListOfKeyValuesDelimitedByBlankLinesTest)
+[pool-1-thread-1] Test testValueEncodesNewlines(org.jclouds.elasticstack.functions.ListOfMapsToListOfKeyValuesDelimitedByBlankLinesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testBasics(org.jclouds.elasticstack.functions.MapToDriveInfoTest)
+[pool-1-thread-1] Test testBasics(org.jclouds.elasticstack.functions.MapToDriveInfoTest) succeeded: 0ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testComplete(org.jclouds.elasticstack.functions.MapToDriveInfoTest)
+[pool-1-thread-2] Test testOne(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToDriveInfoSetTest) succeeded: 53ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testEmptyMapReturnsNull(org.jclouds.elasticstack.functions.MapToDriveInfoTest)
+[pool-1-thread-2] Test testEmptyMapReturnsNull(org.jclouds.elasticstack.functions.MapToDriveInfoTest) succeeded: 0ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testBasics(org.jclouds.elasticstack.functions.MapToServerInfoTest)
+[pool-1-thread-2] Test testBasics(org.jclouds.elasticstack.functions.MapToServerInfoTest) succeeded: 1ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testComplete(org.jclouds.elasticstack.functions.MapToServerInfoTest)
+[pool-1-thread-2] Test testComplete(org.jclouds.elasticstack.functions.MapToServerInfoTest) succeeded: 4ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testEmptyMapReturnsNull(org.jclouds.elasticstack.functions.MapToServerInfoTest)
+[pool-1-thread-2] Test testEmptyMapReturnsNull(org.jclouds.elasticstack.functions.MapToServerInfoTest) succeeded: 0ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testNew(org.jclouds.elasticstack.functions.MapToServerInfoTest)
+[pool-1-thread-2] Test testNew(org.jclouds.elasticstack.functions.MapToServerInfoTest) succeeded: 2ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testNew2(org.jclouds.elasticstack.functions.MapToServerInfoTest)
+[pool-1-thread-5] Test testNew(org.jclouds.elasticstack.functions.KeyValuesDelimitedByBlankLinesToServerInfoTest) succeeded: 89ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testOneMap(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToListOfMapsTest) succeeded: 50ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testBasics(org.jclouds.elasticstack.functions.ServerToMapTest)
+[pool-1-thread-3] Test testBasics(org.jclouds.elasticstack.functions.ServerToMapTest) succeeded: 2ms
+Starting test testBasicsV2(org.jclouds.elasticstack.functions.ServerToMapTest)
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+[pool-1-thread-5] Test testBasicsV2(org.jclouds.elasticstack.functions.ServerToMapTest) succeeded: 0ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testNew2(org.jclouds.elasticstack.functions.MapToServerInfoTest) succeeded: 11ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testWeDontSetMac(org.jclouds.elasticstack.functions.ServerToMapTest)
+Starting test test(org.jclouds.elasticstack.functions.SplitNewlinesTest)
+[pool-1-thread-3] Test testWeDontSetMac(org.jclouds.elasticstack.functions.ServerToMapTest) succeeded: 0ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testComplete(org.jclouds.elasticstack.functions.MapToDriveInfoTest) succeeded: 47ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testOne(org.jclouds.elasticstack.functions.ListOfKeyValuesDelimitedByBlankLinesToServerInfoSetTest) succeeded: 58ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+[pool-1-thread-5] Test test(org.jclouds.elasticstack.functions.SplitNewlinesTest) succeeded: 35ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.elasticstack.ElasticStackApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.elasticstack.ElasticStackApiMetadataTest)
+Starting test testWithId(org.jclouds.elasticstack.ElasticStackApiMetadataTest)
+[pool-2-thread-1] Test testAllContains(org.jclouds.elasticstack.ElasticStackApiMetadataTest) succeeded: 8ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testWithId(org.jclouds.elasticstack.ElasticStackApiMetadataTest) succeeded: 8ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testTransformableToContains(org.jclouds.elasticstack.ElasticStackApiMetadataTest) succeeded: 9ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testCreateServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+Starting test testCreateDrive(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+Starting test testDestroyServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+Starting test testDestroyDrive(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+Starting test testCreateAndStartServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-5] Test testDestroyServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 42ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testGetDriveInfo(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-3] Test testCreateServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 47ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testGetServerInfo(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-3] Test testGetServerInfo(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 2ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testImageDrive(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-3] Test testImageDrive(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 3ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testImageDriveWithConversion(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-4] Test testDestroyDrive(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 55ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testListDriveInfo(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-3] Test testImageDriveWithConversion(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 3ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testListDrives(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-4] Test testListDriveInfo(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testListServerInfo(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-2] Test testCreateDrive(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 62ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testListServers(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-5] Test testGetDriveInfo(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 21ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testReadDrive(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-4] Test testListServerInfo(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testResetServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-1] Test testCreateAndStartServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 69ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testSetDriveData(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-4] Test testResetServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testSetServerConfiguration(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-4] Test testSetServerConfiguration(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testShutdownServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-1] Test testSetDriveData(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 9ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+[pool-3-thread-4] Test testShutdownServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 19ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+Starting test testStartServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-2] Test testListServers(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 41ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+Starting test testWriteDrive(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-2] Test testWriteDrive(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+Starting test testWriteDriveOffset(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+Starting test testStopServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest)
+[pool-3-thread-5] Test testReadDrive(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 58ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+[pool-3-thread-3] Test testListDrives(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 66ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+[pool-3-thread-4] Test testStopServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 14ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+[pool-3-thread-1] Test testStartServer(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 28ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+[pool-3-thread-2] Test testWriteDriveOffset(org.jclouds.elasticstack.ElasticStackAsyncClientTest) succeeded: 27ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.611 sec
+
+Results :
+
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ elasticstack ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ elasticstack ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/elasticstack/target/elasticstack-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ elasticstack ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/elasticstack/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@4cbfea1d
+Starting test setServiceDefaults(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 23ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCompareSizes(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+Starting test testCreateDrive(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testCompareSizes(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 13475ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 1957ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testGetAssignableLocations(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testImageById(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testImageById(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 1037ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testImagesCache(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testListImages(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testListSizes(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testOptionToNotBlock(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testOptionToNotBlock(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testCreateAndRunAService(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testCreateDrive(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 14305ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testGetDrive(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testGetDrive(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 2674ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testGetServer(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testGetServer(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 1798ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testListDriveInfo(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testListDriveInfo(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 1032ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testListDrives(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testListDrives(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 887ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testListServers(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testListServers(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 895ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testWeCanReadAndWriteToDrive(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testWeCanReadAndWriteToDrive(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 38972ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testListServerInfo(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testListServerInfo(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 957ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testSetDriveData(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testSetDriveData(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 7600ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testWeCopyADriveContentsViaGzip(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testWeCopyADriveContentsViaGzip(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 39241ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testCreateAndStartServer(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testCreateAndRunAService(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 19, failed: 1, skipped: 0.
+Starting test testCorrectAuthException(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 1123ms
+Test suite progress: tests succeeded: 20, failed: 1, skipped: 0.
+Starting test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+{"status":"ACTIVE","started":"Jan 16, 1970 10:34:08 AM","user":"2f6244eb-50bc-4403-847e-f03cc3706a1f","metrics":{"txPackets":0,"tx":0,"rxPackets":0,"rx":0,"driveMetrics":{"ide:0:0":{"readBytes":0,"readRequests":0,"writeBytes":0,"writeRequests":0}}},"cpu":1000,"smp":1,"mem":512,"persistent":true,"devices":{"ide:0:0":{"bus":0,"unit":0,"driveUuid":"b2952c38-a272-4a08-948c-897d0928a46d","mediaType":"DISK"}},"bootDeviceIds":["ide:0:0"],"nics":[{"dhcp":"5.44.25.67","model":"E1000","mac":"02:00:05:2c:19:43","block":["tcp/43594","tcp/5902","udp/5060","tcp/5900","tcp/5901","tcp/21","tcp/22","tcp/23","tcp/25","tcp/110","tcp/143","tcp/43595"]}],"vnc":{"ip":"5.44.25.67","password":"Il0veVNC","tls":false},"uuid":"f7301767-6a9d-4227-b8d2-13389ee0c1ff","name":"adriancole.test","tags":[],"userMetadata":{}}
+[TestNG] Test testCreateAndStartServer(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 62941ms
+Test suite progress: tests succeeded: 21, failed: 1, skipped: 0.
+Starting test testConnectivity(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testConnectivity(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 36409ms
+Test suite progress: tests succeeded: 22, failed: 1, skipped: 0.
+Starting test testLifeCycle(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testLifeCycle(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 19384ms
+Test suite progress: tests succeeded: 23, failed: 1, skipped: 0.
+Starting test testSetServerConfiguration(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testSetServerConfiguration(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 6618ms
+Test suite progress: tests succeeded: 24, failed: 1, skipped: 0.
+Starting test testDestroyServer(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testDestroyServer(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 1897ms
+Test suite progress: tests succeeded: 25, failed: 1, skipped: 0.
+Starting test testDestroyDrive(org.jclouds.elasticstack.ElasticStackClientLiveTest)
+[TestNG] Test testDestroyDrive(org.jclouds.elasticstack.ElasticStackClientLiveTest) succeeded: 4451ms
+Test suite progress: tests succeeded: 26, failed: 1, skipped: 0.
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 26, failed: 2, skipped: 0.
+Starting test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 190220ms
+Test suite progress: tests succeeded: 27, failed: 2, skipped: 0.
+Starting test testTemplateMatch(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testTemplateMatch(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) succeeded: 4ms
+Test suite progress: tests succeeded: 28, failed: 2, skipped: 0.
+Starting test testCreateTwoNodesWithRunScript(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)
+[TestNG] Test testCreateTwoNodesWithRunScript(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 28, failed: 3, skipped: 0.
+[TestNG] Test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 28, failed: 3, skipped: 1.
+[TestNG] Test testCredentialsCache(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 28, failed: 3, skipped: 2.
+[TestNG] Test testGet(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 28, failed: 3, skipped: 3.
+[TestNG] Test testReboot(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 28, failed: 3, skipped: 4.
+[TestNG] Test testSuspendResume(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 28, failed: 3, skipped: 5.
+[TestNG] Test testGetNodesWithDetails(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 28, failed: 3, skipped: 6.
+[TestNG] Test testListNodes(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 28, failed: 3, skipped: 7.
+[TestNG] Test testDestroyNodes(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 28, failed: 3, skipped: 8.
+Tests run: 39, Failures: 3, Errors: 0, Skipped: 8, Time elapsed: 631.645 sec <<< FAILURE!
+testCreateAndRunAService(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)  Time elapsed: 20.354 sec  <<< FAILURE!
+java.lang.IllegalStateException: error running [sudo /tmp/init-configure-jetty start] as toor@5.44.25.67; returnVal !=0: {output=bash: sudo: command not found
+, error=, exitStatus=127}
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:176)
+	at org.jclouds.compute.callables.SudoAwareInitManager.runCommand(SudoAwareInitManager.java:112)
+	at org.jclouds.compute.callables.SudoAwareInitManager.runAction(SudoAwareInitManager.java:92)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSsh.doCall(RunScriptOnNodeAsInitScriptUsingSsh.java:137)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.future(RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.java:70)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.doCall(RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.java:62)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSsh.call(RunScriptOnNodeAsInitScriptUsingSsh.java:79)
+	at org.jclouds.compute.internal.BaseComputeService.runScriptOnNode(BaseComputeService.java:602)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:669)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:642)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)  Time elapsed: 34.092 sec  <<< FAILURE!
+java.lang.AssertionError: localhost
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest.checkResponseEqualsHostname(ElasticStackComputeServiceLiveTest.java:51)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:231)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testCreateTwoNodesWithRunScript(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest)  Time elapsed: 140.702 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 2 nodes group(elasticstack-) location(elasticstack) image(38df0986-4d85-4b76-b502-3878ffc80161) size(cpu=5000.000000,ram=512,disk=5.000000) options({loginUser=toor, taskName=bootstrap, scriptPresent=true})
+Execution failures:
+0 error[s]
+Node failures:
+1) IllegalStateException on node 9a43238d-df94-40f4-9ac2-1f9d29250df4:
+java.lang.IllegalStateException: error running [sudo /tmp/init-bootstrap start] as toor@5.44.25.67; returnVal !=0: {output=bash: sudo: command not found
+, error=, exitStatus=127}
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:176)
+	at org.jclouds.compute.callables.SudoAwareInitManager.runCommand(SudoAwareInitManager.java:112)
+	at org.jclouds.compute.callables.SudoAwareInitManager.runAction(SudoAwareInitManager.java:92)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSsh.doCall(RunScriptOnNodeAsInitScriptUsingSsh.java:137)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.future(RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.java:70)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.doCall(RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.java:62)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSsh.call(RunScriptOnNodeAsInitScriptUsingSsh.java:79)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:127)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:148)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:55)
+	at com.google.common.util.concurrent.Futures$1.apply(Futures.java:725)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:864)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+2) IllegalStateException on node c56c6d80-3a3c-408c-ab12-e6b7af66fa25:
+java.lang.IllegalStateException: error running [sudo /tmp/init-bootstrap start] as toor@5.44.25.74; returnVal !=0: {output=bash: sudo: command not found
+, error=, exitStatus=127}
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:176)
+	at org.jclouds.compute.callables.SudoAwareInitManager.runCommand(SudoAwareInitManager.java:112)
+	at org.jclouds.compute.callables.SudoAwareInitManager.runAction(SudoAwareInitManager.java:92)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSsh.doCall(RunScriptOnNodeAsInitScriptUsingSsh.java:137)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.future(RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.java:70)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.doCall(RunScriptOnNodeAsInitScriptUsingSshAndBlockUntilComplete.java:62)
+	at org.jclouds.compute.callables.RunScriptOnNodeAsInitScriptUsingSsh.call(RunScriptOnNodeAsInitScriptUsingSsh.java:79)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.call(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:127)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:148)
+	at org.jclouds.compute.strategy.CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.apply(CustomizeNodeAndAddToGoodMapOrPutExceptionIntoBadMap.java:55)
+	at com.google.common.util.concurrent.Futures$1.apply(Futures.java:725)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:864)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+2 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateTwoNodesWithRunScript(BaseComputeServiceLiveTest.java:341)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+
+Results :
+
+Failed tests:   testCreateAndRunAService(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest): error running [sudo /tmp/init-configure-jetty start] as toor@5.44.25.67; returnVal !=0: {output=bash: sudo: command not found(..)
+  testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest): localhost(..)
+  testCreateTwoNodesWithRunScript(org.jclouds.elasticstack.compute.ElasticStackComputeServiceLiveTest): error running 2 nodes group(elasticstack-) location(elasticstack) image(38df0986-4d85-4b76-b502-3878ffc80161) size(cpu=5000.000000,ram=512,disk=5.000000) options({loginUser=toor, taskName=bootstrap, scriptPresent=true})(..)
+
+Tests run: 39, Failures: 3, Errors: 0, Skipped: 8
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10:58.365s
+[INFO] Finished at: Sat Mar 09 09:15:45 PST 2013
+[INFO] Final Memory: 19M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (integration) on project elasticstack: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/elasticstack/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

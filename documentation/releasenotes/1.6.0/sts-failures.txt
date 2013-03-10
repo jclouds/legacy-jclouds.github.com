@@ -1,0 +1,65 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 3.324 sec <<< FAILURE!
+testCreateFederatedUser(org.jclouds.sts.STSApiLiveTest)  Time elapsed: 1.26 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Error parsing data at 19
+	at org.jclouds.date.internal.SimpleDateFormatDateService.iso8601DateParse(SimpleDateFormatDateService.java:151)
+	at org.jclouds.aws.xml.SessionCredentialsHandler.endElement(SessionCredentialsHandler.java:64)
+	at org.jclouds.sts.xml.UserAndSessionCredentialsHandler.endElement(UserAndSessionCredentialsHandler.java:80)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:601)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.jclouds.http.functions.ParseSax.doParse(ParseSax.java:141)
+	at org.jclouds.http.functions.ParseSax.parse(ParseSax.java:130)
+	at org.jclouds.http.functions.ParseSax.apply(ParseSax.java:86)
+	at org.jclouds.http.functions.ParseSax.apply(ParseSax.java:54)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy48.createFederatedUser(Unknown Source)
+	at org.jclouds.sts.STSApiLiveTest.testCreateFederatedUser(STSApiLiveTest.java:56)
+Caused by: java.text.ParseException: Unparseable date: "2013-03-09T17:47:47+0000"
+	at java.text.DateFormat.parse(DateFormat.java:337)
+	at org.jclouds.date.internal.SimpleDateFormatDateService.iso8601DateParse(SimpleDateFormatDateService.java:149)
+	... 44 more
+
+testCreateTemporaryCredentials(org.jclouds.sts.STSApiLiveTest)  Time elapsed: 0.433 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Error parsing data at 19
+	at org.jclouds.date.internal.SimpleDateFormatDateService.iso8601DateParse(SimpleDateFormatDateService.java:151)
+	at org.jclouds.aws.xml.SessionCredentialsHandler.endElement(SessionCredentialsHandler.java:64)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:601)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.jclouds.http.functions.ParseSax.doParse(ParseSax.java:141)
+	at org.jclouds.http.functions.ParseSax.parse(ParseSax.java:130)
+	at org.jclouds.http.functions.ParseSax.apply(ParseSax.java:86)
+	at org.jclouds.http.functions.ParseSax.apply(ParseSax.java:54)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy48.createTemporaryCredentials(Unknown Source)
+	at org.jclouds.sts.STSApiLiveTest.testCreateTemporaryCredentials(STSApiLiveTest.java:42)
+Caused by: java.text.ParseException: Unparseable date: "2013-03-09T17:47:47+0000"
+	at java.text.DateFormat.parse(DateFormat.java:337)
+	at org.jclouds.date.internal.SimpleDateFormatDateService.iso8601DateParse(SimpleDateFormatDateService.java:149)
+	... 43 more
+

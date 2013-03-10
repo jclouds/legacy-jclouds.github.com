@@ -1,0 +1,117 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:aws-cloudwatch:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Amazon Elastic Load Balancer provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ aws-cloudwatch ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ aws-cloudwatch ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ aws-cloudwatch ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ aws-cloudwatch ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ aws-cloudwatch ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ aws-cloudwatch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ aws-cloudwatch ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ aws-cloudwatch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ aws-cloudwatch ---
+[INFO] Compiling 2 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ aws-cloudwatch ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.aws.cloudwatch.AWSCloudWatchProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2897a560
+Starting test testAllContains(org.jclouds.aws.cloudwatch.AWSCloudWatchProviderTest)
+Starting test testOfApiContains(org.jclouds.aws.cloudwatch.AWSCloudWatchProviderTest)
+Starting test testTransformableToContains(org.jclouds.aws.cloudwatch.AWSCloudWatchProviderTest)
+[pool-1-thread-1] Test testAllContains(org.jclouds.aws.cloudwatch.AWSCloudWatchProviderTest) succeeded: 14ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testTransformableToContains(org.jclouds.aws.cloudwatch.AWSCloudWatchProviderTest) succeeded: 17ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testOfApiContains(org.jclouds.aws.cloudwatch.AWSCloudWatchProviderTest) succeeded: 19ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.aws.cloudwatch.AWSCloudWatchProviderTest)
+[pool-1-thread-4] Test testWithId(org.jclouds.aws.cloudwatch.AWSCloudWatchProviderTest) succeeded: 4ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.972 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ aws-cloudwatch ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ aws-cloudwatch ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/target/aws-cloudwatch-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ aws-cloudwatch ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.aws.cloudwatch.features.AWSMetricApiLiveTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@21f3aa07
+Starting test testGetMetricStatistics(org.jclouds.aws.cloudwatch.features.AWSMetricApiLiveTest)
+[TestNG] Test testGetMetricStatistics(org.jclouds.aws.cloudwatch.features.AWSMetricApiLiveTest) succeeded: 99828ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testListMetrics(org.jclouds.aws.cloudwatch.features.AWSMetricApiLiveTest)
+[TestNG] Test testListMetrics(org.jclouds.aws.cloudwatch.features.AWSMetricApiLiveTest) succeeded: 3468ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testPutMetricData(org.jclouds.aws.cloudwatch.features.AWSMetricApiLiveTest)
+[TestNG] Test testPutMetricData(org.jclouds.aws.cloudwatch.features.AWSMetricApiLiveTest) succeeded: 491722ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 596.929 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ aws-cloudwatch ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ aws-cloudwatch ---
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/target/aws-cloudwatch-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-cloudwatch/1.6.0-SNAPSHOT/aws-cloudwatch-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-cloudwatch/1.6.0-SNAPSHOT/aws-cloudwatch-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-cloudwatch/target/aws-cloudwatch-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-cloudwatch/1.6.0-SNAPSHOT/aws-cloudwatch-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ aws-cloudwatch ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10:10.080s
+[INFO] Finished at: Sat Mar 09 08:32:37 PST 2013
+[INFO] Final Memory: 16M/265M
+[INFO] ------------------------------------------------------------------------

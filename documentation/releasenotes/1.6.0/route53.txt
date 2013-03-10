@@ -1,0 +1,231 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:route53:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds route53 api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ route53 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ route53 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ route53 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ route53 ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ route53 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ route53 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/route53/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ route53 ---
+[INFO] Compiling 33 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/route53/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ route53 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/route53/src/test/clojure
+[INFO] Copying 11 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ route53 ---
+[INFO] Compiling 20 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/route53/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ route53 ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/route53/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@6b4da8f4
+Starting test testCreateWithReferenceAndCommentWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest)
+Starting test testDeleteWhenResponseIs404(org.jclouds.route53.features.HostedZoneApiExpectTest)
+Starting test testGetWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest)
+Starting test testCreateWithReferenceWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest)
+[pool-1-thread-4] Test testDeleteWhenResponseIs404(org.jclouds.route53.features.HostedZoneApiExpectTest) succeeded: 1352ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testGetWhenResponseIs404(org.jclouds.route53.features.HostedZoneApiExpectTest)
+[pool-1-thread-3] Test testDeleteWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest) succeeded: 1347ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-5] Test testGetWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest) succeeded: 1350ms
+Starting test testList2PagesWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest)
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testListAtWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest)
+[pool-1-thread-2] Test testCreateWithReferenceWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest) succeeded: 1358ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest)
+[pool-1-thread-1] Test testCreateWithReferenceAndCommentWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest) succeeded: 1568ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs404(org.jclouds.route53.features.HostedZoneApiExpectTest)
+[pool-1-thread-5] Test testListAtWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest) succeeded: 359ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testGetWhenResponseIs404(org.jclouds.route53.features.HostedZoneApiExpectTest) succeeded: 452ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testListWhenResponseIs404(org.jclouds.route53.features.HostedZoneApiExpectTest) succeeded: 330ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testListWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest) succeeded: 539ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testList2PagesWhenResponseIs2xx(org.jclouds.route53.features.HostedZoneApiExpectTest) succeeded: 580ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testApplyWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest)
+Starting test testApplyWhenResponseIs4xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest)
+Starting test testCreateWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest)
+Starting test testList2PagesWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest)
+[pool-2-thread-4] Test testDeleteWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest) succeeded: 325ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testListAtWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest)
+[pool-2-thread-3] Test testCreateWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest) succeeded: 352ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest)
+[pool-2-thread-2] Test testApplyWhenResponseIs4xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest) succeeded: 387ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs404(org.jclouds.route53.features.ResourceRecordSetApiExpectTest)
+[pool-2-thread-1] Test testApplyWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest) succeeded: 415ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testList2PagesWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest) succeeded: 435ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testListWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest) succeeded: 285ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testListWhenResponseIs404(org.jclouds.route53.features.ResourceRecordSetApiExpectTest) succeeded: 274ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testListAtWhenResponseIs2xx(org.jclouds.route53.features.ResourceRecordSetApiExpectTest) succeeded: 327ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test test(org.jclouds.route53.filters.RestAuthenticationTest)
+[pool-3-thread-1] Test test(org.jclouds.route53.filters.RestAuthenticationTest) succeeded: 1ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testDeleteNotFound(org.jclouds.route53.handlers.Route53ErrorHandlerTest)
+[pool-4-thread-1] Test testDeleteNotFound(org.jclouds.route53.handlers.Route53ErrorHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testInvalidChangeBatchException(org.jclouds.route53.handlers.Route53ErrorHandlerTest)
+[pool-4-thread-1] Test testInvalidChangeBatchException(org.jclouds.route53.handlers.Route53ErrorHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test test(org.jclouds.route53.parse.CreateHostedZoneResponseTest)
+[pool-5-thread-1] Test test(org.jclouds.route53.parse.CreateHostedZoneResponseTest) succeeded: 4ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test test(org.jclouds.route53.parse.GetChangeResponseTest)
+[pool-6-thread-1] Test test(org.jclouds.route53.parse.GetChangeResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test test(org.jclouds.route53.parse.GetHostedZoneResponseTest)
+[pool-7-thread-1] Test test(org.jclouds.route53.parse.GetHostedZoneResponseTest) succeeded: 2ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test test(org.jclouds.route53.parse.InvalidChangeBatchResponseTest)
+[pool-8-thread-1] Test test(org.jclouds.route53.parse.InvalidChangeBatchResponseTest) succeeded: 2ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test test(org.jclouds.route53.parse.ListHostedZonesResponseTest)
+[pool-9-thread-1] Test test(org.jclouds.route53.parse.ListHostedZonesResponseTest) succeeded: 2ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test test(org.jclouds.route53.parse.ListResourceRecordSetsResponseTest)
+[pool-10-thread-1] Test test(org.jclouds.route53.parse.ListResourceRecordSetsResponseTest) succeeded: 135ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testNameEqualsWhenEqual(org.jclouds.route53.predicates.HostedZonePredicatesTest)
+[pool-11-thread-1] Test testNameEqualsWhenEqual(org.jclouds.route53.predicates.HostedZonePredicatesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testNameEqualsWhenNotEqual(org.jclouds.route53.predicates.HostedZonePredicatesTest)
+[pool-11-thread-2] Test testNameEqualsWhenNotEqual(org.jclouds.route53.predicates.HostedZonePredicatesTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testTypeEqualsWhenEqual(org.jclouds.route53.predicates.ResourceRecordSetPredicatesTest)
+[pool-12-thread-1] Test testTypeEqualsWhenEqual(org.jclouds.route53.predicates.ResourceRecordSetPredicatesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testTypeEqualsWhenNotEqual(org.jclouds.route53.predicates.ResourceRecordSetPredicatesTest)
+[pool-12-thread-2] Test testTypeEqualsWhenNotEqual(org.jclouds.route53.predicates.ResourceRecordSetPredicatesTest) succeeded: 0ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testGetChangeNullWhenResponseIs404(org.jclouds.route53.Route53ApiExpectTest)
+Starting test testGetChangeWhenResponseIs2xx(org.jclouds.route53.Route53ApiExpectTest)
+[pool-13-thread-1] Test testGetChangeNullWhenResponseIs404(org.jclouds.route53.Route53ApiExpectTest) succeeded: 115ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+[pool-13-thread-2] Test testGetChangeWhenResponseIs2xx(org.jclouds.route53.Route53ApiExpectTest) succeeded: 111ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.route53.Route53ApiMetadataTest)
+[pool-14-thread-1] Test testAllContains(org.jclouds.route53.Route53ApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.route53.Route53ApiMetadataTest)
+[pool-14-thread-2] Test testTransformableToContains(org.jclouds.route53.Route53ApiMetadataTest) succeeded: 0ms
+Starting test testWithId(org.jclouds.route53.Route53ApiMetadataTest)
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+[pool-14-thread-3] Test testWithId(org.jclouds.route53.Route53ApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testContextAssignableFromRestContext(org.jclouds.route53.Route53ApiMetadataTest)
+[pool-14-thread-4] Test testContextAssignableFromRestContext(org.jclouds.route53.Route53ApiMetadataTest) succeeded: 2ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.934 sec
+
+Results :
+
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ route53 ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ route53 ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/route53/target/route53-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ route53 ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/route53/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@7bea5671
+Starting test testCreateAndDeleteHostedZone(org.jclouds.route53.features.HostedZoneApiLiveTest)
+Starting test testGetChangeReturnsNullOnNotFound(org.jclouds.route53.Route53ApiLiveTest)
+Starting test testCreateAndDeleteBulkRecords(org.jclouds.route53.features.ResourceRecordSetApiLiveTest)
+[TestNG] Test testGetChangeReturnsNullOnNotFound(org.jclouds.route53.Route53ApiLiveTest) succeeded: 1189ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[TestNG] Test testCreateAndDeleteHostedZone(org.jclouds.route53.features.HostedZoneApiLiveTest) succeeded: 65616ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testDeleteHostedZoneWhenNotFound(org.jclouds.route53.features.HostedZoneApiLiveTest)
+[TestNG] Test testDeleteHostedZoneWhenNotFound(org.jclouds.route53.features.HostedZoneApiLiveTest) succeeded: 398ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testGetHostedZoneWhenNotFound(org.jclouds.route53.features.HostedZoneApiLiveTest)
+[TestNG] Test testGetHostedZoneWhenNotFound(org.jclouds.route53.features.HostedZoneApiLiveTest) succeeded: 391ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testListHostedZones(org.jclouds.route53.features.HostedZoneApiLiveTest)
+[TestNG] Test testListHostedZones(org.jclouds.route53.features.HostedZoneApiLiveTest) succeeded: 1214ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[TestNG] Test testCreateAndDeleteBulkRecords(org.jclouds.route53.features.ResourceRecordSetApiLiveTest) succeeded: 138709ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testDeleteRRSNotFound(org.jclouds.route53.features.ResourceRecordSetApiLiveTest)
+[TestNG] Test testDeleteRRSNotFound(org.jclouds.route53.features.ResourceRecordSetApiLiveTest) succeeded: 812ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testListRRSs(org.jclouds.route53.features.ResourceRecordSetApiLiveTest)
+[TestNG] Test testListRRSs(org.jclouds.route53.features.ResourceRecordSetApiLiveTest) succeeded: 1196ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 142.566 sec
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ route53 ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ route53 ---
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/route53/target/route53-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/api/route53/1.6.0-SNAPSHOT/route53-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/route53/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/api/route53/1.6.0-SNAPSHOT/route53-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/route53/target/route53-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/api/route53/1.6.0-SNAPSHOT/route53-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ route53 ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2:42.145s
+[INFO] Finished at: Sat Mar 09 09:26:46 PST 2013
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
