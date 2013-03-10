@@ -1,0 +1,391 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:ultradns-ws:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud ultradns-ws provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ ultradns-ws ---
+[INFO] Deleting /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ ultradns-ws ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ ultradns-ws ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ ultradns-ws ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ ultradns-ws ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ultradns-ws ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ ultradns-ws ---
+[INFO] Compiling 41 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ultradns-ws ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/src/test/clojure
+[INFO] Copying 46 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ ultradns-ws ---
+[INFO] Compiling 29 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ ultradns-ws ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@348bdcd2
+Starting test testA(org.jclouds.ultradns.ws.binders.ZoneAndResourceRecordToXMLTest)
+Starting test testMX(org.jclouds.ultradns.ws.binders.ZoneAndResourceRecordToXMLTest)
+Starting test testUpdate(org.jclouds.ultradns.ws.binders.ZoneAndResourceRecordToXMLTest)
+[pool-1-thread-1] Test testA(org.jclouds.ultradns.ws.binders.ZoneAndResourceRecordToXMLTest) succeeded: 9ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testUpdate(org.jclouds.ultradns.ws.binders.ZoneAndResourceRecordToXMLTest) succeeded: 3ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testMX(org.jclouds.ultradns.ws.binders.ZoneAndResourceRecordToXMLTest) succeeded: 4ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testCreateWhenResponseError1802(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest)
+Starting test testCreateWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest)
+Starting test testDeleteWhenResponseRRNotFound(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest)
+Starting test testListByNameAndTypeWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest)
+[pool-2-thread-2] Test testCreateWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest) succeeded: 894ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testListByNameWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest)
+[pool-2-thread-4] Test testDeleteWhenResponseRRNotFound(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest) succeeded: 894ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testListWhenResponseError1801(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest)
+[pool-2-thread-1] Test testCreateWhenResponseError1802(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest) succeeded: 928ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest)
+[pool-2-thread-3] Test testDeleteWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest) succeeded: 904ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testUpdateWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest)
+[pool-2-thread-5] Test testListByNameAndTypeWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest) succeeded: 1216ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testListWhenResponseError1801(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest) succeeded: 364ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testListByNameWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest) succeeded: 383ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testUpdateWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest) succeeded: 378ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testListWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ResourceRecordApiExpectTest) succeeded: 421ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testCreateAAAAWhenResponseIs2xx(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest)
+Starting test testCreateAWhenResponseIs2xx(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest)
+Starting test testCreateWhenResponseError2912(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest)
+Starting test testDeleteWhenResponseRRNotFound(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest)
+[pool-3-thread-1] Test testCreateAAAAWhenResponseIs2xx(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest) succeeded: 349ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+[pool-3-thread-5] Test testDeleteWhenResponseRRNotFound(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest) succeeded: 246ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest)
+[pool-3-thread-2] Test testCreateAWhenResponseIs2xx(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest) succeeded: 349ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testListRecordsWhenResponseIs2xx(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest)
+[pool-3-thread-4] Test testDeleteWhenResponseIs2xx(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest) succeeded: 381ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+[pool-3-thread-3] Test testCreateWhenResponseError2912(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest) succeeded: 389ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+[pool-3-thread-1] Test testListRecordsWhenResponseIs2xx(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest) succeeded: 322ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+[pool-3-thread-5] Test testListWhenResponseIs2xx(org.jclouds.ultradns.ws.features.RoundRobinPoolApiExpectTest) succeeded: 353ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testClearWhenResponseError2401(org.jclouds.ultradns.ws.features.TaskApiExpectTest)
+Starting test testClearWhenResponseIs2xx(org.jclouds.ultradns.ws.features.TaskApiExpectTest)
+Starting test testGetWhenResponseError2401(org.jclouds.ultradns.ws.features.TaskApiExpectTest)
+Starting test testGetWhenResponseIs2xx(org.jclouds.ultradns.ws.features.TaskApiExpectTest)
+Starting test testListWhenResponseIs2xx(org.jclouds.ultradns.ws.features.TaskApiExpectTest)
+[pool-4-thread-2] Test testClearWhenResponseIs2xx(org.jclouds.ultradns.ws.features.TaskApiExpectTest) succeeded: 373ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testRunTestWhenResponseIs2xx(org.jclouds.ultradns.ws.features.TaskApiExpectTest)
+[pool-4-thread-3] Test testGetWhenResponseError2401(org.jclouds.ultradns.ws.features.TaskApiExpectTest) succeeded: 391ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+[pool-4-thread-1] Test testClearWhenResponseError2401(org.jclouds.ultradns.ws.features.TaskApiExpectTest) succeeded: 431ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+[pool-4-thread-4] Test testGetWhenResponseIs2xx(org.jclouds.ultradns.ws.features.TaskApiExpectTest) succeeded: 448ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+[pool-4-thread-5] Test testListWhenResponseIs2xx(org.jclouds.ultradns.ws.features.TaskApiExpectTest) succeeded: 475ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testRunTestWhenResponseIs2xx(org.jclouds.ultradns.ws.features.TaskApiExpectTest) succeeded: 242ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testCreateWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ZoneApiExpectTest)
+Starting test testCreateWhenResponseError1802(org.jclouds.ultradns.ws.features.ZoneApiExpectTest)
+Starting test testDeleteWhenResponseError1801(org.jclouds.ultradns.ws.features.ZoneApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ZoneApiExpectTest)
+Starting test testGetWhenResponseError2401(org.jclouds.ultradns.ws.features.ZoneApiExpectTest)
+[pool-5-thread-3] Test testDeleteWhenResponseError1801(org.jclouds.ultradns.ws.features.ZoneApiExpectTest) succeeded: 340ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testGetWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ZoneApiExpectTest)
+[pool-5-thread-5] Test testGetWhenResponseError2401(org.jclouds.ultradns.ws.features.ZoneApiExpectTest) succeeded: 391ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testListByAccountAndTypeWhenResponseError2401(org.jclouds.ultradns.ws.features.ZoneApiExpectTest)
+[pool-5-thread-4] Test testDeleteWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ZoneApiExpectTest) succeeded: 403ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testListByAccountAndTypeWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ZoneApiExpectTest)
+[pool-5-thread-1] Test testCreateWhenResponseError1802(org.jclouds.ultradns.ws.features.ZoneApiExpectTest) succeeded: 422ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+[pool-5-thread-2] Test testCreateWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ZoneApiExpectTest) succeeded: 425ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testListByAccountWhenResponseError2401(org.jclouds.ultradns.ws.features.ZoneApiExpectTest)
+Starting test testListByAccountWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ZoneApiExpectTest)
+[pool-5-thread-4] Test testListByAccountAndTypeWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ZoneApiExpectTest) succeeded: 492ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+[pool-5-thread-2] Test testListByAccountWhenResponseError2401(org.jclouds.ultradns.ws.features.ZoneApiExpectTest) succeeded: 534ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+[pool-5-thread-3] Test testGetWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ZoneApiExpectTest) succeeded: 611ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+[pool-5-thread-1] Test testListByAccountWhenResponseIs2xx(org.jclouds.ultradns.ws.features.ZoneApiExpectTest) succeeded: 532ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+[pool-5-thread-5] Test testListByAccountAndTypeWhenResponseError2401(org.jclouds.ultradns.ws.features.ZoneApiExpectTest) succeeded: 573ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testCode0SetsResourceNotFoundException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest)
+Starting test testCode1802SetsResourceAlreadyExistsException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest)
+Starting test testCode1801SetsResourceNotFoundException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest)
+[pool-6-thread-1] Test testCode0SetsResourceNotFoundException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest) succeeded: 6ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+[pool-6-thread-2] Test testCode1801SetsResourceNotFoundException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest) succeeded: 6ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+[pool-6-thread-3] Test testCode1802SetsResourceAlreadyExistsException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest) succeeded: 8ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testCode2103SetsResourceNotFoundException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest)
+Starting test testCode2401SetsResourceNotFoundException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest)
+Starting test testCode2911SetsResourceNotFoundException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest)
+[pool-6-thread-1] Test testCode2401SetsResourceNotFoundException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+[pool-6-thread-2] Test testCode2911SetsResourceNotFoundException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testCode2912SetsResourceAlreadyExistsException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest)
+[pool-6-thread-4] Test testCode2103SetsResourceNotFoundException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest) succeeded: 5ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+[pool-6-thread-1] Test testCode2912SetsResourceAlreadyExistsException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest) succeeded: 4ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test testCode2111SetsResourceAlreadyExistsException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest)
+[pool-6-thread-5] Test testCode2111SetsResourceAlreadyExistsException(org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandlerTest) succeeded: 3ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.GetAccountsListOfUserResponseTest)
+[pool-7-thread-1] Test test(org.jclouds.ultradns.ws.parse.GetAccountsListOfUserResponseTest) succeeded: 7ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.GetAllTasksResponseTest)
+[pool-8-thread-1] Test test(org.jclouds.ultradns.ws.parse.GetAllTasksResponseTest) succeeded: 2ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.GetGeneralPropertiesForZoneResponseTest)
+[pool-9-thread-1] Test test(org.jclouds.ultradns.ws.parse.GetGeneralPropertiesForZoneResponseTest) succeeded: 4ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.GetLoadBalancingPoolsByZoneResponseTest)
+[pool-10-thread-1] Test test(org.jclouds.ultradns.ws.parse.GetLoadBalancingPoolsByZoneResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.GetResourceRecordsOfDNameByTypeResponseTest)
+[pool-11-thread-1] Test test(org.jclouds.ultradns.ws.parse.GetResourceRecordsOfDNameByTypeResponseTest) succeeded: 4ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.GetResourceRecordsOfResourceRecordResponseTest)
+[pool-12-thread-1] Test test(org.jclouds.ultradns.ws.parse.GetResourceRecordsOfResourceRecordResponseTest) succeeded: 11ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.GetStatusForTaskResponseResponseTest)
+[pool-13-thread-1] Test test(org.jclouds.ultradns.ws.parse.GetStatusForTaskResponseResponseTest) succeeded: 2ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.GetZonesOfAccountResponseTest)
+[pool-14-thread-1] Test test(org.jclouds.ultradns.ws.parse.GetZonesOfAccountResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.RunTestResponseTest)
+[pool-15-thread-1] Test test(org.jclouds.ultradns.ws.parse.RunTestResponseTest) succeeded: 4ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.TaskNotFoundTest)
+[pool-16-thread-1] Test test(org.jclouds.ultradns.ws.parse.TaskNotFoundTest) succeeded: 2ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ultradns.ws.parse.UltraWSExceptionTest)
+[pool-17-thread-1] Test test(org.jclouds.ultradns.ws.parse.UltraWSExceptionTest) succeeded: 3ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testTypeEqualsWhenEqual(org.jclouds.ultradns.ws.predicates.ZonePredicatesTest)
+Starting test testTypeEqualsWhenNotEqual(org.jclouds.ultradns.ws.predicates.ZonePredicatesTest)
+[pool-18-thread-2] Test testTypeEqualsWhenNotEqual(org.jclouds.ultradns.ws.predicates.ZonePredicatesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+[pool-18-thread-1] Test testTypeEqualsWhenEqual(org.jclouds.ultradns.ws.predicates.ZonePredicatesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testNiceExceptionOnNotFound(org.jclouds.ultradns.ws.ResourceTypeToValueTest)
+[pool-19-thread-1] Test testNiceExceptionOnNotFound(org.jclouds.ultradns.ws.ResourceTypeToValueTest) succeeded: 1ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testNiceExceptionOnNull(org.jclouds.ultradns.ws.ResourceTypeToValueTest)
+[pool-19-thread-2] Test testNiceExceptionOnNull(org.jclouds.ultradns.ws.ResourceTypeToValueTest) succeeded: 0ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testNormalCase(org.jclouds.ultradns.ws.ResourceTypeToValueTest)
+[pool-19-thread-3] Test testNormalCase(org.jclouds.ultradns.ws.ResourceTypeToValueTest) succeeded: 0ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testGetCurrentAccountWhenResponseIs2xx(org.jclouds.ultradns.ws.UltraDNSWSApiExpectTest)
+[pool-20-thread-1] Test testGetCurrentAccountWhenResponseIs2xx(org.jclouds.ultradns.ws.UltraDNSWSApiExpectTest) succeeded: 91ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.ultradns.ws.UltraDNSWSProviderMetadataTest)
+[pool-21-thread-1] Test testAllContains(org.jclouds.ultradns.ws.UltraDNSWSProviderMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testOfApiContains(org.jclouds.ultradns.ws.UltraDNSWSProviderMetadataTest)
+Starting test testTransformableToContains(org.jclouds.ultradns.ws.UltraDNSWSProviderMetadataTest)
+[pool-21-thread-3] Test testTransformableToContains(org.jclouds.ultradns.ws.UltraDNSWSProviderMetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+[pool-21-thread-2] Test testOfApiContains(org.jclouds.ultradns.ws.UltraDNSWSProviderMetadataTest) succeeded: 4ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.ultradns.ws.UltraDNSWSProviderMetadataTest)
+[pool-21-thread-4] Test testWithId(org.jclouds.ultradns.ws.UltraDNSWSProviderMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.131 sec
+
+Results :
+
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ ultradns-ws ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ ultradns-ws ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/target/ultradns-ws-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ ultradns-ws ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@4a0c68c3
+Starting test testCreateRecord(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest)
+[TestNG] Test testCreateRecord(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest) succeeded: 1196ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testListResourceRecords(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest)
+[TestNG] Test testListResourceRecords(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest) succeeded: 2994ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testListResourceRecordsWhenZoneIdNotFound(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest)
+[TestNG] Test testListResourceRecordsWhenZoneIdNotFound(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest) succeeded: 331ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testUpdateWhenNotFound(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest)
+[TestNG] Test testUpdateWhenNotFound(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest) succeeded: 319ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testDeleteWhenNotFound(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest)
+[TestNG] Test testDeleteWhenNotFound(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest) succeeded: 284ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testListResourceRecordsByName(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest)
+[TestNG] Test testListResourceRecordsByName(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest) succeeded: 313ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testListResourceRecordsByNameAndType(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest)
+[TestNG] Test testListResourceRecordsByNameAndType(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest) succeeded: 331ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testUpdateRecord(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest)
+[TestNG] Test testUpdateRecord(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest) succeeded: 1030ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testDeleteRecord(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest)
+[TestNG] Test testDeleteRecord(org.jclouds.ultradns.ws.features.ResourceRecordApiLiveTest) succeeded: 697ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testCreateAAAAPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test testCreateAAAAPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 1265ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testCreateAPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test testCreateAPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 1157ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testListRRPoolRecords(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test testListRRPoolRecords(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 2230ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testListRRPoolsWhenZoneIdNotFound(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test testListRRPoolsWhenZoneIdNotFound(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 289ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testListRRPools(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test testListRRPools(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 1372ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testDeleteWhenNotFound(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test testDeleteWhenNotFound(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 301ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test addAAAARecordToPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test addAAAARecordToPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 1887ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test addARecordToPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test addARecordToPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 1855ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testDeleteAAAAPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test testDeleteAAAAPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 989ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testUpdateRecord(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test testUpdateRecord(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 853ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testDeleteRecord(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test testDeleteRecord(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 1129ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testDeleteAPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest)
+[TestNG] Test testDeleteAPool(org.jclouds.ultradns.ws.features.RoundRobinPoolApiLiveTest) succeeded: 943ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testClearTask(org.jclouds.ultradns.ws.features.TaskApiLiveTest)
+[TestNG] Test testClearTask(org.jclouds.ultradns.ws.features.TaskApiLiveTest) succeeded: 2459ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testClearTaskWhenNotFound(org.jclouds.ultradns.ws.features.TaskApiLiveTest)
+[TestNG] Test testClearTaskWhenNotFound(org.jclouds.ultradns.ws.features.TaskApiLiveTest) succeeded: 230ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testGetTask(org.jclouds.ultradns.ws.features.TaskApiLiveTest)
+[TestNG] Test testGetTask(org.jclouds.ultradns.ws.features.TaskApiLiveTest) succeeded: 362ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testGetTaskWhenNotFound(org.jclouds.ultradns.ws.features.TaskApiLiveTest)
+[TestNG] Test testGetTaskWhenNotFound(org.jclouds.ultradns.ws.features.TaskApiLiveTest) succeeded: 291ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testListTasks(org.jclouds.ultradns.ws.features.TaskApiLiveTest)
+[TestNG] Test testListTasks(org.jclouds.ultradns.ws.features.TaskApiLiveTest) succeeded: 305ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testCreateAndDeleteZone(org.jclouds.ultradns.ws.features.ZoneApiLiveTest)
+[TestNG] Test testCreateAndDeleteZone(org.jclouds.ultradns.ws.features.ZoneApiLiveTest) succeeded: 3712ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testCreateZoneBadAccountId(org.jclouds.ultradns.ws.features.ZoneApiLiveTest)
+[TestNG] Test testCreateZoneBadAccountId(org.jclouds.ultradns.ws.features.ZoneApiLiveTest) succeeded: 418ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testDeleteZoneWhenNotFound(org.jclouds.ultradns.ws.features.ZoneApiLiveTest)
+[TestNG] Test testDeleteZoneWhenNotFound(org.jclouds.ultradns.ws.features.ZoneApiLiveTest) succeeded: 313ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testGetZone(org.jclouds.ultradns.ws.features.ZoneApiLiveTest)
+[TestNG] Test testGetZone(org.jclouds.ultradns.ws.features.ZoneApiLiveTest) succeeded: 842ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testGetZoneWhenNotFound(org.jclouds.ultradns.ws.features.ZoneApiLiveTest)
+[TestNG] Test testGetZoneWhenNotFound(org.jclouds.ultradns.ws.features.ZoneApiLiveTest) succeeded: 355ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testListZonesByAccount(org.jclouds.ultradns.ws.features.ZoneApiLiveTest)
+[TestNG] Test testListZonesByAccount(org.jclouds.ultradns.ws.features.ZoneApiLiveTest) succeeded: 920ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testListZonesByAccountWhenAccountIdNotFound(org.jclouds.ultradns.ws.features.ZoneApiLiveTest)
+[TestNG] Test testListZonesByAccountWhenAccountIdNotFound(org.jclouds.ultradns.ws.features.ZoneApiLiveTest) succeeded: 350ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testGetCurrentAccount(org.jclouds.ultradns.ws.UltraDNSWSApiLiveTest)
+[TestNG] Test testGetCurrentAccount(org.jclouds.ultradns.ws.UltraDNSWSApiLiveTest) succeeded: 322ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.541 sec
+
+Results :
+
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ ultradns-ws ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ ultradns-ws ---
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/target/ultradns-ws-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/ultradns-ws/1.6.0-SNAPSHOT/ultradns-ws-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/provider/ultradns-ws/1.6.0-SNAPSHOT/ultradns-ws-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/ultradns-ws/target/ultradns-ws-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/ultradns-ws/1.6.0-SNAPSHOT/ultradns-ws-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ ultradns-ws ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1:12.559s
+[INFO] Finished at: Sat Mar 09 20:04:32 PST 2013
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
