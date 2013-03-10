@@ -1,0 +1,196 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:trystack-nova:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds TryStack.org Compute provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ trystack-nova ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ trystack-nova ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ trystack-nova ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ trystack-nova ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ trystack-nova ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ trystack-nova ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/trystack-nova/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ trystack-nova ---
+[INFO] Compiling 3 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/trystack-nova/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ trystack-nova ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/trystack-nova/src/test/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ trystack-nova ---
+[INFO] Compiling 9 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/trystack-nova/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ trystack-nova ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/trystack-nova/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@42704baa
+Starting test testCanGetConfiguredZones(org.jclouds.trystack.nova.TryStackNovaProviderMetadataExpectTest)
+[pool-1-thread-1] Test testCanGetConfiguredZones(org.jclouds.trystack.nova.TryStackNovaProviderMetadataExpectTest) succeeded: 1764ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.trystack.nova.TryStackNovaProviderTest)
+[pool-2-thread-1] Test testAllContains(org.jclouds.trystack.nova.TryStackNovaProviderTest) succeeded: 2ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testOfApiContains(org.jclouds.trystack.nova.TryStackNovaProviderTest)
+[pool-2-thread-2] Test testOfApiContains(org.jclouds.trystack.nova.TryStackNovaProviderTest) succeeded: 7ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.trystack.nova.TryStackNovaProviderTest)
+[pool-2-thread-3] Test testTransformableToContains(org.jclouds.trystack.nova.TryStackNovaProviderTest) succeeded: 4ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.trystack.nova.TryStackNovaProviderTest)
+[pool-2-thread-4] Test testWithId(org.jclouds.trystack.nova.TryStackNovaProviderTest) succeeded: 2ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.231 sec
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ trystack-nova ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ trystack-nova ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/trystack-nova/target/trystack-nova-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ trystack-nova ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/trystack-nova/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@485329c5
+19:46:11,611 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+19:46:11,612 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+19:46:11,612 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/jclouds-compute/1.6.0-SNAPSHOT/jclouds-compute-1.6.0-SNAPSHOT-tests.jar!/logback.xml]
+19:46:11,612 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+19:46:11,613 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/jclouds-compute/1.6.0-SNAPSHOT/jclouds-compute-1.6.0-SNAPSHOT-tests.jar!/logback.xml]
+19:46:11,613 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/adriancole/.m2/repository/org/jclouds/api/openstack-keystone/1.6.0-SNAPSHOT/openstack-keystone-1.6.0-SNAPSHOT-tests.jar!/logback.xml]
+19:46:11,627 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5e4b2b75 - URL [jar:file:/Users/adriancole/.m2/repository/org/jclouds/jclouds-compute/1.6.0-SNAPSHOT/jclouds-compute-1.6.0-SNAPSHOT-tests.jar!/logback.xml] is not of type file
+19:46:11,698 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+19:46:11,725 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+19:46:11,728 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+19:46:11,746 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:46:11,791 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/test-data/jclouds.log]
+19:46:11,797 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+19:46:11,797 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [WIREFILE]
+19:46:11,797 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:46:11,798 |-INFO in ch.qos.logback.core.FileAppender[WIREFILE] - File property is set to [target/test-data/jclouds-wire.log]
+19:46:11,798 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+19:46:11,798 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [COMPUTEFILE]
+19:46:11,798 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:46:11,798 |-INFO in ch.qos.logback.core.FileAppender[COMPUTEFILE] - File property is set to [target/test-data/jclouds-compute.log]
+19:46:11,799 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+19:46:11,799 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [SSHFILE]
+19:46:11,799 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:46:11,799 |-INFO in ch.qos.logback.core.FileAppender[SSHFILE] - File property is set to [target/test-data/jclouds-ssh.log]
+19:46:11,801 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - ROOT level set to WARN
+19:46:11,801 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.jclouds level set to DEBUG
+19:46:11,801 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[org.jclouds]
+19:46:11,802 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.wire level set to DEBUG
+19:46:11,802 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.wire]
+19:46:11,802 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.headers level set to DEBUG
+19:46:11,802 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.headers]
+19:46:11,802 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.compute level set to DEBUG
+19:46:11,802 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [COMPUTEFILE] to Logger[jclouds.compute]
+19:46:11,802 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.ssh level set to DEBUG
+19:46:11,802 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [SSHFILE] to Logger[jclouds.ssh]
+19:46:11,802 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+19:46:11,803 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@19123eb0 - Registering current configuration as safe fallback point
+
+Starting test setServiceDefaults(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCompareSizes(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test testCompareSizes(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 1, skipped: 0.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 2, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test testGetAssignableLocations(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 3, skipped: 0.
+Starting test testImageById(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test testImageById(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 4, skipped: 0.
+Starting test testImagesCache(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 5, skipped: 0.
+Starting test testListImages(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 6, skipped: 0.
+Starting test testListSizes(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 7, skipped: 0.
+Starting test testOptionToNotBlock(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test testOptionToNotBlock(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 2, failed: 7, skipped: 0.
+Starting test testCreateAndRunAService(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test testCreateAndRunAService(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 2, failed: 8, skipped: 0.
+Starting test testCorrectAuthException(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 0.
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 1.
+[TestNG] Test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 2.
+[TestNG] Test testTemplateMatch(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 3.
+[TestNG] Test testCreateTwoNodesWithRunScript(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 4.
+[TestNG] Test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 5.
+[TestNG] Test testCredentialsCache(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 6.
+[TestNG] Test testGet(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 7.
+[TestNG] Test testReboot(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 8.
+[TestNG] Test testSuspendResume(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 9.
+[TestNG] Test testGetNodesWithDetails(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 10.
+[TestNG] Test testListNodes(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 11.
+[TestNG] Test testDestroyNodes(org.jclouds.trystack.nova.compute.TryStackNovaComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 2, failed: 9, skipped: 12.
+Starting test testCompareSizes(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest)
+[TestNG] Test testCompareSizes(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest) failed.
+Test suite progress: tests succeeded: 2, failed: 10, skipped: 12.
+Starting test testDefaultTemplateBuilder(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest)
+[TestNG] Test testDefaultTemplateBuilder(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest) failed.
+Test suite progress: tests succeeded: 2, failed: 11, skipped: 12.
+Starting test testFromTemplate(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest)
+[TestNG] Test testFromTemplate(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest) failed.
+Test suite progress: tests succeeded: 2, failed: 12, skipped: 12.
+Starting test testGetAssignableLocations(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest)
+[TestNG] Test testGetAssignableLocations(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest) failed.
+Test suite progress: tests succeeded: 2, failed: 13, skipped: 12.
+Starting test testTemplateBuilderCanFind(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest) failed.
+Test suite progress: tests succeeded: 2, failed: 14, skipped: 12.
+Starting test testTemplateBuilderCanFind(org.jclouds.trystack.nova.compute.TryStackNovaTemplateBuilderLiveTest)
