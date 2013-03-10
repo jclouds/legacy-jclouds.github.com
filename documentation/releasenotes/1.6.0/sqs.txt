@@ -1,0 +1,318 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:sqs:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud sqs api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ sqs ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ sqs ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ sqs ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ sqs ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ sqs ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sqs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sqs/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ sqs ---
+[INFO] Compiling 51 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sqs/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sqs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sqs/src/test/clojure
+[INFO] Copying 10 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ sqs ---
+[INFO] Compiling 25 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sqs/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ sqs ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sqs/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@33c282a1
+Starting test testChangeMessageVisibilityMapWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+Starting test testChangeMessageVisibilityTableWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+Starting test testChangeMessageVisibilityIterableIntWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+Starting test testChangeMessageVisibilityMapIntWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+Starting test testChangeMessageVisibilityWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-5] Test testChangeMessageVisibilityWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 1625ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testDeleteMessageIterableWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-3] Test testChangeMessageVisibilityMapWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 1641ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testDeleteMessageMapWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-1] Test testChangeMessageVisibilityIterableIntWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 1661ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testDeleteMessageWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-4] Test testChangeMessageVisibilityTableWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 1668ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testReceiveMessageWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-2] Test testChangeMessageVisibilityMapIntWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 1679ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testReceiveMessagesWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-3] Test testDeleteMessageMapWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 395ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testSendMessageIterableWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-4] Test testReceiveMessageWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 417ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testSendMessageMapWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-2] Test testReceiveMessagesWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 410ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testSendMessageWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-1] Test testDeleteMessageWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 447ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testSendMessageWithDelayIterableWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-5] Test testDeleteMessageIterableWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 716ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testSendMessageWithDelayMapWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-4] Test testSendMessageMapWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 407ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testSendMessageWithDelaysMapWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-2] Test testSendMessageWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 418ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testSendMessageWithDelaysTableWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest)
+[pool-1-thread-3] Test testSendMessageIterableWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 456ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testSendMessageWithDelayIterableWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 475ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+[pool-1-thread-5] Test testSendMessageWithDelayMapWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 396ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testSendMessageWithDelaysMapWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 345ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testSendMessageWithDelaysTableWhenResponseIs2xx(org.jclouds.sqs.features.MessageApiExpectTest) succeeded: 332ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testAddPermissionWhenResponseIs2xx(org.jclouds.sqs.features.PermissionApiExpectTest)
+Starting test testRemovePermissionWhenResponseIs2xx(org.jclouds.sqs.features.PermissionApiExpectTest)
+[pool-2-thread-1] Test testAddPermissionWhenResponseIs2xx(org.jclouds.sqs.features.PermissionApiExpectTest) succeeded: 185ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testRemovePermissionWhenResponseIs2xx(org.jclouds.sqs.features.PermissionApiExpectTest) succeeded: 183ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testCreateQueueWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest)
+Starting test testGetQueueAttributeWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest)
+Starting test testGetQueueAttributesSubsetWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest)
+Starting test testGetQueueAttributesWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest)
+Starting test testGetQueueUrlByOwnerWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest)
+[pool-3-thread-1] Test testCreateQueueWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest) succeeded: 586ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testGetQueueUrlByOwnerWhenResponseIs400ReturnsNull(org.jclouds.sqs.features.QueueApiExpectTest)
+[pool-3-thread-3] Test testGetQueueAttributesSubsetWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest) succeeded: 451ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testGetQueueUrlWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest)
+[pool-3-thread-2] Test testGetQueueAttributeWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest) succeeded: 564ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testSetQueueAttributeWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest)
+[pool-3-thread-5] Test testGetQueueUrlByOwnerWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest) succeeded: 506ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+[pool-3-thread-4] Test testGetQueueAttributesWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest) succeeded: 563ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+[pool-3-thread-1] Test testGetQueueUrlByOwnerWhenResponseIs400ReturnsNull(org.jclouds.sqs.features.QueueApiExpectTest) succeeded: 381ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+[pool-3-thread-3] Test testGetQueueUrlWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest) succeeded: 349ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+[pool-3-thread-2] Test testSetQueueAttributeWhenResponseIs2xx(org.jclouds.sqs.features.QueueApiExpectTest) succeeded: 276ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sqs.functions.MapToQueueAttributesTest)
+[pool-4-thread-1] Test test(org.jclouds.sqs.functions.MapToQueueAttributesTest) succeeded: 1ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testQueueDeletedRecentlyRetriesWhen59SleepsAndTries(org.jclouds.sqs.handlers.SQSErrorRetryHandlerTest)
+Starting test testQueueDeletedRecentlyRetriesWhen60DoesntTry(org.jclouds.sqs.handlers.SQSErrorRetryHandlerTest)
+[pool-5-thread-2] Test testQueueDeletedRecentlyRetriesWhen60DoesntTry(org.jclouds.sqs.handlers.SQSErrorRetryHandlerTest) succeeded: 148ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+[pool-5-thread-1] Test testQueueDeletedRecentlyRetriesWhen59SleepsAndTries(org.jclouds.sqs.handlers.SQSErrorRetryHandlerTest) succeeded: 258ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testNullPrefix(org.jclouds.sqs.options.ListQueuesOptionsTest)
+Starting test testAssignability(org.jclouds.sqs.options.ListQueuesOptionsTest)
+[pool-6-thread-2] Test testNullPrefix(org.jclouds.sqs.options.ListQueuesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+[pool-6-thread-1] Test testAssignability(org.jclouds.sqs.options.ListQueuesOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testDelaySecondsStatic(org.jclouds.sqs.options.SendMessageOptionsTest)
+[pool-6-thread-1] Test testDelaySecondsStatic(org.jclouds.sqs.options.SendMessageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testPrefix(org.jclouds.sqs.options.ListQueuesOptionsTest)
+Starting test testPrefixStatic(org.jclouds.sqs.options.ListQueuesOptionsTest)
+[pool-6-thread-4] Test testPrefixStatic(org.jclouds.sqs.options.ListQueuesOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testDelaySeconds(org.jclouds.sqs.options.SendMessageOptionsTest)
+[pool-6-thread-5] Test testDelaySeconds(org.jclouds.sqs.options.SendMessageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+[pool-6-thread-3] Test testPrefix(org.jclouds.sqs.options.ListQueuesOptionsTest) succeeded: 10ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testAttribute(org.jclouds.sqs.options.CreateQueueOptionsTest)
+[pool-7-thread-1] Test testAttribute(org.jclouds.sqs.options.CreateQueueOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testVisibilityTimeout(org.jclouds.sqs.options.CreateQueueOptionsTest)
+Starting test testVisibilityTimeoutStatic(org.jclouds.sqs.options.CreateQueueOptionsTest)
+[pool-7-thread-3] Test testVisibilityTimeout(org.jclouds.sqs.options.CreateQueueOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testAttributeStatic(org.jclouds.sqs.options.CreateQueueOptionsTest)
+[pool-7-thread-4] Test testVisibilityTimeoutStatic(org.jclouds.sqs.options.CreateQueueOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+[pool-7-thread-2] Test testAttributeStatic(org.jclouds.sqs.options.CreateQueueOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testAttribute(org.jclouds.sqs.options.ReceiveMessageOptionsTest)
+[pool-8-thread-1] Test testAttribute(org.jclouds.sqs.options.ReceiveMessageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testAttributeStatic(org.jclouds.sqs.options.ReceiveMessageOptionsTest)
+Starting test testVisibilityTimeoutStatic(org.jclouds.sqs.options.ReceiveMessageOptionsTest)
+Starting test testVisibilityTimeout(org.jclouds.sqs.options.ReceiveMessageOptionsTest)
+[pool-8-thread-3] Test testVisibilityTimeout(org.jclouds.sqs.options.ReceiveMessageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+[pool-8-thread-4] Test testVisibilityTimeoutStatic(org.jclouds.sqs.options.ReceiveMessageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+[pool-8-thread-2] Test testAttributeStatic(org.jclouds.sqs.options.ReceiveMessageOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sqs.parse.ChangeMessageVisibilityBatchResponseTest)
+[pool-9-thread-1] Test test(org.jclouds.sqs.parse.ChangeMessageVisibilityBatchResponseTest) succeeded: 4ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sqs.parse.CreateQueueResponseTest)
+[pool-10-thread-1] Test test(org.jclouds.sqs.parse.CreateQueueResponseTest) succeeded: 1ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sqs.parse.DeleteMessageBatchResponseTest)
+[pool-11-thread-1] Test test(org.jclouds.sqs.parse.DeleteMessageBatchResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sqs.parse.GetQueueAttributesResponseTest)
+[pool-12-thread-1] Test test(org.jclouds.sqs.parse.GetQueueAttributesResponseTest) succeeded: 13ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sqs.parse.ReceiveMessageResponseTest)
+[pool-13-thread-1] Test test(org.jclouds.sqs.parse.ReceiveMessageResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sqs.parse.SendMessageBatchResponseTest)
+[pool-14-thread-1] Test test(org.jclouds.sqs.parse.SendMessageBatchResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sqs.parse.SendMessageResponseTest)
+[pool-15-thread-1] Test test(org.jclouds.sqs.parse.SendMessageResponseTest) succeeded: 1ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.sqs.SQSApiMetadataTest)
+[pool-16-thread-1] Test testAllContains(org.jclouds.sqs.SQSApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.sqs.SQSApiMetadataTest)
+[pool-16-thread-2] Test testTransformableToContains(org.jclouds.sqs.SQSApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.sqs.SQSApiMetadataTest)
+[pool-16-thread-3] Test testWithId(org.jclouds.sqs.SQSApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testContextAssignableFromRestContext(org.jclouds.sqs.SQSApiMetadataTest)
+[pool-16-thread-4] Test testContextAssignableFromRestContext(org.jclouds.sqs.SQSApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testMultiPageResult(org.jclouds.sqs.SQSTest)
+[pool-17-thread-1] Test testMultiPageResult(org.jclouds.sqs.SQSTest) succeeded: 63ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testSinglePageResult(org.jclouds.sqs.SQSTest)
+[pool-17-thread-1] Test testSinglePageResult(org.jclouds.sqs.SQSTest) succeeded: 0ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.909 sec
+
+Results :
+
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ sqs ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ sqs ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sqs/target/sqs-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ sqs ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sqs/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@65b4fad5
+Starting test testCanRecreateQueueGracefully(org.jclouds.sqs.features.QueueApiLiveTest)
+Starting test testSendMessages(org.jclouds.sqs.features.BulkMessageApiLiveTest)
+Starting test testSendMessage(org.jclouds.sqs.features.MessageApiLiveTest)
+Starting test testAddAnonymousPermission(org.jclouds.sqs.features.PermissionApiLiveTest)
+[TestNG] Test testSendMessage(org.jclouds.sqs.features.MessageApiLiveTest) succeeded: 514ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testReceiveMessageWithoutHidingMessage(org.jclouds.sqs.features.MessageApiLiveTest)
+[TestNG] Test testSendMessages(org.jclouds.sqs.features.BulkMessageApiLiveTest) succeeded: 580ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testChangeMessageVisibility(org.jclouds.sqs.features.BulkMessageApiLiveTest)
+[TestNG] Test testReceiveMessageWithoutHidingMessage(org.jclouds.sqs.features.MessageApiLiveTest) succeeded: 439ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testChangeMessageVisibility(org.jclouds.sqs.features.MessageApiLiveTest)
+[TestNG] Test testCanRecreateQueueGracefully(org.jclouds.sqs.features.QueueApiLiveTest) succeeded: 4439ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testGracefulNoQueue(org.jclouds.sqs.features.QueueApiLiveTest)
+[TestNG] Test testGracefulNoQueue(org.jclouds.sqs.features.QueueApiLiveTest) succeeded: 440ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testListQueues(org.jclouds.sqs.features.QueueApiLiveTest)
+[TestNG] Test testChangeMessageVisibility(org.jclouds.sqs.features.MessageApiLiveTest) succeeded: 1686ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testDeleteMessage(org.jclouds.sqs.features.MessageApiLiveTest)
+[TestNG] Test testAddAnonymousPermission(org.jclouds.sqs.features.PermissionApiLiveTest) succeeded: 2829ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testRemovePermission(org.jclouds.sqs.features.PermissionApiLiveTest)
+[TestNG] Test testListQueues(org.jclouds.sqs.features.QueueApiLiveTest) succeeded: 801ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testCreateQueueWhenAlreadyExistsReturnsURI(org.jclouds.sqs.features.QueueApiLiveTest)
+[TestNG] Test testDeleteMessage(org.jclouds.sqs.features.MessageApiLiveTest) succeeded: 851ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+[TestNG] Test testCreateQueueWhenAlreadyExistsReturnsURI(org.jclouds.sqs.features.QueueApiLiveTest) succeeded: 430ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testGet(org.jclouds.sqs.features.QueueApiLiveTest)
+[TestNG] Test testRemovePermission(org.jclouds.sqs.features.PermissionApiLiveTest) succeeded: 996ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+[TestNG] Test testGet(org.jclouds.sqs.features.QueueApiLiveTest) succeeded: 390ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testGetInAccount(org.jclouds.sqs.features.QueueApiLiveTest)
+[TestNG] Test testGetInAccount(org.jclouds.sqs.features.QueueApiLiveTest) succeeded: 405ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testGetQueueAttributes(org.jclouds.sqs.features.QueueApiLiveTest)
+[TestNG] Test testGetQueueAttributes(org.jclouds.sqs.features.QueueApiLiveTest) succeeded: 815ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testSetQueueAttribute(org.jclouds.sqs.features.QueueApiLiveTest)
+[TestNG] Test testSetQueueAttribute(org.jclouds.sqs.features.QueueApiLiveTest) succeeded: 931ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[TestNG] Test testChangeMessageVisibility(org.jclouds.sqs.features.BulkMessageApiLiveTest) succeeded: 6113ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testDeleteMessage(org.jclouds.sqs.features.BulkMessageApiLiveTest)
+[TestNG] Test testDeleteMessage(org.jclouds.sqs.features.BulkMessageApiLiveTest) succeeded: 877ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.845 sec
+
+Results :
+
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ sqs ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ sqs ---
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sqs/target/sqs-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/api/sqs/1.6.0-SNAPSHOT/sqs-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sqs/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/api/sqs/1.6.0-SNAPSHOT/sqs-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sqs/target/sqs-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/api/sqs/1.6.0-SNAPSHOT/sqs-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ sqs ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 38.337s
+[INFO] Finished at: Sat Mar 09 09:32:27 PST 2013
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------

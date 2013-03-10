@@ -1,0 +1,170 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 5.385 sec <<< FAILURE!
+testGetApiMetaData(org.jclouds.openstack.keystone.v2_0.KeystoneApiLiveTest)  Time elapsed: 1.017 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/ HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [{"message": {"response" : "Not Allowed" }}]
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy56.getApiMetadata(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.KeystoneApiLiveTest.testGetApiMetaData(KeystoneApiLiveTest.java:36)
+
+testListRolesOfUser(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0.292 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [{"message": {"response" : "Not Allowed" }}]
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy67.list(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest.testListRolesOfUser(UserApiLiveTest.java:73)
+
+testInvalidToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: request: HEAD https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/thisisnotarealtoken%21 HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy75.isValid(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.testInvalidToken(TokenApiLiveTest.java:77)
+
+testInvalidTokenEndpoints(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)  Time elapsed: 0.249 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/thisisnotarealtoken%21/endpoints HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [<fault>
+            <faultstring>Incorrect HTTP method used in the request</faultstring>
+            <detail>
+                <errorcode>26301</errorcode>
+                    <trace>
+                        Fault Name: IncorrectHTTPMethod
+                        Error Type: MethodValidationFailure
+                        Description: Incorrect HTTP method used in the request
+                        Service: public_cs_services
+                        Endpoint: public_cs_services_client
+                        Operation (Client):v2.0_tokens
+                    </trace>
+            </detail>
+</fault>
+]
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy75.listEndpointsForToken(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.testInvalidTokenEndpoints(TokenApiLiveTest.java:94)
+
+testToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)  Time elapsed: 0.253 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: request: HEAD https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/HPAuth_6af7d7367d07cae701855a80c064735f5e4dfc94c8f8f8ed7d087e813965a494 HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy75.isValid(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.testToken(TokenApiLiveTest.java:61)
+
+testUserRolesOnTenant(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [{"message": {"response" : "Not Allowed" }}]
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy67.list(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest.testUserRolesOnTenant(UserApiLiveTest.java:59)
+
+testUsers(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0.215 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [{"message": {"response" : "Not Allowed" }}]
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy67.list(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest.testUsers(UserApiLiveTest.java:44)
+
+testTokenEndpoints(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/HPAuth_6af7d7367d07cae701855a80c064735f5e4dfc94c8f8f8ed7d087e813965a494/endpoints HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [<fault>
+            <faultstring>Incorrect HTTP method used in the request</faultstring>
+            <detail>
+                <errorcode>26301</errorcode>
+                    <trace>
+                        Fault Name: IncorrectHTTPMethod
+                        Error Type: MethodValidationFailure
+                        Description: Incorrect HTTP method used in the request
+                        Service: public_cs_services
+                        Endpoint: public_cs_services_client
+                        Operation (Client):v2.0_tokens
+                    </trace>
+            </detail>
+</fault>
+]
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy75.listEndpointsForToken(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.testTokenEndpoints(TokenApiLiveTest.java:85)
+
+testTenants(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest)  Time elapsed: 0.134 sec  <<< FAILURE!
+java.lang.AssertionError: get returned null for tenant: Tenant{id=37936628937291, name=adrian@jclouds.org} expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest.testTenants(TenantApiLiveTest.java:49)
+
+testUsersByName(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0.092 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [{"message": {"response" : "Not Allowed" }}]
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy67.list(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest.testUsersByName(UserApiLiveTest.java:85)
+
+testTenantsByName(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest)  Time elapsed: 0.463 sec  <<< FAILURE!
+java.lang.AssertionError: get returned null for tenant: Tenant{id=37936628937291, name=adrian@jclouds.org} expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest.testTenantsByName(TenantApiLiveTest.java:61)
+

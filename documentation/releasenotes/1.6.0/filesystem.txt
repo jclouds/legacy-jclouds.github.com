@@ -1,0 +1,281 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:filesystem:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud filesystem core 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ filesystem ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ filesystem ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ filesystem ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ filesystem ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ filesystem ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ filesystem ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/filesystem/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ filesystem ---
+[INFO] Compiling 10 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/filesystem/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ filesystem ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/filesystem/src/test/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ filesystem ---
+[INFO] Compiling 11 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/filesystem/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ filesystem ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/filesystem/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@74b2002f
+Starting test testAllContains(org.jclouds.filesystem.FilesystemApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.filesystem.FilesystemApiMetadataTest)
+[pool-1-thread-2] Test testTransformableToContains(org.jclouds.filesystem.FilesystemApiMetadataTest) succeeded: 11ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testAllContains(org.jclouds.filesystem.FilesystemApiMetadataTest) succeeded: 25ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.filesystem.FilesystemApiMetadataTest)
+[pool-1-thread-3] Test testWithId(org.jclouds.filesystem.FilesystemApiMetadataTest) succeeded: 4ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testBlobExists(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testBlobExists(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 14ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testBlobMetadata_withDefaultMetadata(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testBlobMetadata_withDefaultMetadata(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 110ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testBlobRequestSigner(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testBlobRequestSigner(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 11ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testClearContainer_NoOptions(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testClearContainer_NoOptions(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 220ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testClearContainer_NotExistingContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testClearContainer_NotExistingContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 1ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testContainerExists(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testContainerExists(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 0ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testCountBlobs_NoOptions(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testCountBlobs_NoOptions(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 3ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testCountBlobs_NoOptionsEmptyContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testCountBlobs_NoOptionsEmptyContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 1ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testCountBlobs_NotExistingContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testCountBlobs_NotExistingContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 2ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testCreateContainerInLocation(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testCreateContainerInLocation(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 1ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testDeleteContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testDeleteContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 371ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testDeleteContainer_EmptyContanier(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testDeleteContainer_EmptyContanier(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 1ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testDeleteContainer_NotExistingContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testDeleteContainer_NotExistingContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 4ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testGetBlob(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testGetBlob(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 76ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testGetBlob_NotExistingContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testGetBlob_NotExistingContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 1ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testInvalidContainerName(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testInvalidContainerName(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 0ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testList_NoOptionDoubleContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testList_NoOptionDoubleContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 80ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testList_NoOptionSingleContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testList_NoOptionSingleContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 66ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testList_NotExistingContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testList_NotExistingContainer(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 1ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testList_Root(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testList_Root(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 3ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testList_Subdirectory(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testList_Subdirectory(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 49ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testParameters(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testParameters(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 44ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testPutBlobComplexName1(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testPutBlobComplexName1(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 62ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testPutBlobComplexName2(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testPutBlobComplexName2(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 53ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testPutBlobSimpleName(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testPutBlobSimpleName(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 15ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testRanges(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testRanges(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 9ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testRemoveBlob_ComplexBlobKey(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testRemoveBlob_ComplexBlobKey(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 18ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testRemoveBlob_SimpleBlobKey(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testRemoveBlob_SimpleBlobKey(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 4ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testRemoveBlob_TwoComplexBlobKeys(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testRemoveBlob_TwoComplexBlobKeys(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 15ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testRemoveBlob_TwoSimpleBlobKeys(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest)
+[pool-2-thread-1] Test testRemoveBlob_TwoSimpleBlobKeys(org.jclouds.filesystem.FilesystemAsyncBlobStoreTest) succeeded: 65ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testInvalidNames(org.jclouds.filesystem.predicates.validators.internal.FilesystemBlobKeyValidatorTest)
+[pool-63-thread-1] Test testInvalidNames(org.jclouds.filesystem.predicates.validators.internal.FilesystemBlobKeyValidatorTest) succeeded: 2ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testNamesValidity(org.jclouds.filesystem.predicates.validators.internal.FilesystemBlobKeyValidatorTest)
+[pool-63-thread-2] Test testNamesValidity(org.jclouds.filesystem.predicates.validators.internal.FilesystemBlobKeyValidatorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testInvalidNames(org.jclouds.filesystem.predicates.validators.internal.FilesystemContainerNameValidatorTest)
+[pool-64-thread-1] Test testInvalidNames(org.jclouds.filesystem.predicates.validators.internal.FilesystemContainerNameValidatorTest) succeeded: 0ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testNamesValidity(org.jclouds.filesystem.predicates.validators.internal.FilesystemContainerNameValidatorTest)
+[pool-64-thread-2] Test testNamesValidity(org.jclouds.filesystem.predicates.validators.internal.FilesystemContainerNameValidatorTest) succeeded: 1ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testBlobExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testBlobExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 18ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testClearContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testClearContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 25ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testClearContainerAndThenDeleteContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testClearContainerAndThenDeleteContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 105ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testClearContainer_NotExistingContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testClearContainer_NotExistingContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testContainerExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testContainerExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test testCountsBlob(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testCountsBlob(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testCreateContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testCreateContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test testCreateContainer_ContainerAlreadyExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testCreateContainer_ContainerAlreadyExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test testCreateDirectory(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testCreateDirectory(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test testCreateDirectory_DirectoryAlreadyExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testCreateDirectory_DirectoryAlreadyExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testDeleteContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testDeleteContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 95ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testDeleteContainer_EmptyContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testDeleteContainer_EmptyContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testDeleteContainer_ErrorWhenNotExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testDeleteContainer_ErrorWhenNotExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testDeleteDirectory(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testDeleteDirectory(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 43ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testDeleteDirectory_ErrorWhenNotExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testDeleteDirectory_ErrorWhenNotExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testDirectoryExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testDirectoryExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testGetAllContainerNames(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testGetAllContainerNames(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testGetBlobKeysInsideContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testGetBlobKeysInsideContainer(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 19ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testGetFileForBlobKey(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testGetFileForBlobKey(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testGetFileForBlobKey_AbsolutePath(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testGetFileForBlobKey_AbsolutePath(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 37ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testInvalidBlobKey(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testInvalidBlobKey(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testInvalidContainerName(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testInvalidContainerName(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testNewBlob(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testNewBlob(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testRemoveBlob(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testRemoveBlob(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 112ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testRemoveBlob_BlobNotExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testRemoveBlob_BlobNotExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testRemoveBlob_ContainerNotExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testRemoveBlob_ContainerNotExists(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testWritePayloadOnFile(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testWritePayloadOnFile(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 20ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testWritePayloadOnFileInputStream(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testWritePayloadOnFileInputStream(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 16ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+Starting test testWritePayloadOnFile_SourceFileDoesntExist(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest)
+[pool-65-thread-1] Test testWritePayloadOnFile_SourceFileDoesntExist(org.jclouds.filesystem.strategy.internal.FilesystemStorageStrategyImplTest) succeeded: 0ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+Tests run: 66, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.72 sec
+
+Results :
+
+Tests run: 66, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ filesystem ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ filesystem ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/filesystem/target/filesystem-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ filesystem ---
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ filesystem ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ filesystem ---
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/filesystem/target/filesystem-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/api/filesystem/1.6.0-SNAPSHOT/filesystem-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/filesystem/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/api/filesystem/1.6.0-SNAPSHOT/filesystem-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/filesystem/target/filesystem-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/api/filesystem/1.6.0-SNAPSHOT/filesystem-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ filesystem ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.350s
+[INFO] Finished at: Sat Mar 09 09:16:10 PST 2013
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
