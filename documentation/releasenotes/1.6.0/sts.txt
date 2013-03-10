@@ -1,0 +1,349 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:sts:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud sts api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ sts ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ sts ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ sts ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ sts ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ sts ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sts ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sts/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ sts ---
+[INFO] Compiling 28 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sts/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sts ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sts/src/test/clojure
+[INFO] Copying 6 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ sts ---
+[INFO] Compiling 19 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sts/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ sts ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sts/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@19968e23
+Starting test testAddsSecurityToken(org.jclouds.aws.filters.FormSignerTest)
+[pool-1-thread-1] Test testAddsSecurityToken(org.jclouds.aws.filters.FormSignerTest) succeeded: 290ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testBuildCanonicalizedString(org.jclouds.aws.filters.FormSignerTest)
+[pool-1-thread-1] Test testBuildCanonicalizedString(org.jclouds.aws.filters.FormSignerTest) succeeded: 1ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testBuildCanonicalizedStringSetsVersion(org.jclouds.aws.filters.FormSignerTest)
+[pool-1-thread-1] Test testBuildCanonicalizedStringSetsVersion(org.jclouds.aws.filters.FormSignerTest) succeeded: 3ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test test401DoesNotRetry(org.jclouds.aws.handlers.AWSClientErrorRetryHandlerTest)
+Starting test test409DoesBackoffAndRetryForCode(org.jclouds.aws.handlers.AWSClientErrorRetryHandlerTest)
+[pool-2-thread-2] Test test409DoesBackoffAndRetryForCode(org.jclouds.aws.handlers.AWSClientErrorRetryHandlerTest) succeeded: 124ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test test409DoesBackoffAndRetryForCode(org.jclouds.aws.handlers.AWSClientErrorRetryHandlerTest)
+[pool-2-thread-2] Test test409DoesBackoffAndRetryForCode(org.jclouds.aws.handlers.AWSClientErrorRetryHandlerTest) succeeded: 12ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test test409DoesBackoffAndRetryForCode(org.jclouds.aws.handlers.AWSClientErrorRetryHandlerTest)
+[pool-2-thread-2] Test test409DoesBackoffAndRetryForCode(org.jclouds.aws.handlers.AWSClientErrorRetryHandlerTest) succeeded: 1ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-2-thread-1] Test test401DoesNotRetry(org.jclouds.aws.handlers.AWSClientErrorRetryHandlerTest) succeeded: 141ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test test400WithAddressLimitExceededCodeMakesInsufficientResourcesException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+Starting test test400WithAuthFailureSetsAuthorizationException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+Starting test test400WithCloudBridgeAuthFailureSetsAuthorizationException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+Starting test test400WithCloudBridgeNotFoundSetsResourceNotFoundException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+Starting test test400WithGroupAlreadyExistsEucalyptusIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-4] Test test400WithCloudBridgeNotFoundSetsResourceNotFoundException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 51ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test test400WithInUseCodeSetsIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-1] Test test400WithAddressLimitExceededCodeMakesInsufficientResourcesException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 71ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test test400WithInUseSetsIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-3] Test test400WithCloudBridgeAuthFailureSetsAuthorizationException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 60ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test test400WithIncorrectStateSetsIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-2] Test test400WithAuthFailureSetsAuthorizationException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 68ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test test400WithInvalidGroupDuplicateIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-4] Test test400WithInUseCodeSetsIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 16ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test test400WithInvalidIdIllegalArgumentException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-3] Test test400WithIncorrectStateSetsIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 12ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test test400WithInvalidKeyPairGroupDuplicateIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-2] Test test400WithInvalidGroupDuplicateIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 8ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test test400WithLoadBalancerNotFoundSetsResourceNotFoundException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-5] Test test400WithGroupAlreadyExistsEucalyptusIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 71ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[pool-3-thread-1] Test test400WithInUseSetsIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 23ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test test400WithSecurityGroupNotFoundForProjectSetsResourceNotFoundException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-2] Test test400WithLoadBalancerNotFoundSetsResourceNotFoundException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 5ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test test400WithNotFoundSetsResourceNotFoundException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+Starting test test400WithTextPlainIllegalArgumentException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-2] Test test400WithTextPlainIllegalArgumentException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 12ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test test400WithUnknownSetsResourceNotFoundException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-4] Test test400WithInvalidIdIllegalArgumentException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 27ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test test400WithUnsupportedCodeMakesUnsupportedOperationException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-2] Test test400WithUnknownSetsResourceNotFoundException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 7ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test test409SetsIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest)
+[pool-3-thread-4] Test test400WithUnsupportedCodeMakesUnsupportedOperationException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 5ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+[pool-3-thread-3] Test test400WithInvalidKeyPairGroupDuplicateIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 33ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+[pool-3-thread-5] Test test400WithNotFoundSetsResourceNotFoundException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 24ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+[pool-3-thread-1] Test test400WithSecurityGroupNotFoundForProjectSetsResourceNotFoundException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 28ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+[pool-3-thread-2] Test test409SetsIllegalStateException(org.jclouds.aws.handlers.ParseAWSErrorFromXmlContentTest) succeeded: 13ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testNoExceptionParsingTextPlain(org.jclouds.aws.util.AWSUtilsTest)
+[pool-4-thread-1] Test testNoExceptionParsingTextPlain(org.jclouds.aws.util.AWSUtilsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testNoExceptionWhenNoPayload(org.jclouds.aws.util.AWSUtilsTest)
+[pool-4-thread-1] Test testNoExceptionWhenNoPayload(org.jclouds.aws.util.AWSUtilsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testParseAWSErrorFromContentHttpCommandHttpResponseInputStream(org.jclouds.aws.util.AWSUtilsTest)
+[pool-4-thread-1] Test testParseAWSErrorFromContentHttpCommandHttpResponseInputStream(org.jclouds.aws.util.AWSUtilsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testValidateBucketName(org.jclouds.aws.util.AWSUtilsTest)
+[pool-4-thread-1] Test testValidateBucketName(org.jclouds.aws.util.AWSUtilsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testErrorFromAmazonIfYouDontRemoveTransferEncodingHeader(org.jclouds.aws.xml.ErrorHandlerTest)
+[pool-5-thread-1] Test testErrorFromAmazonIfYouDontRemoveTransferEncodingHeader(org.jclouds.aws.xml.ErrorHandlerTest) succeeded: 2ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testErrorFromEucalyptusWhenGroupAlreadyExists(org.jclouds.aws.xml.ErrorHandlerTest)
+[pool-5-thread-2] Test testErrorFromEucalyptusWhenGroupAlreadyExists(org.jclouds.aws.xml.ErrorHandlerTest) succeeded: 1ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test test(org.jclouds.aws.xml.SessionCredentialsHandlerTest)
+[pool-6-thread-1] Test test(org.jclouds.aws.xml.SessionCredentialsHandlerTest) succeeded: 5ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testDurationSeconds(org.jclouds.sts.options.AssumeRoleOptionsTest)
+[pool-7-thread-1] Test testDurationSeconds(org.jclouds.sts.options.AssumeRoleOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testDurationSecondsStatic(org.jclouds.sts.options.AssumeRoleOptionsTest)
+[pool-7-thread-2] Test testDurationSecondsStatic(org.jclouds.sts.options.AssumeRoleOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testExternalId(org.jclouds.sts.options.AssumeRoleOptionsTest)
+[pool-7-thread-3] Test testExternalId(org.jclouds.sts.options.AssumeRoleOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testExternalIdStatic(org.jclouds.sts.options.AssumeRoleOptionsTest)
+[pool-7-thread-4] Test testExternalIdStatic(org.jclouds.sts.options.AssumeRoleOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testPolicy(org.jclouds.sts.options.AssumeRoleOptionsTest)
+[pool-7-thread-5] Test testPolicy(org.jclouds.sts.options.AssumeRoleOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testPolicyStatic(org.jclouds.sts.options.AssumeRoleOptionsTest)
+[pool-7-thread-5] Test testPolicyStatic(org.jclouds.sts.options.AssumeRoleOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testDurationSeconds(org.jclouds.sts.options.FederatedUserOptionsTest)
+[pool-8-thread-1] Test testDurationSeconds(org.jclouds.sts.options.FederatedUserOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testDurationSecondsStatic(org.jclouds.sts.options.FederatedUserOptionsTest)
+[pool-8-thread-2] Test testDurationSecondsStatic(org.jclouds.sts.options.FederatedUserOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testPolicy(org.jclouds.sts.options.FederatedUserOptionsTest)
+[pool-8-thread-3] Test testPolicy(org.jclouds.sts.options.FederatedUserOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testPolicyStatic(org.jclouds.sts.options.FederatedUserOptionsTest)
+[pool-8-thread-4] Test testPolicyStatic(org.jclouds.sts.options.FederatedUserOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test testDurationSeconds(org.jclouds.sts.options.SessionCredentialsOptionsTest)
+[pool-9-thread-1] Test testDurationSeconds(org.jclouds.sts.options.SessionCredentialsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testDurationSecondsStatic(org.jclouds.sts.options.SessionCredentialsOptionsTest)
+[pool-9-thread-2] Test testDurationSecondsStatic(org.jclouds.sts.options.SessionCredentialsOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test testSerialNumber(org.jclouds.sts.options.SessionCredentialsOptionsTest)
+[pool-9-thread-3] Test testSerialNumber(org.jclouds.sts.options.SessionCredentialsOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test testSerialNumberStatic(org.jclouds.sts.options.SessionCredentialsOptionsTest)
+[pool-9-thread-4] Test testSerialNumberStatic(org.jclouds.sts.options.SessionCredentialsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test testTokenCode(org.jclouds.sts.options.SessionCredentialsOptionsTest)
+[pool-9-thread-5] Test testTokenCode(org.jclouds.sts.options.SessionCredentialsOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testTokenCodeStatic(org.jclouds.sts.options.SessionCredentialsOptionsTest)
+[pool-9-thread-5] Test testTokenCodeStatic(org.jclouds.sts.options.SessionCredentialsOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sts.parse.AssumeRoleResponseTest)
+[pool-10-thread-1] Test test(org.jclouds.sts.parse.AssumeRoleResponseTest) succeeded: 8ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sts.parse.GetFederationTokenResponseTest)
+[pool-11-thread-1] Test test(org.jclouds.sts.parse.GetFederationTokenResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test test(org.jclouds.sts.parse.GetSessionTokenResponseTest)
+[pool-12-thread-1] Test test(org.jclouds.sts.parse.GetSessionTokenResponseTest) succeeded: 2ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testAssumeRoleWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest)
+Starting test testAssumeRoleWithOptionsWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest)
+Starting test testCreateFederatedUserWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest)
+Starting test testCreateFederatedUserWithOptionsWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest)
+Starting test testCreateTemporaryCredentialsWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest)
+[pool-13-thread-5] Test testCreateTemporaryCredentialsWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest) succeeded: 557ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testCreateTemporaryCredentialsWithOptionsWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest)
+[pool-13-thread-4] Test testCreateFederatedUserWithOptionsWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest) succeeded: 656ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+[pool-13-thread-2] Test testAssumeRoleWithOptionsWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest) succeeded: 727ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+[pool-13-thread-1] Test testAssumeRoleWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest) succeeded: 757ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+[pool-13-thread-3] Test testCreateFederatedUserWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest) succeeded: 736ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+[pool-13-thread-5] Test testCreateTemporaryCredentialsWithOptionsWhenResponseIs2xx(org.jclouds.sts.STSApiExpectTest) succeeded: 166ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.sts.STSApiMetadataTest)
+[pool-14-thread-1] Test testAllContains(org.jclouds.sts.STSApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.sts.STSApiMetadataTest)
+[pool-14-thread-2] Test testTransformableToContains(org.jclouds.sts.STSApiMetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testContextAssignableFromRestContext(org.jclouds.sts.STSApiMetadataTest)
+[pool-14-thread-4] Test testContextAssignableFromRestContext(org.jclouds.sts.STSApiMetadataTest) succeeded: 2ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.sts.STSApiMetadataTest)
+[pool-14-thread-3] Test testWithId(org.jclouds.sts.STSApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.263 sec
+
+Results :
+
+Tests run: 61, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ sts ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ sts ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sts/target/sts-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ sts ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sts/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@55d15445
+Starting test testAssumeRole(org.jclouds.sts.STSApiLiveTest)
+[TestNG] Test testAssumeRole(org.jclouds.sts.STSApiLiveTest) skipped.
+Test suite progress: tests succeeded: 0, failed: 0, skipped: 1.
+Starting test testCreateFederatedUser(org.jclouds.sts.STSApiLiveTest)
+[TestNG] Test testCreateFederatedUser(org.jclouds.sts.STSApiLiveTest) failed.
+Test suite progress: tests succeeded: 0, failed: 1, skipped: 1.
+Starting test testCreateTemporaryCredentials(org.jclouds.sts.STSApiLiveTest)
+[TestNG] Test testCreateTemporaryCredentials(org.jclouds.sts.STSApiLiveTest) failed.
+Test suite progress: tests succeeded: 0, failed: 2, skipped: 1.
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 3.324 sec <<< FAILURE!
+testCreateFederatedUser(org.jclouds.sts.STSApiLiveTest)  Time elapsed: 1.26 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Error parsing data at 19
+	at org.jclouds.date.internal.SimpleDateFormatDateService.iso8601DateParse(SimpleDateFormatDateService.java:151)
+	at org.jclouds.aws.xml.SessionCredentialsHandler.endElement(SessionCredentialsHandler.java:64)
+	at org.jclouds.sts.xml.UserAndSessionCredentialsHandler.endElement(UserAndSessionCredentialsHandler.java:80)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:601)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.jclouds.http.functions.ParseSax.doParse(ParseSax.java:141)
+	at org.jclouds.http.functions.ParseSax.parse(ParseSax.java:130)
+	at org.jclouds.http.functions.ParseSax.apply(ParseSax.java:86)
+	at org.jclouds.http.functions.ParseSax.apply(ParseSax.java:54)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy48.createFederatedUser(Unknown Source)
+	at org.jclouds.sts.STSApiLiveTest.testCreateFederatedUser(STSApiLiveTest.java:56)
+Caused by: java.text.ParseException: Unparseable date: "2013-03-09T17:47:47+0000"
+	at java.text.DateFormat.parse(DateFormat.java:337)
+	at org.jclouds.date.internal.SimpleDateFormatDateService.iso8601DateParse(SimpleDateFormatDateService.java:149)
+	... 44 more
+
+testCreateTemporaryCredentials(org.jclouds.sts.STSApiLiveTest)  Time elapsed: 0.433 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Error parsing data at 19
+	at org.jclouds.date.internal.SimpleDateFormatDateService.iso8601DateParse(SimpleDateFormatDateService.java:151)
+	at org.jclouds.aws.xml.SessionCredentialsHandler.endElement(SessionCredentialsHandler.java:64)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:601)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.jclouds.http.functions.ParseSax.doParse(ParseSax.java:141)
+	at org.jclouds.http.functions.ParseSax.parse(ParseSax.java:130)
+	at org.jclouds.http.functions.ParseSax.apply(ParseSax.java:86)
+	at org.jclouds.http.functions.ParseSax.apply(ParseSax.java:54)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at com.sun.proxy.$Proxy48.createTemporaryCredentials(Unknown Source)
+	at org.jclouds.sts.STSApiLiveTest.testCreateTemporaryCredentials(STSApiLiveTest.java:42)
+Caused by: java.text.ParseException: Unparseable date: "2013-03-09T17:47:47+0000"
+	at java.text.DateFormat.parse(DateFormat.java:337)
+	at org.jclouds.date.internal.SimpleDateFormatDateService.iso8601DateParse(SimpleDateFormatDateService.java:149)
+	... 43 more
+
+
+Results :
+
+Failed tests:   testCreateFederatedUser(org.jclouds.sts.STSApiLiveTest): Error parsing data at 19
+  testCreateTemporaryCredentials(org.jclouds.sts.STSApiLiveTest): Error parsing data at 19
+
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.520s
+[INFO] Finished at: Sat Mar 09 09:32:47 PST 2013
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (integration) on project sts: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/sts/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

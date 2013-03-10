@@ -1,0 +1,150 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:aws-sqs:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Amazon Simple Queue Service provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ aws-sqs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ aws-sqs ---
+[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ aws-sqs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ aws-sqs ---
+[INFO] Compiling 4 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ aws-sqs ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.aws.sqs.AWSSQSProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5ca352a5
+Starting test testAllContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
+[pool-1-thread-1] Test testAllContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 9ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testOfApiContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
+[pool-1-thread-2] Test testOfApiContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 5ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
+[pool-1-thread-3] Test testTransformableToContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 0ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.aws.sqs.AWSSQSProviderTest)
+[pool-1-thread-4] Test testWithId(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 5ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.444 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ aws-sqs ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ aws-sqs ---
+[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/aws-sqs-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ aws-sqs ---
+[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@4cbfea1d
+Starting test testCanRecreateQueueGracefully(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+Starting test testSendMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
+Starting test testAddAnonymousPermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest)
+[TestNG] Test testSendMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 462ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testReceiveMessageWithoutHidingMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
+[TestNG] Test testReceiveMessageWithoutHidingMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 505ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testChangeMessageVisibility(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
+[TestNG] Test testCanRecreateQueueGracefully(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 4909ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testGracefulNoQueue(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+[TestNG] Test testGracefulNoQueue(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 491ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testListQueues(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+[TestNG] Test testChangeMessageVisibility(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 1788ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testDeleteMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
+[TestNG] Test testAddAnonymousPermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest) succeeded: 3059ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testRemovePermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest)
+[TestNG] Test testListQueues(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 795ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testCreateQueueWhenAlreadyExistsReturnsURI(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+[TestNG] Test testDeleteMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 856ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[TestNG] Test testCreateQueueWhenAlreadyExistsReturnsURI(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 434ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testGet(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+[TestNG] Test testRemovePermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest) succeeded: 871ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+[TestNG] Test testGet(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 400ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testGetInAccount(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+[TestNG] Test testGetInAccount(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 391ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testGetQueueAttributes(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+[TestNG] Test testGetQueueAttributes(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 823ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testSetQueueAttribute(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
+[TestNG] Test testSetQueueAttribute(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 941ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.383 sec
+
+Results :
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ aws-sqs ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ aws-sqs ---
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/aws-sqs-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-sqs/1.6.0-SNAPSHOT/aws-sqs-1.6.0-SNAPSHOT.jar
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-sqs/1.6.0-SNAPSHOT/aws-sqs-1.6.0-SNAPSHOT.pom
+[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/aws-sqs-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-sqs/1.6.0-SNAPSHOT/aws-sqs-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ aws-sqs ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 33.434s
+[INFO] Finished at: Sat Mar 09 08:36:42 PST 2013
+[INFO] Final Memory: 18M/265M
+[INFO] ------------------------------------------------------------------------
