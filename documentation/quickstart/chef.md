@@ -132,3 +132,15 @@ Here is the overall process:
     4. Write /etc/chef/validation.pem associated with the provided validator.
     5. Write /etc/chef/first-boot.json with the run-list from step 1 above.
     6. Execute chef-client -j /etc/chef/first-boot.json
+
+## Customize how Chef is installed
+
+When bootstrapping nodes, jclouds will take care of installing all dependencies that are required to run Chef. This includes `ruby`, `rubygems` and the `chef` gem and its dependencies. Sometimes you may want to have more control over how those dependencies are installed, so starting from `jclouds 1.6.0-rc.1`, the following additional properties can be configured when creating the context:
+
+| *Property* | *Description* |
+|------------|---------------|
+| ChefProperties.CHEF_VERSION | The version of the Chef gem to install. It accepts concrete versions, and also ranges like '>= 0.10.8', etc. If the property is not set, the latest available version of the gem will be installed.
+| ChefProperties.CHEF_GEM_SYSTEM_VERSION | The version of Rubygems to install (if not yet installed). By default will install version `1.8.10`, to keep compatibility with previous jclouds-chef versions. However, this property can now be used to install the desired version of Rubygems.
+| ChefProperties.CHEF_UPDATE_GEM_SYSTEM | Boolean property to force a `gem update --system` (or a `gem update --system <version>` if the previous property is set. By default is `false`.
+| ChefProperties.CHEF_UPDATE_GEMS | Boolean property to force a general update of the existing gems. By default is `false`.
+

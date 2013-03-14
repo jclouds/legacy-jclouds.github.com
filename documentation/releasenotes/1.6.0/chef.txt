@@ -1,0 +1,609 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.chef:chef-compute:jar:1.6.0-rc.1
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.jclouds:jclouds-compute:test-jar -> duplicate declaration of version 1.6.0-rc.1 @ line 76, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.chef:chef-project:pom:1.6.0-rc.1
+[WARNING] 'parent.relativePath' of POM org.jclouds.chef:chef-parent:1.6.0-rc.1 (/Users/nacx/src/platform/jclouds-chef/project/pom.xml) points at org.jclouds.chef:chef-project instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds.chef:chef-parent:1.6.0-rc.1, /Users/nacx/src/platform/jclouds-chef/project/pom.xml, line 24, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JClouds Chef :: Core 1.6.0-rc.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ chef ---
+[INFO] Deleting /Users/nacx/src/platform/jclouds-chef/core/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0-beta-1:enforce (enforce-maven) @ chef ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (process-remote-resources) @ chef ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ chef ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:compile (default-compile) @ chef ---
+[INFO] Compiling 104 source files to /Users/nacx/src/platform/jclouds-chef/core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ chef ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5:testCompile (default-testCompile) @ chef ---
+[INFO] Compiling 47 source files to /Users/nacx/src/platform/jclouds-chef/core/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ chef ---
+[INFO] Surefire report directory: /Users/nacx/src/platform/jclouds-chef/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running Unit and Performance Tests
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@624b035d
+Starting test testMustBeIterable(org.jclouds.chef.binders.BindHexEncodedMD5sToJsonPayloadTest)
+Starting test test400DoesNotRetry(org.jclouds.chef.handlers.ChefApiErrorRetryHandlerTest)
+Starting test test(org.jclouds.ohai.functions.ByteArrayToMacAddressTest)
+Starting test test401DoesNotRetry(org.jclouds.chef.handlers.ChefApiErrorRetryHandlerTest)
+Starting test testNullIsBad(org.jclouds.chef.binders.BindHexEncodedMD5sToJsonPayloadTest)
+[pool-2-thread-2] Test testNullIsBad(org.jclouds.chef.binders.BindHexEncodedMD5sToJsonPayloadTest) succeeded: 21ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testMustBeIterable(org.jclouds.chef.binders.BindHexEncodedMD5sToJsonPayloadTest) succeeded: 21ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testRetryOn400PutSandbox(org.jclouds.chef.handlers.ChefApiErrorRetryHandlerTest)
+[pool-2-thread-3] Test test(org.jclouds.ohai.functions.ByteArrayToMacAddressTest) succeeded: 25ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-2-thread-5] Test test401DoesNotRetry(org.jclouds.chef.handlers.ChefApiErrorRetryHandlerTest) succeeded: 195ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[pool-2-thread-4] Test test400DoesNotRetry(org.jclouds.chef.handlers.ChefApiErrorRetryHandlerTest) succeeded: 195ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testRetryOn400PutSandbox(org.jclouds.chef.handlers.ChefApiErrorRetryHandlerTest) succeeded: 174ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testCreateApi(org.jclouds.chef.ChefAsyncApiTest)
+Starting test testCreateAdminApi(org.jclouds.chef.ChefAsyncApiTest)
+Starting test testCreateDatabag(org.jclouds.chef.ChefAsyncApiTest)
+Starting test testCommitSandbox(org.jclouds.chef.ChefAsyncApiTest)
+Starting test testApiExists(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-2] Test testCreateDatabag(org.jclouds.chef.ChefAsyncApiTest) succeeded: 87ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testCommitSandbox(org.jclouds.chef.ChefAsyncApiTest) succeeded: 87ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testCreateDatabagItem(org.jclouds.chef.ChefAsyncApiTest)
+Starting test testCreateDatabagItemEvenWhenUserForgotId(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-5] Test testCreateAdminApi(org.jclouds.chef.ChefAsyncApiTest) succeeded: 88ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testCreateDatabagItemThrowsIllegalArgumentOnPrimitive(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-3] Test testCreateDatabagItemEvenWhenUserForgotId(org.jclouds.chef.ChefAsyncApiTest) succeeded: 21ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testCreateDatabagItemThrowsIllegalArgumentOnWrongId(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-5] Test testCreateDatabagItemThrowsIllegalArgumentOnPrimitive(org.jclouds.chef.ChefAsyncApiTest) succeeded: 21ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testCreateNode(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-2] Test testCreateDatabagItem(org.jclouds.chef.ChefAsyncApiTest) succeeded: 35ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testCreateRole(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-5] Test testCreateNode(org.jclouds.chef.ChefAsyncApiTest) succeeded: 13ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testDatabagExists(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-5] Test testDatabagExists(org.jclouds.chef.ChefAsyncApiTest) succeeded: 10ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testCreateDatabagItemThrowsIllegalArgumentOnWrongId(org.jclouds.chef.ChefAsyncApiTest) succeeded: 27ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testDatabagItemExists(org.jclouds.chef.ChefAsyncApiTest)
+Starting test testDeleteClient(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-2] Test testCreateRole(org.jclouds.chef.ChefAsyncApiTest) succeeded: 14ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testDeleteCookbook(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-4] Test testCreateApi(org.jclouds.chef.ChefAsyncApiTest) succeeded: 139ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testDeleteDatabag(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-3] Test testDeleteClient(org.jclouds.chef.ChefAsyncApiTest) succeeded: 7ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testDeleteDatabagItem(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-4] Test testDeleteDatabag(org.jclouds.chef.ChefAsyncApiTest) succeeded: 5ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testDeleteNode(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-1] Test testApiExists(org.jclouds.chef.ChefAsyncApiTest) succeeded: 147ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testDeleteRole(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-5] Test testDatabagItemExists(org.jclouds.chef.ChefAsyncApiTest) succeeded: 14ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testGenerateKeyForClient(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-1] Test testDeleteRole(org.jclouds.chef.ChefAsyncApiTest) succeeded: 5ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testGetCookbook(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-5] Test testGenerateKeyForClient(org.jclouds.chef.ChefAsyncApiTest) succeeded: 12ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testGetResourceContents(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-2] Test testDeleteCookbook(org.jclouds.chef.ChefAsyncApiTest) succeeded: 31ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testGetUploadSandboxForChecksums(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-3] Test testDeleteDatabagItem(org.jclouds.chef.ChefAsyncApiTest) succeeded: 31ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testGetVersionsOfCookbook(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-1] Test testGetCookbook(org.jclouds.chef.ChefAsyncApiTest) succeeded: 29ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testListClients(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-1] Test testListClients(org.jclouds.chef.ChefAsyncApiTest) succeeded: 3ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testListCookbooks(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-3] Test testGetVersionsOfCookbook(org.jclouds.chef.ChefAsyncApiTest) succeeded: 12ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testListDatabagItems(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-5] Test testGetResourceContents(org.jclouds.chef.ChefAsyncApiTest) succeeded: 26ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testListDatabags(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-1] Test testListCookbooks(org.jclouds.chef.ChefAsyncApiTest) succeeded: 10ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testListNodes(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-4] Test testDeleteNode(org.jclouds.chef.ChefAsyncApiTest) succeeded: 53ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testListRoles(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-2] Test testGetUploadSandboxForChecksums(org.jclouds.chef.ChefAsyncApiTest) succeeded: 33ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testListDatabagItems(org.jclouds.chef.ChefAsyncApiTest) succeeded: 12ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testListSearchIndexes(org.jclouds.chef.ChefAsyncApiTest)
+Starting test testNodeExists(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-5] Test testListDatabags(org.jclouds.chef.ChefAsyncApiTest) succeeded: 8ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testRoleExists(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-4] Test testListRoles(org.jclouds.chef.ChefAsyncApiTest) succeeded: 5ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testSearchClients(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-3] Test testNodeExists(org.jclouds.chef.ChefAsyncApiTest) succeeded: 4ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testSearchClientsWithOptions(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-2] Test testListSearchIndexes(org.jclouds.chef.ChefAsyncApiTest) succeeded: 5ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testSearchDatabag(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-4] Test testSearchClients(org.jclouds.chef.ChefAsyncApiTest) succeeded: 7ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testRoleExists(org.jclouds.chef.ChefAsyncApiTest) succeeded: 12ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testSearchNodes(org.jclouds.chef.ChefAsyncApiTest)
+Starting test testSearchDatabagWithOptions(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-2] Test testSearchDatabag(org.jclouds.chef.ChefAsyncApiTest) succeeded: 18ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testSearchNodesWithOptions(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-3] Test testSearchClientsWithOptions(org.jclouds.chef.ChefAsyncApiTest) succeeded: 20ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testSearchRoles(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-3] Test testSearchRoles(org.jclouds.chef.ChefAsyncApiTest) succeeded: 6ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test testSearchRolesWithOptions(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-5] Test testSearchNodes(org.jclouds.chef.ChefAsyncApiTest) succeeded: 26ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testUpdateCookbook(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-3] Test testSearchRolesWithOptions(org.jclouds.chef.ChefAsyncApiTest) succeeded: 4ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test testUpdateDatabagItem(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-1] Test testListNodes(org.jclouds.chef.ChefAsyncApiTest) succeeded: 56ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test testUpdateNode(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-2] Test testSearchNodesWithOptions(org.jclouds.chef.ChefAsyncApiTest) succeeded: 41ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test testUpdateRole(org.jclouds.chef.ChefAsyncApiTest)
+[pool-2-thread-4] Test testSearchDatabagWithOptions(org.jclouds.chef.ChefAsyncApiTest) succeeded: 57ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testUpdateDatabagItem(org.jclouds.chef.ChefAsyncApiTest) succeeded: 32ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testUploadContent(org.jclouds.chef.ChefAsyncApiTest)
+Starting test testFindRoleInRunList(org.jclouds.chef.util.ChefUtilsTest)
+[pool-2-thread-3] Test testFindRoleInRunList(org.jclouds.chef.util.ChefUtilsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testFindRoleInRunListThrowsNoSuchElementOnRecipe(org.jclouds.chef.util.ChefUtilsTest)
+[pool-2-thread-3] Test testFindRoleInRunListThrowsNoSuchElementOnRecipe(org.jclouds.chef.util.ChefUtilsTest) succeeded: 4ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testFromOhaiTime(org.jclouds.chef.util.ChefUtilsTest)
+[pool-2-thread-3] Test testFromOhaiTime(org.jclouds.chef.util.ChefUtilsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testToOhaiTime(org.jclouds.chef.util.ChefUtilsTest)
+[pool-2-thread-3] Test testToOhaiTime(org.jclouds.chef.util.ChefUtilsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ohai.config.JMXTest)
+[pool-2-thread-5] Test testUpdateCookbook(org.jclouds.chef.ChefAsyncApiTest) succeeded: 42ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testBase(org.jclouds.ohai.functions.NestSlashKeysTest)
+[pool-2-thread-5] Test testBase(org.jclouds.ohai.functions.NestSlashKeysTest) succeeded: 9ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testIllegal(org.jclouds.ohai.functions.NestSlashKeysTest)
+[pool-2-thread-1] Test testUpdateNode(org.jclouds.chef.ChefAsyncApiTest) succeeded: 42ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testUpdateRole(org.jclouds.chef.ChefAsyncApiTest) succeeded: 30ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testIllegal(org.jclouds.ohai.functions.NestSlashKeysTest) succeeded: 1ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testMerge(org.jclouds.ohai.functions.NestSlashKeysTest)
+[pool-2-thread-4] Test testUploadContent(org.jclouds.chef.ChefAsyncApiTest) succeeded: 28ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test test(org.jclouds.chef.functions.ParseClientFromJsonTest)
+Starting test test2modules(org.jclouds.ohai.config.OhaiModuleTest)
+[pool-2-thread-5] Test testMerge(org.jclouds.ohai.functions.NestSlashKeysTest) succeeded: 11ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testMergeNestedTwice(org.jclouds.ohai.functions.NestSlashKeysTest)
+[pool-2-thread-5] Test testMergeNestedTwice(org.jclouds.ohai.functions.NestSlashKeysTest) succeeded: 1ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testOne(org.jclouds.ohai.functions.NestSlashKeysTest)
+[pool-2-thread-5] Test testOne(org.jclouds.ohai.functions.NestSlashKeysTest) succeeded: 1ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testOneDuplicate(org.jclouds.ohai.functions.NestSlashKeysTest)
+[pool-2-thread-5] Test testOneDuplicate(org.jclouds.ohai.functions.NestSlashKeysTest) succeeded: 1ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test test(org.jclouds.ohai.config.OhaiModuleTest)
+Starting test testReplaceList(org.jclouds.ohai.functions.NestSlashKeysTest)
+[pool-2-thread-5] Test testReplaceList(org.jclouds.ohai.functions.NestSlashKeysTest) succeeded: 2ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testParserFor010(org.jclouds.chef.functions.ParseCookbookDefinitionCheckingChefVersionTest)
+[pool-2-thread-3] Test test(org.jclouds.ohai.config.JMXTest) succeeded: 70ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testParse010Response(org.jclouds.chef.functions.ParseCookbookDefinitionFromJsonTest)
+[pool-2-thread-3] Test testParse010Response(org.jclouds.chef.functions.ParseCookbookDefinitionFromJsonTest) succeeded: 4ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+Starting test testCookbokDefinitionParsing(org.jclouds.chef.functions.ParseCookbookDefinitionFromJsonv10Test)
+[pool-2-thread-3] Test testCookbokDefinitionParsing(org.jclouds.chef.functions.ParseCookbookDefinitionFromJsonv10Test) succeeded: 2ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+Starting test testCookbokDefinitionListParsing(org.jclouds.chef.functions.ParseCookbookDefinitionListFromJsonv10Test)
+[pool-2-thread-5] Test testParserFor010(org.jclouds.chef.functions.ParseCookbookDefinitionCheckingChefVersionTest) succeeded: 73ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+Starting test testParserFor09(org.jclouds.chef.functions.ParseCookbookDefinitionCheckingChefVersionTest)
+[pool-2-thread-3] Test testCookbokDefinitionListParsing(org.jclouds.chef.functions.ParseCookbookDefinitionListFromJsonv10Test) succeeded: 24ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+[pool-2-thread-1] Test test(org.jclouds.ohai.config.OhaiModuleTest) succeeded: 98ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+Starting test testRegex(org.jclouds.chef.functions.ParseCookbookVersionsV09FromJsonTest)
+[pool-2-thread-1] Test testRegex(org.jclouds.chef.functions.ParseCookbookVersionsV09FromJsonTest) succeeded: 1ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+Starting test testRegex(org.jclouds.chef.functions.ParseCookbookVersionsV10FromJsonTest)
+[pool-2-thread-1] Test testRegex(org.jclouds.chef.functions.ParseCookbookVersionsV10FromJsonTest) succeeded: 3ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+Starting test test1(org.jclouds.chef.functions.ParseDataBagItemFromJsonTest)
+Starting test testParserFor010(org.jclouds.chef.functions.ParseCookbookVersionsCheckingChefVersionTest)
+[pool-2-thread-2] Test test2modules(org.jclouds.ohai.config.OhaiModuleTest) succeeded: 122ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+Starting test testApplyInputStreamDetails(org.jclouds.chef.functions.ParseErrorFromJsonOrReturnBodyTest)
+[pool-2-thread-2] Test testApplyInputStreamDetails(org.jclouds.chef.functions.ParseErrorFromJsonOrReturnBodyTest) succeeded: 2ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
+Starting test testRegex(org.jclouds.chef.functions.ParseKeySetFromJsonTest)
+[pool-2-thread-1] Test test1(org.jclouds.chef.functions.ParseDataBagItemFromJsonTest) succeeded: 13ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testParserFor09(org.jclouds.chef.functions.ParseCookbookDefinitionCheckingChefVersionTest) succeeded: 74ms
+Starting test test(org.jclouds.chef.functions.ParseNodeFromJsonTest)
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testRegex(org.jclouds.chef.functions.ParseKeySetFromJsonTest) succeeded: 11ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+Starting test test(org.jclouds.chef.functions.ParseSandboxFromJsonTest)
+Starting test test1(org.jclouds.chef.functions.ParseSearchDataBagItemFromJsonTest)
+[pool-2-thread-3] Test testParserFor010(org.jclouds.chef.functions.ParseCookbookVersionsCheckingChefVersionTest) succeeded: 23ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+Starting test testParserFor09(org.jclouds.chef.functions.ParseCookbookVersionsCheckingChefVersionTest)
+[pool-2-thread-1] Test test(org.jclouds.chef.functions.ParseNodeFromJsonTest) succeeded: 7ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+Starting test test(org.jclouds.chef.functions.ParseUploadSandboxFromJsonTest)
+[pool-2-thread-5] Test test1(org.jclouds.chef.functions.ParseSearchDataBagItemFromJsonTest) succeeded: 5ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+[pool-2-thread-1] Test test(org.jclouds.chef.functions.ParseUploadSandboxFromJsonTest) succeeded: 6ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+[pool-2-thread-2] Test test(org.jclouds.chef.functions.ParseSandboxFromJsonTest) succeeded: 17ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testParserFor09(org.jclouds.chef.functions.ParseCookbookVersionsCheckingChefVersionTest) succeeded: 37ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
+Starting test canonicalizedPathRemovesMultipleSlashes(org.jclouds.chef.filters.SignedHeaderAuthTest)
+Starting test canonicalizedPathRemovesTrailingSlash(org.jclouds.chef.filters.SignedHeaderAuthTest)
+[pool-2-thread-5] Test canonicalizedPathRemovesMultipleSlashes(org.jclouds.chef.filters.SignedHeaderAuthTest) succeeded: 1ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
+Starting test shouldGenerateTheCorrectStringToSignAndSignature(org.jclouds.chef.filters.SignedHeaderAuthTest)
+[pool-2-thread-1] Test canonicalizedPathRemovesTrailingSlash(org.jclouds.chef.filters.SignedHeaderAuthTest) succeeded: 7ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
+Starting test shouldNotChokeWhenSigningARequestForAResourceWithALongName(org.jclouds.chef.filters.SignedHeaderAuthTest)
+Starting test shouldReplacePercentage3FWithQuestionMarkAtUrl(org.jclouds.chef.filters.SignedHeaderAuthTest)
+Starting test shouldGenerateTheCorrectStringToSignAndSignatureWithNoBody(org.jclouds.chef.filters.SignedHeaderAuthTest)
+[pool-2-thread-1] Test shouldReplacePercentage3FWithQuestionMarkAtUrl(org.jclouds.chef.filters.SignedHeaderAuthTest) succeeded: 104ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
+Starting test test(org.jclouds.chef.strategy.internal.UpdateAutomaticAttributesOnNodeImplTest)
+[pool-2-thread-1] Test test(org.jclouds.chef.strategy.internal.UpdateAutomaticAttributesOnNodeImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+Starting test testWithInvalidInput(org.jclouds.chef.functions.UriForResourceTest)
+[pool-2-thread-1] Test testWithInvalidInput(org.jclouds.chef.functions.UriForResourceTest) succeeded: 0ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 0.
+Starting test testWithNullInput(org.jclouds.chef.functions.UriForResourceTest)
+[pool-2-thread-1] Test testWithNullInput(org.jclouds.chef.functions.UriForResourceTest) succeeded: 0ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 0.
+Starting test testWithValidResource(org.jclouds.chef.functions.UriForResourceTest)
+[pool-2-thread-1] Test testWithValidResource(org.jclouds.chef.functions.UriForResourceTest) succeeded: 1ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 0.
+[pool-2-thread-3] Test shouldGenerateTheCorrectStringToSignAndSignatureWithNoBody(org.jclouds.chef.filters.SignedHeaderAuthTest) succeeded: 113ms
+Test suite progress: tests succeeded: 90, failed: 0, skipped: 0.
+[pool-2-thread-4] Test test(org.jclouds.chef.functions.ParseClientFromJsonTest) succeeded: 492ms
+Test suite progress: tests succeeded: 91, failed: 0, skipped: 0.
+[pool-2-thread-2] Test shouldGenerateTheCorrectStringToSignAndSignature(org.jclouds.chef.filters.SignedHeaderAuthTest) succeeded: 157ms
+Test suite progress: tests succeeded: 92, failed: 0, skipped: 0.
+[pool-2-thread-5] Test shouldNotChokeWhenSigningARequestForAResourceWithALongName(org.jclouds.chef.filters.SignedHeaderAuthTest) succeeded: 158ms
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.chef.ChefApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.chef.ChefApiMetadataTest)
+[pool-3-thread-2] Test testTransformableToContains(org.jclouds.chef.ChefApiMetadataTest) succeeded: 0ms
+Test suite progress: tests succeeded: 94, failed: 0, skipped: 0.
+Starting test testContextAssignableFromRestContext(org.jclouds.chef.ChefApiMetadataTest)
+Starting test testWithId(org.jclouds.chef.ChefApiMetadataTest)
+[pool-3-thread-1] Test testAllContains(org.jclouds.chef.ChefApiMetadataTest) succeeded: 17ms
+Test suite progress: tests succeeded: 95, failed: 0, skipped: 0.
+[pool-3-thread-4] Test testContextAssignableFromRestContext(org.jclouds.chef.ChefApiMetadataTest) succeeded: 12ms
+Test suite progress: tests succeeded: 96, failed: 0, skipped: 0.
+[pool-3-thread-3] Test testWithId(org.jclouds.chef.ChefApiMetadataTest) succeeded: 11ms
+Test suite progress: tests succeeded: 97, failed: 0, skipped: 0.
+Starting test testReturnsItem(org.jclouds.chef.functions.BootstrapConfigForGroupTest)
+Starting test testWhenNoDatabagItem(org.jclouds.chef.functions.BootstrapConfigForGroupTest)
+[pool-4-thread-1] Test testReturnsItem(org.jclouds.chef.functions.BootstrapConfigForGroupTest) succeeded: 4ms
+Test suite progress: tests succeeded: 98, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testWhenNoDatabagItem(org.jclouds.chef.functions.BootstrapConfigForGroupTest) succeeded: 9ms
+Test suite progress: tests succeeded: 99, failed: 0, skipped: 0.
+Starting test testWhenClientsInListAddsToEnd(org.jclouds.chef.functions.ClientForGroupTest)
+Starting test testWhenNoClientsInList(org.jclouds.chef.functions.ClientForGroupTest)
+Starting test testWhenClientsInListReplacesMissing(org.jclouds.chef.functions.ClientForGroupTest)
+[pool-5-thread-2] Test testWhenClientsInListReplacesMissing(org.jclouds.chef.functions.ClientForGroupTest) succeeded: 16ms
+Test suite progress: tests succeeded: 100, failed: 0, skipped: 0.
+[pool-5-thread-3] Test testWhenNoClientsInList(org.jclouds.chef.functions.ClientForGroupTest) succeeded: 19ms
+Test suite progress: tests succeeded: 101, failed: 0, skipped: 0.
+[pool-5-thread-1] Test testWhenClientsInListAddsToEnd(org.jclouds.chef.functions.ClientForGroupTest) succeeded: 27ms
+Test suite progress: tests succeeded: 102, failed: 0, skipped: 0.
+Starting test testMustHaveRunScriptsName(org.jclouds.chef.functions.GroupToBootScriptTest)
+Starting test testMustHaveValidatorName(org.jclouds.chef.functions.GroupToBootScriptTest)
+Starting test testMustHaveRunScriptsValue(org.jclouds.chef.functions.GroupToBootScriptTest)
+[pool-6-thread-2] Test testMustHaveRunScriptsValue(org.jclouds.chef.functions.GroupToBootScriptTest) succeeded: 1ms
+Test suite progress: tests succeeded: 103, failed: 0, skipped: 0.
+Starting test testMustHaveValidatorCredential(org.jclouds.chef.functions.GroupToBootScriptTest)
+[pool-6-thread-4] Test testMustHaveValidatorName(org.jclouds.chef.functions.GroupToBootScriptTest) succeeded: 3ms
+Test suite progress: tests succeeded: 104, failed: 0, skipped: 0.
+[pool-6-thread-3] Test testMustHaveValidatorCredential(org.jclouds.chef.functions.GroupToBootScriptTest) succeeded: 0ms
+Test suite progress: tests succeeded: 105, failed: 0, skipped: 0.
+Starting test testOneRecipe(org.jclouds.chef.functions.GroupToBootScriptTest)
+[pool-6-thread-1] Test testMustHaveRunScriptsName(org.jclouds.chef.functions.GroupToBootScriptTest) succeeded: 7ms
+Test suite progress: tests succeeded: 106, failed: 0, skipped: 0.
+[pool-6-thread-5] Test testOneRecipe(org.jclouds.chef.functions.GroupToBootScriptTest) succeeded: 15ms
+Test suite progress: tests succeeded: 107, failed: 0, skipped: 0.
+Starting test testReadRunList(org.jclouds.chef.functions.RunListForGroupTest)
+Starting test testWhenNoDatabagItem(org.jclouds.chef.functions.RunListForGroupTest)
+[pool-7-thread-2] Test testWhenNoDatabagItem(org.jclouds.chef.functions.RunListForGroupTest) succeeded: 0ms
+Test suite progress: tests succeeded: 108, failed: 0, skipped: 0.
+[pool-7-thread-1] Test testReadRunList(org.jclouds.chef.functions.RunListForGroupTest) succeeded: 3ms
+Test suite progress: tests succeeded: 109, failed: 0, skipped: 0.
+Starting test testBuildBootstrapConfigurationWithEmptyRunlist(org.jclouds.chef.internal.BaseChefServiceTest)
+Starting test testBuildBootstrapConfigurationWithNullRunlist(org.jclouds.chef.internal.BaseChefServiceTest)
+Starting test testBuildBootstrapConfigurationWithRunlistAndAttributes(org.jclouds.chef.internal.BaseChefServiceTest)
+Starting test testBuildBootstrapConfigurationWithNullJsonAttributes(org.jclouds.chef.internal.BaseChefServiceTest)
+[pool-8-thread-2] Test testBuildBootstrapConfigurationWithNullJsonAttributes(org.jclouds.chef.internal.BaseChefServiceTest) succeeded: 1ms
+Test suite progress: tests succeeded: 110, failed: 0, skipped: 0.
+[pool-8-thread-1] Test testBuildBootstrapConfigurationWithEmptyRunlist(org.jclouds.chef.internal.BaseChefServiceTest) succeeded: 6ms
+Test suite progress: tests succeeded: 111, failed: 0, skipped: 0.
+[pool-8-thread-3] Test testBuildBootstrapConfigurationWithNullRunlist(org.jclouds.chef.internal.BaseChefServiceTest) succeeded: 5ms
+Test suite progress: tests succeeded: 112, failed: 0, skipped: 0.
+Starting test testBuildBootstrapConfigurationWithRunlist(org.jclouds.chef.internal.BaseChefServiceTest)
+Starting test testBuildBootstrapConfigurationWithRunlistAndEmptyAttributes(org.jclouds.chef.internal.BaseChefServiceTest)
+[pool-8-thread-4] Test testBuildBootstrapConfigurationWithRunlist(org.jclouds.chef.internal.BaseChefServiceTest) succeeded: 1ms
+Test suite progress: tests succeeded: 113, failed: 0, skipped: 0.
+[pool-8-thread-1] Test testBuildBootstrapConfigurationWithRunlistAndEmptyAttributes(org.jclouds.chef.internal.BaseChefServiceTest) succeeded: 1ms
+Test suite progress: tests succeeded: 114, failed: 0, skipped: 0.
+[pool-8-thread-5] Test testBuildBootstrapConfigurationWithRunlistAndAttributes(org.jclouds.chef.internal.BaseChefServiceTest) succeeded: 5ms
+Test suite progress: tests succeeded: 115, failed: 0, skipped: 0.
+Starting test testWithNoRunlist(org.jclouds.chef.strategy.internal.CreateNodeAndPopulateAutomaticAttributesImplTest)
+[pool-9-thread-1] Test testWithNoRunlist(org.jclouds.chef.strategy.internal.CreateNodeAndPopulateAutomaticAttributesImplTest) succeeded: 1ms
+Test suite progress: tests succeeded: 116, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.chef.test.TransientChefApiMetadataTest)
+Starting test testTransformableToContains(org.jclouds.chef.test.TransientChefApiMetadataTest)
+[pool-10-thread-2] Test testTransformableToContains(org.jclouds.chef.test.TransientChefApiMetadataTest) succeeded: 1ms
+Test suite progress: tests succeeded: 117, failed: 0, skipped: 0.
+Starting test testWithId(org.jclouds.chef.test.TransientChefApiMetadataTest)
+[pool-10-thread-1] Test testAllContains(org.jclouds.chef.test.TransientChefApiMetadataTest) succeeded: 14ms
+Test suite progress: tests succeeded: 118, failed: 0, skipped: 0.
+[pool-10-thread-3] Test testWithId(org.jclouds.chef.test.TransientChefApiMetadataTest) succeeded: 4ms
+Test suite progress: tests succeeded: 119, failed: 0, skipped: 0.
+Starting test testContextAssignableFromRestContext(org.jclouds.chef.test.TransientChefApiMetadataTest)
+[pool-10-thread-4] Test testContextAssignableFromRestContext(org.jclouds.chef.test.TransientChefApiMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 120, failed: 0, skipped: 0.
+Tests run: 120, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.132 sec
+
+Results :
+
+Tests run: 120, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ chef ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ chef ---
+[INFO] Building jar: /Users/nacx/src/platform/jclouds-chef/core/target/chef-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (integration) @ chef ---
+[INFO] Surefire report directory: /Users/nacx/src/platform/jclouds-chef/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running Live Integration Tests
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@2aca0115
+Starting test testCreateAdminClient(org.jclouds.chef.ChefApiLiveTest)
+Starting test testCreateClient(org.jclouds.chef.ChefApiLiveTest)
+Starting test testCreateEnvironment(org.jclouds.chef.ChefApiLiveTest)
+Starting test testClientExists(org.jclouds.chef.ChefApiLiveTest)
+Starting test testCreateDatabag(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-1] Test testClientExists(org.jclouds.chef.ChefApiLiveTest) succeeded: 523ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCreateNewCookbook(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-1] Test testCreateNewCookbook(org.jclouds.chef.ChefApiLiveTest) succeeded: 563ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testCreateRole(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-1] Test testCreateRole(org.jclouds.chef.ChefApiLiveTest) succeeded: 424ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testListCookbooks(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-4] Test testCreateDatabag(org.jclouds.chef.ChefApiLiveTest) succeeded: 2337ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testListDatabags(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-2] Test testCreateAdminClient(org.jclouds.chef.ChefApiLiveTest) succeeded: 2387ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testListNodes(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-4] Test testListDatabags(org.jclouds.chef.ChefApiLiveTest) succeeded: 207ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testListRoles(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testCreateEnvironment(org.jclouds.chef.ChefApiLiveTest) succeeded: 2577ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testListSearchIndexes(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-2] Test testListNodes(org.jclouds.chef.ChefApiLiveTest) succeeded: 205ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testSearchClients(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testListSearchIndexes(org.jclouds.chef.ChefApiLiveTest) succeeded: 143ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testSearchNodes(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-4] Test testListRoles(org.jclouds.chef.ChefApiLiveTest) succeeded: 199ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testSearchRoles(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-2] Test testSearchClients(org.jclouds.chef.ChefApiLiveTest) succeeded: 200ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testValidatorCannotDeleteClient(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-3] Test testCreateClient(org.jclouds.chef.ChefApiLiveTest) succeeded: 2800ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testValidatorCannotListClients(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testSearchNodes(org.jclouds.chef.ChefApiLiveTest) succeeded: 141ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testValidatorCreateClient(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-4] Test testSearchRoles(org.jclouds.chef.ChefApiLiveTest) succeeded: 163ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testListCookbookVersionsWithChefService(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-3] Test testValidatorCannotListClients(org.jclouds.chef.ChefApiLiveTest) succeeded: 185ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testValidatorCannotDeleteClient(org.jclouds.chef.ChefApiLiveTest) succeeded: 193ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testUpdateCookbook(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-4] Test testListCookbookVersionsWithChefService(org.jclouds.chef.ChefApiLiveTest) succeeded: 214ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testCreateNode(org.jclouds.chef.ChefApiLiveTest)
+Starting test testCreateDatabag(org.jclouds.chef.test.TransientChefApiIntegrationTest)
+[pool-2-thread-3] Test testCreateDatabag(org.jclouds.chef.test.TransientChefApiIntegrationTest) succeeded: 56ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testRoleExists(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-2] Test testUpdateCookbook(org.jclouds.chef.ChefApiLiveTest) succeeded: 678ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testCreateDatabagItem(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-3] Test testRoleExists(org.jclouds.chef.ChefApiLiveTest) succeeded: 143ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testDatabagExists(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-3] Test testDatabagExists(org.jclouds.chef.ChefApiLiveTest) succeeded: 158ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testListEnvironment(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testValidatorCreateClient(org.jclouds.chef.ChefApiLiveTest) succeeded: 1087ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testSearchEnvironments(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-2] Test testCreateDatabagItem(org.jclouds.chef.ChefApiLiveTest) succeeded: 338ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testSearchDatabagNotFound(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-4] Test testCreateNode(org.jclouds.chef.ChefApiLiveTest) succeeded: 924ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testSearchEnvironmentsWithOptions(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-3] Test testListEnvironment(org.jclouds.chef.ChefApiLiveTest) succeeded: 214ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testSearchRolesWithOptions(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testSearchEnvironments(org.jclouds.chef.ChefApiLiveTest) succeeded: 220ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testGenerateKeyForClient(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-2] Test testSearchDatabagNotFound(org.jclouds.chef.ChefApiLiveTest) succeeded: 186ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testSearchClientsWithOptions(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testGenerateKeyForClient(org.jclouds.chef.ChefApiLiveTest) succeeded: 1024ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testDatabagExists(org.jclouds.chef.test.TransientChefApiIntegrationTest)
+[pool-2-thread-5] Test testDatabagExists(org.jclouds.chef.test.TransientChefApiIntegrationTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testDeleteCookbook(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testDeleteCookbook(org.jclouds.chef.ChefApiLiveTest) succeeded: 172ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testUpdateRole(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testUpdateRole(org.jclouds.chef.ChefApiLiveTest) succeeded: 544ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testDatabagItemExists(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testDatabagItemExists(org.jclouds.chef.ChefApiLiveTest) succeeded: 136ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testListDatabagItems(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testListDatabagItems(org.jclouds.chef.ChefApiLiveTest) succeeded: 132ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testNodeExists(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testNodeExists(org.jclouds.chef.ChefApiLiveTest) succeeded: 113ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testSearchNodesWithOptions(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testSearchNodesWithOptions(org.jclouds.chef.ChefApiLiveTest) succeeded: 5387ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testCreateDatabagItem(org.jclouds.chef.test.TransientChefApiIntegrationTest)
+[pool-2-thread-5] Test testCreateDatabagItem(org.jclouds.chef.test.TransientChefApiIntegrationTest) succeeded: 15ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testSearchDatabag(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testSearchDatabag(org.jclouds.chef.ChefApiLiveTest) succeeded: 130ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testSearchDatabagWithOptions(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testSearchDatabagWithOptions(org.jclouds.chef.ChefApiLiveTest) succeeded: 169ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testUpdateDatabagItem(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testUpdateDatabagItem(org.jclouds.chef.ChefApiLiveTest) succeeded: 543ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testUpdateNode(org.jclouds.chef.ChefApiLiveTest)
+[pool-2-thread-5] Test testUpdateNode(org.jclouds.chef.ChefApiLiveTest) succeeded: 480ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testDatabagItemExists(org.jclouds.chef.test.TransientChefApiIntegrationTest)
+[pool-2-thread-5] Test testDatabagItemExists(org.jclouds.chef.test.TransientChefApiIntegrationTest) succeeded: 0ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testUpdateDatabagItem(org.jclouds.chef.test.TransientChefApiIntegrationTest)
+[pool-2-thread-5] Test testUpdateDatabagItem(org.jclouds.chef.test.TransientChefApiIntegrationTest) succeeded: 16ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testSearchEnvironmentsWithOptions(org.jclouds.chef.ChefApiLiveTest) succeeded: 12923ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testSearchRolesWithOptions(org.jclouds.chef.ChefApiLiveTest) succeeded: 12959ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testSearchClientsWithOptions(org.jclouds.chef.ChefApiLiveTest) succeeded: 13421ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testListCookbooks(org.jclouds.chef.ChefApiLiveTest) succeeded: 23876ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.chef.strategy.internal.CleanupStaleNodesAndClientsImplLiveTest)
+[pool-18-thread-1] Test testExecute(org.jclouds.chef.strategy.internal.CleanupStaleNodesAndClientsImplLiveTest) succeeded: 2616ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.chef.strategy.internal.CreateNodeAndPopulateAutomaticAttributesImplLiveTest)
+[pool-21-thread-1] Test testExecute(org.jclouds.chef.strategy.internal.CreateNodeAndPopulateAutomaticAttributesImplLiveTest) succeeded: 603ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.chef.strategy.internal.DeleteAllApisAndNodesInListImplLiveTest)
+[pool-24-thread-1] Test testExecute(org.jclouds.chef.strategy.internal.DeleteAllApisAndNodesInListImplLiveTest) succeeded: 1530ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.chef.strategy.internal.GetNodesImplLiveTest)
+Starting test testExecuteIterableOfString(org.jclouds.chef.strategy.internal.GetNodesImplLiveTest)
+Starting test testExecutePredicateOfString(org.jclouds.chef.strategy.internal.GetNodesImplLiveTest)
+[pool-27-thread-2] Test testExecuteIterableOfString(org.jclouds.chef.strategy.internal.GetNodesImplLiveTest) succeeded: 222ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+[pool-27-thread-1] Test testExecute(org.jclouds.chef.strategy.internal.GetNodesImplLiveTest) succeeded: 348ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+[pool-27-thread-3] Test testExecutePredicateOfString(org.jclouds.chef.strategy.internal.GetNodesImplLiveTest) succeeded: 376ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testExecute(org.jclouds.chef.strategy.internal.UpdateAutomaticAttributesOnNodeImplLiveTest)
+[pool-30-thread-1] Test testExecute(org.jclouds.chef.strategy.internal.UpdateAutomaticAttributesOnNodeImplLiveTest) succeeded: 791ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.738 sec
+
+Results :
+
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ chef ---
+[INFO] Installing /Users/nacx/src/platform/jclouds-chef/core/target/chef.jar to /Users/nacx/.m2/repository/org/jclouds/api/chef/1.6.0-rc.1/chef-1.6.0-rc.1.jar
+[INFO] Installing /Users/nacx/src/platform/jclouds-chef/core/pom.xml to /Users/nacx/.m2/repository/org/jclouds/api/chef/1.6.0-rc.1/chef-1.6.0-rc.1.pom
+[INFO] Installing /Users/nacx/src/platform/jclouds-chef/core/target/chef-tests.jar to /Users/nacx/.m2/repository/org/jclouds/api/chef/1.6.0-rc.1/chef-1.6.0-rc.1-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ chef ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 52.760s
+[INFO] Finished at: Sat Mar 09 19:35:05 CET 2013
+[INFO] Final Memory: 19M/554M
+[INFO] ------------------------------------------------------------------------
+[WARNING] The requested profile "dev" could not be activated because it does not exist.
