@@ -34,7 +34,7 @@ Because the OpenStack API is also open, the jclouds APIs that talk to private Op
     * `javac -version` 
 1. Create a directory to try out jclouds.
     * `mkdir jclouds` 
-1. Follow the instructions for [Getting the binaries using Apache Ant](/documentation/userguide/installation-guide).
+1. Follow the instructions for [Getting the binaries using Apache Ant](/documentation/userguide/installation-guide#ant).
 1. You should now have a directory with the following structure:
     * `jclouds/`
         * `build.xml`
