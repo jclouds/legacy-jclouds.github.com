@@ -5,142 +5,137 @@ title: A List of applications that use jclouds
 
 # jclouds Community Members
 
-We know folks from a good many places.  While this may just be a list of applications that use jclouds, the folks behind these applications 
-are some of the valuable members of our community.  
+We know folks from a good many places.  While this may just be a list of applications that use jclouds, the good people behind these applications 
+are valuable members of our community.  
 
-  * [Adobe](http://www.adobe.com/)
-    * use jclouds to provision EC2 and vCloud infrastructure under their Enterprise PaaS
+##[Abiquo](http://www.abiquo.com/)##
+   - uses jclouds for OpsCode Chef integration and internally to communicate the UI with the Abiquo API
 
-  * [Salesforce](http://www.salesforce.com/)
-    * use jclouds to provision servers for their automation stacks
+##[Adobe](http://www.adobe.com/)
+   - uses jclouds to provision EC2 and vCloud infrastructure under their Enterprise PaaS
 
-  * [Twitter](http://www.twitter.com)
-    * uses pallet to deploy their storm platform to standard and variable count of spot EC2 instances
-    * uses whirr to setup test cassandra clusters
+##[Amdatu Storage](http://www.amdatu.org/)##
+   - exposes multi-cloud blob services to Amdatu tenants
 
-  * [Red Hat](https://openshift.redhat.com/app/flex)
-    * uses jclouds to deploy OpenShift Flex applications to Terremark, Rackspace and EC2
+##[Apache ACE](http://ace.apache.org/)##
+   - uses jclouds to launch nodes in Amazon EC2
 
-  * [EnterpriseDB](http://www.enterprisedb.com/products-services-training/products-overview/postgres-plus-cloud-database)
-    * is using jclouds in their DBaaS public and private cloud offering, Postgres Plus Cloud Database
+##[Apache Karaf Cellar](http://karaf.apache.org/index/subprojects/cellar.html)##
+   - uses jclouds to provide a node discovery mechanism, it currently uses a BlobStore whiteboard/blackboard pattern and it will switch to a compute based solution soon
+ 
+##[Apache Camel](http://camel.apache.org/jclouds.html)##
+   - enables interaction with cloud provider key-value engines (blobstores) and compute services
 
-  * [I N F I N I S P A N](http://www.jboss.org/infinispan)
-    * utilizes jclouds to persist the state of the grid to blobstores such as  Amazon S3
+##[Apache Whirr](http://whirr.apache.org/)##
+   - uses jclouds to as a substrate for cloud cluster provisioning
 
-  * [Jenkins/Hudson](https://github.com/ccustine/jclouds-plugin)
-    * jclouds launches slaves for Jenkins on any supported cloud
+##[Blow!](https://github.com/paoloditommaso/blow)##
+   - uses jclouds for cluster deployments in the cloud
 
-  * [GoGrid](http://www.gogrid.com/)
-    * utilizes jclouds to test development versions of their cloud platform
+##[Chef integration](https://github.com/jclouds/jclouds-chef)##
+   - jclouds bootstraps nodes based on chef run-lists
 
-  * [enStratus](http://www.enstratus.com/)
-    * through Dasein-jclouds integration, enStratus manages more compute and blobstore providers
+##[CloudBees](http://cloudbees.com/)##
+   - orchestrates provisioning workflows over jclouds provider APIs using Scala
 
-  * [Omixon](http://www.omixon.com/)
-    * uses jclouds blobstore for big data transfer and  made whirr to provision hadoop
+##[Cloudsoft Monterey](http://www.cloudsoftcorp.com/)##
+   - uses [ComputeService](http://www.jclouds.org/documentation/userguide/compute/) to extend the Monterey overlay network across multiple public clouds
 
-  * [Dasein Cloud](http://sourceforge.net/projects/dasein-cloud)
-    * uses jclouds for rackspace, gogrid, azure, and terremark integration
+##[Cloudstore](https://cldstr.com/)##
+   - uses jclouds to enable non-technical users to run web apps on EC2, Rackspace and others
 
-  * [GigaSpaces Cloudify](http://www.cloudifysource.org)
-    * uses jclouds to provision compute resources from multiple cloud providers for the GigaSpaces Cloudify Platform-as-a-Service.
+##[CloudSwitch](http://www.cloudswitch.com/)##
+   - uses jclouds to extend application management to Terremark
 
-  * [Pallet](http://palletops.com/)
-    * uses jclouds clojure to manage node counts and provision instances
+##[CloudTran](http://www.cloudtran.com)##
+   - uses jclouds and Apache Whirr to deploy and test CloudTran applications on GoGrid and RackSpace
 
-  * [Apache Whirr](http://whirr.apache.org/)
-    * uses jclouds to as a substrate for cloud cluster provisioning
+##[Dasein Cloud](http://sourceforge.net/projects/dasein-cloud)##
+   - uses jclouds for Rackspace, GoGrid, Azure, and Terremark integration
 
-  * [docuharvest](https://docuharvest.com/)
-    * uses pallet with jclouds ec2 clojure features to bootstrap couchdb, compojure, etc.
+##[DocuHarvest](http://www.docuharvest.com/)##
+   - uses Pallet with jclouds EC2 Clojure features to bootstrap Apache CouchDB, Compojure, etc.
 
-  * [CloudSwitch](http://www.cloudswitch.com/)
-    * uses jclouds to extend application management to Terremark
+##[ElasticInbox](http://www.elasticinbox.com/)##
+   - uses jclouds to store email messages on blobstores such as AWS S3 and Apache Whirr to deploy ElasticInbox and Cassandra instances
 
-  * [CloudBees](http://cloudbees.com/)
-    * orchestrates provisioning workflows over jclouds provider apis using scala
+##[enStratus](http://www.enstratus.com/)##
+   - through Dasein-jclouds integration, enStratus manages more compute and blobstore providers
 
-  * [funambol](https://www.forge.funambol.org/DomainHome.html)
-    * uses blobstore to help synchronize content across multiple cloud providers, or locally to disk
+##[EnterpriseDB](http://www.enterprisedb.com/products-services-training/products-overview/postgres-plus-cloud-database)##
+   - uses jclouds in its DBaaS public and private cloud offering, Postgres Plus Cloud Database
 
-  * [Cloudsoft Monterey](http://www.cloudsoftcorp.com/)
-    * uses jclouds compute api to extend the Monterey overlay network across multiple public clouds
+##[fluidOperations eCloudManager](http://www.fluidops.com/ecloudmanager.html)##
+   - uses jclouds for monitoring and provisioning cloud services from different vendors like AWS and vCloud
 
-  * [fluidOperations eCloudManager](http://www.fluidops.com/ecloudmanager.html)
-    * uses jclouds for monitoring and provisioning cloud services from different vendors like aws and vcloud
+##[Funambol](http://www.funambol.com/)##
+   - uses [BlobStore](http://www.jclouds.org/documentation/userguide/blobstore-guide/) to help synchronize content across multiple cloud providers or locally to disk
 
-  * [Gravitant cloudMatrix](http://www.gravitant.com)
-    * uses jclouds to access enterprise clouds such as terremark and savvis
+##[Fuse Fabric](http://fabric.fusesource.org/)##
+   - uses jclouds for creating/provisioning the agents that run in the cloud
 
-  * [Chef integration](https://github.com/jclouds/jclouds-chef)
-    * jclouds bootstraps nodes based on chef run-lists
+##[GigaSpaces Cloudify](http://www.gigaspaces.com/cloudify)##
+   - uses jclouds to provision compute resources from multiple cloud providers for the GigaSpaces Cloudify PaaS
 
-  * [RunDeck integration](https://github.com/gschueler/rundeck-jclouds)
-    * uses jclouds ComputeService as a resource provider for runbook automation
+##[GoGrid](http://www.gogrid.com/)##
+   - uses jclouds to test development versions of their cloud platform
 
-  * [Paremus Service Fabric](http://www.paremus.com/psf)
-    * Uses JClouds OSGi integration to deploy Paremus Service Fabric across Public Clouds including Amazon EC2, GoGrid and Rackspace
+##[Gravitant cloudMatrix](http://www.gravitant.com)##
+   - uses jclouds to access enterprise clouds such as Terremark and Savvis
 
-  * [Nimble](http://www.paremus.com/nimble)
-    * Uses JClouds OSGi integration to deploy Nimble OSGi container instances into Public Clouds including Amazon EC2, GoGrid and Rackspace
+##[I N F I N I S P A N](http://www.jboss.org/infinispan)##
+   - uses jclouds to persist the state of the grid to blobstores such as Amazon S3
 
-  * [CloudTran](http://www.cloudtran.com)
-    * uses jclouds and whirr to deploy and test CloudTran applications on GoGrid and RackSpace
+##[Jenkins/Hudson](https://github.com/ccustine/jclouds-plugin)##
+   - jclouds launches slaves for Jenkins on any supported cloud
 
-  * [NeoLoad](http://www.neotys.com/product/neoload-cloud-testing.html)
-    * uses jclouds to manage load generators in the Cloud.
+##[Karaf Integration](https://github.com/jclouds/jclouds-karaf)##
+   - provides managed service factories and command line support for easily creating and managing blobstore and compute as OSGi services
 
-  * [Meteorite Hosting](http://www.meteoriteconsulting.com/hosting.html)
-    * allows users to spawn BI environments across a range of cloud providers in a hassle-free way.
+##[MaestroDev](http://www.maestrodev.com/)##
+   - uses jclouds to start and provision servers on public/private clouds as part of the source code to production workflow, and for building, testing or deployment
 
-  * [SeatYourself](http://seatyourself.biz/)
-    * uses JClouds BlobStore to persist dataO
+##[Maginatics](http://maginatics.com/)##
+   - uses jclouds to integrate with a variety of object stores
 
-  * [GigaSpaces Cloudify](http://www.gigaspaces.com/cloudify)
-    * uses jclouds to provision nodes across multiple cloud providers
+##[Mastodon C](https://www.mastodonc.com/)##
+   - uses jclouds via Pallet in order to provision carbon-neutral Hadoop services
 
-  * [Apache ACE](http://ace.apache.org/)
-    * uses jclouds to launch nodes in Amazon EC2
+##[Meteorite Hosting](http://www.meteorite.bi/)##
+   - enables users to spawn BI environments across a range of cloud providers in a hassle-free way
 
-  * [Amdatu Storage](http://www.amdatu.org/confluence/display/Amdatu/BlobStorage)
-    * exposes multi-cloud blob services to Amdatu tenants
+##[NeoLoad](http://www.neotys.com/product/neoload-cloud-testing.html)##
+   - uses jclouds to manage load generators in the cloud
 
-  * [Karaf Integration](https://github.com/jclouds/jclouds-karaf)
-    * provides managed service factories and command line support for easily creating and managing blobstore & compute as osgi services
+##[Nimble](http://www.paremus.com/nimble)##
+   - uses jclouds OSGi integration to deploy Nimble OSGi container instances into public clouds including Amazon EC2, GoGrid and Rackspace
 
-  * [Apache Karaf Cellar](http://karaf.apache.org/index/subprojects/cellar.html)
-    * uses jclouds in order to provide a node discovery mechanism, it currently uses a blobstore whiteboard / blackboard pattern and it will switch to a compute based solution soon
+##[Nimble Servers](http://www.nimbleservers.com/)##
+   - uses jclouds to provision servers on public clouds in response to user demand
 
-  * [Fuse Fabric](http://fabric.fusesource.org/)
-    * uses jclouds for creating/provisioning the agents that run in the cloud
+##[Ning Atlas](http://atlas-project.org/)##
+   - uses jclouds to provision machines, databases, and loadbalancers that compose environments
 
-  * [ElasticInbox](http://www.elasticinbox.com/)
-    * Uses jclouds to store email messages on blobstores such as AWS S3 and whirr to deploy ElasticInbox and Cassandra instances
+##[Omixon](http://www.omixon.com/)##
+   - uses [BlobStore](http://www.jclouds.org/documentation/userguide/blobstore-guide/) for big data transfer and made Apache Whirr to provision Hadoop
 
-  * [Apache Camel](http://camel.apache.org/jclouds.html)
-    * allows interaction with cloud provider key-value engines (blobstores) and compute services
+##[Pallet](http://palletops.com/)##
+   - uses jclouds clojure to manage node counts and provision instances
 
-  * [Abiquo](http://www.abiquo.com/)
-    * Uses jclouds for OpsCode Chef integration
-    * Uses jclouds internally to communicate the UI with the Abiquo API
+##[Paremus Service Fabric](http://www.paremus.com/psf)##
+   - uses jclouds OSGi integration to deploy Paremus Service Fabric across public clouds including Amazon EC2, GoGrid and Rackspace
 
-  * [Nimble Servers](http://www.nimbleservers.com/)
-    * Nimble Servers uses jclouds to provision servers on public clouds in response to user demand
+##[Red Hat](https://openshift.redhat.com/app/flex)##
+   - uses jclouds to deploy OpenShift Flex applications to Terremark, Rackspace, and EC2
 
-  * [MaestroDev](http://www.maestrodev.com/)
-    * MaestroDev uses jclouds to start and provision servers on public/private clouds as part of the source code to production workflow, for building, testing or deployment
+##[RunDeck integration](https://github.com/gschueler/rundeck-jclouds)##
+   - uses [ComputeService](http://www.jclouds.org/documentation/userguide/compute/) as a resource provider for runbook automation
 
-  * [Ning Atlas](http://atlas-project.org/)
-    * Atlas uses jclouds to provision machines, databases, and loadbalancers that compose environments.
+##[Salesforce](http://www.salesforce.com/)##
+   - uses jclouds to provision servers for their automation stacks
 
-  * [Cloudstore](https://cldstr.com/)
-    * uses jclouds to enable non-technical users to run web apps on EC2, Rackspace and others
+##[SeatYourself](http://seatyourself.biz/)##
+   - uses [BlobStore](http://www.jclouds.org/documentation/userguide/blobstore-guide/) to persist dataO
 
-  * [Maginatics](http://maginatics.com/)
-    * uses jclouds to integrate with a variety of object stores.
-
-  * [Mastodon C](https://www.mastodonc.com/)
-    * uses jclouds via pallet in order to provision carbon-neutral hadoop services 
-
-  * [Blow!](https://github.com/paoloditommaso/blow)
-    * uses jclouds for cluster deployments in the cloud
+##[Twitter](http://www.twitter.com)##
+   - uses jclouds infused Pallet to deploy their storm platform to standard and variable count of spot EC2 instances and Apache Whirr to set up test Cassandra clusters
