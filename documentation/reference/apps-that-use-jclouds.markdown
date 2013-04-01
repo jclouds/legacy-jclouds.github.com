@@ -125,6 +125,9 @@ are valuable members of our community.
 ##[Paremus Service Fabric](http://www.paremus.com/psf)##
    - uses jclouds OSGi integration to deploy Paremus Service Fabric across public clouds including Amazon EC2, GoGrid and Rackspace
 
+##[Rackspace](http://docs.rackspace.com/sdks/guide/content/java.html)
+- uses jclouds as their Rackspace Cloud SDK for Java
+
 ##[Red Hat](https://openshift.redhat.com/app/flex)##
    - uses jclouds to deploy OpenShift Flex applications to Terremark, Rackspace, and EC2
 
