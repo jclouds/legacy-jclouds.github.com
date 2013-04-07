@@ -5,7 +5,7 @@ title: BlobStore Guide
 # BlobStore Guide
 
 The BlobStore API is a portable means of managing key-value storage providers such as Microsoft Azure Blob Service
-and Amazon S3. It offers both asynchronous and synchronous apis, as well as Map-based access to your data.
+and Amazon S3. It offers both asynchronous and synchronous APIs, as well as Map-based access to your data.
 Our APIs are dramatically simplified from the providers, yet still offer enough sophistication to perform 
 most work in a portable manner.
 We also have integrations underway for popular tools such as Apache commons VFS.   
@@ -146,9 +146,9 @@ for detailed description.
 
 ### APIs
 
-You can choose from four apis in increasing complexity: Map, BlobMap, BlobStore, and AsyncBlobStore.  
+You can choose from four APIs in increasing complexity: Map, BlobMap, BlobStore, and AsyncBlobStore.  
 For simple applications, you may find the most basic `Map<String,InputStream>` interface most appropriate.  
-As complexity increases, you are also able to use the AsyncBlobStore interface: `FutureCommand`.  Let's review the `Map` apis first.
+As complexity increases, you are also able to use the AsyncBlobStore interface: `FutureCommand`.  Let's review the `Map` APIs first.
 
 #### InputStreamMap
 
@@ -193,12 +193,12 @@ There are also corresponding `putAllFiles`, `Bytes`, `Strings` methods if you ha
 
 #### BlobMap
 
-There are some limitations when using the `Map<String, InputStream>` api.  For starters, you cannot pass any extra data
+There are some limitations when using the `Map<String, InputStream>` API.  For starters, you cannot pass any extra data
  to the provider.  For example, if you want to pass a default filename via the `Content-Disposition` group, 
 it cannot be done this way.  `BlobMap`  allows you do customize the data you are sending at the cost of coding to a `jclouds` API. 
 Considering it is only one class at this point, this is a decent tradeoff for many.  
 
-Here is an example that shows how to use the `BlobMap` api:
+Here is an example that shows how to use the `BlobMap` API:
 
 {% highlight java %}
 BlobStoreContext context = new BlobStoreContextFactory().createContext("aws-s3", identity, credential);
@@ -461,7 +461,7 @@ Large lists are those who exceed the default or maximum list size of the blob st
 Rackspace, this is 1000, 5000, and 10000 respectively.  Upon hitting this threshold, you need to continue the 
 list in another HTTP request.  
 
-In the new `BlobStore` api, list responses return a `PageSet` object.
+In the new `BlobStore` API, list responses return a `PageSet` object.
 
 A `PageSet` object is the same as a normal `Set`, except that it has a new method 
 
@@ -473,11 +473,11 @@ If this returns `null`, you have the entire listing.  If not, you can choose to 
 specifying the `ListContainerOption` 
 `afterMarker` to this value.
 
-Our Map api knows how to concatenate lists via the `ListMetadataStrategy` object.
+Our Map API knows how to concatenate lists via the `ListMetadataStrategy` object.
 
 ## Return Null on Not Found
 
-All apis, provider-specific or abstraction, must return null when an object is requested, but not found.  
+All APIs, provider-specific or abstraction, must return null when an object is requested, but not found.  
 Throwing exceptions is only appropriate when there is a state problem, for example requesting an object from a container
 that does not exist is a state problem, and should throw an exception.
 
