@@ -31,13 +31,14 @@ String organization = "organization"
 String pemFile = System.getProperty("user.home") + "/.chef/" + client + ".pem";
 String credential = Files.toString(new File(pemFile), Charsets.UTF_8);
 
-ChefContext context = ContextBuilder.newBuilder("chef") //
+ChefContext context = ContextBuilder.newBuilder("hostedchef") //
     .endpoint("https://api.opscode.com/organizations/" + organization) //
     .credentials(client, credential) //
-    .build();
+    .buildView(ChefContext.class);
 
 // The raw api has access to all chef features, as exposed in the Chef REST api
-Set<String> databags = context.getApi().listDatabags();
+HostedChefApi api = context.getApi(HostedChefApi.class);
+Set<String> databags = api.listDatabags();
 
 // ChefService has helpers for common commands
 String nodeName = "chef-example";
@@ -75,11 +76,11 @@ chefConfig.put(ChefProperties.CHEF_VALIDATOR_NAME, validator);
 chefConfig.put(ChefProperties.CHEF_VALIDATOR_CREDENTIAL, validatorCredential);
 
 // Create the connection to the Chef server
-ChefContext context = ContextBuilder.newBuilder("chef") //
+ChefContext context = ContextBuilder.newBuilder("hostedchef") //
     .endpoint("https://api.opscode.com/organizations/" + organization) //
     .credentials(client, credential) //
     .overrides(chefConfig) //
-    .build();
+    .buildView(ChefContext.class);
         
 // Create the connection to the compute provider. Note that ssh will be used to bootstrap chef
 ComputeServiceContext computeContext = ContextBuilder.newBuilder("<the compute provider name>") //
