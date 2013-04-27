@@ -22,10 +22,10 @@ You can either install a private OpenStack cloud for yourself or use an existing
 ### <a id="devstack"></a>DevStack
 If you haven't installed OpenStack before, the best place to start is [DevStack](http://devstack.org/). DevStack is a documented shell script to build complete OpenStack development environments. The 1-2-3 Quick Start doesn't mention it but it's best to create a [localrc](http://devstack.org/samples/localrc.html) file in your devstack directory before running stack.sh. For our purposes the setting we'll need to know to work with jclouds is ADMIN_PASSWORD.
 
-DevStack can be run either in a local VM or in the cloud. The DevStack website has some generic instructions for [Running a Cloud in a VM](http://devstack.org/guides/single-vm.html). You can find more specific instructions to run DevStack in VirtualBox at [Contributing OpenStack Support to jclouds](http://blog.phymata.com/2012/10/03/contributing-openstack-support-to-jclouds/). To run it in the Rackspace Cloud please read [OpenStack devstack on the Rackspace Open Cloud](http://blog.phymata.com/2012/11/08/openstack-devstack-on-the-rackspace-open-cloud/).
+DevStack can be run either in a local VM or in the cloud. The DevStack website has some generic instructions for [Running a Cloud in a VM](http://devstack.org/guides/single-vm.html). You can find more specific instructions to run DevStack in VirtualBox at [Contributing OpenStack Support to jclouds](http://blog.phymata.com/2012/10/03/contributing-openstack-support-to-jclouds/). To run it in the Rackspace Cloud please read [OpenStack devstack on the Rackspace Cloud](http://blog.phymata.com/2012/11/08/openstack-devstack-on-the-rackspace-open-cloud/).
 
 ### <a id="clouds"></a>Public Clouds
-Because the OpenStack API is also open, the jclouds APIs that talk to private OpenStack clouds work just as well with public OpenStack clouds. OpenStack is used by several large public clouds, both the [HP Cloud](https://www.hpcloud.com/) and [Rackspace Open Cloud](http://www.rackspace.com/cloud/) are based on it. If you don't want to sign up for a paid public cloud, you can use [TryStack](http://trystack.org/).
+Because the OpenStack API is also open, the jclouds APIs that talk to private OpenStack clouds work just as well with public OpenStack clouds. OpenStack is used by several large public clouds, both the [HP Cloud](https://www.hpcloud.com/) and [Rackspace Cloud](http://www.rackspace.com/cloud/) are based on it. If you don't want to sign up for a paid public cloud, you can use [TryStack](http://trystack.org/).
 
 ## <a id="install"></a>Get jclouds
 
@@ -278,7 +278,7 @@ public class JCloudsSwift implements Closeable {
 
 ## <a id="next"></a>Next Steps
 
-1. Try the example above with one of the public clouds. For the Rackspace Open Cloud init() becomes
+1. Try the example above with one of the public clouds. For the Rackspace Cloud init() becomes
 
 <pre>
 private void init() {    
