@@ -1,4 +1,32 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.541 sec
+Tests run: 75, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 130.239 sec <<< FAILURE!
+testAddRecordIntoGeoGroup(org.jclouds.ultradns.ws.features.DirectionalPoolApiLiveTest)  Time elapsed: 0.916 sec  <<< FAILURE!
+org.jclouds.ultradns.ws.UltraDNSWSResponseException: Error 4035: Assign Existing Group is not supported for this Record Type.
+	at org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandler.handleError(UltraDNSWSErrorHandler.java:65)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:71)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:80)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:51)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy54.addRecordIntoExistingGroup(Unknown Source)
+	at org.jclouds.ultradns.ws.features.DirectionalPoolApiLiveTest.testAddRecordIntoGeoGroup(DirectionalPoolApiLiveTest.java:242)
+
+testClearTask(org.jclouds.ultradns.ws.features.TaskApiLiveTest)  Time elapsed: 0.344 sec  <<< FAILURE!
+org.jclouds.ultradns.ws.UltraDNSWSResponseException: Error 0
+	at org.jclouds.ultradns.ws.handlers.UltraDNSWSErrorHandler.handleError(UltraDNSWSErrorHandler.java:65)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:71)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:80)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:51)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy61.runTest(Unknown Source)
+	at org.jclouds.ultradns.ws.features.TaskApiLiveTest.testClearTask(TaskApiLiveTest.java:62)
+

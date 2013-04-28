@@ -1,170 +1,395 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 5.385 sec <<< FAILURE!
-testGetApiMetaData(org.jclouds.openstack.keystone.v2_0.KeystoneApiLiveTest)  Time elapsed: 1.017 sec  <<< FAILURE!
+Tests run: 14, Failures: 9, Errors: 0, Skipped: 5, Time elapsed: 2.704 sec <<< FAILURE!
+setup(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.IllegalArgumentException
+	at java.net.URI.create(URI.java:841)
+	at org.jclouds.http.HttpRequest$Builder.endpoint(HttpRequest.java:88)
+	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.grabToken(TokenApiLiveTest.java:62)
+	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.create(TokenApiLiveTest.java:56)
+	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.create(TokenApiLiveTest.java:48)
+	at org.jclouds.apis.BaseApiLiveTest.initialize(BaseApiLiveTest.java:86)
+	at org.jclouds.apis.BaseApiLiveTest.setup(BaseApiLiveTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 55: https://region-a.geo-1.identity.hpcloudsvc.com:35357/v${jclouds.api-version}/
+	at java.net.URI$Parser.fail(URI.java:2810)
+	at java.net.URI$Parser.checkChars(URI.java:2983)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3067)
+	at java.net.URI$Parser.parse(URI.java:3015)
+	at java.net.URI.<init>(URI.java:577)
+	at java.net.URI.create(URI.java:839)
+	... 27 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 55: https://region-a.geo-1.identity.hpcloudsvc.com:35357/v${jclouds.api-version}/
+	at java.net.URI$Parser.fail(URI.java:2810)
+	at java.net.URI$Parser.checkChars(URI.java:2983)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3067)
+	at java.net.URI$Parser.parse(URI.java:3015)
+	at java.net.URI.<init>(URI.java:577)
+	at java.net.URI.create(URI.java:839)
+	... 27 more
+
+testGetApiMetaData(org.jclouds.openstack.keystone.v2_0.KeystoneApiLiveTest)  Time elapsed: 0.651 sec  <<< FAILURE!
 org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/ HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [{"message": {"response" : "Not Allowed" }}]
 	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
-	at com.sun.proxy.$Proxy56.getApiMetadata(Unknown Source)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
+	at com.sun.proxy.$Proxy54.getApiMetadata(Unknown Source)
 	at org.jclouds.openstack.keystone.v2_0.KeystoneApiLiveTest.testGetApiMetaData(KeystoneApiLiveTest.java:36)
 
-testListRolesOfUser(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0.292 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [{"message": {"response" : "Not Allowed" }}]
-	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+testListRolesOfUser(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0.652 sec  <<< FAILURE!
+org.jclouds.rest.AuthorizationException: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1 -> HTTP/1.1 401 Unauthorized
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:55)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
+	at com.sun.proxy.$Proxy50.authenticateWithTenantNameAndCredentials(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:45)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:33)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:81)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:38)
+	at com.google.common.cache.CacheLoader$FunctionToCacheLoader.load(CacheLoader.java:148)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4880)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:236)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:233)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:97)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:56)
+	at org.jclouds.util.Suppliers2$1.get(Suppliers2.java:41)
+	at org.jclouds.util.Suppliers2$4.get(Suppliers2.java:101)
+	at org.jclouds.util.Suppliers2$3.get(Suppliers2.java:77)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.getEndpointFor(RestAnnotationProcessor.java:520)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.findEndpoint(RestAnnotationProcessor.java:361)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:194)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:134)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.toCommand(InvokeSyncToAsyncHttpMethod.java:242)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:127)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy67.list(Unknown Source)
+	at com.sun.proxy.$Proxy59.list(Unknown Source)
 	at org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest.testListRolesOfUser(UserApiLiveTest.java:73)
-
-testInvalidToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)  Time elapsed: 0.004 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: request: HEAD https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/thisisnotarealtoken%21 HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed
+Caused by: org.jclouds.http.HttpResponseException: request: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1  [{"auth":{"passwordCredentials":{"username":"adrian@jclouds.org","password":"T92GVrmRYUdrBu"},"tenantName":"adrian@jclouds.org"}}] failed with response: HTTP/1.1 401 Unauthorized
 	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	... 62 more
+
+testTenants(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest)  Time elapsed: 0.653 sec  <<< FAILURE!
+org.jclouds.rest.AuthorizationException: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1 -> HTTP/1.1 401 Unauthorized
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:55)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
+	at com.sun.proxy.$Proxy50.authenticateWithTenantNameAndCredentials(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:45)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:33)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:81)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:38)
+	at com.google.common.cache.CacheLoader$FunctionToCacheLoader.load(CacheLoader.java:148)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4880)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:236)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:233)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:97)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:56)
+	at org.jclouds.util.Suppliers2$1.get(Suppliers2.java:41)
+	at org.jclouds.util.Suppliers2$4.get(Suppliers2.java:101)
+	at org.jclouds.util.Suppliers2$3.get(Suppliers2.java:77)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.getEndpointFor(RestAnnotationProcessor.java:520)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.findEndpoint(RestAnnotationProcessor.java:361)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:194)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:134)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.toCommand(InvokeSyncToAsyncHttpMethod.java:242)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:127)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy75.isValid(Unknown Source)
-	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.testInvalidToken(TokenApiLiveTest.java:77)
-
-testInvalidTokenEndpoints(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)  Time elapsed: 0.249 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/thisisnotarealtoken%21/endpoints HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [<fault>
-            <faultstring>Incorrect HTTP method used in the request</faultstring>
-            <detail>
-                <errorcode>26301</errorcode>
-                    <trace>
-                        Fault Name: IncorrectHTTPMethod
-                        Error Type: MethodValidationFailure
-                        Description: Incorrect HTTP method used in the request
-                        Service: public_cs_services
-                        Endpoint: public_cs_services_client
-                        Operation (Client):v2.0_tokens
-                    </trace>
-            </detail>
-</fault>
-]
+	at com.sun.proxy.$Proxy61.list(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest.testTenants(TenantApiLiveTest.java:41)
+Caused by: org.jclouds.http.HttpResponseException: request: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1  [{"auth":{"passwordCredentials":{"username":"adrian@jclouds.org","password":"T92GVrmRYUdrBu"},"tenantName":"adrian@jclouds.org"}}] failed with response: HTTP/1.1 401 Unauthorized
 	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	... 62 more
+
+testTenants(org.jclouds.openstack.keystone.v2_0.features.ServiceApiLiveTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.jclouds.rest.AuthorizationException: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1 -> HTTP/1.1 401 Unauthorized
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:55)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
+	at com.sun.proxy.$Proxy50.authenticateWithTenantNameAndCredentials(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:45)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:33)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:81)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:38)
+	at com.google.common.cache.CacheLoader$FunctionToCacheLoader.load(CacheLoader.java:148)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4880)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:236)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:233)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$1.get(KeystoneAuthenticationModule.java:195)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$1.get(KeystoneAuthenticationModule.java:193)
+	at org.jclouds.openstack.keystone.v2_0.filters.AuthenticateRequest.filter(AuthenticateRequest.java:50)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:135)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy75.listEndpointsForToken(Unknown Source)
-	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.testInvalidTokenEndpoints(TokenApiLiveTest.java:94)
-
-testToken(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)  Time elapsed: 0.253 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: request: HEAD https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/HPAuth_6af7d7367d07cae701855a80c064735f5e4dfc94c8f8f8ed7d087e813965a494 HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed
+	at com.sun.proxy.$Proxy60.listTenants(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.ServiceApiLiveTest.testTenants(ServiceApiLiveTest.java:39)
+Caused by: org.jclouds.http.HttpResponseException: request: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1  [{"auth":{"passwordCredentials":{"username":"adrian@jclouds.org","password":"T92GVrmRYUdrBu"},"tenantName":"adrian@jclouds.org"}}] failed with response: HTTP/1.1 401 Unauthorized
 	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	... 56 more
+
+testUserRolesOnTenant(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0.23 sec  <<< FAILURE!
+org.jclouds.rest.AuthorizationException: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1 -> HTTP/1.1 401 Unauthorized
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:55)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
+	at com.sun.proxy.$Proxy50.authenticateWithTenantNameAndCredentials(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:45)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:33)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:81)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:38)
+	at com.google.common.cache.CacheLoader$FunctionToCacheLoader.load(CacheLoader.java:148)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4880)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:236)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:233)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:97)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:56)
+	at org.jclouds.util.Suppliers2$1.get(Suppliers2.java:41)
+	at org.jclouds.util.Suppliers2$4.get(Suppliers2.java:101)
+	at org.jclouds.util.Suppliers2$3.get(Suppliers2.java:77)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.getEndpointFor(RestAnnotationProcessor.java:520)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.findEndpoint(RestAnnotationProcessor.java:361)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:194)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:134)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.toCommand(InvokeSyncToAsyncHttpMethod.java:242)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:127)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy75.isValid(Unknown Source)
-	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.testToken(TokenApiLiveTest.java:61)
-
-testUserRolesOnTenant(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [{"message": {"response" : "Not Allowed" }}]
+	at com.sun.proxy.$Proxy61.list(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest.testUserRolesOnTenant(UserApiLiveTest.java:57)
+Caused by: org.jclouds.http.HttpResponseException: request: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1  [{"auth":{"passwordCredentials":{"username":"adrian@jclouds.org","password":"T92GVrmRYUdrBu"},"tenantName":"adrian@jclouds.org"}}] failed with response: HTTP/1.1 401 Unauthorized
 	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	... 62 more
+
+testTenantsByName(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest)  Time elapsed: 0.024 sec  <<< FAILURE!
+org.jclouds.rest.AuthorizationException: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1 -> HTTP/1.1 401 Unauthorized
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:55)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
+	at com.sun.proxy.$Proxy50.authenticateWithTenantNameAndCredentials(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:45)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:33)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:81)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:38)
+	at com.google.common.cache.CacheLoader$FunctionToCacheLoader.load(CacheLoader.java:148)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4880)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:236)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:233)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:97)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:56)
+	at org.jclouds.util.Suppliers2$1.get(Suppliers2.java:41)
+	at org.jclouds.util.Suppliers2$4.get(Suppliers2.java:101)
+	at org.jclouds.util.Suppliers2$3.get(Suppliers2.java:77)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.getEndpointFor(RestAnnotationProcessor.java:520)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.findEndpoint(RestAnnotationProcessor.java:361)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:194)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:134)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.toCommand(InvokeSyncToAsyncHttpMethod.java:242)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:127)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy67.list(Unknown Source)
-	at org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest.testUserRolesOnTenant(UserApiLiveTest.java:59)
-
-testUsers(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0.215 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [{"message": {"response" : "Not Allowed" }}]
+	at com.sun.proxy.$Proxy61.list(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest.testTenantsByName(TenantApiLiveTest.java:59)
+Caused by: org.jclouds.http.HttpResponseException: request: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1  [{"auth":{"passwordCredentials":{"username":"adrian@jclouds.org","password":"T92GVrmRYUdrBu"},"tenantName":"adrian@jclouds.org"}}] failed with response: HTTP/1.1 401 Unauthorized
 	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	... 62 more
+
+testUsers(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0.182 sec  <<< FAILURE!
+org.jclouds.rest.AuthorizationException: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1 -> HTTP/1.1 401 Unauthorized
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:55)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
+	at com.sun.proxy.$Proxy50.authenticateWithTenantNameAndCredentials(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:45)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:33)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:81)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:38)
+	at com.google.common.cache.CacheLoader$FunctionToCacheLoader.load(CacheLoader.java:148)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4880)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:236)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:233)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:97)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:56)
+	at org.jclouds.util.Suppliers2$1.get(Suppliers2.java:41)
+	at org.jclouds.util.Suppliers2$4.get(Suppliers2.java:101)
+	at org.jclouds.util.Suppliers2$3.get(Suppliers2.java:77)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.getEndpointFor(RestAnnotationProcessor.java:520)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.findEndpoint(RestAnnotationProcessor.java:361)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:194)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:134)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.toCommand(InvokeSyncToAsyncHttpMethod.java:242)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:127)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy67.list(Unknown Source)
+	at com.sun.proxy.$Proxy59.list(Unknown Source)
 	at org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest.testUsers(UserApiLiveTest.java:44)
-
-testTokenEndpoints(org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest)  Time elapsed: 0 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens/HPAuth_6af7d7367d07cae701855a80c064735f5e4dfc94c8f8f8ed7d087e813965a494/endpoints HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [<fault>
-            <faultstring>Incorrect HTTP method used in the request</faultstring>
-            <detail>
-                <errorcode>26301</errorcode>
-                    <trace>
-                        Fault Name: IncorrectHTTPMethod
-                        Error Type: MethodValidationFailure
-                        Description: Incorrect HTTP method used in the request
-                        Service: public_cs_services
-                        Endpoint: public_cs_services_client
-                        Operation (Client):v2.0_tokens
-                    </trace>
-            </detail>
-</fault>
-]
+Caused by: org.jclouds.http.HttpResponseException: request: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1  [{"auth":{"passwordCredentials":{"username":"adrian@jclouds.org","password":"T92GVrmRYUdrBu"},"tenantName":"adrian@jclouds.org"}}] failed with response: HTTP/1.1 401 Unauthorized
 	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	... 62 more
+
+testUsersByName(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0.165 sec  <<< FAILURE!
+org.jclouds.rest.AuthorizationException: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1 -> HTTP/1.1 401 Unauthorized
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:55)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
+	at com.sun.proxy.$Proxy50.authenticateWithTenantNameAndCredentials(Unknown Source)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:45)
+	at org.jclouds.openstack.keystone.v2_0.functions.AuthenticatePasswordCredentials.authenticateWithTenantName(AuthenticatePasswordCredentials.java:33)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:81)
+	at org.jclouds.openstack.keystone.v2_0.functions.internal.BaseAuthenticator.apply(BaseAuthenticator.java:38)
+	at com.google.common.cache.CacheLoader$FunctionToCacheLoader.load(CacheLoader.java:148)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4880)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:236)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:233)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:97)
+	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:56)
+	at org.jclouds.util.Suppliers2$1.get(Suppliers2.java:41)
+	at org.jclouds.util.Suppliers2$4.get(Suppliers2.java:101)
+	at org.jclouds.util.Suppliers2$3.get(Suppliers2.java:77)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.getEndpointFor(RestAnnotationProcessor.java:520)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.findEndpoint(RestAnnotationProcessor.java:361)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:194)
+	at org.jclouds.rest.internal.RestAnnotationProcessor.apply(RestAnnotationProcessor.java:134)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.toCommand(InvokeSyncToAsyncHttpMethod.java:242)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:127)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy75.listEndpointsForToken(Unknown Source)
-	at org.jclouds.openstack.keystone.v2_0.features.TokenApiLiveTest.testTokenEndpoints(TokenApiLiveTest.java:85)
-
-testTenants(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest)  Time elapsed: 0.134 sec  <<< FAILURE!
-java.lang.AssertionError: get returned null for tenant: Tenant{id=37936628937291, name=adrian@jclouds.org} expected object to not be null
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.assertNotNull(Assert.java:404)
-	at org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest.testTenants(TenantApiLiveTest.java:49)
-
-testUsersByName(org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest)  Time elapsed: 0.092 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: command: GET https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/users HTTP/1.1 failed with response: HTTP/1.1 405 Method Not Allowed; content: [{"message": {"response" : "Not Allowed" }}]
-	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
-	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
-	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
-	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
-	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy67.list(Unknown Source)
+	at com.sun.proxy.$Proxy59.list(Unknown Source)
 	at org.jclouds.openstack.keystone.v2_0.features.UserApiLiveTest.testUsersByName(UserApiLiveTest.java:85)
-
-testTenantsByName(org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest)  Time elapsed: 0.463 sec  <<< FAILURE!
-java.lang.AssertionError: get returned null for tenant: Tenant{id=37936628937291, name=adrian@jclouds.org} expected object to not be null
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.assertNotNull(Assert.java:404)
-	at org.jclouds.openstack.keystone.v2_0.features.TenantApiLiveTest.testTenantsByName(TenantApiLiveTest.java:61)
+Caused by: org.jclouds.http.HttpResponseException: request: POST https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/tokens HTTP/1.1  [{"auth":{"passwordCredentials":{"username":"adrian@jclouds.org","password":"T92GVrmRYUdrBu"},"tenantName":"adrian@jclouds.org"}}] failed with response: HTTP/1.1 401 Unauthorized
+	at org.jclouds.openstack.keystone.v2_0.handlers.KeystoneErrorHandler.handleError(KeystoneErrorHandler.java:46)
+	... 62 more
 

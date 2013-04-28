@@ -1,20 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 140, Failures: 4, Errors: 0, Skipped: 6, Time elapsed: 2,136.658 sec <<< FAILURE!
-testCreateAndDestroyVLAN(org.jclouds.cloudsigma.CloudSigmaLasVegasLondonClientLiveTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+Tests run: 141, Failures: 4, Errors: 0, Skipped: 6, Time elapsed: 2,346.148 sec <<< FAILURE!
+testCreateAndDestroyVLAN(org.jclouds.cloudsigma.CloudSigmaLasVegasLondonClientLiveTest)  Time elapsed: 0.144 sec  <<< FAILURE!
 java.lang.IllegalArgumentException: errors:system VLAN could not be created as you do not have a current unused VLAN subscription. Please purchase an additional VLAN subscription then try again.
 	at org.jclouds.cloudsigma.handlers.CloudSigmaErrorHandler.handleError(CloudSigmaErrorHandler.java:69)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy57.createVLAN(Unknown Source)
-	at org.jclouds.cloudsigma.CloudSigmaClientLiveTest.testCreateAndDestroyVLAN(CloudSigmaClientLiveTest.java:245)
+	at org.jclouds.cloudsigma.CloudSigmaClientLiveTest.testCreateAndDestroyVLAN(CloudSigmaClientLiveTest.java:242)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -43,9 +43,9 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.lvs
 	at org.jclouds.cloudsigma.handlers.CloudSigmaErrorHandler.handleError(CloudSigmaErrorHandler.java:56)
 	... 31 more
 
-testTemplateBuilderCannotFind(org.jclouds.cloudsigma.compute.CloudSigmaLasVegasTemplateBuilderLiveTest)  Time elapsed: 0 sec  <<< FAILURE!
+testTemplateBuilderCannotFind(org.jclouds.cloudsigma.compute.CloudSigmaLasVegasTemplateBuilderLiveTest)  Time elapsed: 0.002 sec  <<< FAILURE!
 org.testng.TestException: 
-Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.cloudsigma.compute.CloudSigmaLasVegasTemplateBuilderLiveTest@403ef810] should have thrown an exception of class java.util.NoSuchElementException
+Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.cloudsigma.compute.CloudSigmaLasVegasTemplateBuilderLiveTest@1ebcda2d] should have thrown an exception of class java.util.NoSuchElementException
 	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -64,19 +64,19 @@ Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.com
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 
-testCreateAndDestroyStaticIP(org.jclouds.cloudsigma.CloudSigmaLasVegasLondonClientLiveTest)  Time elapsed: 0.205 sec  <<< FAILURE!
+testCreateAndDestroyStaticIP(org.jclouds.cloudsigma.CloudSigmaLasVegasLondonClientLiveTest)  Time elapsed: 0.197 sec  <<< FAILURE!
 java.lang.IllegalArgumentException: errors:system IP address could not be created as you do not have a current unused static IP address subscription. Please purchase an additional static IP address subscription then try again.
 	at org.jclouds.cloudsigma.handlers.CloudSigmaErrorHandler.handleError(CloudSigmaErrorHandler.java:69)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy57.createStaticIP(Unknown Source)
-	at org.jclouds.cloudsigma.CloudSigmaClientLiveTest.testCreateAndDestroyStaticIP(CloudSigmaClientLiveTest.java:261)
+	at org.jclouds.cloudsigma.CloudSigmaClientLiveTest.testCreateAndDestroyStaticIP(CloudSigmaClientLiveTest.java:258)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -105,7 +105,7 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST https://api.lvs
 	at org.jclouds.cloudsigma.handlers.CloudSigmaErrorHandler.handleError(CloudSigmaErrorHandler.java:56)
 	... 31 more
 
-testDefaultTemplateBuilder(org.jclouds.cloudsigma.compute.CloudSigmaLasVegasTemplateBuilderLiveTest)  Time elapsed: 0.264 sec  <<< FAILURE!
+testDefaultTemplateBuilder(org.jclouds.cloudsigma.compute.CloudSigmaLasVegasTemplateBuilderLiveTest)  Time elapsed: 6.25 sec  <<< FAILURE!
 java.lang.AssertionError: expected [6aab1938-71b3-4252-ac1c-a3cb17c284ab] but found [497d7524-5698-4462-89b7-a06c73e0086f]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)

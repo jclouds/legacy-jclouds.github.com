@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 117, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 271.625 sec <<< FAILURE!
-testDirectory(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)  Time elapsed: 1.998 sec  <<< FAILURE!
-java.lang.AssertionError: [[type=RELATIVE_PATH, id=null, name=directory, location={scope=PROVIDER, id=s3, description=https://s3.amazonaws.com}, uri=https://adriancole-blobstore7.s3.amazonaws.com/directory/, userMetadata={}]]
+Tests run: 117, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 227.108 sec <<< FAILURE!
+testDirectory(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)  Time elapsed: 0.065 sec  <<< FAILURE!
+java.lang.AssertionError: [[type=RELATIVE_PATH, id=null, name=directory, location={scope=PROVIDER, id=s3, description=https://s3.amazonaws.com}, uri=https://adrianc-blobstore7.s3.amazonaws.com/directory/, userMetadata={}]]
 	at org.jclouds.blobstore.integration.internal.BaseContainerIntegrationTest.testDirectory(BaseContainerIntegrationTest.java:174)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)

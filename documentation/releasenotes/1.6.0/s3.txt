@@ -1,7 +1,7 @@
 [INFO] Scanning for projects...
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for org.jclouds.api:s3:bundle:1.6.0-SNAPSHOT
-[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/private/tmp/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /private/tmp/jclouds/project/pom.xml, line 24, column 13
 [WARNING] 
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
 [WARNING] 
@@ -24,404 +24,404 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ s3 ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/s3/src/main/clojure
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/apis/s3/src/main/clojure
 [INFO] Copying 1 resource
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ s3 ---
-[INFO] Compiling 83 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/s3/target/classes
+[INFO] Compiling 83 source files to /private/tmp/jclouds/apis/s3/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ s3 ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/s3/src/test/clojure
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/apis/s3/src/test/clojure
 [INFO] Copying 4 resources
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ s3 ---
-[INFO] Compiling 50 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/s3/target/test-classes
+[INFO] Compiling 50 source files to /private/tmp/jclouds/apis/s3/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ s3 ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/s3/target/surefire-reports
+[INFO] Surefire report directory: /private/tmp/jclouds/apis/s3/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@4ca31e1b
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@60765a16
 Starting test testBucketWithHostnameStyle(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredNoPathTest)
-[pool-1-thread-1] Test testBucketWithHostnameStyle(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredNoPathTest) succeeded: 59ms
+[pool-1-thread-1] Test testBucketWithHostnameStyle(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredNoPathTest) succeeded: 34ms
 Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
-Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
 Starting test testBucket(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
-[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 2ms
-Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testBucketWithHostnameStyle(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
 Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
 [pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testBucket(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 2ms
 Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
 Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
 [pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
 Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
 Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
-Starting test testBucketWithHostnameStyle(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
-[pool-2-thread-1] Test testBucket(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 9ms
+[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
 Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
-[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 8ms
+Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
+[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
 Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
 Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
-[pool-2-thread-2] Test testBucketWithHostnameStyle(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 20ms
+[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
 Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
-[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 7ms
+Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
+[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
 Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
 Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
 [pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
 Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
 Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
-[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
+[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 0ms
 Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
 Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
-[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
+[pool-2-thread-2] Test testBucketWithHostnameStyle(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 9ms
 Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
-Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
-[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
+[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 0ms
 Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
 Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
-[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
+[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 0ms
 Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
 Starting test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest)
-[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 6ms
+[pool-2-thread-3] Test testObject(org.jclouds.s3.binders.BindAsHostPrefixIfConfiguredTest) succeeded: 1ms
 Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
 Starting test testApplyInputStream(org.jclouds.s3.binders.BindBucketLoggingToXmlPayloadTest)
-[pool-3-thread-1] Test testApplyInputStream(org.jclouds.s3.binders.BindBucketLoggingToXmlPayloadTest) succeeded: 86ms
+[pool-3-thread-1] Test testApplyInputStream(org.jclouds.s3.binders.BindBucketLoggingToXmlPayloadTest) succeeded: 41ms
 Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
 Starting test testApplyInputStream(org.jclouds.s3.binders.BindNoBucketLoggingToXmlPayloadTest)
-[pool-4-thread-1] Test testApplyInputStream(org.jclouds.s3.binders.BindNoBucketLoggingToXmlPayloadTest) succeeded: 27ms
+[pool-4-thread-1] Test testApplyInputStream(org.jclouds.s3.binders.BindNoBucketLoggingToXmlPayloadTest) succeeded: 18ms
 Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
-Starting test testNoContentLengthIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest)
-Starting test testNoKeyIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest)
 Starting test testNullIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest)
 Starting test testExtendedPropertiesBind(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest)
+Starting test testNoKeyIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest)
+Starting test testNoContentLengthIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest)
 Starting test testMustBeS3Object(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest)
-[pool-5-thread-5] Test testNullIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 2ms
+[pool-5-thread-5] Test testNullIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 1ms
 Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
 Starting test testOver5GBIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest)
-[pool-5-thread-5] Test testOver5GBIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 4ms
+[pool-5-thread-4] Test testNoKeyIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 5ms
 Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
-[pool-5-thread-4] Test testNoKeyIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 7ms
+[pool-5-thread-2] Test testMustBeS3Object(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 5ms
 Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
-[pool-5-thread-3] Test testNoContentLengthIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 10ms
+[pool-5-thread-3] Test testNoContentLengthIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 5ms
 Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
-Starting test testPassWithMinimumDetailsAndPayload5GB(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest)
-[pool-5-thread-2] Test testMustBeS3Object(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 7ms
+[pool-5-thread-5] Test testOver5GBIsBad(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 4ms
 Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
-[pool-5-thread-5] Test testPassWithMinimumDetailsAndPayload5GB(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 2ms
+Starting test testPassWithMinimumDetailsAndPayload5GB(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest)
+[pool-5-thread-4] Test testPassWithMinimumDetailsAndPayload5GB(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 1ms
 Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
-[pool-5-thread-1] Test testExtendedPropertiesBind(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 12ms
+[pool-5-thread-1] Test testExtendedPropertiesBind(org.jclouds.s3.binders.BindS3ObjectMetadataToRequestTest) succeeded: 9ms
 Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
 Starting test testOneRange(org.jclouds.s3.blobstore.functions.BlobToHttpGetOptionsTest)
-Starting test testAclStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
-Starting test testBuildRequestHeaders(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-1] Test testOneRange(org.jclouds.s3.blobstore.functions.BlobToHttpGetOptionsTest) succeeded: 5ms
+[pool-6-thread-1] Test testOneRange(org.jclouds.s3.blobstore.functions.BlobToHttpGetOptionsTest) succeeded: 2ms
 Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
-[pool-6-thread-3] Test testAclStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 2ms
-Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
-Starting test testAclDefault(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testBuildRequestHeaders(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 2ms
-Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
-[pool-6-thread-2] Test testAclDefault(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
-Starting test testBuildRequestHeadersWhenMetadataNull(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testBuildRequestHeadersWhenMetadataNull(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
-Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
-Starting test testETagDoesntMatchAfterIfUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testETagDoesntMatchAfterIfUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
-Starting test testETagMatchesAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testETagMatchesAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
-Starting test testETagMatchesAfterIfModified(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testETagMatchesAfterIfModified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
-Starting test testETagMatchesAfterIfUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testETagMatchesAfterIfUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
-Starting test testGoodMeta(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testGoodMeta(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
-Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
-Starting test testGoodMetaStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testGoodMetaStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
-Starting test testIfETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testIfETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
-Starting test testIfETagDoesntMatchNPE(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testIfETagDoesntMatchNPE(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
-Starting test testIfETagDoesntMatchStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testIfETagDoesntMatchStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
-Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
-Starting test testIfETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-4] Test testIfETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
 Starting test testBuildRequestHeadersACL(org.jclouds.s3.options.CopyObjectOptionsTest)
+Starting test testAclDefault(org.jclouds.s3.options.CopyObjectOptionsTest)
+Starting test testBuildRequestHeaders(org.jclouds.s3.options.CopyObjectOptionsTest)
+Starting test testAclStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-2] Test testAclDefault(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testBuildRequestHeadersWhenMetadataNull(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-1] Test testBuildRequestHeadersWhenMetadataNull(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
 Starting test testETagDoesntMatchAfterETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-5] Test testBuildRequestHeadersACL(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testETagDoesntMatchAfterIfModified(org.jclouds.s3.options.CopyObjectOptionsTest)
 [pool-6-thread-2] Test testETagDoesntMatchAfterETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+[pool-6-thread-1] Test testETagDoesntMatchAfterIfModified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testETagDoesntMatchAfterIfUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-4] Test testBuildRequestHeaders(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+[pool-6-thread-3] Test testAclStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+[pool-6-thread-5] Test testETagDoesntMatchAfterIfUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+Starting test testETagMatchesAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest)
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testETagMatchesAfterIfUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest)
+Starting test testETagMatchesAfterIfModified(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-2] Test testETagMatchesAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Starting test testGoodMeta(org.jclouds.s3.options.CopyObjectOptionsTest)
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+[pool-6-thread-1] Test testETagMatchesAfterIfModified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+[pool-6-thread-4] Test testETagMatchesAfterIfUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testGoodMetaStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-3] Test testGoodMeta(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testIfETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-5] Test testGoodMetaStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testIfETagDoesntMatchNPE(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-2] Test testIfETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+[pool-6-thread-1] Test testIfETagDoesntMatchNPE(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testIfETagDoesntMatchStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
+Starting test testIfETagMatchesStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-4] Test testIfETagDoesntMatchStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
 Starting test testIfModifiedAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-2] Test testIfModifiedAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
-Starting test testIfModifiedAfterETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-2] Test testIfModifiedAfterETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Starting test testIfETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-2] Test testIfETagMatchesStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
-Starting test testIfModifiedAfterUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-2] Test testIfModifiedAfterUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+[pool-6-thread-1] Test testIfModifiedAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
-Starting test testIfModifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-2] Test testIfModifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Starting test testIfModifiedAfterETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest)
+Starting test testIfETagMatchesNPE(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-3] Test testIfETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
-Starting test testIfModifiedSinceNPE(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-2] Test testIfModifiedSinceNPE(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+[pool-6-thread-5] Test testIfETagMatchesNPE(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
-Starting test testIfModifiedSinceStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-2] Test testIfModifiedSinceStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Starting test testIfModifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest)
+Starting test testIfModifiedAfterUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-1] Test testIfModifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Starting test testIfModifiedSinceNPE(org.jclouds.s3.options.CopyObjectOptionsTest)
 Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
-Starting test testIfUnmodifiedAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-2] Test testIfUnmodifiedAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+[pool-6-thread-2] Test testIfModifiedAfterUnmodified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+[pool-6-thread-3] Test testIfModifiedSinceNPE(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testIfUnmodifiedAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-4] Test testIfModifiedAfterETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 2ms
+Starting test testIfModifiedSinceStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testIfUnmodifiedAfterModified(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-1] Test testIfUnmodifiedAfterETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+[pool-6-thread-3] Test testIfUnmodifiedAfterModified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+[pool-6-thread-5] Test testIfModifiedSinceStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
 Starting test testIfUnmodifiedAfterETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest)
 [pool-6-thread-2] Test testIfUnmodifiedAfterETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
-[pool-6-thread-5] Test testBuildRequestHeadersACL(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 24ms
-Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
-Starting test testIfUnmodifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-5] Test testIfUnmodifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
-Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
-Starting test testIfUnmodifiedSinceNPE(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-5] Test testIfUnmodifiedSinceNPE(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
-Starting test testIfUnmodifiedSinceStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-5] Test testIfUnmodifiedSinceStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
-Starting test testMetaNPE(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-5] Test testMetaNPE(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
-Starting test testNullIfETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-5] Test testNullIfETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Starting test testIfUnmodifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest)
+Starting test testIfUnmodifiedSinceNPE(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-4] Test testIfUnmodifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
-Starting test testNullIfETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-5] Test testNullIfETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+[pool-6-thread-1] Test testIfUnmodifiedSinceNPE(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+Starting test testIfUnmodifiedSinceStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
 Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
-Starting test testNullIfModifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-5] Test testNullIfModifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Starting test testMetaNPE(org.jclouds.s3.options.CopyObjectOptionsTest)
+Starting test testNullIfETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-3] Test testIfUnmodifiedSinceStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
-Starting test testNullIfUnmodifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-5] Test testNullIfUnmodifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+[pool-6-thread-2] Test testNullIfETagDoesntMatch(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Starting test testNullIfETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest)
 Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
-Starting test testIfUnmodifiedAfterModified(org.jclouds.s3.options.CopyObjectOptionsTest)
-Starting test testAssignability(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-5] Test testAssignability(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
+[pool-6-thread-5] Test testMetaNPE(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
-Starting test testDelimiter(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-2] Test testIfUnmodifiedAfterModified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
+[pool-6-thread-4] Test testNullIfETagMatches(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
-Starting test testIfETagMatchesStatic(org.jclouds.s3.options.CopyObjectOptionsTest)
-Starting test testDelimiterNPE(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-1] Test testIfETagMatchesStatic(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Starting test testNullIfModifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest)
+Starting test testNullIfUnmodifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest)
+[pool-6-thread-1] Test testNullIfModifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
-Starting test testDelimiterStatic(org.jclouds.s3.options.ListBucketOptionsTest)
-Starting test testETagDoesntMatchAfterIfModified(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-3] Test testETagDoesntMatchAfterIfModified(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
+Starting test testAssignability(org.jclouds.s3.options.ListBucketOptionsTest)
+[pool-6-thread-3] Test testNullIfUnmodifiedSince(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
-Starting test testMarker(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-2] Test testDelimiterNPE(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 4ms
+Starting test testDelimiterNPE(org.jclouds.s3.options.ListBucketOptionsTest)
+[pool-6-thread-2] Test testAssignability(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testDelimiterStatic(org.jclouds.s3.options.ListBucketOptionsTest)
+Starting test testDelimiter(org.jclouds.s3.options.ListBucketOptionsTest)
+Starting test testMarker(org.jclouds.s3.options.ListBucketOptionsTest)
 Starting test testMarkerNPE(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-2] Test testMarkerNPE(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+[pool-6-thread-4] Test testDelimiterNPE(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
-Starting test testMarkerStatic(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-1] Test testDelimiterStatic(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 3ms
+[pool-6-thread-2] Test testMarkerNPE(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
-Starting test testMaxKeys(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-1] Test testMaxKeys(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+[pool-6-thread-5] Test testDelimiter(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
-Starting test testMaxKeysNegative(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-1] Test testMaxKeysNegative(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+[pool-6-thread-3] Test testMarker(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
-[pool-6-thread-5] Test testDelimiter(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 5ms
+Starting test testMarkerStatic(org.jclouds.s3.options.ListBucketOptionsTest)
+[pool-6-thread-1] Test testDelimiterStatic(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
-[pool-6-thread-3] Test testMarker(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 3ms
+[pool-6-thread-4] Test testMarkerStatic(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
-Starting test testNullDelimiter(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-3] Test testNullDelimiter(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+Starting test testMaxKeysNegative(org.jclouds.s3.options.ListBucketOptionsTest)
+Starting test testMaxKeys(org.jclouds.s3.options.ListBucketOptionsTest)
+[pool-6-thread-5] Test testMaxKeysNegative(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
-Starting test testNullMarker(org.jclouds.s3.options.ListBucketOptionsTest)
-Starting test testNoOptionsQueryString(org.jclouds.s3.options.ListBucketOptionsTest)
 Starting test testMaxKeysStatic(org.jclouds.s3.options.ListBucketOptionsTest)
-Starting test testIfETagMatchesNPE(org.jclouds.s3.options.CopyObjectOptionsTest)
-[pool-6-thread-3] Test testNullMarker(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+[pool-6-thread-2] Test testMaxKeys(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
-Starting test testNullMaxKeys(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-3] Test testNullMaxKeys(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+Starting test testNullDelimiter(org.jclouds.s3.options.ListBucketOptionsTest)
+[pool-6-thread-3] Test testMaxKeysStatic(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
+Starting test testNoOptionsQueryString(org.jclouds.s3.options.ListBucketOptionsTest)
 Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
-[pool-6-thread-2] Test testMarkerStatic(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 5ms
+[pool-6-thread-4] Test testNullDelimiter(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
-Starting test testNullPrefix(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-3] Test testNullPrefix(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+Starting test testNullMarker(org.jclouds.s3.options.ListBucketOptionsTest)
+[pool-6-thread-1] Test testNoOptionsQueryString(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
-Starting test testOneOptionQueryString(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-2] Test testOneOptionQueryString(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+[pool-6-thread-5] Test testNullMarker(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
-Starting test testPrefix(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-3] Test testPrefix(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+Starting test testNullPrefix(org.jclouds.s3.options.ListBucketOptionsTest)
+Starting test testNullMaxKeys(org.jclouds.s3.options.ListBucketOptionsTest)
+[pool-6-thread-3] Test testNullPrefix(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
-Starting test testPrefixAndDelimiterUrlEncodingQueryString(org.jclouds.s3.options.ListBucketOptionsTest)
-Starting test testPrefixNPE(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-2] Test testPrefixAndDelimiterUrlEncodingQueryString(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+Starting test testOneOptionQueryString(org.jclouds.s3.options.ListBucketOptionsTest)
+[pool-6-thread-2] Test testNullMaxKeys(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
-Starting test testPrefixStatic(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-2] Test testPrefixStatic(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+Starting test testPrefixAndDelimiterUrlEncodingQueryString(org.jclouds.s3.options.ListBucketOptionsTest)
+Starting test testPrefix(org.jclouds.s3.options.ListBucketOptionsTest)
+[pool-6-thread-4] Test testPrefixAndDelimiterUrlEncodingQueryString(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
+Starting test testPrefixNPE(org.jclouds.s3.options.ListBucketOptionsTest)
 Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
-Starting test testTwoOptionQueryString(org.jclouds.s3.options.ListBucketOptionsTest)
-[pool-6-thread-2] Test testTwoOptionQueryString(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+[pool-6-thread-1] Test testOneOptionQueryString(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
-Starting test test404ContainerNotFoundExceptionPath(org.jclouds.s3.handlers.ParseS3ErrorFromXmlContentTest)
-[pool-6-thread-3] Test testPrefixNPE(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 4ms
+[pool-6-thread-5] Test testPrefix(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
+Starting test testPrefixStatic(org.jclouds.s3.options.ListBucketOptionsTest)
 Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
-Starting test test404KeyNotFoundExceptionPath(org.jclouds.s3.handlers.ParseS3ErrorFromXmlContentTest)
-[pool-6-thread-5] Test testNoOptionsQueryString(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 6ms
+[pool-6-thread-3] Test testPrefixNPE(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
-Starting test testAclDefault(org.jclouds.s3.options.PutBucketOptionsTest)
-[pool-6-thread-5] Test testAclDefault(org.jclouds.s3.options.PutBucketOptionsTest) succeeded: 0ms
+Starting test testTwoOptionQueryString(org.jclouds.s3.options.ListBucketOptionsTest)
+[pool-6-thread-2] Test testPrefixStatic(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
-Starting test testAclStatic(org.jclouds.s3.options.PutBucketOptionsTest)
-[pool-6-thread-5] Test testAclStatic(org.jclouds.s3.options.PutBucketOptionsTest) succeeded: 1ms
+Starting test test404ContainerNotFoundExceptionPath(org.jclouds.s3.handlers.ParseS3ErrorFromXmlContentTest)
+[pool-6-thread-4] Test testTwoOptionQueryString(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+Starting test testAclDefault(org.jclouds.s3.options.PutBucketOptionsTest)
+Starting test test404KeyNotFoundExceptionPath(org.jclouds.s3.handlers.ParseS3ErrorFromXmlContentTest)
+Starting test testAclStatic(org.jclouds.s3.options.PutBucketOptionsTest)
 Starting test testBuildRequestHeaders(org.jclouds.s3.options.PutBucketOptionsTest)
-[pool-6-thread-5] Test testBuildRequestHeaders(org.jclouds.s3.options.PutBucketOptionsTest) succeeded: 0ms
+[pool-6-thread-3] Test testAclDefault(org.jclouds.s3.options.PutBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
-Starting test testAclDefault(org.jclouds.s3.options.PutObjectOptionsTest)
-[pool-6-thread-5] Test testAclDefault(org.jclouds.s3.options.PutObjectOptionsTest) succeeded: 0ms
+[pool-6-thread-2] Test testAclStatic(org.jclouds.s3.options.PutBucketOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
-Starting test testAclStatic(org.jclouds.s3.options.PutObjectOptionsTest)
-[pool-6-thread-4] Test testIfETagMatchesNPE(org.jclouds.s3.options.CopyObjectOptionsTest) succeeded: 10ms
+[pool-6-thread-4] Test testBuildRequestHeaders(org.jclouds.s3.options.PutBucketOptionsTest) succeeded: 0ms
 Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
-[pool-6-thread-1] Test testMaxKeysStatic(org.jclouds.s3.options.ListBucketOptionsTest) succeeded: 12ms
-Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
+Starting test testAclDefault(org.jclouds.s3.options.PutObjectOptionsTest)
+Starting test testAclStatic(org.jclouds.s3.options.PutObjectOptionsTest)
+[pool-6-thread-3] Test testAclDefault(org.jclouds.s3.options.PutObjectOptionsTest) succeeded: 0ms
 Starting test testBuildRequestHeaders(org.jclouds.s3.options.PutObjectOptionsTest)
-[pool-6-thread-1] Test testBuildRequestHeaders(org.jclouds.s3.options.PutObjectOptionsTest) succeeded: 0ms
-Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
 Starting test testDirectorySeparator(org.jclouds.s3.S3ClientMockTest)
-[pool-6-thread-5] Test testAclStatic(org.jclouds.s3.options.PutObjectOptionsTest) succeeded: 5ms
+[pool-6-thread-2] Test testAclStatic(org.jclouds.s3.options.PutObjectOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+[pool-6-thread-4] Test testBuildRequestHeaders(org.jclouds.s3.options.PutObjectOptionsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 87, failed: 0, skipped: 0.
 Starting test testMultiPageResult(org.jclouds.s3.S3Test)
 Starting test testSinglePageResult(org.jclouds.s3.S3Test)
-[pool-6-thread-5] Test testMultiPageResult(org.jclouds.s3.S3Test) succeeded: 86ms
+[pool-6-thread-4] Test testSinglePageResult(org.jclouds.s3.S3Test) succeeded: 39ms
 Test suite progress: tests succeeded: 88, failed: 0, skipped: 0.
-[pool-6-thread-4] Test testSinglePageResult(org.jclouds.s3.S3Test) succeeded: 96ms
+[pool-6-thread-2] Test testMultiPageResult(org.jclouds.s3.S3Test) succeeded: 42ms
 Test suite progress: tests succeeded: 89, failed: 0, skipped: 0.
-[pool-6-thread-3] Test test404KeyNotFoundExceptionPath(org.jclouds.s3.handlers.ParseS3ErrorFromXmlContentTest) succeeded: 218ms
+[pool-6-thread-5] Test test404KeyNotFoundExceptionPath(org.jclouds.s3.handlers.ParseS3ErrorFromXmlContentTest) succeeded: 125ms
 Test suite progress: tests succeeded: 90, failed: 0, skipped: 0.
-[pool-6-thread-2] Test test404ContainerNotFoundExceptionPath(org.jclouds.s3.handlers.ParseS3ErrorFromXmlContentTest) succeeded: 283ms
+[pool-6-thread-1] Test test404ContainerNotFoundExceptionPath(org.jclouds.s3.handlers.ParseS3ErrorFromXmlContentTest) succeeded: 125ms
 Test suite progress: tests succeeded: 91, failed: 0, skipped: 0.
-[pool-6-thread-1] Test testDirectorySeparator(org.jclouds.s3.S3ClientMockTest) succeeded: 833ms
+[pool-6-thread-3] Test testDirectorySeparator(org.jclouds.s3.S3ClientMockTest) succeeded: 352ms
 Test suite progress: tests succeeded: 92, failed: 0, skipped: 0.
 Starting test testZeroLengthPutHasContentLengthHeader(org.jclouds.s3.S3ClientMockTest)
-[pool-6-thread-1] Test testZeroLengthPutHasContentLengthHeader(org.jclouds.s3.S3ClientMockTest) succeeded: 362ms
+[pool-6-thread-3] Test testZeroLengthPutHasContentLengthHeader(org.jclouds.s3.S3ClientMockTest) succeeded: 132ms
 Test suite progress: tests succeeded: 93, failed: 0, skipped: 0.
 Starting test test(org.jclouds.s3.blobstore.functions.BucketsToStorageMetadataTest)
-[pool-9-thread-1] Test test(org.jclouds.s3.blobstore.functions.BucketsToStorageMetadataTest) succeeded: 5ms
+[pool-9-thread-1] Test test(org.jclouds.s3.blobstore.functions.BucketsToStorageMetadataTest) succeeded: 6ms
 Test suite progress: tests succeeded: 94, failed: 0, skipped: 0.
 Starting test testMapsToCorrectRegion(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest)
-[pool-10-thread-1] Test testMapsToCorrectRegion(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest) succeeded: 1ms
-Test suite progress: tests succeeded: 95, failed: 0, skipped: 0.
 Starting test testNullOnAbsentData(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest)
 Starting test testNullOnUnmatchedRegion(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest)
-[pool-10-thread-3] Test testNullOnUnmatchedRegion(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest) succeeded: 0ms
-Test suite progress: tests succeeded: 96, failed: 0, skipped: 0.
-[pool-10-thread-2] Test testNullOnAbsentData(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest) succeeded: 1ms
-Test suite progress: tests succeeded: 97, failed: 0, skipped: 0.
+[pool-10-thread-2] Test testNullOnAbsentData(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 95, failed: 0, skipped: 0.
 Starting test testOnlyLocationDoesntNeedMapping(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest)
 [pool-10-thread-4] Test testOnlyLocationDoesntNeedMapping(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest) succeeded: 0ms
+Test suite progress: tests succeeded: 96, failed: 0, skipped: 0.
+[pool-10-thread-1] Test testMapsToCorrectRegion(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest) succeeded: 1ms
+Test suite progress: tests succeeded: 97, failed: 0, skipped: 0.
+[pool-10-thread-3] Test testNullOnUnmatchedRegion(org.jclouds.s3.blobstore.functions.LocationFromBucketNameTest) succeeded: 1ms
 Test suite progress: tests succeeded: 98, failed: 0, skipped: 0.
 Starting test testDoesntCatchOtherExceptions(org.jclouds.s3.blobstore.internal.BackoffOnNotFoundWhenGetBucketACLTest)
 [pool-11-thread-1] Test testDoesntCatchOtherExceptions(org.jclouds.s3.blobstore.internal.BackoffOnNotFoundWhenGetBucketACLTest) succeeded: 1ms
 Test suite progress: tests succeeded: 99, failed: 0, skipped: 0.
 Starting test testMaxRetriesExceededThrowsException(org.jclouds.s3.blobstore.internal.BackoffOnNotFoundWhenGetBucketACLTest)
-[pool-11-thread-1] Test testMaxRetriesExceededThrowsException(org.jclouds.s3.blobstore.internal.BackoffOnNotFoundWhenGetBucketACLTest) succeeded: 705ms
+[pool-11-thread-1] Test testMaxRetriesExceededThrowsException(org.jclouds.s3.blobstore.internal.BackoffOnNotFoundWhenGetBucketACLTest) succeeded: 704ms
 Test suite progress: tests succeeded: 100, failed: 0, skipped: 0.
 Starting test testMaxRetriesNotExceededReturnsValue(org.jclouds.s3.blobstore.internal.BackoffOnNotFoundWhenGetBucketACLTest)
-[pool-11-thread-1] Test testMaxRetriesNotExceededReturnsValue(org.jclouds.s3.blobstore.internal.BackoffOnNotFoundWhenGetBucketACLTest) succeeded: 518ms
+[pool-11-thread-1] Test testMaxRetriesNotExceededReturnsValue(org.jclouds.s3.blobstore.internal.BackoffOnNotFoundWhenGetBucketACLTest) succeeded: 511ms
 Test suite progress: tests succeeded: 101, failed: 0, skipped: 0.
 Starting test testSignGetBlob(org.jclouds.s3.blobstore.S3BlobSignerExpectTest)
 Starting test testSignGetBlobWithOptions(org.jclouds.s3.blobstore.S3BlobSignerExpectTest)
 Starting test testSignPutBlob(org.jclouds.s3.blobstore.S3BlobSignerExpectTest)
+Starting test testSignRemoveBlob(org.jclouds.s3.blobstore.S3BlobSignerExpectTest)
 Starting test testSignGetBlobWithTime(org.jclouds.s3.blobstore.S3BlobSignerExpectTest)
 [pool-12-thread-5] Test testSignGetBlobWithTime(org.jclouds.s3.blobstore.S3BlobSignerExpectTest) skipped.
 Test suite progress: tests succeeded: 101, failed: 0, skipped: 1.
 Starting test testSignPutBlobWithTime(org.jclouds.s3.blobstore.S3BlobSignerExpectTest)
 [pool-12-thread-5] Test testSignPutBlobWithTime(org.jclouds.s3.blobstore.S3BlobSignerExpectTest) skipped.
 Test suite progress: tests succeeded: 101, failed: 0, skipped: 2.
-Starting test testSignRemoveBlob(org.jclouds.s3.blobstore.S3BlobSignerExpectTest)
-[pool-12-thread-2] Test testSignGetBlobWithOptions(org.jclouds.s3.blobstore.S3BlobSignerExpectTest) succeeded: 272ms
+[pool-12-thread-2] Test testSignGetBlobWithOptions(org.jclouds.s3.blobstore.S3BlobSignerExpectTest) succeeded: 111ms
 Test suite progress: tests succeeded: 102, failed: 0, skipped: 2.
-[pool-12-thread-3] Test testSignPutBlob(org.jclouds.s3.blobstore.S3BlobSignerExpectTest) succeeded: 290ms
+[pool-12-thread-4] Test testSignRemoveBlob(org.jclouds.s3.blobstore.S3BlobSignerExpectTest) succeeded: 120ms
 Test suite progress: tests succeeded: 103, failed: 0, skipped: 2.
-[pool-12-thread-1] Test testSignGetBlob(org.jclouds.s3.blobstore.S3BlobSignerExpectTest) succeeded: 300ms
+[pool-12-thread-1] Test testSignGetBlob(org.jclouds.s3.blobstore.S3BlobSignerExpectTest) succeeded: 122ms
 Test suite progress: tests succeeded: 104, failed: 0, skipped: 2.
-[pool-12-thread-4] Test testSignRemoveBlob(org.jclouds.s3.blobstore.S3BlobSignerExpectTest) succeeded: 293ms
+[pool-12-thread-3] Test testSignPutBlob(org.jclouds.s3.blobstore.S3BlobSignerExpectTest) succeeded: 126ms
 Test suite progress: tests succeeded: 105, failed: 0, skipped: 2.
 Starting test testBlahIsNotOk(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest)
+Starting test testOperationAbortedNotOkWhenBucketDoesntExist(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest)
+Starting test testIllegalStateIsNotOk(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest)
 Starting test testBucketAlreadyOwnedByYouIsOk(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest)
+Starting test testOperationAbortedIsOkWhenBucketExists(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest)
 [pool-13-thread-1] Test testBlahIsNotOk(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest) succeeded: 2ms
 Test suite progress: tests succeeded: 106, failed: 0, skipped: 2.
-Starting test testIllegalStateIsNotOk(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest)
-[pool-13-thread-3] Test testIllegalStateIsNotOk(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest) succeeded: 0ms
+[pool-13-thread-3] Test testIllegalStateIsNotOk(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest) succeeded: 2ms
 Test suite progress: tests succeeded: 107, failed: 0, skipped: 2.
-Starting test testOperationAbortedNotOkWhenBucketDoesntExist(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest)
-Starting test testOperationAbortedIsOkWhenBucketExists(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest)
-[pool-13-thread-2] Test testBucketAlreadyOwnedByYouIsOk(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest) succeeded: 6ms
+[pool-13-thread-5] Test testOperationAbortedNotOkWhenBucketDoesntExist(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest) succeeded: 2ms
 Test suite progress: tests succeeded: 108, failed: 0, skipped: 2.
-[pool-13-thread-5] Test testOperationAbortedNotOkWhenBucketDoesntExist(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest) succeeded: 9ms
+[pool-13-thread-4] Test testOperationAbortedIsOkWhenBucketExists(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest) succeeded: 5ms
 Test suite progress: tests succeeded: 109, failed: 0, skipped: 2.
-[pool-13-thread-4] Test testOperationAbortedIsOkWhenBucketExists(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest) succeeded: 8ms
+[pool-13-thread-2] Test testBucketAlreadyOwnedByYouIsOk(org.jclouds.s3.fallbacks.FalseIfBucketAlreadyOwnedByYouOrOperationAbortedWhenBucketExistsTest) succeeded: 5ms
 Test suite progress: tests succeeded: 110, failed: 0, skipped: 2.
-Starting test testAppendBucketNameURIHost(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
-Starting test testAppendBucketNameHostHeaderService(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
-[pool-14-thread-3] Test testAppendBucketNameHostHeaderService(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 2ms
-Test suite progress: tests succeeded: 111, failed: 0, skipped: 2.
 Starting test testAclQueryString(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
-Starting test testAppendBucketNameHostHeader(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
-[pool-14-thread-2] Test testAppendBucketNameHostHeader(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 15ms
-Test suite progress: tests succeeded: 112, failed: 0, skipped: 2.
 Starting test testHeadersGoLowercase(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
-[pool-14-thread-4] Test testAppendBucketNameURIHost(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 28ms
+Starting test testAppendBucketNameHostHeaderService(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
+Starting test testAppendBucketNameURIHost(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
+Starting test testAppendBucketNameHostHeader(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
+[pool-14-thread-3] Test testAppendBucketNameHostHeaderService(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 5ms
+Test suite progress: tests succeeded: 111, failed: 0, skipped: 2.
+[pool-14-thread-2] Test testAppendBucketNameHostHeader(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 14ms
+Test suite progress: tests succeeded: 112, failed: 0, skipped: 2.
+[pool-14-thread-4] Test testAppendBucketNameURIHost(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 14ms
 Test suite progress: tests succeeded: 113, failed: 0, skipped: 2.
-[pool-14-thread-1] Test testAclQueryString(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 36ms
+[pool-14-thread-1] Test testAclQueryString(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 21ms
 Test suite progress: tests succeeded: 114, failed: 0, skipped: 2.
-[pool-14-thread-5] Test testHeadersGoLowercase(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 195ms
+[pool-14-thread-5] Test testHeadersGoLowercase(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 87ms
 Test suite progress: tests succeeded: 115, failed: 0, skipped: 2.
 Starting test testIdempotent(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
 Starting test testIdempotent(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
 Starting test testIdempotent(org.jclouds.s3.filters.RequestAuthorizeSignatureTest)
 TestNGInvoker-testIdempotent(): 2 iterations before the timestamp updated 
-[PoolService-1] Test testIdempotent(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 1012ms
-Test suite progress: tests succeeded: 116, failed: 0, skipped: 2.
 TestNGInvoker-testIdempotent(): 2 iterations before the timestamp updated 
-[PoolService-0] Test testIdempotent(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 1017ms
-Test suite progress: tests succeeded: 117, failed: 0, skipped: 2.
-TestNGInvoker-testIdempotent(): 2 iterations before the timestamp updated 
-[PoolService-2] Test testIdempotent(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 964ms
+TestNGInvoker-testIdempotent()[PoolService-0] Test testIdempotent(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 1004ms
+: Test suite progress: tests succeeded: 116, failed: 0, skipped: 2.
+2[PoolService-1] Test testIdempotent(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 1004ms
+ iterations before the timestamp updated Test suite progress: tests succeeded: 117, failed: 0, skipped: 2.
+
+[PoolService-2] Test testIdempotent(org.jclouds.s3.filters.RequestAuthorizeSignatureTest) succeeded: 1006ms
 Test suite progress: tests succeeded: 118, failed: 0, skipped: 2.
 Starting test testAddsSecurityToken(org.jclouds.s3.filters.RequestAuthorizeSignatureWithSessionCredentialsTest)
-[pool-17-thread-1] Test testAddsSecurityToken(org.jclouds.s3.filters.RequestAuthorizeSignatureWithSessionCredentialsTest) succeeded: 167ms
+[pool-17-thread-1] Test testAddsSecurityToken(org.jclouds.s3.filters.RequestAuthorizeSignatureWithSessionCredentialsTest) succeeded: 55ms
 Test suite progress: tests succeeded: 119, failed: 0, skipped: 2.
 Starting test testWhenBucketRegionMappingInCache(org.jclouds.s3.functions.AssignCorrectHostnameForBucketTest)
-[pool-18-thread-1] Test testWhenBucketRegionMappingInCache(org.jclouds.s3.functions.AssignCorrectHostnameForBucketTest) succeeded: 0ms
-Test suite progress: tests succeeded: 120, failed: 0, skipped: 2.
 Starting test testWhenNoBucketRegionMappingInCache(org.jclouds.s3.functions.AssignCorrectHostnameForBucketTest)
-[pool-18-thread-2] Test testWhenNoBucketRegionMappingInCache(org.jclouds.s3.functions.AssignCorrectHostnameForBucketTest) succeeded: 0ms
+[pool-18-thread-1] Test testWhenBucketRegionMappingInCache(org.jclouds.s3.functions.AssignCorrectHostnameForBucketTest) succeeded: 1ms
+Test suite progress: tests succeeded: 120, failed: 0, skipped: 2.
+[pool-18-thread-2] Test testWhenNoBucketRegionMappingInCache(org.jclouds.s3.functions.AssignCorrectHostnameForBucketTest) succeeded: 1ms
 Test suite progress: tests succeeded: 121, failed: 0, skipped: 2.
 Starting test testInvalidate(org.jclouds.s3.functions.DefaultEndpointThenInvalidateRegionTest)
-[pool-19-thread-1] Test testInvalidate(org.jclouds.s3.functions.DefaultEndpointThenInvalidateRegionTest) succeeded: 9ms
+[pool-19-thread-1] Test testInvalidate(org.jclouds.s3.functions.DefaultEndpointThenInvalidateRegionTest) succeeded: 6ms
 Test suite progress: tests succeeded: 122, failed: 0, skipped: 2.
 Starting test test(org.jclouds.s3.functions.GetRegionForBucketTest)
 [pool-20-thread-1] Test test(org.jclouds.s3.functions.GetRegionForBucketTest) succeeded: 1ms
@@ -436,43 +436,43 @@ Starting test testGracefulOnException(org.jclouds.s3.functions.GetRegionForBucke
 [pool-20-thread-2] Test testGracefulOnException(org.jclouds.s3.functions.GetRegionForBucketTest) succeeded: 0ms
 Test suite progress: tests succeeded: 126, failed: 0, skipped: 2.
 Starting test testAmzEtagStillParsesToMD5AndDoesntMistakeAmzEtagForUserMetadata(org.jclouds.s3.functions.ParseObjectMetadataFromHeadersTest)
-[pool-21-thread-1] Test testAmzEtagStillParsesToMD5AndDoesntMistakeAmzEtagForUserMetadata(org.jclouds.s3.functions.ParseObjectMetadataFromHeadersTest) succeeded: 1ms
-Test suite progress: tests succeeded: 127, failed: 0, skipped: 2.
 Starting test testMultipartDoesntAttemptToParseETagIntoMD5(org.jclouds.s3.functions.ParseObjectMetadataFromHeadersTest)
-[pool-21-thread-2] Test testMultipartDoesntAttemptToParseETagIntoMD5(org.jclouds.s3.functions.ParseObjectMetadataFromHeadersTest) succeeded: 1ms
-Test suite progress: tests succeeded: 128, failed: 0, skipped: 2.
 Starting test testNormalParsesETagIntoMD5AndMetadataHeaders(org.jclouds.s3.functions.ParseObjectMetadataFromHeadersTest)
 [pool-21-thread-3] Test testNormalParsesETagIntoMD5AndMetadataHeaders(org.jclouds.s3.functions.ParseObjectMetadataFromHeadersTest) succeeded: 1ms
+Test suite progress: tests succeeded: 127, failed: 0, skipped: 2.
+[pool-21-thread-1] Test testAmzEtagStillParsesToMD5AndDoesntMistakeAmzEtagForUserMetadata(org.jclouds.s3.functions.ParseObjectMetadataFromHeadersTest) succeeded: 3ms
+Test suite progress: tests succeeded: 128, failed: 0, skipped: 2.
+[pool-21-thread-2] Test testMultipartDoesntAttemptToParseETagIntoMD5(org.jclouds.s3.functions.ParseObjectMetadataFromHeadersTest) succeeded: 1ms
 Test suite progress: tests succeeded: 129, failed: 0, skipped: 2.
 Starting test testRedirectOnHeadBucketChangesRequestToGetBucket(org.jclouds.s3.handlers.S3RedirectionRetryHandlerExpectTest)
-[pool-22-thread-1] Test testRedirectOnHeadBucketChangesRequestToGetBucket(org.jclouds.s3.handlers.S3RedirectionRetryHandlerExpectTest) succeeded: 120ms
+[pool-22-thread-1] Test testRedirectOnHeadBucketChangesRequestToGetBucket(org.jclouds.s3.handlers.S3RedirectionRetryHandlerExpectTest) succeeded: 85ms
 Test suite progress: tests succeeded: 130, failed: 0, skipped: 2.
 Starting test testBucketExistsReturnsTrueOn200AndFalseOn404(org.jclouds.s3.PathBasedS3ClientExpectTest)
 Starting test testPutBucketReturnsTrueOn200(org.jclouds.s3.PathBasedS3ClientExpectTest)
 Starting test testPutObjectReturnsETagOn200(org.jclouds.s3.PathBasedS3ClientExpectTest)
-[pool-23-thread-2] Test testPutBucketReturnsTrueOn200(org.jclouds.s3.PathBasedS3ClientExpectTest) succeeded: 260ms
+[pool-23-thread-3] Test testPutObjectReturnsETagOn200(org.jclouds.s3.PathBasedS3ClientExpectTest) succeeded: 89ms
 Test suite progress: tests succeeded: 131, failed: 0, skipped: 2.
-[pool-23-thread-3] Test testPutObjectReturnsETagOn200(org.jclouds.s3.PathBasedS3ClientExpectTest) succeeded: 401ms
+[pool-23-thread-2] Test testPutBucketReturnsTrueOn200(org.jclouds.s3.PathBasedS3ClientExpectTest) succeeded: 107ms
 Test suite progress: tests succeeded: 132, failed: 0, skipped: 2.
-[pool-23-thread-1] Test testBucketExistsReturnsTrueOn200AndFalseOn404(org.jclouds.s3.PathBasedS3ClientExpectTest) succeeded: 645ms
+[pool-23-thread-1] Test testBucketExistsReturnsTrueOn200AndFalseOn404(org.jclouds.s3.PathBasedS3ClientExpectTest) succeeded: 158ms
 Test suite progress: tests succeeded: 133, failed: 0, skipped: 2.
 Starting test testAllContains(org.jclouds.s3.S3ApiMetadataTest)
 Starting test testTransformableToContains(org.jclouds.s3.S3ApiMetadataTest)
 Starting test testWithId(org.jclouds.s3.S3ApiMetadataTest)
-[pool-24-thread-2] Test testTransformableToContains(org.jclouds.s3.S3ApiMetadataTest) succeeded: 11ms
+[pool-24-thread-1] Test testAllContains(org.jclouds.s3.S3ApiMetadataTest) succeeded: 2ms
 Test suite progress: tests succeeded: 134, failed: 0, skipped: 2.
-[pool-24-thread-3] Test testWithId(org.jclouds.s3.S3ApiMetadataTest) succeeded: 1ms
+[pool-24-thread-3] Test testWithId(org.jclouds.s3.S3ApiMetadataTest) succeeded: 2ms
 Test suite progress: tests succeeded: 135, failed: 0, skipped: 2.
-[pool-24-thread-1] Test testAllContains(org.jclouds.s3.S3ApiMetadataTest) succeeded: 25ms
+[pool-24-thread-2] Test testTransformableToContains(org.jclouds.s3.S3ApiMetadataTest) succeeded: 2ms
 Test suite progress: tests succeeded: 136, failed: 0, skipped: 2.
 Starting test testBucketExistsReturnsTrueOn200AndFalseOn404(org.jclouds.s3.S3ClientExpectTest)
-[pool-25-thread-1] Test testBucketExistsReturnsTrueOn200AndFalseOn404(org.jclouds.s3.S3ClientExpectTest) succeeded: 163ms
+[pool-25-thread-1] Test testBucketExistsReturnsTrueOn200AndFalseOn404(org.jclouds.s3.S3ClientExpectTest) succeeded: 109ms
 Test suite progress: tests succeeded: 137, failed: 0, skipped: 2.
 Starting test testAccessControlListExtreme(org.jclouds.s3.xml.AccessControlListHandlerTest)
 Starting test testAccessControlListOwnerOnly(org.jclouds.s3.xml.AccessControlListHandlerTest)
-[pool-26-thread-2] Test testAccessControlListOwnerOnly(org.jclouds.s3.xml.AccessControlListHandlerTest) succeeded: 9ms
+[pool-26-thread-2] Test testAccessControlListOwnerOnly(org.jclouds.s3.xml.AccessControlListHandlerTest) succeeded: 7ms
 Test suite progress: tests succeeded: 138, failed: 0, skipped: 2.
-[pool-26-thread-1] Test testAccessControlListExtreme(org.jclouds.s3.xml.AccessControlListHandlerTest) succeeded: 11ms
+[pool-26-thread-1] Test testAccessControlListExtreme(org.jclouds.s3.xml.AccessControlListHandlerTest) succeeded: 7ms
 Test suite progress: tests succeeded: 139, failed: 0, skipped: 2.
 Starting test testApplyInputStream(org.jclouds.s3.xml.BucketLoggingHandlerTest)
 [pool-27-thread-1] Test testApplyInputStream(org.jclouds.s3.xml.BucketLoggingHandlerTest) succeeded: 5ms
@@ -483,40 +483,40 @@ Test suite progress: tests succeeded: 141, failed: 0, skipped: 2.
 Starting test testApplyInputStream(org.jclouds.s3.xml.ListBucketHandlerTest)
 Starting test testListMyBucketsWithDelimiterSlashAndCommonPrefixesAppsSlash(org.jclouds.s3.xml.ListBucketHandlerTest)
 Starting test testListMyBucketsWithPrefixAppsSlash(org.jclouds.s3.xml.ListBucketHandlerTest)
-[pool-29-thread-2] Test testListMyBucketsWithDelimiterSlashAndCommonPrefixesAppsSlash(org.jclouds.s3.xml.ListBucketHandlerTest) succeeded: 6ms
+[pool-29-thread-2] Test testListMyBucketsWithDelimiterSlashAndCommonPrefixesAppsSlash(org.jclouds.s3.xml.ListBucketHandlerTest) succeeded: 5ms
 Test suite progress: tests succeeded: 142, failed: 0, skipped: 2.
-[pool-29-thread-3] Test testListMyBucketsWithPrefixAppsSlash(org.jclouds.s3.xml.ListBucketHandlerTest) succeeded: 16ms
+[pool-29-thread-3] Test testListMyBucketsWithPrefixAppsSlash(org.jclouds.s3.xml.ListBucketHandlerTest) succeeded: 12ms
 Test suite progress: tests succeeded: 143, failed: 0, skipped: 2.
-[pool-29-thread-1] Test testApplyInputStream(org.jclouds.s3.xml.ListBucketHandlerTest) succeeded: 27ms
+[pool-29-thread-1] Test testApplyInputStream(org.jclouds.s3.xml.ListBucketHandlerTest) succeeded: 15ms
 Test suite progress: tests succeeded: 144, failed: 0, skipped: 2.
 Starting test testPayerBucketOwner(org.jclouds.s3.xml.PayerHandlerTest)
-[pool-30-thread-1] Test testPayerBucketOwner(org.jclouds.s3.xml.PayerHandlerTest) succeeded: 7ms
-Test suite progress: tests succeeded: 145, failed: 0, skipped: 2.
 Starting test testPayerRequester(org.jclouds.s3.xml.PayerHandlerTest)
-[pool-30-thread-2] Test testPayerRequester(org.jclouds.s3.xml.PayerHandlerTest) succeeded: 1ms
+[pool-30-thread-1] Test testPayerBucketOwner(org.jclouds.s3.xml.PayerHandlerTest) succeeded: 6ms
+Test suite progress: tests succeeded: 145, failed: 0, skipped: 2.
+[pool-30-thread-2] Test testPayerRequester(org.jclouds.s3.xml.PayerHandlerTest) succeeded: 6ms
 Test suite progress: tests succeeded: 146, failed: 0, skipped: 2.
 Starting test testCanParseCopyObjectResult(org.jclouds.s3.xml.S3ParserTest)
-[pool-32-thread-1] Test testCanParseCopyObjectResult(org.jclouds.s3.xml.S3ParserTest) succeeded: 6ms
+[pool-32-thread-1] Test testCanParseCopyObjectResult(org.jclouds.s3.xml.S3ParserTest) succeeded: 2ms
 Test suite progress: tests succeeded: 147, failed: 0, skipped: 2.
 Starting test testCanParseListAllMyBuckets(org.jclouds.s3.xml.S3ParserTest)
 [pool-32-thread-1] Test testCanParseListAllMyBuckets(org.jclouds.s3.xml.S3ParserTest) succeeded: 5ms
 Test suite progress: tests succeeded: 148, failed: 0, skipped: 2.
 Starting test testCanParseListContainerResult(org.jclouds.s3.xml.S3ParserTest)
-[pool-32-thread-1] Test testCanParseListContainerResult(org.jclouds.s3.xml.S3ParserTest) succeeded: 4ms
+[pool-32-thread-1] Test testCanParseListContainerResult(org.jclouds.s3.xml.S3ParserTest) succeeded: 2ms
 Test suite progress: tests succeeded: 149, failed: 0, skipped: 2.
 Starting test testParseListAllMyBucketsParallelResponseTime(org.jclouds.s3.xml.S3ParserTest)
-[pool-32-thread-1] Test testParseListAllMyBucketsParallelResponseTime(org.jclouds.s3.xml.S3ParserTest) succeeded: 885ms
+[pool-32-thread-1] Test testParseListAllMyBucketsParallelResponseTime(org.jclouds.s3.xml.S3ParserTest) succeeded: 283ms
 Test suite progress: tests succeeded: 150, failed: 0, skipped: 2.
 Starting test testParseListAllMyBucketsSerialResponseTime(org.jclouds.s3.xml.S3ParserTest)
-[pool-32-thread-1] Test testParseListAllMyBucketsSerialResponseTime(org.jclouds.s3.xml.S3ParserTest) succeeded: 815ms
+[pool-32-thread-1] Test testParseListAllMyBucketsSerialResponseTime(org.jclouds.s3.xml.S3ParserTest) succeeded: 328ms
 Test suite progress: tests succeeded: 151, failed: 0, skipped: 2.
 Starting test testParseListContainerResultParallelResponseTime(org.jclouds.s3.xml.S3ParserTest)
-[pool-32-thread-1] Test testParseListContainerResultParallelResponseTime(org.jclouds.s3.xml.S3ParserTest) succeeded: 379ms
+[pool-32-thread-1] Test testParseListContainerResultParallelResponseTime(org.jclouds.s3.xml.S3ParserTest) succeeded: 133ms
 Test suite progress: tests succeeded: 152, failed: 0, skipped: 2.
 Starting test testParseListContainerResultSerialResponseTime(org.jclouds.s3.xml.S3ParserTest)
-[pool-32-thread-1] Test testParseListContainerResultSerialResponseTime(org.jclouds.s3.xml.S3ParserTest) succeeded: 800ms
+[pool-32-thread-1] Test testParseListContainerResultSerialResponseTime(org.jclouds.s3.xml.S3ParserTest) succeeded: 352ms
 Test suite progress: tests succeeded: 153, failed: 0, skipped: 2.
-Tests run: 155, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 13.437 sec
+Tests run: 155, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 6.92 sec
 
 Results :
 
@@ -526,370 +526,370 @@ Tests run: 155, Failures: 0, Errors: 0, Skipped: 2
 [INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ s3 ---
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:test-jar (default) @ s3 ---
-[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/s3/target/s3-1.6.0-SNAPSHOT-tests.jar
+[INFO] Building jar: /private/tmp/jclouds/apis/s3/target/s3-1.6.0-SNAPSHOT-tests.jar
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ s3 ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/s3/target/surefire-reports
+[INFO] Surefire report directory: /private/tmp/jclouds/apis/s3/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@f0f11b8
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2c641e9a
 Starting test containerDoesntExist(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-Starting test testContains(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-Starting test testCopyUrl(org.jclouds.s3.blobstore.integration.S3BlobLiveTest)
 Starting test testSignGetUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
+Starting test testCopyUrl(org.jclouds.s3.blobstore.integration.S3BlobLiveTest)
+Starting test testContains(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
 Starting test blobNotFound(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test blobNotFound(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2065ms
+[TestNG] Test containerDoesntExist(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 366ms
 Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
-Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test containerDoesntExist(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 2536ms
-Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
 Starting test containerExists(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test testContains(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 3729ms
-Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
-Starting test testEntrySet(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test testSignGetUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) succeeded: 4500ms
-Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
-Starting test testSignGetUrlOptions(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
-[TestNG] Test containerExists(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 3066ms
-Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[TestNG] Test containerExists(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 2753ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
 Starting test deleteContainerIfEmpty(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3842ms
-Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[TestNG] Test blobNotFound(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3192ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
 Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testCopyUrl(org.jclouds.s3.blobstore.integration.S3BlobLiveTest) succeeded: 8175ms
-Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+[TestNG] Test testContains(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 3801ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testEntrySet(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test testCopyUrl(org.jclouds.s3.blobstore.integration.S3BlobLiveTest) succeeded: 4109ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
 Starting test testPublicAccess(org.jclouds.s3.blobstore.integration.S3ContainerLiveTest)
-[TestNG] Test testSignGetUrlOptions(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) succeeded: 4176ms
+[TestNG] Test testSignGetUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) succeeded: 4418ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testSignGetUrlOptions(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3718ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test deleteContainerIfEmpty(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 4167ms
 Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
-Starting test testSignGetUrlWithTime(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3462ms
-Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
-Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test deleteContainerIfEmpty(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 4734ms
-Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
 Starting test deleteContainerWithContents(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test testEntrySet(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 8662ms
-Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
-Starting test testPut(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test testSignGetUrlWithTime(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) skipped.
-Test suite progress: tests succeeded: 11, failed: 0, skipped: 1.
-Starting test testSignPutUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3610ms
-Test suite progress: tests succeeded: 12, failed: 0, skipped: 1.
+[TestNG] Test testSignGetUrlOptions(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) succeeded: 3806ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testSignGetUrlWithTime(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3779ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
 Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testPublicAccess(org.jclouds.s3.blobstore.integration.S3ContainerLiveTest) succeeded: 6828ms
-Test suite progress: tests succeeded: 13, failed: 0, skipped: 1.
+[TestNG] Test testSignGetUrlWithTime(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) skipped.
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 1.
+Starting test testSignPutUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
+[TestNG] Test testEntrySet(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 8580ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 1.
+Starting test testPut(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test testPublicAccess(org.jclouds.s3.blobstore.integration.S3ContainerLiveTest) succeeded: 8436ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 1.
 Starting test testPublicAccessInNonDefaultLocation(org.jclouds.s3.blobstore.integration.S3ContainerLiveTest)
 [TestNG] Test testPublicAccessInNonDefaultLocation(org.jclouds.s3.blobstore.integration.S3ContainerLiveTest) skipped.
-Test suite progress: tests succeeded: 13, failed: 0, skipped: 2.
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 2.
 Starting test testPublicAccessInNonDefaultLocationWithBigBlob(org.jclouds.s3.blobstore.integration.S3ContainerLiveTest)
 [TestNG] Test testPublicAccessInNonDefaultLocationWithBigBlob(org.jclouds.s3.blobstore.integration.S3ContainerLiveTest) skipped.
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 3.
+[TestNG] Test deleteContainerWithContents(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 5401ms
 Test suite progress: tests succeeded: 13, failed: 0, skipped: 3.
-Starting test testContainsBytesValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testSignPutUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) succeeded: 2797ms
-Test suite progress: tests succeeded: 14, failed: 0, skipped: 3.
-Starting test testSignPutUrlWithTime(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3390ms
-Test suite progress: tests succeeded: 15, failed: 0, skipped: 3.
-Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testPut(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 4715ms
-Test suite progress: tests succeeded: 16, failed: 0, skipped: 3.
-Starting test testPutAll(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test deleteContainerWithContents(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 7241ms
-Test suite progress: tests succeeded: 17, failed: 0, skipped: 3.
 Starting test testClearWhenContentsUnderPath(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test testSignPutUrlWithTime(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) skipped.
-Test suite progress: tests succeeded: 17, failed: 0, skipped: 4.
-Starting test testSignRemoveUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
-[TestNG] Test testContainsBytesValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4014ms
-Test suite progress: tests succeeded: 18, failed: 0, skipped: 4.
+Starting test testContainsBytesValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3623ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 3.
+Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test testSignPutUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) succeeded: 3697ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 3.
+Starting test testSignPutUrlWithTime(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
+[TestNG] Test testContainsBytesValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3060ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 3.
 Starting test testContainsFileValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3696ms
+[TestNG] Test testPut(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 4120ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 3.
+Starting test testPutAll(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3958ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 3.
+Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test testSignPutUrlWithTime(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) skipped.
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 4.
+Starting test testSignRemoveUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest)
+[TestNG] Test testClearWhenContentsUnderPath(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 6556ms
 Test suite progress: tests succeeded: 19, failed: 0, skipped: 4.
-Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testPutAll(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 3894ms
-Test suite progress: tests succeeded: 20, failed: 0, skipped: 4.
-Starting test testPutMoreThanSingleListing(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test testSignRemoveUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) succeeded: 3289ms
-Test suite progress: tests succeeded: 21, failed: 0, skipped: 4.
-Starting test containerDoesntExist(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest)
-[TestNG] Test testContainsFileValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3391ms
-Test suite progress: tests succeeded: 22, failed: 0, skipped: 4.
-Starting test testContainsInputStreamValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test containerDoesntExist(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest) succeeded: 197ms
-Test suite progress: tests succeeded: 23, failed: 0, skipped: 4.
-Starting test testAllLocations(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest)
-[TestNG] Test testClearWhenContentsUnderPath(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 5867ms
-Test suite progress: tests succeeded: 24, failed: 0, skipped: 4.
 Starting test testDirectory(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3616ms
-Test suite progress: tests succeeded: 25, failed: 0, skipped: 4.
+[TestNG] Test testContainsFileValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4020ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 4.
+Starting test testContainsInputStreamValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3018ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 4.
 Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testContainsInputStreamValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3178ms
-Test suite progress: tests succeeded: 26, failed: 0, skipped: 4.
-Starting test testContainsStringValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2939ms
-Test suite progress: tests succeeded: 27, failed: 0, skipped: 4.
-Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test testPutAll(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 4978ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 4.
+Starting test testPutMoreThanSingleListing(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test testSignRemoveUrl(org.jclouds.s3.blobstore.integration.S3BlobSignerLiveTest) succeeded: 3906ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 4.
+Starting test containerDoesntExist(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest)
+[TestNG] Test containerDoesntExist(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest) succeeded: 672ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 4.
+Starting test testAllLocations(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest)
 [TestNG] Test testDirectory(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) failed.
-Test suite progress: tests succeeded: 27, failed: 1, skipped: 4.
+Test suite progress: tests succeeded: 24, failed: 1, skipped: 4.
 Starting test testListContainer(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test testAllLocations(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest) succeeded: 6380ms
+[TestNG] Test testContainsInputStreamValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3276ms
+Test suite progress: tests succeeded: 25, failed: 1, skipped: 4.
+Starting test testContainsStringValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2528ms
+Test suite progress: tests succeeded: 26, failed: 1, skipped: 4.
+Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test testContainsStringValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3943ms
+Test suite progress: tests succeeded: 27, failed: 1, skipped: 4.
+Starting test testEntrySet(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testAllLocations(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest) succeeded: 5588ms
 Test suite progress: tests succeeded: 28, failed: 1, skipped: 4.
 Starting test testGetAssignableLocations(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest)
-[TestNG] Test testGetAssignableLocations(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest) succeeded: 1ms
+[TestNG] Test testGetAssignableLocations(org.jclouds.s3.blobstore.integration.S3ServiceIntegrationLiveTest) succeeded: 0ms
 Test suite progress: tests succeeded: 29, failed: 1, skipped: 4.
 Starting test deleteBucketIfEmptyButHasContents(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testContainsStringValue(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3535ms
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 5052ms
 Test suite progress: tests succeeded: 30, failed: 1, skipped: 4.
-Starting test testEntrySet(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testPutMoreThanSingleListing(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 8538ms
+Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 6144ms
 Test suite progress: tests succeeded: 31, failed: 1, skipped: 4.
-Starting test testRemove(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2927ms
-Test suite progress: tests succeeded: 32, failed: 1, skipped: 4.
-Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test deleteBucketIfEmptyButHasContents(org.jclouds.s3.services.BucketsLiveTest) succeeded: 3185ms
-Test suite progress: tests succeeded: 33, failed: 1, skipped: 4.
-Starting test deleteBucketIfEmptyNotFound(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test deleteBucketIfEmptyNotFound(org.jclouds.s3.services.BucketsLiveTest) succeeded: 9416ms
-Test suite progress: tests succeeded: 34, failed: 1, skipped: 4.
-Starting test testBucketLogging(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testListContainer(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 13111ms
-Test suite progress: tests succeeded: 35, failed: 1, skipped: 4.
 Starting test testListContainerMarker(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 12179ms
+[TestNG] Test testPutMoreThanSingleListing(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 8122ms
+Test suite progress: tests succeeded: 32, failed: 1, skipped: 4.
+Starting test testRemove(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3025ms
+Test suite progress: tests succeeded: 33, failed: 1, skipped: 4.
+Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test deleteBucketIfEmptyButHasContents(org.jclouds.s3.services.BucketsLiveTest) succeeded: 3625ms
+Test suite progress: tests succeeded: 34, failed: 1, skipped: 4.
+Starting test deleteBucketIfEmptyNotFound(org.jclouds.s3.services.BucketsLiveTest)
+[TestNG] Test deleteBucketIfEmptyNotFound(org.jclouds.s3.services.BucketsLiveTest) succeeded: 178ms
+Test suite progress: tests succeeded: 35, failed: 1, skipped: 4.
+Starting test testBucketLogging(org.jclouds.s3.services.BucketsLiveTest)
+[TestNG] Test testRemove(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 4289ms
 Test suite progress: tests succeeded: 36, failed: 1, skipped: 4.
-Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testRemove(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 12657ms
-Test suite progress: tests succeeded: 37, failed: 1, skipped: 4.
 Starting test testValues(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3739ms
-Test suite progress: tests succeeded: 38, failed: 1, skipped: 4.
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2370ms
+Test suite progress: tests succeeded: 37, failed: 1, skipped: 4.
 Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testValues(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 3540ms
-Test suite progress: tests succeeded: 39, failed: 1, skipped: 4.
-Starting test testClear(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2238ms
-Test suite progress: tests succeeded: 40, failed: 1, skipped: 4.
-Starting test deleteObjectNoContainer(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testEntrySet(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 18720ms
-Test suite progress: tests succeeded: 41, failed: 1, skipped: 4.
+[TestNG] Test testEntrySet(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 9337ms
+Test suite progress: tests succeeded: 38, failed: 1, skipped: 4.
 Starting test testPut(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test deleteObjectNoContainer(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 1200ms
-Test suite progress: tests succeeded: 42, failed: 1, skipped: 4.
-Starting test deleteObjectNotFound(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testClear(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 3503ms
-Test suite progress: tests succeeded: 43, failed: 1, skipped: 4.
-Starting test testContainsKey(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test testListContainerMarker(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 9262ms
-Test suite progress: tests succeeded: 44, failed: 1, skipped: 4.
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2375ms
+Test suite progress: tests succeeded: 39, failed: 1, skipped: 4.
+Starting test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test testValues(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 4158ms
+Test suite progress: tests succeeded: 40, failed: 1, skipped: 4.
+Starting test testClear(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test testListContainerMarker(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 9301ms
+Test suite progress: tests succeeded: 41, failed: 1, skipped: 4.
 Starting test testListContainerMaxResults(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test deleteObjectNotFound(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2221ms
+[TestNG] Test deleteObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2618ms
+Test suite progress: tests succeeded: 42, failed: 1, skipped: 4.
+Starting test deleteObjectNoContainer(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test deleteObjectNoContainer(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 228ms
+Test suite progress: tests succeeded: 43, failed: 1, skipped: 4.
+Starting test deleteObjectNotFound(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test testPut(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4142ms
+Test suite progress: tests succeeded: 44, failed: 1, skipped: 4.
+Starting test testPutAll(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test deleteObjectNotFound(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2271ms
 Test suite progress: tests succeeded: 45, failed: 1, skipped: 4.
 Starting test testBigFileGets(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testContainsKey(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 2332ms
+[TestNG] Test testBucketLogging(org.jclouds.s3.services.BucketsLiveTest) succeeded: 10339ms
 Test suite progress: tests succeeded: 46, failed: 1, skipped: 4.
-Starting test testDirectory(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test testPut(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3645ms
-Test suite progress: tests succeeded: 47, failed: 1, skipped: 4.
-Starting test testPutAll(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testBucketLogging(org.jclouds.s3.services.BucketsLiveTest) succeeded: 12559ms
-Test suite progress: tests succeeded: 48, failed: 1, skipped: 4.
 Starting test testBucketPayer(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testPutAll(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4679ms
-Test suite progress: tests succeeded: 49, failed: 1, skipped: 4.
+[TestNG] Test testClear(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 4718ms
+Test suite progress: tests succeeded: 47, failed: 1, skipped: 4.
+Starting test testContainsKey(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test testPutAll(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4282ms
+Test suite progress: tests succeeded: 48, failed: 1, skipped: 4.
 Starting test testPutAllBytes(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testPutAllBytes(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 7063ms
+[TestNG] Test testContainsKey(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 4662ms
+Test suite progress: tests succeeded: 49, failed: 1, skipped: 4.
+Starting test testDirectory(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test testListContainerMaxResults(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 12776ms
 Test suite progress: tests succeeded: 50, failed: 1, skipped: 4.
-Starting test testPutAllFiles(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testListContainerMaxResults(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 14046ms
-Test suite progress: tests succeeded: 51, failed: 1, skipped: 4.
 Starting test testListContainerPrefix(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test testBucketPayer(org.jclouds.s3.services.BucketsLiveTest) succeeded: 10879ms
-Test suite progress: tests succeeded: 52, failed: 1, skipped: 4.
+[TestNG] Test testBucketPayer(org.jclouds.s3.services.BucketsLiveTest) succeeded: 10756ms
+Test suite progress: tests succeeded: 51, failed: 1, skipped: 4.
 Starting test testDefaultAccessPolicy(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testPutAllFiles(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 5431ms
+[TestNG] Test testPutAllBytes(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 10337ms
+Test suite progress: tests succeeded: 52, failed: 1, skipped: 4.
+Starting test testPutAllFiles(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testDefaultAccessPolicy(org.jclouds.s3.services.BucketsLiveTest) succeeded: 4418ms
 Test suite progress: tests succeeded: 53, failed: 1, skipped: 4.
-Starting test testPutAllStrings(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testDefaultAccessPolicy(org.jclouds.s3.services.BucketsLiveTest) succeeded: 4390ms
-Test suite progress: tests succeeded: 54, failed: 1, skipped: 4.
 Starting test testListBucketDelimiter(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testPutAllStrings(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4199ms
+[TestNG] Test testPutAllFiles(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3980ms
+Test suite progress: tests succeeded: 54, failed: 1, skipped: 4.
+Starting test testPutAllStrings(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testListContainerPrefix(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 10682ms
 Test suite progress: tests succeeded: 55, failed: 1, skipped: 4.
-Starting test testPutBytes(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testListContainerPrefix(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 8779ms
-Test suite progress: tests succeeded: 56, failed: 1, skipped: 4.
 Starting test testListRootUsesDelimiter(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test testPutBytes(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 5655ms
+[TestNG] Test testPutAllStrings(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4253ms
+Test suite progress: tests succeeded: 56, failed: 1, skipped: 4.
+Starting test testPutBytes(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testListBucketDelimiter(org.jclouds.s3.services.BucketsLiveTest) succeeded: 9756ms
 Test suite progress: tests succeeded: 57, failed: 1, skipped: 4.
-Starting test testPutFile(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testListBucketDelimiter(org.jclouds.s3.services.BucketsLiveTest) succeeded: 9411ms
-Test suite progress: tests succeeded: 58, failed: 1, skipped: 4.
 Starting test testListBucketMarker(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testBigFileGets(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 28456ms
+[TestNG] Test testPutBytes(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4684ms
+Test suite progress: tests succeeded: 58, failed: 1, skipped: 4.
+Starting test testPutFile(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testBigFileGets(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 27938ms
 Test suite progress: tests succeeded: 59, failed: 1, skipped: 4.
 Starting test testCreateBlobWithExpiry(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testPutFile(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3918ms
+[TestNG] Test testListRootUsesDelimiter(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 8469ms
 Test suite progress: tests succeeded: 60, failed: 1, skipped: 4.
-Starting test testPutMoreThanSingleListing(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testCreateBlobWithExpiry(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3319ms
-Test suite progress: tests succeeded: 61, failed: 1, skipped: 4.
-Starting test testGetIfMatch(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testListRootUsesDelimiter(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 9104ms
-Test suite progress: tests succeeded: 62, failed: 1, skipped: 4.
 Starting test testPutTwiceIsOkAndDoesntOverwrite(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test testPutTwiceIsOkAndDoesntOverwrite(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 3181ms
+[TestNG] Test testPutFile(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4263ms
+Test suite progress: tests succeeded: 61, failed: 1, skipped: 4.
+Starting test testPutMoreThanSingleListing(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testCreateBlobWithExpiry(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2720ms
+Test suite progress: tests succeeded: 62, failed: 1, skipped: 4.
+Starting test testGetIfMatch(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test testPutTwiceIsOkAndDoesntOverwrite(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 3967ms
 Test suite progress: tests succeeded: 63, failed: 1, skipped: 4.
 Starting test testWithDetails(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)
-[TestNG] Test testListBucketMarker(org.jclouds.s3.services.BucketsLiveTest) succeeded: 7624ms
+[TestNG] Test testListBucketMarker(org.jclouds.s3.services.BucketsLiveTest) succeeded: 7879ms
 Test suite progress: tests succeeded: 64, failed: 1, skipped: 4.
 Starting test testListBucketMaxResults(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testGetIfMatch(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3849ms
+[TestNG] Test testGetIfMatch(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3871ms
 Test suite progress: tests succeeded: 65, failed: 1, skipped: 4.
 Starting test testGetIfModifiedSince(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testDirectory(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 35603ms
+[TestNG] Test testWithDetails(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 4129ms
 Test suite progress: tests succeeded: 66, failed: 1, skipped: 4.
-Starting test testIsEmpty(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test testPutMoreThanSingleListing(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 6544ms
+[TestNG] Test testPutMoreThanSingleListing(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 7509ms
 Test suite progress: tests succeeded: 67, failed: 1, skipped: 4.
 Starting test testPutString(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testWithDetails(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest) succeeded: 3239ms
+[TestNG] Test testDirectory(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 32655ms
 Test suite progress: tests succeeded: 68, failed: 1, skipped: 4.
-[TestNG] Test testIsEmpty(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 3173ms
+Starting test testIsEmpty(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test testGetIfModifiedSince(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 4883ms
 Test suite progress: tests succeeded: 69, failed: 1, skipped: 4.
-Starting test testKeySet(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test testGetIfModifiedSince(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 4619ms
-Test suite progress: tests succeeded: 70, failed: 1, skipped: 4.
 Starting test testGetIfNoneMatch(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testKeySet(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 2772ms
+[TestNG] Test testIsEmpty(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 2988ms
+Test suite progress: tests succeeded: 70, failed: 1, skipped: 4.
+Starting test testKeySet(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test testPutString(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4104ms
 Test suite progress: tests succeeded: 71, failed: 1, skipped: 4.
-Starting test testListContainer(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
-[TestNG] Test testListBucketMaxResults(org.jclouds.s3.services.BucketsLiveTest) succeeded: 7826ms
+Starting test testRemove(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testListBucketMaxResults(org.jclouds.s3.services.BucketsLiveTest) succeeded: 8631ms
 Test suite progress: tests succeeded: 72, failed: 1, skipped: 4.
 Starting test testListBucketPrefix(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testListContainer(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 2393ms
+[TestNG] Test testGetIfNoneMatch(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3241ms
 Test suite progress: tests succeeded: 73, failed: 1, skipped: 4.
-[TestNG] Test testPutString(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 7551ms
-Test suite progress: tests succeeded: 74, failed: 1, skipped: 4.
-Starting test testRemove(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testRemove(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3461ms
-Test suite progress: tests succeeded: 75, failed: 1, skipped: 4.
-Starting test testValues(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testListBucketPrefix(org.jclouds.s3.services.BucketsLiveTest) succeeded: 7073ms
-Test suite progress: tests succeeded: 76, failed: 1, skipped: 4.
-Starting test testPrivateAclIsDefaultForBucket(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testGetIfNoneMatch(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 11519ms
-Test suite progress: tests succeeded: 77, failed: 1, skipped: 4.
 Starting test testGetIfUnmodifiedSince(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testValues(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3150ms
-Test suite progress: tests succeeded: 78, failed: 1, skipped: 4.
-Starting test testClear(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testPrivateAclIsDefaultForBucket(org.jclouds.s3.services.BucketsLiveTest) succeeded: 1839ms
-Test suite progress: tests succeeded: 79, failed: 1, skipped: 4.
-Starting test testPublicReadAccessPolicy(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testGetIfUnmodifiedSince(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3318ms
-Test suite progress: tests succeeded: 80, failed: 1, skipped: 4.
+[TestNG] Test testRemove(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4293ms
+Test suite progress: tests succeeded: 74, failed: 1, skipped: 4.
+Starting test testValues(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testGetIfUnmodifiedSince(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 4474ms
+Test suite progress: tests succeeded: 75, failed: 1, skipped: 4.
 Starting test testGetRange(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testClear(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3100ms
-Test suite progress: tests succeeded: 81, failed: 1, skipped: 4.
-Starting test testContainsKey(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testPublicReadAccessPolicy(org.jclouds.s3.services.BucketsLiveTest) succeeded: 4620ms
-Test suite progress: tests succeeded: 82, failed: 1, skipped: 4.
-Starting test testUpdateBucketACL(org.jclouds.s3.services.BucketsLiveTest)
-[TestNG] Test testContainsKey(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3261ms
-Test suite progress: tests succeeded: 83, failed: 1, skipped: 4.
-Starting test testDirectory(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testGetRange(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3492ms
-Test suite progress: tests succeeded: 84, failed: 1, skipped: 4.
+[TestNG] Test testKeySet(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 6354ms
+Test suite progress: tests succeeded: 76, failed: 1, skipped: 4.
+Starting test testListContainer(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest)
+[TestNG] Test testValues(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3172ms
+Test suite progress: tests succeeded: 77, failed: 1, skipped: 4.
+Starting test testClear(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testListBucketPrefix(org.jclouds.s3.services.BucketsLiveTest) succeeded: 7485ms
+Test suite progress: tests succeeded: 78, failed: 1, skipped: 4.
+Starting test testPrivateAclIsDefaultForBucket(org.jclouds.s3.services.BucketsLiveTest)
+[TestNG] Test testListContainer(org.jclouds.s3.blobstore.integration.S3BlobMapIntegrationLiveTest) succeeded: 2268ms
+Test suite progress: tests succeeded: 79, failed: 1, skipped: 4.
+[TestNG] Test testGetRange(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2960ms
+Test suite progress: tests succeeded: 80, failed: 1, skipped: 4.
 Starting test testGetTwoRanges(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testGetTwoRanges(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3082ms
-Test suite progress: tests succeeded: 85, failed: 1, skipped: 4.
+[TestNG] Test testPrivateAclIsDefaultForBucket(org.jclouds.s3.services.BucketsLiveTest) succeeded: 2426ms
+Test suite progress: tests succeeded: 81, failed: 1, skipped: 4.
+Starting test testPublicReadAccessPolicy(org.jclouds.s3.services.BucketsLiveTest)
+[TestNG] Test testGetTwoRanges(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2862ms
+Test suite progress: tests succeeded: 82, failed: 1, skipped: 4.
 Starting test testMetadata(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testUpdateBucketACL(org.jclouds.s3.services.BucketsLiveTest) succeeded: 7080ms
-Test suite progress: tests succeeded: 86, failed: 1, skipped: 4.
-Starting test deleteContainerIfEmptyButHasContents(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testMetadata(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 4247ms
-Test suite progress: tests succeeded: 87, failed: 1, skipped: 4.
+[TestNG] Test testClear(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 4226ms
+Test suite progress: tests succeeded: 83, failed: 1, skipped: 4.
+Starting test testContainsKey(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testContainsKey(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 2742ms
+Test suite progress: tests succeeded: 84, failed: 1, skipped: 4.
+Starting test testDirectory(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testMetadata(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3826ms
+Test suite progress: tests succeeded: 85, failed: 1, skipped: 4.
 Starting test testPutFileParallel(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test deleteContainerIfEmptyButHasContents(org.jclouds.s3.S3ClientLiveTest) succeeded: 2537ms
+[TestNG] Test testPublicReadAccessPolicy(org.jclouds.s3.services.BucketsLiveTest) succeeded: 5323ms
+Test suite progress: tests succeeded: 86, failed: 1, skipped: 4.
+Starting test testUpdateBucketACL(org.jclouds.s3.services.BucketsLiveTest)
+[TestNG] Test testPutFileParallel(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 5545ms
+Test suite progress: tests succeeded: 87, failed: 1, skipped: 4.
+Starting test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test testUpdateBucketACL(org.jclouds.s3.services.BucketsLiveTest) succeeded: 6615ms
 Test suite progress: tests succeeded: 88, failed: 1, skipped: 4.
-Starting test deleteContainerIfEmptyNotFound(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test deleteContainerIfEmptyNotFound(org.jclouds.s3.S3ClientLiveTest) succeeded: 189ms
+Starting test deleteContainerIfEmptyButHasContents(org.jclouds.s3.S3ClientLiveTest)
+[TestNG] Test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2948ms
 Test suite progress: tests succeeded: 89, failed: 1, skipped: 4.
-Starting test testCopyCannedAccessPolicyPublic(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testCopyCannedAccessPolicyPublic(org.jclouds.s3.S3ClientLiveTest) succeeded: 22162ms
+Starting test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
+[TestNG] Test deleteContainerIfEmptyButHasContents(org.jclouds.s3.S3ClientLiveTest) succeeded: 2928ms
 Test suite progress: tests succeeded: 90, failed: 1, skipped: 4.
-Starting test testCopyIfMatch(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testCopyIfMatch(org.jclouds.s3.S3ClientLiveTest) succeeded: 6986ms
+Starting test deleteContainerIfEmptyNotFound(org.jclouds.s3.S3ClientLiveTest)
+[TestNG] Test deleteContainerIfEmptyNotFound(org.jclouds.s3.S3ClientLiveTest) succeeded: 554ms
 Test suite progress: tests succeeded: 91, failed: 1, skipped: 4.
-Starting test testCopyIfModifiedSince(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testPutFileParallel(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 33267ms
+Starting test testCopyCannedAccessPolicyPublic(org.jclouds.s3.S3ClientLiveTest)
+[TestNG] Test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2531ms
 Test suite progress: tests succeeded: 92, failed: 1, skipped: 4.
 Starting test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testDirectory(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 41329ms
+[TestNG] Test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2604ms
 Test suite progress: tests succeeded: 93, failed: 1, skipped: 4.
-Starting test testIsEmpty(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testCopyIfModifiedSince(org.jclouds.s3.S3ClientLiveTest) succeeded: 5445ms
-Test suite progress: tests succeeded: 94, failed: 1, skipped: 4.
-Starting test testCopyIfNoneMatch(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3148ms
-Test suite progress: tests succeeded: 95, failed: 1, skipped: 4.
-Starting test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testIsEmpty(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3195ms
-Test suite progress: tests succeeded: 96, failed: 1, skipped: 4.
-Starting test testKeySet(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testKeySet(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 3463ms
-Test suite progress: tests succeeded: 97, failed: 1, skipped: 4.
-Starting test testListContainer(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
-[TestNG] Test testCopyIfNoneMatch(org.jclouds.s3.S3ClientLiveTest) succeeded: 6101ms
-Test suite progress: tests succeeded: 98, failed: 1, skipped: 4.
-Starting test testCopyIfUnmodifiedSince(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 6180ms
-Test suite progress: tests succeeded: 99, failed: 1, skipped: 4.
-Starting test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testListContainer(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 2221ms
-Test suite progress: tests succeeded: 100, failed: 1, skipped: 4.
-[TestNG] Test testPutObject(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 3378ms
-Test suite progress: tests succeeded: 101, failed: 1, skipped: 4.
 Starting test testPutObjectStream(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest)
-[TestNG] Test testCopyIfUnmodifiedSince(org.jclouds.s3.S3ClientLiveTest) succeeded: 5383ms
+[TestNG] Test testPutObjectStream(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2958ms
+Test suite progress: tests succeeded: 94, failed: 1, skipped: 4.
+[TestNG] Test testCopyCannedAccessPolicyPublic(org.jclouds.s3.S3ClientLiveTest) succeeded: 6003ms
+Test suite progress: tests succeeded: 95, failed: 1, skipped: 4.
+Starting test testCopyIfMatch(org.jclouds.s3.S3ClientLiveTest)
+[TestNG] Test testDirectory(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 21483ms
+Test suite progress: tests succeeded: 96, failed: 1, skipped: 4.
+Starting test testIsEmpty(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testCopyIfMatch(org.jclouds.s3.S3ClientLiveTest) succeeded: 6302ms
+Test suite progress: tests succeeded: 97, failed: 1, skipped: 4.
+Starting test testCopyIfModifiedSince(org.jclouds.s3.S3ClientLiveTest)
+[TestNG] Test testIsEmpty(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 2940ms
+Test suite progress: tests succeeded: 98, failed: 1, skipped: 4.
+Starting test testKeySet(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testKeySet(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 2646ms
+Test suite progress: tests succeeded: 99, failed: 1, skipped: 4.
+Starting test testListContainer(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest)
+[TestNG] Test testListContainer(org.jclouds.s3.blobstore.integration.S3InputStreamMapIntegrationLiveTest) succeeded: 2448ms
+Test suite progress: tests succeeded: 100, failed: 1, skipped: 4.
+[TestNG] Test testCopyIfModifiedSince(org.jclouds.s3.S3ClientLiveTest) succeeded: 9227ms
+Test suite progress: tests succeeded: 101, failed: 1, skipped: 4.
+Starting test testCopyIfNoneMatch(org.jclouds.s3.S3ClientLiveTest)
+[TestNG] Test testCopyIfNoneMatch(org.jclouds.s3.S3ClientLiveTest) succeeded: 6005ms
 Test suite progress: tests succeeded: 102, failed: 1, skipped: 4.
-Starting test testCopyObject(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testPutObjectStream(org.jclouds.s3.blobstore.integration.S3BlobIntegrationLiveTest) succeeded: 2805ms
+Starting test testCopyIfUnmodifiedSince(org.jclouds.s3.S3ClientLiveTest)
+[TestNG] Test testCopyIfUnmodifiedSince(org.jclouds.s3.S3ClientLiveTest) succeeded: 6213ms
 Test suite progress: tests succeeded: 103, failed: 1, skipped: 4.
-[TestNG] Test testCopyObject(org.jclouds.s3.S3ClientLiveTest) succeeded: 5097ms
+Starting test testCopyObject(org.jclouds.s3.S3ClientLiveTest)
+[TestNG] Test testCopyObject(org.jclouds.s3.S3ClientLiveTest) succeeded: 5552ms
 Test suite progress: tests succeeded: 104, failed: 1, skipped: 4.
 Starting test testCopyWithMetadata(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testCopyWithMetadata(org.jclouds.s3.S3ClientLiveTest) succeeded: 6908ms
+[TestNG] Test testCopyWithMetadata(org.jclouds.s3.S3ClientLiveTest) succeeded: 5885ms
 Test suite progress: tests succeeded: 105, failed: 1, skipped: 4.
 Starting test testMetadataContentEncoding(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testMetadataContentEncoding(org.jclouds.s3.S3ClientLiveTest) succeeded: 3357ms
+[TestNG] Test testMetadataContentEncoding(org.jclouds.s3.S3ClientLiveTest) succeeded: 2865ms
 Test suite progress: tests succeeded: 106, failed: 1, skipped: 4.
 Starting test testMetadataWithCacheControlAndContentDisposition(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testMetadataWithCacheControlAndContentDisposition(org.jclouds.s3.S3ClientLiveTest) succeeded: 2818ms
+[TestNG] Test testMetadataWithCacheControlAndContentDisposition(org.jclouds.s3.S3ClientLiveTest) succeeded: 2755ms
 Test suite progress: tests succeeded: 107, failed: 1, skipped: 4.
 Starting test testPrivateAclIsDefaultForObject(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testPrivateAclIsDefaultForObject(org.jclouds.s3.S3ClientLiveTest) succeeded: 2654ms
+[TestNG] Test testPrivateAclIsDefaultForObject(org.jclouds.s3.S3ClientLiveTest) succeeded: 2683ms
 Test suite progress: tests succeeded: 108, failed: 1, skipped: 4.
 Starting test testPublicReadOnObject(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testPublicReadOnObject(org.jclouds.s3.S3ClientLiveTest) succeeded: 2471ms
+[TestNG] Test testPublicReadOnObject(org.jclouds.s3.S3ClientLiveTest) succeeded: 2537ms
 Test suite progress: tests succeeded: 109, failed: 1, skipped: 4.
 Starting test testPublicWriteOnObject(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testPublicWriteOnObject(org.jclouds.s3.S3ClientLiveTest) succeeded: 2703ms
+[TestNG] Test testPublicWriteOnObject(org.jclouds.s3.S3ClientLiveTest) succeeded: 2548ms
 Test suite progress: tests succeeded: 110, failed: 1, skipped: 4.
 Starting test testPutCannedAccessPolicyPublic(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testPutCannedAccessPolicyPublic(org.jclouds.s3.S3ClientLiveTest) succeeded: 2374ms
+[TestNG] Test testPutCannedAccessPolicyPublic(org.jclouds.s3.S3ClientLiveTest) succeeded: 2199ms
 Test suite progress: tests succeeded: 111, failed: 1, skipped: 4.
 Starting test testUpdateObjectACL(org.jclouds.s3.S3ClientLiveTest)
-[TestNG] Test testUpdateObjectACL(org.jclouds.s3.S3ClientLiveTest) succeeded: 4435ms
+[TestNG] Test testUpdateObjectACL(org.jclouds.s3.S3ClientLiveTest) succeeded: 4090ms
 Test suite progress: tests succeeded: 112, failed: 1, skipped: 4.
-Tests run: 117, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 271.625 sec <<< FAILURE!
-testDirectory(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)  Time elapsed: 1.998 sec  <<< FAILURE!
-java.lang.AssertionError: [[type=RELATIVE_PATH, id=null, name=directory, location={scope=PROVIDER, id=s3, description=https://s3.amazonaws.com}, uri=https://adriancole-blobstore7.s3.amazonaws.com/directory/, userMetadata={}]]
+Tests run: 117, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 227.108 sec <<< FAILURE!
+testDirectory(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest)  Time elapsed: 0.065 sec  <<< FAILURE!
+java.lang.AssertionError: [[type=RELATIVE_PATH, id=null, name=directory, location={scope=PROVIDER, id=s3, description=https://s3.amazonaws.com}, uri=https://adrianc-blobstore7.s3.amazonaws.com/directory/, userMetadata={}]]
 	at org.jclouds.blobstore.integration.internal.BaseContainerIntegrationTest.testDirectory(BaseContainerIntegrationTest.java:174)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -916,20 +916,20 @@ java.lang.AssertionError: [[type=RELATIVE_PATH, id=null, name=directory, locatio
 
 Results :
 
-Failed tests:   testDirectory(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest): [[type=RELATIVE_PATH, id=null, name=directory, location={scope=PROVIDER, id=s3, description=https://s3.amazonaws.com}, uri=https://adriancole-blobstore7.s3.amazonaws.com/directory/, userMetadata={}]]
+Failed tests:   testDirectory(org.jclouds.s3.blobstore.integration.S3ContainerIntegrationLiveTest): [[type=RELATIVE_PATH, id=null, name=directory, location={scope=PROVIDER, id=s3, description=https://s3.amazonaws.com}, uri=https://adrianc-blobstore7.s3.amazonaws.com/directory/, userMetadata={}]]
 
 Tests run: 117, Failures: 1, Errors: 0, Skipped: 4
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4:57.975s
-[INFO] Finished at: Sat Mar 09 09:31:46 PST 2013
-[INFO] Final Memory: 18M/265M
+[INFO] Total time: 4:01.409s
+[INFO] Finished at: Sat Apr 27 14:52:15 PDT 2013
+[INFO] Final Memory: 18M/125M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (integration) on project s3: There are test failures.
 [ERROR] 
-[ERROR] Please refer to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/s3/target/surefire-reports for the individual test results.
+[ERROR] Please refer to /private/tmp/jclouds/apis/s3/target/surefire-reports for the individual test results.
 [ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.

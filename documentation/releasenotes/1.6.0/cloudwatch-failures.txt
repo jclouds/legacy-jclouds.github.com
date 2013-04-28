@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 798.624 sec
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 509.404 sec <<< FAILURE!
+beforeClass(org.jclouds.cloudwatch.features.AlarmApiLiveTest)  Time elapsed: 285.552 sec  <<< FAILURE!
+java.lang.AssertionError: Unable to create the test CloudWatch metric within the time (5m) allotted.
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.jclouds.cloudwatch.features.AlarmApiLiveTest.beforeClass(AlarmApiLiveTest.java:92)
+
