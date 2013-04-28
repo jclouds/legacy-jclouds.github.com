@@ -18,7 +18,7 @@ title: Installation
   * Download [lein](https://github.com/technomancy/leiningen/raw/stable/bin/lein) and make it executable.
   * Create a __project.clj__ file with the below contents.
 {% highlight clojure %}
-(defproject deps "1" :dependencies [[org.jclouds/jclouds-all "1.5.9"] [org.jclouds.driver/jclouds-sshj "1.5.9"]])
+(defproject deps "1" :dependencies [[org.jclouds/jclouds-all "1.6.0"] [org.jclouds.driver/jclouds-sshj "1.6.0"]])
 {% endhighlight %}
   * Execute __lein pom__, then __mvn dependency:copy-dependencies__ which will fill `target/dependency` with all the jclouds jars.
 
@@ -33,13 +33,8 @@ the following your project's __pom.xml__:
 <dependencies>
   <dependency>
     <groupId>org.jclouds</groupId>
-    <artifactId>jclouds-allcompute</artifactId>
-    <version>1.5.9</version>
-  </dependency>
-  <dependency>
-    <groupId>org.jclouds</groupId>
-    <artifactId>jclouds-allblobstore</artifactId>
-    <version>1.5.9</version>
+    <artifactId>jclouds-all</artifactId>
+    <version>1.6.0</version>
   </dependency>
 </dependencies>
 {% endhighlight %}
@@ -58,9 +53,9 @@ When you run this script with __ant__, it will build a __lib__ directory full of
     <delete dir="lib" />
     <mkdir dir="lib" />
     <artifact:dependencies filesetId="jclouds.fileset" versionsId="dependency.versions">
-      <dependency groupId="org.jclouds" artifactId="jclouds-all" version="1.5.9" />
-      <dependency groupId="org.jclouds.driver" artifactId="jclouds-sshj" version="1.5.9" />
-      <dependency groupId="ch.qos.logback" artifactId="logback-classic" version="[1.0.0,)" />
+      <dependency groupId="org.jclouds" artifactId="jclouds-all" version="1.6.0" />
+      <dependency groupId="org.jclouds.driver" artifactId="jclouds-sshj" version="1.6.0" />
+      <dependency groupId="ch.qos.logback" artifactId="logback-classic" version="[1.0.9,)" />
     </artifact:dependencies>
     <copy todir="lib" verbose="true">
       <fileset refid="jclouds.fileset"/>
@@ -82,13 +77,13 @@ When you run this script with __ant__, it will build a __lib__ directory full of
 To only fetch the jars for a particular provider replace
 
 {% highlight xml %}
-      <dependency groupId="org.jclouds" artifactId="jclouds-all" version="1.5.9" />
+      <dependency groupId="org.jclouds" artifactId="jclouds-all" version="1.6.0" />
 {% endhighlight %}
 
 with
 
 {% highlight xml %}
-      <dependency groupId="org.jclouds.provider" artifactId="the-provider-id" version="1.5.9" />
+      <dependency groupId="org.jclouds.provider" artifactId="the-provider-id" version="1.6.0" />
 {% endhighlight %}
 
 You can see the list of supported providers and their ids in the [Supported Providers](/documentation/reference/supported-providers).
@@ -102,10 +97,10 @@ Then, add jclouds to your __build.xml__ as shown below:
 <artifact:dependencies pathId="jclouds.classpath">
   <dependency groupId="org.jclouds" 
               artifactId="jclouds-allcompute"
-              version="1.5.9" />
+              version="1.6.0" />
   <dependency groupId="org.jclouds"
               artifactId="jclouds-allblobstore"
-              version="1.5.9" />
+              version="1.6.0" />
 </artifact:dependencies>
 {% endhighlight %}
 
@@ -117,13 +112,13 @@ If you use lieningen, you can add jclouds to your project.clj like below, suppor
 :dependencies [[org.clojure/clojure "1.3.0"]
                [org.clojure/core.incubator "0.1.0"]
                [org.clojure/tools.logging "0.2.3"]
-               [org.jclouds/jclouds-allcompute "1.5.9"]
-               [org.jclouds/jclouds-allblobstore "1.5.9"]]
+               [org.jclouds/jclouds-allcompute "1.6.0"]
+               [org.jclouds/jclouds-allblobstore "1.6.0"]]
 {% endhighlight %}
 
 ## <a id="lib"></a>Making your own lib dir
   * Using maven:
-    * Create a pom.xml file with dependencies you need (ex. org.jclouds/jclouds-all) and the snapshot repository, if you want snapshot version (1.6.0-SNAPSHOT).
+    * Create a pom.xml file with dependencies you need (ex. org.jclouds/jclouds-all) and the snapshot repository, if you want snapshot version (1.6.1-SNAPSHOT).
     * Execute `mvn dependency:copy-dependencies`.
     * You'll notice a new directory target/dependency with all the jars you need.
   * Using lein
@@ -151,12 +146,12 @@ You need to update your repositories and add the following in your project's pom
   <dependency>
     <groupId>org.jclouds</groupId>
     <artifactId>jclouds-allcompute</artifactId>
-    <version>1.6.0-SNAPSHOT</version>
+    <version>1.6.1-SNAPSHOT</version>
   </dependency>
   <dependency>
     <groupId>org.jclouds</groupId>
     <artifactId>jclouds-allblobstore</artifactId>
-    <version>1.6.0-SNAPSHOT</version>
+    <version>1.6.1-SNAPSHOT</version>
   </dependency>
 </dependencies>
 {% endhighlight %}
@@ -173,10 +168,10 @@ Then, add jclouds snapshot dependencies to your __build.xml__ as shown below:
 <artifact:dependencies pathId="jclouds.classpath">
   <dependency groupId="org.jclouds"
               artifactId="jclouds-allcompute"
-              version="1.6.0-SNAPSHOT" />
+              version="1.6.1-SNAPSHOT" />
   <dependency groupId="org.jclouds"
               artifactId="jclouds-allblobstore"
-              version="1.6.0-SNAPSHOT" />
+              version="1.6.1-SNAPSHOT" />
   <remoteRepository refid="jclouds.snapshot.repository" />
 </artifact:dependencies>
 {% endhighlight %}
@@ -189,7 +184,7 @@ If you use lieningen, you can add jclouds snapshots to your __project.clj__ like
   :dependencies [[org.clojure/clojure "1.3.0"]
                  [org.clojure/core.incubator "0.1.0"]
                  [org.clojure/tools.logging "0.2.3"]
-                 [org.jclouds/jclouds-allcompute "1.6.0-SNAPSHOT"]
-                 [org.jclouds/jclouds-allblobstore "1.6.0-SNAPSHOT"]]
+                 [org.jclouds/jclouds-allcompute "1.6.1-SNAPSHOT"]
+                 [org.jclouds/jclouds-allblobstore "1.6.1-SNAPSHOT"]]
   :repositories { "jclouds-snapshot" "https://oss.sonatype.org/content/repositories/snapshots"}
 {% endhighlight %}
