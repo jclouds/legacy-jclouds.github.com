@@ -1,7 +1,7 @@
 [INFO] Scanning for projects...
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:dynect:bundle:1.6.0-SNAPSHOT
-[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/private/tmp/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /private/tmp/jclouds/project/pom.xml, line 24, column 13
 [WARNING] 
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
 [WARNING] 
@@ -13,7 +13,6 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ dynect ---
-[INFO] Deleting /Users/adriancole/workspace/git/1.6.x/jclouds/providers/dynect/target
 [INFO] 
 [INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ dynect ---
 [INFO] 
@@ -25,367 +24,430 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ dynect ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/dynect/src/main/clojure
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/dynect/src/main/clojure
 [INFO] Copying 1 resource
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ dynect ---
-[INFO] Compiling 40 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/dynect/target/classes
+[INFO] Compiling 46 source files to /private/tmp/jclouds/providers/dynect/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ dynect ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/dynect/src/test/clojure
-[INFO] Copying 22 resources
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/dynect/src/test/clojure
+[INFO] Copying 29 resources
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ dynect ---
-[INFO] Compiling 33 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/dynect/target/test-classes
+[INFO] Compiling 43 source files to /private/tmp/jclouds/providers/dynect/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ dynect ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/dynect/target/surefire-reports
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/dynect/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@69f78ef1
-Starting test test(org.jclouds.dynect.v3.parse.CreateSessionResponseTest)
-Starting test test(org.jclouds.dynect.v3.parse.DeleteZoneResponseTest)
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@690da5eb
 Starting test test(org.jclouds.dynect.v3.parse.GetAAAARecordResponseTest)
+Starting test test(org.jclouds.dynect.v3.parse.DeleteZoneResponseTest)
 Starting test test(org.jclouds.dynect.v3.parse.GetARecordResponseTest)
 Starting test test(org.jclouds.dynect.v3.parse.DeleteZoneChangesResponseTest)
-[pool-1-thread-1] Test test(org.jclouds.dynect.v3.parse.CreateSessionResponseTest) succeeded: 401ms
+Starting test test(org.jclouds.dynect.v3.parse.CreateSessionResponseTest)
+[pool-1-thread-4] Test test(org.jclouds.dynect.v3.parse.GetAAAARecordResponseTest) succeeded: 317ms
 Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.GetCNAMERecordResponseTest)
-[pool-1-thread-2] Test test(org.jclouds.dynect.v3.parse.DeleteZoneChangesResponseTest) succeeded: 382ms
+[pool-1-thread-5] Test test(org.jclouds.dynect.v3.parse.GetARecordResponseTest) succeeded: 317ms
 Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.GetMXRecordResponseTest)
-[pool-1-thread-3] Test test(org.jclouds.dynect.v3.parse.DeleteZoneResponseTest) succeeded: 404ms
+[pool-1-thread-1] Test test(org.jclouds.dynect.v3.parse.CreateSessionResponseTest) succeeded: 317ms
 Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.GetNSRecordResponseTest)
-[pool-1-thread-3] Test test(org.jclouds.dynect.v3.parse.GetNSRecordResponseTest) succeeded: 17ms
+Starting test test(org.jclouds.dynect.v3.parse.GetCNAMERecordResponseTest)
+Starting test test(org.jclouds.dynect.v3.parse.GetGeoServiceResponseTest)
+Starting test test(org.jclouds.dynect.v3.parse.GetGeoRegionGroupResponseTest)
+[pool-1-thread-3] Test test(org.jclouds.dynect.v3.parse.DeleteZoneResponseTest) succeeded: 323ms
 Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.GetPTRRecordResponseTest)
-[pool-1-thread-5] Test test(org.jclouds.dynect.v3.parse.GetARecordResponseTest) succeeded: 425ms
+[pool-1-thread-2] Test test(org.jclouds.dynect.v3.parse.DeleteZoneChangesResponseTest) succeeded: 323ms
 Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.GetRecordResponseTest)
-[pool-1-thread-4] Test test(org.jclouds.dynect.v3.parse.GetAAAARecordResponseTest) succeeded: 431ms
+Starting test test(org.jclouds.dynect.v3.parse.GetMXRecordResponseTest)
+Starting test test(org.jclouds.dynect.v3.parse.GetNSRecordResponseTest)
+[pool-1-thread-4] Test test(org.jclouds.dynect.v3.parse.GetCNAMERecordResponseTest) succeeded: 19ms
 Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.GetSOARecordResponseTest)
-[pool-1-thread-1] Test test(org.jclouds.dynect.v3.parse.GetCNAMERecordResponseTest) succeeded: 46ms
+Starting test test(org.jclouds.dynect.v3.parse.GetPTRRecordResponseTest)
+[pool-1-thread-2] Test test(org.jclouds.dynect.v3.parse.GetNSRecordResponseTest) succeeded: 18ms
 Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.GetSRVRecordResponseTest)
-[pool-1-thread-2] Test test(org.jclouds.dynect.v3.parse.GetMXRecordResponseTest) succeeded: 52ms
+Starting test test(org.jclouds.dynect.v3.parse.GetRecordResponseTest)
+[pool-1-thread-3] Test test(org.jclouds.dynect.v3.parse.GetMXRecordResponseTest) succeeded: 23ms
 Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.GetTXTRecordResponseTest)
-[pool-1-thread-3] Test test(org.jclouds.dynect.v3.parse.GetPTRRecordResponseTest) succeeded: 33ms
+Starting test test(org.jclouds.dynect.v3.parse.GetSOARecordResponseTest)
+[pool-1-thread-5] Test test(org.jclouds.dynect.v3.parse.GetGeoRegionGroupResponseTest) succeeded: 36ms
 Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.GetZoneResponseTest)
-[pool-1-thread-4] Test test(org.jclouds.dynect.v3.parse.GetSOARecordResponseTest) succeeded: 20ms
+Starting test test(org.jclouds.dynect.v3.parse.GetSPFRecordResponseTest)
+[pool-1-thread-4] Test test(org.jclouds.dynect.v3.parse.GetPTRRecordResponseTest) succeeded: 18ms
 Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.ListRecordsResponseTest)
-[pool-1-thread-4] Test test(org.jclouds.dynect.v3.parse.ListRecordsResponseTest) succeeded: 20ms
+Starting test test(org.jclouds.dynect.v3.parse.GetSRVRecordResponseTest)
+[pool-1-thread-2] Test test(org.jclouds.dynect.v3.parse.GetRecordResponseTest) succeeded: 15ms
 Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
-Starting test test(org.jclouds.dynect.v3.parse.ListZonesResponseTest)
-[pool-1-thread-1] Test test(org.jclouds.dynect.v3.parse.GetSRVRecordResponseTest) succeeded: 43ms
+Starting test test(org.jclouds.dynect.v3.parse.GetSSHFPRecordResponseTest)
+[pool-1-thread-1] Test test(org.jclouds.dynect.v3.parse.GetGeoServiceResponseTest) succeeded: 42ms
 Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
-Starting test test200OnFailureThrowsExceptionWithoutRetryOnNameExists(org.jclouds.dynect.v3.DynectApiMockTest)
-[pool-1-thread-5] Test test(org.jclouds.dynect.v3.parse.GetRecordResponseTest) succeeded: 61ms
+Starting test test(org.jclouds.dynect.v3.parse.GetTXTRecordResponseTest)
+[pool-1-thread-5] Test test(org.jclouds.dynect.v3.parse.GetSPFRecordResponseTest) succeeded: 20ms
 Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
-Starting test testExtractNameInPath(org.jclouds.dynect.v3.functions.ExtractZoneNamesTest)
-[pool-1-thread-5] Test testExtractNameInPath(org.jclouds.dynect.v3.functions.ExtractZoneNamesTest) succeeded: 0ms
+Starting test test(org.jclouds.dynect.v3.parse.GetZoneResponseTest)
+[pool-1-thread-3] Test test(org.jclouds.dynect.v3.parse.GetSOARecordResponseTest) succeeded: 33ms
 Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
-Starting test testExtractZoneNames(org.jclouds.dynect.v3.functions.ExtractZoneNamesTest)
-[pool-1-thread-5] Test testExtractZoneNames(org.jclouds.dynect.v3.functions.ExtractZoneNamesTest) succeeded: 0ms
+Starting test test(org.jclouds.dynect.v3.parse.ListGeoRegionGroupsResponseTest)
+[pool-1-thread-2] Test test(org.jclouds.dynect.v3.parse.GetSSHFPRecordResponseTest) succeeded: 28ms
 Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
-Starting test testTypeEqualsWhenEqual(org.jclouds.dynect.v3.predicates.RecordPredicatesTest)
-[pool-1-thread-5] Test testTypeEqualsWhenEqual(org.jclouds.dynect.v3.predicates.RecordPredicatesTest) succeeded: 1ms
+Starting test test(org.jclouds.dynect.v3.parse.ListGeoServicesResponseTest)
+[pool-1-thread-4] Test test(org.jclouds.dynect.v3.parse.GetSRVRecordResponseTest) succeeded: 35ms
 Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
-Starting test testTypeEqualsWhenNotEqual(org.jclouds.dynect.v3.predicates.RecordPredicatesTest)
-[pool-1-thread-5] Test testTypeEqualsWhenNotEqual(org.jclouds.dynect.v3.predicates.RecordPredicatesTest) succeeded: 0ms
+Starting test test(org.jclouds.dynect.v3.parse.ListRecordsResponseTest)
+[pool-1-thread-1] Test test(org.jclouds.dynect.v3.parse.GetTXTRecordResponseTest) succeeded: 31ms
 Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
-Starting test testParsePath(org.jclouds.dynect.v3.functions.ToRecordIdsTest)
-[pool-1-thread-5] Test testParsePath(org.jclouds.dynect.v3.functions.ToRecordIdsTest) succeeded: 1ms
+Starting test test(org.jclouds.dynect.v3.parse.ListZonesResponseTest)
+[pool-1-thread-3] Test test(org.jclouds.dynect.v3.parse.ListGeoRegionGroupsResponseTest) succeeded: 17ms
 Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
-[pool-1-thread-4] Test test(org.jclouds.dynect.v3.parse.ListZonesResponseTest) succeeded: 30ms
+Starting test test200OnFailureThrowsExceptionWithoutRetryOnNameExists(org.jclouds.dynect.v3.DynectApiMockTest)
+[pool-1-thread-2] Test test(org.jclouds.dynect.v3.parse.ListGeoServicesResponseTest) succeeded: 16ms
 Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
-[pool-1-thread-2] Test test(org.jclouds.dynect.v3.parse.GetTXTRecordResponseTest) succeeded: 61ms
+Starting test testExtractLastPathComponent(org.jclouds.dynect.v3.functions.ExtractLastPathComponentTest)
+[pool-1-thread-2] Test testExtractLastPathComponent(org.jclouds.dynect.v3.functions.ExtractLastPathComponentTest) succeeded: 0ms
 Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
-[pool-1-thread-3] Test test(org.jclouds.dynect.v3.parse.GetZoneResponseTest) succeeded: 72ms
+Starting test testExtractNameInPath(org.jclouds.dynect.v3.functions.ExtractLastPathComponentTest)
+[pool-1-thread-2] Test testExtractNameInPath(org.jclouds.dynect.v3.functions.ExtractLastPathComponentTest) succeeded: 1ms
 Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
-[pool-1-thread-1] Test test200OnFailureThrowsExceptionWithoutRetryOnNameExists(org.jclouds.dynect.v3.DynectApiMockTest) succeeded: 690ms
+Starting test testTypeEqualsWhenEqual(org.jclouds.dynect.v3.predicates.RecordPredicatesTest)
+[pool-1-thread-1] Test test(org.jclouds.dynect.v3.parse.ListZonesResponseTest) succeeded: 14ms
 Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
-Starting test test200OnFailureThrowsExceptionWithoutRetryWhenJobRunning(org.jclouds.dynect.v3.DynectApiMockTest)
-[pool-1-thread-1] Test test200OnFailureThrowsExceptionWithoutRetryWhenJobRunning(org.jclouds.dynect.v3.DynectApiMockTest) succeeded: 164ms
+Starting test testTypeEqualsWhenNotEqual(org.jclouds.dynect.v3.predicates.RecordPredicatesTest)
+[pool-1-thread-1] Test testTypeEqualsWhenNotEqual(org.jclouds.dynect.v3.predicates.RecordPredicatesTest) succeeded: 6ms
 Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
-Starting test test200OnFailureThrowsExceptionWithoutRetryWhenOperationBlocked(org.jclouds.dynect.v3.DynectApiMockTest)
-[pool-1-thread-1] Test test200OnFailureThrowsExceptionWithoutRetryWhenOperationBlocked(org.jclouds.dynect.v3.DynectApiMockTest) succeeded: 142ms
+[pool-1-thread-2] Test testTypeEqualsWhenEqual(org.jclouds.dynect.v3.predicates.RecordPredicatesTest) succeeded: 8ms
 Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
-Starting test testAllContains(org.jclouds.dynect.v3.DynECTProviderMetadataTest)
-[pool-5-thread-1] Test testAllContains(org.jclouds.dynect.v3.DynECTProviderMetadataTest) succeeded: 1ms
+Starting test testParsePath(org.jclouds.dynect.v3.functions.ToRecordIdsTest)
+[pool-1-thread-1] Test testParsePath(org.jclouds.dynect.v3.functions.ToRecordIdsTest) succeeded: 1ms
 Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+[pool-1-thread-4] Test test(org.jclouds.dynect.v3.parse.ListRecordsResponseTest) succeeded: 26ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+[pool-1-thread-5] Test test(org.jclouds.dynect.v3.parse.GetZoneResponseTest) succeeded: 41ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+[pool-1-thread-3] Test test200OnFailureThrowsExceptionWithoutRetryOnNameExists(org.jclouds.dynect.v3.DynectApiMockTest) succeeded: 459ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test test200OnFailureThrowsExceptionWithoutRetryWhenJobRunning(org.jclouds.dynect.v3.DynectApiMockTest)
+[pool-1-thread-3] Test test200OnFailureThrowsExceptionWithoutRetryWhenJobRunning(org.jclouds.dynect.v3.DynectApiMockTest) succeeded: 88ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test test200OnFailureThrowsExceptionWithoutRetryWhenOperationBlocked(org.jclouds.dynect.v3.DynectApiMockTest)
+[pool-1-thread-3] Test test200OnFailureThrowsExceptionWithoutRetryWhenOperationBlocked(org.jclouds.dynect.v3.DynectApiMockTest) succeeded: 82ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.dynect.v3.DynECTProviderMetadataTest)
 Starting test testOfApiContains(org.jclouds.dynect.v3.DynECTProviderMetadataTest)
 Starting test testTransformableToContains(org.jclouds.dynect.v3.DynECTProviderMetadataTest)
 [pool-5-thread-3] Test testTransformableToContains(org.jclouds.dynect.v3.DynECTProviderMetadataTest) succeeded: 0ms
-Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
-[pool-5-thread-2] Test testOfApiContains(org.jclouds.dynect.v3.DynECTProviderMetadataTest) succeeded: 2ms
-Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
 Starting test testWithId(org.jclouds.dynect.v3.DynECTProviderMetadataTest)
-[pool-5-thread-4] Test testWithId(org.jclouds.dynect.v3.DynECTProviderMetadataTest) succeeded: 2ms
-Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
-Starting test testDeleteWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-Starting test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-Starting test testDeleteWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-Starting test testGetAAAAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-Starting test testGetAAAAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-4] Test testGetAAAAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 495ms
-Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
-Starting test testGetAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-3] Test testDeleteWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 551ms
-Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
-Starting test testGetAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-5] Test testGetAAAAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 526ms
 Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
-Starting test testGetCNAMEWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-1] Test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 571ms
+[pool-5-thread-4] Test testWithId(org.jclouds.dynect.v3.DynECTProviderMetadataTest) succeeded: 1ms
 Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
-Starting test testGetCNAMEWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-2] Test testDeleteWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 585ms
+[pool-5-thread-1] Test testAllContains(org.jclouds.dynect.v3.DynECTProviderMetadataTest) succeeded: 1ms
 Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
-Starting test testGetMXWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-5] Test testGetCNAMEWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 410ms
+[pool-5-thread-2] Test testOfApiContains(org.jclouds.dynect.v3.DynECTProviderMetadataTest) succeeded: 2ms
 Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
-Starting test testGetMXWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-2] Test testGetMXWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 423ms
+Starting test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.GeoRegionGroupApiExpectTest)
+Starting test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.GeoRegionGroupApiExpectTest)
+[pool-6-thread-2] Test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.GeoRegionGroupApiExpectTest) succeeded: 90ms
 Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
-Starting test testGetNSWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-3] Test testGetAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 454ms
+[pool-6-thread-1] Test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.GeoRegionGroupApiExpectTest) succeeded: 93ms
 Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
-Starting test testGetNSWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-1] Test testGetCNAMEWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 466ms
+Starting test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.GeoServiceApiExpectTest)
+Starting test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.GeoServiceApiExpectTest)
+[pool-7-thread-2] Test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.GeoServiceApiExpectTest) succeeded: 74ms
 Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
-Starting test testGetPTRWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-4] Test testGetAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 508ms
+[pool-7-thread-1] Test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.GeoServiceApiExpectTest) succeeded: 85ms
 Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
-Starting test testGetPTRWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-5] Test testGetMXWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 332ms
+Starting test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testGetAAAAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testDeleteWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testGetAAAAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-4] Test testGetAAAAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 111ms
 Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
-Starting test testGetSOAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-1] Test testGetPTRWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 364ms
+[pool-8-thread-5] Test testGetAAAAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 111ms
 Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
-Starting test testGetSOAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-4] Test testGetPTRWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 360ms
+Starting test testGetAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testGetAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-3] Test testDeleteWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 116ms
 Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
-Starting test testGetSRVWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-3] Test testGetNSWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 421ms
+[pool-8-thread-2] Test testDeleteWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 116ms
 Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
-Starting test testGetTXTWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-2] Test testGetNSWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 490ms
+Starting test testGetCNAMEWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-1] Test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 116ms
 Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
-Starting test testGetTXTWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-5] Test testGetSOAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 446ms
+Starting test testGetCNAMEWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testGetMXWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-3] Test testGetCNAMEWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 112ms
 Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
-Starting test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-4] Test testGetSRVWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 390ms
+[pool-8-thread-5] Test testGetAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 116ms
 Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
-Starting test testGetWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-2] Test testGetTXTWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 324ms
+[pool-8-thread-2] Test testGetCNAMEWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 111ms
 Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
-Starting test testListByFQDNAndTypeWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-3] Test testGetTXTWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 333ms
+Starting test testGetMXWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testGetNSWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testGetNSWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-4] Test testGetAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 118ms
 Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
-Starting test testListByFQDNAndTypeWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-1] Test testGetSOAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 435ms
+Starting test testGetPTRWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-1] Test testGetMXWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 114ms
 Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
-Starting test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
-[pool-6-thread-5] Test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 618ms
+Starting test testGetPTRWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-2] Test testGetNSWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 101ms
 Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
-[pool-6-thread-1] Test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 585ms
+Starting test testGetSOAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-1] Test testGetPTRWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 100ms
 Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
-[pool-6-thread-4] Test testGetWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 669ms
+[pool-8-thread-3] Test testGetMXWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 102ms
 Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
-[pool-6-thread-3] Test testListByFQDNAndTypeWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 652ms
+Starting test testGetSOAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testGetSPFWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-4] Test testGetPTRWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 103ms
 Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
-[pool-6-thread-2] Test testListByFQDNAndTypeWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 657ms
+[pool-8-thread-5] Test testGetNSWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 104ms
 Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
-Starting test testLogout(org.jclouds.dynect.v3.features.SessionApiExpectTest)
-Starting test testSessionInvalid(org.jclouds.dynect.v3.features.SessionApiExpectTest)
-Starting test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.SessionApiExpectTest)
-Starting test testSessionValid(org.jclouds.dynect.v3.features.SessionApiExpectTest)
-[pool-7-thread-1] Test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.SessionApiExpectTest) succeeded: 169ms
+Starting test testGetSRVWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testGetSSHFPWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-1] Test testGetSOAWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 93ms
 Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
-[pool-7-thread-4] Test testSessionValid(org.jclouds.dynect.v3.features.SessionApiExpectTest) succeeded: 213ms
+Starting test testGetTXTWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-4] Test testGetSRVWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 92ms
 Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
-[pool-7-thread-2] Test testLogout(org.jclouds.dynect.v3.features.SessionApiExpectTest) succeeded: 226ms
+[pool-8-thread-2] Test testGetSOAWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 97ms
 Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
-[pool-7-thread-3] Test testSessionInvalid(org.jclouds.dynect.v3.features.SessionApiExpectTest) succeeded: 246ms
+Starting test testGetTXTWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-3] Test testGetSPFWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 96ms
 Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
-Starting test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-Starting test testCreateWithContactWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-Starting test testDeleteWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-Starting test testDeleteChangesWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-Starting test testDeleteWhenResponseIs404(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-[pool-8-thread-2] Test testCreateWithContactWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 270ms
+[pool-8-thread-5] Test testGetSSHFPWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 94ms
 Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
-Starting test testFreezeWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-[pool-8-thread-4] Test testDeleteWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 287ms
+Starting test testGetWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testListByFQDNAndTypeWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-4] Test testGetTXTWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 98ms
 Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
-Starting test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-[pool-8-thread-3] Test testDeleteChangesWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 308ms
+Starting test testListByFQDNAndTypeWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-1] Test testGetTXTWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 102ms
 Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
-Starting test testGetWhenResponseIs404(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-[pool-8-thread-1] Test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 380ms
+[pool-8-thread-3] Test testGetWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 100ms
 Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
-Starting test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-[pool-8-thread-5] Test testDeleteWhenResponseIs404(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 368ms
+Starting test testListByFQDNWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-2] Test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 101ms
 Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
-Starting test testPublishWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-[pool-8-thread-3] Test testGetWhenResponseIs404(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 483ms
+Starting test testListByFQDNWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+Starting test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest)
+[pool-8-thread-5] Test testListByFQDNAndTypeWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 102ms
 Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
-Starting test testThawWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
-[pool-8-thread-2] Test testFreezeWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 542ms
+[pool-8-thread-2] Test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 71ms
 Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
-[pool-8-thread-5] Test testPublishWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 429ms
+[pool-8-thread-4] Test testListByFQDNAndTypeWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 84ms
 Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
-[pool-8-thread-4] Test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 531ms
+[pool-8-thread-1] Test testListByFQDNWhenResponseIs2xx(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 83ms
 Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
-[pool-8-thread-1] Test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 444ms
+[pool-8-thread-3] Test testListByFQDNWhenResponseIs404(org.jclouds.dynect.v3.features.RecordApiExpectTest) succeeded: 84ms
 Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
-[pool-8-thread-3] Test testThawWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 172ms
+Starting test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.SessionApiExpectTest)
+Starting test testSessionInvalid(org.jclouds.dynect.v3.features.SessionApiExpectTest)
+Starting test testLogout(org.jclouds.dynect.v3.features.SessionApiExpectTest)
+Starting test testSessionValid(org.jclouds.dynect.v3.features.SessionApiExpectTest)
+[pool-9-thread-1] Test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.SessionApiExpectTest) succeeded: 78ms
 Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
-Starting test test401ShouldInvalidateSessionAndRetry(org.jclouds.dynect.v3.filters.SessionManagerTest)
-Starting test testAlreadySessionCredentials(org.jclouds.dynect.v3.filters.SessionManagerTest)
-[pool-9-thread-3] Test testAlreadySessionCredentials(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 2ms
+[pool-9-thread-4] Test testSessionValid(org.jclouds.dynect.v3.features.SessionApiExpectTest) succeeded: 78ms
 Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
-Starting test testCacheLoadLogsIn(org.jclouds.dynect.v3.filters.SessionManagerTest)
-Starting test testConvertCredentialsParsesCustomer(org.jclouds.dynect.v3.filters.SessionManagerTest)
-[pool-9-thread-5] Test testConvertCredentialsParsesCustomer(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 1ms
+[pool-9-thread-3] Test testSessionInvalid(org.jclouds.dynect.v3.features.SessionApiExpectTest) succeeded: 79ms
 Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
-Starting test test403ShouldNotInvalidateSessionOrRetry(org.jclouds.dynect.v3.filters.SessionManagerTest)
-[pool-9-thread-4] Test testCacheLoadLogsIn(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 42ms
+[pool-9-thread-2] Test testLogout(org.jclouds.dynect.v3.features.SessionApiExpectTest) succeeded: 80ms
 Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
-[pool-9-thread-2] Test test403ShouldNotInvalidateSessionOrRetry(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 189ms
+Starting test testCreateWithContactWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+Starting test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+Starting test testDeleteChangesWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+Starting test testDeleteWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+Starting test testDeleteWhenResponseIs404(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+[pool-10-thread-5] Test testDeleteWhenResponseIs404(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 95ms
 Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
-[pool-9-thread-1] Test test401ShouldInvalidateSessionAndRetry(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 296ms
+Starting test testFreezeWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+[pool-10-thread-3] Test testDeleteChangesWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 100ms
 Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
-Starting test testRedirectOnJobLocationSwitchesToGETAndNoPayload(org.jclouds.dynect.v3.handlers.GetJobRedirectionRetryHandlerExpectTest)
-[pool-10-thread-1] Test testRedirectOnJobLocationSwitchesToGETAndNoPayload(org.jclouds.dynect.v3.handlers.GetJobRedirectionRetryHandlerExpectTest) succeeded: 75ms
+[pool-10-thread-4] Test testDeleteWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 100ms
 Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
-Tests run: 74, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.476 sec
+Starting test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+Starting test testGetWhenResponseIs404(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+[pool-10-thread-1] Test testCreateWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 104ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+Starting test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+[pool-10-thread-2] Test testCreateWithContactWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 106ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+Starting test testPublishWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+[pool-10-thread-3] Test testGetWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 81ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+Starting test testThawWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest)
+[pool-10-thread-4] Test testGetWhenResponseIs404(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 95ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+[pool-10-thread-1] Test testListWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 92ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+[pool-10-thread-2] Test testPublishWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 91ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+[pool-10-thread-5] Test testFreezeWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 98ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+[pool-10-thread-3] Test testThawWhenResponseIs2xx(org.jclouds.dynect.v3.features.ZoneApiExpectTest) succeeded: 62ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
+Starting test testAlreadySessionCredentials(org.jclouds.dynect.v3.filters.SessionManagerTest)
+Starting test testConvertCredentialsParsesCustomer(org.jclouds.dynect.v3.filters.SessionManagerTest)
+[pool-11-thread-1] Test testAlreadySessionCredentials(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 0ms
+Starting test testCacheLoadLogsIn(org.jclouds.dynect.v3.filters.SessionManagerTest)
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
+[pool-11-thread-3] Test testConvertCredentialsParsesCustomer(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 1ms
+Starting test testForbiddenShouldNotInvalidateSessionOrRetry(org.jclouds.dynect.v3.filters.SessionManagerTest)
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
+Starting test testUnauthorizedShouldInvalidateSessionAndRetry(org.jclouds.dynect.v3.filters.SessionManagerTest)
+Starting test testIPMismatchShouldInvalidateSessionAndRetry(org.jclouds.dynect.v3.filters.SessionManagerTest)
+[pool-11-thread-2] Test testCacheLoadLogsIn(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 27ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
+[pool-11-thread-4] Test testForbiddenShouldNotInvalidateSessionOrRetry(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 96ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+[pool-11-thread-5] Test testIPMismatchShouldInvalidateSessionAndRetry(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 148ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 0.
+[pool-11-thread-3] Test testUnauthorizedShouldInvalidateSessionAndRetry(org.jclouds.dynect.v3.filters.SessionManagerTest) succeeded: 149ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 0.
+Starting test testRedirectOnJobLocationSwitchesToGETAndNoPayload(org.jclouds.dynect.v3.handlers.GetJobRedirectionRetryHandlerExpectTest)
+[pool-12-thread-1] Test testRedirectOnJobLocationSwitchesToGETAndNoPayload(org.jclouds.dynect.v3.handlers.GetJobRedirectionRetryHandlerExpectTest) succeeded: 52ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 0.
+Tests run: 89, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.525 sec
 
 Results :
 
-Tests run: 74, Failures: 0, Errors: 0, Skipped: 0
+Tests run: 89, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] 
 [INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ dynect ---
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:test-jar (default) @ dynect ---
-[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/dynect/target/dynect-1.6.0-SNAPSHOT-tests.jar
+[INFO] Building jar: /private/tmp/jclouds/providers/dynect/target/dynect-1.6.0-SNAPSHOT-tests.jar
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ dynect ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/dynect/target/surefire-reports
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/dynect/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5a77a7f9
-Starting test testCreateRecord(org.jclouds.dynect.v3.features.RecordApiLiveTest)
-[TestNG] Test testCreateRecord(org.jclouds.dynect.v3.features.RecordApiLiveTest) succeeded: 5109ms
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@43b09468
+Starting test testListAndGetGeoRegionGroups(org.jclouds.dynect.v3.features.GeoRegionGroupApiLiveTest)
+[TestNG] Test testListAndGetGeoRegionGroups(org.jclouds.dynect.v3.features.GeoRegionGroupApiLiveTest) succeeded: 2028ms
 Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
-Starting test testListAndGetRecords(org.jclouds.dynect.v3.features.RecordApiLiveTest)
-[TestNG] Test testListAndGetRecords(org.jclouds.dynect.v3.features.RecordApiLiveTest) succeeded: 9511ms
+Starting test testListAndGetGeoServices(org.jclouds.dynect.v3.features.GeoServiceApiLiveTest)
+[TestNG] Test testListAndGetGeoServices(org.jclouds.dynect.v3.features.GeoServiceApiLiveTest) succeeded: 729ms
 Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
-Starting test testListByFQDNAndType(org.jclouds.dynect.v3.features.RecordApiLiveTest)
-[TestNG] Test testListByFQDNAndType(org.jclouds.dynect.v3.features.RecordApiLiveTest) succeeded: 377ms
+Starting test testCreateRecord(org.jclouds.dynect.v3.features.RecordApiLiveTest)
+[TestNG] Test testCreateRecord(org.jclouds.dynect.v3.features.RecordApiLiveTest) succeeded: 5191ms
 Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testListAndGetRecords(org.jclouds.dynect.v3.features.RecordApiLiveTest)
+[TestNG] Test testListAndGetRecords(org.jclouds.dynect.v3.features.RecordApiLiveTest) failed.
+Test suite progress: tests succeeded: 3, failed: 1, skipped: 0.
+Starting test testListByFQDN(org.jclouds.dynect.v3.features.RecordApiLiveTest)
+[TestNG] Test testListByFQDN(org.jclouds.dynect.v3.features.RecordApiLiveTest) succeeded: 536ms
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 0.
+Starting test testListByFQDNAndType(org.jclouds.dynect.v3.features.RecordApiLiveTest)
+[TestNG] Test testListByFQDNAndType(org.jclouds.dynect.v3.features.RecordApiLiveTest) succeeded: 484ms
+Test suite progress: tests succeeded: 5, failed: 1, skipped: 0.
 Starting test testDeleteRecord(org.jclouds.dynect.v3.features.RecordApiLiveTest)
-[TestNG] Test testDeleteRecord(org.jclouds.dynect.v3.features.RecordApiLiveTest) succeeded: 564ms
-Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[TestNG] Test testDeleteRecord(org.jclouds.dynect.v3.features.RecordApiLiveTest) succeeded: 760ms
+Test suite progress: tests succeeded: 6, failed: 1, skipped: 0.
 Starting test testCreateSession(org.jclouds.dynect.v3.features.SessionApiLiveTest)
-[TestNG] Test testCreateSession(org.jclouds.dynect.v3.features.SessionApiLiveTest) succeeded: 183ms
-Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+[TestNG] Test testCreateSession(org.jclouds.dynect.v3.features.SessionApiLiveTest) succeeded: 226ms
+Test suite progress: tests succeeded: 7, failed: 1, skipped: 0.
 Starting test testCreateZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest)
-[TestNG] Test testCreateZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 924ms
-Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[TestNG] Test testCreateZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 862ms
+Test suite progress: tests succeeded: 8, failed: 1, skipped: 0.
 Starting test testDeleteZoneWhenNotFound(org.jclouds.dynect.v3.features.ZoneApiLiveTest)
-[TestNG] Test testDeleteZoneWhenNotFound(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 141ms
-Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+[TestNG] Test testDeleteZoneWhenNotFound(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 173ms
+Test suite progress: tests succeeded: 9, failed: 1, skipped: 0.
 Starting test testGetZoneWhenNotFound(org.jclouds.dynect.v3.features.ZoneApiLiveTest)
-[TestNG] Test testGetZoneWhenNotFound(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 244ms
-Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[TestNG] Test testGetZoneWhenNotFound(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 185ms
+Test suite progress: tests succeeded: 10, failed: 1, skipped: 0.
 Starting test testListAndGetZones(org.jclouds.dynect.v3.features.ZoneApiLiveTest)
-[TestNG] Test testListAndGetZones(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 864ms
-Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+[TestNG] Test testListAndGetZones(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 1050ms
+Test suite progress: tests succeeded: 11, failed: 1, skipped: 0.
 Starting test testPublishZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest)
-[TestNG] Test testPublishZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 196ms
-Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+[TestNG] Test testPublishZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 215ms
+Test suite progress: tests succeeded: 12, failed: 1, skipped: 0.
 Starting test testFreezeZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest)
-[TestNG] Test testFreezeZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 365ms
-Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+[TestNG] Test testFreezeZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 333ms
+Test suite progress: tests succeeded: 13, failed: 1, skipped: 0.
 Starting test testThawZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest)
-[TestNG] Test testThawZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 302ms
-Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+[TestNG] Test testThawZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 336ms
+Test suite progress: tests succeeded: 14, failed: 1, skipped: 0.
 Starting test testDeleteZoneChanges(org.jclouds.dynect.v3.features.ZoneApiLiveTest)
-[TestNG] Test testDeleteZoneChanges(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 488ms
-Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+[TestNG] Test testDeleteZoneChanges(org.jclouds.dynect.v3.features.ZoneApiLiveTest) succeeded: 372ms
+Test suite progress: tests succeeded: 15, failed: 1, skipped: 0.
 Starting test testDeleteZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest)
 [TestNG] Test testDeleteZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest) failed.
-Test suite progress: tests succeeded: 13, failed: 1, skipped: 0.
-Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 22.296 sec <<< FAILURE!
-testDeleteZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest)  Time elapsed: 0.169 sec  <<< FAILURE!
+Test suite progress: tests succeeded: 15, failed: 2, skipped: 0.
+Tests run: 18, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 17.39 sec <<< FAILURE!
+testListAndGetRecords(org.jclouds.dynect.v3.features.RecordApiLiveTest)  Time elapsed: 0.763 sec  <<< FAILURE!
+java.lang.AssertionError: expected [RecordId{zone=adrianc.record.dynecttest.jclouds.org, fqdn=adrianc.record.dynecttest.jclouds.org, type=SOA, id=60004894}] but found [SOARecord{zone=adrianc.record.dynecttest.jclouds.org, fqdn=adrianc.record.dynecttest.jclouds.org, type=SOA, id=60004894, ttl=3600, rdata={mname=ns1.p28.dynect.net., rname=1.6.0-SNAPSHOT.jclouds.org., serial=2, refresh=3600, retry=600, expire=604800, minimum=60}, serialStyle=increment}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at org.jclouds.dynect.v3.features.RecordApiLiveTest.testListAndGetRecords(RecordApiLiveTest.java:109)
+
+testDeleteZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest)  Time elapsed: 0.21 sec  <<< FAILURE!
 org.jclouds.dynect.v3.DynECTExceptions$JobStillRunningException: Operation blocked by current task
 	at org.jclouds.dynect.v3.handlers.DynECTErrorHandler.handleError(DynECTErrorHandler.java:49)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:80)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:51)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy58.delete(Unknown Source)
+	at com.sun.proxy.$Proxy64.delete(Unknown Source)
 	at org.jclouds.dynect.v3.features.ZoneApiLiveTest.testDeleteZone(ZoneApiLiveTest.java:114)
-Caused by: org.jclouds.http.HttpResponseException: command: DELETE https://api2.dynect.net/REST/Zone/adriancole.zone.dynecttest.jclouds.org HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [{"status": "failure", "data": {}, "job_id": 290492696, "msgs": [{"INFO": "zone: Operation blocked by current task", "SOURCE": "BLL", "ERR_CD": "ILLEGAL_OPERATION", "LVL": "ERROR"}, {"INFO": "task_name: ProvisionZone", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}, {"INFO": "task_id: 40455973", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}]}]
+Caused by: org.jclouds.http.HttpResponseException: command: DELETE https://api2.dynect.net/REST/Zone/adrianc.zone.dynecttest.jclouds.org HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [{"status": "failure", "data": {}, "job_id": 332864633, "msgs": [{"INFO": "zone: Operation blocked by current task", "SOURCE": "BLL", "ERR_CD": "ILLEGAL_OPERATION", "LVL": "ERROR"}, {"INFO": "task_name: ProvisionZone", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}, {"INFO": "task_id: 44248685", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}]}]
 	at org.jclouds.dynect.v3.handlers.DynECTErrorHandler.handleError(DynECTErrorHandler.java:45)
 	... 31 more
 
-tearDownContext(org.jclouds.dynect.v3.features.ZoneApiLiveTest)  Time elapsed: 0.334 sec  <<< FAILURE!
+tearDown(org.jclouds.dynect.v3.features.ZoneApiLiveTest)  Time elapsed: 0.373 sec  <<< FAILURE!
 org.jclouds.dynect.v3.DynECTExceptions$JobStillRunningException: Operation blocked by current task
 	at org.jclouds.dynect.v3.handlers.DynECTErrorHandler.handleError(DynECTErrorHandler.java:49)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:80)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:51)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy58.delete(Unknown Source)
-	at org.jclouds.dynect.v3.features.ZoneApiLiveTest.tearDownContext(ZoneApiLiveTest.java:127)
-Caused by: org.jclouds.http.HttpResponseException: command: DELETE https://api2.dynect.net/REST/Zone/adriancole.zone.dynecttest.jclouds.org HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [{"status": "failure", "data": {}, "job_id": 290492697, "msgs": [{"INFO": "zone: Operation blocked by current task", "SOURCE": "BLL", "ERR_CD": "ILLEGAL_OPERATION", "LVL": "ERROR"}, {"INFO": "task_name: ProvisionZone", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}, {"INFO": "task_id: 40455973", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}]}]
+	at com.sun.proxy.$Proxy64.delete(Unknown Source)
+	at org.jclouds.dynect.v3.features.ZoneApiLiveTest.tearDown(ZoneApiLiveTest.java:127)
+Caused by: org.jclouds.http.HttpResponseException: command: DELETE https://api2.dynect.net/REST/Zone/adrianc.zone.dynecttest.jclouds.org HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [{"status": "failure", "data": {}, "job_id": 332864634, "msgs": [{"INFO": "zone: Operation blocked by current task", "SOURCE": "BLL", "ERR_CD": "ILLEGAL_OPERATION", "LVL": "ERROR"}, {"INFO": "task_name: ProvisionZone", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}, {"INFO": "task_id: 44248685", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}]}]
 	at org.jclouds.dynect.v3.handlers.DynECTErrorHandler.handleError(DynECTErrorHandler.java:45)
 	... 31 more
 
 
 Results :
 
-Failed tests:   testDeleteZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest): Operation blocked by current task
-  tearDownContext(org.jclouds.dynect.v3.features.ZoneApiLiveTest): Operation blocked by current task
+Failed tests:   testListAndGetRecords(org.jclouds.dynect.v3.features.RecordApiLiveTest): expected [RecordId{zone=adrianc.record.dynecttest.jclouds.org, fqdn=adrianc.record.dynecttest.jclouds.org, type=SOA, id=60004894}] but found [SOARecord{zone=adrianc.record.dynecttest.jclouds.org, fqdn=adrianc.record.dynecttest.jclouds.org, type=SOA, id=60004894, ttl=3600, rdata={mname=ns1.p28.dynect.net., rname=1.6.0-SNAPSHOT.jclouds.org., serial=2, refresh=3600, retry=600, expire=604800, minimum=60}, serialStyle=increment}]
+  testDeleteZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest): Operation blocked by current task
+  tearDown(org.jclouds.dynect.v3.features.ZoneApiLiveTest): Operation blocked by current task
 
-Tests run: 15, Failures: 2, Errors: 0, Skipped: 0
+Tests run: 18, Failures: 3, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 44.825s
-[INFO] Finished at: Sat Mar 09 12:39:50 PST 2013
-[INFO] Final Memory: 18M/265M
+[INFO] Total time: 27.332s
+[INFO] Finished at: Sat Apr 27 16:27:17 PDT 2013
+[INFO] Final Memory: 18M/125M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (integration) on project dynect: There are test failures.
 [ERROR] 
-[ERROR] Please refer to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/dynect/target/surefire-reports for the individual test results.
+[ERROR] Please refer to /private/tmp/jclouds/providers/dynect/target/surefire-reports for the individual test results.
 [ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.

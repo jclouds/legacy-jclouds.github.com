@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 40, Failures: 9, Errors: 0, Skipped: 22, Time elapsed: 1,412.696 sec <<< FAILURE!
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiLiveTest)  Time elapsed: 121.633 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiLiveTest.testCreateLoadBalancer(HealthMonitorApiLiveTest.java:54)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiLiveTest)  Time elapsed: 122.18 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiLiveTest.testCreateLoadBalancer(ContentCachingApiLiveTest.java:52)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest)  Time elapsed: 122.186 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest.testCreateLoadBalancer(ConnectionApiLiveTest.java:55)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiLiveTest)  Time elapsed: 122.191 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiLiveTest.testCreateLoadBalancer(ErrorPageApiLiveTest.java:64)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiLiveTest)  Time elapsed: 302.029 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiLiveTest.testCreateLoadBalancer(SessionPersistenceApiLiveTest.java:54)
+
+testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest)  Time elapsed: 302.062 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest.testCreateLoadBalancers(NodeApiLiveTest.java:69)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiLiveTest)  Time elapsed: 302.084 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiLiveTest.testCreateLoadBalancer(ReportApiLiveTest.java:62)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiLiveTest)  Time elapsed: 302.084 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiLiveTest.testCreateLoadBalancer(SSLTerminationApiLiveTest.java:54)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiLiveTest)  Time elapsed: 35.951 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiLiveTest.testCreateLoadBalancer(LoadBalancerApiLiveTest.java:86)
+

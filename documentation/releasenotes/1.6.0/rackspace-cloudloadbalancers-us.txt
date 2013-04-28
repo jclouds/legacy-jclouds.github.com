@@ -1,7 +1,7 @@
 [INFO] Scanning for projects...
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:rackspace-cloudloadbalancers-us:bundle:1.6.0-SNAPSHOT
-[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/private/tmp/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /private/tmp/jclouds/project/pom.xml, line 24, column 13
 [WARNING] 
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
 [WARNING] 
@@ -24,43 +24,43 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ rackspace-cloudloadbalancers-us ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-us/src/main/clojure
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-us/src/main/clojure
 [INFO] Copying 1 resource
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ rackspace-cloudloadbalancers-us ---
-[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-us/target/classes
+[INFO] Compiling 1 source file to /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-us/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ rackspace-cloudloadbalancers-us ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-us/src/test/clojure
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-us/src/test/resources
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-us/src/test/clojure
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-us/src/test/resources
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ rackspace-cloudloadbalancers-us ---
-[INFO] Compiling 3 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-us/target/test-classes
+[INFO] Compiling 3 source files to /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-us/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ rackspace-cloudloadbalancers-us ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-us/target/surefire-reports
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-us/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5ca352a5
-Starting test testAllContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest)
-[pool-1-thread-1] Test testAllContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest) succeeded: 9ms
-Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@65b4fad5
 Starting test testOfApiContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest)
-[pool-1-thread-2] Test testOfApiContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest) succeeded: 5ms
-Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
-Starting test testTransformableToContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest)
-[pool-1-thread-3] Test testTransformableToContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest) succeeded: 3ms
-Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest)
 Starting test testWithId(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest)
-[pool-1-thread-4] Test testWithId(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest) succeeded: 13ms
+Starting test testTransformableToContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest)
+[pool-1-thread-1] Test testAllContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest) succeeded: 12ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testOfApiContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest) succeeded: 16ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testTransformableToContains(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest) succeeded: 18ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testWithId(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSProviderTest) succeeded: 19ms
 Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.14 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 sec
 
 Results :
 
@@ -70,57 +70,47 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ rackspace-cloudloadbalancers-us ---
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:test-jar (default) @ rackspace-cloudloadbalancers-us ---
-[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-us/target/rackspace-cloudloadbalancers-us-1.6.0-SNAPSHOT-tests.jar
+[INFO] Building jar: /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-us/target/rackspace-cloudloadbalancers-us-1.6.0-SNAPSHOT-tests.jar
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ rackspace-cloudloadbalancers-us ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-us/target/surefire-reports
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-us/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5a77a7f9
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@1cc7b00c
 Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest)
 Starting test testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest)
-[TestNG] Test testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest) succeeded: 169858ms
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest) succeeded: 227839ms
 Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
-Starting test testAddNodes(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest)
-[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest) succeeded: 170778ms
-Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
 Starting test testUpdateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest)
-[TestNG] Test testAddNodes(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest) succeeded: 9151ms
-Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
-Starting test testModifyNode(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest)
-[TestNG] Test testModifyNode(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest) succeeded: 2683ms
-Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
-Starting test testListNodes(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest)
-[TestNG] Test testListNodes(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest) succeeded: 1836ms
-Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
-Starting test testNodeMetadata(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest)
-[TestNG] Test testNodeMetadata(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest) failed.
-Test suite progress: tests succeeded: 5, failed: 1, skipped: 0.
-[TestNG] Test testUpdateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest) succeeded: 30439ms
-Test suite progress: tests succeeded: 6, failed: 1, skipped: 0.
+[TestNG] Test testUpdateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest) succeeded: 57074ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
 Starting test testListLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest)
-[TestNG] Test testListLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest) succeeded: 1390ms
-Test suite progress: tests succeeded: 7, failed: 1, skipped: 0.
+[TestNG] Test testListLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest) succeeded: 2152ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
 Starting test testLoadBalancerMetadata(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest)
-[TestNG] Test testLoadBalancerMetadata(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest) succeeded: 7539ms
-Test suite progress: tests succeeded: 8, failed: 1, skipped: 0.
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 273.009 sec <<< FAILURE!
-testNodeMetadata(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest)  Time elapsed: 0.329 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: command: POST https://ord.loadbalancers.api.rackspacecloud.com/v1.0/413274/loadbalancers/112527/nodes/310869/metadata HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Loadbalancer 112527 is deleted, therefore it is immutable.]
-	at org.jclouds.rackspace.cloudloadbalancers.v1.handlers.ParseCloudLoadBalancersErrorFromHttpResponse.handleError(ParseCloudLoadBalancersErrorFromHttpResponse.java:76)
-	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
-	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
-	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
-	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy75.createMetadata(Unknown Source)
-	at org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest.testNodeMetadata(NodeApiLiveTest.java:154)
+[TestNG] Test testLoadBalancerMetadata(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSLoadBalancerClientLiveTest) succeeded: 8366ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+[TestNG] Test testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest) failed.
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 0.
+[TestNG] Test testAddNodes(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 1.
+[TestNG] Test testModifyNode(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 2.
+[TestNG] Test testListNodes(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 3.
+[TestNG] Test testNodeMetadata(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest) skipped.
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 4.
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 393.392 sec <<< FAILURE!
+testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest)  Time elapsed: 103.471 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest.testCreateLoadBalancers(NodeApiLiveTest.java:69)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -146,20 +136,20 @@ org.jclouds.http.HttpResponseException: command: POST https://ord.loadbalancers.
 
 Results :
 
-Failed tests:   testNodeMetadata(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest): command: POST https://ord.loadbalancers.api.rackspacecloud.com/v1.0/413274/loadbalancers/112527/nodes/310869/metadata HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [Loadbalancer 112527 is deleted, therefore it is immutable.]
+Failed tests:   testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.us.CloudLoadBalancersUSNodeClientLiveTest): expected [true] but found [false]
 
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 4
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4:43.188s
-[INFO] Finished at: Sat Mar 09 16:25:42 PST 2013
-[INFO] Final Memory: 18M/265M
+[INFO] Total time: 6:40.323s
+[INFO] Finished at: Sat Apr 27 19:04:51 PDT 2013
+[INFO] Final Memory: 18M/125M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (integration) on project rackspace-cloudloadbalancers-us: There are test failures.
 [ERROR] 
-[ERROR] Please refer to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-us/target/surefire-reports for the individual test results.
+[ERROR] Please refer to /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-us/target/surefire-reports for the individual test results.
 [ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.

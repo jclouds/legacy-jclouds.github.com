@@ -1,38 +1,46 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 22.296 sec <<< FAILURE!
-testDeleteZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest)  Time elapsed: 0.169 sec  <<< FAILURE!
+Tests run: 18, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 17.39 sec <<< FAILURE!
+testListAndGetRecords(org.jclouds.dynect.v3.features.RecordApiLiveTest)  Time elapsed: 0.763 sec  <<< FAILURE!
+java.lang.AssertionError: expected [RecordId{zone=adrianc.record.dynecttest.jclouds.org, fqdn=adrianc.record.dynecttest.jclouds.org, type=SOA, id=60004894}] but found [SOARecord{zone=adrianc.record.dynecttest.jclouds.org, fqdn=adrianc.record.dynecttest.jclouds.org, type=SOA, id=60004894, ttl=3600, rdata={mname=ns1.p28.dynect.net., rname=1.6.0-SNAPSHOT.jclouds.org., serial=2, refresh=3600, retry=600, expire=604800, minimum=60}, serialStyle=increment}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at org.jclouds.dynect.v3.features.RecordApiLiveTest.testListAndGetRecords(RecordApiLiveTest.java:109)
+
+testDeleteZone(org.jclouds.dynect.v3.features.ZoneApiLiveTest)  Time elapsed: 0.21 sec  <<< FAILURE!
 org.jclouds.dynect.v3.DynECTExceptions$JobStillRunningException: Operation blocked by current task
 	at org.jclouds.dynect.v3.handlers.DynECTErrorHandler.handleError(DynECTErrorHandler.java:49)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:80)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:51)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy58.delete(Unknown Source)
+	at com.sun.proxy.$Proxy64.delete(Unknown Source)
 	at org.jclouds.dynect.v3.features.ZoneApiLiveTest.testDeleteZone(ZoneApiLiveTest.java:114)
-Caused by: org.jclouds.http.HttpResponseException: command: DELETE https://api2.dynect.net/REST/Zone/adriancole.zone.dynecttest.jclouds.org HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [{"status": "failure", "data": {}, "job_id": 290492696, "msgs": [{"INFO": "zone: Operation blocked by current task", "SOURCE": "BLL", "ERR_CD": "ILLEGAL_OPERATION", "LVL": "ERROR"}, {"INFO": "task_name: ProvisionZone", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}, {"INFO": "task_id: 40455973", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}]}]
+Caused by: org.jclouds.http.HttpResponseException: command: DELETE https://api2.dynect.net/REST/Zone/adrianc.zone.dynecttest.jclouds.org HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [{"status": "failure", "data": {}, "job_id": 332864633, "msgs": [{"INFO": "zone: Operation blocked by current task", "SOURCE": "BLL", "ERR_CD": "ILLEGAL_OPERATION", "LVL": "ERROR"}, {"INFO": "task_name: ProvisionZone", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}, {"INFO": "task_id: 44248685", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}]}]
 	at org.jclouds.dynect.v3.handlers.DynECTErrorHandler.handleError(DynECTErrorHandler.java:45)
 	... 31 more
 
-tearDownContext(org.jclouds.dynect.v3.features.ZoneApiLiveTest)  Time elapsed: 0.334 sec  <<< FAILURE!
+tearDown(org.jclouds.dynect.v3.features.ZoneApiLiveTest)  Time elapsed: 0.373 sec  <<< FAILURE!
 org.jclouds.dynect.v3.DynECTExceptions$JobStillRunningException: Operation blocked by current task
 	at org.jclouds.dynect.v3.handlers.DynECTErrorHandler.handleError(DynECTErrorHandler.java:49)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:97)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:80)
+	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:51)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy58.delete(Unknown Source)
-	at org.jclouds.dynect.v3.features.ZoneApiLiveTest.tearDownContext(ZoneApiLiveTest.java:127)
-Caused by: org.jclouds.http.HttpResponseException: command: DELETE https://api2.dynect.net/REST/Zone/adriancole.zone.dynecttest.jclouds.org HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [{"status": "failure", "data": {}, "job_id": 290492697, "msgs": [{"INFO": "zone: Operation blocked by current task", "SOURCE": "BLL", "ERR_CD": "ILLEGAL_OPERATION", "LVL": "ERROR"}, {"INFO": "task_name: ProvisionZone", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}, {"INFO": "task_id: 40455973", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}]}]
+	at com.sun.proxy.$Proxy64.delete(Unknown Source)
+	at org.jclouds.dynect.v3.features.ZoneApiLiveTest.tearDown(ZoneApiLiveTest.java:127)
+Caused by: org.jclouds.http.HttpResponseException: command: DELETE https://api2.dynect.net/REST/Zone/adrianc.zone.dynecttest.jclouds.org HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [{"status": "failure", "data": {}, "job_id": 332864634, "msgs": [{"INFO": "zone: Operation blocked by current task", "SOURCE": "BLL", "ERR_CD": "ILLEGAL_OPERATION", "LVL": "ERROR"}, {"INFO": "task_name: ProvisionZone", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}, {"INFO": "task_id: 44248685", "SOURCE": "BLL", "ERR_CD": null, "LVL": "INFO"}]}]
 	at org.jclouds.dynect.v3.handlers.DynECTErrorHandler.handleError(DynECTErrorHandler.java:45)
 	... 31 more
 

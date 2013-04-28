@@ -1,7 +1,7 @@
 [INFO] Scanning for projects...
 [WARNING] 
-[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:byon:bundle:1.6.0-SNAPSHOT
-[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:byon:bundle:1.7.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.7.0-SNAPSHOT (/Users/adrianc/git/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.7.0-SNAPSHOT, /Users/adrianc/git/jclouds/project/pom.xml, line 24, column 13
 [WARNING] 
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
 [WARNING] 
@@ -9,7 +9,7 @@
 [WARNING] 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building jclouds bring your own node provider 1.6.0-SNAPSHOT
+[INFO] Building jclouds bring your own node provider 1.7.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ byon ---
@@ -24,124 +24,124 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ byon ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/byon/src/main/clojure
+[INFO] skip non existing resourceDirectory /Users/adrianc/git/jclouds/apis/byon/src/main/clojure
 [INFO] Copying 1 resource
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ byon ---
-[INFO] Compiling 12 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/byon/target/classes
+[INFO] Compiling 12 source files to /Users/adrianc/git/jclouds/apis/byon/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ byon ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/apis/byon/src/test/clojure
+[INFO] skip non existing resourceDirectory /Users/adrianc/git/jclouds/apis/byon/src/test/clojure
 [INFO] Copying 5 resources
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ byon ---
-[INFO] Compiling 9 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/apis/byon/target/test-classes
+[INFO] Compiling 9 source files to /Users/adrianc/git/jclouds/apis/byon/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ byon ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/byon/target/surefire-reports
+[INFO] Surefire report directory: /Users/adrianc/git/jclouds/apis/byon/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@43b09468
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@1f292d26
+Starting test testWithId(org.jclouds.byon.BYONApiMetadataTest)
 Starting test testAllContains(org.jclouds.byon.BYONApiMetadataTest)
 Starting test testTransformableToContains(org.jclouds.byon.BYONApiMetadataTest)
-Starting test testWithId(org.jclouds.byon.BYONApiMetadataTest)
-[pool-1-thread-1] Test testAllContains(org.jclouds.byon.BYONApiMetadataTest) succeeded: 21ms
+[pool-1-thread-1] Test testAllContains(org.jclouds.byon.BYONApiMetadataTest) succeeded: 22ms
 Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
-[pool-1-thread-3] Test testWithId(org.jclouds.byon.BYONApiMetadataTest) succeeded: 18ms
+[pool-1-thread-2] Test testTransformableToContains(org.jclouds.byon.BYONApiMetadataTest) succeeded: 27ms
 Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
-[pool-1-thread-2] Test testTransformableToContains(org.jclouds.byon.BYONApiMetadataTest) succeeded: 19ms
+[pool-1-thread-3] Test testWithId(org.jclouds.byon.BYONApiMetadataTest) succeeded: 29ms
 Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
 Starting test testNodesParseNodeMap(org.jclouds.byon.BYONComputeServiceTest)
-[pool-2-thread-1] Test testNodesParseNodeMap(org.jclouds.byon.BYONComputeServiceTest) succeeded: 963ms
+[pool-2-thread-1] Test testNodesParseNodeMap(org.jclouds.byon.BYONComputeServiceTest) succeeded: 1072ms
 Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
 Starting test testNodesParseWithClasspathUrl(org.jclouds.byon.BYONComputeServiceTest)
-[pool-2-thread-1] Test testNodesParseWithClasspathUrl(org.jclouds.byon.BYONComputeServiceTest) succeeded: 236ms
+[pool-2-thread-1] Test testNodesParseWithClasspathUrl(org.jclouds.byon.BYONComputeServiceTest) succeeded: 257ms
 Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
 Starting test testNodesParseWithFileUrl(org.jclouds.byon.BYONComputeServiceTest)
-[pool-2-thread-1] Test testNodesParseWithFileUrl(org.jclouds.byon.BYONComputeServiceTest) succeeded: 170ms
+[pool-2-thread-1] Test testNodesParseWithFileUrl(org.jclouds.byon.BYONComputeServiceTest) succeeded: 149ms
 Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
 Starting test testNodesWithLocations(org.jclouds.byon.BYONComputeServiceTest)
-[pool-2-thread-1] Test testNodesWithLocations(org.jclouds.byon.BYONComputeServiceTest) succeeded: 241ms
+[pool-2-thread-1] Test testNodesWithLocations(org.jclouds.byon.BYONComputeServiceTest) succeeded: 162ms
 Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
 Starting test testProvidedCacheConsistentAcrossMultipleInjectors(org.jclouds.byon.config.CacheNodeStoreModuleTest)
 [pool-3-thread-1] Test testProvidedCacheConsistentAcrossMultipleInjectors(org.jclouds.byon.config.CacheNodeStoreModuleTest) succeeded: 10ms
 Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
 Starting test testProvidedConsistentAcrossMultipleInjectors(org.jclouds.byon.config.CacheNodeStoreModuleTest)
-[pool-3-thread-1] Test testProvidedConsistentAcrossMultipleInjectors(org.jclouds.byon.config.CacheNodeStoreModuleTest) succeeded: 8ms
+[pool-3-thread-1] Test testProvidedConsistentAcrossMultipleInjectors(org.jclouds.byon.config.CacheNodeStoreModuleTest) succeeded: 9ms
 Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
 Starting test testProvidedConsistentAcrossRepeatedWrites(org.jclouds.byon.config.CacheNodeStoreModuleTest)
-[pool-3-thread-1] Test testProvidedConsistentAcrossRepeatedWrites(org.jclouds.byon.config.CacheNodeStoreModuleTest) succeeded: 4ms
+[pool-3-thread-1] Test testProvidedConsistentAcrossRepeatedWrites(org.jclouds.byon.config.CacheNodeStoreModuleTest) succeeded: 5ms
 Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
 Starting test testProvidedMapWithValue(org.jclouds.byon.config.CacheNodeStoreModuleTest)
-[pool-3-thread-1] Test testProvidedMapWithValue(org.jclouds.byon.config.CacheNodeStoreModuleTest) succeeded: 11ms
+[pool-3-thread-1] Test testProvidedMapWithValue(org.jclouds.byon.config.CacheNodeStoreModuleTest) succeeded: 4ms
 Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
-Starting test testMustParseSomething(org.jclouds.byon.functions.NodesFromYamlTest)
-[pool-4-thread-1] Test testMustParseSomething(org.jclouds.byon.functions.NodesFromYamlTest) succeeded: 1ms
-Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
 Starting test testNodesParse(org.jclouds.byon.functions.NodesFromYamlTest)
-[pool-4-thread-2] Test testNodesParse(org.jclouds.byon.functions.NodesFromYamlTest) succeeded: 2ms
-Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
-Starting test testNodesParseLocation(org.jclouds.byon.functions.NodesFromYamlTest)
-[pool-4-thread-3] Test testNodesParseLocation(org.jclouds.byon.functions.NodesFromYamlTest) succeeded: 6ms
-Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
 Starting test testNodesParseWhenCredentialInUrl(org.jclouds.byon.functions.NodesFromYamlTest)
-[pool-4-thread-4] Test testNodesParseWhenCredentialInUrl(org.jclouds.byon.functions.NodesFromYamlTest) succeeded: 2ms
-Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
 Starting test testMustParseSomething(org.jclouds.byon.suppliers.NodesParsedFromSupplierTest)
-[pool-4-thread-5] Test testMustParseSomething(org.jclouds.byon.suppliers.NodesParsedFromSupplierTest) succeeded: 0ms
-Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testNodesParseLocation(org.jclouds.byon.functions.NodesFromYamlTest)
+Starting test testMustParseSomething(org.jclouds.byon.functions.NodesFromYamlTest)
+[pool-4-thread-5] Test testMustParseSomething(org.jclouds.byon.suppliers.NodesParsedFromSupplierTest) succeeded: 1ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+[pool-4-thread-1] Test testMustParseSomething(org.jclouds.byon.functions.NodesFromYamlTest) succeeded: 0ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
 Starting test testFromProperty(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest)
-[pool-4-thread-5] Test testFromProperty(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest) succeeded: 2ms
-Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
 Starting test testFromURI(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest)
-[pool-4-thread-5] Test testFromURI(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest) succeeded: 2ms
-Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
-Starting test testSupplyMultipleTimes(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest)
-[pool-4-thread-5] Test testSupplyMultipleTimes(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest) succeeded: 2ms
-Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
-Starting test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest)
+[pool-4-thread-2] Test testNodesParse(org.jclouds.byon.functions.NodesFromYamlTest) succeeded: 5ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
 Starting test testFromURIClasspath(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest)
-[pool-4-thread-4] Test testFromURIClasspath(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest) succeeded: 0ms
+[pool-4-thread-4] Test testNodesParseWhenCredentialInUrl(org.jclouds.byon.functions.NodesFromYamlTest) succeeded: 6ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+[pool-4-thread-5] Test testFromProperty(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest) succeeded: 4ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+[pool-4-thread-1] Test testFromURI(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest) succeeded: 4ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testSupplyMultipleTimes(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest)
+[pool-4-thread-2] Test testFromURIClasspath(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest) succeeded: 4ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest)
+[pool-4-thread-3] Test testNodesParseLocation(org.jclouds.byon.functions.NodesFromYamlTest) succeeded: 10ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+[pool-4-thread-4] Test testSupplyMultipleTimes(org.jclouds.byon.suppliers.SupplyFromProviderURIOrNodesPropertyTest) succeeded: 6ms
 Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
-[pool-4-thread-5] Test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 8ms
+[pool-4-thread-5] Test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 6ms
 Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
 Starting test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest)
-[pool-4-thread-5] Test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 5ms
+[pool-4-thread-5] Test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 6ms
 Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
 Starting test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest)
-[pool-4-thread-5] Test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 4ms
+[pool-4-thread-5] Test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 6ms
 Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
 Starting test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest)
-[pool-4-thread-5] Test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 4ms
+[pool-4-thread-5] Test deleteObject(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 6ms
 Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
 Starting test testDefaultConsistentAcrossMultipleInjectors(org.jclouds.byon.config.YamlNodeStoreModuleTest)
-[pool-4-thread-5] Test testDefaultConsistentAcrossMultipleInjectors(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 17ms
+[pool-4-thread-5] Test testDefaultConsistentAcrossMultipleInjectors(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 16ms
 Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
 Starting test testProvidedConsistentAcrossMultipleInjectors(org.jclouds.byon.config.YamlNodeStoreModuleTest)
-[pool-4-thread-5] Test testProvidedConsistentAcrossMultipleInjectors(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 17ms
+[pool-4-thread-5] Test testProvidedConsistentAcrossMultipleInjectors(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 20ms
 Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
 Starting test testProvidedConsistentAcrossRepeatedWrites(org.jclouds.byon.config.YamlNodeStoreModuleTest)
-[pool-4-thread-5] Test testProvidedConsistentAcrossRepeatedWrites(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 20ms
+[pool-4-thread-5] Test testProvidedConsistentAcrossRepeatedWrites(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 18ms
 Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
 Starting test testProvidedMapWithValue(org.jclouds.byon.config.YamlNodeStoreModuleTest)
-[pool-4-thread-5] Test testProvidedMapWithValue(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 15ms
+[pool-4-thread-5] Test testProvidedMapWithValue(org.jclouds.byon.config.YamlNodeStoreModuleTest) succeeded: 12ms
 Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
 Starting test testNodesParse(org.jclouds.byon.functions.NodeToNodeMetadataTest)
 [pool-5-thread-1] Test testNodesParse(org.jclouds.byon.functions.NodeToNodeMetadataTest) succeeded: 0ms
 Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
 Starting test testNodesParseLocation(org.jclouds.byon.functions.NodeToNodeMetadataTest)
-[pool-5-thread-1] Test testNodesParseLocation(org.jclouds.byon.functions.NodeToNodeMetadataTest) succeeded: 1ms
+[pool-5-thread-1] Test testNodesParseLocation(org.jclouds.byon.functions.NodeToNodeMetadataTest) succeeded: 0ms
 Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
 Starting test testNodesParseLoginPort(org.jclouds.byon.functions.NodeToNodeMetadataTest)
 [pool-5-thread-1] Test testNodesParseLoginPort(org.jclouds.byon.functions.NodeToNodeMetadataTest) succeeded: 1ms
 Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
-Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.771 sec
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.871 sec
 
 Results :
 
@@ -151,20 +151,20 @@ Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ byon ---
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:test-jar (default) @ byon ---
-[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/byon/target/byon-1.6.0-SNAPSHOT-tests.jar
+[INFO] Building jar: /Users/adrianc/git/jclouds/apis/byon/target/byon-1.7.0-SNAPSHOT-tests.jar
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ byon ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/apis/byon/target/surefire-reports
+[INFO] Surefire report directory: /Users/adrianc/git/jclouds/apis/byon/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.jclouds.byon.BYONComputeServiceLiveTest
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@1cf11404
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@42704baa
 Starting test testCanRunCommandAsCurrentUser(org.jclouds.byon.BYONComputeServiceLiveTest)
-[TestNG] Test testCanRunCommandAsCurrentUser(org.jclouds.byon.BYONComputeServiceLiveTest) succeeded: 3572ms
+[TestNG] Test testCanRunCommandAsCurrentUser(org.jclouds.byon.BYONComputeServiceLiveTest) succeeded: 3217ms
 Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.535 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.863 sec
 
 Results :
 
@@ -177,16 +177,16 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 [INFO] Checking test classpath
 [INFO] 
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ byon ---
-[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/byon/target/byon-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/api/byon/1.6.0-SNAPSHOT/byon-1.6.0-SNAPSHOT.jar
-[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/byon/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/api/byon/1.6.0-SNAPSHOT/byon-1.6.0-SNAPSHOT.pom
-[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/apis/byon/target/byon-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/api/byon/1.6.0-SNAPSHOT/byon-1.6.0-SNAPSHOT-tests.jar
+[INFO] Installing /Users/adrianc/git/jclouds/apis/byon/target/byon-1.7.0-SNAPSHOT.jar to /Users/adrianc/.m2/repository/org/jclouds/api/byon/1.7.0-SNAPSHOT/byon-1.7.0-SNAPSHOT.jar
+[INFO] Installing /Users/adrianc/git/jclouds/apis/byon/pom.xml to /Users/adrianc/.m2/repository/org/jclouds/api/byon/1.7.0-SNAPSHOT/byon-1.7.0-SNAPSHOT.pom
+[INFO] Installing /Users/adrianc/git/jclouds/apis/byon/target/byon-1.7.0-SNAPSHOT-tests.jar to /Users/adrianc/.m2/repository/org/jclouds/api/byon/1.7.0-SNAPSHOT/byon-1.7.0-SNAPSHOT-tests.jar
 [INFO] 
 [INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ byon ---
 [INFO] Local OBR update disabled (enable with -DobrRepository)
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 23.468s
-[INFO] Finished at: Sat Mar 09 08:15:35 PST 2013
-[INFO] Final Memory: 19M/265M
+[INFO] Total time: 16.213s
+[INFO] Finished at: Sun Apr 28 14:38:09 PDT 2013
+[INFO] Final Memory: 19M/125M
 [INFO] ------------------------------------------------------------------------

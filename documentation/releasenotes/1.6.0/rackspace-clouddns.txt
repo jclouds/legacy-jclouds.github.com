@@ -1,0 +1,308 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:rackspace-clouddns:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/private/tmp/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /private/tmp/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds rackspace clouddns api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ rackspace-clouddns ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ rackspace-clouddns ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ rackspace-clouddns ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ rackspace-clouddns ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ rackspace-clouddns ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ rackspace-clouddns ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/apis/rackspace-clouddns/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ rackspace-clouddns ---
+[INFO] Compiling 36 source files to /private/tmp/jclouds/apis/rackspace-clouddns/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ rackspace-clouddns ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/apis/rackspace-clouddns/src/test/clojure
+[INFO] Copying 37 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ rackspace-clouddns ---
+[INFO] Compiling 11 source files to /private/tmp/jclouds/apis/rackspace-clouddns/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ rackspace-clouddns ---
+[INFO] Surefire report directory: /private/tmp/jclouds/apis/rackspace-clouddns/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@7ddf5a8f
+Starting test testExportDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+Starting test testDeleteDomains(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+Starting test testGetJobDomainExport(org.jclouds.rackspace.clouddns.v1.features.CloudDNSApiExpectTest)
+Starting test testGetDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+Starting test testCreateDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+[pool-1-thread-1] Test testGetJobDomainExport(org.jclouds.rackspace.clouddns.v1.features.CloudDNSApiExpectTest) succeeded: 995ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testDeleteDomains(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 995ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testExportDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 996ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testImportDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+Starting test testListDomainChanges(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+Starting test testListDomains(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+[pool-1-thread-5] Test testGetDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 1005ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testListWithFilterByNamesMatching(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+[pool-1-thread-2] Test testCreateDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 1007ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testUpdateDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+[pool-1-thread-2] Test testUpdateDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 148ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testUpdateDomainsEmail(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+[pool-1-thread-5] Test testListWithFilterByNamesMatching(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 166ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testUpdateDomainsTTL(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest)
+[pool-1-thread-4] Test testListDomains(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 176ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testImportDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 177ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testListLimitTypes(org.jclouds.rackspace.clouddns.v1.features.LimitApiExpectTest)
+Starting test testListLimits(org.jclouds.rackspace.clouddns.v1.features.LimitApiExpectTest)
+[pool-1-thread-3] Test testListDomainChanges(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 183ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testAddRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+[pool-1-thread-2] Test testUpdateDomainsEmail(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 130ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testDeleteRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+[pool-1-thread-4] Test testListLimitTypes(org.jclouds.rackspace.clouddns.v1.features.LimitApiExpectTest) succeeded: 134ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testDeleteRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+[pool-1-thread-5] Test testUpdateDomainsTTL(org.jclouds.rackspace.clouddns.v1.features.DomainApiExpectTest) succeeded: 139ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testGetByNameAndTypeAndData(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+[pool-1-thread-1] Test testListLimits(org.jclouds.rackspace.clouddns.v1.features.LimitApiExpectTest) succeeded: 145ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testAddRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 138ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testGetRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+Starting test testListByNameAndType(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+[pool-1-thread-2] Test testDeleteRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 137ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testListByType(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+[pool-1-thread-4] Test testDeleteRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 151ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testListByTypeAndData(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+[pool-1-thread-1] Test testGetRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 145ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testListRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+[pool-1-thread-5] Test testGetByNameAndTypeAndData(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 154ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testUpdateRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+[pool-1-thread-3] Test testListByNameAndType(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 151ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testUpdateRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest)
+[pool-1-thread-2] Test testListByType(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 125ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testCreateReverseDNSRecord(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest)
+[pool-1-thread-4] Test testListByTypeAndData(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 146ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+[pool-1-thread-5] Test testUpdateRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 140ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testDeleteReverseDNSRecord(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest)
+Starting test testDeleteReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest)
+[pool-1-thread-3] Test testUpdateRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 142ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testListRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiExpectTest) succeeded: 147ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testGetReverseDNSRecord(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest)
+Starting test testListReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest)
+[pool-1-thread-2] Test testCreateReverseDNSRecord(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest) succeeded: 138ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testUpdateReverseDNSRecord(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest)
+[pool-1-thread-4] Test testDeleteReverseDNSRecord(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest) succeeded: 109ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testGetReverseDNSRecord(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest) succeeded: 124ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+[pool-1-thread-5] Test testDeleteReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest) succeeded: 133ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testListReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest) succeeded: 130ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testUpdateReverseDNSRecord(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiExpectTest) succeeded: 100ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.577 sec
+
+Results :
+
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ rackspace-clouddns ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ rackspace-clouddns ---
+[INFO] Building jar: /private/tmp/jclouds/apis/rackspace-clouddns/target/rackspace-clouddns-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ rackspace-clouddns ---
+[INFO] Surefire report directory: /private/tmp/jclouds/apis/rackspace-clouddns/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@43b09468
+14:10:11,573 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+14:10:11,573 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:10:11,573 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/private/tmp/jclouds/apis/rackspace-clouddns/target/test-classes/logback.xml]
+14:10:11,573 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+14:10:11,573 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/adrianc/.m2/repository/org/jclouds/api/openstack-keystone/1.6.0-SNAPSHOT/openstack-keystone-1.6.0-SNAPSHOT-tests.jar!/logback.xml]
+14:10:11,573 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/private/tmp/jclouds/apis/rackspace-clouddns/target/test-classes/logback.xml]
+14:10:11,573 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/adrianc/.m2/repository/org/jclouds/jclouds-compute/1.6.0-SNAPSHOT/jclouds-compute-1.6.0-SNAPSHOT-tests.jar!/logback.xml]
+14:10:11,621 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:10:11,630 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+14:10:11,632 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+14:10:11,642 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:10:11,673 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/test-data/jclouds.log]
+14:10:11,674 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+14:10:11,674 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [WIREFILE]
+14:10:11,674 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:10:11,675 |-INFO in ch.qos.logback.core.FileAppender[WIREFILE] - File property is set to [target/test-data/jclouds-wire.log]
+14:10:11,675 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - ROOT level set to WARN
+14:10:11,675 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.jclouds level set to DEBUG
+14:10:11,675 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[org.jclouds]
+14:10:11,676 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.wire level set to DEBUG
+14:10:11,676 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.wire]
+14:10:11,676 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - jclouds.headers level set to DEBUG
+14:10:11,676 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [WIREFILE] to Logger[jclouds.headers]
+14:10:11,676 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:10:11,677 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@2dc8b884 - Registering current configuration as safe fallback point
+
+Starting test testCreateDomainsWithSubdomainsAndRecords(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testCreateDomainsWithSubdomainsAndRecords(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 9284ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCreateSimpleDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testCreateSimpleDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 3617ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testListDomains(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testListDomains(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 671ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testListDomainsWithFilter(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testListDomainsWithFilter(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 784ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testListSubdomains(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testListSubdomains(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 13458ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testGetDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testGetDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 17154ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testUpdateDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testUpdateDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 18001ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testUpdateDomainsTTL(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testUpdateDomainsTTL(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 29389ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testUpdateDomainsEmail(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testUpdateDomainsEmail(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 29101ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testExportDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testExportDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 3721ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testImportDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest)
+[TestNG] Test testImportDomain(org.jclouds.rackspace.clouddns.v1.features.DomainApiLiveTest) succeeded: 3501ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testList(org.jclouds.rackspace.clouddns.v1.features.LimitApiLiveTest)
+[TestNG] Test testList(org.jclouds.rackspace.clouddns.v1.features.LimitApiLiveTest) succeeded: 1341ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testListTypes(org.jclouds.rackspace.clouddns.v1.features.LimitApiLiveTest)
+[TestNG] Test testListTypes(org.jclouds.rackspace.clouddns.v1.features.LimitApiLiveTest) succeeded: 488ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testCreateDomain(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest)
+[TestNG] Test testCreateDomain(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest) succeeded: 4204ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testCreateRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest)
+[TestNG] Test testCreateRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest) succeeded: 7211ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testListRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest)
+[TestNG] Test testListRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest) succeeded: 929ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testListRecordsByCriteriaMethods(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest)
+[TestNG] Test testListRecordsByCriteriaMethods(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest) succeeded: 2693ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testGetRecordByNameAndTypeAndData(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest)
+[TestNG] Test testGetRecordByNameAndTypeAndData(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest) succeeded: 1000ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testGetRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest)
+[TestNG] Test testGetRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest) succeeded: 823ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testUpdateRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest)
+[TestNG] Test testUpdateRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest) succeeded: 4670ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testUpdateRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest)
+[TestNG] Test testUpdateRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest) succeeded: 13206ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testDeleteRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest)
+[TestNG] Test testDeleteRecord(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest) succeeded: 4518ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testDeleteRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest)
+[TestNG] Test testDeleteRecords(org.jclouds.rackspace.clouddns.v1.features.RecordApiLiveTest) succeeded: 5601ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testCreateServer(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest)
+serverURI = https://ord.servers.api.rackspacecloud.com/v2/413274/servers/76d08d6b-78e6-4f7a-ae5d-d91e91e27be2
+serverIPv4 = 198.61.180.242
+serverIPv6 = 2001:4801:7817:0072:6ed4:937e:ff10:a135
+[TestNG] Test testCreateServer(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest) succeeded: 287859ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+Starting test testCreateDomain(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest)
+[TestNG] Test testCreateDomain(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest) succeeded: 3491ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testCreateReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest)
+[TestNG] Test testCreateReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest) succeeded: 6432ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testListReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest)
+[TestNG] Test testListReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest) succeeded: 2333ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testUpdateAndGetReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest)
+[TestNG] Test testUpdateAndGetReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest) succeeded: 8348ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testDeleteReverseDNSRecord(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest)
+[TestNG] Test testDeleteReverseDNSRecord(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest) succeeded: 5924ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testDeleteReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest)
+[TestNG] Test testDeleteReverseDNSRecords(org.jclouds.rackspace.clouddns.v1.features.ReverseDNSApiLiveTest) succeeded: 8732ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 609.021 sec
+
+Results :
+
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ rackspace-clouddns ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ rackspace-clouddns ---
+[INFO] Installing /private/tmp/jclouds/apis/rackspace-clouddns/target/rackspace-clouddns-1.6.0-SNAPSHOT.jar to /Users/adrianc/.m2/repository/org/jclouds/api/rackspace-clouddns/1.6.0-SNAPSHOT/rackspace-clouddns-1.6.0-SNAPSHOT.jar
+[INFO] Installing /private/tmp/jclouds/apis/rackspace-clouddns/pom.xml to /Users/adrianc/.m2/repository/org/jclouds/api/rackspace-clouddns/1.6.0-SNAPSHOT/rackspace-clouddns-1.6.0-SNAPSHOT.pom
+[INFO] Installing /private/tmp/jclouds/apis/rackspace-clouddns/target/rackspace-clouddns-1.6.0-SNAPSHOT-tests.jar to /Users/adrianc/.m2/repository/org/jclouds/api/rackspace-clouddns/1.6.0-SNAPSHOT/rackspace-clouddns-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ rackspace-clouddns ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10:18.844s
+[INFO] Finished at: Sat Apr 27 14:20:20 PDT 2013
+[INFO] Final Memory: 17M/125M
+[INFO] ------------------------------------------------------------------------
