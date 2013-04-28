@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 130, Failures: 6, Errors: 0, Skipped: 17, Time elapsed: 26.145 sec <<< FAILURE!
-testTemplateBuilderCanFind(org.jclouds.go2cloud.compute.Go2CloudJohannesburg1TemplateBuilderLiveTest)  Time elapsed: 0.021 sec  <<< FAILURE!
+Tests run: 131, Failures: 6, Errors: 0, Skipped: 18, Time elapsed: 25.515 sec <<< FAILURE!
+testTemplateBuilderCanFind(org.jclouds.go2cloud.compute.Go2CloudJohannesburg1TemplateBuilderLiveTest)  Time elapsed: 0.005 sec  <<< FAILURE!
 java.util.NoSuchElementException: no image matched predicate: And(nullEqualToIsParentOrIsGrandparentOfCurrentLocation(),And(osFamily(windows),os64Bit(true)))
 	at org.jclouds.compute.domain.internal.TemplateBuilderImpl.throwNoSuchElementExceptionAfterLoggingImageIds(TemplateBuilderImpl.java:723)
 	at org.jclouds.compute.domain.internal.TemplateBuilderImpl.findSupportedImages(TemplateBuilderImpl.java:697)
@@ -30,20 +30,20 @@ java.util.NoSuchElementException: no image matched predicate: And(nullEqualToIsP
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 
-testCreateDrive(org.jclouds.go2cloud.Go2CloudJohannesburg1ClientLiveTest)  Time elapsed: 0.028 sec  <<< FAILURE!
+testCreateDrive(org.jclouds.go2cloud.Go2CloudJohannesburg1ClientLiveTest)  Time elapsed: 0.631 sec  <<< FAILURE!
 org.jclouds.http.HttpResponseException: command: POST http://api.jhb1.go2cloud.co.za/drives/create HTTP/1.1 failed with response: HTTP/1.1 402 Payment Required; content: [Please top up your balance, which is currently negative
 ]
 	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy56.createDrive(Unknown Source)
-	at org.jclouds.elasticstack.ElasticStackClientLiveTest.testCreateDrive(ElasticStackClientLiveTest.java:141)
+	at org.jclouds.elasticstack.ElasticStackClientLiveTest.testCreateDrive(ElasticStackClientLiveTest.java:139)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -66,10 +66,10 @@ org.jclouds.http.HttpResponseException: command: POST http://api.jhb1.go2cloud.c
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 
-testCreateAndRunAService(org.jclouds.go2cloud.compute.Go2CloudJohannesburg1ComputeServiceLiveTest)  Time elapsed: 0.04 sec  <<< FAILURE!
+testCreateAndRunAService(org.jclouds.go2cloud.compute.Go2CloudJohannesburg1ComputeServiceLiveTest)  Time elapsed: 0.282 sec  <<< FAILURE!
 org.jclouds.compute.RunNodesException: error running 1 node group(go2cloud-s) location(go2cloud-jhb1) image(14c88d27-1f5e-4ad5-9f3a-28e5d2282f61) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080], tags=[go2cloud-s], userMetadata={test=go2cloud-s}})
 Execution failures:
-1) ExecutionException on go2cloud-s-d9b:
+1) ExecutionException on go2cloud-s-60f:
 java.util.concurrent.ExecutionException: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1.go2cloud.co.za/drives/create HTTP/1.1 failed with response: HTTP/1.1 402 Payment Required; content: [Please top up your balance, which is currently negative
 ]
 	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
@@ -85,14 +85,14 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy56.createDrive(Unknown Source)
-	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:110)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:113)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
@@ -105,8 +105,8 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:655)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:642)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:673)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:660)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -131,8 +131,8 @@ Node failures:
 0 error[s]
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:655)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:642)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:673)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:660)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -160,14 +160,14 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy56.createDrive(Unknown Source)
-	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:110)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:113)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
@@ -180,8 +180,8 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:655)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:642)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:673)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:660)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -206,8 +206,8 @@ Node failures:
 0 error[s]
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:655)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:642)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:673)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:660)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -230,20 +230,20 @@ Node failures:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 
-testWeCanReadAndWriteToDrive(org.jclouds.go2cloud.Go2CloudJohannesburg1ClientLiveTest)  Time elapsed: 0.464 sec  <<< FAILURE!
+testWeCanReadAndWriteToDrive(org.jclouds.go2cloud.Go2CloudJohannesburg1ClientLiveTest)  Time elapsed: 0.436 sec  <<< FAILURE!
 org.jclouds.http.HttpResponseException: command: POST http://api.jhb1.go2cloud.co.za/drives/create HTTP/1.1 failed with response: HTTP/1.1 402 Payment Required; content: [Please top up your balance, which is currently negative
 ]
 	at org.jclouds.elasticstack.handlers.ElasticStackErrorHandler.handleError(ElasticStackErrorHandler.java:56)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy56.createDrive(Unknown Source)
-	at org.jclouds.elasticstack.ElasticStackClientLiveTest.testWeCanReadAndWriteToDrive(ElasticStackClientLiveTest.java:319)
+	at org.jclouds.elasticstack.ElasticStackClientLiveTest.testWeCanReadAndWriteToDrive(ElasticStackClientLiveTest.java:317)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -266,10 +266,10 @@ org.jclouds.http.HttpResponseException: command: POST http://api.jhb1.go2cloud.c
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 
-testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.go2cloud.compute.Go2CloudJohannesburg1ComputeServiceLiveTest)  Time elapsed: 2.589 sec  <<< FAILURE!
+testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.go2cloud.compute.Go2CloudJohannesburg1ComputeServiceLiveTest)  Time elapsed: 2.66 sec  <<< FAILURE!
 org.jclouds.compute.RunNodesException: error running 1 node group(go2cloud-r) location(go2cloud-jhb1) image(14c88d27-1f5e-4ad5-9f3a-28e5d2282f61) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:120})
 Execution failures:
-1) ExecutionException on go2cloud-r-eed:
+1) ExecutionException on go2cloud-r-1b4:
 java.util.concurrent.ExecutionException: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1.go2cloud.co.za/drives/create HTTP/1.1 failed with response: HTTP/1.1 402 Payment Required; content: [Please top up your balance, which is currently negative
 ]
 	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
@@ -285,14 +285,14 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy56.createDrive(Unknown Source)
-	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:110)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:113)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
@@ -305,7 +305,7 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:222)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:224)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -330,7 +330,7 @@ Node failures:
 0 error[s]
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:222)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:224)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -358,14 +358,14 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy56.createDrive(Unknown Source)
-	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:110)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:113)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
@@ -378,7 +378,7 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:222)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:224)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -403,7 +403,7 @@ Node failures:
 0 error[s]
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:222)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:224)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -426,10 +426,10 @@ Node failures:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 
-testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.go2cloud.compute.Go2CloudJohannesburg1ComputeServiceLiveTest)  Time elapsed: 0.345 sec  <<< FAILURE!
+testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.go2cloud.compute.Go2CloudJohannesburg1ComputeServiceLiveTest)  Time elapsed: 0.835 sec  <<< FAILURE!
 java.util.concurrent.ExecutionException: org.jclouds.compute.RunNodesException: error running 1 node group(twin1) location(go2cloud-jhb1) image(14c88d27-1f5e-4ad5-9f3a-28e5d2282f61) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:301, inboundPorts=[22, 8080]})
 Execution failures:
-1) ExecutionException on twin1-966:
+1) ExecutionException on twin1-d34:
 java.util.concurrent.ExecutionException: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1.go2cloud.co.za/drives/create HTTP/1.1 failed with response: HTTP/1.1 402 Payment Required; content: [Please top up your balance, which is currently negative
 ]
 	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
@@ -445,14 +445,14 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy56.createDrive(Unknown Source)
-	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:110)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:113)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
@@ -465,8 +465,8 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:438)
 	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
 	... 3 more
@@ -476,7 +476,7 @@ Node failures:
 	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
 	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:279)
 	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:446)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:448)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -500,7 +500,7 @@ Node failures:
 	at java.lang.Thread.run(Thread.java:680)
 Caused by: org.jclouds.compute.RunNodesException: error running 1 node group(twin1) location(go2cloud-jhb1) image(14c88d27-1f5e-4ad5-9f3a-28e5d2282f61) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:301, inboundPorts=[22, 8080]})
 Execution failures:
-1) ExecutionException on twin1-966:
+1) ExecutionException on twin1-d34:
 java.util.concurrent.ExecutionException: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1.go2cloud.co.za/drives/create HTTP/1.1 failed with response: HTTP/1.1 402 Payment Required; content: [Please top up your balance, which is currently negative
 ]
 	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
@@ -516,14 +516,14 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy56.createDrive(Unknown Source)
-	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:110)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:113)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
@@ -536,8 +536,8 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:438)
 	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
 	... 3 more
@@ -546,15 +546,15 @@ Node failures:
 0 error[s]
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:438)
 	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 	at java.lang.Thread.getStackTrace(Thread.java:1503)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:434)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:436)
 	... 21 more
 Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1.go2cloud.co.za/drives/create HTTP/1.1 failed with response: HTTP/1.1 402 Payment Required; content: [Please top up your balance, which is currently negative
 ]
@@ -562,14 +562,14 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy56.createDrive(Unknown Source)
-	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:110)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:113)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
@@ -582,8 +582,8 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:438)
 	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
 	... 3 more
@@ -593,7 +593,7 @@ Node failures:
 	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
 	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:279)
 	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:96)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:446)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:448)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -617,7 +617,7 @@ Node failures:
 	at java.lang.Thread.run(Thread.java:680)
 Caused by: org.jclouds.compute.RunNodesException: error running 1 node group(twin1) location(go2cloud-jhb1) image(14c88d27-1f5e-4ad5-9f3a-28e5d2282f61) size(cpu=1000.000000,ram=512,disk=1.000000) options({blockOnPort:seconds=22:301, inboundPorts=[22, 8080]})
 Execution failures:
-1) ExecutionException on twin1-966:
+1) ExecutionException on twin1-d34:
 java.util.concurrent.ExecutionException: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1.go2cloud.co.za/drives/create HTTP/1.1 failed with response: HTTP/1.1 402 Payment Required; content: [Please top up your balance, which is currently negative
 ]
 	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
@@ -633,14 +633,14 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:137)
-	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:125)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.handle(DelegatesToInvocationFunction.java:159)
+	at org.jclouds.rest.internal.DelegatesToInvocationFunction.invoke(DelegatesToInvocationFunction.java:126)
 	at com.sun.proxy.$Proxy56.createDrive(Unknown Source)
-	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:110)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:186)
+	at org.jclouds.elasticstack.compute.ElasticStackComputeServiceAdapter.createNodeWithGroupEncodedIntoName(ElasticStackComputeServiceAdapter.java:113)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
@@ -653,8 +653,8 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST http://api.jhb1
 	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:438)
 	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
 	... 3 more
@@ -663,14 +663,14 @@ Node failures:
 0 error[s]
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
 	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:438)
 	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:436)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest$1.call(BaseComputeServiceLiveTest.java:434)
 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 	at java.lang.Thread.getStackTrace(Thread.java:1503)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:434)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testConcurrentUseOfComputeServiceToCreateNodes(BaseComputeServiceLiveTest.java:436)
 	... 21 more
 

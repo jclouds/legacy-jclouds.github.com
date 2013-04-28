@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 141, Failures: 12, Errors: 0, Skipped: 7, Time elapsed: 1,106.683 sec <<< FAILURE!
-testCorrectAuthException(org.jclouds.hpcloud.compute.compute.HPCloudComputeComputeServiceLiveTest)  Time elapsed: 0.363 sec  <<< FAILURE!
+Tests run: 142, Failures: 13, Errors: 0, Skipped: 8, Time elapsed: 952.6 sec <<< FAILURE!
+testCorrectAuthException(org.jclouds.hpcloud.compute.compute.HPCloudComputeComputeServiceLiveTest)  Time elapsed: 0.151 sec  <<< FAILURE!
 org.testng.TestException: 
 Expected exception org.jclouds.rest.AuthorizationException but got com.google.common.util.concurrent.UncheckedExecutionException: java.lang.IllegalArgumentException: current configuration is set to [jclouds.keystone.requires-tenant]. Unless you set [jclouds.keystone.tenant-name] or [jclouds.keystone.tenant-id], you must prefix your identity with 'tenantName:'
 	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
@@ -28,8 +28,8 @@ Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.l
 	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
 	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
 	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4880)
-	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:246)
-	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:243)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:236)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:233)
 	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:97)
 	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:56)
 	at org.jclouds.rest.suppliers.MemoizedRetryOnTimeOutButNotOnAuthorizationExceptionSupplier$SetAndThrowAuthorizationExceptionSupplierBackedLoader.load(MemoizedRetryOnTimeOutButNotOnAuthorizationExceptionSupplier.java:77)
@@ -55,9 +55,9 @@ Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.l
 	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
 	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
 	at org.jclouds.rest.suppliers.MemoizedRetryOnTimeOutButNotOnAuthorizationExceptionSupplier.get(MemoizedRetryOnTimeOutButNotOnAuthorizationExceptionSupplier.java:123)
-	at org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceAdapter.listNodes(NovaComputeServiceAdapter.java:196)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.listDetailsOnNodesMatching(AdaptingComputeServiceStrategies.java:115)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.listNodes(AdaptingComputeServiceStrategies.java:110)
+	at org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceAdapter.listNodes(NovaComputeServiceAdapter.java:199)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.listDetailsOnNodesMatching(AdaptingComputeServiceStrategies.java:126)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.listNodes(AdaptingComputeServiceStrategies.java:116)
 	at org.jclouds.compute.internal.BaseComputeService.listNodes(BaseComputeService.java:339)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -65,7 +65,7 @@ Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.l
 	at java.lang.reflect.Method.invoke(Method.java:597)
 	at com.google.inject.internal.DelegatingInvocationHandler.invoke(DelegatingInvocationHandler.java:37)
 	at com.sun.proxy.$Proxy63.listNodes(Unknown Source)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCorrectAuthException(BaseComputeServiceLiveTest.java:178)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCorrectAuthException(BaseComputeServiceLiveTest.java:180)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -88,8 +88,8 @@ Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.l
 	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
 	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
 	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4880)
-	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:246)
-	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:243)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:236)
+	at org.jclouds.openstack.keystone.v2_0.config.KeystoneAuthenticationModule$2.get(KeystoneAuthenticationModule.java:233)
 	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:97)
 	at org.jclouds.openstack.keystone.v2_0.suppliers.LocationIdToURIFromAccessForTypeAndVersion.get(LocationIdToURIFromAccessForTypeAndVersion.java:56)
 	at org.jclouds.rest.suppliers.MemoizedRetryOnTimeOutButNotOnAuthorizationExceptionSupplier$SetAndThrowAuthorizationExceptionSupplierBackedLoader.load(MemoizedRetryOnTimeOutButNotOnAuthorizationExceptionSupplier.java:77)
@@ -115,9 +115,9 @@ Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.l
 	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
 	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
 	at org.jclouds.rest.suppliers.MemoizedRetryOnTimeOutButNotOnAuthorizationExceptionSupplier.get(MemoizedRetryOnTimeOutButNotOnAuthorizationExceptionSupplier.java:123)
-	at org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceAdapter.listNodes(NovaComputeServiceAdapter.java:196)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.listDetailsOnNodesMatching(AdaptingComputeServiceStrategies.java:115)
-	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.listNodes(AdaptingComputeServiceStrategies.java:110)
+	at org.jclouds.openstack.nova.v2_0.compute.NovaComputeServiceAdapter.listNodes(NovaComputeServiceAdapter.java:199)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.listDetailsOnNodesMatching(AdaptingComputeServiceStrategies.java:126)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.listNodes(AdaptingComputeServiceStrategies.java:116)
 	at org.jclouds.compute.internal.BaseComputeService.listNodes(BaseComputeService.java:339)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -125,7 +125,7 @@ Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.l
 	at java.lang.reflect.Method.invoke(Method.java:597)
 	at com.google.inject.internal.DelegatingInvocationHandler.invoke(DelegatingInvocationHandler.java:37)
 	at com.sun.proxy.$Proxy63.listNodes(Unknown Source)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCorrectAuthException(BaseComputeServiceLiveTest.java:178)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCorrectAuthException(BaseComputeServiceLiveTest.java:180)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -143,13 +143,13 @@ Caused by: java.lang.IllegalArgumentException: current configuration is set to [
 	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
 	... 63 more
 
-testGet(org.jclouds.hpcloud.compute.compute.HPCloudComputeComputeServiceLiveTest)  Time elapsed: 7.616 sec  <<< FAILURE!
-java.lang.AssertionError: [[15.185.179.195, 15.185.181.14]] didn't match: [1] expected [1] but found [2]
+testGet(org.jclouds.hpcloud.compute.compute.HPCloudComputeComputeServiceLiveTest)  Time elapsed: 8.502 sec  <<< FAILURE!
+java.lang.AssertionError: [[15.185.160.22, 15.185.164.148]] didn't match: [1] expected [1] but found [2]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:370)
-	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testGet(BaseComputeServiceLiveTest.java:514)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testGet(BaseComputeServiceLiveTest.java:516)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -172,30 +172,9 @@ java.lang.AssertionError: [[15.185.179.195, 15.185.181.14]] didn't match: [1] ex
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 
-testTemplateBuilderCannotFind(org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+testTemplateBuilderCannotFind(org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest)  Time elapsed: 0.002 sec  <<< FAILURE!
 org.testng.TestException: 
-Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest@4839e5b5] should have thrown an exception of class java.util.NoSuchElementException
-	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
-	at java.lang.Thread.run(Thread.java:680)
-
-testTemplateBuilderCannotFind(org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-org.testng.TestException: 
-Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest@4839e5b5] should have thrown an exception of class java.util.NoSuchElementException
+Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest@1c5d9084] should have thrown an exception of class java.util.NoSuchElementException
 	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -216,7 +195,7 @@ Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.com
 
 testTemplateBuilderCannotFind(org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest)  Time elapsed: 0.002 sec  <<< FAILURE!
 org.testng.TestException: 
-Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest@4839e5b5] should have thrown an exception of class java.util.NoSuchElementException
+Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest@1c5d9084] should have thrown an exception of class java.util.NoSuchElementException
 	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -237,7 +216,7 @@ Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.com
 
 testTemplateBuilderCannotFind(org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 org.testng.TestException: 
-Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest@4839e5b5] should have thrown an exception of class java.util.NoSuchElementException
+Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest@1c5d9084] should have thrown an exception of class java.util.NoSuchElementException
 	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -258,7 +237,7 @@ Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.com
 
 testTemplateBuilderCannotFind(org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 org.testng.TestException: 
-Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest@4839e5b5] should have thrown an exception of class java.util.NoSuchElementException
+Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest@1c5d9084] should have thrown an exception of class java.util.NoSuchElementException
 	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -277,8 +256,29 @@ Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.com
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 
-testTemplateBuilder(org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [Ubuntu Precise 12.04 LTS Server 64-bit 20120424] but found [Ubuntu Precise 12.04 LTS Server 64-bit 20121026 (b)]
+testTemplateBuilderCannotFind(org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.testng.TestException: 
+Method BaseTemplateBuilderLiveTest.testTemplateBuilderCannotFind(org.jclouds.compute.domain.OsFamilyVersion64Bit)[pri:0, instance:org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest@1c5d9084] should have thrown an exception of class java.util.NoSuchElementException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1512)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testTemplateBuilder(org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Ubuntu Precise 12.04 LTS Server 64-bit 20120424] but found [Ubuntu Server 12.04.2 LTS (amd64 20130318) - Partner Image]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
@@ -286,15 +286,56 @@ java.lang.AssertionError: expected [Ubuntu Precise 12.04 LTS Server 64-bit 20120
 	at org.testng.Assert.assertEquals(Assert.java:186)
 	at org.jclouds.hpcloud.compute.compute.HPCloudComputeTemplateBuilderLiveTest.testTemplateBuilder(HPCloudComputeTemplateBuilderLiveTest.java:76)
 
-testAllocateAndDecreateFloatingIPs(org.jclouds.hpcloud.compute.features.HPCloudComputeFloatingIPApiLiveTest)  Time elapsed: 7.7 sec  <<< FAILURE!
+testAddAndRemoveFloatingIp(org.jclouds.hpcloud.compute.features.HPCloudComputeFloatingIPApiLiveTest)  Time elapsed: 21.738 sec  <<< FAILURE!
 org.jclouds.rest.InsufficientResourcesException: {"badRequest": {"message": "AddressLimitExceeded: Address quota exceeded. You cannot allocate any more addresses", "code": 400}}
 	at org.jclouds.openstack.nova.v2_0.handlers.NovaErrorHandler.handleError(NovaErrorHandler.java:90)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
+	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
+	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
+	at com.sun.proxy.$Proxy81.create(Unknown Source)
+	at org.jclouds.openstack.nova.v2_0.extensions.FloatingIPApiLiveTest.testAddAndRemoveFloatingIp(FloatingIPApiLiveTest.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/37936628937291/os-floating-ips HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [{"badRequest": {"message": "AddressLimitExceeded: Address quota exceeded. You cannot allocate any more addresses", "code": 400}}]
+	at org.jclouds.openstack.nova.v2_0.handlers.NovaErrorHandler.handleError(NovaErrorHandler.java:83)
+	... 31 more
+Caused by: org.jclouds.http.HttpResponseException: command: POST https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/37936628937291/os-floating-ips HTTP/1.1 failed with response: HTTP/1.1 400 Bad Request; content: [{"badRequest": {"message": "AddressLimitExceeded: Address quota exceeded. You cannot allocate any more addresses", "code": 400}}]
+	at org.jclouds.openstack.nova.v2_0.handlers.NovaErrorHandler.handleError(NovaErrorHandler.java:83)
+	... 31 more
+
+testAllocateAndDecreateFloatingIPs(org.jclouds.hpcloud.compute.features.HPCloudComputeFloatingIPApiLiveTest)  Time elapsed: 0.36 sec  <<< FAILURE!
+org.jclouds.rest.InsufficientResourcesException: {"badRequest": {"message": "AddressLimitExceeded: Address quota exceeded. You cannot allocate any more addresses", "code": 400}}
+	at org.jclouds.openstack.nova.v2_0.handlers.NovaErrorHandler.handleError(NovaErrorHandler.java:90)
+	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:69)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
+	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
 	at com.sun.proxy.$Proxy81.create(Unknown Source)
@@ -327,7 +368,7 @@ Caused by: org.jclouds.http.HttpResponseException: command: POST https://az-1.re
 	at org.jclouds.openstack.nova.v2_0.handlers.NovaErrorHandler.handleError(NovaErrorHandler.java:83)
 	... 31 more
 
-testAttachments(org.jclouds.hpcloud.compute.features.HPCloudComputeVolumeApiLiveTest)  Time elapsed: 30.388 sec  <<< FAILURE!
+testAttachments(org.jclouds.hpcloud.compute.features.HPCloudComputeVolumeApiLiveTest)  Time elapsed: 25.376 sec  <<< FAILURE!
 java.lang.AssertionError: expected [in-use] but found [unrecognized]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
@@ -356,7 +397,7 @@ java.lang.AssertionError: expected [in-use] but found [unrecognized]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 
-testCreateSnapshot(org.jclouds.hpcloud.compute.features.HPCloudComputeVolumeApiLiveTest)  Time elapsed: 30.569 sec  <<< FAILURE!
+testCreateSnapshot(org.jclouds.hpcloud.compute.features.HPCloudComputeVolumeApiLiveTest)  Time elapsed: 30.923 sec  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
@@ -385,19 +426,19 @@ java.lang.AssertionError: expected [true] but found [false]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
 	at java.lang.Thread.run(Thread.java:680)
 
-tearDownContext(org.jclouds.hpcloud.compute.features.HPCloudComputeVolumeApiLiveTest)  Time elapsed: 6.525 sec  <<< FAILURE!
-org.jclouds.http.HttpResponseException: command: DELETE https://az-1.region-a.geo-1.compute.hpcloudsvc.com/v1.1/37936628937291/os-snapshots/1175 HTTP/1.1 failed with response: HTTP/1.1 500 Internal Server Error; content: [{"cloudServersFault": {"message": "Server Error, please try again later.", "code": 500}}]
+tearDown(org.jclouds.hpcloud.compute.features.HPCloudComputeVolumeApiLiveTest)  Time elapsed: 4.584 sec  <<< FAILURE!
+org.jclouds.http.HttpResponseException: command: DELETE https://az-3.region-a.geo-1.compute.hpcloudsvc.com/v1.1/37936628937291/os-snapshots/4187 HTTP/1.1 failed with response: HTTP/1.1 500 Internal Server Error; content: [{"cloudServersFault": {"message": "Server Error, please try again later.", "code": 500}}]
 	at org.jclouds.openstack.nova.v2_0.handlers.NovaErrorHandler.handleError(NovaErrorHandler.java:83)
 	at org.jclouds.http.handlers.DelegatingErrorHandler.handleError(DelegatingErrorHandler.java:71)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.shouldContinue(BaseHttpCommandExecutorService.java:182)
 	at org.jclouds.http.internal.BaseHttpCommandExecutorService.invoke(BaseHttpCommandExecutorService.java:152)
-	at org.jclouds.rest.internal.InvokeHttpMethod.invoke(InvokeHttpMethod.java:131)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:97)
-	at org.jclouds.rest.internal.InvokeHttpMethod.apply(InvokeHttpMethod.java:59)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.invoke(InvokeSyncToAsyncHttpMethod.java:133)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:99)
+	at org.jclouds.rest.internal.InvokeSyncToAsyncHttpMethod.apply(InvokeSyncToAsyncHttpMethod.java:60)
 	at org.jclouds.reflect.FunctionalReflection$FunctionalInvocationHandler.handleInvocation(FunctionalReflection.java:119)
 	at com.google.common.reflect.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:70)
-	at com.sun.proxy.$Proxy91.deleteSnapshot(Unknown Source)
-	at org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest.tearDownContext(VolumeApiLiveTest.java:71)
+	at com.sun.proxy.$Proxy92.deleteSnapshot(Unknown Source)
+	at org.jclouds.openstack.nova.v2_0.extensions.VolumeApiLiveTest.tearDown(VolumeApiLiveTest.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)

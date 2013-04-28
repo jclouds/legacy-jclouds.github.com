@@ -1,7 +1,7 @@
 [INFO] Scanning for projects...
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:aws-sts:bundle:1.6.0-SNAPSHOT
-[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/private/tmp/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /private/tmp/jclouds/project/pom.xml, line 24, column 13
 [WARNING] 
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
 [WARNING] 
@@ -11,17 +11,107 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Building jclouds Amazon Identity and Access Management (STS) provider 1.6.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ aws-sts ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ aws-sts ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ aws-sts ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ aws-sts ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ aws-sts ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ aws-sts ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/aws-sts/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ aws-sts ---
+[INFO] Compiling 1 source file to /private/tmp/jclouds/providers/aws-sts/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ aws-sts ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/aws-sts/src/test/clojure
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/aws-sts/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ aws-sts ---
+[INFO] Compiling 2 source files to /private/tmp/jclouds/providers/aws-sts/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ aws-sts ---
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/aws-sts/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.aws.sts.AWSSTSProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@41fc2fb
+Starting test testTransformableToContains(org.jclouds.aws.sts.AWSSTSProviderTest)
+Starting test testOfApiContains(org.jclouds.aws.sts.AWSSTSProviderTest)
+Starting test testWithId(org.jclouds.aws.sts.AWSSTSProviderTest)
+Starting test testAllContains(org.jclouds.aws.sts.AWSSTSProviderTest)
+[pool-1-thread-3] Test testTransformableToContains(org.jclouds.aws.sts.AWSSTSProviderTest) succeeded: 6ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testAllContains(org.jclouds.aws.sts.AWSSTSProviderTest) succeeded: 9ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testOfApiContains(org.jclouds.aws.sts.AWSSTSProviderTest) succeeded: 12ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testWithId(org.jclouds.aws.sts.AWSSTSProviderTest) succeeded: 14ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.45 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ aws-sts ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ aws-sts ---
+[INFO] Building jar: /private/tmp/jclouds/providers/aws-sts/target/aws-sts-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ aws-sts ---
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/aws-sts/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.aws.sts.AWSSTSApiLiveTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5a77a7f9
+Starting test testAssumeRole(org.jclouds.aws.sts.AWSSTSApiLiveTest)
+[TestNG] Test testAssumeRole(org.jclouds.aws.sts.AWSSTSApiLiveTest) skipped.
+Test suite progress: tests succeeded: 0, failed: 0, skipped: 1.
+Starting test testCreateFederatedUser(org.jclouds.aws.sts.AWSSTSApiLiveTest)
+[TestNG] Test testCreateFederatedUser(org.jclouds.aws.sts.AWSSTSApiLiveTest) succeeded: 1291ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 1.
+Starting test testCreateTemporaryCredentials(org.jclouds.aws.sts.AWSSTSApiLiveTest)
+[TestNG] Test testCreateTemporaryCredentials(org.jclouds.aws.sts.AWSSTSApiLiveTest) succeeded: 804ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 1.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.342 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO] 
+[INFO] --- maven-duplicate-finder-plugin:1.0.3:check (default) @ aws-sts ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ aws-sts ---
+[INFO] Installing /private/tmp/jclouds/providers/aws-sts/target/aws-sts-1.6.0-SNAPSHOT.jar to /Users/adrianc/.m2/repository/org/jclouds/provider/aws-sts/1.6.0-SNAPSHOT/aws-sts-1.6.0-SNAPSHOT.jar
+[INFO] Installing /private/tmp/jclouds/providers/aws-sts/pom.xml to /Users/adrianc/.m2/repository/org/jclouds/provider/aws-sts/1.6.0-SNAPSHOT/aws-sts-1.6.0-SNAPSHOT.pom
+[INFO] Installing /private/tmp/jclouds/providers/aws-sts/target/aws-sts-1.6.0-SNAPSHOT-tests.jar to /Users/adrianc/.m2/repository/org/jclouds/provider/aws-sts/1.6.0-SNAPSHOT/aws-sts-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ aws-sts ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.389s
-[INFO] Finished at: Sat Mar 09 08:36:48 PST 2013
-[INFO] Final Memory: 5M/265M
+[INFO] Total time: 9.639s
+[INFO] Finished at: Sun Apr 28 14:27:30 PDT 2013
+[INFO] Final Memory: 17M/125M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal on project aws-sts: Could not resolve dependencies for project org.jclouds.provider:aws-sts:bundle:1.6.0-SNAPSHOT: The repository system is offline but the artifact org.jclouds.api:sts:jar:tests:1.6.0-20130309.033354-99 is not available in the local repository. -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException

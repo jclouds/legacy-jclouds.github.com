@@ -1,7 +1,7 @@
 [INFO] Scanning for projects...
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:rackspace-cloudloadbalancers-uk:bundle:1.6.0-SNAPSHOT
-[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/private/tmp/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /private/tmp/jclouds/project/pom.xml, line 24, column 13
 [WARNING] 
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
 [WARNING] 
@@ -24,43 +24,43 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ rackspace-cloudloadbalancers-uk ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/src/main/clojure
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/src/main/clojure
 [INFO] Copying 1 resource
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ rackspace-cloudloadbalancers-uk ---
-[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/target/classes
+[INFO] Compiling 1 source file to /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ rackspace-cloudloadbalancers-uk ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/src/test/clojure
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/src/test/resources
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/src/test/clojure
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/src/test/resources
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ rackspace-cloudloadbalancers-uk ---
-[INFO] Compiling 3 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/target/test-classes
+[INFO] Compiling 3 source files to /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ rackspace-cloudloadbalancers-uk ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/target/surefire-reports
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@7bea5671
-Starting test testAllContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest)
-Starting test testTransformableToContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest)
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5a77a7f9
 Starting test testWithId(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest)
+Starting test testTransformableToContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest)
 Starting test testOfApiContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest)
-[pool-1-thread-3] Test testTransformableToContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest) succeeded: 10ms
+Starting test testAllContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest)
+[pool-1-thread-1] Test testAllContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest) succeeded: 11ms
 Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
-[pool-1-thread-4] Test testWithId(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest) succeeded: 15ms
+[pool-1-thread-2] Test testOfApiContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest) succeeded: 16ms
 Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
-[pool-1-thread-2] Test testOfApiContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest) succeeded: 15ms
+[pool-1-thread-3] Test testTransformableToContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest) succeeded: 18ms
 Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
-[pool-1-thread-1] Test testAllContains(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest) succeeded: 24ms
+[pool-1-thread-4] Test testWithId(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKProviderTest) succeeded: 18ms
 Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.113 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 sec
 
 Results :
 
@@ -70,44 +70,44 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ rackspace-cloudloadbalancers-uk ---
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:test-jar (default) @ rackspace-cloudloadbalancers-uk ---
-[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/target/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT-tests.jar
+[INFO] Building jar: /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/target/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT-tests.jar
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ rackspace-cloudloadbalancers-uk ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/target/surefire-reports
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5a77a7f9
-Starting test testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest)
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@79f6f296
 Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest)
-[TestNG] Test testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest) succeeded: 55897ms
+Starting test testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest)
+[TestNG] Test testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest) succeeded: 56133ms
 Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
 Starting test testAddNodes(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest)
-[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest) succeeded: 60613ms
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest) succeeded: 57194ms
 Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
 Starting test testUpdateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest)
-[TestNG] Test testAddNodes(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest) succeeded: 6796ms
+[TestNG] Test testAddNodes(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest) succeeded: 7043ms
 Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
 Starting test testModifyNode(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest)
-[TestNG] Test testModifyNode(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest) succeeded: 2931ms
+[TestNG] Test testModifyNode(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest) succeeded: 3021ms
 Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
 Starting test testListNodes(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest)
-[TestNG] Test testListNodes(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest) succeeded: 2474ms
+[TestNG] Test testUpdateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest) succeeded: 10530ms
 Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
-Starting test testNodeMetadata(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest)
-[TestNG] Test testUpdateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest) succeeded: 10765ms
-Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
 Starting test testListLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest)
-[TestNG] Test testListLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest) succeeded: 1745ms
+[TestNG] Test testListNodes(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest) succeeded: 2340ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+Starting test testNodeMetadata(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest)
+[TestNG] Test testListLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest) succeeded: 1736ms
 Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
 Starting test testLoadBalancerMetadata(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest)
-[TestNG] Test testNodeMetadata(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest) succeeded: 9970ms
+[TestNG] Test testNodeMetadata(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKNodeClientLiveTest) succeeded: 9816ms
 Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
-[TestNG] Test testLoadBalancerMetadata(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest) succeeded: 9986ms
+[TestNG] Test testLoadBalancerMetadata(org.jclouds.rackspace.cloudloadbalancers.uk.CloudLoadBalancersUKLoadBalancerClientLiveTest) succeeded: 9563ms
 Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 116.889 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 112.707 sec
 
 Results :
 
@@ -120,16 +120,16 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 [INFO] Checking test classpath
 [INFO] 
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ rackspace-cloudloadbalancers-uk ---
-[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/target/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/rackspace-cloudloadbalancers-uk/1.6.0-SNAPSHOT/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT.jar
-[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/provider/rackspace-cloudloadbalancers-uk/1.6.0-SNAPSHOT/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT.pom
-[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/rackspace-cloudloadbalancers-uk/target/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/rackspace-cloudloadbalancers-uk/1.6.0-SNAPSHOT/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT-tests.jar
+[INFO] Installing /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/target/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT.jar to /Users/adrianc/.m2/repository/org/jclouds/provider/rackspace-cloudloadbalancers-uk/1.6.0-SNAPSHOT/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT.jar
+[INFO] Installing /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/pom.xml to /Users/adrianc/.m2/repository/org/jclouds/provider/rackspace-cloudloadbalancers-uk/1.6.0-SNAPSHOT/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT.pom
+[INFO] Installing /private/tmp/jclouds/providers/rackspace-cloudloadbalancers-uk/target/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT-tests.jar to /Users/adrianc/.m2/repository/org/jclouds/provider/rackspace-cloudloadbalancers-uk/1.6.0-SNAPSHOT/rackspace-cloudloadbalancers-uk-1.6.0-SNAPSHOT-tests.jar
 [INFO] 
 [INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ rackspace-cloudloadbalancers-uk ---
 [INFO] Local OBR update disabled (enable with -DobrRepository)
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2:08.316s
-[INFO] Finished at: Sat Mar 09 16:20:57 PST 2013
-[INFO] Final Memory: 19M/265M
+[INFO] Total time: 1:59.955s
+[INFO] Finished at: Sat Apr 27 18:58:09 PDT 2013
+[INFO] Final Memory: 18M/125M
 [INFO] ------------------------------------------------------------------------
