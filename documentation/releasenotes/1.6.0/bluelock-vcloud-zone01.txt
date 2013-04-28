@@ -1,0 +1,1153 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:bluelock-vcloud-zone01:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/private/tmp/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /private/tmp/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Bluelock vCloud Zone01 provider 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bluelock-vcloud-zone01 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/bluelock-vcloud-zone01/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ bluelock-vcloud-zone01 ---
+[INFO] Compiling 1 source file to /private/tmp/jclouds/providers/bluelock-vcloud-zone01/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bluelock-vcloud-zone01 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/bluelock-vcloud-zone01/src/test/clojure
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ bluelock-vcloud-zone01 ---
+[INFO] Compiling 11 source files to /private/tmp/jclouds/providers/bluelock-vcloud-zone01/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bluelock-vcloud-zone01 ---
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/bluelock-vcloud-zone01/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@4cbfea1d
+Starting test testWithId(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest)
+Starting test testAllContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest)
+Starting test testTransformableToContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest)
+Starting test testOfApiContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest)
+[pool-1-thread-1] Test testAllContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest) succeeded: 12ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testOfApiContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest) succeeded: 13ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testTransformableToContains(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest) succeeded: 15ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testWithId(org.jclouds.bluelock.vcloud.zone01.BluelockVCloudZone01ProviderTest) succeeded: 15ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.466 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ bluelock-vcloud-zone01 ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ bluelock-vcloud-zone01 ---
+[INFO] Building jar: /private/tmp/jclouds/providers/bluelock-vcloud-zone01/target/bluelock-vcloud-zone01-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ bluelock-vcloud-zone01 ---
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/bluelock-vcloud-zone01/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@99b5393
+Starting test testFindCatalogIsWriteableIfNotVersion1_5(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest)
+Starting test testListOrgs(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01OrgClientLiveTest)
+Starting test testCompareSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+Starting test testGetVApp(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppClientLiveTest)
+Starting test testCompareSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testListOrgs(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01OrgClientLiveTest) succeeded: 5295ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCaptureVApp(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest)
+[TestNG] Test testFindCatalogIsWriteableIfNotVersion1_5(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest) failed.
+Test suite progress: tests succeeded: 1, failed: 1, skipped: 0.
+Starting test testGetCatalog(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest)
+[TestNG] Test testGetVApp(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppClientLiveTest) succeeded: 7254ms
+Test suite progress: tests succeeded: 2, failed: 1, skipped: 0.
+Starting test testExtendedOptionsWithCustomizationScript(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest)
+[TestNG] Test testGetCatalog(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest) succeeded: 5898ms
+Test suite progress: tests succeeded: 3, failed: 1, skipped: 0.
+[TestNG] Test testCompareSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 32762ms
+Test suite progress: tests succeeded: 4, failed: 1, skipped: 0.
+Starting test testCorrectExceptionRunningNodesNotFound(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+smallest {id=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca, providerId=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca, name=OS-Ubuntu10.04_x64, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=30.0, bootDevice=true, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca)}
+fastest {id=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-8f227be9-28cb-46a2-b4b3-6d9fb9c38709, providerId=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-8f227be9-28cb-46a2-b4b3-6d9fb9c38709, name=OS-RHEL5_x64, processors=[{cores=1.0, speed=1.0}], ram=512, volumes=[{id=0, type=LOCAL, size=18.0, bootDevice=true, durable=true}, {id=1, type=LOCAL, size=2.0, bootDevice=false, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-8f227be9-28cb-46a2-b4b3-6d9fb9c38709)}
+biggest {id=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-767473d2-4295-4781-bc9f-8ea52e3a4d01, providerId=https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-767473d2-4295-4781-bc9f-8ea52e3a4d01, name=OS-Ubuntu12.04_x64, processors=[{cores=1.0, speed=1.0}], ram=2048, volumes=[{id=0, type=LOCAL, size=18.0, bootDevice=true, durable=true}, {id=1, type=LOCAL, size=2.0, bootDevice=false, durable=true}], hypervisor=VMware, supportsImage=idEquals(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-767473d2-4295-4781-bc9f-8ea52e3a4d01)}
+[TestNG] Test testCompareSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 34191ms
+Test suite progress: tests succeeded: 5, failed: 1, skipped: 0.
+Starting test testFromTemplate(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testFromTemplate(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 5ms
+Test suite progress: tests succeeded: 6, failed: 1, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testGetAssignableLocations(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 7, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 8, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 9, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 10, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 11, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCanFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 12, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCanUseImageId(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testCorrectExceptionRunningNodesNotFound(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 3211ms
+Test suite progress: tests succeeded: 13, failed: 1, skipped: 0.
+Starting test testGetAssignableLocations(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testGetAssignableLocations(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 14, failed: 1, skipped: 0.
+Starting test testImageById(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testImageById(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 969ms
+Test suite progress: tests succeeded: 15, failed: 1, skipped: 0.
+Starting test testImagesCache(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testImagesCache(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 16, failed: 1, skipped: 0.
+Starting test testListImages(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testListImages(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 17, failed: 1, skipped: 0.
+Starting test testListSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testListSizes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 18, failed: 1, skipped: 0.
+Starting test setServiceDefaults(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test setServiceDefaults(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 19, failed: 1, skipped: 0.
+Starting test testOptionToNotBlock(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testOptionToNotBlock(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 20, failed: 1, skipped: 0.
+Starting test testCreateAndRunAService(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testTemplateBuilderCanUseImageId(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 27432ms
+Test suite progress: tests succeeded: 21, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 3ms
+Test suite progress: tests succeeded: 22, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 23, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 24, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 25, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 26, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 27, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 28, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 29, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 30, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 31, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 32, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 33, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 34, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 35, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 36, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 37, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 38, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 39, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 40, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 41, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 42, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 43, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 44, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 45, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 46, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 47, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 48, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 49, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 50, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 51, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 52, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 53, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 54, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 55, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 56, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 57, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 58, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 59, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 60, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 61, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 62, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 63, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 64, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 65, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 66, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 67, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 68, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 69, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 70, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 71, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 72, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 73, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 74, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 75, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 76, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 77, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 78, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 79, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 80, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 81, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 82, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 83, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 84, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 85, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 86, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 87, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 88, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 89, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 90, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 91, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 92, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 93, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 94, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 95, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 96, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 97, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 98, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 0ms
+Test suite progress: tests succeeded: 99, failed: 1, skipped: 0.
+Starting test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderCannotFind(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 1ms
+Test suite progress: tests succeeded: 100, failed: 1, skipped: 0.
+Starting test testTemplateBuilderWithImageIdSpecified(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderWithImageIdSpecified(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 57475ms
+Test suite progress: tests succeeded: 101, failed: 1, skipped: 0.
+Starting test testTemplateBuilderWithLoginUserSpecified(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testTemplateBuilderWithLoginUserSpecified(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 54888ms
+Test suite progress: tests succeeded: 102, failed: 1, skipped: 0.
+Starting test testDefaultTemplateBuilder(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest)
+[TestNG] Test testDefaultTemplateBuilder(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01TemplateBuilderLiveTest) succeeded: 2ms
+Test suite progress: tests succeeded: 103, failed: 1, skipped: 0.
+[TestNG] Test testCaptureVApp(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest) failed.
+Test suite progress: tests succeeded: 103, failed: 2, skipped: 0.
+Starting test testFindVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest)
+[TestNG] Test testCreateAndRunAService(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 103, failed: 3, skipped: 0.
+Starting test testCorrectAuthException(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testCorrectAuthException(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 1554ms
+Test suite progress: tests succeeded: 104, failed: 3, skipped: 0.
+Starting test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testFindVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest) succeeded: 74049ms
+Test suite progress: tests succeeded: 105, failed: 3, skipped: 0.
+Starting test testGetOvfEnvelopeForVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest)
+[TestNG] Test testGetOvfEnvelopeForVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest) succeeded: 36911ms
+Test suite progress: tests succeeded: 106, failed: 3, skipped: 0.
+Starting test testGetVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest)
+[TestNG] Test testGetVAppTemplate(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest) succeeded: 34833ms
+Test suite progress: tests succeeded: 107, failed: 3, skipped: 0.
+[TestNG] Test testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 107, failed: 4, skipped: 0.
+Starting test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testExtendedOptionsWithCustomizationScript(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest) failed.
+Test suite progress: tests succeeded: 107, failed: 5, skipped: 0.
+Starting test testGetThumbnailOfVm(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest)
+[TestNG] Test testGetThumbnailOfVm(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest) succeeded: 6217ms
+Test suite progress: tests succeeded: 108, failed: 5, skipped: 0.
+Starting test testGetVm(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest)
+[TestNG] Test testGetVm(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest) succeeded: 8769ms
+Test suite progress: tests succeeded: 109, failed: 5, skipped: 0.
+[TestNG] Test testConcurrentUseOfComputeServiceToCreateNodes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 508015ms
+Test suite progress: tests succeeded: 110, failed: 5, skipped: 0.
+Starting test testTemplateMatch(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testTemplateMatch(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) succeeded: 11017ms
+Test suite progress: tests succeeded: 111, failed: 5, skipped: 0.
+Starting test testCreateTwoNodesWithRunScript(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)
+[TestNG] Test testCreateTwoNodesWithRunScript(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) failed.
+Test suite progress: tests succeeded: 111, failed: 6, skipped: 0.
+[TestNG] Test testCreateAnotherNodeWithANewContextToEnsureSharedMemIsntRequired(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 6, skipped: 1.
+[TestNG] Test testCredentialsCache(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 6, skipped: 2.
+[TestNG] Test testGet(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 6, skipped: 3.
+[TestNG] Test testReboot(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 6, skipped: 4.
+[TestNG] Test testSuspendResume(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 6, skipped: 5.
+[TestNG] Test testGetNodesWithDetails(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 6, skipped: 6.
+[TestNG] Test testListNodes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 6, skipped: 7.
+[TestNG] Test testListNodesByIds(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 6, skipped: 8.
+[TestNG] Test testDestroyNodes(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest) skipped.
+Test suite progress: tests succeeded: 111, failed: 6, skipped: 9.
+Tests run: 126, Failures: 6, Errors: 0, Skipped: 9, Time elapsed: 1,894.587 sec <<< FAILURE!
+testFindCatalogIsWriteableIfNotVersion1_5(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest)  Time elapsed: 1.214 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.vcloud.features.CatalogClientLiveTest.testFindCatalogIsWriteableIfNotVersion1_5(CatalogClientLiveTest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testCaptureVApp(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest)  Time elapsed: 511.337 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 1 node group(vcdcap) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({})
+Execution failures:
+1) ExecutionException on vcdcap-788:
+java.util.concurrent.ExecutionException: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/2cda362b-d7a7-4235-8112-dadb3c58f89f, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-b7212061-2946-4992-8bde-e65d45c0382a, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(b7212061-2946-4992-8bde-e65d45c0382a), startTime=Sat Apr 27 14:14:48 PDT 2013, endTime=Sat Apr 27 14:15:07 PDT 2013, expiryTime=Tue Jun 11 14:14:48 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at org.jclouds.concurrent.FutureIterables$1.run(FutureIterables.java:127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/2cda362b-d7a7-4235-8112-dadb3c58f89f, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-b7212061-2946-4992-8bde-e65d45c0382a, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(b7212061-2946-4992-8bde-e65d45c0382a), startTime=Sat Apr 27 14:14:48 PDT 2013, endTime=Sat Apr 27 14:15:07 PDT 2013, expiryTime=Tue Jun 11 14:14:48 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:63)
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:41)
+	at org.jclouds.util.Predicates2$RetryablePredicate.apply(Predicates2.java:113)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.waitForTask(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:226)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.createNodeWithGroupEncodedIntoName(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:136)
+	at org.jclouds.vcloud.compute.strategy.VCloudComputeServiceAdapter.createNodeWithGroupEncodedIntoName(VCloudComputeServiceAdapter.java:96)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:239)
+	at org.jclouds.vcloud.features.VAppTemplateClientLiveTest.testCaptureVApp(VAppTemplateClientLiveTest.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:239)
+	at org.jclouds.vcloud.features.VAppTemplateClientLiveTest.testCaptureVApp(VAppTemplateClientLiveTest.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/2cda362b-d7a7-4235-8112-dadb3c58f89f, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-b7212061-2946-4992-8bde-e65d45c0382a, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(b7212061-2946-4992-8bde-e65d45c0382a), startTime=Sat Apr 27 14:14:48 PDT 2013, endTime=Sat Apr 27 14:15:07 PDT 2013, expiryTime=Tue Jun 11 14:14:48 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:63)
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:41)
+	at org.jclouds.util.Predicates2$RetryablePredicate.apply(Predicates2.java:113)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.waitForTask(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:226)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.createNodeWithGroupEncodedIntoName(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:136)
+	at org.jclouds.vcloud.compute.strategy.VCloudComputeServiceAdapter.createNodeWithGroupEncodedIntoName(VCloudComputeServiceAdapter.java:96)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:239)
+	at org.jclouds.vcloud.features.VAppTemplateClientLiveTest.testCaptureVApp(VAppTemplateClientLiveTest.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:239)
+	at org.jclouds.vcloud.features.VAppTemplateClientLiveTest.testCaptureVApp(VAppTemplateClientLiveTest.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testCreateAndRunAService(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)  Time elapsed: 10.987 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 1 node group(vcds) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080], tags=[vcds], userMetadata={test=vcds}})
+Execution failures:
+1) ExecutionException on vcds-8aa:
+java.util.concurrent.ExecutionException: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/56c9391c-eb39-42b8-b5d8-b57fc96db336, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-604b6da6-925d-4cb9-ad03-2b7fa6fc8df9, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(604b6da6-925d-4cb9-ad03-2b7fa6fc8df9), startTime=Sat Apr 27 14:14:48 PDT 2013, endTime=Sat Apr 27 14:15:07 PDT 2013, expiryTime=Tue Jun 11 14:14:48 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at org.jclouds.concurrent.FutureIterables$1.run(FutureIterables.java:127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/56c9391c-eb39-42b8-b5d8-b57fc96db336, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-604b6da6-925d-4cb9-ad03-2b7fa6fc8df9, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(604b6da6-925d-4cb9-ad03-2b7fa6fc8df9), startTime=Sat Apr 27 14:14:48 PDT 2013, endTime=Sat Apr 27 14:15:07 PDT 2013, expiryTime=Tue Jun 11 14:14:48 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:63)
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:41)
+	at org.jclouds.util.Predicates2$RetryablePredicate.apply(Predicates2.java:113)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.waitForTask(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:226)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.createNodeWithGroupEncodedIntoName(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:136)
+	at org.jclouds.vcloud.compute.strategy.VCloudComputeServiceAdapter.createNodeWithGroupEncodedIntoName(VCloudComputeServiceAdapter.java:96)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:673)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:660)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:673)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:660)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/56c9391c-eb39-42b8-b5d8-b57fc96db336, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-604b6da6-925d-4cb9-ad03-2b7fa6fc8df9, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(604b6da6-925d-4cb9-ad03-2b7fa6fc8df9), startTime=Sat Apr 27 14:14:48 PDT 2013, endTime=Sat Apr 27 14:15:07 PDT 2013, expiryTime=Tue Jun 11 14:14:48 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:63)
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:41)
+	at org.jclouds.util.Predicates2$RetryablePredicate.apply(Predicates2.java:113)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.waitForTask(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:226)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.createNodeWithGroupEncodedIntoName(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:136)
+	at org.jclouds.vcloud.compute.strategy.VCloudComputeServiceAdapter.createNodeWithGroupEncodedIntoName(VCloudComputeServiceAdapter.java:96)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:673)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:660)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.createAndRunAServiceInGroup(BaseComputeServiceLiveTest.java:673)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateAndRunAService(BaseComputeServiceLiveTest.java:660)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)  Time elapsed: 62.079 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 1 node group(vcdr) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({blockOnPort:seconds=22:120})
+Execution failures:
+1) ExecutionException on vcdr-4a9:
+java.util.concurrent.ExecutionException: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/5130ed38-b290-4c82-8e73-d08540d6fe3d, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-082cb106-5174-48a3-8d52-11c6930829f4, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(082cb106-5174-48a3-8d52-11c6930829f4), startTime=Sat Apr 27 14:17:46 PDT 2013, endTime=Sat Apr 27 14:17:51 PDT 2013, expiryTime=Tue Jun 11 14:17:46 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at org.jclouds.concurrent.FutureIterables$1.run(FutureIterables.java:127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/5130ed38-b290-4c82-8e73-d08540d6fe3d, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-082cb106-5174-48a3-8d52-11c6930829f4, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(082cb106-5174-48a3-8d52-11c6930829f4), startTime=Sat Apr 27 14:17:46 PDT 2013, endTime=Sat Apr 27 14:17:51 PDT 2013, expiryTime=Tue Jun 11 14:17:46 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:63)
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:41)
+	at org.jclouds.util.Predicates2$RetryablePredicate.apply(Predicates2.java:113)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.waitForTask(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:226)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.createNodeWithGroupEncodedIntoName(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:136)
+	at org.jclouds.vcloud.compute.strategy.VCloudComputeServiceAdapter.createNodeWithGroupEncodedIntoName(VCloudComputeServiceAdapter.java:96)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:224)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:224)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/5130ed38-b290-4c82-8e73-d08540d6fe3d, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-082cb106-5174-48a3-8d52-11c6930829f4, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(082cb106-5174-48a3-8d52-11c6930829f4), startTime=Sat Apr 27 14:17:46 PDT 2013, endTime=Sat Apr 27 14:17:51 PDT 2013, expiryTime=Tue Jun 11 14:17:46 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:63)
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:41)
+	at org.jclouds.util.Predicates2$RetryablePredicate.apply(Predicates2.java:113)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.waitForTask(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:226)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.createNodeWithGroupEncodedIntoName(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:136)
+	at org.jclouds.vcloud.compute.strategy.VCloudComputeServiceAdapter.createNodeWithGroupEncodedIntoName(VCloudComputeServiceAdapter.java:96)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:224)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:234)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testAScriptExecutionAfterBootWithBasicTemplate(BaseComputeServiceLiveTest.java:224)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testExtendedOptionsWithCustomizationScript(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest)  Time elapsed: 0.762 sec  <<< FAILURE!
+java.lang.AssertionError: expected [cat > /root/foo.txt<<EOF
+I '"love"' {asc|!}*&
+EOF
+] but found [#!/bin/bash
+if [ "$1" = "postcustomization" ]; then
+  echo "post customization"
+  touch /root/.postcustomization
+  sleep 30
+  #regenerate keys 
+  /bin/rm /etc/ssh/ssh_host_*
+  /usr/sbin/dpkg-reconfigure openssh-server
+ echo "completed"
+fi
+cat > /root/foo.txt<<EOF
+I '"love"' {asc|!}*&
+EOF
+]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at org.jclouds.vcloud.features.VmClientLiveTest.checkApiOutput1_0_1(VmClientLiveTest.java:153)
+	at org.jclouds.vcloud.features.VmClientLiveTest.checkApiOutput(VmClientLiveTest.java:141)
+	at org.jclouds.vcloud.features.VmClientLiveTest.testExtendedOptionsWithCustomizationScript(VmClientLiveTest.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+testCreateTwoNodesWithRunScript(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest)  Time elapsed: 479.369 sec  <<< FAILURE!
+org.jclouds.compute.RunNodesException: error running 2 nodes group(vcd) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({taskName=bootstrap, scriptPresent=true})
+Execution failures:
+1) ExecutionException on vcd-489:
+java.util.concurrent.ExecutionException: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/7d805080-4bfb-4173-8642-42f64d255745, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-05e08817-eb09-4231-82d0-df170deb3504, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(05e08817-eb09-4231-82d0-df170deb3504), startTime=Sat Apr 27 14:31:03 PDT 2013, endTime=Sat Apr 27 14:31:03 PDT 2013, expiryTime=Tue Jun 11 14:31:03 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:306)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:293)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at org.jclouds.concurrent.FutureIterables$1.run(FutureIterables.java:127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/7d805080-4bfb-4173-8642-42f64d255745, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-05e08817-eb09-4231-82d0-df170deb3504, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(05e08817-eb09-4231-82d0-df170deb3504), startTime=Sat Apr 27 14:31:03 PDT 2013, endTime=Sat Apr 27 14:31:03 PDT 2013, expiryTime=Tue Jun 11 14:31:03 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:63)
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:41)
+	at org.jclouds.util.Predicates2$RetryablePredicate.apply(Predicates2.java:113)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.waitForTask(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:226)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.createNodeWithGroupEncodedIntoName(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:143)
+	at org.jclouds.vcloud.compute.strategy.VCloudComputeServiceAdapter.createNodeWithGroupEncodedIntoName(VCloudComputeServiceAdapter.java:96)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateTwoNodesWithRunScript(BaseComputeServiceLiveTest.java:343)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateTwoNodesWithRunScript(BaseComputeServiceLiveTest.java:343)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.jclouds.vcloud.TaskInErrorStateException: error on task: {href=https://zone01.bluelock.com/api/v1.0/task/7d805080-4bfb-4173-8642-42f64d255745, owner={href=https://zone01.bluelock.com/api/v1.0/vApp/vm-05e08817-eb09-4231-82d0-df170deb3504, name=Ubuntu1004, type=application/vnd.vmware.vcloud.vm+xml}, operation=Updated Virtual Machine Ubuntu1004(05e08817-eb09-4231-82d0-df170deb3504), startTime=Sat Apr 27 14:31:03 PDT 2013, endTime=Sat Apr 27 14:31:03 PDT 2013, expiryTime=Tue Jun 11 14:31:03 PDT 2013, error=[majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]} error: [majorErrorCode=500, message=Unable to perform this action. Contact your cloud administrator., minorErrorCode=INTERNAL_SERVER_ERROR, stackTrace=null, vendorSpecificErrorCode=null]
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:63)
+	at org.jclouds.vcloud.predicates.TaskSuccess.apply(TaskSuccess.java:41)
+	at org.jclouds.util.Predicates2$RetryablePredicate.apply(Predicates2.java:113)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.waitForTask(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:226)
+	at org.jclouds.vcloud.compute.strategy.InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.createNodeWithGroupEncodedIntoName(InstantiateVAppTemplateWithGroupEncodedIntoNameThenCustomizeDeployAndPowerOn.java:143)
+	at org.jclouds.vcloud.compute.strategy.VCloudComputeServiceAdapter.createNodeWithGroupEncodedIntoName(VCloudComputeServiceAdapter.java:96)
+	at org.jclouds.compute.strategy.impl.AdaptingComputeServiceStrategies.createNodeWithGroupEncodedIntoName(AdaptingComputeServiceStrategies.java:197)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:82)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet$AddNode.call(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:66)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+	at java.lang.Thread.getStackTrace(Thread.java:1503)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.createNodeInGroupWithNameAndTemplate(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:170)
+	at org.jclouds.compute.strategy.impl.CreateNodesWithGroupEncodedIntoNameThenAddToSet.execute(CreateNodesWithGroupEncodedIntoNameThenAddToSet.java:125)
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:214)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateTwoNodesWithRunScript(BaseComputeServiceLiveTest.java:343)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	... 3 more
+1 error[s]
+Node failures:
+0 error[s]
+	at org.jclouds.compute.internal.BaseComputeService.createNodesInGroup(BaseComputeService.java:226)
+	at org.jclouds.compute.internal.BaseComputeServiceLiveTest.testCreateTwoNodesWithRunScript(BaseComputeServiceLiveTest.java:343)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+
+
+Results :
+
+Failed tests:   testFindCatalogIsWriteableIfNotVersion1_5(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01CatalogClientLiveTest): expected [true] but found [false]
+  testCaptureVApp(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VAppTemplateClientLiveTest): error running 1 node group(vcdcap) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({})(..)
+  testCreateAndRunAService(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest): error running 1 node group(vcds) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({blockOnPort:seconds=22:300, inboundPorts=[22, 8080], tags=[vcds], userMetadata={test=vcds}})(..)
+  testAScriptExecutionAfterBootWithBasicTemplate(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest): error running 1 node group(vcdr) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({blockOnPort:seconds=22:120})(..)
+  testExtendedOptionsWithCustomizationScript(org.jclouds.bluelock.vcloud.zone01.features.BluelockVCloudZone01VmClientLiveTest): expected [cat > /root/foo.txt<<EOF(..)
+  testCreateTwoNodesWithRunScript(org.jclouds.bluelock.vcloud.zone01.compute.BluelockVCloudZone01ComputeServiceLiveTest): error running 2 nodes group(vcd) location(https://zone01.bluelock.com/api/v1.0/vdc/9db4ee77-33e7-4b83-96be-eee9925eaa9b) image(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) size(https://zone01.bluelock.com/api/v1.0/vAppTemplate/vappTemplate-9aa0cb96-9c66-44f9-9a7b-565e419575ca) options({taskName=bootstrap, scriptPresent=true})(..)
+
+Tests run: 126, Failures: 6, Errors: 0, Skipped: 9
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 31:40.117s
+[INFO] Finished at: Sat Apr 27 14:35:15 PDT 2013
+[INFO] Final Memory: 18M/125M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (integration) on project bluelock-vcloud-zone01: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /private/tmp/jclouds/providers/bluelock-vcloud-zone01/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

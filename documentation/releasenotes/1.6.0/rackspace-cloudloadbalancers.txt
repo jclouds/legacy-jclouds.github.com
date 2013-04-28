@@ -1,0 +1,513 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:rackspace-cloudloadbalancers:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/private/tmp/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /private/tmp/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jclouds Rackspace Cloud Load Balancers API 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ rackspace-cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ rackspace-cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ rackspace-cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ rackspace-cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ rackspace-cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ rackspace-cloudloadbalancers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/apis/rackspace-cloudloadbalancers/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ rackspace-cloudloadbalancers ---
+[INFO] Compiling 63 source files to /private/tmp/jclouds/apis/rackspace-cloudloadbalancers/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ rackspace-cloudloadbalancers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/apis/rackspace-cloudloadbalancers/src/test/clojure
+[INFO] Copying 41 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ rackspace-cloudloadbalancers ---
+[INFO] Compiling 30 source files to /private/tmp/jclouds/apis/rackspace-cloudloadbalancers/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ rackspace-cloudloadbalancers ---
+[INFO] Surefire report directory: /private/tmp/jclouds/apis/rackspace-cloudloadbalancers/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@57bcc0bc
+Starting test testTransformableToContains(org.jclouds.rackspace.cloudloadbalancers.v1.CloudLoadBalancersApiMetadataTest)
+Starting test testAllContains(org.jclouds.rackspace.cloudloadbalancers.v1.CloudLoadBalancersApiMetadataTest)
+Starting test testWithId(org.jclouds.rackspace.cloudloadbalancers.v1.CloudLoadBalancersApiMetadataTest)
+[pool-1-thread-1] Test testAllContains(org.jclouds.rackspace.cloudloadbalancers.v1.CloudLoadBalancersApiMetadataTest) succeeded: 23ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testTransformableToContains(org.jclouds.rackspace.cloudloadbalancers.v1.CloudLoadBalancersApiMetadataTest) succeeded: 26ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testWithId(org.jclouds.rackspace.cloudloadbalancers.v1.CloudLoadBalancersApiMetadataTest) succeeded: 27ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testCreateAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiExpectTest)
+Starting test testListAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiExpectTest)
+Starting test testRemoveAllAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiExpectTest)
+Starting test testRemoveManyAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiExpectTest)
+Starting test testRemoveSingleAccessRule(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiExpectTest)
+[pool-2-thread-2] Test testListAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiExpectTest) succeeded: 935ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test test(org.jclouds.rackspace.cloudloadbalancers.v1.functions.ParseLoadBalancersTest)
+[pool-2-thread-1] Test testCreateAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiExpectTest) succeeded: 939ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testCreateConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest)
+[pool-2-thread-3] Test testRemoveAllAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiExpectTest) succeeded: 941ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testRemoveSingleAccessRule(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiExpectTest) succeeded: 940ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testRemoveManyAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiExpectTest) succeeded: 941ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testDisableConnectionLogging(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest)
+Starting test testGetConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest)
+Starting test testEnableConnectionLogging(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest)
+[pool-2-thread-2] Test test(org.jclouds.rackspace.cloudloadbalancers.v1.functions.ParseLoadBalancersTest) succeeded: 66ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test testGetDeletedConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest)
+[pool-2-thread-4] Test testGetConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest) succeeded: 154ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testInvalidConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest)
+[pool-2-thread-4] Test testInvalidConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest) succeeded: 0ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+Starting test testIsConnectionLogging(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest)
+[pool-2-thread-1] Test testCreateConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest) succeeded: 158ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testRemoveConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest)
+[pool-2-thread-5] Test testEnableConnectionLogging(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest) succeeded: 157ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testValidConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest)
+[pool-2-thread-5] Test testValidConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest) succeeded: 0ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+Starting test testDisableContentCaching(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiExpectTest)
+[pool-2-thread-3] Test testDisableConnectionLogging(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest) succeeded: 159ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testEnableContentCaching(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiExpectTest)
+[pool-2-thread-2] Test testGetDeletedConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest) succeeded: 112ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+Starting test testIsContentCaching(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiExpectTest)
+[pool-2-thread-3] Test testEnableContentCaching(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiExpectTest) succeeded: 136ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testIsConnectionLogging(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest) succeeded: 140ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+Starting test testGetErrorPage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiExpectTest)
+Starting test testCreateErrorPage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiExpectTest)
+[pool-2-thread-5] Test testDisableContentCaching(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiExpectTest) succeeded: 139ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testRemoveConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiExpectTest) succeeded: 141ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testIsContentCaching(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiExpectTest) succeeded: 125ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test testRemoveErrorPage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiExpectTest)
+Starting test testCreateHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+Starting test testGetDeletedHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+[pool-2-thread-5] Test testRemoveErrorPage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiExpectTest) succeeded: 148ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testGetHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+[pool-2-thread-3] Test testCreateErrorPage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiExpectTest) succeeded: 152ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testInvalidConnectHealthMonitorWithUnrequired(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+[pool-2-thread-3] Test testInvalidConnectHealthMonitorWithUnrequired(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 0ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testGetDeletedHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 152ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testGetErrorPage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiExpectTest) succeeded: 154ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testInvalidConnectHealthMonitorWithoutRequirements(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+[pool-2-thread-3] Test testInvalidConnectHealthMonitorWithoutRequirements(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 1ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testInvalidHTTPHealthMonitorWithoutRegex(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+Starting test testInvalidHTTPHealthMonitorWithoutRequirements(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+[pool-2-thread-2] Test testInvalidHTTPHealthMonitorWithoutRegex(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 1ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testInvalidHTTPHealthMonitorWithoutUnrequired(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+[pool-2-thread-1] Test testCreateHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 155ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testRemoveHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+[pool-2-thread-3] Test testInvalidHTTPHealthMonitorWithoutUnrequired(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 1ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testInvalidHTTPHealthMonitorWithoutRequirements(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 1ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testValidConnectHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+[pool-2-thread-1] Test testValidConnectHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 1ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testValidHTTPHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest)
+[pool-2-thread-3] Test testValidHTTPHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 0ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+Starting test testLimitStatic(org.jclouds.rackspace.cloudloadbalancers.v1.options.ListOptionsTest)
+Starting test testMarker(org.jclouds.rackspace.cloudloadbalancers.v1.options.ListOptionsTest)
+Starting test testLimit(org.jclouds.rackspace.cloudloadbalancers.v1.options.ListOptionsTest)
+[pool-2-thread-1] Test testLimitStatic(org.jclouds.rackspace.cloudloadbalancers.v1.options.ListOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testLimit(org.jclouds.rackspace.cloudloadbalancers.v1.options.ListOptionsTest) succeeded: 2ms
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testMarkerStatic(org.jclouds.rackspace.cloudloadbalancers.v1.options.ListOptionsTest)
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest)
+[pool-2-thread-1] Test testMarkerStatic(org.jclouds.rackspace.cloudloadbalancers.v1.options.ListOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testCreateMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest)
+[pool-2-thread-3] Test testMarker(org.jclouds.rackspace.cloudloadbalancers.v1.options.ListOptionsTest) succeeded: 3ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testGetLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest)
+[pool-2-thread-5] Test testGetHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 117ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testListLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest)
+[pool-2-thread-2] Test testRemoveHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiExpectTest) succeeded: 135ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testListMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest)
+[pool-2-thread-3] Test testGetLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest) succeeded: 147ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+Starting test testRemoveLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest)
+[pool-2-thread-1] Test testCreateMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest) succeeded: 150ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+Starting test testRemoveManyMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest)
+[pool-2-thread-4] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest) succeeded: 153ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+Starting test testRemoveSingleMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest)
+[pool-2-thread-5] Test testListLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest) succeeded: 141ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+Starting test testUpdateLoadBalancerAttributes(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest)
+[pool-2-thread-2] Test testListMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest) succeeded: 119ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test testAddNodesInLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest)
+[pool-2-thread-3] Test testRemoveLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest) succeeded: 128ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test testCreateMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest)
+[pool-2-thread-1] Test testRemoveManyMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest) succeeded: 129ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test testGetNodeInLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest)
+[pool-2-thread-4] Test testRemoveSingleMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest) succeeded: 128ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testListMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest)
+[pool-2-thread-5] Test testUpdateLoadBalancerAttributes(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiExpectTest) succeeded: 128ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testListNodes(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest)
+[pool-2-thread-2] Test testAddNodesInLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest) succeeded: 127ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testRemoveManyMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest)
+[pool-2-thread-4] Test testListMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest) succeeded: 126ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testCreateMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest) succeeded: 129ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testRemoveNodeFromLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest)
+Starting test testRemoveNodesFromLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest)
+[pool-2-thread-1] Test testGetNodeInLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest) succeeded: 129ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testRemoveSingleMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest)
+[pool-2-thread-2] Test testRemoveManyMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest) succeeded: 129ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testUpdateAttributesForNodeInLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest)
+[pool-2-thread-5] Test testListNodes(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest) succeeded: 142ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testNotFound(org.jclouds.rackspace.cloudloadbalancers.v1.handlers.ParseCloudLoadBalancersErrorFromHttpResponseTest)
+[pool-2-thread-3] Test testRemoveNodesFromLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest) succeeded: 126ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testGetHistoricalUsage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest)
+[pool-2-thread-1] Test testRemoveSingleMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest) succeeded: 127ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+[pool-2-thread-4] Test testRemoveNodeFromLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest) succeeded: 129ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testGetLoadBalancerStats(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest)
+Starting test testListAlgorithms(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest)
+[pool-2-thread-2] Test testUpdateAttributesForNodeInLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiExpectTest) succeeded: 125ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testListBillableLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest)
+[pool-2-thread-5] Test testNotFound(org.jclouds.rackspace.cloudloadbalancers.v1.handlers.ParseCloudLoadBalancersErrorFromHttpResponseTest) succeeded: 147ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testListCurrentLoadBalancerUsage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest)
+[pool-2-thread-1] Test testGetLoadBalancerStats(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest) succeeded: 138ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testListLoadBalancerUsage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest)
+[pool-2-thread-4] Test testListAlgorithms(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest) succeeded: 142ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testListProtocols(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest)
+[pool-2-thread-2] Test testListBillableLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest) succeeded: 142ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testCreateSSLTermination(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiExpectTest)
+[pool-2-thread-3] Test testGetHistoricalUsage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest) succeeded: 244ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testGetDeletedSSLTermination(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiExpectTest)
+[pool-2-thread-4] Test testListProtocols(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest) succeeded: 127ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testGetSSLTermination(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiExpectTest)
+[pool-2-thread-1] Test testListLoadBalancerUsage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest) succeeded: 193ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+Starting test testRemoveSSLTermination(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiExpectTest)
+[pool-2-thread-5] Test testListCurrentLoadBalancerUsage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiExpectTest) succeeded: 201ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+Starting test testCreateSessionPersistence(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiExpectTest)
+[pool-2-thread-2] Test testCreateSSLTermination(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiExpectTest) succeeded: 140ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+Starting test testGetDeletedSessionPersistence(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiExpectTest)
+[pool-2-thread-3] Test testGetDeletedSSLTermination(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiExpectTest) succeeded: 138ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+Starting test testGetSessionPersistence(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiExpectTest)
+[pool-2-thread-4] Test testGetSSLTermination(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiExpectTest) succeeded: 131ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+Starting test testRemoveSessionPersistence(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiExpectTest)
+[pool-2-thread-1] Test testRemoveSSLTermination(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiExpectTest) succeeded: 128ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+Starting test testCreateVirtualIPs(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiExpectTest)
+[pool-2-thread-5] Test testCreateSessionPersistence(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiExpectTest) succeeded: 138ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+Starting test testListVirtualIPs(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiExpectTest)
+[pool-2-thread-3] Test testGetSessionPersistence(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiExpectTest) succeeded: 124ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testGetDeletedSessionPersistence(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiExpectTest) succeeded: 126ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
+Starting test testRemoveManyVirtualIPs(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiExpectTest)
+Starting test testRemoveSingleVirtualIP(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiExpectTest)
+[pool-2-thread-4] Test testRemoveSessionPersistence(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiExpectTest) succeeded: 123ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
+[pool-2-thread-1] Test testCreateVirtualIPs(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiExpectTest) succeeded: 104ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+[pool-2-thread-5] Test testListVirtualIPs(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiExpectTest) succeeded: 107ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+[pool-2-thread-2] Test testRemoveSingleVirtualIP(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiExpectTest) succeeded: 104ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+[pool-2-thread-3] Test testRemoveManyVirtualIPs(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiExpectTest) succeeded: 104ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+Starting test test(org.jclouds.rackspace.cloudloadbalancers.v1.functions.ParseLoadBalancerTest)
+[pool-3-thread-1] Test test(org.jclouds.rackspace.cloudloadbalancers.v1.functions.ParseLoadBalancerTest) succeeded: 19ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+Starting test test(org.jclouds.rackspace.cloudloadbalancers.v1.functions.ParseLoadBalancerWhenDeletedTest)
+[pool-4-thread-1] Test test(org.jclouds.rackspace.cloudloadbalancers.v1.functions.ParseLoadBalancerWhenDeletedTest) succeeded: 15ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.958 sec
+
+Results :
+
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ rackspace-cloudloadbalancers ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ rackspace-cloudloadbalancers ---
+[INFO] Building jar: /private/tmp/jclouds/apis/rackspace-cloudloadbalancers/target/rackspace-cloudloadbalancers-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ rackspace-cloudloadbalancers ---
+[INFO] Surefire report directory: /private/tmp/jclouds/apis/rackspace-cloudloadbalancers/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@f0f11b8
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiLiveTest)
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiLiveTest)
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest)
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiLiveTest)
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiLiveTest)
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiLiveTest) succeeded: 97553ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testCreateAccessList(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiLiveTest)
+[TestNG] Test testCreateAccessList(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiLiveTest) succeeded: 21436ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Starting test testRemoveSingleAccessRule(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiLiveTest)
+[TestNG] Test testRemoveSingleAccessRule(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiLiveTest) succeeded: 8479ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testRemoveManyAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiLiveTest)
+[TestNG] Test testRemoveManyAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiLiveTest) succeeded: 8424ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testRemoveAllAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiLiveTest)
+[TestNG] Test testRemoveAllAccessRules(org.jclouds.rackspace.cloudloadbalancers.v1.features.AccessRuleApiLiveTest) succeeded: 5110ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiLiveTest)
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiLiveTest) failed.
+Test suite progress: tests succeeded: 5, failed: 1, skipped: 0.
+[TestNG] Test testCreateAndGetHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 1, skipped: 1.
+[TestNG] Test testRemoveAndGetHealthMonitor(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 1, skipped: 2.
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiLiveTest) failed.
+Test suite progress: tests succeeded: 5, failed: 2, skipped: 2.
+[TestNG] Test testEnableAndIsContentCaching(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 2, skipped: 3.
+[TestNG] Test testDisableAndIsContentCaching(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 2, skipped: 4.
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest) failed.
+Test suite progress: tests succeeded: 5, failed: 3, skipped: 4.
+[TestNG] Test testCreateAndGetConnectionThrottling(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 3, skipped: 5.
+[TestNG] Test testRemoveAndGetConnectionThrottle(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 3, skipped: 6.
+[TestNG] Test testEnableAndIsConnectionLogging(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 3, skipped: 7.
+[TestNG] Test testDisableAndIsConnectionLogging(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 3, skipped: 8.
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiLiveTest) failed.
+Test suite progress: tests succeeded: 5, failed: 4, skipped: 8.
+[TestNG] Test testCreateAndGetErrorPage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 4, skipped: 9.
+[TestNG] Test testRemoveAndGetErrorPage(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 4, skipped: 10.
+Starting test testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest)
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiLiveTest)
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiLiveTest)
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiLiveTest)
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiLiveTest) failed.
+Test suite progress: tests succeeded: 5, failed: 5, skipped: 10.
+[TestNG] Test testCreateAndGetSessionPersistence(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 5, skipped: 11.
+[TestNG] Test testRemoveAndGetSessionPersistence(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 5, skipped: 12.
+[TestNG] Test testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest) failed.
+Test suite progress: tests succeeded: 5, failed: 6, skipped: 12.
+[TestNG] Test testAddNodes(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 6, skipped: 13.
+[TestNG] Test testModifyNode(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 6, skipped: 14.
+[TestNG] Test testListNodes(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 6, skipped: 15.
+[TestNG] Test testNodeMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 6, skipped: 16.
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiLiveTest) failed.
+Test suite progress: tests succeeded: 5, failed: 7, skipped: 16.
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiLiveTest) failed.
+Test suite progress: tests succeeded: 5, failed: 8, skipped: 16.
+[TestNG] Test testCreateAndGetSSLTermination(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 8, skipped: 17.
+[TestNG] Test testReports(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 8, skipped: 18.
+[TestNG] Test testRemoveAndGetSSLTermination(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 8, skipped: 19.
+Starting test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiLiveTest)
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiLiveTest) failed.
+Test suite progress: tests succeeded: 5, failed: 9, skipped: 19.
+[TestNG] Test testUpdateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 9, skipped: 20.
+[TestNG] Test testListLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 9, skipped: 21.
+[TestNG] Test testLoadBalancerMetadata(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiLiveTest) skipped.
+Test suite progress: tests succeeded: 5, failed: 9, skipped: 22.
+[TestNG] Test testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiLiveTest) succeeded: 166633ms
+Test suite progress: tests succeeded: 6, failed: 9, skipped: 22.
+Starting test testCreateVirtualIPs(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiLiveTest)
+[TestNG] Test testCreateVirtualIPs(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiLiveTest) succeeded: 501928ms
+Test suite progress: tests succeeded: 7, failed: 9, skipped: 22.
+Starting test testRemoveSingleVirtualIP(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiLiveTest)
+[TestNG] Test testRemoveSingleVirtualIP(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiLiveTest) succeeded: 41419ms
+Test suite progress: tests succeeded: 8, failed: 9, skipped: 22.
+Starting test testRemoveManyVirtualIPs(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiLiveTest)
+[TestNG] Test testRemoveManyVirtualIPs(org.jclouds.rackspace.cloudloadbalancers.v1.features.VirtualIPApiLiveTest) succeeded: 48951ms
+Test suite progress: tests succeeded: 9, failed: 9, skipped: 22.
+Tests run: 40, Failures: 9, Errors: 0, Skipped: 22, Time elapsed: 1,412.696 sec <<< FAILURE!
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiLiveTest)  Time elapsed: 121.633 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiLiveTest.testCreateLoadBalancer(HealthMonitorApiLiveTest.java:54)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiLiveTest)  Time elapsed: 122.18 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiLiveTest.testCreateLoadBalancer(ContentCachingApiLiveTest.java:52)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest)  Time elapsed: 122.186 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest.testCreateLoadBalancer(ConnectionApiLiveTest.java:55)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiLiveTest)  Time elapsed: 122.191 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiLiveTest.testCreateLoadBalancer(ErrorPageApiLiveTest.java:64)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiLiveTest)  Time elapsed: 302.029 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiLiveTest.testCreateLoadBalancer(SessionPersistenceApiLiveTest.java:54)
+
+testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest)  Time elapsed: 302.062 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest.testCreateLoadBalancers(NodeApiLiveTest.java:69)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiLiveTest)  Time elapsed: 302.084 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiLiveTest.testCreateLoadBalancer(ReportApiLiveTest.java:62)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiLiveTest)  Time elapsed: 302.084 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiLiveTest.testCreateLoadBalancer(SSLTerminationApiLiveTest.java:54)
+
+testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiLiveTest)  Time elapsed: 35.951 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiLiveTest.testCreateLoadBalancer(LoadBalancerApiLiveTest.java:86)
+
+
+Results :
+
+Failed tests:   testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.HealthMonitorApiLiveTest): expected [true] but found [false]
+  testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ContentCachingApiLiveTest): expected [true] but found [false]
+  testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ConnectionApiLiveTest): expected [true] but found [false]
+  testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ErrorPageApiLiveTest): expected [true] but found [false]
+  testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.SessionPersistenceApiLiveTest): expected [true] but found [false]
+  testCreateLoadBalancers(org.jclouds.rackspace.cloudloadbalancers.v1.features.NodeApiLiveTest): expected [true] but found [false]
+  testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.ReportApiLiveTest): expected [true] but found [false]
+  testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.SSLTerminationApiLiveTest): expected [true] but found [false]
+  testCreateLoadBalancer(org.jclouds.rackspace.cloudloadbalancers.v1.features.LoadBalancerApiLiveTest): expected [true] but found [false]
+
+Tests run: 40, Failures: 9, Errors: 0, Skipped: 22
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 23:43.432s
+[INFO] Finished at: Sat Apr 27 14:44:18 PDT 2013
+[INFO] Final Memory: 18M/125M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (integration) on project rackspace-cloudloadbalancers: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /private/tmp/jclouds/apis/rackspace-cloudloadbalancers/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

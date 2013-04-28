@@ -1,7 +1,7 @@
 [INFO] Scanning for projects...
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for org.jclouds.provider:aws-sqs:bundle:1.6.0-SNAPSHOT
-[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /Users/adriancole/workspace/git/1.6.x/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/private/tmp/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /private/tmp/jclouds/project/pom.xml, line 24, column 13
 [WARNING] 
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
 [WARNING] 
@@ -24,43 +24,43 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ aws-sqs ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/src/main/clojure
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/aws-sqs/src/main/clojure
 [INFO] Copying 1 resource
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ aws-sqs ---
-[INFO] Compiling 1 source file to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/classes
+[INFO] Compiling 1 source file to /private/tmp/jclouds/providers/aws-sqs/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ aws-sqs ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/src/test/clojure
-[INFO] skip non existing resourceDirectory /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/src/test/resources
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/aws-sqs/src/test/clojure
+[INFO] skip non existing resourceDirectory /private/tmp/jclouds/providers/aws-sqs/src/test/resources
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ aws-sqs ---
-[INFO] Compiling 4 source files to /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/test-classes
+[INFO] Compiling 4 source files to /private/tmp/jclouds/providers/aws-sqs/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ aws-sqs ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/surefire-reports
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/aws-sqs/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.jclouds.aws.sqs.AWSSQSProviderTest
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5ca352a5
-Starting test testAllContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
-[pool-1-thread-1] Test testAllContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 9ms
-Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
-Starting test testOfApiContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
-[pool-1-thread-2] Test testOfApiContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 5ms
-Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@65b4fad5
 Starting test testTransformableToContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
-[pool-1-thread-3] Test testTransformableToContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 0ms
-Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
 Starting test testWithId(org.jclouds.aws.sqs.AWSSQSProviderTest)
-[pool-1-thread-4] Test testWithId(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 5ms
+Starting test testOfApiContains(org.jclouds.aws.sqs.AWSSQSProviderTest)
+[pool-1-thread-3] Test testTransformableToContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 8ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testAllContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 11ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testOfApiContains(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 14ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testWithId(org.jclouds.aws.sqs.AWSSQSProviderTest) succeeded: 17ms
 Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.444 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.515 sec
 
 Results :
 
@@ -70,59 +70,1125 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ aws-sqs ---
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:test-jar (default) @ aws-sqs ---
-[INFO] Building jar: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/aws-sqs-1.6.0-SNAPSHOT-tests.jar
+[INFO] Building jar: /private/tmp/jclouds/providers/aws-sqs/target/aws-sqs-1.6.0-SNAPSHOT-tests.jar
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ aws-sqs ---
-[INFO] Surefire report directory: /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/surefire-reports
+[INFO] Surefire report directory: /private/tmp/jclouds/providers/aws-sqs/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running TestSuite
-Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@4cbfea1d
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@52b2a2d8
 Starting test testCanRecreateQueueGracefully(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
-Starting test testSendMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
+13:54:25.576 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueUrl
+13:54:25.576 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueUrl
+13:54:25.576 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueUrl
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> Content-Length: 65
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> Content-Length: 67
+13:54:25.581 [TestNG] DEBUG jclouds.signature - >> Content-Length: 70
+13:54:25.584 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:25.584 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:25.584 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:25.584 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:25.584 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:25.584 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:25.584 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:25.585 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:25.585 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:25.585 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueUrl&QueueName=adrianc-sqs-permission&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A25.580Z&Version=2011-10-01"
+13:54:25.585 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueUrl&QueueName=adrianc-sqs-message&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A25.580Z&Version=2011-10-01"
+13:54:25.585 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueUrl&QueueName=adrianc-sqs-queue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A25.580Z&Version=2011-10-01"
+13:54:25.704 [TestNG] DEBUG jclouds.signature - << "VjAd6qTZk7wO1hfmbNO+YmNqo/X22lWBl4nms/vFoJk="
+13:54:25.704 [TestNG] DEBUG jclouds.signature - << "Fh5IjOYKKlZ7T2OntJNRRwq68FHJyo0V0pcxJkmgfmQ="
+13:54:25.704 [TestNG] DEBUG jclouds.signature - << "p0SDPNjMZSrqpoEiYD2cpJ0G7SYkuoBHuJtMkMX3Hiw="
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << Content-Length: 243
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << Content-Length: 248
+13:54:25.707 [TestNG] DEBUG jclouds.signature - << Content-Length: 247
+13:54:25.708 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -2068205295: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.708 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1436502754: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.708 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1243161484: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.708 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueUrl&QueueName=adrianc-sqs-message&Signature=VjAd6qTZk7wO1hfmbNO%2BYmNqo/X22lWBl4nms/vFoJk%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A25.580Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:25.708 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueUrl&QueueName=adrianc-sqs-permission&Signature=p0SDPNjMZSrqpoEiYD2cpJ0G7SYkuoBHuJtMkMX3Hiw%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A25.580Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:25.708 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueUrl&QueueName=adrianc-sqs-queue&Signature=Fh5IjOYKKlZ7T2OntJNRRwq68FHJyo0V0pcxJkmgfmQ%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A25.580Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:25.708 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.708 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.708 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:25.708 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:25.708 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:25.708 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:25.708 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:25.709 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:25.709 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:25.709 [TestNG] DEBUG jclouds.headers - >> Content-Length: 248
+13:54:25.709 [TestNG] DEBUG jclouds.headers - >> Content-Length: 247
+13:54:25.709 [TestNG] DEBUG jclouds.headers - >> Content-Length: 243
+13:54:26.734 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1243161484: HTTP/1.1 400 Bad Request
+13:54:26.734 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1436502754: HTTP/1.1 400 Bad Request
+13:54:26.734 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -2068205295: HTTP/1.1 400 Bad Request
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 400 Bad Request
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 400 Bad Request
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: d57ef346-5bbe-5bf4-9ee1-bab066fc504c
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 400 Bad Request
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: bd7c40e6-109f-58e6-818e-09102dddabed
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 6cf7c6b3-a6bf-5bb3-bb3c-8f459bfd357e
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << Content-Length: 333
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << Content-Length: 333
+13:54:26.734 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:26.734 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><Error><Type>Sender</Type><Code>AWS.SimpleQueueService.NonExistentQueue</Code><Message>The specified queue does not exist for this wsdl version.</Message><Detail/></Error><RequestId>bd7c40e6-109f-58e6-818e-09102dddabed</RequestId></ErrorResponse>"
+13:54:26.734 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><Error><Type>Sender</Type><Code>AWS.SimpleQueueService.NonExistentQueue</Code><Message>The specified queue does not exist for this wsdl version.</Message><Detail/></Error><RequestId>d57ef346-5bbe-5bf4-9ee1-bab066fc504c</RequestId></ErrorResponse>"
+13:54:26.735 [TestNG] DEBUG jclouds.headers - << Content-Length: 333
+13:54:26.735 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><Error><Type>Sender</Type><Code>AWS.SimpleQueueService.NonExistentQueue</Code><Message>The specified queue does not exist for this wsdl version.</Message><Detail/></Error><RequestId>6cf7c6b3-a6bf-5bb3-bb3c-8f459bfd357e</RequestId></ErrorResponse>"
+13:54:26.763 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking CreateQueue
+13:54:26.763 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking CreateQueue
+13:54:26.764 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.764 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:26.764 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.764 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking CreateQueue
+13:54:26.764 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:26.764 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:26.764 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:26.764 [TestNG] DEBUG jclouds.signature - >> Content-Length: 70
+13:54:26.764 [TestNG] DEBUG jclouds.signature - >> Content-Length: 67
+13:54:26.764 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.765 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:26.765 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:26.765 [TestNG] DEBUG jclouds.signature - >> Content-Length: 65
+13:54:26.765 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:26.765 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:26.765 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:26.765 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:26.766 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:26.766 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:26.766 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=CreateQueue&QueueName=adrianc-sqs-message&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A26.764Z&Version=2011-10-01"
+13:54:26.766 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=CreateQueue&QueueName=adrianc-sqs-permission&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A26.763Z&Version=2011-10-01"
+13:54:26.766 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:26.766 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:26.766 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:26.766 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=CreateQueue&QueueName=adrianc-sqs-queue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A26.764Z&Version=2011-10-01"
+13:54:26.767 [TestNG] DEBUG jclouds.signature - << "nmu+rDulNYaJr+ozIJyadcn+rZD4qN5XISn2F+QX53Y="
+13:54:26.767 [TestNG] DEBUG jclouds.signature - << "oDbRnpkwakP4RsHclfQrIX531jKQb5KWVgWA/malKPw="
+13:54:26.767 [TestNG] DEBUG jclouds.signature - << "gOiw7c+y8fT1Ghdwa587brvrWjlCBTOe/KJOYRyfIE8="
+13:54:26.769 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.769 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.769 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:26.769 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.769 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:26.769 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:26.769 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:26.769 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:26.770 [TestNG] DEBUG jclouds.signature - << Content-Length: 256
+13:54:26.770 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:26.770 [TestNG] DEBUG jclouds.signature - << Content-Length: 245
+13:54:26.770 [TestNG] DEBUG jclouds.signature - << Content-Length: 245
+13:54:26.770 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1405748626: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.770 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1402163578: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.770 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 999083900: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.770 [TestNG] DEBUG jclouds.wire - >> "Action=CreateQueue&QueueName=adrianc-sqs-message&Signature=oDbRnpkwakP4RsHclfQrIX531jKQb5KWVgWA/malKPw%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A26.764Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:26.770 [TestNG] DEBUG jclouds.wire - >> "Action=CreateQueue&QueueName=adrianc-sqs-queue&Signature=gOiw7c%2By8fT1Ghdwa587brvrWjlCBTOe/KJOYRyfIE8%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A26.764Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:26.770 [TestNG] DEBUG jclouds.wire - >> "Action=CreateQueue&QueueName=adrianc-sqs-permission&Signature=nmu%2BrDulNYaJr%2BozIJyadcn%2BrZD4qN5XISn2F%2BQX53Y%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A26.763Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:26.770 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> Content-Length: 245
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> Content-Length: 245
+13:54:26.771 [TestNG] DEBUG jclouds.headers - >> Content-Length: 256
+13:54:27.346 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1405748626: HTTP/1.1 200 OK
+13:54:27.347 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:27.347 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: f013d0db-f012-55a5-83a7-992dcd519c4a
+13:54:27.347 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:27.347 [TestNG] DEBUG jclouds.headers - << Content-Length: 342
+13:54:27.347 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><CreateQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><CreateQueueResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission</QueueUrl></CreateQueueResult><ResponseMetadata><RequestId>f013d0db-f012-55a5-83a7-992dcd519c4a</RequestId></ResponseMetadata></CreateQueueResponse>"
+13:54:27.348 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 999083900: HTTP/1.1 200 OK
+13:54:27.349 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:27.349 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 19e49ca3-700e-5781-8f66-d5554d4d09cc
+13:54:27.349 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:27.349 [TestNG] DEBUG jclouds.headers - << Content-Length: 337
+13:54:27.349 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><CreateQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><CreateQueueResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl></CreateQueueResult><ResponseMetadata><RequestId>19e49ca3-700e-5781-8f66-d5554d4d09cc</RequestId></ResponseMetadata></CreateQueueResponse>"
+13:54:27.358 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ListQueues
+13:54:27.358 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ListQueues
+13:54:27.358 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.358 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.359 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.359 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.359 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.359 [TestNG] DEBUG jclouds.signature - >> Content-Length: 36
+13:54:27.359 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.359 [TestNG] DEBUG jclouds.signature - >> Content-Length: 36
+13:54:27.360 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:27.360 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:27.360 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:27.360 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:27.360 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:27.360 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.358Z&Version=2011-10-01"
+13:54:27.360 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:27.360 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.358Z&Version=2011-10-01"
+13:54:27.361 [TestNG] DEBUG jclouds.signature - << "pesMHfO5P0yh0mICeHKCDPjocWwp7aak+jdrcB+ETJs="
+13:54:27.361 [TestNG] DEBUG jclouds.signature - << "pesMHfO5P0yh0mICeHKCDPjocWwp7aak+jdrcB+ETJs="
+13:54:27.362 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.362 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:27.362 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.362 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:27.363 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:27.363 [TestNG] DEBUG jclouds.signature - << Content-Length: 218
+13:54:27.363 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:27.363 [TestNG] DEBUG jclouds.signature - << Content-Length: 218
+13:54:27.363 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1521852480: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.363 [TestNG] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=pesMHfO5P0yh0mICeHKCDPjocWwp7aak%2BjdrcB%2BETJs%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.358Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:27.363 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1521852480: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.363 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.363 [TestNG] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=pesMHfO5P0yh0mICeHKCDPjocWwp7aak%2BjdrcB%2BETJs%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.358Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:27.363 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.363 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.363 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.363 [TestNG] DEBUG jclouds.headers - >> Content-Length: 218
+13:54:27.363 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.364 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.364 [TestNG] DEBUG jclouds.headers - >> Content-Length: 218
+13:54:27.410 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1402163578: HTTP/1.1 200 OK
+13:54:27.410 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:27.410 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 4ec6a6c7-0b82-5f1f-9e8b-ef3136c1f9f6
+13:54:27.411 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:27.411 [TestNG] DEBUG jclouds.headers - << Content-Length: 339
+13:54:27.411 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><CreateQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><CreateQueueResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message</QueueUrl></CreateQueueResult><ResponseMetadata><RequestId>4ec6a6c7-0b82-5f1f-9e8b-ef3136c1f9f6</RequestId></ResponseMetadata></CreateQueueResponse>"
+13:54:27.414 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ListQueues
+13:54:27.414 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.415 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.415 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.415 [TestNG] DEBUG jclouds.signature - >> Content-Length: 36
+13:54:27.415 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:27.415 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:27.415 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:27.415 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.414Z&Version=2011-10-01"
+13:54:27.416 [TestNG] DEBUG jclouds.signature - << "MgJhhw6eF0qCRC/O06PHbPHZkmYH/kHE+QBtEseg/fg="
+13:54:27.417 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.417 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:27.418 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:27.418 [TestNG] DEBUG jclouds.signature - << Content-Length: 216
+13:54:27.418 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1570926081: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.418 [TestNG] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=MgJhhw6eF0qCRC/O06PHbPHZkmYH/kHE%2BQBtEseg/fg%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.414Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:27.418 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.418 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.418 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.418 [TestNG] DEBUG jclouds.headers - >> Content-Length: 216
+13:54:27.790 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1521852480: HTTP/1.1 200 OK
+13:54:27.791 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:27.791 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: ec661304-7ea0-50f8-bc66-5af243e35273
+13:54:27.791 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:27.791 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1521852480: HTTP/1.1 200 OK
+13:54:27.791 [TestNG] DEBUG jclouds.headers - << Content-Length: 843
+13:54:27.791 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:27.791 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 59487eb3-88d5-55db-af96-3745b596f58f
+13:54:27.791 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrian-sqs-bulk</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/mule-test</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>ec661304-7ea0-50f8-bc66-5af243e35273</RequestId></ResponseMetadata></ListQueuesResponse>"
+13:54:27.791 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:27.791 [TestNG] DEBUG jclouds.headers - << Content-Length: 843
+13:54:27.791 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrian-sqs-bulk</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/mule-test</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>59487eb3-88d5-55db-af96-3745b596f58f</RequestId></ResponseMetadata></ListQueuesResponse>"
 Starting test testAddAnonymousPermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest)
-[TestNG] Test testSendMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 462ms
+13:54:27.798 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueUrl
+13:54:27.798 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.798 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.798 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.799 [TestNG] DEBUG jclouds.signature - >> Content-Length: 65
+13:54:27.799 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:27.799 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:27.799 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:27.799 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueUrl&QueueName=adrianc-sqs-queue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.798Z&Version=2011-10-01"
+13:54:27.800 [TestNG] DEBUG jclouds.signature - << "A03x4wnMlsC/yjXMAj9mbKJ3RcKZgY46ImEvH8dkYtU="
+13:54:27.801 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.801 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:27.801 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:27.802 [TestNG] DEBUG jclouds.signature - << Content-Length: 243
+13:54:27.802 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1788925762: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.802 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueUrl&QueueName=adrianc-sqs-queue&Signature=A03x4wnMlsC/yjXMAj9mbKJ3RcKZgY46ImEvH8dkYtU%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.798Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:27.802 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:27.802 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.802 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.802 [TestNG] DEBUG jclouds.headers - >> Content-Length: 243
+13:54:27.815 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueAttributes
+13:54:27.815 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:27.816 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.816 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.816 [TestNG] DEBUG jclouds.signature - >> Content-Length: 64
+13:54:27.816 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:27.816 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:27.816 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-permission/[\n]"
+13:54:27.816 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueAttributes&AttributeName.1=All&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.815Z&Version=2011-10-01"
+13:54:27.817 [TestNG] DEBUG jclouds.signature - << "SkZ4zFSiIxkQd/4ocvsg/LrbvlI2uLj2lRSjFPG+VRs="
+13:54:27.818 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:27.818 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:27.819 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:27.819 [TestNG] DEBUG jclouds.signature - << Content-Length: 244
+13:54:27.819 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -2134716396: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:27.819 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=All&Signature=SkZ4zFSiIxkQd/4ocvsg/LrbvlI2uLj2lRSjFPG%2BVRs%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.815Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:27.819 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:27.819 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.820 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.820 [TestNG] DEBUG jclouds.headers - >> Content-Length: 244
+13:54:27.868 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1570926081: HTTP/1.1 200 OK
+13:54:27.869 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:27.869 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 2f282da0-7369-55ad-9d5b-64564e2a4963
+13:54:27.869 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:27.869 [TestNG] DEBUG jclouds.headers - << Content-Length: 843
+13:54:27.869 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrian-sqs-bulk</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/mule-test</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>2f282da0-7369-55ad-9d5b-64564e2a4963</RequestId></ResponseMetadata></ListQueuesResponse>"
+Starting test testSendMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
+13:54:27.880 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking SendMessage
+13:54:27.880 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:27.880 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.880 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.880 [TestNG] DEBUG jclouds.signature - >> Content-Length: 61
+13:54:27.881 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:27.881 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:27.881 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-message/[\n]"
+13:54:27.881 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=SendMessage&MessageBody=hardyharhar&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.880Z&Version=2011-10-01"
+13:54:27.882 [TestNG] DEBUG jclouds.signature - << "FAXggvRfNuJfi2xWTe2xneRP8RscX+edctwiQNVgiZo="
+13:54:27.883 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:27.883 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:27.883 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:27.883 [TestNG] DEBUG jclouds.signature - << Content-Length: 241
+13:54:27.883 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -639993635: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:27.884 [TestNG] DEBUG jclouds.wire - >> "Action=SendMessage&MessageBody=hardyharhar&Signature=FAXggvRfNuJfi2xWTe2xneRP8RscX%2BedctwiQNVgiZo%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A27.880Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:27.884 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:27.884 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:27.884 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:27.884 [TestNG] DEBUG jclouds.headers - >> Content-Length: 241
+13:54:28.275 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1788925762: HTTP/1.1 200 OK
+13:54:28.276 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:28.276 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: f53c405d-cfee-53f6-9275-09abf2aa8444
+13:54:28.276 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:28.276 [TestNG] DEBUG jclouds.headers - << Content-Length: 337
+13:54:28.276 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueUrlResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>f53c405d-cfee-53f6-9275-09abf2aa8444</RequestId></ResponseMetadata></GetQueueUrlResponse>"
+13:54:28.283 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -2134716396: HTTP/1.1 200 OK
+13:54:28.283 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:28.284 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 9dc6ffd5-e012-599c-9df9-b623dd56406b
+13:54:28.284 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:28.284 [TestNG] DEBUG jclouds.headers - << Content-Length: 1094
+13:54:28.284 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>QueueArn</Name><Value>arn:aws:sqs:us-east-1:993194456877:adrianc-sqs-permission</Value></Attribute><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesDelayed</Name><Value>0</Value></Attribute><Attribute><Name>CreatedTimestamp</Name><Value>1367096067</Value></Attribute><Attribute><Name>LastModifiedTimestamp</Name><Value>1367096067</Value></Attribute><Attribute><Name>VisibilityTimeout</Name><Value>30</Value></Attribute><Attribute><Name>MaximumMessageSize</Name><Value>65536</Value></Attribute><Attribute><Name>MessageRetentionPeriod</Name><Value>345600</Value></Attribute><Attribute><Name>DelaySeconds</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>9dc6ffd5-e012-599c-9df9-b623dd56406b</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+13:54:28.284 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking DeleteQueue
+13:54:28.285 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:28.285 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.285 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.285 [TestNG] DEBUG jclouds.signature - >> Content-Length: 37
+13:54:28.285 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:28.286 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:28.286 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:28.286 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=DeleteQueue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.284Z&Version=2011-10-01"
+13:54:28.286 [TestNG] DEBUG jclouds.signature - << "o2n8OwhhCQMieYNjN7w+r2cnPMVK63gZad1tAsKtRW8="
+13:54:28.287 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:28.287 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:28.288 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:28.288 [TestNG] DEBUG jclouds.signature - << Content-Length: 217
+13:54:28.288 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 703810743: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:28.288 [TestNG] DEBUG jclouds.wire - >> "Action=DeleteQueue&Signature=o2n8OwhhCQMieYNjN7w%2Br2cnPMVK63gZad1tAsKtRW8%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.284Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:28.288 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:28.288 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.288 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.289 [TestNG] DEBUG jclouds.headers - >> Content-Length: 217
+13:54:28.302 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueAttributes
+13:54:28.303 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:28.303 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.303 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.303 [TestNG] DEBUG jclouds.signature - >> Content-Length: 67
+13:54:28.304 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:28.304 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:28.304 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-permission/[\n]"
+13:54:28.304 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueAttributes&AttributeName.1=Policy&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.303Z&Version=2011-10-01"
+13:54:28.304 [TestNG] DEBUG jclouds.signature - << "EjqJTSPwjWu1w6vW6jOPkRqdZpQypAG4noKzzmyDfSM="
+13:54:28.305 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:28.305 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:28.305 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:28.305 [TestNG] DEBUG jclouds.signature - << Content-Length: 245
+13:54:28.305 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 449854213: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:28.306 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=Policy&Signature=EjqJTSPwjWu1w6vW6jOPkRqdZpQypAG4noKzzmyDfSM%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.303Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:28.306 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:28.306 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.306 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.306 [TestNG] DEBUG jclouds.headers - >> Content-Length: 245
+13:54:28.390 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -639993635: HTTP/1.1 200 OK
+13:54:28.391 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:28.391 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: fed04759-7b5f-54b3-a257-0eaf461b9d44
+13:54:28.391 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:28.391 [TestNG] DEBUG jclouds.headers - << Content-Length: 378
+13:54:28.391 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><SendMessageResult><MessageId>5eaa195b-38d7-4fb1-b783-97becf03f7d1</MessageId><MD5OfMessageBody>e32aedf2b2b25355d04b1507055532e6</MD5OfMessageBody></SendMessageResult><ResponseMetadata><RequestId>fed04759-7b5f-54b3-a257-0eaf461b9d44</RequestId></ResponseMetadata></SendMessageResponse>"
+[TestNG] Test testSendMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 524ms
 Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
 Starting test testReceiveMessageWithoutHidingMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
-[TestNG] Test testReceiveMessageWithoutHidingMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 505ms
+13:54:28.418 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ReceiveMessage
+13:54:28.418 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:28.418 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.418 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.419 [TestNG] DEBUG jclouds.signature - >> Content-Length: 80
+13:54:28.419 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:28.419 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:28.419 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-message/[\n]"
+13:54:28.419 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ReceiveMessage&AttributeName.1=All&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.418Z&Version=2011-10-01&VisibilityTimeout=0"
+13:54:28.420 [TestNG] DEBUG jclouds.signature - << "NMSR29vJb5quwbZRVv7sTBcFZrmL4XZdlmuQ5cfE+94="
+13:54:28.421 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:28.421 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:28.421 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:28.421 [TestNG] DEBUG jclouds.signature - << Content-Length: 260
+13:54:28.421 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 235282560: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:28.421 [TestNG] DEBUG jclouds.wire - >> "Action=ReceiveMessage&AttributeName.1=All&Signature=NMSR29vJb5quwbZRVv7sTBcFZrmL4XZdlmuQ5cfE%2B94%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.418Z&Version=2011-10-01&VisibilityTimeout=0&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:28.421 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:28.422 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.422 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.422 [TestNG] DEBUG jclouds.headers - >> Content-Length: 260
+13:54:28.711 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 703810743: HTTP/1.1 400 Bad Request
+13:54:28.712 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 400 Bad Request
+13:54:28.712 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 961da470-1556-5dc0-a6f1-ed862812e2c5
+13:54:28.712 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:28.712 [TestNG] DEBUG jclouds.headers - << Content-Length: 333
+13:54:28.712 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><Error><Type>Sender</Type><Code>AWS.SimpleQueueService.NonExistentQueue</Code><Message>The specified queue does not exist for this wsdl version.</Message><Detail/></Error><RequestId>961da470-1556-5dc0-a6f1-ed862812e2c5</RequestId></ErrorResponse>"
+13:54:28.714 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 449854213: HTTP/1.1 200 OK
+13:54:28.714 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:28.714 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 93777ae6-644a-504b-8f30-3310590e4007
+13:54:28.714 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:28.714 [TestNG] DEBUG jclouds.headers - << Content-Length: 252
+13:54:28.714 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult/><ResponseMetadata><RequestId>93777ae6-644a-504b-8f30-3310590e4007</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+13:54:28.716 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking CreateQueue
+13:54:28.717 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:28.717 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.717 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.717 [TestNG] DEBUG jclouds.signature - >> Content-Length: 65
+13:54:28.717 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:28.717 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:28.717 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:28.717 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=CreateQueue&QueueName=adrianc-sqs-queue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.716Z&Version=2011-10-01"
+13:54:28.718 [TestNG] DEBUG jclouds.signature - << "NpuPOPnlARpGh7AMhB6zM80w9pKaIPMZ2R0RzcjawG0="
+13:54:28.719 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:28.719 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:28.719 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:28.719 [TestNG] DEBUG jclouds.signature - << Content-Length: 243
+13:54:28.719 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -735597834: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:28.719 [TestNG] DEBUG jclouds.wire - >> "Action=CreateQueue&QueueName=adrianc-sqs-queue&Signature=NpuPOPnlARpGh7AMhB6zM80w9pKaIPMZ2R0RzcjawG0%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.716Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:28.719 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:28.719 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.719 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.720 [TestNG] DEBUG jclouds.headers - >> Content-Length: 243
+13:54:28.723 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking AddPermission
+13:54:28.723 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:28.723 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.723 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.724 [TestNG] DEBUG jclouds.signature - >> Content-Length: 111
+13:54:28.724 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:28.724 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:28.724 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-permission/[\n]"
+13:54:28.724 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&AWSAccountId.1=993194456877&Action=AddPermission&ActionName.1=GetQueueAttributes&Label=fubar&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.723Z&Version=2011-10-01"
+13:54:28.724 [TestNG] DEBUG jclouds.signature - << "wLtwy/UyLbmQZ9JSpjlJ2olB7Krg/5RXcEFXSl/pOuI="
+13:54:28.726 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:28.726 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:28.726 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:28.726 [TestNG] DEBUG jclouds.signature - << Content-Length: 289
+13:54:28.726 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1405651978: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:28.726 [TestNG] DEBUG jclouds.wire - >> "Action=AddPermission&AWSAccountId.1=993194456877&ActionName.1=GetQueueAttributes&Label=fubar&Signature=wLtwy/UyLbmQZ9JSpjlJ2olB7Krg/5RXcEFXSl/pOuI%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.723Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:28.726 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:28.726 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.727 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.727 [TestNG] DEBUG jclouds.headers - >> Content-Length: 289
+13:54:28.814 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 235282560: HTTP/1.1 200 OK
+13:54:28.814 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:28.814 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 0b0d4f7d-89e6-5aed-beeb-068bb4a27643
+13:54:28.814 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:28.815 [TestNG] DEBUG jclouds.headers - << Content-Length: 1069
+13:54:28.815 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ReceiveMessageResult><Message><Body>hardyharhar</Body><MD5OfBody>e32aedf2b2b25355d04b1507055532e6</MD5OfBody><ReceiptHandle>xDa5Mk4jPUoJdUHCEPBp8BoUs52R9r1RPKlwJ71zPZ3XzYAVlZ+JcHrbBklJEkEdeIW5axQ0AFm2DBQ4/feFOPL074lKDD6OI0SgV6/kRIkviPUIP9qwW2S9fK2bnnwinWyI4vWeJeFHm7+eQcRosZ4HtjTgt7gaoWW+TZE/np7tBQqurJgqHg9545tHU8yTkh0Ogd+ECOvtJ9CwpUXNv43hj2MP8x3n8zxCIECt/DZI2JrnX1kdEgCtKcoAIwXoY0qJd8X6xE7QwF9Pd5BcJhC83O8FIDG61z9OdHsr1+4=</ReceiptHandle><Attribute><Name>SenderId</Name><Value>993194456877</Value></Attribute><Attribute><Name>ApproximateFirstReceiveTimestamp</Name><Value>1367096068764</Value></Attribute><Attribute><Name>ApproximateReceiveCount</Name><Value>1</Value></Attribute><Attribute><Name>SentTimestamp</Name><Value>1367096068328</Value></Attribute><MessageId>5eaa195b-38d7-4fb1-b783-97becf03f7d1</MessageId></Message></ReceiveMessageResult><ResponseMetadata><RequestId>0b0d4f7d-89e6-5aed-beeb-068bb4a27643</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+[TestNG] Test testReceiveMessageWithoutHidingMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 421ms
 Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
 Starting test testChangeMessageVisibility(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
-[TestNG] Test testCanRecreateQueueGracefully(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 4909ms
+13:54:28.821 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ReceiveMessage
+13:54:28.821 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:28.821 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.821 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.821 [TestNG] DEBUG jclouds.signature - >> Content-Length: 81
+13:54:28.822 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:28.822 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:28.822 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-message/[\n]"
+13:54:28.822 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ReceiveMessage&AttributeName.1=None&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.821Z&Version=2011-10-01&VisibilityTimeout=5"
+13:54:28.822 [TestNG] DEBUG jclouds.signature - << "HWyPkIciOjyUZv01buLg1ggoKalE6joOPU5l8zSOdwY="
+13:54:28.824 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:28.824 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:28.824 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:28.824 [TestNG] DEBUG jclouds.signature - << Content-Length: 259
+13:54:28.824 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1264967376: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:28.824 [TestNG] DEBUG jclouds.wire - >> "Action=ReceiveMessage&AttributeName.1=None&Signature=HWyPkIciOjyUZv01buLg1ggoKalE6joOPU5l8zSOdwY%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A28.821Z&Version=2011-10-01&VisibilityTimeout=5&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:28.824 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:28.824 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:28.824 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:28.824 [TestNG] DEBUG jclouds.headers - >> Content-Length: 259
+13:54:29.219 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -735597834: HTTP/1.1 200 OK
+13:54:29.219 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:29.219 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 35d45892-7991-5bba-9ef3-116444d47794
+13:54:29.219 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:29.219 [TestNG] DEBUG jclouds.headers - << Content-Length: 337
+13:54:29.219 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><CreateQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><CreateQueueResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl></CreateQueueResult><ResponseMetadata><RequestId>35d45892-7991-5bba-9ef3-116444d47794</RequestId></ResponseMetadata></CreateQueueResponse>"
+13:54:29.222 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ListQueues
+13:54:29.222 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:29.222 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.222 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.222 [TestNG] DEBUG jclouds.signature - >> Content-Length: 36
+13:54:29.223 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:29.223 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:29.223 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:29.223 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.222Z&Version=2011-10-01"
+13:54:29.223 [TestNG] DEBUG jclouds.signature - << "m9n/RdzWDU4vFQQJIlscu2l+YRyJxgDxo0yy3K3RkKA="
+13:54:29.224 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:29.224 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:29.224 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:29.224 [TestNG] DEBUG jclouds.signature - << Content-Length: 216
+13:54:29.225 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1622976685: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:29.225 [TestNG] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=m9n/RdzWDU4vFQQJIlscu2l%2BYRyJxgDxo0yy3K3RkKA%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.222Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:29.225 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:29.225 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.225 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.225 [TestNG] DEBUG jclouds.headers - >> Content-Length: 216
+13:54:29.306 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1264967376: HTTP/1.1 200 OK
+13:54:29.306 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:29.306 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: deae5c3f-5c7c-5713-97c3-15c96139dc14
+13:54:29.306 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:29.307 [TestNG] DEBUG jclouds.headers - << Content-Length: 750
+13:54:29.307 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ReceiveMessageResult><Message><Body>hardyharhar</Body><MD5OfBody>e32aedf2b2b25355d04b1507055532e6</MD5OfBody><ReceiptHandle>xDa5Mk4jPUoJdUHCEPBp8BoUs52R9r1RPKlwJ71zPZ3XzYAVlZ+JcHrbBklJEkEdeIW5axQ0AFm2DBQ4/feFOPL074lKDD6OI0SgV6/kRIkviPUIP9qwW2S9fK2bnnwinWyI4vWeJeFHm7+eQcRosZ4HtjTgt7gaoWW+TZE/np7tBQqurJgqHg9545tHU8yTkh0Ogd+ECOvtJ9CwpUXNv43hj2MP8x3n8zxCIECt/DZI2JrnX1kdEgCtKcoAIwXoY0qJd8X6xE7QwF9Pd5BcJhvTZfI4ZSzj1z9OdHsr1+4=</ReceiptHandle><MessageId>5eaa195b-38d7-4fb1-b783-97becf03f7d1</MessageId></Message></ReceiveMessageResult><ResponseMetadata><RequestId>deae5c3f-5c7c-5713-97c3-15c96139dc14</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+13:54:29.310 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ReceiveMessage
+13:54:29.310 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:29.310 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.310 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.310 [TestNG] DEBUG jclouds.signature - >> Content-Length: 40
+13:54:29.311 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:29.311 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:29.311 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-message/[\n]"
+13:54:29.311 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ReceiveMessage&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.310Z&Version=2011-10-01"
+13:54:29.311 [TestNG] DEBUG jclouds.signature - << "DbI76Ilykp82ShIR8IvsNvPMPP3ugcRkV22v1cUg0qU="
+13:54:29.312 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:29.312 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:29.312 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:29.312 [TestNG] DEBUG jclouds.signature - << Content-Length: 218
+13:54:29.312 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1576989800: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:29.312 [TestNG] DEBUG jclouds.wire - >> "Action=ReceiveMessage&Signature=DbI76Ilykp82ShIR8IvsNvPMPP3ugcRkV22v1cUg0qU%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.310Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:29.312 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:29.312 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.312 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.313 [TestNG] DEBUG jclouds.headers - >> Content-Length: 218
+13:54:29.316 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1405651978: HTTP/1.1 200 OK
+13:54:29.316 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:29.316 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 159bb39e-d33f-5dc1-90a4-fa68ee7a2b70
+13:54:29.316 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:29.316 [TestNG] DEBUG jclouds.headers - << Content-Length: 215
+13:54:29.316 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><AddPermissionResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>159bb39e-d33f-5dc1-90a4-fa68ee7a2b70</RequestId></ResponseMetadata></AddPermissionResponse>"
+13:54:29.320 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueAttributes
+13:54:29.321 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:29.321 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.321 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.321 [TestNG] DEBUG jclouds.signature - >> Content-Length: 67
+13:54:29.322 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:29.322 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:29.322 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-permission/[\n]"
+13:54:29.322 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueAttributes&AttributeName.1=Policy&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.321Z&Version=2011-10-01"
+13:54:29.322 [TestNG] DEBUG jclouds.signature - << "NZ4CHK/uxDCBOx3fYC1eweiHEz5eDwhqHSVW5XlbVj8="
+13:54:29.324 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:29.324 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:29.324 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:29.324 [TestNG] DEBUG jclouds.signature - << Content-Length: 245
+13:54:29.324 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 588802932: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:29.324 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=Policy&Signature=NZ4CHK/uxDCBOx3fYC1eweiHEz5eDwhqHSVW5XlbVj8%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.321Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:29.324 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:29.325 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.325 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.325 [TestNG] DEBUG jclouds.headers - >> Content-Length: 245
+13:54:29.643 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1622976685: HTTP/1.1 200 OK
+13:54:29.643 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:29.643 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 8477de4a-5246-5ad8-9093-97bc6f037077
+13:54:29.643 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:29.643 [TestNG] DEBUG jclouds.headers - << Content-Length: 843
+13:54:29.643 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrian-sqs-bulk</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/mule-test</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>8477de4a-5246-5ad8-9093-97bc6f037077</RequestId></ResponseMetadata></ListQueuesResponse>"
+[TestNG] Test testCanRecreateQueueGracefully(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 4152ms
 Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
 Starting test testGracefulNoQueue(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
-[TestNG] Test testGracefulNoQueue(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 491ms
+13:54:29.647 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueUrl
+13:54:29.648 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:29.648 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.648 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.648 [TestNG] DEBUG jclouds.signature - >> Content-Length: 84
+13:54:29.648 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:29.648 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:29.648 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:29.648 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueUrl&QueueName=4931f7cd-aebc-4432-bc5c-531d89ab84b9&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.647Z&Version=2011-10-01"
+13:54:29.648 [TestNG] DEBUG jclouds.signature - << "LxLCnBDKlqO1tmgdkosriBDPGuAAAYYLAoYrjOW1jiM="
+13:54:29.649 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:29.650 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:29.650 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:29.650 [TestNG] DEBUG jclouds.signature - << Content-Length: 262
+13:54:29.650 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1746753445: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:29.650 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueUrl&QueueName=4931f7cd-aebc-4432-bc5c-531d89ab84b9&Signature=LxLCnBDKlqO1tmgdkosriBDPGuAAAYYLAoYrjOW1jiM%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.647Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:29.650 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:29.650 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.650 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.650 [TestNG] DEBUG jclouds.headers - >> Content-Length: 262
+13:54:29.750 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 588802932: HTTP/1.1 200 OK
+13:54:29.751 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:29.751 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 7990e863-74ad-5a3c-b21b-a19549e8aa90
+13:54:29.751 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:29.751 [TestNG] DEBUG jclouds.headers - << Content-Length: 788
+13:54:29.751 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>Policy</Name><Value>{&quot;Version&quot;:&quot;2008-10-17&quot;,&quot;Id&quot;:&quot;arn:aws:sqs:us-east-1:993194456877:adrianc-sqs-permission/SQSDefaultPolicy&quot;,&quot;Statement&quot;:[{&quot;Sid&quot;:&quot;fubar&quot;,&quot;Effect&quot;:&quot;Allow&quot;,&quot;Principal&quot;:{&quot;AWS&quot;:&quot;993194456877&quot;},&quot;Action&quot;:&quot;SQS:GetQueueAttributes&quot;,&quot;Resource&quot;:&quot;arn:aws:sqs:us-east-1:993194456877:adrianc-sqs-permission&quot;}]}</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>7990e863-74ad-5a3c-b21b-a19549e8aa90</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+13:54:29.756 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking SetQueueAttributes
+13:54:29.757 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:29.757 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.757 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.757 [TestNG] DEBUG jclouds.signature - >> Content-Length: 487
+13:54:29.758 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:29.758 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:29.758 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-permission/[\n]"
+13:54:29.758 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=SetQueueAttributes&Attribute.Name=Policy&Attribute.Value=%7B%22Version%22%3A%222008-10-17%22%2C%22Id%22%3A%22arn%3Aaws%3Asqs%3Aus-east-1%3A993194456877%3Aadrianc-sqs-permission%2FSQSDefaultPolicy%22%2C%22Statement%22%3A%5B%7B%22Sid%22%3A%22fubar%22%2C%22Effect%22%3A%22Allow%22%2C%22Principal%22%3A%7B%22AWS%22%3A%22%2A%22%7D%2C%22Action%22%3A%22SQS%3AGetQueueAttributes%22%2C%22Resource%22%3A%22arn%3Aaws%3Asqs%3Aus-east-1%3A993194456877%3Aadrianc-sqs-permission%22%7D%5D%7D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.757Z&Version=2011-10-01"
+13:54:29.758 [TestNG] DEBUG jclouds.signature - << "9e0PvqrezWUi/1uIYhKU14rMkDTVtDxRbunB9RIL2b8="
+13:54:29.760 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:29.760 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:29.760 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:29.760 [TestNG] DEBUG jclouds.signature - << Content-Length: 665
+13:54:29.760 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -292116824: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:29.760 [TestNG] DEBUG jclouds.wire - >> "Action=SetQueueAttributes&Attribute.Name=Policy&Attribute.Value=%7B%22Version%22%3A%222008-10-17%22,%22Id%22%3A%22arn%3Aaws%3Asqs%3Aus-east-1%3A993194456877%3Aadrianc-sqs-permission/SQSDefaultPolicy%22,%22Statement%22%3A%5B%7B%22Sid%22%3A%22fubar%22,%22Effect%22%3A%22Allow%22,%22Principal%22%3A%7B%22AWS%22%3A%22%2A%22%7D,%22Action%22%3A%22SQS%3AGetQueueAttributes%22,%22Resource%22%3A%22arn%3Aaws%3Asqs%3Aus-east-1%3A993194456877%3Aadrianc-sqs-permission%22%7D%5D%7D&Signature=9e0PvqrezWUi/1uIYhKU14rMkDTVtDxRbunB9RIL2b8%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.757Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:29.760 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:29.761 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.761 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.761 [TestNG] DEBUG jclouds.headers - >> Content-Length: 665
+13:54:29.802 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1576989800: HTTP/1.1 200 OK
+13:54:29.803 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:29.803 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 619ceee4-6280-5b8d-b55a-a7125fc5325c
+13:54:29.803 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:29.803 [TestNG] DEBUG jclouds.headers - << Content-Length: 240
+13:54:29.803 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ReceiveMessageResult/><ResponseMetadata><RequestId>619ceee4-6280-5b8d-b55a-a7125fc5325c</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+13:54:29.807 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ChangeMessageVisibility
+13:54:29.808 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:29.808 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.808 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.808 [TestNG] DEBUG jclouds.signature - >> Content-Length: 396
+13:54:29.808 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:29.808 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:29.808 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-message/[\n]"
+13:54:29.808 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ChangeMessageVisibility&ReceiptHandle=xDa5Mk4jPUoJdUHCEPBp8BoUs52R9r1RPKlwJ71zPZ3XzYAVlZ%2BJcHrbBklJEkEdeIW5axQ0AFm2DBQ4%2FfeFOPL074lKDD6OI0SgV6%2FkRIkviPUIP9qwW2S9fK2bnnwinWyI4vWeJeFHm7%2BeQcRosZ4HtjTgt7gaoWW%2BTZE%2Fnp7tBQqurJgqHg9545tHU8yTkh0Ogd%2BECOvtJ9CwpUXNv43hj2MP8x3n8zxCIECt%2FDZI2JrnX1kdEgCtKcoAIwXoY0qJd8X6xE7QwF9Pd5BcJhvTZfI4ZSzj1z9OdHsr1%2B4%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.807Z&Version=2011-10-01&VisibilityTimeout=0"
+13:54:29.809 [TestNG] DEBUG jclouds.signature - << "kFDChurFdSKgMoy0+1MpNxF7/LMxiWFMQ5V95YXIyPs="
+13:54:29.810 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:29.810 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:29.810 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:29.810 [TestNG] DEBUG jclouds.signature - << Content-Length: 576
+13:54:29.810 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1805093847: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:29.810 [TestNG] DEBUG jclouds.wire - >> "Action=ChangeMessageVisibility&ReceiptHandle=xDa5Mk4jPUoJdUHCEPBp8BoUs52R9r1RPKlwJ71zPZ3XzYAVlZ%2BJcHrbBklJEkEdeIW5axQ0AFm2DBQ4/feFOPL074lKDD6OI0SgV6/kRIkviPUIP9qwW2S9fK2bnnwinWyI4vWeJeFHm7%2BeQcRosZ4HtjTgt7gaoWW%2BTZE/np7tBQqurJgqHg9545tHU8yTkh0Ogd%2BECOvtJ9CwpUXNv43hj2MP8x3n8zxCIECt/DZI2JrnX1kdEgCtKcoAIwXoY0qJd8X6xE7QwF9Pd5BcJhvTZfI4ZSzj1z9OdHsr1%2B4%3D&Signature=kFDChurFdSKgMoy0%2B1MpNxF7/LMxiWFMQ5V95YXIyPs%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A29.807Z&Version=2011-10-01&VisibilityTimeout=0&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:29.811 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:29.811 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:29.811 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:29.811 [TestNG] DEBUG jclouds.headers - >> Content-Length: 576
+13:54:30.059 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1746753445: HTTP/1.1 400 Bad Request
+13:54:30.059 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 400 Bad Request
+13:54:30.059 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 85b35e2f-f5fc-5a42-8ee5-17d9c8b9d851
+13:54:30.059 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:30.060 [TestNG] DEBUG jclouds.headers - << Content-Length: 333
+13:54:30.060 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><Error><Type>Sender</Type><Code>AWS.SimpleQueueService.NonExistentQueue</Code><Message>The specified queue does not exist for this wsdl version.</Message><Detail/></Error><RequestId>85b35e2f-f5fc-5a42-8ee5-17d9c8b9d851</RequestId></ErrorResponse>"
+[TestNG] Test testGracefulNoQueue(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 417ms
 Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
 Starting test testListQueues(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
-[TestNG] Test testChangeMessageVisibility(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 1788ms
+13:54:30.064 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ListQueues
+13:54:30.065 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.065 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.065 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.065 [TestNG] DEBUG jclouds.signature - >> Content-Length: 36
+13:54:30.065 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:30.065 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:30.065 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:30.065 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.065Z&Version=2011-10-01"
+13:54:30.066 [TestNG] DEBUG jclouds.signature - << "xJpG3iken7aGgN8/tN4zwL9UHZLtBdyTjyL+gR/D5Es="
+13:54:30.066 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.066 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:30.066 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:30.066 [TestNG] DEBUG jclouds.signature - << Content-Length: 216
+13:54:30.067 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 535713913: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.067 [TestNG] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=xJpG3iken7aGgN8/tN4zwL9UHZLtBdyTjyL%2BgR/D5Es%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.065Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:30.067 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.067 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.067 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.067 [TestNG] DEBUG jclouds.headers - >> Content-Length: 216
+13:54:30.287 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -292116824: HTTP/1.1 200 OK
+13:54:30.287 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:30.288 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 8f9c9a11-8955-53f2-8832-d3e7b4137440
+13:54:30.288 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:30.288 [TestNG] DEBUG jclouds.headers - << Content-Length: 225
+13:54:30.288 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><SetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>8f9c9a11-8955-53f2-8832-d3e7b4137440</RequestId></ResponseMetadata></SetQueueAttributesResponse>"
+13:54:30.315 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1805093847: HTTP/1.1 200 OK
+13:54:30.316 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:30.316 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: cecbdd80-c9a6-5c95-b771-9476f4e0dc59
+13:54:30.316 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:30.316 [TestNG] DEBUG jclouds.headers - << Content-Length: 235
+13:54:30.316 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ChangeMessageVisibilityResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>cecbdd80-c9a6-5c95-b771-9476f4e0dc59</RequestId></ResponseMetadata></ChangeMessageVisibilityResponse>"
+13:54:30.319 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ReceiveMessage
+13:54:30.319 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:30.319 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.319 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.319 [TestNG] DEBUG jclouds.signature - >> Content-Length: 80
+13:54:30.320 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:30.320 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:30.320 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-message/[\n]"
+13:54:30.320 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ReceiveMessage&AttributeName.1=All&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.319Z&Version=2011-10-01&VisibilityTimeout=0"
+13:54:30.320 [TestNG] DEBUG jclouds.signature - << "pNfVrt/lqSV7xiNZV5S6YC4/KrI+TMO6tVKieISQoDs="
+13:54:30.321 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:30.321 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:30.321 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:30.321 [TestNG] DEBUG jclouds.signature - << Content-Length: 260
+13:54:30.322 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 77579523: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:30.322 [TestNG] DEBUG jclouds.wire - >> "Action=ReceiveMessage&AttributeName.1=All&Signature=pNfVrt/lqSV7xiNZV5S6YC4/KrI%2BTMO6tVKieISQoDs%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.319Z&Version=2011-10-01&VisibilityTimeout=0&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:30.322 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:30.322 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.322 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.322 [TestNG] DEBUG jclouds.headers - >> Content-Length: 260
+13:54:30.485 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 535713913: HTTP/1.1 200 OK
+13:54:30.485 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:30.485 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 19020bde-9100-5d85-be7c-4228ac462b34
+13:54:30.485 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:30.485 [TestNG] DEBUG jclouds.headers - << Content-Length: 843
+13:54:30.485 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrian-sqs-bulk</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/mule-test</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>19020bde-9100-5d85-be7c-4228ac462b34</RequestId></ResponseMetadata></ListQueuesResponse>"
+13:54:30.489 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ListQueues
+13:54:30.489 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.489 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.489 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.489 [TestNG] DEBUG jclouds.signature - >> Content-Length: 36
+13:54:30.489 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:30.490 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:30.490 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:30.490 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ListQueues&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.489Z&Version=2011-10-01"
+13:54:30.490 [TestNG] DEBUG jclouds.signature - << "6QQgtsoLzRM/EWzggmBTnSfdRAVXwsnAY8KDLnZENHU="
+13:54:30.491 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.491 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:30.491 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:30.491 [TestNG] DEBUG jclouds.signature - << Content-Length: 214
+13:54:30.491 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 900680903: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.491 [TestNG] DEBUG jclouds.wire - >> "Action=ListQueues&Signature=6QQgtsoLzRM/EWzggmBTnSfdRAVXwsnAY8KDLnZENHU%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.489Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:30.491 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.491 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.491 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.491 [TestNG] DEBUG jclouds.headers - >> Content-Length: 214
+13:54:30.719 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 77579523: HTTP/1.1 200 OK
+13:54:30.720 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:30.720 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: e016ad65-50c8-5855-bddf-e4936d8e77bb
+13:54:30.720 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:30.720 [TestNG] DEBUG jclouds.headers - << Content-Length: 1069
+13:54:30.720 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ReceiveMessageResult><Message><Body>hardyharhar</Body><MD5OfBody>e32aedf2b2b25355d04b1507055532e6</MD5OfBody><ReceiptHandle>xDa5Mk4jPUoJdUHCEPBp8BoUs52R9r1RPKlwJ71zPZ3XzYAVlZ+JcHrbBklJEkEdeIW5axQ0AFm2DBQ4/feFOPL074lKDD6OI0SgV6/kRIkviPUIP9qwW2S9fK2bnnwinWyI4vWeJeFHm7+eQcRosZ4HtjTgt7gaoWW+TZE/np7tBQqurJgqHg9545tHU8yTkh0Ogd+ECOvtJ9CwpUXNv43hj2MP8x3n8zxCIECt/DZI2JrnX1kdEgCtKcoAIwXoY0qJd8X6xE7QwF9Pd5BcJtG8O144Qo4/1z9OdHsr1+4=</ReceiptHandle><Attribute><Name>SenderId</Name><Value>993194456877</Value></Attribute><Attribute><Name>ApproximateFirstReceiveTimestamp</Name><Value>1367096068764</Value></Attribute><Attribute><Name>ApproximateReceiveCount</Name><Value>3</Value></Attribute><Attribute><Name>SentTimestamp</Name><Value>1367096068328</Value></Attribute><MessageId>5eaa195b-38d7-4fb1-b783-97becf03f7d1</MessageId></Message></ReceiveMessageResult><ResponseMetadata><RequestId>e016ad65-50c8-5855-bddf-e4936d8e77bb</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+[TestNG] Test testChangeMessageVisibility(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 1903ms
 Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
 Starting test testDeleteMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest)
-[TestNG] Test testAddAnonymousPermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest) succeeded: 3059ms
+13:54:30.726 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking DeleteMessage
+13:54:30.726 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:30.726 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.726 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.726 [TestNG] DEBUG jclouds.signature - >> Content-Length: 366
+13:54:30.727 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:30.727 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:30.727 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-message/[\n]"
+13:54:30.727 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=DeleteMessage&ReceiptHandle=xDa5Mk4jPUoJdUHCEPBp8BoUs52R9r1RPKlwJ71zPZ3XzYAVlZ%2BJcHrbBklJEkEdeIW5axQ0AFm2DBQ4%2FfeFOPL074lKDD6OI0SgV6%2FkRIkviPUIP9qwW2S9fK2bnnwinWyI4vWeJeFHm7%2BeQcRosZ4HtjTgt7gaoWW%2BTZE%2Fnp7tBQqurJgqHg9545tHU8yTkh0Ogd%2BECOvtJ9CwpUXNv43hj2MP8x3n8zxCIECt%2FDZI2JrnX1kdEgCtKcoAIwXoY0qJd8X6xE7QwF9Pd5BcJhvTZfI4ZSzj1z9OdHsr1%2B4%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.726Z&Version=2011-10-01"
+13:54:30.727 [TestNG] DEBUG jclouds.signature - << "FjQ/bGG0zY7y0MUoLZUoBegvMTCwlPtku8qeTriIwnk="
+13:54:30.728 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:30.728 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:30.728 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:30.728 [TestNG] DEBUG jclouds.signature - << Content-Length: 544
+13:54:30.728 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1558924939: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:30.728 [TestNG] DEBUG jclouds.wire - >> "Action=DeleteMessage&ReceiptHandle=xDa5Mk4jPUoJdUHCEPBp8BoUs52R9r1RPKlwJ71zPZ3XzYAVlZ%2BJcHrbBklJEkEdeIW5axQ0AFm2DBQ4/feFOPL074lKDD6OI0SgV6/kRIkviPUIP9qwW2S9fK2bnnwinWyI4vWeJeFHm7%2BeQcRosZ4HtjTgt7gaoWW%2BTZE/np7tBQqurJgqHg9545tHU8yTkh0Ogd%2BECOvtJ9CwpUXNv43hj2MP8x3n8zxCIECt/DZI2JrnX1kdEgCtKcoAIwXoY0qJd8X6xE7QwF9Pd5BcJhvTZfI4ZSzj1z9OdHsr1%2B4%3D&Signature=FjQ/bGG0zY7y0MUoLZUoBegvMTCwlPtku8qeTriIwnk%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.726Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:30.728 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:30.728 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.728 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.728 [TestNG] DEBUG jclouds.headers - >> Content-Length: 544
+[TestNG] Test testAddAnonymousPermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest) succeeded: 3023ms
 Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
 Starting test testRemovePermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest)
-[TestNG] Test testListQueues(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 795ms
+13:54:30.822 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking RemovePermission
+13:54:30.822 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:30.822 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.822 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.822 [TestNG] DEBUG jclouds.signature - >> Content-Length: 54
+13:54:30.822 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:30.822 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:30.823 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-permission/[\n]"
+13:54:30.823 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=RemovePermission&Label=fubar&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.822Z&Version=2011-10-01"
+13:54:30.823 [TestNG] DEBUG jclouds.signature - << "QwJiJOdXyzeuZkUYAYO0/x2NnxQoBSD/IR/2GZGRBwM="
+13:54:30.823 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:30.823 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:30.824 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:30.824 [TestNG] DEBUG jclouds.signature - << Content-Length: 232
+13:54:30.824 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1363073037: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:30.827 [TestNG] DEBUG jclouds.wire - >> "Action=RemovePermission&Label=fubar&Signature=QwJiJOdXyzeuZkUYAYO0/x2NnxQoBSD/IR/2GZGRBwM%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.822Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:30.828 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:30.828 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.828 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.828 [TestNG] DEBUG jclouds.headers - >> Content-Length: 232
+13:54:30.896 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 900680903: HTTP/1.1 200 OK
+13:54:30.896 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:30.896 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: cbabd243-2197-5883-9125-9bb51cd1d777
+13:54:30.896 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:30.896 [TestNG] DEBUG jclouds.headers - << Content-Length: 843
+13:54:30.896 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ListQueuesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ListQueuesResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrian-sqs-bulk</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adriancole-sqs11</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/mule-test</QueueUrl><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/testQueue</QueueUrl></ListQueuesResult><ResponseMetadata><RequestId>cbabd243-2197-5883-9125-9bb51cd1d777</RequestId></ResponseMetadata></ListQueuesResponse>"
+[TestNG] Test testListQueues(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 835ms
 Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
 Starting test testCreateQueueWhenAlreadyExistsReturnsURI(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
-[TestNG] Test testDeleteMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 856ms
+13:54:30.901 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking CreateQueue
+13:54:30.902 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.902 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.902 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.902 [TestNG] DEBUG jclouds.signature - >> Content-Length: 65
+13:54:30.902 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:30.902 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:30.902 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:30.902 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=CreateQueue&QueueName=adrianc-sqs-queue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.902Z&Version=2011-10-01"
+13:54:30.903 [TestNG] DEBUG jclouds.signature - << "Ro47t08jkvEetBS+BME16al2wHzxqcchE0uQ6h2jpcI="
+13:54:30.903 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.903 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:30.904 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:30.904 [TestNG] DEBUG jclouds.signature - << Content-Length: 245
+13:54:30.904 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -635853332: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.904 [TestNG] DEBUG jclouds.wire - >> "Action=CreateQueue&QueueName=adrianc-sqs-queue&Signature=Ro47t08jkvEetBS%2BBME16al2wHzxqcchE0uQ6h2jpcI%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A30.902Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:30.904 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:30.904 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:30.904 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:30.904 [TestNG] DEBUG jclouds.headers - >> Content-Length: 245
+13:54:31.114 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1558924939: HTTP/1.1 200 OK
+13:54:31.114 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:31.114 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: dc619c22-d94d-5a3b-bddf-d5d4e40adc8a
+13:54:31.114 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:31.114 [TestNG] DEBUG jclouds.headers - << Content-Length: 215
+13:54:31.114 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><DeleteMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>dc619c22-d94d-5a3b-bddf-d5d4e40adc8a</RequestId></ResponseMetadata></DeleteMessageResponse>"
+13:54:31.117 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking ReceiveMessage
+13:54:31.117 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:31.117 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.117 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.117 [TestNG] DEBUG jclouds.signature - >> Content-Length: 40
+13:54:31.118 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:31.118 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:31.118 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-message/[\n]"
+13:54:31.118 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=ReceiveMessage&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.117Z&Version=2011-10-01"
+13:54:31.118 [TestNG] DEBUG jclouds.signature - << "n4KyQ5DWKijtfJjKIScHK8fhOPsIPwl7w/8BGU19LYk="
+13:54:31.119 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:31.119 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:31.119 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:31.119 [TestNG] DEBUG jclouds.signature - << Content-Length: 218
+13:54:31.119 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1467411706: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:31.119 [TestNG] DEBUG jclouds.wire - >> "Action=ReceiveMessage&Signature=n4KyQ5DWKijtfJjKIScHK8fhOPsIPwl7w/8BGU19LYk%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.117Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:31.119 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:31.119 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.119 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.119 [TestNG] DEBUG jclouds.headers - >> Content-Length: 218
+13:54:31.319 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -635853332: HTTP/1.1 200 OK
+13:54:31.319 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:31.319 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: e06d0ff0-5016-5b1e-9eb7-46066d51e8ec
+13:54:31.319 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:31.319 [TestNG] DEBUG jclouds.headers - << Content-Length: 337
+13:54:31.319 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><CreateQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><CreateQueueResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl></CreateQueueResult><ResponseMetadata><RequestId>e06d0ff0-5016-5b1e-9eb7-46066d51e8ec</RequestId></ResponseMetadata></CreateQueueResponse>"
+[TestNG] Test testCreateQueueWhenAlreadyExistsReturnsURI(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 421ms
 Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
-[TestNG] Test testCreateQueueWhenAlreadyExistsReturnsURI(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 434ms
-Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
 Starting test testGet(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
-[TestNG] Test testRemovePermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest) succeeded: 871ms
+13:54:31.323 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueUrl
+13:54:31.323 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:31.323 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.323 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.323 [TestNG] DEBUG jclouds.signature - >> Content-Length: 65
+13:54:31.324 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:31.324 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:31.324 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:31.324 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueUrl&QueueName=adrianc-sqs-queue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.323Z&Version=2011-10-01"
+13:54:31.324 [TestNG] DEBUG jclouds.signature - << "5q1Vp/kYFSjwaI0DLqoYXe91yDNlrj/nNBnv1H14yv0="
+13:54:31.325 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:31.325 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:31.325 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:31.325 [TestNG] DEBUG jclouds.signature - << Content-Length: 243
+13:54:31.325 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -553851440: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:31.325 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueUrl&QueueName=adrianc-sqs-queue&Signature=5q1Vp/kYFSjwaI0DLqoYXe91yDNlrj/nNBnv1H14yv0%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.323Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:31.325 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:31.325 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.325 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.325 [TestNG] DEBUG jclouds.headers - >> Content-Length: 243
+13:54:31.330 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1363073037: HTTP/1.1 200 OK
+13:54:31.330 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:31.330 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 333a6e20-ff9e-553d-a931-27d6c2d9e431
+13:54:31.330 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:31.331 [TestNG] DEBUG jclouds.headers - << Content-Length: 221
+13:54:31.331 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><RemovePermissionResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>333a6e20-ff9e-553d-a931-27d6c2d9e431</RequestId></ResponseMetadata></RemovePermissionResponse>"
+13:54:31.334 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueAttributes
+13:54:31.334 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:31.334 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.334 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.334 [TestNG] DEBUG jclouds.signature - >> Content-Length: 67
+13:54:31.334 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:31.334 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:31.334 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-permission/[\n]"
+13:54:31.334 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueAttributes&AttributeName.1=Policy&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.334Z&Version=2011-10-01"
+13:54:31.335 [TestNG] DEBUG jclouds.signature - << "cXmuVUPnl3bgVO8u5kbglfEJtn6pgvLFr9k9hPm6Ayc="
+13:54:31.335 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:31.335 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:31.335 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:31.335 [TestNG] DEBUG jclouds.signature - << Content-Length: 245
+13:54:31.336 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -899762301: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:31.336 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=Policy&Signature=cXmuVUPnl3bgVO8u5kbglfEJtn6pgvLFr9k9hPm6Ayc%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.334Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:31.336 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:31.336 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.336 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.336 [TestNG] DEBUG jclouds.headers - >> Content-Length: 245
+13:54:31.632 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1467411706: HTTP/1.1 200 OK
+13:54:31.633 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:31.633 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 28d88a72-9338-553c-929c-c384ae7fce3b
+13:54:31.633 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:31.633 [TestNG] DEBUG jclouds.headers - << Content-Length: 240
+13:54:31.633 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ReceiveMessageResult/><ResponseMetadata><RequestId>28d88a72-9338-553c-929c-c384ae7fce3b</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+[TestNG] Test testDeleteMessage(org.jclouds.aws.sqs.features.AWSMessageApiLiveTest) succeeded: 912ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+13:54:31.638 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking DeleteQueue
+13:54:31.639 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:31.639 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.639 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.639 [TestNG] DEBUG jclouds.signature - >> Content-Length: 37
+13:54:31.639 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:31.639 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:31.639 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-message/[\n]"
+13:54:31.639 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=DeleteQueue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.638Z&Version=2011-10-01"
+13:54:31.640 [TestNG] DEBUG jclouds.signature - << "OajUEKgi8RoHtk+xONU6D3qtrR1tP6LxB9O2UAOBIW0="
+13:54:31.640 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:31.640 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:31.640 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:31.641 [TestNG] DEBUG jclouds.signature - << Content-Length: 217
+13:54:31.641 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1568767391: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:31.641 [TestNG] DEBUG jclouds.wire - >> "Action=DeleteQueue&Signature=OajUEKgi8RoHtk%2BxONU6D3qtrR1tP6LxB9O2UAOBIW0%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.638Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:31.641 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-message/ HTTP/1.1
+13:54:31.641 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.641 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.641 [TestNG] DEBUG jclouds.headers - >> Content-Length: 217
+13:54:31.741 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -553851440: HTTP/1.1 200 OK
+13:54:31.741 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:31.741 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 5d28c7d8-f445-5f6c-aa69-8e2ec902cd7f
+13:54:31.741 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:31.741 [TestNG] DEBUG jclouds.headers - << Content-Length: 337
+13:54:31.741 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueUrlResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>5d28c7d8-f445-5f6c-aa69-8e2ec902cd7f</RequestId></ResponseMetadata></GetQueueUrlResponse>"
+[TestNG] Test testGet(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 422ms
 Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
-[TestNG] Test testGet(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 400ms
-Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
 Starting test testGetInAccount(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
-[TestNG] Test testGetInAccount(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 391ms
+13:54:31.746 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueUrl
+13:54:31.746 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:31.746 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.746 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.747 [TestNG] DEBUG jclouds.signature - >> Content-Length: 101
+13:54:31.747 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:31.747 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:31.747 [TestNG] DEBUG jclouds.signature - >> "/[\n]"
+13:54:31.747 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueUrl&QueueName=adrianc-sqs-queue&QueueOwnerAWSAccountId=993194456877&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.746Z&Version=2011-10-01"
+13:54:31.747 [TestNG] DEBUG jclouds.signature - << "YzZP3I+UlveYirm9WPbb5A2dGFqcu/mHla2pLsVQmxE="
+13:54:31.748 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:31.748 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:31.748 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:31.748 [TestNG] DEBUG jclouds.signature - << Content-Length: 281
+13:54:31.748 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1622453388: POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:31.749 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueUrl&QueueName=adrianc-sqs-queue&QueueOwnerAWSAccountId=993194456877&Signature=YzZP3I%2BUlveYirm9WPbb5A2dGFqcu/mHla2pLsVQmxE%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.746Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:31.749 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/ HTTP/1.1
+13:54:31.749 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.749 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.749 [TestNG] DEBUG jclouds.headers - >> Content-Length: 281
+13:54:31.807 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -899762301: HTTP/1.1 200 OK
+13:54:31.808 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:31.808 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 0ffb9192-facc-5683-ac2f-d864c78bcb6c
+13:54:31.808 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:31.808 [TestNG] DEBUG jclouds.headers - << Content-Length: 506
+13:54:31.808 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>Policy</Name><Value>{&quot;Version&quot;:&quot;2008-10-17&quot;,&quot;Id&quot;:&quot;arn:aws:sqs:us-east-1:993194456877:adrianc-sqs-permission/SQSDefaultPolicy&quot;,&quot;Statement&quot;:[]}</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>0ffb9192-facc-5683-ac2f-d864c78bcb6c</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+[TestNG] Test testRemovePermission(org.jclouds.aws.sqs.features.AWSPermissionApiLiveTest) succeeded: 990ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+13:54:31.812 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking DeleteQueue
+13:54:31.812 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:31.812 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.812 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.812 [TestNG] DEBUG jclouds.signature - >> Content-Length: 37
+13:54:31.812 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:31.812 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:31.812 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-permission/[\n]"
+13:54:31.812 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=DeleteQueue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.812Z&Version=2011-10-01"
+13:54:31.813 [TestNG] DEBUG jclouds.signature - << "O7QzgtUW260A69+qeUCkpOildBysn6BOxMSILWG3cDM="
+13:54:31.813 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:31.813 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:31.813 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:31.814 [TestNG] DEBUG jclouds.signature - << Content-Length: 217
+13:54:31.814 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1953371394: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:31.814 [TestNG] DEBUG jclouds.wire - >> "Action=DeleteQueue&Signature=O7QzgtUW260A69%2BqeUCkpOildBysn6BOxMSILWG3cDM%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A31.812Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:31.814 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-permission/ HTTP/1.1
+13:54:31.814 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:31.814 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:31.814 [TestNG] DEBUG jclouds.headers - >> Content-Length: 217
+13:54:32.148 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1568767391: HTTP/1.1 200 OK
+13:54:32.148 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:32.148 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: b2d9d5c2-63f2-585c-9a43-9c345eba5cd6
+13:54:32.148 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:32.148 [TestNG] DEBUG jclouds.headers - << Content-Length: 211
+13:54:32.148 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><DeleteQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>b2d9d5c2-63f2-585c-9a43-9c345eba5cd6</RequestId></ResponseMetadata></DeleteQueueResponse>"
+13:54:32.176 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1622453388: HTTP/1.1 200 OK
+13:54:32.176 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:32.176 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 84808a48-d915-53c3-b779-c3bee45dd4ca
+13:54:32.176 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:32.176 [TestNG] DEBUG jclouds.headers - << Content-Length: 337
+13:54:32.176 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueUrlResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>84808a48-d915-53c3-b779-c3bee45dd4ca</RequestId></ResponseMetadata></GetQueueUrlResponse>"
+[TestNG] Test testGetInAccount(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 435ms
 Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
 Starting test testGetQueueAttributes(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
-[TestNG] Test testGetQueueAttributes(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 823ms
+13:54:32.184 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueAttributes
+13:54:32.184 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:32.184 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:32.185 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:32.185 [TestNG] DEBUG jclouds.signature - >> Content-Length: 64
+13:54:32.185 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:32.185 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:32.185 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-queue/[\n]"
+13:54:32.185 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueAttributes&AttributeName.1=All&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A32.184Z&Version=2011-10-01"
+13:54:32.185 [TestNG] DEBUG jclouds.signature - << "mZg4+mgPCfucs7Xmz9Xz8XSH7Tt6o3aNd06YDwFDIMw="
+13:54:32.186 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:32.186 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:32.186 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:32.186 [TestNG] DEBUG jclouds.signature - << Content-Length: 244
+13:54:32.187 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -1107925104: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:32.187 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=All&Signature=mZg4%2BmgPCfucs7Xmz9Xz8XSH7Tt6o3aNd06YDwFDIMw%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A32.184Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:32.187 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:32.187 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:32.187 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:32.187 [TestNG] DEBUG jclouds.headers - >> Content-Length: 244
+13:54:32.325 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1953371394: HTTP/1.1 200 OK
+13:54:32.325 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:32.326 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: c6fd0276-65a4-5236-b1f6-4b8058ec3d33
+13:54:32.326 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:32.326 [TestNG] DEBUG jclouds.headers - << Content-Length: 211
+13:54:32.326 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><DeleteQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>c6fd0276-65a4-5236-b1f6-4b8058ec3d33</RequestId></ResponseMetadata></DeleteQueueResponse>"
+13:54:32.597 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -1107925104: HTTP/1.1 200 OK
+13:54:32.598 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:32.598 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 6386cad8-c0e4-59d2-b7aa-832efdacda20
+13:54:32.598 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:32.598 [TestNG] DEBUG jclouds.headers - << Content-Length: 1089
+13:54:32.598 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>QueueArn</Name><Value>arn:aws:sqs:us-east-1:993194456877:adrianc-sqs-queue</Value></Attribute><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesDelayed</Name><Value>0</Value></Attribute><Attribute><Name>CreatedTimestamp</Name><Value>1367096067</Value></Attribute><Attribute><Name>LastModifiedTimestamp</Name><Value>1367096067</Value></Attribute><Attribute><Name>VisibilityTimeout</Name><Value>30</Value></Attribute><Attribute><Name>MaximumMessageSize</Name><Value>65536</Value></Attribute><Attribute><Name>MessageRetentionPeriod</Name><Value>345600</Value></Attribute><Attribute><Name>DelaySeconds</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>6386cad8-c0e4-59d2-b7aa-832efdacda20</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+13:54:32.604 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueAttributes
+13:54:32.605 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:32.605 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:32.605 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:32.605 [TestNG] DEBUG jclouds.signature - >> Content-Length: 427
+13:54:32.606 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:32.606 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:32.606 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-queue/[\n]"
+13:54:32.606 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueAttributes&AttributeName.1=QueueArn&AttributeName.10=DelaySeconds&AttributeName.2=ApproximateNumberOfMessages&AttributeName.3=ApproximateNumberOfMessagesNotVisible&AttributeName.4=ApproximateNumberOfMessagesDelayed&AttributeName.5=CreatedTimestamp&AttributeName.6=LastModifiedTimestamp&AttributeName.7=VisibilityTimeout&AttributeName.8=MaximumMessageSize&AttributeName.9=MessageRetentionPeriod&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A32.604Z&Version=2011-10-01"
+13:54:32.606 [TestNG] DEBUG jclouds.signature - << "TzXsCrAyTk5lSrR9GBHLNL/MHYj6Yu9pRDqLMDwmMyc="
+13:54:32.608 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:32.608 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:32.608 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:32.608 [TestNG] DEBUG jclouds.signature - << Content-Length: 605
+13:54:32.608 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request -664906162: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:32.608 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=QueueArn&AttributeName.10=DelaySeconds&AttributeName.2=ApproximateNumberOfMessages&AttributeName.3=ApproximateNumberOfMessagesNotVisible&AttributeName.4=ApproximateNumberOfMessagesDelayed&AttributeName.5=CreatedTimestamp&AttributeName.6=LastModifiedTimestamp&AttributeName.7=VisibilityTimeout&AttributeName.8=MaximumMessageSize&AttributeName.9=MessageRetentionPeriod&Signature=TzXsCrAyTk5lSrR9GBHLNL/MHYj6Yu9pRDqLMDwmMyc%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A32.604Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:32.608 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:32.608 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:32.608 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:32.608 [TestNG] DEBUG jclouds.headers - >> Content-Length: 605
+13:54:32.995 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response -664906162: HTTP/1.1 200 OK
+13:54:32.996 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:32.996 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 1c8785c8-9fbd-5d95-b891-cc3ea2f5613b
+13:54:32.996 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:32.996 [TestNG] DEBUG jclouds.headers - << Content-Length: 1089
+13:54:32.996 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>QueueArn</Name><Value>arn:aws:sqs:us-east-1:993194456877:adrianc-sqs-queue</Value></Attribute><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesDelayed</Name><Value>0</Value></Attribute><Attribute><Name>CreatedTimestamp</Name><Value>1367096067</Value></Attribute><Attribute><Name>LastModifiedTimestamp</Name><Value>1367096067</Value></Attribute><Attribute><Name>VisibilityTimeout</Name><Value>30</Value></Attribute><Attribute><Name>MaximumMessageSize</Name><Value>65536</Value></Attribute><Attribute><Name>MessageRetentionPeriod</Name><Value>345600</Value></Attribute><Attribute><Name>DelaySeconds</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>1c8785c8-9fbd-5d95-b891-cc3ea2f5613b</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+[TestNG] Test testGetQueueAttributes(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 820ms
 Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
 Starting test testSetQueueAttribute(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest)
-[TestNG] Test testSetQueueAttribute(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 941ms
+13:54:33.001 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking SetQueueAttributes
+13:54:33.002 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.002 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:33.002 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:33.002 [TestNG] DEBUG jclouds.signature - >> Content-Length: 99
+13:54:33.002 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:33.002 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:33.002 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-queue/[\n]"
+13:54:33.002 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=SetQueueAttributes&Attribute.Name=MaximumMessageSize&Attribute.Value=1024&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A33.001Z&Version=2011-10-01"
+13:54:33.002 [TestNG] DEBUG jclouds.signature - << "7bAdKoD54ris0qmNqKlJQrf7rrMXMOlC762ORi+SzKw="
+13:54:33.003 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.004 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:33.004 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:33.004 [TestNG] DEBUG jclouds.signature - << Content-Length: 279
+13:54:33.004 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 2005697518: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.004 [TestNG] DEBUG jclouds.wire - >> "Action=SetQueueAttributes&Attribute.Name=MaximumMessageSize&Attribute.Value=1024&Signature=7bAdKoD54ris0qmNqKlJQrf7rrMXMOlC762ORi%2BSzKw%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A33.001Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:33.004 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.004 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:33.004 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:33.004 [TestNG] DEBUG jclouds.headers - >> Content-Length: 279
+13:54:33.501 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 2005697518: HTTP/1.1 200 OK
+13:54:33.502 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:33.502 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 8914c38f-1d3e-560f-9576-8a792077e47c
+13:54:33.502 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:33.502 [TestNG] DEBUG jclouds.headers - << Content-Length: 225
+13:54:33.502 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><SetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>8914c38f-1d3e-560f-9576-8a792077e47c</RequestId></ResponseMetadata></SetQueueAttributesResponse>"
+13:54:33.506 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking GetQueueAttributes
+13:54:33.506 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.506 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:33.506 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:33.506 [TestNG] DEBUG jclouds.signature - >> Content-Length: 64
+13:54:33.507 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:33.507 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:33.507 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-queue/[\n]"
+13:54:33.507 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=GetQueueAttributes&AttributeName.1=All&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A33.506Z&Version=2011-10-01"
+13:54:33.507 [TestNG] DEBUG jclouds.signature - << "IsUkgu53CHroRz2waiTD+hZkCkZOhREi2IvMj7C6aaE="
+13:54:33.508 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.508 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:33.508 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:33.508 [TestNG] DEBUG jclouds.signature - << Content-Length: 244
+13:54:33.508 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 1402697746: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.509 [TestNG] DEBUG jclouds.wire - >> "Action=GetQueueAttributes&AttributeName.1=All&Signature=IsUkgu53CHroRz2waiTD%2BhZkCkZOhREi2IvMj7C6aaE%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A33.506Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:33.509 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.509 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:33.509 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:33.509 [TestNG] DEBUG jclouds.headers - >> Content-Length: 244
+13:54:33.912 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 1402697746: HTTP/1.1 200 OK
+13:54:33.912 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:33.912 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: ac7b73a8-f032-523e-bfff-3a5ecd7b34d7
+13:54:33.912 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:33.912 [TestNG] DEBUG jclouds.headers - << Content-Length: 1088
+13:54:33.912 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><GetQueueAttributesResult><Attribute><Name>QueueArn</Name><Value>arn:aws:sqs:us-east-1:993194456877:adrianc-sqs-queue</Value></Attribute><Attribute><Name>ApproximateNumberOfMessages</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesNotVisible</Name><Value>0</Value></Attribute><Attribute><Name>ApproximateNumberOfMessagesDelayed</Name><Value>0</Value></Attribute><Attribute><Name>CreatedTimestamp</Name><Value>1367096067</Value></Attribute><Attribute><Name>LastModifiedTimestamp</Name><Value>1367096073</Value></Attribute><Attribute><Name>VisibilityTimeout</Name><Value>30</Value></Attribute><Attribute><Name>MaximumMessageSize</Name><Value>1024</Value></Attribute><Attribute><Name>MessageRetentionPeriod</Name><Value>345600</Value></Attribute><Attribute><Name>DelaySeconds</Name><Value>0</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>ac7b73a8-f032-523e-bfff-3a5ecd7b34d7</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+[TestNG] Test testSetQueueAttribute(org.jclouds.aws.sqs.features.AWSQueueApiLiveTest) succeeded: 915ms
 Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.383 sec
+13:54:33.916 [TestNG] DEBUG o.j.r.i.InvokeSyncToAsyncHttpMethod - >> invoking DeleteQueue
+13:54:33.916 [TestNG] DEBUG jclouds.signature - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.916 [TestNG] DEBUG jclouds.signature - >> Host: sqs.us-east-1.amazonaws.com
+13:54:33.916 [TestNG] DEBUG jclouds.signature - >> Content-Type: application/x-www-form-urlencoded
+13:54:33.916 [TestNG] DEBUG jclouds.signature - >> Content-Length: 37
+13:54:33.916 [TestNG] DEBUG jclouds.signature - >> "POST[\n]"
+13:54:33.916 [TestNG] DEBUG jclouds.signature - >> "sqs.us-east-1.amazonaws.com[\n]"
+13:54:33.917 [TestNG] DEBUG jclouds.signature - >> "/993194456877/adrianc-sqs-queue/[\n]"
+13:54:33.917 [TestNG] DEBUG jclouds.signature - >> "AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ&Action=DeleteQueue&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A33.916Z&Version=2011-10-01"
+13:54:33.917 [TestNG] DEBUG jclouds.signature - << "osxLc2afWrIKIhRtnkZkQqLO/C4qwCWyqlTihlr9FhQ="
+13:54:33.918 [TestNG] DEBUG jclouds.signature - << POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.918 [TestNG] DEBUG jclouds.signature - << Host: sqs.us-east-1.amazonaws.com
+13:54:33.918 [TestNG] DEBUG jclouds.signature - << Content-Type: application/x-www-form-urlencoded
+13:54:33.918 [TestNG] DEBUG jclouds.signature - << Content-Length: 215
+13:54:33.918 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Sending request 284807442: POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.918 [TestNG] DEBUG jclouds.wire - >> "Action=DeleteQueue&Signature=osxLc2afWrIKIhRtnkZkQqLO/C4qwCWyqlTihlr9FhQ%3D&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2013-04-27T20%3A54%3A33.916Z&Version=2011-10-01&AWSAccessKeyId=AKIAIYNAXO72C3GXNNQQ"
+13:54:33.918 [TestNG] DEBUG jclouds.headers - >> POST https://sqs.us-east-1.amazonaws.com/993194456877/adrianc-sqs-queue/ HTTP/1.1
+13:54:33.918 [TestNG] DEBUG jclouds.headers - >> Host: sqs.us-east-1.amazonaws.com
+13:54:33.918 [TestNG] DEBUG jclouds.headers - >> Content-Type: application/x-www-form-urlencoded
+13:54:33.918 [TestNG] DEBUG jclouds.headers - >> Content-Length: 215
+13:54:34.407 [TestNG] DEBUG o.j.h.i.JavaUrlHttpCommandExecutorService - Receiving response 284807442: HTTP/1.1 200 OK
+13:54:34.407 [TestNG] DEBUG jclouds.headers - << HTTP/1.1 200 OK
+13:54:34.407 [TestNG] DEBUG jclouds.headers - << x-amzn-RequestId: 7f983d98-cbef-5624-8ab5-746ef6a5d0cd
+13:54:34.407 [TestNG] DEBUG jclouds.headers - << Content-Type: text/xml
+13:54:34.407 [TestNG] DEBUG jclouds.headers - << Content-Length: 211
+13:54:34.408 [TestNG] DEBUG jclouds.wire - << "<?xml version="1.0"?><DeleteQueueResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><ResponseMetadata><RequestId>7f983d98-cbef-5624-8ab5-746ef6a5d0cd</RequestId></ResponseMetadata></DeleteQueueResponse>"
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.356 sec
 
 Results :
 
@@ -135,16 +1201,16 @@ Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
 [INFO] Checking test classpath
 [INFO] 
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ aws-sqs ---
-[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/aws-sqs-1.6.0-SNAPSHOT.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-sqs/1.6.0-SNAPSHOT/aws-sqs-1.6.0-SNAPSHOT.jar
-[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/pom.xml to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-sqs/1.6.0-SNAPSHOT/aws-sqs-1.6.0-SNAPSHOT.pom
-[INFO] Installing /Users/adriancole/workspace/git/1.6.x/jclouds/providers/aws-sqs/target/aws-sqs-1.6.0-SNAPSHOT-tests.jar to /Users/adriancole/.m2/repository/org/jclouds/provider/aws-sqs/1.6.0-SNAPSHOT/aws-sqs-1.6.0-SNAPSHOT-tests.jar
+[INFO] Installing /private/tmp/jclouds/providers/aws-sqs/target/aws-sqs-1.6.0-SNAPSHOT.jar to /Users/adrianc/.m2/repository/org/jclouds/provider/aws-sqs/1.6.0-SNAPSHOT/aws-sqs-1.6.0-SNAPSHOT.jar
+[INFO] Installing /private/tmp/jclouds/providers/aws-sqs/pom.xml to /Users/adrianc/.m2/repository/org/jclouds/provider/aws-sqs/1.6.0-SNAPSHOT/aws-sqs-1.6.0-SNAPSHOT.pom
+[INFO] Installing /private/tmp/jclouds/providers/aws-sqs/target/aws-sqs-1.6.0-SNAPSHOT-tests.jar to /Users/adrianc/.m2/repository/org/jclouds/provider/aws-sqs/1.6.0-SNAPSHOT/aws-sqs-1.6.0-SNAPSHOT-tests.jar
 [INFO] 
 [INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ aws-sqs ---
 [INFO] Local OBR update disabled (enable with -DobrRepository)
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 33.434s
-[INFO] Finished at: Sat Mar 09 08:36:42 PST 2013
-[INFO] Final Memory: 18M/265M
+[INFO] Total time: 17.644s
+[INFO] Finished at: Sat Apr 27 13:54:35 PDT 2013
+[INFO] Final Memory: 18M/125M
 [INFO] ------------------------------------------------------------------------
