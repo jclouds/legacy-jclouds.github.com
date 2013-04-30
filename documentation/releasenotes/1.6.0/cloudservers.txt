@@ -1,0 +1,405 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jclouds.api:cloudservers:bundle:1.6.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.jclouds:jclouds-project:1.6.0-SNAPSHOT (/home/zack/jclouds/project/pom.xml) points at org.jclouds:jclouds-multi instead of org.sonatype.oss:oss-parent, please verify your project structure @ org.jclouds:jclouds-project:1.6.0-SNAPSHOT, /home/zack/jclouds/project/pom.xml, line 24, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jcloud cloudservers api 1.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.3:clean (default-clean) @ cloudservers ---
+[INFO] Deleting file set: /home/zack/jclouds/apis/cloudservers/target (included: [**], excluded: [])
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-maven) @ cloudservers ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-banned-dependencies) @ cloudservers ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.1.1:enforce (enforce-java) @ cloudservers ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (process-remote-resources) @ cloudservers ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cloudservers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/zack/jclouds/apis/cloudservers/src/main/clojure
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ cloudservers ---
+[INFO] Compiling 38 source files to /home/zack/jclouds/apis/cloudservers/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cloudservers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/zack/jclouds/apis/cloudservers/src/test/clojure
+[INFO] Copying 19 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ cloudservers ---
+[INFO] Compiling 30 source files to /home/zack/jclouds/apis/cloudservers/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cloudservers ---
+[INFO] Surefire report directory: /home/zack/jclouds/apis/cloudservers/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2f9006c9
+Starting test testWithFile(org.jclouds.cloudservers.options.CreateServerOptionsTest)
+Starting test testAddPayloadToRequestMapOfStringStringHttpRequest(org.jclouds.cloudservers.options.CreateServerOptionsTest)
+Starting test testWithFileStatic(org.jclouds.cloudservers.options.CreateServerOptionsTest)
+Starting test testWithMetadata(org.jclouds.cloudservers.options.CreateServerOptionsTest)
+[pool-1-thread-4] Test testWithMetadata(org.jclouds.cloudservers.options.CreateServerOptionsTest) succeeded: 10ms
+Test suite progress: tests succeeded: 1, failed: 0, skipped: 0.
+Starting test testWithSharedIp(org.jclouds.cloudservers.options.CreateServerOptionsTest)
+Starting test testWithSharedIpGroup(org.jclouds.cloudservers.options.CreateServerOptionsTest)
+[pool-1-thread-3] Test testWithFileStatic(org.jclouds.cloudservers.options.CreateServerOptionsTest) succeeded: 208ms
+Test suite progress: tests succeeded: 2, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testWithFile(org.jclouds.cloudservers.options.CreateServerOptionsTest) succeeded: 207ms
+Test suite progress: tests succeeded: 3, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testWithSharedIpGroup(org.jclouds.cloudservers.options.CreateServerOptionsTest) succeeded: 174ms
+Test suite progress: tests succeeded: 4, failed: 0, skipped: 0.
+Starting test testWithSharedIpGroupStatic(org.jclouds.cloudservers.options.CreateServerOptionsTest)
+[pool-1-thread-2] Test testWithSharedIpGroupStatic(org.jclouds.cloudservers.options.CreateServerOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 5, failed: 0, skipped: 0.
+Starting test testWithSharedIpNoGroup(org.jclouds.cloudservers.options.CreateServerOptionsTest)
+[pool-1-thread-1] Test testAddPayloadToRequestMapOfStringStringHttpRequest(org.jclouds.cloudservers.options.CreateServerOptionsTest) succeeded: 212ms
+Test suite progress: tests succeeded: 6, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testWithSharedIpNoGroup(org.jclouds.cloudservers.options.CreateServerOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 7, failed: 0, skipped: 0.
+Starting test testWithSharedIpStatic(org.jclouds.cloudservers.options.CreateServerOptionsTest)
+Starting test testAddPayloadToRequestMapOfStringStringHttpRequest(org.jclouds.cloudservers.options.CreateSharedIpGroupOptionsTest)
+[pool-1-thread-1] Test testWithSharedIpStatic(org.jclouds.cloudservers.options.CreateServerOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 8, failed: 0, skipped: 0.
+Starting test testWithServer(org.jclouds.cloudservers.options.CreateSharedIpGroupOptionsTest)
+Starting test testWithServerStatic(org.jclouds.cloudservers.options.CreateSharedIpGroupOptionsTest)
+[pool-1-thread-5] Test testWithSharedIp(org.jclouds.cloudservers.options.CreateServerOptionsTest) succeeded: 188ms
+Test suite progress: tests succeeded: 9, failed: 0, skipped: 0.
+Starting test test(org.jclouds.cloudservers.compute.functions.FlavorToHardwareTest)
+[pool-1-thread-1] Test testWithServer(org.jclouds.cloudservers.options.CreateSharedIpGroupOptionsTest) succeeded: 6ms
+Test suite progress: tests succeeded: 10, failed: 0, skipped: 0.
+Starting test testChangesSince(org.jclouds.cloudservers.options.ListOptionsTest)
+Starting test testWithSharedIpNoGroupStatic(org.jclouds.cloudservers.options.CreateServerOptionsTest)
+[pool-1-thread-4] Test testAddPayloadToRequestMapOfStringStringHttpRequest(org.jclouds.cloudservers.options.CreateSharedIpGroupOptionsTest) succeeded: 10ms
+Test suite progress: tests succeeded: 11, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testWithSharedIpNoGroupStatic(org.jclouds.cloudservers.options.CreateServerOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 12, failed: 0, skipped: 0.
+Starting test testChangesSinceStatic(org.jclouds.cloudservers.options.ListOptionsTest)
+Starting test testMaxResults(org.jclouds.cloudservers.options.ListOptionsTest)
+[pool-1-thread-3] Test testWithServerStatic(org.jclouds.cloudservers.options.CreateSharedIpGroupOptionsTest) succeeded: 16ms
+Test suite progress: tests succeeded: 13, failed: 0, skipped: 0.
+Starting test testMaxResultsStatic(org.jclouds.cloudservers.options.ListOptionsTest)
+[pool-1-thread-3] Test testMaxResultsStatic(org.jclouds.cloudservers.options.ListOptionsTest) succeeded: 13ms
+Test suite progress: tests succeeded: 14, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testMaxResults(org.jclouds.cloudservers.options.ListOptionsTest) succeeded: 16ms
+Test suite progress: tests succeeded: 15, failed: 0, skipped: 0.
+Starting test testStartAt(org.jclouds.cloudservers.options.ListOptionsTest)
+Starting test testStartAtStatic(org.jclouds.cloudservers.options.ListOptionsTest)
+[pool-1-thread-2] Test testStartAt(org.jclouds.cloudservers.options.ListOptionsTest) succeeded: 0ms
+Test suite progress: tests succeeded: 16, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testStartAtStatic(org.jclouds.cloudservers.options.ListOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 17, failed: 0, skipped: 0.
+Starting test testWithDetails(org.jclouds.cloudservers.options.ListOptionsTest)
+Starting test testWithDetailsStatic(org.jclouds.cloudservers.options.ListOptionsTest)
+[pool-1-thread-2] Test testWithDetails(org.jclouds.cloudservers.options.ListOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 18, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testWithDetailsStatic(org.jclouds.cloudservers.options.ListOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 19, failed: 0, skipped: 0.
+Starting test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseAddressesFromJsonResponseTest)
+Starting test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseBackupScheduleFromJsonResponseTest)
+[pool-1-thread-4] Test testChangesSinceStatic(org.jclouds.cloudservers.options.ListOptionsTest) succeeded: 22ms
+Test suite progress: tests succeeded: 20, failed: 0, skipped: 0.
+Starting test testNoSchedule(org.jclouds.cloudservers.functions.ParseBackupScheduleFromJsonResponseTest)
+[pool-1-thread-1] Test testChangesSince(org.jclouds.cloudservers.options.ListOptionsTest) succeeded: 31ms
+Test suite progress: tests succeeded: 21, failed: 0, skipped: 0.
+Starting test test(org.jclouds.cloudservers.functions.ParseFlavorFromJsonResponseTest)
+[pool-1-thread-1] Test test(org.jclouds.cloudservers.functions.ParseFlavorFromJsonResponseTest) succeeded: 38ms
+Test suite progress: tests succeeded: 22, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.cloudservers.functions.ParseFlavorListFromJsonResponseTest)
+[pool-1-thread-4] Test testNoSchedule(org.jclouds.cloudservers.functions.ParseBackupScheduleFromJsonResponseTest) succeeded: 49ms
+Test suite progress: tests succeeded: 23, failed: 0, skipped: 0.
+Starting test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseFlavorListFromJsonResponseTest)
+[pool-1-thread-3] Test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseBackupScheduleFromJsonResponseTest) succeeded: 56ms
+Test suite progress: tests succeeded: 24, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseAddressesFromJsonResponseTest) succeeded: 58ms
+Test suite progress: tests succeeded: 25, failed: 0, skipped: 0.
+Starting test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseImageFromJsonResponseTest)
+[pool-1-thread-4] Test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseFlavorListFromJsonResponseTest) succeeded: 12ms
+Test suite progress: tests succeeded: 26, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.cloudservers.functions.ParseImageListFromJsonResponseTest)
+[pool-1-thread-1] Test testApplyInputStream(org.jclouds.cloudservers.functions.ParseFlavorListFromJsonResponseTest) succeeded: 34ms
+Test suite progress: tests succeeded: 27, failed: 0, skipped: 0.
+Starting test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseImageListFromJsonResponseTest)
+Starting test testPrivate(org.jclouds.cloudservers.functions.ParseInetAddressListFromJsonResponseTest)
+[pool-1-thread-4] Test testPrivate(org.jclouds.cloudservers.functions.ParseInetAddressListFromJsonResponseTest) succeeded: 5ms
+Test suite progress: tests succeeded: 28, failed: 0, skipped: 0.
+Starting test testPublic(org.jclouds.cloudservers.functions.ParseInetAddressListFromJsonResponseTest)
+[pool-1-thread-4] Test testPublic(org.jclouds.cloudservers.functions.ParseInetAddressListFromJsonResponseTest) succeeded: 2ms
+Test suite progress: tests succeeded: 29, failed: 0, skipped: 0.
+Starting test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseServerFromJsonResponseTest)
+[pool-1-thread-5] Test test(org.jclouds.cloudservers.compute.functions.FlavorToHardwareTest) succeeded: 126ms
+Test suite progress: tests succeeded: 30, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.cloudservers.functions.ParseServerListFromJsonResponseTest)
+[pool-1-thread-2] Test testApplyInputStream(org.jclouds.cloudservers.functions.ParseImageListFromJsonResponseTest) succeeded: 29ms
+Test suite progress: tests succeeded: 31, failed: 0, skipped: 0.
+Starting test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseServerListFromJsonResponseTest)
+[pool-1-thread-3] Test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseImageFromJsonResponseTest) succeeded: 66ms
+Test suite progress: tests succeeded: 32, failed: 0, skipped: 0.
+Starting test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseSharedIpGroupFromJsonResponseTest)
+[pool-1-thread-3] Test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseSharedIpGroupFromJsonResponseTest) succeeded: 9ms
+Test suite progress: tests succeeded: 33, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseImageListFromJsonResponseTest) succeeded: 77ms
+Test suite progress: tests succeeded: 34, failed: 0, skipped: 0.
+Starting test testApplyInputStream(org.jclouds.cloudservers.functions.ParseSharedIpGroupListFromJsonResponseTest)
+[pool-1-thread-1] Test testApplyInputStream(org.jclouds.cloudservers.functions.ParseSharedIpGroupListFromJsonResponseTest) succeeded: 20ms
+Starting test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseSharedIpGroupListFromJsonResponseTest)
+Test suite progress: tests succeeded: 35, failed: 0, skipped: 0.
+Starting test testAddPayloadToRequestMapOfStringStringHttpRequest(org.jclouds.cloudservers.options.RebuildServerOptionsTest)
+[pool-1-thread-3] Test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseSharedIpGroupListFromJsonResponseTest) succeeded: 3ms
+Test suite progress: tests succeeded: 36, failed: 0, skipped: 0.
+Starting test testWithServer(org.jclouds.cloudservers.options.RebuildServerOptionsTest)
+[pool-1-thread-3] Test testWithServer(org.jclouds.cloudservers.options.RebuildServerOptionsTest) succeeded: 1ms
+Test suite progress: tests succeeded: 37, failed: 0, skipped: 0.
+Starting test testWithServerStatic(org.jclouds.cloudservers.options.RebuildServerOptionsTest)
+[pool-1-thread-5] Test testApplyInputStream(org.jclouds.cloudservers.functions.ParseServerListFromJsonResponseTest) succeeded: 94ms
+Test suite progress: tests succeeded: 38, failed: 0, skipped: 0.
+Starting test testProgressDoesntAffectEquals(org.jclouds.cloudservers.domain.ServerTest)
+[pool-1-thread-5] Test testProgressDoesntAffectEquals(org.jclouds.cloudservers.domain.ServerTest) succeeded: 0ms
+Test suite progress: tests succeeded: 39, failed: 0, skipped: 0.
+Starting test testStatusDoesntAffectEquals(org.jclouds.cloudservers.domain.ServerTest)
+[pool-1-thread-5] Test testStatusDoesntAffectEquals(org.jclouds.cloudservers.domain.ServerTest) succeeded: 1ms
+Test suite progress: tests succeeded: 40, failed: 0, skipped: 0.
+[pool-1-thread-1] Test testAddPayloadToRequestMapOfStringStringHttpRequest(org.jclouds.cloudservers.options.RebuildServerOptionsTest) succeeded: 30ms
+Test suite progress: tests succeeded: 41, failed: 0, skipped: 0.
+[pool-1-thread-2] Test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseServerListFromJsonResponseTest) succeeded: 113ms
+Test suite progress: tests succeeded: 42, failed: 0, skipped: 0.
+[pool-1-thread-3] Test testWithServerStatic(org.jclouds.cloudservers.options.RebuildServerOptionsTest) succeeded: 25ms
+Test suite progress: tests succeeded: 43, failed: 0, skipped: 0.
+[pool-1-thread-4] Test testApplyInputStreamDetails(org.jclouds.cloudservers.functions.ParseServerFromJsonResponseTest) succeeded: 136ms
+Test suite progress: tests succeeded: 44, failed: 0, skipped: 0.
+Starting test deleteImageReturnsTrueOn200AndFalseOn404(org.jclouds.cloudservers.CloudServersExpectTest)
+[pool-2-thread-1] Test deleteImageReturnsTrueOn200AndFalseOn404(org.jclouds.cloudservers.CloudServersExpectTest) succeeded: 1910ms
+Test suite progress: tests succeeded: 45, failed: 0, skipped: 0.
+Starting test testChangeAdminPass(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testChangeAdminPass(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 32ms
+Test suite progress: tests succeeded: 46, failed: 0, skipped: 0.
+Starting test testChangeServerName(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testChangeServerName(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 47, failed: 0, skipped: 0.
+Starting test testConfirmResize(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testConfirmResize(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 13ms
+Test suite progress: tests succeeded: 48, failed: 0, skipped: 0.
+Starting test testCreateImageWithIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testCreateImageWithIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 13ms
+Test suite progress: tests succeeded: 49, failed: 0, skipped: 0.
+Starting test testCreateServer(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testCreateServer(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 16ms
+Test suite progress: tests succeeded: 50, failed: 0, skipped: 0.
+Starting test testCreateServerWithFile(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testCreateServerWithFile(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 8ms
+Test suite progress: tests succeeded: 51, failed: 0, skipped: 0.
+Starting test testCreateServerWithIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testCreateServerWithIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 52, failed: 0, skipped: 0.
+Starting test testCreateServerWithIpGroupAndSharedIp(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testCreateServerWithIpGroupAndSharedIp(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 53, failed: 0, skipped: 0.
+Starting test testCreateServerWithMetadata(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testCreateServerWithMetadata(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 54, failed: 0, skipped: 0.
+Starting test testCreateSharedIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testCreateSharedIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 12ms
+Test suite progress: tests succeeded: 55, failed: 0, skipped: 0.
+Starting test testCreateSharedIpGroupWithIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testCreateSharedIpGroupWithIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 56, failed: 0, skipped: 0.
+Starting test testDeleteBackupSchedule(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testDeleteBackupSchedule(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 57, failed: 0, skipped: 0.
+Starting test testDeleteImage(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testDeleteImage(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 58, failed: 0, skipped: 0.
+Starting test testDeleteServer(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testDeleteServer(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 59, failed: 0, skipped: 0.
+Starting test testDeleteSharedIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testDeleteSharedIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 60, failed: 0, skipped: 0.
+Starting test testGetFlavor(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testGetFlavor(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 10ms
+Test suite progress: tests succeeded: 61, failed: 0, skipped: 0.
+Starting test testGetImage(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testGetImage(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 62, failed: 0, skipped: 0.
+Starting test testGetServer(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testGetServer(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 63, failed: 0, skipped: 0.
+Starting test testGetSharedIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testGetSharedIpGroup(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 64, failed: 0, skipped: 0.
+Starting test testLimits(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testLimits(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 65, failed: 0, skipped: 0.
+Starting test testListAddresses(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListAddresses(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 66, failed: 0, skipped: 0.
+Starting test testListBackupSchedule(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListBackupSchedule(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 67, failed: 0, skipped: 0.
+Starting test testListFlavors(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListFlavors(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 68, failed: 0, skipped: 0.
+Starting test testListFlavorsDetail(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListFlavorsDetail(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 69, failed: 0, skipped: 0.
+Starting test testListFlavorsDetailOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListFlavorsDetailOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 70, failed: 0, skipped: 0.
+Starting test testListFlavorsOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListFlavorsOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 71, failed: 0, skipped: 0.
+Starting test testListImages(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListImages(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 72, failed: 0, skipped: 0.
+Starting test testListImagesDetail(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListImagesDetail(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 73, failed: 0, skipped: 0.
+Starting test testListImagesDetailOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListImagesDetailOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 74, failed: 0, skipped: 0.
+Starting test testListImagesOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListImagesOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 75, failed: 0, skipped: 0.
+Starting test testListPrivateAddresses(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListPrivateAddresses(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 8ms
+Test suite progress: tests succeeded: 76, failed: 0, skipped: 0.
+Starting test testListPublicAddresses(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListPublicAddresses(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 77, failed: 0, skipped: 0.
+Starting test testListServers(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListServers(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 78, failed: 0, skipped: 0.
+Starting test testListServersDetail(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListServersDetail(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 79, failed: 0, skipped: 0.
+Starting test testListServersOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListServersOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 80, failed: 0, skipped: 0.
+Starting test testListSharedIpGroups(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListSharedIpGroups(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 81, failed: 0, skipped: 0.
+Starting test testListSharedIpGroupsDetail(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListSharedIpGroupsDetail(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 4ms
+Test suite progress: tests succeeded: 82, failed: 0, skipped: 0.
+Starting test testListSharedIpGroupsDetailOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListSharedIpGroupsDetailOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 83, failed: 0, skipped: 0.
+Starting test testListSharedIpGroupsOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testListSharedIpGroupsOptions(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 5ms
+Test suite progress: tests succeeded: 84, failed: 0, skipped: 0.
+Starting test testReboot(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testReboot(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 85, failed: 0, skipped: 0.
+Starting test testRebuildServer(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testRebuildServer(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 10ms
+Test suite progress: tests succeeded: 86, failed: 0, skipped: 0.
+Starting test testRebuildServerWithImage(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testRebuildServerWithImage(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 87, failed: 0, skipped: 0.
+Starting test testReplaceBackupSchedule(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testReplaceBackupSchedule(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 12ms
+Test suite progress: tests succeeded: 88, failed: 0, skipped: 0.
+Starting test testResize(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testResize(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 89, failed: 0, skipped: 0.
+Starting test testRevertResize(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testRevertResize(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 90, failed: 0, skipped: 0.
+Starting test testShareIpConfig(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testShareIpConfig(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 91, failed: 0, skipped: 0.
+Starting test testShareIpNoConfig(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testShareIpNoConfig(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 6ms
+Test suite progress: tests succeeded: 92, failed: 0, skipped: 0.
+Starting test testUnshareIpNoConfig(org.jclouds.cloudservers.CloudServersAsyncClientTest)
+[pool-3-thread-1] Test testUnshareIpNoConfig(org.jclouds.cloudservers.CloudServersAsyncClientTest) succeeded: 7ms
+Test suite progress: tests succeeded: 93, failed: 0, skipped: 0.
+Starting test testAllContains(org.jclouds.cloudservers.CloudServersApiMetadataTest)
+[pool-4-thread-1] Test testAllContains(org.jclouds.cloudservers.CloudServersApiMetadataTest) succeeded: 2ms
+Test suite progress: tests succeeded: 94, failed: 0, skipped: 0.
+Starting test testTransformableToContains(org.jclouds.cloudservers.CloudServersApiMetadataTest)
+Starting test testWithId(org.jclouds.cloudservers.CloudServersApiMetadataTest)
+[pool-4-thread-3] Test testWithId(org.jclouds.cloudservers.CloudServersApiMetadataTest) succeeded: 2ms
+Test suite progress: tests succeeded: 95, failed: 0, skipped: 0.
+[pool-4-thread-2] Test testTransformableToContains(org.jclouds.cloudservers.CloudServersApiMetadataTest) succeeded: 3ms
+Test suite progress: tests succeeded: 96, failed: 0, skipped: 0.
+Starting test testApplyWhereImageAndHardwareFound(org.jclouds.cloudservers.compute.functions.ServerToNodeMetadataTest)
+Starting test testApplyWhereImageAndHardwareNotFound(org.jclouds.cloudservers.compute.functions.ServerToNodeMetadataTest)
+Starting test testApplyWhereImageFoundAndHardwareNotFound(org.jclouds.cloudservers.compute.functions.ServerToNodeMetadataTest)
+[pool-5-thread-2] Test testApplyWhereImageAndHardwareNotFound(org.jclouds.cloudservers.compute.functions.ServerToNodeMetadataTest) succeeded: 96ms
+Test suite progress: tests succeeded: 97, failed: 0, skipped: 0.
+[pool-5-thread-3] Test testApplyWhereImageFoundAndHardwareNotFound(org.jclouds.cloudservers.compute.functions.ServerToNodeMetadataTest) succeeded: 121ms
+Test suite progress: tests succeeded: 98, failed: 0, skipped: 0.
+[pool-5-thread-1] Test testApplyWhereImageAndHardwareFound(org.jclouds.cloudservers.compute.functions.ServerToNodeMetadataTest) succeeded: 173ms
+Test suite progress: tests succeeded: 99, failed: 0, skipped: 0.
+Starting test test(org.jclouds.cloudservers.compute.functions.CloudServersImageToImageTest)
+[pool-6-thread-1] Test test(org.jclouds.cloudservers.compute.functions.CloudServersImageToImageTest) succeeded: 36ms
+Test suite progress: tests succeeded: 100, failed: 0, skipped: 0.
+Starting test testAllStatusCovered(org.jclouds.cloudservers.compute.config.CloudServersComputeServiceContextModuleTest)
+[pool-7-thread-1] Test testAllStatusCovered(org.jclouds.cloudservers.compute.config.CloudServersComputeServiceContextModuleTest) succeeded: 0ms
+Test suite progress: tests succeeded: 101, failed: 0, skipped: 0.
+Starting test testCreateImage(org.jclouds.cloudservers.compute.extensions.CloudServersImageExtensionExpectTest)
+[pool-8-thread-1] Test testCreateImage(org.jclouds.cloudservers.compute.extensions.CloudServersImageExtensionExpectTest) succeeded: 398ms
+Test suite progress: tests succeeded: 102, failed: 0, skipped: 0.
+Starting test testDoesNotReauthenticateOnAuthentication401(org.jclouds.cloudservers.handlers.RetryOnRenewExpectTest)
+Starting test testDoesNotReauthenticateOnFatal401(org.jclouds.cloudservers.handlers.RetryOnRenewExpectTest)
+Starting test testShouldReauthenticateOn401(org.jclouds.cloudservers.handlers.RetryOnRenewExpectTest)
+[pool-9-thread-2] Test testDoesNotReauthenticateOnFatal401(org.jclouds.cloudservers.handlers.RetryOnRenewExpectTest) succeeded: 559ms
+Test suite progress: tests succeeded: 103, failed: 0, skipped: 0.
+[pool-9-thread-1] Test testDoesNotReauthenticateOnAuthentication401(org.jclouds.cloudservers.handlers.RetryOnRenewExpectTest) succeeded: 650ms
+Test suite progress: tests succeeded: 104, failed: 0, skipped: 0.
+[pool-9-thread-3] Test testShouldReauthenticateOn401(org.jclouds.cloudservers.handlers.RetryOnRenewExpectTest) succeeded: 642ms
+Test suite progress: tests succeeded: 105, failed: 0, skipped: 0.
+Tests run: 105, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.29 sec
+
+Results :
+
+Tests run: 105, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ cloudservers ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ cloudservers ---
+[INFO] Building jar: /home/zack/jclouds/apis/cloudservers/target/cloudservers-1.6.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (integration) @ cloudservers ---
+[INFO] Surefire report directory: /home/zack/jclouds/apis/cloudservers/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@75d8362
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 25.753s
+[INFO] Finished at: Mon Apr 29 23:06:35 UTC 2013
+[INFO] Final Memory: 25M/190M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (integration) on project cloudservers: Execution integration of goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test failed: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ? -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
