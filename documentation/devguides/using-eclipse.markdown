@@ -33,7 +33,7 @@ If you are not familiar with TestNG, please have a [quick look](http://testng.or
 
 ### Testing a live provider
 
-Live tests require the following system properties to be provided as [Program Arguments](http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Ftasks%2Ftasks-executionArgs.htm):
+Live tests require the following system properties to be provided as [VM Arguments](http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Ftasks%2Ftasks-executionArgs.htm):
 
 *  `basedir` (use `.` as the value)
 *  <tt>test._provider_.identity</tt>
