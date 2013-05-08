@@ -3,3 +3,4 @@ _site
 .project
 .idea/
 *.iml
+site-content/
