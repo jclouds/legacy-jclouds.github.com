@@ -4,5 +4,5 @@ This repository supports the GitHub Pages site for jclouds. See and read more at
 
 To deploy web site to ASF:
 * have jekyll installed
-* sh ./deploy-site.sh $uid $pwd (with $uid yout ASF account $pwd your ASF password)
+* sh ./deploy-site.sh $uid $pwd (with $uid your ASF account $pwd your ASF password)
 
