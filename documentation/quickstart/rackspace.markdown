@@ -15,7 +15,6 @@ title: Getting Started - The Rackspace Cloud
 1. [Working with Cloud Load Balancers](#loadbalancers)
 1. [Next Steps](#next)
 1. [Rackspace Cloud Providers](#providers)
-1. [Getting the Rackspace Binaries](#rax-binaries)
 1. [Support and Feedback](#support)
 
 ## <a id="intro"></a>Introduction
@@ -33,16 +32,17 @@ Likewise you can go to the [Rackspace Cloud (UK)](https://buyonline.rackspace.co
 ## <a id="install"></a>Get jclouds
 
 1. Ensure you are using the [Java Development Kit (JDK) version 6 or later](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
-1. In your Terminal or Command Prompt run the following to verify the JDK is installed correctly.
     * `javac -version` 
+1. Ensure you are using [Maven version 3 or later](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
+    * `mvn -version` 
 1. Create a directory to try out jclouds.
-    * `mkdir jclouds` 
-1. Follow the instructions for [Getting the binaries using Apache Ant](/documentation/userguide/installation-guide).
-1. If you know that you are only going to need the latest binaries (JARs) specific to Rackspace and you'd like to avoid downloading unecessary dependencies, read [Getting the Rackspace Binaries](#rax-binaries) below.
+    * `mkdir jclouds`
+    * `cd jclouds`
+1. Make a local copy of this [pom.xml](https://github.com/jclouds/jclouds-examples/blob/master/rackspace/pom.xml) file in the jclouds directory.
+    * mvn dependency:copy-dependencies "-DoutputDirectory=./lib"
 1. You should now have a directory with the following structure:
     * `jclouds/`
-        * `build.xml`
-        * `maven-ant-tasks.jar`
+        * `pom.xml`
         * `lib/`
             * `*.jar`
 
@@ -58,7 +58,7 @@ There are some differences in terminology between jclouds and Rackspace/OpenStac
 | NodeMetadata | Server details
 | UserMetadata | Metadata
 | BlobStore | Cloud Files (Swift)
-| Blob | File
+| Blob | File (Object)
 
 ## <a id="files"></a>Your First Cloud Files App
 ### <a id="files-intro"></a>Introduction
@@ -80,8 +80,7 @@ Cloud Files works with a portable layer in jclouds that is used to access featur
 1. Create Java source files called CreateContainer.java and Constants.java in the directory above.
 1. You should now have a directory with the following structure:
     * `jclouds/`
-        * `build.xml`
-        * `maven-ant-tasks.jar`
+        * `pom.xml`
         * `lib/`
             * `*.jar`
         * `org/jclouds/examples/rackspace/cloudfiles/`
@@ -120,8 +119,7 @@ Cloud Servers works with a portable layer in jclouds that is used to access feat
 1. Create Java source files called CreateServer.java and Constants.java in the directory above.
 1. You should now have a directory with the following structure:
     * `jclouds/`
-        * `build.xml`
-        * `maven-ant-tasks.jar`
+        * `pom.xml`
         * `lib/`
             * `*.jar`
         * `org/jclouds/examples/rackspace/cloudservers/`
@@ -167,8 +165,7 @@ Cloud Block Storage works with the OpenStack layer in jclouds that is used to ac
 1. Create Java source files called CreateVolumeAndAttach.java and Constants.java in the directory above.
 1. You should now have a directory with the following structure:
     * `jclouds/`
-        * `build.xml`
-        * `maven-ant-tasks.jar`
+        * `pom.xml`
         * `lib/`
             * `*.jar`
         * `org/jclouds/examples/rackspace/cloudblockstorage/`
@@ -216,8 +213,7 @@ Cloud Load Balancers works with the Rackspace layer in jclouds that is used to a
 1. Create Java source files called CreateLoadBalancerWithExistingServers.java and Constants.java in the directory above.
 1. You should now have a directory with the following structure:
     * `jclouds/`
-        * `build.xml`
-        * `maven-ant-tasks.jar`
+        * `pom.xml`
         * `lib/`
             * `*.jar`
         * `org/jclouds/examples/rackspace/cloudloadbalancers/`
@@ -238,13 +234,13 @@ Cloud Load Balancers works with the Rackspace layer in jclouds that is used to a
       LoadBalancer{id=85901...}
       Go to http://166.78.34.87
 
-## <a id="jee"></a>jclouds in a JEE (J2EE) Environment
+## <a id="jee"></a>jclouds in a Managed Container
 
-Setting up jclouds to work in a JEE Environment is easy. You simply need to ensure that jclouds won't spawn any of its own threads. You can do this by using the ExecutorServiceModule when building your Context.
+Setting up jclouds to work in a managed container is easy. You simply need to ensure that jclouds won't spawn any of its own threads. You can do this by using the ExecutorServiceModule when building your Context.
 
 An example code snippet.
 
-```java
+{% highlight java %}
 import static com.google.common.util.concurrent.MoreExecutors.sameThreadExecutor; 
 
 import org.jclouds.compute.ComputeService;
@@ -267,7 +263,7 @@ public class MyJEEClass {
   
   ...
 } 
-```
+{% endhighlight %}
 
 ## <a id="next"></a>Next Steps
 
@@ -292,94 +288,9 @@ This is a list of providers that work with the Rackspace Cloud that you can use 
 * `"rackspace-cloudloadbalancers-us"`
 * `"rackspace-cloudloadbalancers-uk"`
 
-## <a id="rax-binaries"></a>Getting the Rackspace Binaries
-
-Read over the [Installation Guide](/documentation/userguide/installation-guide). If you know that you are only going to need the latest binaries (JARs) specific to Rackspace and you'd like to avoid downloading unecessary dependencies, use the following files for Ant or Maven.
-
-### <a id="rax-ant"></a>Maven
-
-For Maven, here is an example pom.xml file. To get the latest JARs simply replace X.X.X with the latest jclouds version number. To use the Rackspace Cloud UK add or update the dependencies with 'uk' on the end.
-
-```xml
-<project>
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.company.project</groupId>
-  <artifactId>my-project</artifactId>
-  <version>1.0.0</version>
-  <name>My Project</name>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.jclouds.driver</groupId>
-      <artifactId>jclouds-slf4j</artifactId>
-      <version>X.X.X</version>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <version>[1.0.0,)</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jclouds.provider</groupId>
-      <artifactId>cloudfiles-us</artifactId>
-      <version>X.X.X</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jclouds.provider</groupId>
-      <artifactId>rackspace-cloudservers-us</artifactId>
-      <version>X.X.X</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jclouds.provider</groupId>
-      <artifactId>rackspace-cloudblockstorage-us</artifactId>
-      <version>X.X.X</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jclouds.provider</groupId>
-      <artifactId>rackspace-cloudloadbalancers-us</artifactId>
-      <version>X.X.X</version>
-    </dependency>
-</project>
-```
-
-### <a id="rax-ant"></a>Ant
-
-For Ant, here is an example build.xml file. To get the latest JARs simply replace X.X.X with the latest jclouds version number. To use the Rackspace Cloud UK add or update the dependencies with 'uk' on the end.
-
-```xml
-<project default="sync-lib" xmlns:artifact="urn:maven-artifact-ant" >
-  <target name="sync-lib" depends="initmvn">
-    <delete dir="lib" />
-    <mkdir dir="lib" />
-    <artifact:dependencies filesetId="jclouds.fileset" versionsId="dependency.versions">
-      <dependency groupId="org.jclouds.driver" artifactId="jclouds-slf4j" version="X.X.X" />
-      <dependency groupId="ch.qos.logback" artifactId="logback-classic" version="[1.0.0,)" />
-      <dependency groupId="org.jclouds.provider" artifactId="cloudfiles-us" version="X.X.X" />
-      <dependency groupId="org.jclouds.provider" artifactId="rackspace-cloudservers-us" version="X.X.X" />
-      <dependency groupId="org.jclouds.provider" artifactId="rackspace-cloudblockstorage-us" version="X.X.X" />
-      <dependency groupId="org.jclouds.provider" artifactId="rackspace-cloudloadbalancers-us" version="X.X.X" />
-    </artifact:dependencies>
-    <copy todir="lib" verbose="true">
-      <fileset refid="jclouds.fileset"/>
-      <mapper type="flatten" />
-    </copy>
-  </target>
-  
-  <get src="http://search.maven.org/remotecontent?filepath=org/apache/maven/maven-ant-tasks/2.1.3/maven-ant-tasks-2.1.3.jar" dest="maven-ant-tasks.jar"/>
-  
-  <target name="initmvn">
-    <path id="maven-ant-tasks.classpath" path="maven-ant-tasks.jar"/>
-    <typedef resource="org/apache/maven/artifact/ant/antlib.xml"
-             uri="urn:maven-artifact-ant"
-             classpathref="maven-ant-tasks.classpath"/>
-  </target>
-</project>
-```
-
 ## <a id="support"></a>Support and Feedback
 
-Your feedback is appreciated! If you have specific issues with Rackspace support in jclouds, we'd prefer that you file an issue via [GitHub](https://github.com/jclouds/jclouds/issues).
+Your feedback is appreciated! If you have specific issues with Rackspace support in jclouds, we'd prefer that you file an issue via [JIRA](https://issues.apache.org/jira/browse/JCLOUDS).
 
 For general feedback and support requests, send an email to:
 
