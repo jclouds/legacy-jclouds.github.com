@@ -1,4 +1,3 @@
-
 body {
 font-family: 'Varela Round', sans-serif;
 font-size:.68em;
@@ -137,8 +136,8 @@ margin-right:auto;
 }
 
 #menu.index_page li {
-	padding-left: 130px;
-	padding-right: 75px;
+	padding-left: 175px;
+	padding-right: 100px;
 }
 
 #menu.index_page a {
