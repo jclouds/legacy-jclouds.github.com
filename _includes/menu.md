@@ -2,5 +2,4 @@
 * [Documentation](/documentation/)
 * [Community](/documentation/community/)
 * [Development](/documentation/devguides/)
-* [News](/news/)
 * [Contact](http://groups.google.com/group/jclouds)
