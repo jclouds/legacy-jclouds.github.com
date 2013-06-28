@@ -21,8 +21,9 @@ import static
 	org.jclouds.aws.s3.options.PutObjectOptions.Builder.withAcl;
 
 // get a context with amazon that offers the portable BlobStore API
-BlobStoreContext context = new BlobStoreContextFactory().
-                     createContext("aws-s3", accesskeyid, secretkey);
+BlobStoreContext context = ContextBuilder.newBuilder("aws-s3")
+                 .credentials(accesskeyid, secretkey)
+                 .buildView(BlobStoreContext.class);
 
 // create a container in the default location
 BlobStore blobStore = context.getBlobStore();
@@ -53,12 +54,11 @@ context.close();
 
 {% highlight java %}
 // get a context with ec2 that offers the portable ComputeService API
-ComputeServiceContext context =
-                new ComputeServiceContextFactory().createContext("aws-ec2",
-                                                                accesskeyid,
-                                                                secretkey,
-                                                                ImmutableSet.<Module> of(new Log4JLoggingModule(),
-                                                                new SshjSshClientModule()));
+ComputeServiceContext context = ContextBuilder.newBuilder("aws-ec2")
+                      .credentials(accesskeyid, secretkey)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 
 // here's an example of the portable api
 Set<? extends Location> locations =

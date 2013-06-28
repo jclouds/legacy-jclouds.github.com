@@ -89,8 +89,11 @@ Here, you specify the particular service you wish to manage and get a reference 
 
 {% highlight java %}
 
-ComputeServiceContext context = 
-	new ComputeServiceContextFactory().createContext("terremark", user, password);
+ComputeServiceContext context = ContextBuilder.newBuilder("trmk-ecloud")
+                      .credentials(user, password)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 
 ComputeService computeService = context.getComputeService();
 
@@ -280,12 +283,19 @@ If you'd like to have credentials persist across compute service contexts, then 
 // set the location of the filesystem you wish to persist credentials to
 props.setProperty(FilesystemConstants.PROPERTY_BASEDIR, "/var/gogrid");
 
-blobContext = new BlobStoreContextFactory().createContext("filesystem", "foo", "bar", ImmutableSet.<Module>of(), props);
+blobContext = ContextBuilder.newBuilder("filesystem")
+                 .credentials("foo", "bar")
+                 .overrides(props)
+                 .buildView(BlobStoreContext.class);
 
 credentialsMap = blobContext.createInputStreamMap("credentials");
 
-computeContext = new ComputeServiceContextFactory().createContext("gogrid", secret, apiKey,
-         ImmutableSet.of(new CredentialStoreModule(credentialsMap)));
+computeContext = ContextBuilder.newBuilder("gogrid")
+                      .credentials(apiKey, secret)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new CredentialStoreModule(credentialsMap),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 {% endhighlight %}
 ### Individual Node Commands
 Individual commands are executed against a specific node's `id` (not `providerId`!).  
@@ -358,8 +368,11 @@ enterprise configuration module.  Here's how to configure these.
 {% highlight java %}
 Properties overrides = new Properties();
 Set<Module> wiring = ImmutableSet.of(new JschSshClientModule(), new Log4JLoggingModule(), new EnterpriseConfigurationModule());
-ComputeServiceContext context = new ComputeServiceContextFactory().createContext("terremark", user, password,
-             wiring, overrides);
+ComputeServiceContext context = ContextBuilder.newBuilder("trmk-ecloud")
+                      .credentials(user, password)
+                      .modules(wiring)
+                      .overrides(overrides)
+                      .buildView(ComputeServiceContext.class);
 {% endhighlight %}
 
 For mode information, check out the [[jcloudsAPI]] wiki page.

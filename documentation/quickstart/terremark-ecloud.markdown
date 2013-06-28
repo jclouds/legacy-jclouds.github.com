@@ -17,8 +17,11 @@ title: Quick Start - Terremark eCloud
 import static org.jclouds.vcloud.terremark.options.TerremarkInstantiateVAppTemplateOptions.Builder.processorCount;
 
 // get a context with Terremark that offers the portable ComputeService api
- ComputeServiceContext context = new ComputeServiceContextFactory().createContext("trmk-ecloud", email, password,
-                                                         ImmutableSet.<Module> of(new JschSshClientModule()));
+ ComputeServiceContext context = ContextBuilder.newBuilder("trmk-ecloud")
+                      .credentials(email, password)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 
 // TODO: eCloud in ComputeService example
 

@@ -352,6 +352,11 @@ in the above, there are 4 networks to choose from.  Choose one and set it as the
 {% highlight java %}
 Properties overrides = new Properties();
 overrides.setProperty(VCloudConstants.PROPERTY_VCLOUD_DEFAULT_NETWORK, "10.1.1.160/27");
-ComputeServiceContext context = new ComputeServiceContextFactory().createContext("trmk-ecloud",USER ,PASSWORD,ImmutableSet.<Module> of(new JschSshClientModule()), overrides);
+ComputeServiceContext context = ContextBuilder.newBuilder("trmk-ecloud")
+                      .credentials(USER, PASSWORD)
+                      .overrides(overrides)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 {% endhighlight %}
 

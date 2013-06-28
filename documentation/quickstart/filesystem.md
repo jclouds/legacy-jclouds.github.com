@@ -17,7 +17,9 @@ properties.setProperty(FilesystemConstants.PROPERTY_BASEDIR, "./local/filesystem
 String containerName = "test-container";
 
 // get a context with filesystem that offers the portable BlobStore api
-BlobStoreContext context = new BlobStoreContextFactory().createContext("filesystem", properties);
+BlobStoreContext context = ContextBuilder.newBuilder("filesystem")
+                 .overrides(properties)
+                 .buildView(BlobStoreContext.class);
 
 // create a container in the default location
 BlobStore blobStore = context.getBlobStore();

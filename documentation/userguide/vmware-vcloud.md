@@ -25,15 +25,18 @@ Here are the providers of the VMware vCloud API and the level of support in jclo
 ## Obtaining a context to vCloud
 
 Once you have jclouds libraries loaded, the easiest way to get started is to use the 
-`*ComputeServiceContextFactory`.  This takes your username and password and gives you a context 
+`*ContextBuilder`.  This takes your username and password and gives you a context 
 to either get a portable cloud computing interface (`getComputeService()` ), or the direct vCloud API ( `getProviderContext().getApi()` ).
 
 * Getting a context to connect to Terremark vCloud Express:
 
 {% highlight java %}
 // add the ssh module, if you are using ComputeService, otherwise leave it out
-ComputeServiceContext context = new ComputeServiceContextFactory().createContext("trmk-vcloudexpress", 
-			user, password, ImmutableSet.of(new JshSshClientModule()));
+ComputeServiceContext context = ContextBuilder.newBuilder("trmk-vcloudexpress")
+                      .credentials(email, password)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
  
 // use context to obtain vcloud objects with terremark vCloud express extensions
 RestContext<TerremarkVCloudExpressClient, TerremarkVCloudExpressAsyncClient>  providerContext = context.getProviderContext();
@@ -44,8 +47,11 @@ RestContext<TerremarkVCloudExpressClient, TerremarkVCloudExpressAsyncClient>  pr
 
 {% highlight java %}
 // add the ssh module, if you are using ComputeService, otherwise leave it out
-ComputeServiceContext context = new ComputeServiceContextFactory().createContext("trmk-ecloud", 
-									user, password, ImmutableSet.of(new JshSshClientModule()));
+ComputeServiceContext context = ContextBuilder.newBuilder("trmk-ecloud")
+                      .credentials(email, password)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 
 // use context to obtain vcloud objects with terremark eCloud extensions
 RestContext<TerremarkECloudClient, TerremarkECloudAsyncClient>  providerContext = context.getProviderContext();
@@ -56,8 +62,11 @@ RestContext<TerremarkECloudClient, TerremarkECloudAsyncClient>  providerContext 
 
 {% highlight java %}
 // add the ssh module, if you are using ComputeService, otherwise leave it out
-ComputeServiceContext context = new ComputeServiceContextFactory().createContext("bluelock-vcdirector",
- 							user, password, ImmutableSet.of(new JshSshClientModule()));
+ComputeServiceContext context = ContextBuilder.newBuilder("bluelock-vcdirector")
+                      .credentials(user, password)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 
 RestContext<VCloudClient, VCloudAsyncClient> providerContext = context.getProviderContext();
 
@@ -68,7 +77,11 @@ RestContext<VCloudClient, VCloudAsyncClient> providerContext = context.getProvid
 
 {% highlight java %}                                                                                                                                                                      
       // add the ssh module, if you are using ComputeService, otherwise leave it out                                                                                     
-      ComputeServiceContext context = new ComputeServiceContextFactory().createContext("stratogen-vcloud-mycloud", user, password, ImmutableSet.of(new JshSshClientModule()));
+      ComputeServiceContext context = ContextBuilder.newBuilder("stratogen-vcloud-mycloud")
+                      .credentials(user, password)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
                                                                                                                                                                          
       RestContext<VCloudClient, VCloudAsyncClient> providerContext = context.getProviderContext();                                                                       
 {% endhighlight %}                                                                                                                                                                  
@@ -82,8 +95,11 @@ Properties overrides = new Properties();
 overrides.setProperty("vcloud.endpoint", "https://****/api");
 
 // add the ssh module, if you are using ComputeService, otherwise leave it out
-ComputeServiceContext context = new ComputeServiceContextFactory().createContext("vcloud", user, password,
-               		ImmutableSet.of(new Log4JLoggingModule(), new JshSshClientModule()), overrides);
+ComputeServiceContext context = ContextBuilder.newBuilder("vcloud")
+                      .credentials(user, password)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 
 RestContext<VCloudClient, VCloudAsyncClient> providerContext = context.getProviderContext();
 {% endhighlight %}

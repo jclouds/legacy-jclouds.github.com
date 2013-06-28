@@ -29,7 +29,9 @@ Depending on what you want to do, you may need different dependencies.
 This assumes you are only interested in Basic BlobStore commands, like below:
 
 {% highlight java %}
-BlobStoreContext context = new BlobStoreContextFactory().createContext(provider, identity, credential);
+BlobStoreContext context = ContextBuilder.newBuilder(provider)
+                 .credentials(identity, credential)
+                 .buildView(BlobStoreContext.class);
 Map<String, InputStream> map = context.createInputStreamMap("adrian.home");
   // do work
 context.close();
@@ -60,7 +62,9 @@ Noting that you could alternatively ask for all of our supported blobstores usin
 
 Then, you'd substitute the correct credentials and such here:
 {% highlight java %}
-BlobStoreContext context = new BlobStoreContextFactory().createContext("aws-s3", accessKey, secret);
+BlobStoreContext context = ContextBuilder.newBuilder("aws-s3")
+                 .credentials(accessKey, secret)
+                 .buildView(BlobStoreContext.class);
 {% endhighlight %}
 
 ### BlobStore from Google App Engine
@@ -69,8 +73,11 @@ There is no change to the api, in order to switch your code to use `URLFetchServ
 However, you do have to configure your connection differently:
 
 {% highlight java %}
-BlobStoreContext context = new BlobStoreContextFactory().createContext(provider, identity, credential, 
-				ImmutableSet.<Module>of(new AsyncGoogleAppEngineConfigurationModule()));
+BlobStoreContext context = ContextBuilder.newBuilder(provider)
+                      .credentials(identity, credential)
+                      .modules(ImmutableSet.of(
+                                  new AsyncGoogleAppEngineConfigurationModule()))
+                      .buildView(BlobStoreContext.class);
 {% endhighlight %}
 
 Here are the dependencies needed to use google's UrlFetchService::
@@ -92,8 +99,10 @@ Here are the dependencies needed to use google's UrlFetchService::
 jclouds will by default use JDK logging.  To switch to log4J or slf4j, you have to add a logging module to your configuration code:
 
 {% highlight java %}
-BlobStoreContext context = new BlobStoreContextFactory().createContext(provider, identity, credential, 
-										ImmutableSet.<Module>of(new Log4JLoggingModule()));
+BlobStoreContext context = ContextBuilder.newBuilder(provider)
+                      .credentials(identity, credential)
+                      .modules(ImmutableSet.of(new Log4JLoggingModule()))
+                      .buildView(BlobStoreContext.class);
 {% endhighlight %}
 
 Here are the dependencies for BlobStore and log4j logging:

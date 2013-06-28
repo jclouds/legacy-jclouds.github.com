@@ -15,12 +15,11 @@ title: Quick Start - BlueLock vCloud Service
 
 {% highlight java %}
 
-ComputeServiceContext context = 
-	new ComputeServiceContextFactory().createContext("bluelock-vcdirector", 
-													  "username@orgname", 
-													   password,
-    												  ImmutableSet.<Module> of(new JschSshClientModule()));
-
+ComputeServiceContext context = ContextBuilder.newBuilder("bluelock-vcdirector")
+                      .credentials("username@orgname", password)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 
 // create a customization script to run when the machine starts up 
 String script = "cat > /root/foo.txt<<EOF\nI love candy\nEOF\n";

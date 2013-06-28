@@ -27,7 +27,9 @@ To get the CredentialTypes class, please see the [Javadoc](http://demobox.github
 
 {% highlight java %}
 // Get a context with hpcloud that offers the portable BlobStore API
-BlobStoreContext context = new BlobStoreContextFactory().createContext("hpcloud-objectstorage", "tenantName:accessKey", "password");
+BlobStoreContext context = ContextBuilder.newBuilder("hpcloud-objectstorage")
+                 .credentials("tenantName:accessKey", "password")
+                 .buildView(BlobStoreContext.class);
 
 // Create a container in the default location
 context.getBlobStore().createContainerInLocation(null, container);
@@ -67,7 +69,12 @@ context.close();
 
 {% highlight java %}
 // Get a context with hpcloud-compute that offers the portable ComputeService API
-ComputeServiceContext ctx = new ComputeServiceContextFactory().createContext("hpcloud-compute", "tenantName:accessKey", "password");
+ComputeServiceContext ctx = ContextBuilder.newBuilder("hpcloud-compute")
+                      .credentials("tenantName:accessKey", "password")
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
+
 ComputeService cs = ctx.getComputeService();
 
 // List availability zones

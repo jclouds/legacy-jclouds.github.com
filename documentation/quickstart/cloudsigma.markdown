@@ -13,9 +13,11 @@ title: Quick Start - Cloud Sigma
 
 {% highlight java %}
 // get a context with ibm that offers the portable ComputeService api
-ComputeServiceContext context = new ComputeServiceContextFactory().createContext(
-                    "cloudsigma-zrh", email, password,
-                    ImmutableSet.<Module> of(new JschSshClientModule()));
+ComputeServiceContext context = ContextBuilder.newBuilder("cloudsigma-zrh")
+                      .credentials(email, password)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 
 // run a couple nodes accessible via group webserver
 nodes = context.getComputeService().client.runNodesInGroup("webserver", 2);

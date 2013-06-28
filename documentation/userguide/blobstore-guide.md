@@ -126,7 +126,9 @@ At a minimum, you need to specify your identity (in the case of S3, AWS Access K
 Once you have your credentials, connecting to your `BlobStore` service is easy:
 
 {% highlight java %}
-BlobStoreContext context = new BlobStoreContextFactory().createContext("aws-s3", identity, credential);
+BlobStoreContext context = ContextBuilder.newBuilder("aws-s3")
+                 .credentials(identity, credential)
+                 .buildView(BlobStoreContext.class);
 {% endhighlight %}
 
 This will give you a connection to the BlobStore, and if it is remote, it will be SSL unless unsupported by 
@@ -157,7 +159,9 @@ If you don't want to be bothered with the details of a BlobStore like Amazon S3,
  you want to manage, and get to work:
 
 {% highlight java %}
-BlobStoreContext context = new BlobStoreContextFactory().createContext("aws-s3", identity, credential);
+BlobStoreContext context = ContextBuilder.newBuilder("aws-s3")
+                 .credentials(identity, credential)
+                 .buildView(BlobStoreContext.class);
 Map<String, InputStream> map = context.createInputStreamMap("adrian.photos");
 // do work
 context.close();
@@ -201,7 +205,9 @@ Considering it is only one class at this point, this is a decent tradeoff for ma
 Here is an example that shows how to use the `BlobMap` API:
 
 {% highlight java %}
-BlobStoreContext context = new BlobStoreContextFactory().createContext("aws-s3", identity, credential);
+BlobStoreContext context = ContextBuilder.newBuilder("aws-s3")
+                 .credentials(identity, credential)
+                 .buildView(BlobStoreContext.class);
 BlobMap map = context.createBlobMap("adrian.photos");
 
 Blob blob = map.blobBuilder("sushi.jpg")                                                                                                                                                  
@@ -222,10 +228,10 @@ Here is an example of the `BlobStore` interface.
 
 {% highlight java %}
 // init
-context = new BlobStoreContextFactory().createContext(
-												"aws-s3",
-                  								accesskeyid,
-                  								secretaccesskey);
+context = ContextBuilder.newBuilder("aws-s3")
+                 .credentials(accesskeyid, secretaccesskey)
+                 .buildView(BlobStoreContext.class);
+
 blobStore = context.getBlobStore();
 
 // create container
@@ -291,10 +297,9 @@ Here's an example of `multipart upload` using aws-s3 provider, which [allow uplo
 import static org.jclouds.blobstore.options.PutOptions.Builder.multipart;                                                                                                                 
 
   // init                                                                                                                                                                                 
-  context = new BlobStoreContextFactory().createContext(                                                                                                                                  
-                  "aws-s3",                                                                                                                                                               
-                  accesskeyid,                                                                                                                                                            
-                  secretaccesskey);                                                                                                                                                       
+  context = ContextBuilder.newBuilder("aws-s3")
+                 .credentials(accesskeyid, secretaccesskey)
+                 .buildView(BlobStoreContext.class);
   AsyncBlobStore blobStore = context.getAsyncBlobStore();                                                                                                                                 
                                                                                                                                                                                           
   // create container                                                                                                                                                                     

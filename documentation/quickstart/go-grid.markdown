@@ -23,8 +23,12 @@ To create a context for all subsequent API calls, use:
 
 {% highlight java %}
 RestContext<GoGridClient, GoGridAsyncClient> context = 
-					new ComputeServiceFactory().createContext(key, sharedSecret)
-										.getProviderSpecificContext();
+                     ContextBuilder.newBuilder("gogrid")
+                      .credentials(key, sharedSecret)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class)
+					  .getProviderSpecificContext();
 
 GoGridClient client = context.getApi();
 
@@ -98,8 +102,12 @@ sshClient.disconnect();
 To create a generic context, use (as in the previous section):
 
 {% highlight java %}
-ComputeServiceContext context = new ComputeServiceContextFactory().createContext("gogrid", user, password,
-                ImmutableSet.of(new Log4JLoggingModule(), new JschSshClientModule()));
+ComputeServiceContext context = ContextBuilder.newBuilder("gogrid")
+                      .credentials(key, sharedSecret)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
+
 ComputeService service = context.getComputeService();
 {% endhighlight %}
 

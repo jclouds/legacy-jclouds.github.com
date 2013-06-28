@@ -25,8 +25,14 @@ Configuration can be made via property or a typed module.  Here's how you can do
 {% highlight java %}	
 modules = ImmutableSet.of(new AsyncGoogleAppEngineConfigurationModule());
 // note if you are using <= beta-9, providers will be ec2 and s3
-compute = new ComputeServiceContextFactory().createContext("aws-ec2", accesskey, secret, modules);
-blobStore = new BlobStoreContextFactory().createContext("aws-s3", accesskey, secret, modules);
+blobStoreContext = ContextBuilder.newBuilder("aws-s3")
+                      .credentials(accesskey, secret)
+                      .modules(modules)
+                      .buildView(BlobStoreContext.class);
+computeContext = ContextBuilder.newBuilder("aws-ec2")
+                      .credentials(accesskey, sceret)
+                      .modules(modules)
+                      .buildView(ComputeServiceContext.class);
 {% endhighlight %}
 
 * Using property-based configuration
@@ -43,8 +49,14 @@ overrides.setProperty("aws-ec2.credential","secret");
 overrides.setProperty("aws-s3.identity","accessKey");
 overrides.setProperty("aws-s3.credential","secret");
 
-compute = new ComputeServiceContextFactory().createContext("aws-ec2", overrides);
-blobStore = new BlobStoreContextFactory().createContext("aws-s3", overrides);
+blobStore = ContextBuilder.newBuilder("aws-s3")
+                      .credentials(accesskey, secret)
+                      .overrides(overrides)
+                      .buildView(BlobStoreContext.class);
+compute = ContextBuilder.newBuilder("aws-ec2")
+                      .credentials(accesskey, sceret)
+                      .overrides(overrides)
+                      .buildView(ComputeServiceContext.class);
 {% endhighlight %}
 
 ### Usage with Clojure
@@ -103,9 +115,11 @@ public class BlobStoreRegistrationListener implements ServletContextListener {
          properties = loadJCloudsProperties("local",servletContextEvent);
       }
       servletContextEvent.getServletContext().setAttribute("blobstore",
-         new BlobStoreContextFactory().createContext(
-            properties.getProperty("jclouds.blobstore"), properties)
-         ).getBlobStore();
+                ContextBuilder.newBuilder(properties.getProperty("jclouds.blobstore"))
+                      .credentials(accesskey, secret)
+                      .overrides(properties)
+                      .buildView(BlobStoreContext.class)
+                      .getBlobStore();
       super.contextInitialized(servletContextEvent);
    }
 
@@ -187,9 +201,12 @@ overrides.setProperty(PROPERTY_TIMEOUT_NODE_RUNNING, "25000");
 overrides.setProperty(PROPERTY_TIMEOUT_SCRIPT_COMPLETE, "25000");
 overrides.setProperty(PROPERTY_TIMEOUT_PORT_OPEN, "25000");
 
-context = new ComputeServiceContextFactory()
-      .createContext(service, identity, credential, ImmutableSet.of(
-            new AsyncGoogleAppEngineConfigurationModule()), overrides);
+context = ContextBuilder.newBuilder(service)
+                      .credentials(identity, credential)
+                      .modules(ImmutableSet.of(
+                                  new AsyncGoogleAppEngineConfigurationModule()))
+                      .overrides(overrides)
+                      .buildView(ComputeServiceContext.class);
 {% endhighlight %}
 
 ### FAQ

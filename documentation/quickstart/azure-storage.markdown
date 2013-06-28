@@ -23,7 +23,9 @@ title: Quick Start - Azure Storage Service
 import static org.jclouds.azure.storage.blob.options.CreateContainerOptions.Builder.withPublicAcl;
 
 // get a context with amazon that offers the portable BlobStore api
-BlobStoreContext context = new BlobStoreContextFactory().createContext("azureblob", accesskeyid, secretkey);
+BlobStoreContext context = ContextBuilder.newBuilder("azureblob")
+                 .credentials(accesskeyid, secretkey)
+                 .buildView(BlobStoreContext.class);
 
 //create a container in the default location
 context.getBlobStore().createContainerInLocation(null, bucket);

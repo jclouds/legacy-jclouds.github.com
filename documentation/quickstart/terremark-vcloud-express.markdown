@@ -18,8 +18,11 @@ title: Quick Start- Terremark vCloud Express
 import static org.jclouds.vcloud.terremark.options.TerremarkInstantiateVAppTemplateOptions.Builder.processorCount;
 
 // get a context with terremark that offers the portable ComputeService api
-ComputeServiceContext context = new ComputeServiceContextFactory().createContext("trmk-vcloudexpress", email, password,
-                                                         ImmutableSet.<Module> of(new JschSshClientModule()));
+ComputeServiceContext context = ContextBuilder.newBuilder("trmk-vcloudexpress")
+                      .credentials(email, password)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 
 // here's an example of the portable api
 

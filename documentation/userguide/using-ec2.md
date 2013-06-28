@@ -67,8 +67,12 @@ Even refining lists to a set of user ids, using EC2 can be bogged down, parsing 
    // choose only amazon images that are ebs-backed
    overrides.setProperty(AWSEC2Constants.PROPERTY_EC2_AMI_QUERY,
                          "owner-id=137112412989;state=available;image-type=machine;root-device-type=ebs");
-   context = new ComputeServiceContextFactory().createContext("aws-ec2", access, secret,
-            ImmutableSet.<Module> of(new SshjSshClientModule()), overrides)
+   context = ContextBuilder.newBuilder("aws-ec2")
+                      .credentials(access, secret)
+                      .overrides(overrides)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 {% endhighlight %}
 
 #### Properties to set cluster compute images 
@@ -100,7 +104,7 @@ Template template = context.getComputeService().templateBuilder().imageId(
          "ami-ccb35ea5").build();
 {% endhighlight %}
 
-#### Release 1.1.0 and above 
+#### Release 1.1.0 to 1.5.x
 {% highlight java %}
    Properties overrides = new Properties();
 
@@ -110,6 +114,25 @@ Template template = context.getComputeService().templateBuilder().imageId(
 
    context = new ComputeServiceContextFactory().createContext("aws-ec2",
       accessid, secretkey, ImmutableSet.of(new Log4JLoggingModule()), overrides);
+
+   Template template = context.getComputeService().templateBuilder().imageId(
+            "ami-ccb35ea5").build();
+{% endhighlight %}
+
+#### Release 1.6.0 and above
+{% highlight java %}
+   Properties overrides = new Properties();
+
+   // set AMI queries to nothing
+   overrides.setProperty(AWSEC2Constants.PROPERTY_EC2_AMI_QUERY, "");
+   overrides.setProperty(AWSEC2Constants.PROPERTY_EC2_CC_AMI_QUERY, "");
+
+   context = ContextBuilder.newBuilder("aws-ec2")
+                      .credentials(accessid, secretkey)
+                      .overrides(overrides)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
 
    Template template = context.getComputeService().templateBuilder().imageId(
             "ami-ccb35ea5").build();
@@ -142,7 +165,7 @@ ComputeServiceContext context = new ComputeServiceContextFactory().createContext
                                         ImmutableSet.<Module> of(new JschSshClientModule()), props);
 {% endhighlight %}
 
-#### Release 1.1.0 and above
+#### Releases 1.1.0 through 1.5.x
 {% highlight java %}
 Properties props = new Properties();
 
@@ -157,6 +180,24 @@ ComputeServiceContext context = new ComputeServiceContextFactory().createContext
                                         ImmutableSet.<Module> of(new JschSshClientModule()), props);
 {% endhighlight %}
 
+#### Release 1.6.0 and abovex
+{% highlight java %}
+Properties props = new Properties();
+
+//have a myFavoriteOwner - the user ID of the owner of the image.
+props.setProperty(EC2Constants.PROPERTY_EC2_AMI_QUERY, "owner-id=137112412989,063491364108,099720109477,411009282317,"+myFavoriteOwner+";state=available;image-type=machine");
+
+// or.. you can remove the owner part of the query, but this will take forever on amazon's ec2 service
+props.setProperty(EC2Constants.PROPERTY_EC2_AMI_QUERY, "state=available;image-type=machine");
+
+
+ComputeServiceContext context = ContextBuilder.newBuilder("aws-ec2")
+                      .credentials(access, secret)
+                      .overrides(props)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule()))
+                      .buildView(ComputeServiceContext.class);
+{% endhighlight %}
 
 You can then create nodes using the templateBuilder.imageId() method. 
 
@@ -276,15 +317,18 @@ Properties overrides = setupProperties();
 // your owner id
 overrides.setProperty(EC2Constants.PROPERTY_EC2_AMI_OWNERS, "123123123213123");
 
-context = new ComputeServiceContextFactory().createContext(provider, ImmutableSet
-         .<Module> of(new JschSshClientModule(), new AbstractModule(){
+context = ContextBuilder.newBuilder("aws-ec2")
+                      .credentials(access, secret)
+                      .overrides(overrides)
+                      .modules(ImmutableSet.<Module> of(new Log4JLoggingModule(),
+                                                        new SshjSshClientModule(),
+                                                        new AbstractModule(){
 
             @Override
             protected void configure() {
                bind(AWSEC2ReviseParsedImage.class).to(FooAWSEC2ReviseParsedImage.class);
-            }
-            
-         }), overrides);
+            })))
+                      .buildView(ComputeServiceContext.class);
 {% endhighlight %}
 
 #### Use your image version
@@ -362,7 +406,9 @@ Set<? extends NodeMetadata> monitoredNodes = compute.runNodesInGroup(group, 1, o
 You can then use the !CloudWatchClient to get statistics on your nodes.
 {% highlight java %}
 RestContext<CloudWatchClient, CloudWatchAsyncClient> cloudWatchContext =
-       new RestContextFactory().createContext("cloudwatch",  accessid, secretkey);
+              ContextBuilder.newBuilder("cloudwatch")
+                      .credentials(access, secret)
+                      .build();
 
 String region = node.getLocation().getParent().getId();
 

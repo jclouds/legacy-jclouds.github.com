@@ -44,8 +44,16 @@ import static org.jclouds.Constants.*;
   Set<Module> wiring =  ImmutableSet.of(new EnterpriseConfigurationModule(), new Log4JLoggingModule());
 
   // same properties and wiring can be used for many services, although the limits are per context
-  blobStoreContext = new BlobStoreContextFactory().createContext("s3", account, key, wiring, overrides);
-  computeContext = new ComputeServiceContextFactory().createContext("ec2", account, key, wiring, overrides);
+  blobStoreContext = ContextBuilder.newBuilder("s3")
+                      .credentials(account, key)
+                      .modules(wiring)
+                      .overrides(overrides)
+                      .buildView(BlobStoreContext.class);
+  computeContext = ContextBuilder.newBuilder("ec2")
+                      .credentials(account, key)
+                      .modules(wiring)
+                      .overrides(overrides)
+                      .buildView(ComputeServiceContext.class);
 {% endhighlight %}
 
 ### Timeout
