@@ -1,4 +1,4 @@
-jekyll 
+jekyll build --safe
 if [ ! -d "site-content" ]; then
   svn co https://svn.apache.org/repos/asf/incubator/jclouds/site-content
 else
