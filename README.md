@@ -1,8 +1,4 @@
-# jclouds
-
-This repository supports the GitHub Pages site for jclouds. See and read more at [http://www.jclouds.org](http://www.jclouds.org).
-
-To deploy web site to ASF:
-* have jekyll installed
-* sh ./deploy-site.sh $uid $pwd (with $uid your ASF account $pwd your ASF password)
-
+jclouds moved to Apache in 2013 and archived this repository.  Please visit our
+new [JIRA issue tracker](https://issues.apache.org/jira/projects/JCLOUDS),
+[GitHub repository](https://github.com/jclouds/jclouds), and
+[web page](https://jclouds.apache.org/).
